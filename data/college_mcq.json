@@ -18,7 +18,12 @@
     },
     {
       "question": "Number of layers in NGN (Next Generation Network) architecture is ______.",
-      "options": ["7", "6", "4", "5"],
+      "options": [
+        "7",
+        "6",
+        "4",
+        "5"
+      ],
       "correct": 2,
       "correctText": "4",
       "explanation": "NGN architecture has 4 layers: Access Layer, Transport Layer, Control Layer, and Service Layer — providing a modular, flexible network framework.",
@@ -26,10 +31,15 @@
     },
     {
       "question": "Media Gateways are located in ________ of NGN.",
-      "options": ["Access Layer", "Transport Layer", "Control Layer", "Service Layer"],
+      "options": [
+        "Access Layer",
+        "Transport Layer",
+        "Control Layer",
+        "Service Layer"
+      ],
       "correct": 0,
       "correctText": "Access Layer",
-      "explanation": "Media Gateways reside in the Access Layer of NGN — they convert media formats between different networks (e.g., PSTN to IP networks).",
+      "explanation": "Media Gateways reside in the Access Layer of NGN — they convert media formats between different network types (e.g., PSTN voice signals to IP packets). This conversion allows traditional telephone networks to communicate seamlessly with modern IP-based networks.",
       "subtopic": "NGN"
     },
     {
@@ -55,12 +65,17 @@
       ],
       "correct": 2,
       "correctText": "Transport functions",
-      "explanation": "Transport functions in NGN provide the connectivity infrastructure for communication — handling data transfer across the network backbone.",
+      "explanation": "Transport functions in NGN provide the core connectivity infrastructure for communication — handling data transfer across the network backbone. They ensure reliable, high-speed movement of voice, video, and data between access points and service platforms.",
       "subtopic": "NGN"
     },
     {
       "question": "_____ wireless technology is used to deliver higher multi-Gbps peak data speeds.",
-      "options": ["2G", "3G", "4G", "5G"],
+      "options": [
+        "2G",
+        "3G",
+        "4G",
+        "5G"
+      ],
       "correct": 3,
       "correctText": "5G",
       "explanation": "5G technology delivers multi-Gbps peak data speeds (up to 20 Gbps theoretically) — enabling ultra-fast downloads, low latency, and massive device connectivity.",
@@ -102,7 +117,7 @@
       ],
       "correct": 0,
       "correctText": "Wireless local area network",
-      "explanation": "IEEE 802.11 is the WLAN (Wireless LAN) standard family — commonly known as Wi-Fi, including variants like 802.11a/b/g/n/ac/ax.",
+      "explanation": "IEEE 802.11 is the family of WLAN (Wireless LAN) communication standards — commonly known as Wi-Fi. It includes variants like 802.11a (5GHz), 802.11b/g (2.4GHz), 802.11n (Wi-Fi 4), 802.11ac (Wi-Fi 5), and 802.11ax (Wi-Fi 6), each improving speed and efficiency.",
       "subtopic": "Networking"
     },
     {
@@ -133,7 +148,12 @@
     },
     {
       "question": "Wi Max, Wi-Fi, LTE technology is used in ______ mobile network.",
-      "options": ["2G", "3G", "4G", "5G"],
+      "options": [
+        "2G",
+        "3G",
+        "4G",
+        "5G"
+      ],
       "correct": 2,
       "correctText": "4G",
       "explanation": "WiMax, Wi-Fi, and LTE are 4G technologies — providing high-speed mobile broadband with IP-based architecture and data rates up to 100 Mbps (LTE) to 1 Gbps (LTE-Advanced).",
@@ -141,7 +161,12 @@
     },
     {
       "question": "Architecture of blockchain is bpm in the year _______.",
-      "options": ["2000", "2014", "2008", "2018"],
+      "options": [
+        "2000",
+        "2014",
+        "2008",
+        "2018"
+      ],
       "correct": 2,
       "correctText": "2008",
       "explanation": "Blockchain architecture was introduced in 2008 by Satoshi Nakamoto in the Bitcoin whitepaper — revolutionizing decentralized, trustless transactions.",
@@ -149,23 +174,38 @@
     },
     {
       "question": "The block which has no previous block or reference is called __________.",
-      "options": ["Block 0", "Genesis block", "Root block", "Block 1"],
+      "options": [
+        "Block 0",
+        "Genesis block",
+        "Root block",
+        "Block 1"
+      ],
       "correct": 1,
       "correctText": "Genesis block",
-      "explanation": "The Genesis Block is the first block in a blockchain — it has no previous block reference and is hardcoded into the blockchain software.",
+      "explanation": "The Genesis Block is the very first block in a blockchain — it has no previous block reference (previous hash is typically zeros) and is hardcoded into the blockchain software. All subsequent blocks are cryptographically linked back to this foundational block.",
       "subtopic": "Blockchain"
     },
     {
       "question": "The first block of blockchain is called as ______.",
-      "options": ["Genesis Block", "Header block", "Main block", "Initial block"],
+      "options": [
+        "Genesis Block",
+        "Header block",
+        "Main block",
+        "Initial block"
+      ],
       "correct": 0,
       "correctText": "Genesis Block",
-      "explanation": "The first block in any blockchain is called the Genesis Block — it's the foundation upon which all subsequent blocks are built.",
+      "explanation": "The first block in any blockchain is called the Genesis Block — it serves as the foundation upon which all subsequent blocks are built. It is unique because it is the only block that does not reference a previous block, and is typically embedded in the software itself.",
       "subtopic": "Blockchain"
     },
     {
       "question": "How many layers are there in Blockchain architecture?",
-      "options": ["6", "4", "5", "3"],
+      "options": [
+        "6",
+        "4",
+        "5",
+        "3"
+      ],
       "correct": 2,
       "correctText": "5",
       "explanation": "Blockchain has 5 layers: Application Layer, Semantic Layer, Execution Layer, Consensus Layer, and Network Layer — each serving distinct functions.",
@@ -173,7 +213,12 @@
     },
     {
       "question": "Nodes is defined as a ________.",
-      "options": ["Platform", "Topic", "An exchange", "A computer in a Blockchain network"],
+      "options": [
+        "Platform",
+        "Topic",
+        "An exchange",
+        "A computer in a Blockchain network"
+      ],
       "correct": 3,
       "correctText": "A computer in a Blockchain network",
       "explanation": "A node is any computer participating in the blockchain network — maintaining a copy of the ledger, validating transactions, and following consensus rules.",
@@ -181,7 +226,12 @@
     },
     {
       "question": "Bitcoin and Ethereum are examples of _______.",
-      "options": ["Currency", "Cryptocurrency", "Central Bank", "Algorithm"],
+      "options": [
+        "Currency",
+        "Cryptocurrency",
+        "Central Bank",
+        "Algorithm"
+      ],
       "correct": 1,
       "correctText": "Cryptocurrency",
       "explanation": "Bitcoin and Ethereum are cryptocurrencies — decentralized digital currencies using cryptography for security and blockchain for transaction verification.",
@@ -210,7 +260,7 @@
       ],
       "correct": 0,
       "correctText": "Execution layer",
-      "explanation": "The Execution Layer executes smart contracts — processing instructions and transactions according to predefined rules and logic.",
+      "explanation": "The Execution Layer in blockchain is where smart contracts and simple instructions are processed and executed. It takes the rules defined in the Semantic Layer and actually runs them — handling transaction validation, state changes, and computation on the network.",
       "subtopic": "Blockchain"
     },
     {
@@ -249,7 +299,7 @@
       ],
       "correct": 2,
       "correctText": "Extended Model for Cyberspace Investigation",
-      "explanation": "EMCI = Extended Model for Cyberspace Investigation — a framework for conducting systematic digital investigations.",
+      "explanation": "EMCI = Extended Model for Cyberspace Investigation — a comprehensive framework for conducting systematic digital investigations. It extends traditional forensic models to address the unique challenges of cyberspace, including volatile evidence, jurisdictional issues, and cross-border investigations.",
       "subtopic": "Forensics"
     },
     {
@@ -262,7 +312,7 @@
       ],
       "correct": 1,
       "correctText": "Survey phase",
-      "explanation": "In the IDIP Model, the Survey phase involves physically walking through the crime scene to identify and document potential evidence.",
+      "explanation": "In the IDIP (Integrated Digital Investigation Process) Model, the Survey phase requires investigators to physically walk through the crime scene, identifying and documenting potential evidence. This crucial step ensures nothing is overlooked before detailed collection begins.",
       "subtopic": "Forensics"
     },
     {
@@ -275,7 +325,7 @@
       ],
       "correct": 1,
       "correctText": "Abstract Digital Forensic Model",
-      "explanation": "ADFM = Abstract Digital Forensic Model — a theoretical framework providing a structured approach to digital forensic investigations.",
+      "explanation": "ADFM = Abstract Digital Forensic Model — a theoretical framework providing a structured, generalized approach to digital forensic investigations. It defines common processes across different forensic models, helping standardize investigation methodologies regardless of specific tools or environments.",
       "subtopic": "Forensics"
     },
     {
@@ -288,7 +338,7 @@
       ],
       "correct": 0,
       "correctText": "Testimonial Evidence",
-      "explanation": "Testimonial Evidence includes statements from witnesses, informants, or contacts — verbal or written accounts provided by individuals.",
+      "explanation": "Testimonial Evidence includes statements from witnesses, informants, or contacts — verbal or written accounts provided by individuals with knowledge of the case. In digital forensics, this can include interviews with suspects, testimony from network administrators, or statements from cybersecurity personnel.",
       "subtopic": "Forensics"
     },
     {
@@ -314,12 +364,17 @@
       ],
       "correct": 0,
       "correctText": "Best Evidence Rule",
-      "explanation": "The Best Evidence Rule requires original documents as evidence — copies are acceptable only if originals are unavailable or destroyed.",
+      "explanation": "The Best Evidence Rule requires that original documents or records be offered as evidence in legal proceedings — copies are acceptable only if originals are unavailable, destroyed, or inaccessible. In digital forensics, this means producing the original digital file or a bit-for-bit forensic image, not just a summary.",
       "subtopic": "Forensics"
     },
     {
       "question": "Documented evidence is same as ________ where the proof is presented in writing?",
-      "options": ["Demonstrative", "Definitive", "Testimonial", "Illustrative"],
+      "options": [
+        "Demonstrative",
+        "Definitive",
+        "Testimonial",
+        "Illustrative"
+      ],
       "correct": 0,
       "correctText": "Demonstrative",
       "explanation": "Documented/Demonstrative evidence presents proof in tangible form — documents, records, diagrams, or physical exhibits used to support claims.",
@@ -360,7 +415,7 @@
       ],
       "correct": 2,
       "correctText": "System hacking",
-      "explanation": "Password cracking to gain system access is System Hacking — directly targeting authentication mechanisms to compromise a system.",
+      "explanation": "Password cracking to gain system access is classified as System Hacking — it directly targets authentication mechanisms to compromise a system. This involves techniques like brute force attacks, dictionary attacks, or rainbow tables to bypass login controls and obtain unauthorized access.",
       "subtopic": "Security"
     },
     {
@@ -386,7 +441,7 @@
       ],
       "correct": 1,
       "correctText": "widely used commercial freeware, and open source network security scanner.",
-      "explanation": "Nmap is a free, open-source network security scanner — used for port scanning, service detection, OS fingerprinting, and network discovery.",
+      "explanation": "Nmap (Network Mapper) is a free, open-source network security scanner — widely used for port scanning, service detection, OS fingerprinting, and network discovery. Security professionals and ethical hackers use it to map network topology and identify open ports and running services on target systems.",
       "subtopic": "Security"
     },
     {
@@ -399,7 +454,7 @@
       ],
       "correct": 2,
       "correctText": "security assessment obligation",
-      "explanation": "Respecting privacy is a legal and ethical obligation during security assessments — protecting sensitive data and user confidentiality.",
+      "explanation": "Respecting privacy is a legal and ethical obligation during security assessments — assessors must protect any sensitive data or personal information they encounter. This obligation ensures that vulnerability testing does not compromise individual privacy rights or expose confidential organizational data.",
       "subtopic": "Security"
     },
     {
@@ -443,10 +498,15 @@
     },
     {
       "question": "Vulnerability scanning in ethical hacking finds _________.",
-      "options": ["Strengths", "Weaknesses", "Opportunities", "Threats"],
+      "options": [
+        "Strengths",
+        "Weaknesses",
+        "Opportunities",
+        "Threats"
+      ],
       "correct": 1,
       "correctText": "Weaknesses",
-      "explanation": "Vulnerability scanning identifies weaknesses (vulnerabilities) in systems — security flaws that could be exploited by attackers.",
+      "explanation": "Vulnerability scanning identifies weaknesses (vulnerabilities) in systems — security flaws, misconfigurations, or missing patches that could be exploited by attackers. Automated scanners like Nessus or OpenVAS compare system states against known vulnerability databases to produce actionable reports.",
       "subtopic": "Security"
     },
     {
@@ -524,7 +584,7 @@
       ],
       "correct": 1,
       "correctText": "A malicious employee using a network analyzer can steal confidential information in e-mails and files sent over the network.",
-      "explanation": "Network sniffing/analysis attacks exploit network infrastructure vulnerabilities — capturing unencrypted data in transit across the network.",
+      "explanation": "Network sniffing/analysis attacks exploit network infrastructure vulnerabilities — capturing unencrypted data in transit across the network. A malicious insider using a network analyzer (like Wireshark) can intercept emails, files, and credentials, making encryption and network segmentation critical defenses.",
       "subtopic": "Security"
     },
     {
@@ -563,7 +623,7 @@
       ],
       "correct": 2,
       "correctText": "Denial of Service",
-      "explanation": "DoS = Denial of Service attack — flooding a system with requests to exhaust resources and make it unavailable to legitimate users.",
+      "explanation": "DoS = Denial of Service attack — an attack that floods a target system with overwhelming requests or traffic, exhausting its resources (CPU, memory, bandwidth) so legitimate users cannot access the service. Common targets include web servers, DNS, and email systems.",
       "subtopic": "Security"
     },
     {
@@ -581,7 +641,12 @@
     },
     {
       "question": "Which port is used for Telnet?",
-      "options": ["Port 23", "Port 7", "Port 21", "Port 80"],
+      "options": [
+        "Port 23",
+        "Port 7",
+        "Port 21",
+        "Port 80"
+      ],
       "correct": 0,
       "correctText": "Port 23",
       "explanation": "Telnet uses Port 23 for remote terminal access — transmitting data (including passwords) in cleartext, making it insecure compared to SSH (Port 22).",
@@ -610,7 +675,7 @@
       ],
       "correct": 1,
       "correctText": "Message Overloading Attack",
-      "explanation": "Message Overloading Attacks consume storage and bandwidth by flooding systems with excessive messages — causing denial of service.",
+      "explanation": "Message Overloading Attacks consume storage and bandwidth by flooding systems with excessive messages — causing denial of service. When email servers are overwhelmed with massive volumes of messages, storage fills up and bandwidth is consumed, disrupting legitimate communication.",
       "subtopic": "Security"
     },
     {
@@ -623,7 +688,7 @@
       ],
       "correct": 2,
       "correctText": "Email bomb attack",
-      "explanation": "Email bombing floods a specific address with massive volumes of email — overwhelming the inbox and potentially causing service disruption.",
+      "explanation": "Email bombing floods a specific email address with massive volumes of email — overwhelming the inbox, consuming server storage, and potentially causing the entire mail system to crash. This denial-of-service technique can also be used to distract victims from more targeted attacks happening simultaneously.",
       "subtopic": "Security"
     },
     {
@@ -636,7 +701,7 @@
       ],
       "correct": 0,
       "correctText": "65,535 | 65,535",
-      "explanation": "Both UDP and TCP have 65,535 possible ports each (0-65535). Comprehensive port scanning checks all possible ports on target systems.",
+      "explanation": "Both UDP and TCP have 65,535 possible ports each (numbered 0-65535). Comprehensive port scanning checks all possible ports on target systems to discover every running service — while well-known ports (0-1023) are most commonly targeted, attackers also scan ephemeral ports for hidden services.",
       "subtopic": "Security"
     },
     {
@@ -649,7 +714,7 @@
       ],
       "correct": 2,
       "correctText": "Autoresponder Attack",
-      "explanation": "Autoresponder attacks exploit auto-reply loops between two email addresses — creating endless reply cycles that consume bandwidth and storage.",
+      "explanation": "Autoresponder attacks exploit auto-reply loops between two email addresses that both have auto-responders configured — creating endless reply cycles that consume bandwidth, fill storage, and disrupt mail services. Each auto-response triggers another, creating an infinite loop of messages.",
       "subtopic": "Security"
     },
     {
@@ -662,7 +727,7 @@
       ],
       "correct": 2,
       "correctText": "heap based buffer overflow",
-      "explanation": "Heap-based buffer overflow attacks corrupt dynamically allocated memory (heap) — overwriting critical data structures and potentially executing arbitrary code.",
+      "explanation": "Heap-based buffer overflow attacks corrupt dynamically allocated memory (the heap) — overwriting critical data structures and potentially executing arbitrary code. Unlike stack-based overflows that target return addresses, heap overflows manipulate program data structures, making them harder to detect but equally dangerous.",
       "subtopic": "Security"
     }
   ]
