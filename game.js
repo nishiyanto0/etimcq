@@ -453,7 +453,8 @@ function updateUserSession(user) {
 
 // ── SESSION PERSISTENCE ────────────────────────
 function saveSession() {
-  if (state.questions.length === 0) return;
+  // Only save if a quiz is actually in progress and not finished
+  if (state.questions.length === 0 || state.current >= state.questions.length) return;
   const session = {
     unitId: state.unitId,
     unitName: state.unitName,
@@ -1132,7 +1133,10 @@ async function openSetup(unitId) {
 }
 
 function showHome() {
-  saveSession();
+  // Only save session if we are currently in a quiz
+  if (document.getElementById('screen-quiz').classList.contains('active')) {
+    saveSession();
+  }
   showScreen('screen-home');
   renderHome();
 }
@@ -1243,6 +1247,11 @@ async function startQuiz() {
 
 // ── RENDER QUESTION ───────────────────────────
 function renderQuestion() {
+  if (state.current >= state.questions.length) {
+    clearSession();
+    showResults();
+    return;
+  }
   const q    = state.questions[state.current];
   const idx  = state.current;
   const tot  = state.questions.length;
