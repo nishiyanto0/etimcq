@@ -1205,9 +1205,6 @@ function handleAnswer(selectedIdx, clickedBtn) {
   nextBtn.style.display = 'flex';
 }
 
-  renderQuestion();
-}
-
 // ── RESULTS ───────────────────────────────────
 function showResults() {
   const score   = state.score;
