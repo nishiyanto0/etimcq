@@ -1,0 +1,78 @@
+HOW TO INTEGRATE — 3 files, 4 steps
+═══════════════════════════════════
+
+STEP 1 — game.js
+─────────────────
+Find and DELETE this entire block (roughly lines 220–282):
+
+  function renderLeaderboard(tab) { ... }
+  function formatTime(seconds) { ... }   ← keep this one actually, don't delete formatTime
+
+Then PASTE the entire contents of leaderboard_v2_final.js
+right where renderLeaderboard was.
+
+Keep your existing formatTime() function as-is (the new code uses it).
+
+
+STEP 2 — game.js (tab buttons, inside renderHome)
+──────────────────────────────────────────────────
+Find (around line 153):
+  <button class="lb-tab" data-tab="unit">By Unit</button>
+  <button class="lb-tab" data-tab="top">Top Scores</button>
+
+Replace the whole tabs div with:
+  <div class="leaderboard-tabs" style="display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap">
+    <button class="lb-tab active" data-tab="recent">Recent</button>
+    <button class="lb-tab" data-tab="player">Players</button>
+    <button class="lb-tab" data-tab="unit">By Unit</button>
+    <button class="lb-tab" data-tab="top">Top Scores</button>
+  </div>
+
+
+STEP 3 — index.html
+────────────────────
+Paste the contents of modal_html_snippet.html just before </body>.
+
+
+STEP 4 — game.css
+──────────────────
+1. Delete the old leaderboard block (search for ".lb-list" and ".lb-row" — remove those old rules).
+2. Paste the entire contents of leaderboard_v2_final.css at the bottom.
+
+
+═══════════════════════════════════
+WHAT CHANGES IN BEHAVIOUR
+═══════════════════════════════════
+
+Combined Score logic:
+  - Each (player × unit × subtopic) combo = 1 bucket
+  - Score for that bucket = AVERAGE smartScore across all attempts
+  - Combined score = sum of all bucket scores
+  - Retrying same subtopic just updates the average — no exploitation
+
+Recent tab:
+  - Shows raw attempts (most recent first)
+  - Tap any row → opens that player's modal
+
+Players tab:
+  - One card per person ranked by combined score
+  - Shows: avg acc, total correct/total, topics done, attempts
+  - Progress bars for each topic they've attempted
+  - Tap card → opens full drill-down modal
+
+By Unit tab:
+  - Grouped by unit
+  - Players ranked within each unit by avg smartScore (not best attempt)
+  - Subtopic badges showing avg acc across attempts
+  - Tap any player row → opens their modal
+
+Top Scores tab:
+  - Ranked by combined score (deduped, avg-based)
+  - No raw attempts — clean all-time leaderboard
+
+Player Modal (opens on tap):
+  - Bottom sheet on mobile
+  - Avatar, combined score badge
+  - Overview: overall acc, total correct, topics, attempts
+  - Per-topic breakdown with mini trend chart (dots = accuracy over time)
+  - All raw attempts listed under each topic with score/acc/pts/time

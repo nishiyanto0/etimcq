@@ -1,0 +1,599 @@
+Q1: Digital forensics primarily deals with:
+Explanation: Digital forensics is the branch of forensic science focused on investigating and analyzing digital devices and electronic data to uncover evidence of crimes, unauthorized access, or policy violations. Unlike physical forensics, it deals specifically with bits, bytes, and digital artifacts found on computers, phones, and networks.
+
+Q2: Digital evidence must be:
+Explanation: Digital evidence is highly fragile and can be easily altered, corrupted, or destroyed if not handled properly. Preservation ensures the evidence remains in its original state so it can be admitted in court and withstand legal scrutiny under cross-examination.
+
+Q3: A forensic image is:
+Explanation: A forensic image is a complete, sector-by-sector (bit-by-bit) copy of a storage device, including all files, deleted data, slack space, and unallocated areas. Unlike a simple backup or screenshot, it captures every binary detail, ensuring nothing is missed during investigation.
+
+Q4: Hash values are used to:
+Explanation: Hash values (like MD5, SHA-1, SHA-256) act as digital fingerprints for data. By computing a hash before and after evidence handling, investigators can mathematically prove whether the data has been altered — if the hashes match, the integrity is confirmed.
+
+Q5: Chain of custody ensures:
+Explanation: The chain of custody is a documented record that tracks who handled the evidence, when, where, and why, from the moment of seizure to courtroom presentation. It prevents tampering claims and ensures accountability at every stage of evidence handling.
+
+Q6: Volatile data is found in:
+Explanation: Volatile data resides in RAM (Random Access Memory) and is lost the moment power is cut off. This includes running processes, network connections, clipboard contents, and encryption keys — making it critical to capture before shutting down a system.
+
+Q7: File carving is used to:
+Explanation: File carving reconstructs files by identifying their headers, footers, and internal structure signatures directly from raw disk data, bypassing the file system. This technique is especially effective for recovering deleted files when file table entries have been erased.
+
+Q8: Timeline reconstruction helps in:
+Explanation: Timeline reconstruction maps file timestamps (created, modified, accessed) and system logs into a chronological sequence, helping investigators understand the order in which events occurred, identify the attack vector, and establish causality between actions.
+
+Q9: DFRWS model was proposed in:
+Explanation: The Digital Forensic Research Workshop (DFRWS) proposed the first standardized digital forensic investigation framework in 2001, consisting of Identification, Preservation, Collection, Examination, Analysis, and Presentation phases.
+
+Q10: ADFM adds which extra phase?
+Explanation: The Abstract Digital Forensic Model (ADFM) adds a Preparation phase before the standard investigation steps, recognizing that pre-incident planning, tool readiness, and team preparation are essential for a successful forensic investigation.
+
+Q11: IDIP integrates:
+Explanation: The Integrated Digital Investigation Process (IDIP) model uniquely bridges digital and physical crime scene investigations, recognizing that digital evidence often exists alongside physical evidence and both must be investigated in a coordinated manner.
+
+Q12: EEDIP emphasizes:
+Explanation: The Enhanced Integrated Digital Investigation Process (EEDIP) emphasizes automation to speed up forensic processes and traceability to ensure every investigative step is auditable and reproducible, improving both efficiency and legal defensibility.
+
+Q13: UMDFPM uses:
+Explanation: The UML-based Digital Forensic Investigation Process Model (UMDFPM) uses Unified Modeling Language diagrams (use case, activity, sequence diagrams) to formally model and visualize forensic investigation workflows, improving clarity and standardization.
+
+Q14: Examination stage involves:
+Explanation: In the examination stage, investigators filter out irrelevant data from the collected evidence to isolate the pertinent information. This distillation process reduces noise and focuses analysis on data that actually relates to the incident under investigation.
+
+Q15: Preservation stage ensures:
+Explanation: The preservation stage ensures that digital evidence remains in its original, unaltered state throughout the investigation. This involves creating forensic images, computing hash values, and implementing write-blockers to maintain data integrity from collection to courtroom.
+
+Q16: Evidence handling begins with:
+Explanation: Evidence handling begins with seizure — the legal and physical acquisition of digital devices and media from the crime scene. Proper seizure procedures (documentation, labeling, photographing) must be followed to maintain the chain of custody from the very first step.
+
+Q17: Forensic tools must be:
+Explanation: Forensic tools must be scientifically validated and accepted by the professional community to ensure their results are reliable and admissible in court. Using untested or unproven tools risks having evidence challenged or excluded under Daubert/Frye standards.
+
+Q18: Never trust the operating system because:
+Explanation: A suspect's operating system may contain rootkits, Trojans, or other malware that can alter logs, hide files, or present false information. Therefore, investigators should never rely on the suspect OS for evidence collection and must use trusted forensic boot media instead.
+
+Q19: Ethical hacking is:
+Explanation: Ethical hacking, also known as penetration testing, is the practice of deliberately probing systems for vulnerabilities with explicit authorization from the owner. It differs from malicious hacking because it is conducted legally, with defined scope, and aims to improve security.
+
+Q20: Ethical hackers must obtain:
+Explanation: Ethical hackers must obtain documented legal permission (such as a signed contract or scope-of-work agreement) before testing any system. Without authorization, even well-intentioned security testing constitutes unauthorized access and is illegal.
+
+Q21: Reconnaissance phase involves:
+Explanation: Reconnaissance (or information gathering) is the first phase of ethical hacking, where the tester collects publicly available or passively obtained information about the target — such as domain names, IP ranges, employee details, and technologies used — to plan the attack.
+
+Q22: Scanning phase identifies:
+Explanation: The scanning phase uses tools like Nmap and Nessus to identify open ports, running services, and potential vulnerabilities on target systems. This active probing builds on reconnaissance data to map the attack surface before exploitation.
+
+Q23: Exploitation phase attempts:
+Explanation: In the exploitation phase, the ethical hacker attempts a controlled attack against identified vulnerabilities to demonstrate that they can be exploited. This proves the real-world impact of security weaknesses without causing actual harm or data loss.
+
+Q24: White hat hackers are:
+Explanation: White hat hackers are cybersecurity professionals who use their skills legally and ethically, with proper authorization, to identify and fix security vulnerabilities. They work within legal boundaries and report findings to help organizations improve their defenses.
+
+Q25: Black hat hackers act:
+Explanation: Black hat hackers break into systems without authorization for personal gain, financial profit, or malicious intent. Their activities — including data theft, ransomware deployment, and system sabotage — are illegal and punishable under cybercrime laws.
+
+Q26: Grey hat hackers:
+Explanation: Grey hat hackers operate in a middle ground — they access systems without explicit permission but typically without malicious intent, often disclosing vulnerabilities to the affected organization. While their motives may be constructive, their methods still violate computer misuse laws.
+
+Q27: Blue hat hackers are usually:
+Explanation: Blue hat hackers are typically novices or beginners with limited technical skills who engage in hacking out of curiosity or revenge. They often use pre-built tools and scripts rather than developing their own exploits, making them less sophisticated than other hacker categories.
+
+Q28: Green hat hackers are:
+Explanation: Green hat hackers are aspiring or learning hackers who are enthusiastic about understanding hacking techniques but are still in the early stages of developing their skills. They spend time studying and practicing rather than conducting actual attacks.
+
+Q29: Red hat hackers:
+Explanation: Red hat hackers actively seek out and aggressively counter black hat hackers, often using offensive tactics to disrupt malicious operations. Unlike white hats who focus on defense, red hats take a proactive, sometimes retaliatory approach against cybercriminals.
+
+Q30: Network hacking targets:
+Explanation: Network hacking targets networking infrastructure — routers, switches, firewalls, and protocols — to intercept traffic, gain unauthorized access, or disrupt communications. Compromising network devices can give attackers control over an entire organization's data flow.
+
+Q31: AI-powered phishing uses:
+Explanation: AI-powered phishing leverages machine learning algorithms to craft highly personalized and convincing phishing emails by analyzing social media, writing styles, and behavioral patterns of targets, making these attacks significantly harder to detect than traditional phishing.
+
+Q32: Ransomware 2.0 includes:
+Explanation: Ransomware 2.0 encompasses multiple extortion strategies including double extortion (encryption + data theft threat), triple extortion (adding DDoS or harassment), and comprehensive data theft — making it a multi-layered threat that goes far beyond simple file encryption.
+
+Q33: IoT exploits target:
+Explanation: IoT exploits target the vulnerabilities in smart devices — such as cameras, thermostats, and home assistants — which often have weak security, unpatched firmware, and default credentials, making them easy entry points into broader networks.
+
+Q34: Deepfake uses:
+Explanation: Deepfakes use deep learning (a subset of machine learning) techniques like generative adversarial networks (GANs) to create realistic but fabricated audio, video, or images that can impersonate individuals for fraud, disinformation, or blackmail.
+
+Q35: OS downgrade attack installs:
+Explanation: An OS downgrade attack forces a device to run an older, vulnerable version of its operating system by exploiting weak verification mechanisms during updates. The older OS lacks current security patches, giving attackers access to known vulnerabilities.
+
+Q36: Firmware exploits target:
+Explanation: Firmware exploits target low-level software embedded in hardware components like BIOS/UEFI, which runs before the operating system loads. Compromising firmware allows attackers to establish persistent, stealthy control that survives OS reinstallation.
+
+Q37: WAF bypass techniques attempt to:
+Explanation: Web Application Firewall (WAF) bypass techniques involve encoding payloads, using alternative character sets, or fragmenting requests to evade pattern-matching filters. Attackers use these methods to deliver SQL injection, XSS, or other attacks past WAF protections.
+
+Q38: Zero-day vulnerability is:
+Explanation: A zero-day vulnerability is a security flaw that is unknown to the software vendor and has no available patch. The term comes from the fact that developers have had zero days to fix it, making it extremely dangerous as attackers can exploit it freely until discovered.
+
+Q39: NCSP 2013 protects:
+Explanation: India's National Cyber Security Policy (NCSP) 2013 provides a strategic framework to protect the nation's cyberspace, including critical information infrastructure, government networks, and citizen data from cyber threats through awareness, education, and capacity building.
+
+Q40: IT Act 2000 provides legal recognition to:
+Explanation: The Information Technology Act 2000 provides legal recognition to electronic records and digital signatures, enabling e-commerce and e-governance in India. It establishes that electronic documents have the same legal validity as paper documents.
+
+Q41: Section 66C deals with:
+Explanation: Section 66C of the IT Act specifically addresses identity theft — the fraudulent use of another person's unique identification data such as passwords, digital signatures, or biometric information — and prescribes imprisonment up to 3 years and fines.
+
+Q42: Section 66F deals with:
+Explanation: Section 66F of the IT Act deals with cyber terrorism — acts intended to threaten the unity, integrity, security, or sovereignty of India by accessing or damaging critical information infrastructure — and carries the harshest penalties, including life imprisonment.
+
+Q43: DPDP Act 2023 protects:
+Explanation: The Digital Personal Data Protection (DPDP) Act 2023 is India's comprehensive data protection law that safeguards individuals' personal data by establishing rules for its collection, processing, and storage, with penalties for non-compliance up to Rs. 250 crore.
+
+Q44: Data Principal refers to:
+Explanation: Under the DPDP Act, a Data Principal is the individual to whom the personal data relates. Data Principals have specific rights including the right to access, correct, and erase their personal data held by organizations.
+
+Q45: Data Fiduciary refers to:
+Explanation: A Data Fiduciary, as defined in the DPDP Act, is any organization or entity that determines the purpose and means of processing personal data. Data Fiduciaries bear the primary responsibility for ensuring data protection compliance and respecting Data Principals' rights.
+
+Q46: CCPWC scheme protects:
+Explanation: The Cyber Crime Prevention against Women and Children (CCPWC) scheme is a government initiative specifically designed to protect women and children from online threats including cyber stalking, revenge porn, child sexual abuse material, and online grooming.
+
+Q47: CERT-In is responsible for:
+Explanation: CERT-In (Indian Computer Emergency Response Team) is the national nodal agency responsible for collecting, analyzing, and disseminating information on cyber incidents, issuing alerts and advisories, and coordinating incident response across India's cyberspace.
+
+Q48: Section 69 allows government to:
+Explanation: Section 69 of the IT Act empowers the government to intercept, monitor, or decrypt any information generated, transmitted, or stored in any computer resource when necessary for national security, public order, or preventing cognizable offenses.
+
+Q49: Section 43 deals with:
+Explanation: Section 43 of the IT Act addresses unauthorized access to computers and computer systems, prescribing penalties for anyone who accesses or secures access without permission, including downloading data, introducing viruses, or causing system damage.
+
+Q50: Ethical hacking improves:
+Explanation: Ethical hacking improves an organization's overall security posture by proactively identifying vulnerabilities before malicious actors can exploit them. This allows for timely remediation, reducing the risk of breaches and strengthening defensive capabilities.
+
+Q51: In digital forensics, identification stage involves:
+Explanation: In the identification stage of digital forensics, investigators recognize that a security incident has occurred by detecting anomalies, alerts, or reports. This initial recognition triggers the formal forensic investigation process and determines its scope.
+
+Q52: Preservation phase prevents:
+Explanation: The preservation phase prevents evidence tampering by immediately securing digital devices, creating forensic copies with write-blockers, and documenting the state of evidence. This ensures that the original evidence remains unaltered for analysis and court proceedings.
+
+Q53: Collection phase gathers:
+Explanation: The collection phase systematically gathers all relevant digital data from identified sources using forensically sound methods. This includes creating bit-by-bit images, copying log files, and preserving volatile memory — all while maintaining chain of custody documentation.
+
+Q54: Examination phase removes:
+Explanation: During the examination phase, investigators filter out irrelevant data (such as system files, known good files, and unrelated user content) to focus on information pertinent to the case. This reduces the volume of data requiring detailed analysis.
+
+Q55: Presentation stage requires:
+Explanation: The presentation stage requires clear, accurate documentation that communicates forensic findings in a manner understandable to both technical and non-technical audiences, including legal professionals, judges, and juries who may lack technical expertise.
+
+Q56: Decision phase in DFRWS involves:
+Explanation: In the DFRWS framework, the Decision phase involves determining what legal action should be taken based on the forensic findings — whether to prosecute, seek civil remedies, implement administrative actions, or close the case.
+
+Q57: ADFM Return of Evidence phase ensures:
+Explanation: The ADFM's Return of Evidence phase ensures that seized digital devices and media are properly returned to their owners after the investigation concludes, following legal procedures and documentation to maintain accountability even at the final stage.
+
+Q58: IDIP readiness phase ensures:
+Explanation: The IDIP Readiness phase focuses on proactive preparation before any incident occurs, including establishing forensic capabilities, training personnel, deploying monitoring tools, and creating response plans so the team is prepared when an incident strikes.
+
+Q59: Deployment phase begins when:
+Explanation: In the IDIP model, the Deployment phase is activated when an incident is detected, at which point the forensic team mobilizes and deploys to the scene with appropriate tools, equipment, and authorization to begin the investigation.
+
+Q60: Review phase in IDIP focuses on:
+Explanation: The Review phase in IDIP focuses on analyzing the completed investigation to identify lessons learned, improve procedures, update tools, and refine protocols for future cases — creating a continuous improvement cycle for the forensic team.
+
+Q61: EEDIP Authorization phase ensures:
+Explanation: The EEDIP Authorization phase ensures that all necessary legal permissions, warrants, and organizational approvals are obtained before any forensic investigation begins, preventing evidence from being challenged or excluded due to procedural violations.
+
+Q62: Extended model supports:
+Explanation: Extended forensic models support multi-agency coordination by providing standardized processes that enable different organizations (law enforcement, forensic labs, legal teams) to collaborate effectively while maintaining evidence integrity and jurisdictional compliance.
+
+Q63: Use case diagram shows:
+Explanation: A use case diagram, part of UML modeling, shows the actors (users, systems, external entities) and their roles or interactions with the forensic investigation system, helping to define boundaries and responsibilities in the investigation process.
+
+Q64: Activity diagram represents:
+Explanation: An activity diagram represents the workflow or sequence of activities in a forensic process, showing decision points, parallel actions, and the flow from one step to the next — making complex investigation procedures easier to understand and follow.
+
+Q65: Sequence diagram shows:
+Explanation: A sequence diagram shows the order of interactions between different components or actors over time, illustrating which entity sends what message to whom and in what sequence — critical for modeling forensic tool workflows and evidence handling procedures.
+
+Q66: RAM data should be collected:
+Explanation: RAM data must be collected before shutdown because volatile memory is lost when power is removed. Running processes, encryption keys, network connections, and unsaved data exist only in RAM, making pre-shutdown collection essential for a complete forensic picture.
+
+Q67: Steganography detection finds:
+Explanation: Steganography detection (steganalysis) identifies hidden data embedded within seemingly normal files like images, audio, or video. Unlike encryption which scrambles data visibly, steganography conceals the very existence of the hidden information.
+
+Q68: Keyword search helps identify:
+Explanation: Keyword searching scans through acquired data for specific terms, names, phrases, or patterns that may indicate suspicious or relevant activity. This targeted approach helps investigators quickly identify pertinent evidence within large datasets.
+
+Q69: Documentation stage increases:
+Explanation: Thorough documentation increases the legal credibility of forensic findings by providing a verifiable, auditable trail of every action taken. Courts rely on documentation to assess whether proper procedures were followed and whether evidence can be trusted.
+
+Q70: Ethical hackers simulate:
+Explanation: Ethical hackers simulate real-world cyberattacks under controlled, legal conditions to identify vulnerabilities that actual attackers could exploit. These controlled simulations provide actionable findings without the risk of actual damage or data loss.
+
+Q71: Maintaining access phase checks:
+Explanation: The Maintaining Access phase tests whether an attacker could establish persistent access to a compromised system (via backdoors, scheduled tasks, or rootkits). This demonstrates the real-world risk of long-term compromise if vulnerabilities remain unfixed.
+
+Q72: Reporting phase includes:
+Explanation: The reporting phase documents all discovered vulnerabilities, their severity, exploitation methods used, and recommended remediation steps. A comprehensive report enables the organization to prioritize and address security gaps systematically.
+
+Q73: Ethical hacking improves:
+Explanation: By proactively identifying vulnerabilities and testing incident response procedures, ethical hacking improves an organization's incident response readiness — ensuring teams can detect, contain, and recover from actual attacks more quickly and effectively.
+
+Q74: AI phishing emails often show:
+Explanation: AI-generated phishing emails exhibit perfect grammar and natural language because machine learning models (like GPT) can produce flawlessly written, contextually appropriate messages — eliminating the spelling and grammar errors that traditionally helped users identify phishing attempts.
+
+Q75: Double extortion ransomware includes:
+Explanation: Double extortion ransomware combines file encryption with data exfiltration — attackers not only lock the victim's data but also threaten to publish stolen sensitive information if the ransom isn't paid, creating two separate leverage points against the victim.
+
+Q76: Triple extortion adds:
+Explanation: Triple extortion ransomware adds a third layer of pressure beyond encryption and data theft — such as launching DDoS attacks against the victim's services or directly blackmailing individuals whose data was stolen — to further coerce payment.
+
+Q77: Indicators of ransomware include:
+Explanation: The primary indicator of a ransomware attack is the mass encryption of files across the system, often accompanied by ransom notes and file extension changes. This systematic, rapid encryption of numerous files distinguishes ransomware from other malware.
+
+Q78: EDR stands for:
+Explanation: EDR (Endpoint Detection and Response) is a security solution that continuously monitors endpoints (desktops, laptops, servers) for suspicious activity, detects threats in real-time, and provides automated or manual response capabilities to contain and remediate incidents.
+
+Q79: IoT default passwords cause:
+Explanation: IoT devices often ship with default, well-known passwords that many users never change, creating a significant vulnerability. Attackers can easily look up default credentials online and gain unauthorized access to these devices, often joining them to botnets.
+
+Q80: VLAN helps in:
+Explanation: VLANs (Virtual Local Area Networks) enable network isolation by logically segmenting a physical network into separate broadcast domains. This limits the spread of attacks, contains breaches, and enforces security boundaries between different network zones.
+
+Q81: Deepfake detection checks:
+Explanation: Deepfake detection techniques analyze metadata inconsistencies, compression artifacts, facial micro-expressions, and pixel-level anomalies that are not visible to the human eye but reveal the synthetic nature of AI-generated media content.
+
+Q82: OS hacking targets:
+Explanation: OS hacking targets vulnerabilities within operating systems — such as privilege escalation flaws, buffer overflows, or kernel exploits — to gain unauthorized access, execute arbitrary code, or escalate privileges on the compromised system.
+
+Q83: Secure boot prevents:
+Explanation: Secure boot is a firmware feature that verifies the digital signature of each boot component before execution, preventing unauthorized or malicious firmware, bootloaders, or kernel modifications from loading during the system startup process.
+
+Q84: TPM stands for:
+Explanation: TPM (Trusted Platform Module) is a dedicated hardware chip on the motherboard that provides hardware-based security functions including key generation, storage, and measurement of system integrity, forming the foundation for secure boot and disk encryption.
+
+Q85: SQL injection is:
+Explanation: SQL injection is an application-layer vulnerability where attackers inject malicious SQL code into input fields to manipulate database queries, potentially accessing, modifying, or deleting unauthorized data. It exploits improper input validation in web applications.
+
+Q86: Log4j was example of:
+Explanation: The Log4j vulnerability (CVE-2021-44228) was a critical zero-day exploit in the widely used Apache Log4j logging library that allowed remote code execution through crafted log messages. Its massive impact across millions of applications made it one of the most severe zero-days in history.
+
+Q87: NCSP focuses on protecting:
+Explanation: India's National Cyber Security Policy focuses on protecting critical information infrastructure — systems vital to national security, economy, and public health — including power grids, financial systems, and communication networks from cyber threats.
+
+Q88: CERT-In stands for:
+Explanation: CERT-In stands for Computer Emergency Response Team - India, the nationally designated organization for cybersecurity incident response, threat intelligence sharing, and coordination of cybersecurity efforts across government and private sectors in India.
+
+Q89: Section 66D deals with:
+Explanation: Section 66D of the IT Act addresses online cheating by impersonation — using communication devices or computer resources to deceive and cheat someone — and prescribes imprisonment up to 3 years and fines up to Rs. 1 lakh.
+
+Q90: Section 72A relates to:
+Explanation: Section 72A of the IT Act deals with breach of confidentiality and privacy by someone who has access to personal data in the course of a contract and discloses it without consent, prescribing imprisonment up to 3 years and/or fines.
+
+Q91: DPDP requires:
+Explanation: The DPDP Act mandates that organizations must obtain clear, informed, and specific consent from Data Principals before collecting and processing their personal data, ensuring individuals have control over how their information is used.
+
+Q92: Data Protection Board oversees:
+Explanation: The Data Protection Board, established under the DPDP Act, oversees compliance with data protection regulations, investigates breaches, adjudicates disputes, and can impose penalties on organizations that violate data protection requirements.
+
+Q93: CCPWC portal allows:
+Explanation: The CCPWC (Cyber Crime Prevention against Women and Children) portal enables citizens to report cybercrimes online, particularly those targeting women and children, providing a streamlined mechanism for filing complaints and tracking investigation progress.
+
+Q94: Cyber stalking is:
+Explanation: Cyber stalking is a form of online harassment where an individual uses the internet, social media, or other digital means to persistently follow, threaten, or intimidate someone, often monitoring their activities and location without consent.
+
+Q95: Evidence integrity is verified using:
+Explanation: Hash values (such as MD5, SHA-1, SHA-256) verify evidence integrity by producing a unique fixed-length output for any given input. If even a single bit of the evidence changes, the hash value changes completely, proving tampering.
+
+Q96: Memory dump analysis helps in:
+Explanation: Memory dump analysis examines the captured contents of RAM to detect malware, extract encryption keys, identify running malicious processes, and find evidence that exists only in volatile memory and would be lost after system shutdown.
+
+Q97: Forensic readiness improves:
+Explanation: Forensic readiness is the proactive preparation of an organization's people, processes, and technology to efficiently conduct digital investigations when incidents occur. Being prepared in advance reduces response time, preserves more evidence, and improves the quality of investigative outcomes.
+
+Q98: Legal admissibility requires:
+Explanation: For digital evidence to be legally admissible in court, a proper chain of custody must be maintained — documenting every person who handled the evidence, when, where, and for what purpose. Without this documented trail, opposing counsel can challenge the evidence's authenticity and reliability.
+
+Q99: Ethical hacking reduces:
+Explanation: By proactively identifying and helping remediate vulnerabilities before attackers discover them, ethical hacking directly reduces an organization's security risks. It shifts the balance from reactive incident response to preventive security, minimizing potential breach damage and data loss.
+
+Q100: The ultimate aim of digital forensics is:
+Explanation: The ultimate aim of digital forensics is to produce court-admissible evidence — digital evidence that has been properly identified, preserved, collected, examined, and analyzed following established procedures so that it can withstand legal scrutiny and be used in prosecution or litigation.
+
+Q101: In digital forensics, integrity ensures that evidence is:
+Explanation: Integrity in digital forensics means ensuring that evidence remains authentic and completely unchanged from the moment it was collected. Any alteration — whether accidental or intentional — can compromise the evidence's validity and render it inadmissible in legal proceedings.
+
+Q102: A write blocker is used to:
+Explanation: A write blocker is a hardware or software tool that prevents any write operations to the source evidence drive during the imaging process. Without a write blocker, simply connecting a drive could modify timestamps, logs, or file metadata, potentially destroying critical evidence.
+
+Q103: Forensic duplication is also known as:
+Explanation: Forensic duplication, also known as a bit-stream copy, creates an exact sector-by-sector replica of the original storage device, including all data, slack space, unallocated areas, and inter-partition gaps. This ensures that no potential evidence is missed during the copying process.
+
+Q104: Volatile evidence includes:
+Explanation: Volatile evidence includes RAM contents such as running processes, open network connections, clipboard data, login sessions, and encryption keys — all of which are lost when power is removed. This is why volatile memory must be captured first, before shutting down the system.
+
+Q105: Log analysis helps investigators detect:
+Explanation: Log analysis examines system logs, application logs, security logs, and network logs to detect patterns of system activities, including unauthorized access attempts, malware execution, policy violations, and anomalous behavior that may indicate a security incident.
+
+Q106: Evidence should be stored in:
+Explanation: Digital evidence must be stored in a secure, access-controlled environment — such as a locked evidence room or encrypted digital storage — to prevent unauthorized access, tampering, accidental deletion, or environmental damage that could compromise its integrity and admissibility.
+
+Q107: MD5 and SHA are examples of:
+Explanation: MD5 (Message Digest 5) and SHA (Secure Hash Algorithm) are hash algorithms that generate unique fixed-length digests from input data. In forensics, they are used to verify that evidence has not been altered by comparing hash values computed at different stages of handling.
+
+Q108: Forensic soundness means:
+Explanation: Forensic soundness means that all investigation procedures use approved, validated tools and follow established methodologies that have been accepted by the forensic community and courts. This ensures that results are reliable, reproducible, and defensible under legal challenge.
+
+Q109: Chain of custody includes:
+Explanation: The chain of custody includes all of the following: who collected the evidence, when and where it was collected, who transported it, who analyzed it, how it was stored, and every transfer of custody. This comprehensive documentation ensures accountability at every stage.
+
+Q110: Preparation phase in investigation ensures:
+Explanation: The preparation phase in an investigation ensures legal readiness by obtaining necessary warrants, establishing scope and authority, preparing documentation templates, and ensuring all team members understand legal requirements and chain of custody procedures before beginning work.
+
+Q111: Ethical hacking primarily identifies:
+Explanation: Ethical hacking primarily identifies security vulnerabilities — weaknesses in systems, applications, networks, or configurations — that could be exploited by malicious actors. By finding these gaps first, organizations can remediate them before they are weaponized.
+
+Q112: Penetration testing is conducted:
+Explanation: Penetration testing is conducted only with explicit, documented authorization from the system owner. This legal permission distinguishes it from unauthorized hacking and protects the tester from prosecution while defining the boundaries and scope of the assessment.
+
+Q113: Vulnerability assessment focuses on:
+Explanation: Vulnerability assessment focuses on systematically identifying weaknesses in systems, networks, and applications using automated scanning tools and manual review. Unlike penetration testing, it does not attempt to exploit vulnerabilities but catalogs and prioritizes them for remediation.
+
+Q114: Social engineering attacks exploit:
+Explanation: Social engineering attacks exploit human psychology rather than technical vulnerabilities, manipulating people into divulging confidential information, clicking malicious links, or performing actions that compromise security. Techniques include phishing, pretexting, baiting, and tailgating.
+
+Q115: Multi-Factor Authentication (MFA) improves:
+Explanation: Multi-Factor Authentication (MFA) improves security by requiring two or more independent verification factors (something you know, have, or are) before granting access. Even if one factor is compromised, the attacker still cannot access the account without the remaining factors.
+
+Q116: SPF, DKIM, and DMARC protect against:
+Explanation: SPF (Sender Policy Framework), DKIM (DomainKeys Identified Mail), and DMARC (Domain-based Message Authentication, Reporting & Conformance) are email authentication protocols that work together to verify sender identity and protect against phishing and email spoofing attacks.
+
+Q117: Double extortion ransomware threatens:
+Explanation: Double extortion ransomware not only encrypts the victim's files but also threatens to publish or sell the stolen data if the ransom is not paid. This dual threat is more coercive than encryption alone, as data publication can cause regulatory penalties and reputational damage.
+
+Q118: Endpoint Detection and Response tools monitor:
+Explanation: Endpoint Detection and Response (EDR) tools continuously monitor end-user devices — desktops, laptops, and servers — for suspicious behavior, malware infections, and policy violations. They provide real-time visibility into endpoint activities and enable rapid threat containment.
+
+Q119: Firmware malware can survive:
+Explanation: Firmware-level malware is particularly dangerous because it resides in the BIOS/UEFI or device firmware, which loads before the operating system. This means the malware persists even after OS reinstallation, hard drive replacement, or system formatting, making it extremely difficult to remove.
+
+Q120: Zero-day exploit targets:
+Explanation: Zero-day exploits target vulnerabilities that are unknown to the vendor and for which no patch exists. Because defenders have had zero days to prepare, these exploits are exceptionally dangerous and can cause widespread damage before the vulnerability is discovered and fixed.
+
+Q121: Section 66B relates to:
+Explanation: Section 66B of the IT Act relates to receiving stolen computer resources or communication devices — knowing them to be stolen — and prescribes imprisonment up to 3 years and/or fines, addressing the demand side of stolen digital property.
+
+Q122: Section 66C addresses:
+Explanation: Section 66C addresses identity theft — the fraudulent or dishonest use of another person's unique identification data, such as passwords, digital signatures, or biometric information — carrying penalties of imprisonment up to 3 years and fines up to Rs. 1 lakh.
+
+Q123: Section 66D punishes:
+Explanation: Section 66D punishes cheating by personation — using communication devices or computer resources to impersonate someone else for the purpose of fraud or deception — with imprisonment up to 3 years and fines up to Rs. 1 lakh.
+
+Q124: Section 66F defines:
+Explanation: Section 66F defines cyber terrorism as acts intended to threaten India's unity, integrity, security, or sovereignty by unlawfully accessing or damaging critical information infrastructure or causing damage through digital means, carrying penalties up to life imprisonment.
+
+Q125: Section 72A deals with:
+Explanation: Section 72A deals with breach of confidentiality by any person who, pursuant to a contract, has access to personal data and discloses it without consent or in breach of the contract, prescribing imprisonment up to 3 years and/or fines.
+
+Q126: DPDP Act 2023 requires organizations to:
+Explanation: The DPDP Act 2023 requires organizations to obtain user consent before collecting and processing personal data. Consent must be free, specific, informed, unconditional, and unambiguous, with clear notice about what data is being collected and for what purpose.
+
+Q127: Data Principal has right to:
+Explanation: Under the DPDP Act, a Data Principal has the right to access their personal data held by any Data Fiduciary, as well as the right to correction, erasure, nomination, and grievance redressal — ensuring individuals maintain control over their personal information.
+
+Q128: Data Fiduciary must ensure:
+Explanation: A Data Fiduciary must ensure lawful data processing — meaning data is collected only for specified, legitimate purposes with proper consent, processed fairly, and protected with appropriate security measures to prevent unauthorized access or breaches.
+
+Q129: CCPWC portal enables:
+Explanation: The CCPWC portal enables citizens to report cybercrimes online, particularly those against women and children. It provides a user-friendly interface for filing complaints, uploading evidence, and tracking case progress without needing to visit a police station.
+
+Q130: CERT-In provides:
+Explanation: CERT-In provides incident response services including analyzing and responding to cyber threats, issuing security advisories and vulnerability notes, coordinating incident handling across organizations, and serving as the national point of contact for international cybersecurity cooperation.
+
+Q131: Forensic imaging tools must:
+Explanation: Forensic imaging tools must preserve all metadata — including file timestamps (created, modified, accessed), file permissions, ownership information, and extended attributes — because this metadata can be crucial evidence in establishing timelines and user activity patterns.
+
+Q132: Metadata analysis helps determine:
+Explanation: Metadata analysis helps determine when a file was created, last modified, or accessed, along with author information, device identifiers, and GPS coordinates. These details are critical for building forensic timelines and attributing actions to specific users or devices.
+
+Q133: In ransomware case, volatile memory capture helps find:
+Explanation: In ransomware investigations, capturing volatile memory before shutdown is critical because encryption keys used by the ransomware may still reside in RAM. Extracting these keys can potentially enable decryption of the locked files without paying the ransom.
+
+Q134: Digital evidence admissibility depends on:
+Explanation: Digital evidence admissibility in court depends on proper handling throughout the evidence lifecycle — from lawful seizure and documented chain of custody to forensically sound collection, preservation, examination, and analysis. Any procedural failure can render evidence inadmissible.
+
+Q135: Incident response planning improves:
+Explanation: Incident response planning improves an organization's cyber resilience by establishing predefined procedures, roles, and communication channels for handling security incidents. A well-practiced plan enables faster containment, reduced damage, and quicker recovery from attacks.
+
+Q136: Ethical hacking is different from malicious hacking because it is:
+Explanation: Ethical hacking is different from malicious hacking primarily because it is legal — conducted with explicit authorization and defined scope from the system owner. While the techniques may overlap, the legal permission, intent, and controlled environment make ethical hacking lawful.
+
+Q137: Reconnaissance can be:
+Explanation: Reconnaissance can be both passive (gathering publicly available information without directly interacting with the target, such as WHOIS lookups and OSINT) and active (directly probing the target through port scanning, ping sweeps, or service enumeration).
+
+Q138: Network segmentation limits:
+Explanation: Network segmentation limits the spread of attacks by dividing a network into isolated segments or zones. If one segment is compromised, the attacker's lateral movement is contained within that zone, preventing access to the entire network and protecting critical assets.
+
+Q139: Security audits help:
+Explanation: Security audits systematically review an organization's security policies, procedures, controls, and technical implementations to identify risks, gaps, and non-compliance. They provide an independent assessment that helps prioritize security improvements and meet regulatory requirements.
+
+Q140: Phishing indicators include:
+Explanation: Phishing indicators include all of the following: urgent or threatening language requesting immediate action, suspicious sender addresses or domain mismatches, unexpected attachments or links, grammatical errors (in traditional phishing), requests for sensitive information, and mismatched URLs.
+
+Q141: Malware analysis is part of:
+Explanation: Malware analysis is an integral part of digital forensics that involves examining malicious software to understand its behavior, origin, capabilities, and impact. This analysis helps investigators attribute attacks, identify compromise indicators, and develop detection and remediation strategies.
+
+Q142: Evidence examination should be done on:
+Explanation: Evidence examination should always be performed on a forensic copy (working copy), never on the original evidence. This preserves the original in its unaltered state and ensures that any mistakes or modifications during analysis do not affect the primary evidence.
+
+Q143: Deepfake forensic detection checks:
+Explanation: Deepfake forensic detection checks for frame inconsistencies — such as unnatural facial movements, inconsistent lighting and shadows, blending artifacts at facial boundaries, and irregular eye blinking patterns — that reveal the synthetic nature of AI-generated video content.
+
+Q144: IoT botnets are commonly used for:
+Explanation: IoT botnets — networks of compromised smart devices like cameras, routers, and home appliances — are commonly used for DDoS attacks because their sheer numbers and often high bandwidth can generate massive volumes of traffic to overwhelm target servers.
+
+Q145: OS downgrade attacks exploit:
+Explanation: OS downgrade attacks exploit old vulnerabilities by reverting a system to an earlier, unpatched version of the operating system. The older version contains known security flaws that attackers can easily exploit since security patches from subsequent updates are removed.
+
+Q146: Cyber law ensures:
+Explanation: Cyber law ensures the legal regulation of cyberspace by defining what constitutes cybercrime, establishing penalties for offenses, providing legal frameworks for digital evidence, protecting privacy rights, and enabling lawful investigation and prosecution of technology-related crimes.
+
+Q147: National Cyber Security Policy 2013 strengthens:
+Explanation: The National Cyber Security Policy 2013 strengthens India's cyber defense framework by outlining strategies for protecting critical infrastructure, promoting cybersecurity research and development, building skilled workforce, and establishing public-private partnerships for threat intelligence sharing.
+
+Q148: Data breach penalties under DPDP can be:
+Explanation: Under the DPDP Act, data breach penalties can include financial fines of up to Rs. 250 crore per incident, depending on the nature and severity of the breach. The Data Protection Board determines the penalty based on the scope, nature, and impact of the violation.
+
+Q149: Cybercrime against women includes:
+Explanation: Cybercrime against women includes all forms of online victimization — cyber stalking, revenge porn, online harassment, identity theft for impersonation, morphed images, and threatening or defamatory messages — all of which are addressed under various sections of the IT Act.
+
+Q150: The main goal of ethical hacking is to:
+Explanation: The main goal of ethical hacking is to strengthen cybersecurity by proactively discovering and helping remediate vulnerabilities before malicious actors can exploit them. This defensive purpose fundamentally distinguishes it from criminal hacking, which seeks to exploit weaknesses for personal gain.
+
+Q151: Digital forensics supports law enforcement by:
+Explanation: Digital forensics supports law enforcement by recovering digital evidence from computers, phones, and networks that can be used to identify suspects, establish timelines, prove or disprove allegations, and secure convictions in both cybercrime and traditional criminal cases.
+
+Q152: Integrity of evidence is verified using:
+Explanation: Evidence integrity is verified through hash comparison — computing hash values (such as MD5 or SHA-256) at the time of evidence collection and again at any subsequent point. Matching hashes mathematically prove that the evidence has not been altered in any way.
+
+Q153: A forensic workstation is used to:
+Explanation: A forensic workstation is a dedicated, specially configured computer used to analyze copied evidence in a controlled environment. It runs forensic software tools and is isolated from networks to prevent contamination, ensuring that analysis does not affect the original evidence.
+
+Q154: Evidence contamination occurs when:
+Explanation: Evidence contamination occurs when original data is accidentally or intentionally altered — such as by booting a suspect system, modifying files, or failing to use write blockers. Even minor changes can compromise the evidence's integrity and render it inadmissible in court.
+
+Q155: Forensic timeline helps determine:
+Explanation: A forensic timeline helps determine the exact sequence of the attack — when the intrusion began, which systems were accessed, what data was exfiltrated, and when the attacker exited. This chronological mapping is essential for understanding the full scope of the incident.
+
+Q156: A memory dump contains:
+Explanation: A memory dump contains a snapshot of all active system processes at the time of capture, including running programs, loaded DLLs, open network connections, registry data, and encryption keys — providing a comprehensive view of the system's live state.
+
+Q157: Disk imaging tools must maintain:
+Explanation: Disk imaging tools must maintain write protection to ensure that the imaging process does not modify the source drive in any way. Any write operation to the original evidence could alter timestamps, overwrite deleted data, or corrupt the evidence permanently.
+
+Q158: Metadata can reveal:
+Explanation: Metadata can reveal all of the following: file creation and modification dates, author or creator information, GPS location data from photos, device identifiers, software versions used, edit history, and access permissions — making it a rich source of forensic evidence.
+
+Q159: In ransomware investigation, first action is:
+Explanation: In a ransomware investigation, the first action should be to isolate the infected system from the network to prevent the ransomware from spreading to other connected devices and to stop any ongoing data exfiltration by the attackers.
+
+Q160: Digital forensics ensures evidence is:
+Explanation: Digital forensics ensures evidence is court admissible by following rigorous, standardized procedures at every stage — from lawful seizure and documented chain of custody to forensically sound imaging, validated analysis tools, and clear presentation of findings.
+
+Q161: Ethical hacking requires defining:
+Explanation: Ethical hacking requires defining the scope of testing — specifying which systems, networks, and applications are included, what types of tests will be performed, and what is explicitly excluded — to ensure the assessment stays within legal and authorized boundaries.
+
+Q162: Passive reconnaissance involves:
+Explanation: Passive reconnaissance involves gathering publicly available information about the target without any direct interaction, such as searching WHOIS records, social media profiles, DNS records, and job postings. Since the target is not contacted, this phase is undetectable.
+
+Q163: Active reconnaissance involves:
+Explanation: Active reconnaissance involves direct interaction with the target system, such as port scanning, service enumeration, banner grabbing, and ping sweeps. While this yields more detailed information, it is also detectable by intrusion detection systems and security monitoring tools.
+
+Q164: Port scanning identifies:
+Explanation: Port scanning identifies open network ports and the services running on them, revealing the attack surface of a target system. Each open port represents a potential entry point that an attacker could exploit to gain unauthorized access.
+
+Q165: Exploitation phase tests:
+Explanation: The exploitation phase tests the real-world impact of identified vulnerabilities by actually exploiting them in a controlled manner. This demonstrates what an attacker could achieve — such as accessing sensitive data or gaining system control — if the vulnerability were left unpatched.
+
+Q166: Privilege escalation attack aims to:
+Explanation: Privilege escalation attacks aim to gain higher system access than initially obtained — moving from a standard user account to administrator or root-level privileges. This allows the attacker to access restricted data, install software, and control the entire system.
+
+Q167: Maintaining access helps attacker test:
+Explanation: Maintaining access helps the ethical hacker test persistence — whether it's possible to establish a permanent backdoor or foothold in the system that survives reboots and credential changes, demonstrating the risk of long-term undetected compromise.
+
+Q168: Reporting phase should include:
+Explanation: The reporting phase should include all of the following: executive summary, detailed vulnerability descriptions, proof-of-concept demonstrations, risk ratings, remediation recommendations, and supporting evidence — providing the organization a complete and actionable security assessment.
+
+Q169: Risk assessment helps identify:
+Explanation: Risk assessment systematically identifies potential threats, evaluates the likelihood and impact of each threat, and prioritizes them based on risk level. This enables organizations to allocate resources effectively and implement controls for the most critical risks first.
+
+Q170: Firewall primarily protects:
+Explanation: A firewall primarily protects the network perimeter by monitoring and controlling incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between trusted internal networks and untrusted external networks, blocking unauthorized access attempts.
+
+Q171: AI phishing scams are dangerous because they are:
+Explanation: AI phishing scams are dangerous because they are all of the following: highly convincing with perfect grammar, personalized to target specific individuals, difficult to distinguish from legitimate communications, and scalable — attackers can generate thousands of unique, targeted phishing messages automatically.
+
+Q172: Ransomware encryption uses:
+Explanation: Ransomware encryption uses strong cryptographic algorithms (typically AES for file encryption and RSA for key exchange) to lock the victim's files. The symmetric encryption key is itself encrypted with the attacker's public key, making decryption impossible without the attacker's private key.
+
+Q173: DDoS attack aims to:
+Explanation: A DDoS (Distributed Denial of Service) attack aims to overload a server by flooding it with massive volumes of traffic from multiple compromised sources (botnets), exhausting its bandwidth, processing power, or memory so that legitimate users cannot access the service.
+
+Q174: IoT botnets consist of:
+Explanation: IoT botnets consist of compromised smart devices — such as IP cameras, home routers, smart TVs, and IoT sensors — that have been infected with malware and are controlled remotely by attackers, typically to launch coordinated DDoS attacks at massive scale.
+
+Q175: Deepfake fraud may involve:
+Explanation: Deepfake fraud may involve CEO impersonation — using AI-generated video or audio to convincingly mimic a company executive's voice or appearance to authorize fraudulent wire transfers, approve fake transactions, or issue deceptive instructions to employees.
+
+Q176: Secure firmware updates require:
+Explanation: Secure firmware updates require digital signatures to verify that the update is authentic and has not been tampered with or replaced by an attacker. The device verifies the signature against a trusted certificate before applying the update, preventing malicious firmware installation.
+
+Q177: BIOS malware is dangerous because it:
+Explanation: BIOS malware is particularly dangerous because it survives OS reinstallation and even hard drive replacement. Since the BIOS loads before the operating system, BIOS-level malware can re-infect a freshly installed OS and maintain persistent control over the system indefinitely.
+
+Q178: WAF protects against:
+Explanation: A Web Application Firewall (WAF) protects against web application attacks such as SQL injection, cross-site scripting (XSS), file inclusion, and CSRF by inspecting HTTP/HTTPS traffic and filtering out malicious requests before they reach the application.
+
+Q179: SQL injection targets:
+Explanation: SQL injection targets database queries by injecting malicious SQL code through unsanitized input fields in web applications. This can allow attackers to bypass authentication, read sensitive data, modify database records, or execute administrative operations on the database server.
+
+Q180: Zero-day attacks are hard to prevent because:
+Explanation: Zero-day attacks are hard to prevent because no patch is available for the unknown vulnerability being exploited. Traditional security measures like antivirus signatures and intrusion detection rules cannot detect the attack since it has never been seen before.
+
+Q181: NCSP 2013 promotes:
+Explanation: The National Cyber Security Policy 2013 promotes public-private partnership by encouraging collaboration between government agencies, private sector companies, and academic institutions to share threat intelligence, develop cybersecurity standards, and build national cyber defense capabilities.
+
+Q182: Critical Information Infrastructure includes:
+Explanation: Critical Information Infrastructure includes all of the following: power grids and energy systems, financial and banking networks, telecommunications infrastructure, government databases, transportation systems, and healthcare networks — systems whose disruption would severely impact national security and public welfare.
+
+Q183: IT Act 2000 supports:
+Explanation: The IT Act 2000 supports all of the following: legal recognition of electronic records and digital signatures, facilitation of e-commerce and e-governance, establishment of cyber appellate tribunals, definition of cybercrimes and penalties, and provision for investigation of technology-related offenses.
+
+Q184: Section 43 penalizes:
+Explanation: Section 43 of the IT Act penalizes unauthorized access to computer systems, including acts such as downloading or copying data without permission, introducing viruses or malware, damaging or disrupting computer systems, and denying authorized users access to their systems.
+
+Q185: Section 69 authorizes:
+Explanation: Section 69 authorizes the government to intercept, monitor, or decrypt any information stored in or transmitted through computer resources when necessary for the sovereignty, defense, security, or public order of India, subject to prescribed procedures and safeguards.
+
+Q186: DPDP Act emphasizes:
+Explanation: The DPDP Act emphasizes data privacy rights by establishing that individuals (Data Principals) have fundamental rights over their personal data, including the right to know what data is collected, the right to correct it, the right to erase it, and the right to nominate another person.
+
+Q187: Consent under DPDP must be:
+Explanation: Consent under DPDP must be clear and informed — meaning the Data Principal must receive complete information about what data is being collected, why, how it will be used, and with whom it will be shared, and the consent must be given freely without coercion.
+
+Q188: CCPWC scheme focuses on:
+Explanation: The CCPWC scheme focuses on cyber safety awareness by conducting education and training programs for women and children about online threats, safe browsing practices, how to recognize cybercrime, and how to report incidents through the CCPWC portal.
+
+Q189: Cyber harassment includes:
+Explanation: Cyber harassment includes all of the following: online threatening or intimidating messages, persistent unwanted contact or stalking, sharing private images without consent (revenge porn), defamatory posts, hate speech, and any digital communication intended to cause fear, distress, or humiliation.
+
+Q190: Cyber terrorism under Section 66F includes:
+Explanation: Cyber terrorism under Section 66F includes any act intended to threaten India's unity, integrity, security, or sovereignty by accessing or attempting to access critical information infrastructure, or causing damage through digital means that results in loss of life or property.
+
+Q191: Forensic documentation must be:
+Explanation: Forensic documentation must be all of the following: accurate (reflecting exactly what was observed and done), complete (leaving no gaps), contemporaneous (recorded at the time events occur), and clear (understandable by both technical and non-technical audiences).
+
+Q192: Evidence preservation ensures:
+Explanation: Evidence preservation ensures no alteration of the original evidence from the moment it is seized until it is presented in court. This is achieved through write blockers, forensic imaging, hash verification, secure storage, and strict chain of custody procedures.
+
+Q193: Digital investigation models provide:
+Explanation: Digital investigation models provide a structured approach by defining clear phases, tasks, and deliverables for forensic investigations. Standardized models like DFRWS, ADFM, and IDIP ensure consistency, repeatability, and legal defensibility across different investigations and investigators.
+
+Q194: Forensic readiness reduces:
+Explanation: Forensic readiness reduces investigation delay by having pre-established procedures, trained personnel, deployed tools, and documented protocols ready before an incident occurs. This eliminates the time spent on ad-hoc preparation and enables immediate, effective response.
+
+Q195: Ethical hacking certifications include:
+Explanation: Ethical hacking certifications include all of the following: CEH (Certified Ethical Hacker), OSCP (Offensive Security Certified Professional), CompTIA PenTest+, CISM (Certified Information Security Manager), and CHFI (Computer Hacking Forensic Investigator) — each validating different aspects of ethical hacking expertise.
+
+Q196: Social engineering prevention requires:
+Explanation: Social engineering prevention requires awareness training that teaches employees to recognize manipulation tactics such as phishing emails, pretexting calls, baiting attacks, and tailgating. Regular training and simulated attacks help build a human firewall against these psychological exploits.
+
+Q197: Cyber resilience means:
+Explanation: Cyber resilience means an organization's ability to recover quickly from cyber attacks while maintaining business continuity. It goes beyond prevention to include detection, response, recovery, and adaptation — ensuring the organization can withstand and bounce back from incidents.
+
+Q198: Incident response plan includes:
+Explanation: An incident response plan includes all of the following: preparation (establishing capabilities and procedures), identification (detecting and classifying incidents), containment (limiting damage and preventing spread), eradication (removing the threat), recovery (restoring systems), and lessons learned (improving future response).
+
+Q199: Digital forensic investigation ends with:
+Explanation: A digital forensic investigation ends with case closure — the formal conclusion after all evidence has been analyzed, findings have been documented, reports have been submitted, and any legal proceedings have concluded or the decision has been made not to pursue legal action.
+
+Q200: The ultimate objective of UNIT 5 concepts is:
+Explanation: The ultimate objective of Unit 5 concepts is to achieve a secure and legally compliant cyberspace — where digital forensic capabilities ensure evidence-based justice, ethical hacking strengthens defenses, and cyber laws protect individuals and organizations from evolving digital threats.

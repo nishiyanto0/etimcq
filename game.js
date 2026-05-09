@@ -17,10 +17,19 @@ const UNITS = [
 ];
 
 // ── STORAGE KEYS ────────────────────────────
+import { createClient } from '@insforge/sdk';
+
 const INSFORGE_CONFIG = {
-  API_KEY: 'ik_6a12eb6379f5dc9532b633489014109e',
-  BASE_URL: 'https://c76uw4pw.ap-southeast.insforge.app'
+  BASE_URL: 'https://c76uw4pw.ap-southeast.insforge.app',
+  ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3OC0xMjM0LTU2NzgtOTBhYi1jZGVmMTIzNDU2NzgiLCJlbWFpbCI6ImFub25AaW5zZm9yZ2UuY29tIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgzNTU2MTF9.eo9Y5AvTLT7wUClmMYrKC-144aiDgUb8oYekKlYIjas'
 };
+
+const insforge = createClient({
+  baseUrl: INSFORGE_CONFIG.BASE_URL,
+  anonKey: INSFORGE_CONFIG.ANON_KEY
+});
+
+let currentUser = null;
 
 const STORAGE_KEYS = {
   MISTAKES: 'eti_mcq_mistakes',
@@ -280,35 +289,34 @@ function renderHome() {
 
 // ── DATA SYNC (INSFORGE DB) ────────────────────
 async function loadGlobalScores() {
+  const statusEl = document.getElementById('sync-status');
+  if (statusEl) statusEl.textContent = 'Syncing Leaderboard...';
+
   try {
-    const r = await fetch(`${INSFORGE_CONFIG.BASE_URL}/api/database/records/scores`, {
-      headers: { 'Authorization': `Bearer ${INSFORGE_CONFIG.API_KEY}` }
-    });
-    if (r.ok) {
-      const global = await r.json();
-      if (global && global.length > 0) {
-        window._globalScores = global;
-        document.getElementById('sync-status').textContent = `Cloud Sync Active (${global.length} total)`;
-        renderLeaderboard(document.querySelector('.lb-tab.active')?.dataset.tab || 'recent');
-      }
+    const { data, error } = await insforge.db.from('scores')
+      .select('*')
+      .order('smartScore', { ascending: false })
+      .limit(50);
+
+    if (error) throw error;
+    
+    if (data && data.length > 0) {
+      window._globalScores = data;
+      if (statusEl) statusEl.textContent = `Cloud Sync Active (${data.length} total)`;
+      renderLeaderboard(document.querySelector('.lb-tab.active')?.dataset.tab || 'recent');
     } else {
-      document.getElementById('sync-status').textContent = 'Cloud Offline (Using Local)';
+      if (statusEl) statusEl.textContent = 'Cloud Active (No Data)';
     }
   } catch(e) {
     console.warn('Could not load global scores:', e);
+    if (statusEl) statusEl.textContent = 'Cloud Offline (Using Local)';
   }
 }
 
 async function syncToCloud(table, entry) {
   try {
-    await fetch(`${INSFORGE_CONFIG.BASE_URL}/api/database/records/${table}`, {
-      method: 'POST',
-      headers: { 
-        'Authorization': `Bearer ${INSFORGE_CONFIG.API_KEY}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify([entry]) // MUST be an array
-    });
+    const { error } = await insforge.db.from(table).insert([entry]);
+    if (error) throw error;
   } catch(e) {
     console.error(`Failed to sync to ${table}:`, e);
   }
@@ -316,20 +324,15 @@ async function syncToCloud(table, entry) {
 
 async function deleteFromCloud(table, entry) {
   try {
-    // Note: InsForge typically uses filters for deletion
-    await fetch(`${INSFORGE_CONFIG.BASE_URL}/api/database/records/${table}`, {
-      method: 'DELETE',
-      headers: { 
-        'Authorization': `Bearer ${INSFORGE_CONFIG.API_KEY}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ user: entry.user, question: entry.question })
-    });
+    await insforge.db.from(table)
+      .delete()
+      .match({ user: entry.user, question: entry.question });
   } catch(e) {}
 }
 
 async function syncScoreToCloud(entry) {
-  return syncToCloud('scores', entry);
+  await syncToCloud('scores', entry);
+  loadGlobalScores();
 }
 
 // Override getScores to combine local + global
@@ -339,7 +342,6 @@ getScores = function() {
   const global = window._globalScores || [];
   const combined = [...local];
   global.forEach(g => {
-    // Deduplicate by playerName + date
     if (!combined.find(l => l.playerName === g.playerName && l.date === g.date)) {
       combined.push(g);
     }
@@ -347,20 +349,105 @@ getScores = function() {
   return combined.sort((a, b) => b.date - a.date);
 };
 
-// Automatic migration
 async function migrateToCloud() {
   const local = _origGetScores();
   if (local.length === 0) return;
   
-  const lastSync = localStorage.getItem('eti_mcq_last_cloud_sync') || 0;
-  const toSync = local.filter(s => s.date > lastSync);
+  const statusEl = document.getElementById('sync-status');
+  if (statusEl) statusEl.textContent = 'Migrating local history to cloud...';
   
-  if (toSync.length > 0) {
-    console.log(`Syncing ${toSync.length} new local scores to InsForge...`);
-    for (const s of toSync) {
-      await syncScoreToCloud(s);
-    }
-    localStorage.setItem('eti_mcq_last_cloud_sync', Date.now());
+  for (const s of local) {
+    await syncToCloud('scores', s);
+  }
+  loadGlobalScores();
+}
+
+// ── AUTHENTICATION ────────────────────────────
+window.openAuthModal = () => document.getElementById('screen-auth').classList.add('active');
+window.closeAuthModal = () => document.getElementById('screen-auth').classList.remove('active');
+
+window.switchAuthTab = (tab) => {
+  const isLogin = tab === 'login';
+  document.querySelectorAll('.auth-tab').forEach(t => t.classList.toggle('active', isLogin ? t.textContent === 'Login' : t.textContent === 'Signup'));
+  document.getElementById('login-form').style.display = isLogin ? 'flex' : 'none';
+  document.getElementById('signup-form').style.display = isLogin ? 'none' : 'flex';
+  document.getElementById('auth-footer-text').innerHTML = isLogin 
+    ? 'Don\'t have an account? <a href="#" onclick="switchAuthTab(\'signup\')">Sign up</a>'
+    : 'Already have an account? <a href="#" onclick="switchAuthTab(\'login\')">Login</a>';
+};
+
+window.handleEmailSignup = async (e) => {
+  e.preventDefault();
+  const name = document.getElementById('signup-name').value;
+  const email = document.getElementById('signup-email').value;
+  const password = document.getElementById('signup-password').value;
+
+  const { data, error } = await insforge.auth.signUp({ email, password, name });
+  if (error) return alert(error.message);
+  
+  if (data?.requireEmailVerification) {
+    alert('Verification email sent! Please check your inbox.');
+    closeAuthModal();
+  }
+};
+
+window.handleEmailLogin = async (e) => {
+  e.preventDefault();
+  const email = document.getElementById('login-email').value;
+  const password = document.getElementById('login-password').value;
+
+  const { data, error } = await insforge.auth.signInWithPassword({ email, password });
+  if (error) return alert(error.message);
+  
+  updateUserSession(data.user);
+  closeAuthModal();
+};
+
+window.handleGoogleLogin = async () => {
+  await insforge.auth.signInWithOAuth({
+    provider: 'google',
+    redirectTo: window.location.origin
+  });
+};
+
+window.handleLogout = async () => {
+  await insforge.auth.signOut();
+  updateUserSession(null);
+};
+
+async function checkUserSession() {
+  const { data } = await insforge.auth.getCurrentUser();
+  updateUserSession(data.user);
+}
+
+function updateUserSession(user) {
+  currentUser = user;
+  const dot = document.querySelector('.status-dot');
+  const text = document.getElementById('auth-status-text');
+  const toggleBtn = document.querySelector('.btn-auth-toggle');
+  const profileCard = document.getElementById('user-profile-card');
+  const guestInput = document.getElementById('guest-name-input');
+
+  if (user) {
+    dot.classList.add('active');
+    text.textContent = 'Secured Cloud';
+    toggleBtn.style.display = 'none';
+    profileCard.style.display = 'flex';
+    guestInput.style.display = 'none';
+    
+    const displayName = user.profile?.name || user.email.split('@')[0];
+    document.getElementById('user-display-name').textContent = displayName;
+    document.getElementById('user-avatar').src = user.profile?.avatar_url || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user.id}`;
+    
+    savePlayerName(displayName);
+    const input = document.getElementById('player-name');
+    if (input) input.value = displayName;
+  } else {
+    dot.classList.remove('active');
+    text.textContent = 'Guest Mode';
+    toggleBtn.style.display = 'block';
+    profileCard.style.display = 'none';
+    guestInput.style.display = 'block';
   }
 }
 
@@ -1373,8 +1460,16 @@ document.addEventListener('click', (e) => {
   }
 });
 
+window.goHome = goHome;
+window.startQuiz = startQuiz;
+window.restartQuiz = restartQuiz;
+window.toggleQuizMenu = toggleQuizMenu;
+window.closeQuizMenu = closeQuizMenu;
+window.showHome = showHome;
+
 // ── INIT ─────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+  checkUserSession();
   renderHome();
   
   // Save name on every keystroke
