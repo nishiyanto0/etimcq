@@ -293,7 +293,7 @@ async function loadGlobalScores() {
   if (statusEl) statusEl.textContent = 'Syncing Leaderboard...';
 
   try {
-    const { data, error } = await insforge.db.from('scores')
+    const { data, error } = await insforge.database.from('scores')
       .select('*')
       .order('smartScore', { ascending: false })
       .limit(50);
@@ -326,7 +326,7 @@ async function loadGlobalScores() {
 
 async function syncToCloud(table, entry) {
   try {
-    const { error } = await insforge.db.from(table).insert([entry]);
+    const { error } = await insforge.database.from(table).insert([entry]);
     if (error) throw error;
   } catch(e) {
     console.error(`Failed to sync to ${table}:`, e);
@@ -335,7 +335,7 @@ async function syncToCloud(table, entry) {
 
 async function deleteFromCloud(table, entry) {
   try {
-    await insforge.db.from(table)
+    await insforge.database.from(table)
       .delete()
       .match({ user: entry.user, question: entry.question });
   } catch(e) {}
