@@ -11,6 +11,7 @@ const UNITS = [
   { id:3, name:'Blockchain Technology',            icon:'⛓️',  color:'#f59e0b', desc:'Distributed ledger, crypto, consensus & DApps' },
   { id:4, name:'Immersive Technology',             icon:'🥽', color:'#ec4899', desc:'AR, VR, MR, XR, metaverse applications' },
   { id:5, name:'Digital Forensics & Cybersecurity',icon:'🔐', color:'#10b981', desc:'Cyber threats, forensics, encryption & defence' },
+  { id:'nirali', name:'Nirali Prakashan',        icon:'📚', color:'#6366f1', desc:'Complete Nirali Prakashan Question Bank (Unit & Subtopic Wise)', isNirali: true },
   { id:'college', name:'College MCQ',              icon:'🎓', color:'#f97316', desc:'Mixed questions from all ETI topics', isCollege: true },
 ];
 
@@ -33,6 +34,7 @@ const state = {
   answered: false,
   allQuestions: [],   // full question pool of current unit
   subtopic: null,      // selected subtopic (e.g., "1.1")
+  niraliUnitId: null,  // selected unit for Nirali
   questionStartTime: 0, // for time tracking
   questionTimes: [],    // time taken per question
   smartScore: 0,        // time-adjusted score
@@ -162,14 +164,20 @@ function renderHome() {
     grid.appendChild(card);
   });
 
-  // Prefetch question counts
   UNITS.forEach(async (u, idx) => {
     try {
-      const filePath = u.isCollege ? 'data/college_mcq.json' : `data/unit_${u.id}.json`;
+      let filePath = '';
+      if (u.isCollege) filePath = 'data/college_mcq.json';
+      else if (u.isNirali) filePath = 'data/nirali_mcq.json';
+      else filePath = `data/unit_${u.id}.json`;
+
       const r = await fetch(filePath);
       const d = await r.json();
       const dot = grid.children[idx + 1].querySelector('.uc-count'); // +1 for leaderboard
-      if (dot) dot.innerHTML = `<span class="uc-count-dot" style="background:${u.color}"></span> ${d.totalQuestions} questions`;
+      if (dot) {
+        const count = u.isNirali ? d.totalQuestions : d.totalQuestions;
+        dot.innerHTML = `<span class="uc-count-dot" style="background:${u.color}"></span> ${count} questions`;
+      }
       u._data = d; // cache
     } catch(_) {}
   });
@@ -192,7 +200,7 @@ function renderLeaderboard(tab) {
       html += `<div class="lb-row">
         <span class="lb-rank">${i + 1}</span>
         <span class="lb-name">${s.playerName || 'Anonymous'}</span>
-        <span class="lb-unit">Unit ${s.unitId}</span>
+        <span class="lb-unit">${isNaN(s.unitId) ? s.unitId : 'Unit ' + s.unitId}</span>
         <span class="lb-score">${s.score}/${s.total}</span>
         <span class="lb-smart">⭐ ${s.smartScore}</span>
         <span class="lb-time">${formatTime(s.time)}</span>
@@ -209,7 +217,7 @@ function renderLeaderboard(tab) {
       const best = arr.sort((a, b) => b.smartScore - a.smartScore)[0];
       const bestName = best.playerName || 'Anonymous';
       html += `<div class="lb-row">
-        <span class="lb-unit">Unit ${unitId}</span>
+        <span class="lb-unit">${isNaN(unitId) ? unitId : 'Unit ' + unitId}</span>
         <span class="lb-name">${bestName}</span>
         <span class="lb-score">${best.score}/${best.total}</span>
         <span class="lb-smart">⭐${best.smartScore}</span>
@@ -222,7 +230,7 @@ function renderLeaderboard(tab) {
       html += `<div class="lb-row">
         <span class="lb-rank">${i + 1}</span>
         <span class="lb-name">${topName}</span>
-        <span class="lb-unit">Unit ${s.unitId}</span>
+        <span class="lb-unit">${isNaN(s.unitId) ? s.unitId : 'Unit ' + s.unitId}</span>
         <span class="lb-score">${s.score}/${s.total}</span>
         <span class="lb-smart">⭐${s.smartScore}</span>
       </div>`;
@@ -246,6 +254,7 @@ async function openSetup(unitId) {
   state.unitId = unitId;
   state.total = 10;
   state.subtopic = null;
+  state.niraliUnitId = null;
 
   document.getElementById('modal-icon').textContent = u.icon;
   document.getElementById('modal-unit-name').textContent = u.name;
@@ -257,7 +266,11 @@ async function openSetup(unitId) {
   // Load data if not cached
   if (!u._data) {
     try {
-      const filePath = u.isCollege ? 'data/college_mcq.json' : `data/unit_${unitId}.json`;
+      let filePath = '';
+      if (u.isCollege) filePath = 'data/college_mcq.json';
+      else if (u.isNirali) filePath = 'data/nirali_mcq.json';
+      else filePath = `data/unit_${unitId}.json`;
+      
       const r = await fetch(filePath);
       u._data = await r.json();
     } catch(e) {
@@ -266,21 +279,21 @@ async function openSetup(unitId) {
   }
 
   const totalQs = u._data?.totalQuestions || 0;
-  const unitLabel = u.isCollege ? 'College MCQ' : `Unit ${u.id}`;
+  const unitLabel = u.isCollege ? 'College MCQ' : (u.isNirali ? 'Nirali Bank' : `Unit ${u.id}`);
   document.getElementById('modal-unit-count').textContent = `${unitLabel} · ${totalQs} questions available`;
 
-  // Function to update count buttons based on available questions
+  const countBtns = document.getElementById('count-btns');
+  const unitSelectDiv = document.getElementById('unit-select');
+  const subtopicDiv = document.getElementById('subtopic-select');
+
   const updateCountButtons = (availableCount) => {
-    const countBtns = document.getElementById('count-btns');
     const counts = [10, 20, 30, 70];
-    
     countBtns.innerHTML = counts.map(cnt => {
       const disabled = cnt > availableCount ? 'disabled' : '';
       const active = cnt === 10 && cnt <= availableCount ? 'active' : '';
       return `<button class="count-btn ${active} ${disabled}" data-count="${cnt}" ${disabled ? 'title="Not enough questions"' : ''}>${cnt}</button>`;
     }).join('') + `<button class="count-btn" data-count="all">All (${availableCount})</button>`;
     
-    // Find first non-disabled button to make active if 10 is disabled
     if (availableCount < 10) {
       const allBtn = countBtns.querySelector('[data-count="all"]');
       if (allBtn) allBtn.classList.add('active');
@@ -298,43 +311,94 @@ async function openSetup(unitId) {
     });
   };
 
-  // Initial count buttons
-  updateCountButtons(totalQs);
-
-  // Subtopic selection
-  const subtopicDiv = document.getElementById('subtopic-select');
-  const syllabus = await loadSyllabus();
-  const unitSyllabus = syllabus?.units?.find(x => x.id === unitId);
-  
-  if (unitSyllabus?.subtopics?.length > 0 && !u.isCollege) {
-    subtopicDiv.innerHTML = `
-      <div style="margin-bottom:8px;font-weight:500">Select Scope:</div>
-      <div class="subtopic-options">
-        <button class="subtopic-btn active" data-subtopic="all">Entire Unit</button>
-        ${unitSyllabus.subtopics.map(st => 
-          `<button class="subtopic-btn" data-subtopic="${st.id}">${st.id} - ${st.title}</button>`
-        ).join('')}
-      </div>
-    `;
+  if (u.isNirali) {
+    unitSelectDiv.style.display = 'block';
     subtopicDiv.style.display = 'block';
     
-    subtopicDiv.querySelectorAll('.subtopic-btn').forEach(btn => {
+    const renderNiraliSubtopics = (unit) => {
+      if (!unit) {
+        subtopicDiv.innerHTML = '';
+        return;
+      }
+      subtopicDiv.innerHTML = `
+        <div style="margin-bottom:8px;font-weight:500">Select Subtopic:</div>
+        <div class="subtopic-options">
+          <button class="subtopic-btn active" data-subtopic="all">All from ${unit.unitName}</button>
+          ${unit.subtopics.map(st => `<button class="subtopic-btn" data-subtopic="${st.subtopicId}">${st.subtopicId} - ${st.subtopicName}</button>`).join('')}
+        </div>
+      `;
+      
+      subtopicDiv.querySelectorAll('.subtopic-btn').forEach(btn => {
+        btn.onclick = () => {
+          subtopicDiv.querySelectorAll('.subtopic-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          state.subtopic = btn.dataset.subtopic === 'all' ? null : btn.dataset.subtopic;
+          
+          let count = 0;
+          if (state.subtopic) {
+            count = unit.subtopics.find(st => st.subtopicId === state.subtopic).totalQuestions;
+          } else {
+            count = unit.totalQuestions;
+          }
+          updateCountButtons(count);
+        };
+      });
+    };
+
+    unitSelectDiv.innerHTML = `
+      <div style="margin-bottom:8px;font-weight:500">Select Unit:</div>
+      <div class="subtopic-options">
+        <button class="subtopic-btn active" data-unit="all">Full Bank</button>
+        ${u._data.units.map(un => `<button class="subtopic-btn" data-unit="${un.unitId}">${un.unitName}</button>`).join('')}
+      </div>
+    `;
+
+    unitSelectDiv.querySelectorAll('.subtopic-btn').forEach(btn => {
       btn.onclick = () => {
-        subtopicDiv.querySelectorAll('.subtopic-btn').forEach(b => b.classList.remove('active'));
+        unitSelectDiv.querySelectorAll('.subtopic-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        state.subtopic = btn.dataset.subtopic === 'all' ? null : btn.dataset.subtopic;
+        state.niraliUnitId = btn.dataset.unit === 'all' ? null : parseInt(btn.dataset.unit);
+        state.subtopic = null;
         
-        // Update count buttons based on subtopic question count
-        if (state.subtopic && u._data) {
-          const subtopicQs = u._data.questions.filter(q => q.subtopic === state.subtopic).length;
-          updateCountButtons(subtopicQs);
+        if (state.niraliUnitId) {
+          const unit = u._data.units.find(un => un.unitId === state.niraliUnitId);
+          renderNiraliSubtopics(unit);
+          updateCountButtons(unit.totalQuestions);
         } else {
+          subtopicDiv.innerHTML = '';
           updateCountButtons(totalQs);
         }
       };
     });
+
+    updateCountButtons(totalQs);
   } else {
-    subtopicDiv.style.display = 'none';
+    unitSelectDiv.style.display = 'none';
+    const syllabus = await loadSyllabus();
+    const unitSyllabus = syllabus?.units?.find(x => x.id === unitId);
+    
+    if (unitSyllabus?.subtopics?.length > 0 && !u.isCollege) {
+      subtopicDiv.innerHTML = `
+        <div style="margin-bottom:8px;font-weight:500">Select Scope:</div>
+        <div class="subtopic-options">
+          <button class="subtopic-btn active" data-subtopic="all">Entire Unit</button>
+          ${unitSyllabus.subtopics.map(st => `<button class="subtopic-btn" data-subtopic="${st.id}">${st.id} - ${st.title}</button>`).join('')}
+        </div>
+      `;
+      subtopicDiv.style.display = 'block';
+      subtopicDiv.querySelectorAll('.subtopic-btn').forEach(btn => {
+        btn.onclick = () => {
+          subtopicDiv.querySelectorAll('.subtopic-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          state.subtopic = btn.dataset.subtopic === 'all' ? null : btn.dataset.subtopic;
+          const subQs = state.subtopic ? u._data.questions.filter(q => q.subtopic === state.subtopic).length : totalQs;
+          updateCountButtons(subQs);
+        };
+      });
+    } else {
+      subtopicDiv.style.display = 'none';
+    }
+    updateCountButtons(totalQs);
   }
 
   showScreen('screen-setup');
@@ -350,18 +414,37 @@ async function startQuiz() {
     const unit = UNITS.find(u => u.id === state.unitId);
     let data = unit?._data;
     if (!data) {
-      // Handle college MCQ special file path
-      const filePath = unit?.isCollege ? 'data/college_mcq.json' : `data/unit_${state.unitId}.json`;
+      let filePath = '';
+      if (unit?.isCollege) filePath = 'data/college_mcq.json';
+      else if (unit?.isNirali) filePath = 'data/nirali_mcq.json';
+      else filePath = `data/unit_${state.unitId}.json`;
+      
       const r = await fetch(filePath);
       data = await r.json();
       if (unit) unit._data = data;
     }
 
-    // Filter by subtopic if selected
-    let pool = data.questions;
-    if (state.subtopic) {
-      pool = pool.filter(q => q.subtopic === state.subtopic);
+    let pool = [];
+    if (unit?.isNirali) {
+      // Handle nested Nirali structure
+      if (state.niraliUnitId) {
+        const uNode = data.units.find(un => un.unitId === state.niraliUnitId);
+        if (state.subtopic) {
+          pool = uNode.subtopics.find(st => st.subtopicId === state.subtopic).questions;
+        } else {
+          pool = uNode.subtopics.flatMap(st => st.questions);
+        }
+      } else {
+        // Entire Nirali Bank
+        pool = data.units.flatMap(un => un.subtopics.flatMap(st => st.questions));
+      }
+    } else {
+      pool = data.questions;
+      if (state.subtopic) {
+        pool = pool.filter(q => q.subtopic === state.subtopic);
+      }
     }
+
     pool = shuffle(pool);
     
     const count = Math.min(state.total, pool.length);
@@ -374,11 +457,16 @@ async function startQuiz() {
     state.smartScore  = 0;
 
     // Quiz header badge
-    document.getElementById('quiz-unit-badge').textContent = unit?.isCollege ? 'College MCQ' : `Unit ${state.unitId}`;
+    let badgeText = '';
+    if (unit?.isCollege) badgeText = 'College MCQ';
+    else if (unit?.isNirali) badgeText = 'Nirali Bank';
+    else badgeText = `Unit ${state.unitId}`;
+    document.getElementById('quiz-unit-badge').textContent = badgeText;
 
     showScreen('screen-quiz');
     renderQuestion();
   } catch(err) {
+    console.error(err);
     alert('Could not load questions. Make sure you are running through a local server.');
     showHome();
   }
@@ -511,7 +599,9 @@ function showResults() {
   document.getElementById('stat-pct').textContent    = pct + '%';
   document.getElementById('stat-correct').textContent = score;
   document.getElementById('stat-wrong').textContent  = total - score;
-  document.getElementById('results-unit').textContent = `Unit ${state.unitId} · ${state.unitName}`;
+  
+  const unitText = isNaN(state.unitId) ? state.unitId : `Unit ${state.unitId}`;
+  document.getElementById('results-unit').textContent = `${unitText} · ${state.unitName}`;
 
   // Grade + emoji
   let grade, emoji, title;
