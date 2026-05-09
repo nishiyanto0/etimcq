@@ -17,6 +17,11 @@ const UNITS = [
 ];
 
 // ── STORAGE KEYS ────────────────────────────
+const INSFORGE_CONFIG = {
+  API_KEY: 'ik_6a12eb6379f5dc9532b633489014109e',
+  BASE_URL: 'https://c76uw4pw.ap-southeast.insforge.app'
+};
+
 const STORAGE_KEYS = {
   MISTAKES: 'eti_mcq_mistakes',
   SCORES: 'eti_mcq_scores',
@@ -141,10 +146,10 @@ let getScores = function() {
 
 function saveScore(entry) {
   const scores = getScores();
-  scores.unshift(entry); // Add to beginning
-  // Keep only last 50 scores
+  scores.unshift(entry); 
   if (scores.length > 50) scores.pop();
   localStorage.setItem(STORAGE_KEYS.SCORES, JSON.stringify(scores));
+  syncScoreToCloud(entry); // Automatic real-time sync
 }
 
 // ── HELPERS ──────────────────────────────────
@@ -181,20 +186,17 @@ function renderHome() {
       <button class="lb-tab" data-tab="unit">By Unit</button>
       <button class="lb-tab" data-tab="top">Top Scores</button>
     </div>
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px; padding:8px; background:rgba(255,255,255,0.03); border-radius:8px; border:1px solid var(--border)">
       <div style="font-size:0.7rem; color:var(--text3)">
-        <span id="sync-status">Local Sync Only</span>
+        <span id="sync-status">Connecting to Cloud...</span>
       </div>
-      <button class="subtopic-btn" style="padding:4px 10px; font-size:0.65rem" onclick="exportDataForSync()">
-        ☁️ Sync Progress
-      </button>
     </div>
     <div id="leaderboard-content" class="leaderboard-content"></div>
   `;
   grid.appendChild(leaderboardSection);
   
   renderLeaderboard('recent');
-  loadGlobalScores(); // Load data from GitHub DB
+  loadGlobalScores(); 
+  migrateToCloud(); // Sync local history to cloud
 
   // Check for saved session
   const saved = getSession();
@@ -272,29 +274,41 @@ function renderHome() {
   });
 }
 
-// ── DATA SYNC (GITHUB DB) ──────────────────────
+// ── DATA SYNC (INSFORGE DB) ────────────────────
 async function loadGlobalScores() {
   try {
-    const r = await fetch('data/players.json');
-    const global = await r.json();
-    if (global && global.length > 0) {
-      window._globalScores = global;
-      document.getElementById('sync-status').textContent = `Cloud Sync: ${global.length} global entries`;
+    const r = await fetch(`${INSFORGE_CONFIG.BASE_URL}/api/database/records/scores`, {
+      headers: { 'Authorization': `Bearer ${INSFORGE_CONFIG.API_KEY}` }
+    });
+    if (r.ok) {
+      const global = await r.json();
+      if (global && global.length > 0) {
+        window._globalScores = global;
+        document.getElementById('sync-status').textContent = `Cloud Sync Active (${global.length} total)`;
+        renderLeaderboard(document.querySelector('.lb-tab.active')?.dataset.tab || 'recent');
+      }
+    } else {
+      document.getElementById('sync-status').textContent = 'Cloud Offline (Using Local)';
     }
   } catch(e) {
     console.warn('Could not load global scores:', e);
   }
 }
 
-function exportDataForSync() {
-  const localScores = getScores();
-  const dataStr = JSON.stringify(localScores, null, 2);
-  const blob = new Blob([dataStr], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  
-  const win = window.open();
-  win.document.write('<pre>' + dataStr + '</pre>');
-  alert("Data exported to new tab! Copy the JSON and paste it to the AI to update the Global Leaderboard.");
+async function syncScoreToCloud(entry) {
+  try {
+    await fetch(`${INSFORGE_CONFIG.BASE_URL}/api/database/records/scores`, {
+      method: 'POST',
+      headers: { 
+        'Authorization': `Bearer ${INSFORGE_CONFIG.API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(entry)
+    });
+    loadGlobalScores(); // Refresh
+  } catch(e) {
+    console.error('Failed to sync score:', e);
+  }
 }
 
 // Override getScores to combine local + global
@@ -304,12 +318,30 @@ getScores = function() {
   const global = window._globalScores || [];
   const combined = [...local];
   global.forEach(g => {
+    // Deduplicate by playerName + date
     if (!combined.find(l => l.playerName === g.playerName && l.date === g.date)) {
       combined.push(g);
     }
   });
   return combined.sort((a, b) => b.date - a.date);
 };
+
+// Automatic migration
+async function migrateToCloud() {
+  const local = _origGetScores();
+  if (local.length === 0) return;
+  
+  const lastSync = localStorage.getItem('eti_mcq_last_cloud_sync') || 0;
+  const toSync = local.filter(s => s.date > lastSync);
+  
+  if (toSync.length > 0) {
+    console.log(`Syncing ${toSync.length} new local scores to InsForge...`);
+    for (const s of toSync) {
+      await syncScoreToCloud(s);
+    }
+    localStorage.setItem('eti_mcq_last_cloud_sync', Date.now());
+  }
+}
 
 // ── SESSION PERSISTENCE ────────────────────────
 function saveSession() {
