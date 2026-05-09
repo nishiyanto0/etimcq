@@ -1,0 +1,21 @@
+# Work summary and documentation
+WORK_SUMMARY.md
+
+# Temporary updated files (sources for migrations)
+*_updated.json
+
+# Node modules and dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
