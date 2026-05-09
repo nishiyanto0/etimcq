@@ -21,6 +21,8 @@ const STORAGE_KEYS = {
   MISTAKES: 'eti_mcq_mistakes',
   SCORES: 'eti_mcq_scores',
   REVISIONS: 'eti_mcq_revisions',
+  COMPLETED: 'eti_mcq_completed',
+  SESSIONS: 'eti_mcq_sessions',
   SYLLABUS: 'eti_mcq_syllabus',
 };
 
@@ -39,6 +41,7 @@ const state = {
   niraliUnitId: null,  // selected unit for Nirali
   smartType: null,     // 'mistakes' or 'revisions'
   smartScope: 'personal', // 'personal' or 'global'
+  isResumed: false,     // whether we are resuming a session
   questionStartTime: 0, // for time tracking
   questionTimes: [],    // time taken per question
   smartScore: 0,        // time-adjusted score
@@ -92,6 +95,28 @@ function getRevisions() {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEYS.REVISIONS) || '[]');
   } catch { return []; }
+}
+
+function getCompleted() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEYS.COMPLETED) || '[]');
+  } catch { return []; }
+}
+
+function saveCompleted(questionData, unitId) {
+  const completed = getCompleted();
+  const playerName = getPlayerName() || 'Anonymous';
+  const key = `${playerName}|${questionData.question}`;
+  if (!completed.includes(key)) {
+    completed.push(key);
+    localStorage.setItem(STORAGE_KEYS.COMPLETED, JSON.stringify(completed));
+  }
+}
+
+function isQuestionCompleted(questionText) {
+  const completed = getCompleted();
+  const playerName = getPlayerName() || 'Anonymous';
+  return completed.includes(`${playerName}|${questionText}`);
 }
 
 function toggleRevision(questionData, unitId) {
@@ -150,17 +175,48 @@ function renderHome() {
     <h3 style="margin-bottom:12px;font-size:1.1rem;display:flex;align-items:center;gap:8px">
       <span>🏆</span> Leaderboard
     </h3>
-    <div class="leaderboard-tabs" style="display:flex;gap:8px;margin-bottom:12px">
+    <div class="leaderboard-tabs" style="display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap">
       <button class="lb-tab active" data-tab="recent">Recent</button>
+      <button class="lb-tab" data-tab="player">Players</button>
       <button class="lb-tab" data-tab="unit">By Unit</button>
       <button class="lb-tab" data-tab="top">Top Scores</button>
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px; padding:8px; background:rgba(255,255,255,0.03); border-radius:8px; border:1px solid var(--border)">
+      <div style="font-size:0.7rem; color:var(--text3)">
+        <span id="sync-status">Local Sync Only</span>
+      </div>
+      <button class="subtopic-btn" style="padding:4px 10px; font-size:0.65rem" onclick="exportDataForSync()">
+        ☁️ Sync Progress
+      </button>
     </div>
     <div id="leaderboard-content" class="leaderboard-content"></div>
   `;
   grid.appendChild(leaderboardSection);
   
-  // Render leaderboard
   renderLeaderboard('recent');
+  loadGlobalScores(); // Load data from GitHub DB
+
+  // Check for saved session
+  const saved = getSession();
+  if (saved) {
+    const resumeCard = document.createElement('div');
+    resumeCard.className = 'unit-card';
+    resumeCard.style.border = '1px solid #fbbf24';
+    resumeCard.style.background = 'rgba(251,191,36,0.05)';
+    resumeCard.innerHTML = `
+      <div class="uc-icon">⏳</div>
+      <div class="uc-name">Resume Test</div>
+      <div class="uc-desc">You have an active session for ${saved.unitName}. Continue where you left off?</div>
+      <div class="uc-count"><span class="uc-count-dot" style="background:#fbbf24"></span> Q${saved.current + 1} / ${saved.questions.length}</div>
+    `;
+    resumeCard.onclick = () => {
+      Object.assign(state, saved);
+      state.isResumed = true;
+      showScreen('screen-quiz');
+      renderQuestion();
+    };
+    grid.insertBefore(resumeCard, grid.children[1]); // Put it after the Smart Test card?
+  }
   
   // Tab click handlers
   leaderboardSection.querySelectorAll('.lb-tab').forEach(tab => {
@@ -216,63 +272,455 @@ function renderHome() {
   });
 }
 
+// ── DATA SYNC (GITHUB DB) ──────────────────────
+async function loadGlobalScores() {
+  try {
+    const r = await fetch('data/players.json');
+    const global = await r.json();
+    if (global && global.length > 0) {
+      window._globalScores = global;
+      document.getElementById('sync-status').textContent = `Cloud Sync: ${global.length} global entries`;
+    }
+  } catch(e) {
+    console.warn('Could not load global scores:', e);
+  }
+}
+
+function exportDataForSync() {
+  const localScores = getScores();
+  const dataStr = JSON.stringify(localScores, null, 2);
+  const blob = new Blob([dataStr], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  
+  const win = window.open();
+  win.document.write('<pre>' + dataStr + '</pre>');
+  alert("Data exported to new tab! Copy the JSON and paste it to the AI to update the Global Leaderboard.");
+}
+
+// Override getScores to combine local + global
+const _origGetScores = getScores;
+let getScores = function() {
+  const local = _origGetScores();
+  const global = window._globalScores || [];
+  const combined = [...local];
+  global.forEach(g => {
+    if (!combined.find(l => l.playerName === g.playerName && l.date === g.date)) {
+      combined.push(g);
+    }
+  });
+  return combined.sort((a, b) => b.date - a.date);
+};
+
+// ── SESSION PERSISTENCE ────────────────────────
+function saveSession() {
+  if (state.questions.length === 0) return;
+  const session = {
+    unitId: state.unitId,
+    unitName: state.unitName,
+    questions: state.questions,
+    current: state.current,
+    score: state.score,
+    allQuestions: state.allQuestions,
+    subtopic: state.subtopic,
+    niraliUnitId: state.niraliUnitId,
+    smartType: state.smartType,
+    smartScope: state.smartScope,
+    questionTimes: state.questionTimes,
+    date: Date.now()
+  };
+  localStorage.setItem(STORAGE_KEYS.SESSIONS, JSON.stringify(session));
+}
+
+function clearSession() {
+  localStorage.removeItem(STORAGE_KEYS.SESSIONS);
+}
+
+function getSession() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEYS.SESSIONS));
+  } catch { return null; }
+}
+
 // ── LEADERBOARD RENDER ─────────────────────────
+// ── SCORING ENGINE ────────────────────────────────────
+
+function buildPlayerProfiles(scores) {
+  const profiles = {}; 
+
+  scores.forEach(s => {
+    const name = s.playerName || 'Anonymous';
+    if (!profiles[name]) {
+      profiles[name] = { name, buckets: {}, allAttempts: [] };
+    }
+    const p = profiles[name];
+    p.allAttempts.push(s);
+
+    const bucketKey = `${s.unitId}|${s.subtopic ?? '__all__'}`;
+    if (!p.buckets[bucketKey]) {
+      p.buckets[bucketKey] = {
+        unitId: s.unitId,
+        unitName: s.unitName,
+        subtopic: s.subtopic ?? null,
+        attempts: [],
+      };
+    }
+    p.buckets[bucketKey].attempts.push({
+      score: s.score,
+      total: s.total,
+      pct: s.pct ?? Math.round((s.score / s.total) * 100),
+      smartScore: s.smartScore,
+      time: s.time,
+      date: s.date,
+    });
+  });
+
+  Object.values(profiles).forEach(p => {
+    let combinedScore = 0;
+    let totalCorrect = 0, totalQs = 0;
+
+    Object.values(p.buckets).forEach(b => {
+      const avgAcc = Math.round(
+        b.attempts.reduce((sum, a) => sum + a.pct, 0) / b.attempts.length
+      );
+      const avgSmart = Math.round(
+        b.attempts.reduce((sum, a) => sum + a.smartScore, 0) / b.attempts.length
+      );
+      b.avgAcc    = avgAcc;
+      b.avgSmart  = avgSmart;
+      b.attemptCount = b.attempts.length;
+      b.lastDate  = Math.max(...b.attempts.map(a => a.date));
+
+      combinedScore += avgSmart;
+      totalCorrect  += b.attempts.reduce((s, a) => s + a.score, 0);
+      totalQs       += b.attempts.reduce((s, a) => s + a.total, 0);
+    });
+
+    p.combinedScore  = combinedScore;
+    p.totalCorrect   = totalCorrect;
+    p.totalQs        = totalQs;
+    p.overallAvgAcc  = totalQs > 0 ? Math.round((totalCorrect / totalQs) * 100) : 0;
+    p.bucketCount    = Object.keys(p.buckets).length;
+    p.totalAttempts  = p.allAttempts.length;
+    p.lastSeen       = Math.max(...p.allAttempts.map(a => a.date));
+  });
+
+  return profiles;
+}
+
+// ── SHARED HELPERS ────────────────────────────────────
+function unitLabel(s) {
+  if (s.unitId === 'nirali')   return 'Nirali';
+  if (s.unitId === 'college')  return 'College';
+  if (s.unitId === 'smart')    return 'Smart';
+  return `Unit ${s.unitId}`;
+}
+function unitLabelFromId(id) {
+  if (id === 'nirali')  return 'Nirali';
+  if (id === 'college') return 'College';
+  if (id === 'smart')   return 'Smart';
+  return `Unit ${id}`;
+}
+
+function accuracyColor(pct) {
+  if (pct >= 80) return '#22c55e';
+  if (pct >= 60) return '#f59e0b';
+  return '#ef4444';
+}
+
+function rankEmoji(i) {
+  return ['🥇','🥈','🥉'][i] || `${i + 1}`;
+}
+
+function formatTimeAgo(timestamp) {
+  if (!timestamp) return '';
+  const diff = Date.now() - timestamp;
+  const m = Math.floor(diff / 60000);
+  if (m < 1)  return 'just now';
+  if (m < 60) return `${m}m ago`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h}h ago`;
+  return `${Math.floor(h / 24)}d ago`;
+}
+
+// ── MAIN RENDER ───────────────────────────────────────
 function renderLeaderboard(tab) {
   const container = document.getElementById('leaderboard-content');
-  const scores = getScores();
-  
+  const scores    = getScores();
+
   if (scores.length === 0) {
-    container.innerHTML = '<div style="color:var(--text3);font-size:.9rem;padding:12px">No scores yet. Complete a quiz to appear here!</div>';
+    container.innerHTML = `<div style="color:var(--text3);font-size:.9rem;padding:16px 12px">
+      No scores yet — complete a quiz to appear here!
+    </div>`;
     return;
   }
-  
-  let html = '<div class="lb-list">';
-  
+
+  const profiles = buildPlayerProfiles(scores);
+  const playersSorted = Object.values(profiles)
+    .sort((a, b) => b.combinedScore - a.combinedScore);
+
   if (tab === 'recent') {
-    scores.slice(0, 10).forEach((s, i) => {
-      html += `<div class="lb-row">
-        <span class="lb-rank">${i + 1}</span>
-        <span class="lb-name">${s.playerName || 'Anonymous'}</span>
-        <span class="lb-unit">${isNaN(s.unitId) ? s.unitId : 'Unit ' + s.unitId}</span>
-        <span class="lb-score">${s.score}/${s.total}</span>
-        <span class="lb-smart">⭐ ${s.smartScore}</span>
-        <span class="lb-time">${formatTime(s.time)}</span>
-      </div>`;
-    });
+    const rows = scores.slice(0, 15).map((s, i) => {
+      const acc     = s.pct ?? Math.round((s.score / s.total) * 100);
+      const sub     = s.subtopic;
+      const timeAgo = formatTimeAgo(s.date);
+      return `
+        <div class="lb2-row lb2-clickable" onclick="openPlayerModal('${(s.playerName||'Anonymous').replace(/'/g,"\\'")}')">
+          <span class="lb2-rank">${i + 1}</span>
+          <div class="lb2-main">
+            <div class="lb2-top-line">
+              <span class="lb2-name">${s.playerName || 'Anonymous'}</span>
+              <span class="lb2-score">${s.score}/${s.total}</span>
+              <span class="lb2-acc" style="color:${accuracyColor(acc)}">${acc}%</span>
+            </div>
+            <div class="lb2-sub-line">
+              <span class="lb2-unit-tag">${unitLabel(s)}</span>
+              ${sub ? `<span class="lb2-subtopic-tag">${sub}</span>` : ''}
+              <span class="lb2-time-ago">${timeAgo}</span>
+              <span class="lb2-duration">⏱ ${formatTime(s.time)}</span>
+            </div>
+          </div>
+          <div class="lb2-right">
+            <span class="lb2-smart">⭐ ${s.smartScore}</span>
+            <span class="lb2-tap-hint">tap →</span>
+          </div>
+        </div>`;
+    }).join('');
+    container.innerHTML = `<div class="lb2-list">${rows}</div>`;
+
+  } else if (tab === 'player') {
+    const rows = playersSorted.map((p, i) => `
+      <div class="lb2-player-card lb2-clickable" onclick="openPlayerModal('${p.name.replace(/'/g,"\\'")}')">
+        <div class="lb2-player-header">
+          <span class="lb2-player-rank">${rankEmoji(i)}</span>
+          <div class="lb2-player-name-wrap">
+            <span class="lb2-player-name">${p.name}</span>
+            <span class="lb2-player-meta">${p.bucketCount} topic${p.bucketCount !== 1 ? 's' : ''} · ${p.totalAttempts} attempt${p.totalAttempts !== 1 ? 's' : ''} · ${formatTimeAgo(p.lastSeen)}</span>
+          </div>
+          <div class="lb2-combined-score">
+            <span class="lb2-combined-val">⭐ ${p.combinedScore}</span>
+            <span class="lb2-combined-lbl">combined</span>
+          </div>
+        </div>
+        <div class="lb2-player-stats">
+          <div class="lb2-stat-pill">
+            <span class="lb2-stat-val" style="color:${accuracyColor(p.overallAvgAcc)}">${p.overallAvgAcc}%</span>
+            <span class="lb2-stat-lbl">avg acc</span>
+          </div>
+          <div class="lb2-stat-pill">
+            <span class="lb2-stat-val">${p.totalCorrect}/${p.totalQs}</span>
+            <span class="lb2-stat-lbl">correct</span>
+          </div>
+          <div class="lb2-stat-pill">
+            <span class="lb2-stat-val">${p.bucketCount}</span>
+            <span class="lb2-stat-lbl">topics done</span>
+          </div>
+          <div class="lb2-stat-pill">
+            <span class="lb2-stat-val">${p.totalAttempts}</span>
+            <span class="lb2-stat-lbl">attempts</span>
+          </div>
+        </div>
+        <div class="lb2-topic-bars">
+          ${Object.values(p.buckets).slice(0, 4).map(b => `
+            <div class="lb2-topic-bar-wrap" title="${unitLabelFromId(b.unitId)}${b.subtopic ? ' › ' + b.subtopic : ''} — avg ${b.avgAcc}%">
+              <div class="lb2-topic-bar-label">${unitLabelFromId(b.unitId)}${b.subtopic ? ' › ' + b.subtopic : ''}</div>
+              <div class="lb2-topic-bar-track">
+                <div class="lb2-topic-bar-fill" style="width:${b.avgAcc}%;background:${accuracyColor(b.avgAcc)}"></div>
+              </div>
+              <span class="lb2-topic-bar-pct" style="color:${accuracyColor(b.avgAcc)}">${b.avgAcc}%</span>
+            </div>`).join('')}
+          ${Object.keys(p.buckets).length > 4 ? `<div class="lb2-more-topics">+${Object.keys(p.buckets).length - 4} more · tap to see all</div>` : ''}
+        </div>
+      </div>`).join('');
+
+    container.innerHTML = `<div class="lb2-list">${rows}</div>`;
+
   } else if (tab === 'unit') {
-    // Group by unit
     const byUnit = {};
     scores.forEach(s => {
-      if (!byUnit[s.unitId]) byUnit[s.unitId] = [];
-      byUnit[s.unitId].push(s);
+      const key = s.unitId;
+      if (!byUnit[key]) byUnit[key] = [];
+      byUnit[key].push(s);
     });
-    Object.entries(byUnit).forEach(([unitId, arr]) => {
-      const best = arr.sort((a, b) => b.smartScore - a.smartScore)[0];
-      const bestName = best.playerName || 'Anonymous';
-      html += `<div class="lb-row">
-        <span class="lb-unit">${isNaN(unitId) ? unitId : 'Unit ' + unitId}</span>
-        <span class="lb-name">${bestName}</span>
-        <span class="lb-score">${best.score}/${best.total}</span>
-        <span class="lb-smart">⭐${best.smartScore}</span>
-      </div>`;
-    });
-  } else {
-    // Top scores by smartScore
-    scores.sort((a, b) => b.smartScore - a.smartScore).slice(0, 10).forEach((s, i) => {
-      const topName = s.playerName || 'Anonymous';
-      html += `<div class="lb-row">
-        <span class="lb-rank">${i + 1}</span>
-        <span class="lb-name">${topName}</span>
-        <span class="lb-unit">${isNaN(s.unitId) ? s.unitId : 'Unit ' + s.unitId}</span>
-        <span class="lb-score">${s.score}/${s.total}</span>
-        <span class="lb-smart">⭐${s.smartScore}</span>
-      </div>`;
-    });
+
+    const sections = Object.entries(byUnit)
+      .sort((a, b) => b[1].length - a[1].length)
+      .map(([unitId, arr]) => {
+        const unitName = arr[0].unitName || unitLabelFromId(unitId);
+
+        const byPlayerInUnit = {};
+        arr.forEach(s => {
+          const name = s.playerName || 'Anonymous';
+          if (!byPlayerInUnit[name]) byPlayerInUnit[name] = [];
+          byPlayerInUnit[name].push(s);
+        });
+
+        const playerRanks = Object.entries(byPlayerInUnit)
+          .map(([name, attempts]) => {
+            const avgAcc   = Math.round(attempts.reduce((sum, s) => sum + (s.pct ?? Math.round((s.score/s.total)*100)), 0) / attempts.length);
+            const avgSmart = Math.round(attempts.reduce((sum, s) => sum + s.smartScore, 0) / attempts.length);
+            const totalAtt = attempts.length;
+            return { name, avgAcc, avgSmart, totalAtt };
+          })
+          .sort((a, b) => b.avgSmart - a.avgSmart)
+          .slice(0, 3);
+
+        const bySubtopic = {};
+        arr.forEach(s => {
+          const key = s.subtopic || '__all__';
+          if (!bySubtopic[key]) bySubtopic[key] = [];
+          bySubtopic[key].push(s);
+        });
+        const subtopicKeys = Object.keys(bySubtopic).filter(k => k !== '__all__');
+        const subtopicBadges = subtopicKeys.map(k => {
+          const subArr = bySubtopic[k];
+          const avgAcc = Math.round(subArr.reduce((sum, s) => sum + (s.pct ?? Math.round((s.score/s.total)*100)), 0) / subArr.length);
+          return `<span class="lb2-subtopic-tag" style="border-color:${accuracyColor(avgAcc)};color:${accuracyColor(avgAcc)}">${k} · avg ${avgAcc}%</span>`;
+        }).join('');
+
+        const playerRows = playerRanks.map((p, i) => `
+          <div class="lb2-unit-attempt lb2-clickable" onclick="openPlayerModal('${p.name.replace(/'/g,"\\'")}')">
+            <span class="lb2-rank" style="font-size:.8rem">${rankEmoji(i)}</span>
+            <span class="lb2-name">${p.name}</span>
+            <span class="lb2-acc" style="color:${accuracyColor(p.avgAcc)}">${p.avgAcc}%</span>
+            <span class="lb2-smart">⭐ ${p.avgSmart} avg</span>
+            <span class="lb2-duration" style="color:var(--text3)">${p.totalAtt} att</span>
+          </div>`).join('');
+
+        return `
+          <div class="lb2-unit-section">
+            <div class="lb2-unit-header">
+              <div>
+                <div class="lb2-unit-title">${unitLabelFromId(unitId)} · ${unitName}</div>
+                <div class="lb2-unit-meta">${arr.length} total attempt${arr.length !== 1 ? 's' : ''} · ${Object.keys(byPlayerInUnit).length} player${Object.keys(byPlayerInUnit).length !== 1 ? 's' : ''}</div>
+              </div>
+            </div>
+            ${subtopicBadges ? `<div class="lb2-subtopic-row">${subtopicBadges}</div>` : ''}
+            <div class="lb2-unit-attempts">${playerRows}</div>
+          </div>`;
+      }).join('');
+
+    container.innerHTML = `<div class="lb2-list">${sections}</div>`;
+
+  } else if (tab === 'top') {
+    const rows = playersSorted.slice(0, 10).map((p, i) => `
+      <div class="lb2-row lb2-clickable" onclick="openPlayerModal('${p.name.replace(/'/g,"\\'")}')">
+        <span class="lb2-rank">${rankEmoji(i)}</span>
+        <div class="lb2-main">
+          <div class="lb2-top-line">
+            <span class="lb2-name">${p.name}</span>
+            <span class="lb2-acc" style="color:${accuracyColor(p.overallAvgAcc)}">${p.overallAvgAcc}% avg</span>
+          </div>
+          <div class="lb2-sub-line">
+            <span class="lb2-unit-tag">${p.bucketCount} topics</span>
+            <span class="lb2-unit-tag">${p.totalAttempts} attempts</span>
+            <span class="lb2-time-ago">${formatTimeAgo(p.lastSeen)}</span>
+          </div>
+        </div>
+        <div class="lb2-right">
+          <span class="lb2-smart">⭐ ${p.combinedScore}</span>
+          <span class="lb2-combined-lbl">combined</span>
+        </div>
+      </div>`).join('');
+    container.innerHTML = `<div class="lb2-list">${rows}</div>`;
   }
-  
-  html += '</div>';
-  container.innerHTML = html;
 }
+
+// ── PLAYER MODAL ──────────────────────────────────────
+function openPlayerModal(playerName) {
+  const scores   = getScores();
+  const profiles = buildPlayerProfiles(scores);
+  const p        = profiles[playerName];
+  if (!p) return;
+
+  const modal    = document.getElementById('player-modal');
+  const content  = document.getElementById('player-modal-content');
+
+  const bucketRows = Object.values(p.buckets)
+    .sort((a, b) => b.avgSmart - a.avgSmart)
+    .map(b => {
+      const attRows = b.attempts
+        .sort((a, b) => b.date - a.date)
+        .map(a => `
+          <div class="pm-attempt-row">
+            <span class="pm-att-score">${a.score}/${a.total}</span>
+            <span class="pm-att-acc" style="color:${accuracyColor(a.pct)}">${a.pct}%</span>
+            <span class="pm-att-smart">⭐ ${a.smartScore}</span>
+            <span class="pm-att-time">⏱ ${formatTime(a.time)}</span>
+            <span class="pm-att-ago">${formatTimeAgo(a.date)}</span>
+          </div>`).join('');
+
+      const trendDots = b.attempts
+        .slice(-8)
+        .map(a => `<span class="pm-dot" style="background:${accuracyColor(a.pct)};height:${Math.max(4, a.pct * 0.18)}px" title="${a.pct}%"></span>`)
+        .join('');
+
+      return `
+        <div class="pm-bucket">
+          <div class="pm-bucket-header">
+            <div>
+              <div class="pm-bucket-title">
+                ${unitLabelFromId(b.unitId)}
+                ${b.subtopic ? `<span class="lb2-subtopic-tag" style="margin-left:6px">${b.subtopic}</span>` : ''}
+              </div>
+              <div class="pm-bucket-meta">${b.attemptCount} attempt${b.attemptCount !== 1 ? 's' : ''} · avg acc <span style="color:${accuracyColor(b.avgAcc)};font-weight:700">${b.avgAcc}%</span></div>
+            </div>
+            <div class="pm-bucket-smart">⭐ ${b.avgSmart}<span style="font-size:.6rem;color:var(--text3);display:block;text-align:center">avg pts</span></div>
+          </div>
+          <div class="pm-trend">${trendDots}</div>
+          <div class="pm-attempts-list">${attRows}</div>
+        </div>`;
+    }).join('');
+
+  content.innerHTML = `
+    <div class="pm-header">
+      <div class="pm-avatar">${p.name.charAt(0).toUpperCase()}</div>
+      <div class="pm-header-info">
+        <div class="pm-player-name">${p.name}</div>
+        <div class="pm-player-sub">Last seen ${formatTimeAgo(p.lastSeen)}</div>
+      </div>
+      <div class="pm-combined-badge">
+        <span class="pm-combined-num">⭐ ${p.combinedScore}</span>
+        <span class="pm-combined-sub">combined score</span>
+      </div>
+    </div>
+
+    <div class="pm-overview-grid">
+      <div class="pm-ov-card">
+        <span class="pm-ov-val" style="color:${accuracyColor(p.overallAvgAcc)}">${p.overallAvgAcc}%</span>
+        <span class="pm-ov-lbl">overall acc</span>
+      </div>
+      <div class="pm-ov-card">
+        <span class="pm-ov-val">${p.totalCorrect}/${p.totalQs}</span>
+        <span class="pm-ov-lbl">correct</span>
+      </div>
+      <div class="pm-ov-card">
+        <span class="pm-ov-val">${p.bucketCount}</span>
+        <span class="pm-ov-lbl">topics</span>
+      </div>
+      <div class="pm-ov-card">
+        <span class="pm-ov-val">${p.totalAttempts}</span>
+        <span class="pm-ov-lbl">attempts</span>
+      </div>
+    </div>
+
+    <div class="pm-section-title">Breakdown by Topic</div>
+    <div class="pm-buckets">${bucketRows}</div>
+  `;
+
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePlayerModal() {
+  const modal = document.getElementById('player-modal');
+  if (modal) modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('click', e => {
+  const modal = document.getElementById('player-modal');
+  if (modal && e.target === modal) closePlayerModal();
+});
 
 function formatTime(seconds) {
   if (seconds < 60) return `${Math.round(seconds)}s`;
@@ -292,11 +740,9 @@ async function openSetup(unitId) {
   document.getElementById('modal-icon').textContent = u.icon;
   document.getElementById('modal-unit-name').textContent = u.name;
 
-  // Populate saved player name
   const nameInput = document.getElementById('player-name');
   nameInput.value = getPlayerName();
 
-  // Load data if not cached
   if (!u._data) {
     try {
       let filePath = '';
@@ -311,13 +757,21 @@ async function openSetup(unitId) {
     }
   }
 
-  const totalQs = u._data?.totalQuestions || 0;
+  const d = u._data;
+  const totalQs = d?.totalQuestions || 0;
   const unitLabel = u.isCollege ? 'College MCQ' : (u.isNirali ? 'Nirali Bank' : `Unit ${u.id}`);
   document.getElementById('modal-unit-count').textContent = `${unitLabel} · ${totalQs} questions available`;
 
   const countBtns = document.getElementById('count-btns');
   const unitSelectDiv = document.getElementById('unit-select');
   const subtopicDiv = document.getElementById('subtopic-select');
+
+  const playerName = getPlayerName() || 'Anonymous';
+  const completed = getCompleted();
+  const isTopicDone = (qList) => {
+    if (!qList || qList.length === 0) return false;
+    return qList.every(q => completed.includes(`${playerName}|${q.question}`));
+  };
 
   const updateCountButtons = (availableCount) => {
     const counts = [10, 20, 30, 70];
@@ -348,6 +802,19 @@ async function openSetup(unitId) {
     unitSelectDiv.style.display = 'block';
     subtopicDiv.style.display = 'block';
     
+    const uOptions = d.units.map(un => {
+      const isDone = isTopicDone(un.subtopics.flatMap(st => st.questions));
+      return `<button class="subtopic-btn ${isDone ? 'completed' : ''}" data-unit-id="${un.unitId}">${un.name} ${isDone ? '✅' : ''}</button>`;
+    }).join('');
+      
+    unitSelectDiv.innerHTML = `
+      <div style="margin-bottom:8px;font-weight:500">Select Unit:</div>
+      <div class="subtopic-options">
+        <button class="subtopic-btn active" data-unit-id="">Full Bank</button>
+        ${uOptions}
+      </div>
+    `;
+
     const renderNiraliSubtopics = (unit) => {
       if (!unit) {
         subtopicDiv.innerHTML = '';
@@ -357,7 +824,10 @@ async function openSetup(unitId) {
         <div style="margin-bottom:8px;font-weight:500">Select Subtopic:</div>
         <div class="subtopic-options">
           <button class="subtopic-btn active" data-subtopic="all">All from ${unit.unitName}</button>
-          ${unit.subtopics.map(st => `<button class="subtopic-btn" data-subtopic="${st.subtopicId}">${st.subtopicId} - ${st.subtopicName}</button>`).join('')}
+          ${unit.subtopics.map(st => {
+            const isDone = isTopicDone(st.questions);
+            return `<button class="subtopic-btn ${isDone ? 'completed' : ''}" data-subtopic="${st.subtopicId}">${st.subtopicId} ${isDone ? '✅' : ''}</button>`;
+          }).join('')}
         </div>
       `;
       
@@ -369,34 +839,26 @@ async function openSetup(unitId) {
           
           let count = 0;
           if (state.subtopic) {
-            count = unit.subtopics.find(st => st.subtopicId === state.subtopic).totalQuestions;
+            count = unit.subtopics.find(st => st.subtopicId === state.subtopic).questions.length;
           } else {
-            count = unit.totalQuestions;
+            count = unit.subtopics.flatMap(st => st.questions).length;
           }
           updateCountButtons(count);
         };
       });
     };
 
-    unitSelectDiv.innerHTML = `
-      <div style="margin-bottom:8px;font-weight:500">Select Unit:</div>
-      <div class="subtopic-options">
-        <button class="subtopic-btn active" data-unit="all">Full Bank</button>
-        ${u._data.units.map(un => `<button class="subtopic-btn" data-unit="${un.unitId}">${un.unitName}</button>`).join('')}
-      </div>
-    `;
-
     unitSelectDiv.querySelectorAll('.subtopic-btn').forEach(btn => {
       btn.onclick = () => {
         unitSelectDiv.querySelectorAll('.subtopic-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        state.niraliUnitId = btn.dataset.unit === 'all' ? null : parseInt(btn.dataset.unit);
+        state.niraliUnitId = btn.dataset.unitId === '' ? null : parseInt(btn.dataset.unitId);
         state.subtopic = null;
         
         if (state.niraliUnitId) {
-          const unit = u._data.units.find(un => un.unitId === state.niraliUnitId);
+          const unit = d.units.find(un => un.unitId === state.niraliUnitId);
           renderNiraliSubtopics(unit);
-          updateCountButtons(unit.totalQuestions);
+          updateCountButtons(unit.subtopics.flatMap(st => st.questions).length);
         } else {
           subtopicDiv.innerHTML = '';
           updateCountButtons(totalQs);
@@ -411,7 +873,6 @@ async function openSetup(unitId) {
     
     const allMistakes = getMistakes().all || [];
     const allRevisions = getRevisions();
-    const playerName = getPlayerName() || 'Anonymous';
     
     const myMistakes = allMistakes.filter(m => m.user === playerName);
     const myRevisions = allRevisions.filter(r => r.user === playerName);
@@ -466,12 +927,30 @@ async function openSetup(unitId) {
     const syllabus = await loadSyllabus();
     const unitSyllabus = syllabus?.units?.find(x => x.id === unitId);
     
-    if (unitSyllabus?.subtopics?.length > 0 && !u.isCollege) {
+    if (u.isCollege) {
+      const isDone = isTopicDone(d.questions);
+      subtopicDiv.innerHTML = `
+        <div style="margin-bottom:8px;font-weight:500">Practice Mode:</div>
+        <div class="subtopic-options">
+          <button class="subtopic-btn active ${isDone ? 'completed' : ''}" data-subtopic="">
+            Full Mixed Bank ${isDone ? '✅' : ''}
+          </button>
+        </div>
+      `;
+      subtopicDiv.style.display = 'block';
+    } else if (unitSyllabus?.subtopics?.length > 0) {
+      const stOptions = unitSyllabus.subtopics.map(st => {
+        const stQs = d.questions.filter(q => q.subtopic === st.id);
+        const isDone = isTopicDone(stQs);
+        return `<button class="subtopic-btn ${isDone ? 'completed' : ''}" data-subtopic="${st.id}">${st.id} ${isDone ? '✅' : ''}</button>`;
+      }).join('');
+      
+      const isFullDone = isTopicDone(d.questions);
       subtopicDiv.innerHTML = `
         <div style="margin-bottom:8px;font-weight:500">Select Scope:</div>
         <div class="subtopic-options">
-          <button class="subtopic-btn active" data-subtopic="all">Entire Unit</button>
-          ${unitSyllabus.subtopics.map(st => `<button class="subtopic-btn" data-subtopic="${st.id}">${st.id} - ${st.title}</button>`).join('')}
+          <button class="subtopic-btn active ${isFullDone ? 'completed' : ''}" data-subtopic="all">Entire Unit ${isFullDone ? '✅' : ''}</button>
+          ${stOptions}
         </div>
       `;
       subtopicDiv.style.display = 'block';
@@ -480,7 +959,7 @@ async function openSetup(unitId) {
           subtopicDiv.querySelectorAll('.subtopic-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           state.subtopic = btn.dataset.subtopic === 'all' ? null : btn.dataset.subtopic;
-          const subQs = state.subtopic ? u._data.questions.filter(q => q.subtopic === state.subtopic).length : totalQs;
+          const subQs = state.subtopic ? d.questions.filter(q => q.subtopic === state.subtopic).length : totalQs;
           updateCountButtons(subQs);
         };
       });
@@ -493,10 +972,21 @@ async function openSetup(unitId) {
   showScreen('screen-setup');
 }
 
-function showHome() { showScreen('screen-home'); }
+function showHome() {
+  saveSession();
+  showScreen('screen-home');
+  renderHome();
+}
 
 // ── START QUIZ ────────────────────────────────
 async function startQuiz() {
+  const playerName = getPlayerName();
+  if (!playerName || playerName.trim().length < 2) {
+    alert('Please enter your name first in the Home screen to track your progress!');
+    showHome();
+    return;
+  }
+
   showScreen('screen-loading');
 
   try {
@@ -515,7 +1005,6 @@ async function startQuiz() {
 
     let pool = [];
     if (unit?.isNirali) {
-      // Handle nested Nirali structure
       if (state.niraliUnitId) {
         const uNode = data.units.find(un => un.unitId === state.niraliUnitId);
         if (state.subtopic) {
@@ -524,7 +1013,6 @@ async function startQuiz() {
           pool = uNode.subtopics.flatMap(st => st.questions);
         }
       } else {
-        // Entire Nirali Bank
         pool = data.units.flatMap(un => un.subtopics.flatMap(st => st.questions));
       }
     } else if (unit?.isSmart) {
@@ -547,6 +1035,22 @@ async function startQuiz() {
       if (state.subtopic) {
         pool = pool.filter(q => q.subtopic === state.subtopic);
       }
+      
+      const playerName = getPlayerName() || 'Anonymous';
+      const completed = getCompleted();
+      const unseen = pool.filter(q => !completed.includes(`${playerName}|${q.question}`));
+      
+      if (unseen.length > 0) {
+        pool = unseen;
+      } else {
+        const mistakes = (getMistakes().all || []).filter(m => m.user === playerName);
+        const mistakeTexts = mistakes.map(m => m.question);
+        pool.sort((a, b) => {
+          const aMistake = mistakeTexts.includes(a.question);
+          const bMistake = mistakeTexts.includes(b.question);
+          return bMistake - aMistake;
+        });
+      }
     }
 
     pool = shuffle(pool);
@@ -559,8 +1063,9 @@ async function startQuiz() {
     state.unitName    = data.name;
     state.questionTimes = [];
     state.smartScore  = 0;
+    
+    saveSession();
 
-    // Quiz header badge
     let badgeText = '';
     if (unit?.isCollege) badgeText = 'College MCQ';
     else if (unit?.isNirali) badgeText = 'Nirali Bank';
@@ -583,20 +1088,16 @@ function renderQuestion() {
   const idx  = state.current;
   const tot  = state.questions.length;
   state.answered = false;
-  state.questionStartTime = Date.now(); // Track time
+  state.questionStartTime = Date.now(); 
 
-  // Header
   document.getElementById('quiz-qnum').textContent = `Q ${idx + 1} / ${tot}`;
   document.getElementById('score-display').textContent = state.score;
 
-  // Progress bar
   document.getElementById('progress-fill').style.width = `${(idx / tot) * 100}%`;
 
-  // Question card
   document.getElementById('qcard-num').textContent = `Question ${String(idx + 1).padStart(2,'0')}`;
   document.getElementById('qcard-text').textContent = q.question;
 
-  // Revision button
   const reviseBtn = document.getElementById('revise-btn');
   const revisions = getRevisions();
   const isRevised = revisions.find(r => r.question === q.question);
@@ -607,11 +1108,9 @@ function renderQuestion() {
     reviseBtn.classList.toggle('active', added);
   };
 
-  // Shuffle options keeping correct flag
   const opts = q.options.map((text, i) => ({ text, isCorrect: i === q.correct }));
   state.shuffledOpts = shuffle(opts);
 
-  // Render option buttons
   const grid = document.getElementById('options-grid');
   grid.innerHTML = '';
   const labels = ['A','B','C','D'];
@@ -624,7 +1123,6 @@ function renderQuestion() {
     grid.appendChild(btn);
   });
 
-  // Hide explanation + next
   const expl = document.getElementById('explanation-card');
   expl.classList.remove('visible');
   const nextBtn = document.getElementById('next-btn');
@@ -636,7 +1134,6 @@ function handleAnswer(selectedIdx, clickedBtn) {
   if (state.answered) return;
   state.answered = true;
 
-  // Track time taken
   const timeTaken = (Date.now() - state.questionStartTime) / 1000;
   state.questionTimes.push(timeTaken);
 
@@ -647,23 +1144,21 @@ function handleAnswer(selectedIdx, clickedBtn) {
   if (correct) {
     state.score++;
     clickedBtn.classList.add('correct');
-    // bump score display
+    saveCompleted(q, state.unitId);
     const sv = document.getElementById('score-display');
     sv.textContent = state.score;
+    saveSession();
     sv.classList.remove('score-bump');
-    void sv.offsetWidth; // reflow
+    void sv.offsetWidth; 
     sv.classList.add('score-bump');
   } else {
     clickedBtn.classList.add('wrong');
-    // Save mistake for tracking
     saveMistake(state.unitId, q);
-    // show correct answer
     allBtns.forEach((btn, i) => {
       if (state.shuffledOpts[i].isCorrect) btn.classList.add('correct');
     });
   }
 
-  // Dim unchosen options
   allBtns.forEach((btn, i) => {
     btn.disabled = true;
     if (i !== selectedIdx && !state.shuffledOpts[i].isCorrect) {
@@ -671,22 +1166,26 @@ function handleAnswer(selectedIdx, clickedBtn) {
     }
   });
 
-  // Show explanation
   document.getElementById('expl-text').textContent = q.explanation;
   document.getElementById('explanation-card').classList.add('visible');
 
-  // Next / Finish button
   const nextBtn = document.getElementById('next-btn');
-  const isLast  = state.current === state.questions.length - 1;
-  nextBtn.innerHTML = isLast
+  nextBtn.innerHTML = (state.current === state.questions.length - 1)
     ? 'See Results 🎯'
     : 'Next Question <span>→</span>';
-  nextBtn.onclick = isLast ? showResults : nextQuestion;
+  nextBtn.onclick = () => {
+    state.current++;
+    if (state.current < state.questions.length) {
+      saveSession();
+      renderQuestion();
+    } else {
+      clearSession();
+      showResults();
+    }
+  };
   nextBtn.style.display = 'flex';
 }
 
-function nextQuestion() {
-  state.current++;
   renderQuestion();
 }
 
