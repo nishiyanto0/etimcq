@@ -307,7 +307,7 @@ async function syncToCloud(table, entry) {
         'Authorization': `Bearer ${INSFORGE_CONFIG.API_KEY}`,
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(entry)
+      body: JSON.stringify([entry]) // MUST be an array
     });
   } catch(e) {
     console.error(`Failed to sync to ${table}:`, e);
