@@ -301,8 +301,19 @@ async function loadGlobalScores() {
     if (error) throw error;
     
     if (data && data.length > 0) {
-      window._globalScores = data;
-      if (statusEl) statusEl.textContent = `Cloud Sync Active (${data.length} total)`;
+      // Deduplicate: latest entry per user per unit/subtopic
+      const unique = [];
+      const seen = new Set();
+      data.forEach(s => {
+        const key = `${s.playerName}|${s.unitId}|${s.subtopic || 'all'}`;
+        if (!seen.has(key)) {
+          unique.push(s);
+          seen.add(key);
+        }
+      });
+      
+      window._globalScores = unique;
+      if (statusEl) statusEl.textContent = `Cloud Sync Active (${unique.length} unique)`;
       renderLeaderboard(document.querySelector('.lb-tab.active')?.dataset.tab || 'recent');
     } else {
       if (statusEl) statusEl.textContent = 'Cloud Active (No Data)';
@@ -415,9 +426,20 @@ window.handleLogout = async () => {
   updateUserSession(null);
 };
 
+window.skipAuth = () => {
+  showScreen('screen-home');
+  renderHome();
+};
+
 async function checkUserSession() {
   const { data } = await insforge.auth.getCurrentUser();
-  updateUserSession(data.user);
+  if (data.user) {
+    updateUserSession(data.user);
+    showScreen('screen-home');
+    renderHome();
+  } else {
+    showScreen('screen-landing');
+  }
 }
 
 function updateUserSession(user) {
@@ -427,13 +449,15 @@ function updateUserSession(user) {
   const toggleBtn = document.querySelector('.btn-auth-toggle');
   const profileCard = document.getElementById('user-profile-card');
   const guestInput = document.getElementById('guest-name-input');
+  const emailTag = document.getElementById('user-email-tag');
 
   if (user) {
     dot.classList.add('active');
     text.textContent = 'Secured Cloud';
-    toggleBtn.style.display = 'none';
-    profileCard.style.display = 'flex';
-    guestInput.style.display = 'none';
+    if (toggleBtn) toggleBtn.style.display = 'none';
+    if (profileCard) profileCard.style.display = 'flex';
+    if (guestInput) guestInput.style.display = 'none';
+    if (emailTag) emailTag.textContent = user.email;
     
     const displayName = user.profile?.name || user.email.split('@')[0];
     document.getElementById('user-display-name').textContent = displayName;
@@ -442,12 +466,18 @@ function updateUserSession(user) {
     savePlayerName(displayName);
     const input = document.getElementById('player-name');
     if (input) input.value = displayName;
+
+    // Transition if on landing
+    if (document.getElementById('screen-landing').classList.contains('active')) {
+      showScreen('screen-home');
+      renderHome();
+    }
   } else {
     dot.classList.remove('active');
     text.textContent = 'Guest Mode';
-    toggleBtn.style.display = 'block';
-    profileCard.style.display = 'none';
-    guestInput.style.display = 'block';
+    if (toggleBtn) toggleBtn.style.display = 'block';
+    if (profileCard) profileCard.style.display = 'none';
+    if (guestInput) guestInput.style.display = 'block';
   }
 }
 
@@ -1475,6 +1505,7 @@ window.restartQuiz = restartQuiz;
 window.toggleQuizMenu = toggleQuizMenu;
 window.closeQuizMenu = closeQuizMenu;
 window.showHome = showHome;
+window.skipAuth = skipAuth;
 
 // ── INIT ─────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {

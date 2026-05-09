@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ETI MCQ Challenge | V2V EdTech</title>
+  <title>ETI MCQ - Practice Smarter</title>
   <meta name="description" content="Interactive MCQ practice for ETI (CO/IT) 316313 — AI, IoT, Blockchain, Immersive Tech & Cybersecurity" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -23,8 +23,51 @@
   <div class="bg-orb bg-orb-2"></div>
   <div class="bg-orb bg-orb-3"></div>
 
+  <!-- ═══ SCREEN: LANDING ═══ -->
+  <div id="screen-landing" class="screen active">
+    <div class="landing-hero">
+      <div class="landing-glass">
+        <div class="landing-icon">🎓</div>
+        <h1 class="landing-title">ETI MCQ <span class="purple-text">Challenge</span></h1>
+        <p class="landing-tagline">Master your exams with AI-powered practice and real-time cloud synchronization.</p>
+        
+        <div class="landing-actions">
+          <button class="btn-landing-google" onclick="handleGoogleLogin()">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="G" />
+            Continue with Google
+          </button>
+          
+          <div class="landing-divider"><span>OR</span></div>
+          
+          <button class="btn-landing-email" onclick="openAuthModal()">
+            <span class="btn-icon">✉️</span> Login with Email
+          </button>
+          
+          <button class="btn-landing-guest" onclick="skipAuth()">
+            Continue as Guest <span>→</span>
+          </button>
+        </div>
+        
+        <div class="landing-footer">
+          <div class="stat-item">
+            <span class="stat-val">500+</span>
+            <span class="stat-lbl">Questions</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">Real-time</span>
+            <span class="stat-lbl">Leaderboard</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">Cloud</span>
+            <span class="stat-lbl">Sync</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ═══ SCREEN: HOME ═══ -->
-  <div id="screen-home" class="screen active">
+  <div id="screen-home" class="screen">
     <div class="home-wrap">
       <header class="home-header">
         <div class="home-badge">V2V EdTech LLP · ETI (316313)</div>
@@ -54,7 +97,10 @@
             <img id="user-avatar" src="" alt="avatar" />
             <div class="user-info">
               <span id="user-display-name"></span>
-              <button class="btn-logout" onclick="handleLogout()">Logout</button>
+              <div class="user-meta-row">
+                <span id="user-email-tag"></span>
+                <button class="btn-logout" onclick="handleLogout()">Logout</button>
+              </div>
             </div>
           </div>
           <div id="guest-name-input">
