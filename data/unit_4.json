@@ -121,7 +121,7 @@
       "subtopic": "4.1"
     },
     {
-      "question": "Pokémon GO is example of:",
+      "question": "Pok\u00e9mon GO is example of:",
       "options": [
         "VR",
         "AR",
@@ -130,7 +130,7 @@
       ],
       "correct": 1,
       "correctText": "AR",
-      "explanation": "Pokémon GO is an example of AR (Augmented Reality) because it overlays virtual Pokémon characters onto the real-world environment captured through the smartphone camera, allowing players to see and catch Pokémon in their actual physical surroundings.",
+      "explanation": "Pok\u00e9mon GO is an example of AR (Augmented Reality) because it overlays virtual Pok\u00e9mon characters onto the real-world environment captured through the smartphone camera, allowing players to see and catch Pok\u00e9mon in their actual physical surroundings.",
       "subtopic": "4.1"
     },
     {
@@ -143,7 +143,7 @@
       ],
       "correct": 2,
       "correctText": "VR and AR",
-      "explanation": "The correct answer is 'VR and AR'. This follows the standard concepts covered in this unit.",
+      "explanation": "Mixed Reality (MR) combines elements of both VR and AR by merging the real and virtual worlds to create new environments where physical and digital objects coexist and interact in real-time, offering experiences that are more immersive than AR but less isolating than VR.",
       "subtopic": "4.1"
     },
     {
@@ -156,7 +156,7 @@
       ],
       "correct": 1,
       "correctText": "Interact with real objects",
-      "explanation": "The correct answer is 'Interact with real objects'. This follows the standard concepts covered in this unit.",
+      "explanation": "Mixed Reality (MR) allows digital objects to interact with real objects by using spatial mapping, depth sensors, and environmental understanding. This means virtual elements can respond to physical surfaces, occlude behind real objects, and maintain realistic placement within the user's actual environment, creating a seamless blend of digital and physical worlds.",
       "subtopic": "4.1"
     },
     {
@@ -169,7 +169,7 @@
       ],
       "correct": 0,
       "correctText": "Extended Reality",
-      "explanation": "The correct answer is 'Extended Reality'. This follows the standard concepts covered in this unit.",
+      "explanation": "XR stands for Extended Reality, which is an umbrella term that encompasses all immersive technologies including Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR), representing the full spectrum of reality-virtuality continuum.",
       "subtopic": "4.1"
     },
     {
@@ -182,7 +182,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "XR includes all of the above \u2014 VR (fully virtual environments), AR (digital overlays on real world), and MR (interactive blend of real and virtual) \u2014 because Extended Reality is the umbrella term covering the entire spectrum of immersive technologies.",
       "subtopic": "4.1"
     },
     {
@@ -195,7 +195,7 @@
       ],
       "correct": 1,
       "correctText": "Touch feedback",
-      "explanation": "The correct answer is 'Touch feedback'. This follows the standard concepts covered in this unit.",
+      "explanation": "Haptic technology provides touch feedback by simulating the sense of touch through vibrations, forces, or motions. This allows users to feel virtual objects and interactions, enhancing realism and immersion in VR/AR experiences.",
       "subtopic": "4.1"
     },
     {
@@ -208,7 +208,7 @@
       ],
       "correct": 1,
       "correctText": "Touch sensation",
-      "explanation": "The correct answer is 'Touch sensation'. This follows the standard concepts covered in this unit.",
+      "explanation": "Haptic devices simulate touch sensations such as texture, pressure, vibration, and force. This tactile feedback makes virtual interactions feel more realistic, allowing users to 'feel' digital objects and enhancing the overall immersive experience.",
       "subtopic": "4.1"
     },
     {
@@ -221,7 +221,7 @@
       ],
       "correct": 0,
       "correctText": "Simulation",
-      "explanation": "The correct answer is 'Simulation'. This follows the standard concepts covered in this unit.",
+      "explanation": "VR improves understanding through simulation by allowing users to experience and practice in safe, controlled virtual environments. This experiential learning is particularly effective for complex tasks, dangerous scenarios, or situations that are difficult to replicate in real life.",
       "subtopic": "4.1"
     },
     {
@@ -234,7 +234,7 @@
       ],
       "correct": 0,
       "correctText": "Real-time information",
-      "explanation": "The correct answer is 'Real-time information'. This follows the standard concepts covered in this unit.",
+      "explanation": "AR improves access to real-time information by overlaying relevant data, instructions, or context directly onto the user's view of the physical world. This enables workers to access information hands-free while performing tasks, improving efficiency and accuracy.",
       "subtopic": "4.1"
     },
     {
@@ -247,7 +247,7 @@
       ],
       "correct": 0,
       "correctText": "Remote collaboration",
-      "explanation": "The correct answer is 'Remote collaboration'. This follows the standard concepts covered in this unit.",
+      "explanation": "Mixed Reality is used in remote collaboration because it allows geographically distributed team members to share a common spatial computing environment where they can see, manipulate, and interact with the same 3D holographic models and data in real-time, as if they were in the same room.",
       "subtopic": "4.1"
     },
     {
@@ -260,7 +260,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Immersive technology is used across all of the above domains \u2014 Healthcare (surgery simulation, therapy, training), Education (interactive learning, virtual labs), and Gaming (immersive experiences) \u2014 demonstrating its versatility and broad applicability across industries.",
       "subtopic": "4.1"
     },
     {
@@ -273,7 +273,7 @@
       ],
       "correct": 0,
       "correctText": "Surgery simulation",
-      "explanation": "The correct answer is 'Surgery simulation'. This follows the standard concepts covered in this unit.",
+      "explanation": "VR in healthcare is mainly used for surgery simulation because it allows surgeons and medical students to practice complex procedures in a realistic, risk-free virtual environment. This enables repeated practice of rare or dangerous operations, improves surgical skills, and reduces the risk of errors during actual procedures.",
       "subtopic": "4.1"
     },
     {
@@ -286,7 +286,7 @@
       ],
       "correct": 0,
       "correctText": "Risk-free",
-      "explanation": "The correct answer is 'Risk-free'. This follows the standard concepts covered in this unit.",
+      "explanation": "VR helps in dangerous training because it is risk-free \u2014 users can practice hazardous scenarios like firefighting, military combat, deep-sea diving, or chemical spill handling without any physical danger. Mistakes in VR have no real-world consequences, allowing trainees to learn from errors safely.",
       "subtopic": "4.1"
     },
     {
@@ -299,7 +299,7 @@
       ],
       "correct": 0,
       "correctText": "Digital directions",
-      "explanation": "The correct answer is 'Digital directions'. This follows the standard concepts covered in this unit.",
+      "explanation": "AR navigation displays digital directions by overlaying route guidance, turn-by-turn arrows, and points of interest directly onto the user's real-world view through their smartphone or AR glasses. This provides intuitive, heads-up navigation that keeps the user oriented in their actual environment.",
       "subtopic": "4.1"
     },
     {
@@ -312,7 +312,7 @@
       ],
       "correct": 0,
       "correctText": "Industrial safety",
-      "explanation": "The correct answer is 'Industrial safety'. This follows the standard concepts covered in this unit.",
+      "explanation": "Immersive technology improves industrial safety by enabling workers to visualize hazards, practice emergency procedures, and receive real-time AR guidance during complex operations. VR safety training and AR hazard overlays help prevent accidents and ensure workers are better prepared for dangerous situations.",
       "subtopic": "4.1"
     },
     {
@@ -325,7 +325,7 @@
       ],
       "correct": 0,
       "correctText": "Virtual tours",
-      "explanation": "The correct answer is 'Virtual tours'. This follows the standard concepts covered in this unit.",
+      "explanation": "VR tourism allows virtual tours that let users experience destinations, landmarks, and cultural sites from anywhere in the world. Users can explore realistic 3D recreations of locations they may never physically visit, making travel experiences accessible to people with mobility, financial, or time constraints.",
       "subtopic": "4.1"
     },
     {
@@ -338,7 +338,7 @@
       ],
       "correct": 0,
       "correctText": "Sensors and cameras",
-      "explanation": "The correct answer is 'Sensors and cameras'. This follows the standard concepts covered in this unit.",
+      "explanation": "MR uses sensors and cameras to map the physical environment in real-time, track the user's position and gaze, and understand spatial relationships. These inputs enable the system to place holographic objects accurately in the real world and allow them to interact naturally with physical surfaces and objects.",
       "subtopic": "4.1"
     },
     {
@@ -351,7 +351,7 @@
       ],
       "correct": 0,
       "correctText": "Immersive headset",
-      "explanation": "The correct answer is 'Immersive headset'. This follows the standard concepts covered in this unit.",
+      "explanation": "VR gaming requires an immersive headset (Head-Mounted Display) as the essential hardware component that provides stereoscopic 3D visuals, head tracking, and full visual immersion in the game world. The headset blocks out the real world and replaces it with the virtual gaming environment.",
       "subtopic": "4.1"
     },
     {
@@ -364,7 +364,7 @@
       ],
       "correct": 0,
       "correctText": "Marketing",
-      "explanation": "The correct answer is 'Marketing'. This follows the standard concepts covered in this unit.",
+      "explanation": "AR product visualization helps in marketing by allowing customers to see products in their real environment before purchasing \u2014 such as placing virtual furniture in their living room or trying on virtual makeup. This interactive experience increases buyer confidence, reduces returns, and creates engaging brand experiences.",
       "subtopic": "4.1"
     },
     {
@@ -377,7 +377,7 @@
       ],
       "correct": 0,
       "correctText": "Flexible immersive solutions",
-      "explanation": "The correct answer is 'Flexible immersive solutions'. This follows the standard concepts covered in this unit.",
+      "explanation": "XR offers flexible immersive solutions because it spans the full spectrum from fully virtual (VR) to fully real with digital overlays (AR), and everything in between (MR). This flexibility allows organizations to choose the right level of immersion for each use case, from training simulations to field service assistance.",
       "subtopic": "4.1"
     },
     {
@@ -390,7 +390,7 @@
       ],
       "correct": 0,
       "correctText": "Realism",
-      "explanation": "The correct answer is 'Realism'. This follows the standard concepts covered in this unit.",
+      "explanation": "Haptic feedback enhances realism by adding the sense of touch to immersive experiences. When users can feel virtual textures, impacts, resistance, and vibrations, the brain receives additional sensory confirmation that makes the virtual experience feel significantly more authentic and believable.",
       "subtopic": "4.1"
     },
     {
@@ -403,7 +403,7 @@
       ],
       "correct": 0,
       "correctText": "Energy consumption",
-      "explanation": "The correct answer is 'Energy consumption'. This follows the standard concepts covered in this unit.",
+      "explanation": "Green computing aims to reduce energy consumption by optimizing hardware efficiency, implementing power management features, and designing energy-aware software. Data centers and IT infrastructure are major energy consumers, so reducing their power usage directly decreases both operational costs and environmental impact.",
       "subtopic": "4.3"
     },
     {
@@ -416,7 +416,7 @@
       ],
       "correct": 0,
       "correctText": "Sustainability",
-      "explanation": "The correct answer is 'Sustainability'. This follows the standard concepts covered in this unit.",
+      "explanation": "Green IT promotes sustainability by encouraging practices that minimize the environmental impact of technology throughout its lifecycle \u2014 from energy-efficient design and manufacturing to responsible usage, recycling, and disposal. This ensures that current IT needs are met without compromising the ability of future generations to meet theirs.",
       "subtopic": "4.1"
     },
     {
@@ -429,7 +429,7 @@
       ],
       "correct": 0,
       "correctText": "Carbon emission",
-      "explanation": "The correct answer is 'Carbon emission'. This follows the standard concepts covered in this unit.",
+      "explanation": "Green computing reduces carbon emission by lowering the energy demands of IT infrastructure, which is predominantly powered by fossil fuel-based electricity. Every kilowatt-hour saved through efficient computing translates directly to reduced greenhouse gas emissions from power plants.",
       "subtopic": "4.3"
     },
     {
@@ -442,7 +442,7 @@
       ],
       "correct": 0,
       "correctText": "Physical servers",
-      "explanation": "The correct answer is 'Physical servers'. This follows the standard concepts covered in this unit.",
+      "explanation": "Virtualization reduces physical servers by allowing multiple virtual machines to run on a single physical server. This consolidation means organizations need fewer physical machines to run the same workloads, reducing hardware costs, space requirements, power consumption, and cooling needs.",
       "subtopic": "4.1"
     },
     {
@@ -455,7 +455,7 @@
       ],
       "correct": 0,
       "correctText": "Large electricity",
-      "explanation": "The correct answer is 'Large electricity'. This follows the standard concepts covered in this unit.",
+      "explanation": "Data centers consume large electricity because they house thousands of servers running 24/7, along with cooling systems, networking equipment, and power distribution infrastructure. A single large data center can consume as much electricity as a small town, making energy efficiency a critical concern.",
       "subtopic": "4.3"
     },
     {
@@ -468,7 +468,7 @@
       ],
       "correct": 0,
       "correctText": "Save energy",
-      "explanation": "The correct answer is 'Save energy'. This follows the standard concepts covered in this unit.",
+      "explanation": "Efficient cooling helps save energy because cooling systems typically account for 30-40% of a data center's total energy consumption. Advanced cooling methods like hot/cold aisle containment, liquid cooling, and free cooling reduce the energy needed to maintain optimal temperatures, significantly improving overall efficiency.",
       "subtopic": "4.3"
     },
     {
@@ -481,7 +481,7 @@
       ],
       "correct": 0,
       "correctText": "Discarded electronics",
-      "explanation": "The correct answer is 'Discarded electronics'. This follows the standard concepts covered in this unit.",
+      "explanation": "E-waste includes discarded electronics such as old computers, smartphones, televisions, printers, circuit boards, and batteries. These items contain both hazardous materials (lead, mercury, cadmium) and valuable recoverable resources (gold, copper, rare earth elements), making proper disposal critical.",
       "subtopic": "4.3"
     },
     {
@@ -494,7 +494,7 @@
       ],
       "correct": 0,
       "correctText": "Pollution",
-      "explanation": "The correct answer is 'Pollution'. This follows the standard concepts covered in this unit.",
+      "explanation": "Improper e-waste disposal causes pollution because electronic devices contain toxic substances like lead, mercury, cadmium, and brominated flame retardants. When e-waste is dumped in landfills or informally recycled through burning or acid baths, these toxins leach into soil, water, and air, endangering ecosystems and human health.",
       "subtopic": "4.3"
     },
     {
@@ -507,7 +507,7 @@
       ],
       "correct": 0,
       "correctText": "Valuable materials",
-      "explanation": "The correct answer is 'Valuable materials'. This follows the standard concepts covered in this unit.",
+      "explanation": "Recycling recovers valuable materials from e-waste including precious metals (gold, silver, palladium), base metals (copper, aluminum, iron), and rare earth elements. One ton of circuit boards can contain 40-800 times more gold than one ton of gold ore, making e-waste recycling economically and environmentally valuable.",
       "subtopic": "4.3"
     },
     {
@@ -520,7 +520,7 @@
       ],
       "correct": 0,
       "correctText": "Collection",
-      "explanation": "The correct answer is 'Collection'. This follows the standard concepts covered in this unit.",
+      "explanation": "The first step in e-waste recycling is collection \u2014 gathering discarded electronics from consumers, businesses, and institutions through take-back programs, drop-off centers, and pickup services. Proper collection ensures e-waste enters the formal recycling stream rather than ending up in landfills or informal processing.",
       "subtopic": "4.3"
     },
     {
@@ -533,7 +533,7 @@
       ],
       "correct": 0,
       "correctText": "Metal separation",
-      "explanation": "The correct answer is 'Metal separation'. This follows the standard concepts covered in this unit.",
+      "explanation": "Magnetic separation is used for metal separation in e-waste recycling by using powerful magnets to attract and separate ferromagnetic materials (primarily iron and steel) from the shredded e-waste stream. This efficient, automated process separates magnetic metals from non-magnetic materials like plastic and glass.",
       "subtopic": "4.1"
     },
     {
@@ -546,7 +546,7 @@
       ],
       "correct": 0,
       "correctText": "Non-ferrous metals",
-      "explanation": "The correct answer is 'Non-ferrous metals'. This follows the standard concepts covered in this unit.",
+      "explanation": "Eddy current separation removes non-ferrous metals (such as aluminum, copper, and brass) from e-waste by using a rapidly rotating magnetic rotor that induces eddy currents in conductive materials. These currents create a repulsive force that ejects non-ferrous metals from the waste stream, separating them from non-conductive materials.",
       "subtopic": "4.1"
     },
     {
@@ -559,7 +559,7 @@
       ],
       "correct": 0,
       "correctText": "Operational cost",
-      "explanation": "The correct answer is 'Operational cost'. This follows the standard concepts covered in this unit.",
+      "explanation": "Green computing lowers operational cost by reducing energy consumption, decreasing hardware requirements through virtualization, extending equipment lifespan, and minimizing cooling needs. These savings can be substantial \u2014 a typical organization can reduce IT energy costs by 20-40% through green computing practices.",
       "subtopic": "4.3"
     },
     {
@@ -572,7 +572,7 @@
       ],
       "correct": 0,
       "correctText": "Recycling process",
-      "explanation": "The correct answer is 'Recycling process'. This follows the standard concepts covered in this unit.",
+      "explanation": "Water separation is used in the recycling process as a density-based separation technique where shredded e-waste materials are placed in water or other fluids. Materials with different densities sink or float at different rates, allowing recyclers to separate plastics, metals, and other components effectively.",
       "subtopic": "4.1"
     },
     {
@@ -585,7 +585,7 @@
       ],
       "correct": 0,
       "correctText": "Environment",
-      "explanation": "The correct answer is 'Environment'. This follows the standard concepts covered in this unit.",
+      "explanation": "Sustainable IT practices help the environment by reducing carbon emissions, conserving natural resources, minimizing e-waste, and decreasing energy consumption. These practices ensure that technology's benefits are delivered with the smallest possible ecological footprint, protecting ecosystems for future generations.",
       "subtopic": "4.3"
     },
     {
@@ -598,7 +598,7 @@
       ],
       "correct": 0,
       "correctText": "Reduces power usage",
-      "explanation": "The correct answer is 'Reduces power usage'. This follows the standard concepts covered in this unit.",
+      "explanation": "Energy-efficient hardware reduces power usage through improved processor architectures, solid-state drives, efficient power supplies, and intelligent power management features. ENERGY STAR-certified devices can use 25-50% less energy than conventional equivalents while delivering comparable or better performance.",
       "subtopic": "4.1"
     },
     {
@@ -611,7 +611,7 @@
       ],
       "correct": 0,
       "correctText": "Eco-friendly computing",
-      "explanation": "The correct answer is 'Eco-friendly computing'. This follows the standard concepts covered in this unit.",
+      "explanation": "Green computing focuses on eco-friendly computing by designing, manufacturing, using, and disposing of IT resources in ways that minimize environmental impact. This encompasses energy-efficient hardware, sustainable software design, responsible e-waste management, and reduced resource consumption throughout the technology lifecycle.",
       "subtopic": "4.3"
     },
     {
@@ -624,7 +624,7 @@
       ],
       "correct": 0,
       "correctText": "Efficiency",
-      "explanation": "The correct answer is 'Efficiency'. This follows the standard concepts covered in this unit.",
+      "explanation": "Data center optimization improves efficiency through techniques like server virtualization, dynamic power management, efficient cooling designs, and workload consolidation. These optimizations increase the Power Usage Effectiveness (PUE) ratio, meaning more of the total facility power goes to IT equipment rather than overhead.",
       "subtopic": "4.3"
     },
     {
@@ -637,7 +637,7 @@
       ],
       "correct": 0,
       "correctText": "Recycling",
-      "explanation": "The correct answer is 'Recycling'. This follows the standard concepts covered in this unit.",
+      "explanation": "Green IT encourages recycling as a core practice to extend the lifecycle of electronic equipment, recover valuable materials, and prevent toxic substances from entering landfills. This includes recycling obsolete hardware, refurbishing usable equipment, and ensuring end-of-life electronics are processed through certified recyclers.",
       "subtopic": "4.1"
     },
     {
@@ -650,7 +650,7 @@
       ],
       "correct": 0,
       "correctText": "Environmental hazards",
-      "explanation": "The correct answer is 'Environmental hazards'. This follows the standard concepts covered in this unit.",
+      "explanation": "Proper e-waste management prevents environmental hazards by ensuring that toxic materials like lead, mercury, and cadmium are safely contained and processed, rather than leaching into soil and groundwater. Certified e-waste recyclers follow regulated procedures that protect both the environment and worker health.",
       "subtopic": "4.3"
     },
     {
@@ -663,7 +663,7 @@
       ],
       "correct": 0,
       "correctText": "Quantum mechanics",
-      "explanation": "The correct answer is 'Quantum mechanics'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computing uses quantum mechanics \u2014 the fundamental physics governing subatomic particles \u2014 to process information. Unlike classical bits that are either 0 or 1, quantum bits (qubits) exploit quantum phenomena like superposition and entanglement to perform calculations that are impossible or impractical for classical computers.",
       "subtopic": "4.4"
     },
     {
@@ -676,7 +676,7 @@
       ],
       "correct": 1,
       "correctText": "Qubit",
-      "explanation": "The correct answer is 'Qubit'. This follows the standard concepts covered in this unit.",
+      "explanation": "The basic unit of quantum computing is the qubit (quantum bit). Unlike a classical bit that can only be 0 or 1, a qubit can exist in a superposition of both states simultaneously, enabling quantum computers to process vast amounts of information in parallel and solve certain problems exponentially faster.",
       "subtopic": "4.4"
     },
     {
@@ -689,7 +689,7 @@
       ],
       "correct": 2,
       "correctText": "Both 0 and 1",
-      "explanation": "The correct answer is 'Both 0 and 1'. This follows the standard concepts covered in this unit.",
+      "explanation": "A qubit can exist in both 0 and 1 simultaneously through a quantum property called superposition. While a classical bit must be either 0 or 1, a qubit can be in a probabilistic combination of both states at the same time, which is what gives quantum computers their massive parallel processing potential.",
       "subtopic": "4.4"
     },
     {
@@ -702,7 +702,7 @@
       ],
       "correct": 0,
       "correctText": "Parallel processing",
-      "explanation": "The correct answer is 'Parallel processing'. This follows the standard concepts covered in this unit.",
+      "explanation": "Superposition allows parallel processing because a qubit in superposition represents multiple states simultaneously. With n qubits, a quantum computer can represent 2^n states at once, enabling it to explore many possible solutions in parallel rather than sequentially, providing exponential speedup for certain computational problems.",
       "subtopic": "4.4"
     },
     {
@@ -715,7 +715,7 @@
       ],
       "correct": 0,
       "correctText": "Two qubits",
-      "explanation": "The correct answer is 'Two qubits'. This follows the standard concepts covered in this unit.",
+      "explanation": "Entanglement links two qubits in such a way that the quantum state of one qubit is directly correlated with the state of another, regardless of the physical distance between them. When entangled qubits are measured, their results are instantly correlated, enabling powerful quantum operations and quantum communication protocols.",
       "subtopic": "4.4"
     },
     {
@@ -728,7 +728,7 @@
       ],
       "correct": 0,
       "correctText": "Amplify correct results",
-      "explanation": "The correct answer is 'Amplify correct results'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum interference helps amplify correct results by constructive interference (reinforcing probability amplitudes of correct solutions) and destructive interference (canceling out probability amplitudes of incorrect solutions). Quantum algorithms are designed to manipulate interference patterns so that correct answers become more probable when measured.",
       "subtopic": "4.4"
     },
     {
@@ -741,7 +741,7 @@
       ],
       "correct": 0,
       "correctText": "Bits",
-      "explanation": "The correct answer is 'Bits'. This follows the standard concepts covered in this unit.",
+      "explanation": "Classical computers use bits as their fundamental unit of information, where each bit can be either 0 or 1. This binary system forms the basis of all classical computation, from simple arithmetic to complex algorithms, with operations performed sequentially or in limited parallel fashion.",
       "subtopic": "4.1"
     },
     {
@@ -754,7 +754,7 @@
       ],
       "correct": 0,
       "correctText": "Parallel processing",
-      "explanation": "The correct answer is 'Parallel processing'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computers support parallel processing through superposition, allowing qubits to represent multiple computational states simultaneously. While a classical computer with n bits processes one state at a time, a quantum computer with n qubits can process 2^n states in parallel, enabling exponential speedup for specific problem types.",
       "subtopic": "4.4"
     },
     {
@@ -767,7 +767,7 @@
       ],
       "correct": 1,
       "correctText": "Quantum computer",
-      "explanation": "The correct answer is 'Quantum computer'. This follows the standard concepts covered in this unit.",
+      "explanation": "IBM Quantum is an example of a quantum computer \u2014 specifically, IBM's cloud-based quantum computing platform that provides access to real quantum processors via the cloud. It was one of the first platforms to make quantum computing accessible to researchers, developers, and businesses worldwide.",
       "subtopic": "4.4"
     },
     {
@@ -780,7 +780,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computing helps in all of the above \u2014 Cryptography (breaking current encryption and creating quantum-safe protocols), Drug discovery (simulating molecular interactions for pharmaceutical research), and Optimization (solving complex logistics, financial modeling, and supply chain problems) \u2014 showcasing its transformative potential across multiple domains.",
       "subtopic": "4.4"
     },
     {
@@ -793,7 +793,7 @@
       ],
       "correct": 0,
       "correctText": "RSA encryption",
-      "explanation": "The correct answer is 'RSA encryption'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computers may break RSA encryption because Shor's algorithm can efficiently factor large prime numbers \u2014 the mathematical foundation of RSA security. A sufficiently powerful quantum computer could factor RSA keys in hours that would take classical computers millions of years, necessitating the development of post-quantum cryptography.",
       "subtopic": "4.4"
     },
     {
@@ -806,7 +806,7 @@
       ],
       "correct": 0,
       "correctText": "Molecular structures",
-      "explanation": "The correct answer is 'Molecular structures'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computers simulate molecular structures by naturally modeling quantum mechanical interactions between atoms and molecules. Since molecules are quantum systems themselves, quantum computers can simulate their behavior far more accurately and efficiently than classical computers, enabling breakthroughs in chemistry and materials science.",
       "subtopic": "4.4"
     },
     {
@@ -819,7 +819,7 @@
       ],
       "correct": 0,
       "correctText": "Challenge",
-      "explanation": "The correct answer is 'Challenge'. This follows the standard concepts covered in this unit.",
+      "explanation": "Qubit stability is a challenge because qubits are extremely sensitive to environmental disturbances (temperature fluctuations, electromagnetic radiation, vibration) that cause them to lose their quantum state \u2014 a phenomenon called decoherence. Maintaining qubit stability long enough to perform meaningful computations remains one of the biggest obstacles in quantum computing.",
       "subtopic": "4.4"
     },
     {
@@ -832,7 +832,7 @@
       ],
       "correct": 0,
       "correctText": "Difficult",
-      "explanation": "The correct answer is 'Difficult'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum error correction is difficult because quantum information is fragile and easily disturbed by environmental noise. Unlike classical error correction where bits can be simply copied, the no-cloning theorem prevents copying quantum states, requiring complex encoding schemes that use many physical qubits to protect each logical qubit.",
       "subtopic": "4.4"
     },
     {
@@ -845,7 +845,7 @@
       ],
       "correct": 0,
       "correctText": "High",
-      "explanation": "The correct answer is 'High'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computing cost is high because quantum processors require extreme conditions like near-absolute-zero temperatures (-273 degrees Celsius), sophisticated cryogenic systems, precise electromagnetic shielding, and expensive control electronics. The specialized infrastructure and scarce expertise make quantum systems far more costly than classical alternatives.",
       "subtopic": "4.4"
     },
     {
@@ -858,7 +858,7 @@
       ],
       "correct": 0,
       "correctText": "AI",
-      "explanation": "The correct answer is 'AI'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computing enhances AI by enabling quantum machine learning algorithms that can process exponentially larger datasets, find patterns in high-dimensional spaces, and optimize complex neural networks more efficiently than classical methods. Quantum-enhanced AI could lead to breakthroughs in natural language processing, image recognition, and decision-making.",
       "subtopic": "4.4"
     },
     {
@@ -871,7 +871,7 @@
       ],
       "correct": 0,
       "correctText": "Number of qubits",
-      "explanation": "The correct answer is 'Number of qubits'. This follows the standard concepts covered in this unit.",
+      "explanation": "Exponential growth in power depends on the number of qubits because each additional qubit doubles the number of simultaneously representable states (2^n). This means a quantum computer with 300 qubits could represent more states than there are atoms in the observable universe, providing computational power that scales exponentially rather than linearly.",
       "subtopic": "4.1"
     },
     {
@@ -884,7 +884,7 @@
       ],
       "correct": 0,
       "correctText": "Developing",
-      "explanation": "The correct answer is 'Developing'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum systems are still developing \u2014 current quantum computers are in the NISQ (Noisy Intermediate-Scale Quantum) era, meaning they have limited qubits, high error rates, and short coherence times. Significant engineering and theoretical breakthroughs are still needed before quantum computers can achieve their full potential for practical applications.",
       "subtopic": "4.4"
     },
     {
@@ -897,7 +897,7 @@
       ],
       "correct": 0,
       "correctText": "Complex problems",
-      "explanation": "The correct answer is 'Complex problems'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computing is best for complex problems that are intractable for classical computers \u2014 such as factoring large numbers, simulating quantum systems, optimizing complex logistics networks, and searching unsorted databases. These problems have exponential complexity that classical computers cannot solve efficiently, but quantum algorithms can exploit to find solutions faster.",
       "subtopic": "4.4"
     },
     {
@@ -910,7 +910,7 @@
       ],
       "correct": 0,
       "correctText": "Revolutionize computing",
-      "explanation": "The correct answer is 'Revolutionize computing'. This follows the standard concepts covered in this unit.",
+      "explanation": "The future of quantum computing may revolutionize computing by solving problems currently considered impossible \u2014 from discovering new drugs and materials to breaking encryption and optimizing global supply chains. As the technology matures, quantum computing could fundamentally transform industries, scientific research, and our understanding of the computational universe.",
       "subtopic": "4.4"
     },
     {
@@ -923,7 +923,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "A Virtual Reality system mainly consists of all of the above \u2014 a Head-Mounted Display (for visual immersion), sensors (for tracking head and body movement), and controllers (for hand interaction and input). Together, these components create a fully immersive, interactive virtual experience.",
       "subtopic": "4.1"
     },
     {
@@ -936,7 +936,7 @@
       ],
       "correct": 0,
       "correctText": "Immersion level",
-      "explanation": "The correct answer is 'Immersion level'. This follows the standard concepts covered in this unit.",
+      "explanation": "Field of View (FOV) in VR affects the immersion level because a wider FOV more closely matches human natural peripheral vision (approximately 200 degrees), creating a stronger sense of presence. Narrower FOV creates a 'looking through binoculars' effect that breaks immersion and reminds users they are viewing a virtual environment.",
       "subtopic": "4.1"
     },
     {
@@ -949,7 +949,7 @@
       ],
       "correct": 0,
       "correctText": "Detect user movement",
-      "explanation": "The correct answer is 'Detect user movement'. This follows the standard concepts covered in this unit.",
+      "explanation": "Motion tracking in VR is used to detect user movement \u2014 including head position, hand gestures, body posture, and locomotion \u2014 and translate it into corresponding actions in the virtual environment. This real-time tracking is essential for creating the sense of presence and natural interaction that makes VR immersive.",
       "subtopic": "4.1"
     },
     {
@@ -962,7 +962,7 @@
       ],
       "correct": 0,
       "correctText": "Align digital objects",
-      "explanation": "The correct answer is 'Align digital objects'. This follows the standard concepts covered in this unit.",
+      "explanation": "AR markers are used to align digital objects with the physical world by providing recognizable visual reference points (like QR codes or specific images) that the AR system can detect and track. The system uses these markers to determine the position, orientation, and scale at which virtual content should be overlaid.",
       "subtopic": "4.1"
     },
     {
@@ -975,7 +975,7 @@
       ],
       "correct": 0,
       "correctText": "GPS and sensors",
-      "explanation": "The correct answer is 'GPS and sensors'. This follows the standard concepts covered in this unit.",
+      "explanation": "Markerless AR uses GPS and sensors (accelerometers, gyroscopes, cameras, LiDAR) to understand the environment and determine device position without requiring predefined visual markers. This enables AR experiences like Google Maps Live View or Pokemon GO that work anywhere without special printed targets.",
       "subtopic": "4.1"
     },
     {
@@ -988,7 +988,7 @@
       ],
       "correct": 0,
       "correctText": "Student engagement",
-      "explanation": "The correct answer is 'Student engagement'. This follows the standard concepts covered in this unit.",
+      "explanation": "Immersive tech in education increases student engagement by transforming passive learning into active, experiential experiences. VR field trips, AR anatomy overlays, and interactive 3D models capture students' attention more effectively than textbooks, leading to better retention, deeper understanding, and greater motivation to learn.",
       "subtopic": "4.2"
     },
     {
@@ -1001,7 +1001,7 @@
       ],
       "correct": 0,
       "correctText": "Motion mismatch",
-      "explanation": "The correct answer is 'Motion mismatch'. This follows the standard concepts covered in this unit.",
+      "explanation": "VR sickness is caused by motion mismatch \u2014 when the visual system perceives movement in the virtual environment but the vestibular system (inner ear) detects no corresponding physical movement. This sensory conflict confuses the brain, producing symptoms similar to motion sickness including nausea, dizziness, and disorientation.",
       "subtopic": "4.1"
     },
     {
@@ -1014,7 +1014,7 @@
       ],
       "correct": 0,
       "correctText": "Displays repair instructions",
-      "explanation": "The correct answer is 'Displays repair instructions'. This follows the standard concepts covered in this unit.",
+      "explanation": "AR is useful in maintenance because it displays repair instructions directly onto the equipment being serviced, showing step-by-step guidance, component identification, torque specifications, and safety warnings overlaid on the actual machinery. This hands-free access to information reduces errors, speeds up repairs, and enables less-experienced technicians.",
       "subtopic": "4.1"
     },
     {
@@ -1027,7 +1027,7 @@
       ],
       "correct": 0,
       "correctText": "Microsoft HoloLens",
-      "explanation": "The correct answer is 'Microsoft HoloLens'. This follows the standard concepts covered in this unit.",
+      "explanation": "Mixed Reality devices include Microsoft HoloLens \u2014 a pioneering MR headset that uses passthrough cameras, spatial mapping, and holographic displays to overlay interactive 3D holograms onto the real world. HoloLens allows users to see, gesture at, and interact with digital content integrated into their physical environment.",
       "subtopic": "4.1"
     },
     {
@@ -1040,7 +1040,7 @@
       ],
       "correct": 0,
       "correctText": "Remote collaboration",
-      "explanation": "The correct answer is 'Remote collaboration'. This follows the standard concepts covered in this unit.",
+      "explanation": "XR technology improves remote collaboration by enabling distributed teams to share immersive spaces where they can interact with 3D models, annotate designs in shared virtual rooms, and communicate with spatial presence. This creates a more natural and productive collaboration experience than traditional video conferencing.",
       "subtopic": "4.1"
     },
     {
@@ -1053,7 +1053,7 @@
       ],
       "correct": 0,
       "correctText": "Data center efficiency",
-      "explanation": "The correct answer is 'Data center efficiency'. This follows the standard concepts covered in this unit.",
+      "explanation": "Power Usage Effectiveness (PUE) measures data center efficiency by dividing the total facility power consumption by the IT equipment power consumption. A PUE of 1.0 means all power goes to computing (ideal), while higher values indicate more power is wasted on cooling, lighting, and other overhead.",
       "subtopic": "4.1"
     },
     {
@@ -1066,7 +1066,7 @@
       ],
       "correct": 0,
       "correctText": "Carbon footprint",
-      "explanation": "The correct answer is 'Carbon footprint'. This follows the standard concepts covered in this unit.",
+      "explanation": "Green cloud computing reduces carbon footprint by optimizing shared infrastructure, using renewable energy sources, implementing efficient cooling, and maximizing server utilization through multi-tenancy. Cloud providers can achieve much higher efficiency than individual on-premise data centers, reducing the overall environmental impact of computing.",
       "subtopic": "4.1"
     },
     {
@@ -1079,7 +1079,7 @@
       ],
       "correct": 0,
       "correctText": "Eco-friendly hardware",
-      "explanation": "The correct answer is 'Eco-friendly hardware'. This follows the standard concepts covered in this unit.",
+      "explanation": "Sustainable IT procurement encourages purchasing eco-friendly hardware that meets environmental standards like ENERGY STAR, EPEAT, and TCO Certified. This includes devices designed for energy efficiency, manufactured with recycled materials, free from hazardous substances, and built for longevity and recyclability.",
       "subtopic": "4.3"
     },
     {
@@ -1092,7 +1092,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "E-waste recycling helps recover all of the above \u2014 Gold (used in connectors and circuit boards), Silver (used in contacts and conductive pastes), and Copper (used in wiring and heat sinks). These precious metals are finite resources, and recovering them from e-waste is far more efficient and environmentally friendly than mining new ore.",
       "subtopic": "4.3"
     },
     {
@@ -1105,7 +1105,7 @@
       ],
       "correct": 0,
       "correctText": "Environmental impact",
-      "explanation": "The correct answer is 'Environmental impact'. This follows the standard concepts covered in this unit.",
+      "explanation": "Biodegradable components reduce environmental impact by breaking down naturally at the end of their lifecycle instead of persisting in landfills for centuries. Research into biodegradable electronics, phone cases, and packaging materials aims to create technology that performs well during use but decomposes harmlessly when discarded.",
       "subtopic": "4.1"
     },
     {
@@ -1118,7 +1118,7 @@
       ],
       "correct": 0,
       "correctText": "Multiple OS on one machine",
-      "explanation": "The correct answer is 'Multiple OS on one machine'. This follows the standard concepts covered in this unit.",
+      "explanation": "Server virtualization allows multiple OS on one machine by using a hypervisor to create isolated virtual machines, each running its own operating system independently. This maximizes hardware utilization, reduces the number of physical servers needed, and lowers energy consumption and data center space requirements.",
       "subtopic": "4.1"
     },
     {
@@ -1131,7 +1131,7 @@
       ],
       "correct": 0,
       "correctText": "Save energy",
-      "explanation": "The correct answer is 'Save energy'. This follows the standard concepts covered in this unit.",
+      "explanation": "Sleep mode in devices helps save energy by reducing power consumption to a minimal level when the device is not actively in use. A computer in sleep mode typically uses 1-5 watts compared to 60-250 watts when active, and proper power management settings can reduce a device's annual energy consumption by 20-40%.",
       "subtopic": "4.1"
     },
     {
@@ -1144,7 +1144,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Renewable energy in data centers uses all of the above \u2014 Solar power (photovoltaic panels generating electricity), Wind power (wind turbines providing clean energy), and Hydro power (harnessing water flow for electricity). Major cloud providers like Google, Microsoft, and Amazon are increasingly powering their data centers with 100% renewable energy.",
       "subtopic": "4.3"
     },
     {
@@ -1157,7 +1157,7 @@
       ],
       "correct": 0,
       "correctText": "Toxic leakage",
-      "explanation": "The correct answer is 'Toxic leakage'. This follows the standard concepts covered in this unit.",
+      "explanation": "Proper disposal of batteries prevents toxic leakage because batteries contain hazardous chemicals like lead, cadmium, lithium, and mercury that can leach into soil and groundwater if discarded improperly. This contamination can persist for decades, poisoning drinking water sources and harming wildlife and human health.",
       "subtopic": "4.1"
     },
     {
@@ -1170,7 +1170,7 @@
       ],
       "correct": 0,
       "correctText": "Energy distribution efficiency",
-      "explanation": "The correct answer is 'Energy distribution efficiency'. This follows the standard concepts covered in this unit.",
+      "explanation": "Smart grids improve energy distribution efficiency by using digital communication, sensors, and automation to balance electricity supply and demand in real-time, reduce transmission losses, integrate renewable energy sources, and prevent outages. This results in more reliable, efficient, and sustainable energy delivery.",
       "subtopic": "4.1"
     },
     {
@@ -1183,7 +1183,7 @@
       ],
       "correct": 0,
       "correctText": "Optimization problems",
-      "explanation": "The correct answer is 'Optimization problems'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum annealing is mainly used for optimization problems \u2014 finding the minimum (or maximum) of a complex function with many variables. D-Wave Systems builds quantum annealers that solve combinatorial optimization problems in logistics, finance, drug design, and scheduling by finding low-energy states that correspond to optimal solutions.",
       "subtopic": "4.4"
     },
     {
@@ -1196,7 +1196,7 @@
       ],
       "correct": 0,
       "correctText": "Factoring large numbers",
-      "explanation": "The correct answer is 'Factoring large numbers'. This follows the standard concepts covered in this unit.",
+      "explanation": "Shor's algorithm is used for factoring large numbers \u2014 specifically, finding the prime factors of composite numbers. This is significant because RSA encryption relies on the difficulty of factoring large numbers; a quantum computer running Shor's algorithm could break RSA much faster than any known classical algorithm.",
       "subtopic": "4.1"
     },
     {
@@ -1209,7 +1209,7 @@
       ],
       "correct": 0,
       "correctText": "Search speed",
-      "explanation": "The correct answer is 'Search speed'. This follows the standard concepts covered in this unit.",
+      "explanation": "Grover's algorithm improves search speed by providing a quadratic speedup for searching unsorted databases. While a classical search requires O(N) operations to find an item in an unsorted list of N items, Grover's algorithm finds it in O(sqrt(N)) operations, which is a significant improvement for large datasets.",
       "subtopic": "4.1"
     },
     {
@@ -1222,7 +1222,7 @@
       ],
       "correct": 0,
       "correctText": "Secure key distribution",
-      "explanation": "The correct answer is 'Secure key distribution'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum cryptography provides secure key distribution through Quantum Key Distribution (QKD) protocols like BB84. These exploit the fundamental principle that observing a quantum system changes it \u2014 any eavesdropping attempt on the quantum channel inevitably disturbs the quantum states, alerting the communicating parties to the intrusion.",
       "subtopic": "4.4"
     },
     {
@@ -1235,7 +1235,7 @@
       ],
       "correct": 0,
       "correctText": "Quantum state",
-      "explanation": "The correct answer is 'Quantum state'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum teleportation transfers the quantum state of one particle to another distant particle without physically moving the particle itself. Using entanglement and classical communication, the exact quantum information is reconstructed at the destination while the original quantum state is destroyed, adhering to the no-cloning theorem.",
       "subtopic": "4.4"
     },
     {
@@ -1248,7 +1248,7 @@
       ],
       "correct": 0,
       "correctText": "Computation accuracy",
-      "explanation": "The correct answer is 'Computation accuracy'. This follows the standard concepts covered in this unit.",
+      "explanation": "Decoherence limits computation accuracy by causing qubits to lose their quantum properties (superposition and entanglement) due to interaction with the environment. When decoherence occurs, quantum information degrades into classical randomness, causing computational errors that can quickly accumulate and make results unreliable.",
       "subtopic": "4.1"
     },
     {
@@ -1261,7 +1261,7 @@
       ],
       "correct": 0,
       "correctText": "Quantum advantage over classical",
-      "explanation": "The correct answer is 'Quantum advantage over classical'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum supremacy demonstrates quantum advantage over classical computers by showing that a quantum processor can solve a specific computational problem that would take the most powerful classical supercomputers an impractical amount of time. Google's 2019 Sycamore experiment was a landmark demonstration of this milestone.",
       "subtopic": "4.4"
     },
     {
@@ -1274,7 +1274,7 @@
       ],
       "correct": 0,
       "correctText": "Stability",
-      "explanation": "The correct answer is 'Stability'. This follows the standard concepts covered in this unit.",
+      "explanation": "Qubit coherence time affects stability because it determines how long a qubit can maintain its quantum state before environmental noise causes decoherence. Longer coherence times allow more quantum gate operations to be performed, directly impacting the depth and complexity of quantum computations that can be reliably executed.",
       "subtopic": "4.4"
     },
     {
@@ -1287,7 +1287,7 @@
       ],
       "correct": 0,
       "correctText": "Very low temperatures",
-      "explanation": "The correct answer is 'Very low temperatures'. This follows the standard concepts covered in this unit.",
+      "explanation": "Superconducting qubits operate at very low temperatures (near absolute zero, around 15-20 millikelvin) to minimize thermal noise that would destroy their delicate quantum states. These extreme cooling requirements are maintained by dilution refrigerators, which is one reason why quantum computers are so expensive and complex to build.",
       "subtopic": "4.4"
     },
     {
@@ -1300,7 +1300,7 @@
       ],
       "correct": 0,
       "correctText": "Complex simulations",
-      "explanation": "The correct answer is 'Complex simulations'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computers are best suited for complex simulations that are intractable for classical computers \u2014 such as simulating quantum chemistry, modeling protein folding, predicting material properties, and understanding fundamental physics. These simulations leverage the quantum nature of the computer to model quantum systems naturally.",
       "subtopic": "4.4"
     },
     {
@@ -1313,7 +1313,7 @@
       ],
       "correct": 0,
       "correctText": "Boolean logic",
-      "explanation": "The correct answer is 'Boolean logic'. This follows the standard concepts covered in this unit.",
+      "explanation": "Classical computing is based on Boolean logic \u2014 a mathematical framework where variables take values of TRUE (1) or FALSE (0), and operations like AND, OR, and NOT process these binary values. All classical computer operations, from simple arithmetic to complex AI, ultimately reduce to Boolean logic gates.",
       "subtopic": "4.1"
     },
     {
@@ -1326,7 +1326,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computing research is led by all of the above \u2014 tech companies (IBM, Google, Microsoft), academic institutions (MIT, Oxford, ETH Zurich), and government agencies (DARPA, EU Quantum Flagship, India's National Quantum Mission). This multi-sector effort combines industry resources, academic innovation, and government funding.",
       "subtopic": "4.4"
     },
     {
@@ -1339,7 +1339,7 @@
       ],
       "correct": 0,
       "correctText": "Breaking traditional encryption",
-      "explanation": "The correct answer is 'Breaking traditional encryption'. This follows the standard concepts covered in this unit.",
+      "explanation": "Quantum computing may impact cybersecurity by breaking traditional encryption algorithms like RSA and ECC that currently secure internet communications, online banking, and government secrets. This threat has sparked the development of post-quantum cryptography \u2014 new algorithms designed to resist attacks from both classical and quantum computers.",
       "subtopic": "4.4"
     },
     {
@@ -1352,7 +1352,7 @@
       ],
       "correct": 0,
       "correctText": "Hardware complexity",
-      "explanation": "The correct answer is 'Hardware complexity'. This follows the standard concepts covered in this unit.",
+      "explanation": "One major barrier in quantum computing is hardware complexity \u2014 maintaining qubits at near-absolute-zero temperatures, achieving precise control of quantum states, scaling up qubit count while maintaining quality, and integrating quantum processors with classical control systems all present extraordinary engineering challenges.",
       "subtopic": "4.4"
     },
     {
@@ -1365,7 +1365,7 @@
       ],
       "correct": 0,
       "correctText": "Transform computing industry",
-      "explanation": "The correct answer is 'Transform computing industry'. This follows the standard concepts covered in this unit.",
+      "explanation": "The future of quantum computing is expected to transform the computing industry by enabling breakthroughs in drug discovery, materials science, financial modeling, artificial intelligence, and cybersecurity. As quantum hardware matures and algorithms advance, quantum computing will create entirely new industries and reshape existing ones.",
       "subtopic": "4.4"
     }
   ]
