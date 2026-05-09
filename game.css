@@ -283,6 +283,19 @@ body {
   font-size:.75rem; font-weight:800; letter-spacing:.12em;
   text-transform:uppercase; color:var(--purple); margin-bottom:12px;
 }
+.revise-btn {
+  position: absolute; top: 20px; right: 20px;
+  background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+  width: 36px; height: 36px; border-radius: 10px;
+  display: grid; place-items: center; cursor: pointer;
+  font-size: 1.1rem; transition: all 0.2s; z-index: 5;
+}
+.revise-btn:hover { background: var(--surface-h); transform: scale(1.1); }
+.revise-btn.active {
+  background: rgba(244, 63, 94, 0.15);
+  border-color: rgba(244, 63, 94, 0.4);
+  color: #f43f5e;
+}
 .qcard-text {
   font-size:1.15rem; font-weight:600; line-height:1.6; color:var(--text);
 }

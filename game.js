@@ -12,6 +12,7 @@ const UNITS = [
   { id:4, name:'Immersive Technology',             icon:'🥽', color:'#ec4899', desc:'AR, VR, MR, XR, metaverse applications' },
   { id:5, name:'Digital Forensics & Cybersecurity',icon:'🔐', color:'#10b981', desc:'Cyber threats, forensics, encryption & defence' },
   { id:'nirali', name:'Nirali Prakashan',        icon:'📚', color:'#6366f1', desc:'Complete Nirali Prakashan Question Bank (Unit & Subtopic Wise)', isNirali: true },
+  { id:'smart', name:'Smart Test',               icon:'🧠', color:'#f43f5e', desc:'AI-powered practice based on your mistakes and flagged questions', isSmart: true },
   { id:'college', name:'College MCQ',              icon:'🎓', color:'#f97316', desc:'Mixed questions from all ETI topics', isCollege: true },
 ];
 
@@ -19,6 +20,7 @@ const UNITS = [
 const STORAGE_KEYS = {
   MISTAKES: 'eti_mcq_mistakes',
   SCORES: 'eti_mcq_scores',
+  REVISIONS: 'eti_mcq_revisions',
   SYLLABUS: 'eti_mcq_syllabus',
 };
 
@@ -35,6 +37,7 @@ const state = {
   allQuestions: [],   // full question pool of current unit
   subtopic: null,      // selected subtopic (e.g., "1.1")
   niraliUnitId: null,  // selected unit for Nirali
+  smartType: null,     // 'mistakes' or 'revisions'
   questionStartTime: 0, // for time tracking
   questionTimes: [],    // time taken per question
   smartScore: 0,        // time-adjusted score
@@ -73,15 +76,32 @@ function getMistakes() {
   } catch { return {}; }
 }
 
-function saveMistake(unitId, questionIdx, questionText) {
+function saveMistake(unitId, questionData) {
   const mistakes = getMistakes();
-  const key = `${unitId}`;
-  if (!mistakes[key]) mistakes[key] = [];
-  // Avoid duplicates
-  if (!mistakes[key].find(m => m.idx === questionIdx)) {
-    mistakes[key].push({ idx: questionIdx, text: questionText, ts: Date.now() });
+  // We now save the WHOLE question object to make it easier to reconstruct the test
+  if (!mistakes.all) mistakes.all = [];
+  if (!mistakes.all.find(m => m.question === questionData.question)) {
+    mistakes.all.push({ ...questionData, unitId, ts: Date.now() });
   }
   localStorage.setItem(STORAGE_KEYS.MISTAKES, JSON.stringify(mistakes));
+}
+
+function getRevisions() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEYS.REVISIONS) || '[]');
+  } catch { return []; }
+}
+
+function toggleRevision(questionData, unitId) {
+  const revisions = getRevisions();
+  const idx = revisions.findIndex(r => r.question === questionData.question);
+  if (idx > -1) {
+    revisions.splice(idx, 1);
+  } else {
+    revisions.push({ ...questionData, unitId, ts: Date.now() });
+  }
+  localStorage.setItem(STORAGE_KEYS.REVISIONS, JSON.stringify(revisions));
+  return idx === -1; // true if added
 }
 
 function getScores() {
@@ -165,6 +185,17 @@ function renderHome() {
   });
 
   UNITS.forEach(async (u, idx) => {
+    const cardEl = grid.children[idx + 1];
+    const dot = cardEl.querySelector('.uc-count');
+    
+    if (u.isSmart) {
+      const mistakes = getMistakes().all || [];
+      const revisions = getRevisions();
+      const total = mistakes.length + revisions.length;
+      dot.innerHTML = `<span class="uc-count-dot" style="background:${u.color}"></span> ${total} tracked`;
+      return;
+    }
+
     try {
       let filePath = '';
       if (u.isCollege) filePath = 'data/college_mcq.json';
@@ -173,10 +204,8 @@ function renderHome() {
 
       const r = await fetch(filePath);
       const d = await r.json();
-      const dot = grid.children[idx + 1].querySelector('.uc-count'); // +1 for leaderboard
       if (dot) {
-        const count = u.isNirali ? d.totalQuestions : d.totalQuestions;
-        dot.innerHTML = `<span class="uc-count-dot" style="background:${u.color}"></span> ${count} questions`;
+        dot.innerHTML = `<span class="uc-count-dot" style="background:${u.color}"></span> ${d.totalQuestions} questions`;
       }
       u._data = d; // cache
     } catch(_) {}
@@ -372,6 +401,33 @@ async function openSetup(unitId) {
     });
 
     updateCountButtons(totalQs);
+  } else if (u.isSmart) {
+    unitSelectDiv.style.display = 'none';
+    subtopicDiv.style.display = 'block';
+    
+    const mistakes = getMistakes().all || [];
+    const revisions = getRevisions();
+    
+    subtopicDiv.innerHTML = `
+      <div style="margin-bottom:8px;font-weight:500">Choose Mode:</div>
+      <div class="subtopic-options">
+        <button class="subtopic-btn active" data-mode="mistakes">Mistakes (${mistakes.length})</button>
+        <button class="subtopic-btn" data-mode="revisions">Revision List (${revisions.length})</button>
+      </div>
+    `;
+    
+    state.smartType = 'mistakes';
+    updateCountButtons(mistakes.length);
+    
+    subtopicDiv.querySelectorAll('.subtopic-btn').forEach(btn => {
+      btn.onclick = () => {
+        subtopicDiv.querySelectorAll('.subtopic-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.smartType = btn.dataset.mode;
+        const count = state.smartType === 'mistakes' ? mistakes.length : revisions.length;
+        updateCountButtons(count);
+      };
+    });
   } else {
     unitSelectDiv.style.display = 'none';
     const syllabus = await loadSyllabus();
@@ -413,7 +469,7 @@ async function startQuiz() {
   try {
     const unit = UNITS.find(u => u.id === state.unitId);
     let data = unit?._data;
-    if (!data) {
+    if (!data && !unit?.isSmart) {
       let filePath = '';
       if (unit?.isCollege) filePath = 'data/college_mcq.json';
       else if (unit?.isNirali) filePath = 'data/nirali_mcq.json';
@@ -438,6 +494,13 @@ async function startQuiz() {
         // Entire Nirali Bank
         pool = data.units.flatMap(un => un.subtopics.flatMap(st => st.questions));
       }
+    } else if (unit?.isSmart) {
+      if (state.smartType === 'mistakes') {
+        pool = getMistakes().all || [];
+      } else {
+        pool = getRevisions();
+      }
+      state.unitName = state.smartType === 'mistakes' ? 'Mistakes Practice' : 'Revision List';
     } else {
       pool = data.questions;
       if (state.subtopic) {
@@ -460,6 +523,7 @@ async function startQuiz() {
     let badgeText = '';
     if (unit?.isCollege) badgeText = 'College MCQ';
     else if (unit?.isNirali) badgeText = 'Nirali Bank';
+    else if (unit?.isSmart) badgeText = 'Smart Test';
     else badgeText = `Unit ${state.unitId}`;
     document.getElementById('quiz-unit-badge').textContent = badgeText;
 
@@ -490,6 +554,17 @@ function renderQuestion() {
   // Question card
   document.getElementById('qcard-num').textContent = `Question ${String(idx + 1).padStart(2,'0')}`;
   document.getElementById('qcard-text').textContent = q.question;
+
+  // Revision button
+  const reviseBtn = document.getElementById('revise-btn');
+  const revisions = getRevisions();
+  const isRevised = revisions.find(r => r.question === q.question);
+  reviseBtn.classList.toggle('active', !!isRevised);
+  reviseBtn.onclick = (e) => {
+    e.stopPropagation();
+    const added = toggleRevision(q, state.unitId);
+    reviseBtn.classList.toggle('active', added);
+  };
 
   // Shuffle options keeping correct flag
   const opts = q.options.map((text, i) => ({ text, isCorrect: i === q.correct }));
@@ -540,8 +615,7 @@ function handleAnswer(selectedIdx, clickedBtn) {
   } else {
     clickedBtn.classList.add('wrong');
     // Save mistake for tracking
-    const qIdx = state.allQuestions.findIndex(x => x.question === q.question);
-    saveMistake(state.unitId, qIdx, q.question);
+    saveMistake(state.unitId, q);
     // show correct answer
     allBtns.forEach((btn, i) => {
       if (state.shuffledOpts[i].isCorrect) btn.classList.add('correct');
