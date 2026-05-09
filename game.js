@@ -88,12 +88,13 @@ function getMistakes() {
 function saveMistake(unitId, questionData) {
   const mistakes = getMistakes();
   const playerName = getPlayerName() || 'Anonymous';
-  
+  const entry = { ...questionData, unitId, user: playerName, ts: Date.now() };
   if (!mistakes.all) mistakes.all = [];
-  if (!mistakes.all.find(m => m.question === questionData.question && m.user === playerName)) {
-    mistakes.all.push({ ...questionData, unitId, user: playerName, ts: Date.now() });
-  }
+  mistakes.all.unshift(entry);
   localStorage.setItem(STORAGE_KEYS.MISTAKES, JSON.stringify(mistakes));
+  
+  // Sync to InsForge
+  syncToCloud('mistakes', entry);
 }
 
 function getRevisions() {
@@ -129,10 +130,13 @@ function toggleRevision(questionData, unitId) {
   const playerName = getPlayerName() || 'Anonymous';
   const idx = revisions.findIndex(r => r.question === questionData.question && r.user === playerName);
   
+  const entry = { ...questionData, unitId, user: playerName, ts: Date.now() };
   if (idx > -1) {
     revisions.splice(idx, 1);
+    deleteFromCloud('revisions', entry);
   } else {
-    revisions.push({ ...questionData, unitId, user: playerName, ts: Date.now() });
+    revisions.push(entry);
+    syncToCloud('revisions', entry);
   }
   localStorage.setItem(STORAGE_KEYS.REVISIONS, JSON.stringify(revisions));
   return idx === -1; // true if added
@@ -295,9 +299,9 @@ async function loadGlobalScores() {
   }
 }
 
-async function syncScoreToCloud(entry) {
+async function syncToCloud(table, entry) {
   try {
-    await fetch(`${INSFORGE_CONFIG.BASE_URL}/api/database/records/scores`, {
+    await fetch(`${INSFORGE_CONFIG.BASE_URL}/api/database/records/${table}`, {
       method: 'POST',
       headers: { 
         'Authorization': `Bearer ${INSFORGE_CONFIG.API_KEY}`,
@@ -305,10 +309,27 @@ async function syncScoreToCloud(entry) {
       },
       body: JSON.stringify(entry)
     });
-    loadGlobalScores(); // Refresh
   } catch(e) {
-    console.error('Failed to sync score:', e);
+    console.error(`Failed to sync to ${table}:`, e);
   }
+}
+
+async function deleteFromCloud(table, entry) {
+  try {
+    // Note: InsForge typically uses filters for deletion
+    await fetch(`${INSFORGE_CONFIG.BASE_URL}/api/database/records/${table}`, {
+      method: 'DELETE',
+      headers: { 
+        'Authorization': `Bearer ${INSFORGE_CONFIG.API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ user: entry.user, question: entry.question })
+    });
+  } catch(e) {}
+}
+
+async function syncScoreToCloud(entry) {
+  return syncToCloud('scores', entry);
 }
 
 // Override getScores to combine local + global
@@ -1355,4 +1376,12 @@ document.addEventListener('click', (e) => {
 // ── INIT ─────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   renderHome();
+  
+  // Save name on every keystroke
+  const nameInput = document.getElementById('player-name');
+  if (nameInput) {
+    nameInput.addEventListener('input', (e) => {
+      savePlayerName(e.target.value);
+    });
+  }
 });
