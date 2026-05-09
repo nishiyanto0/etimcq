@@ -38,6 +38,7 @@ const state = {
   subtopic: null,      // selected subtopic (e.g., "1.1")
   niraliUnitId: null,  // selected unit for Nirali
   smartType: null,     // 'mistakes' or 'revisions'
+  smartScope: 'personal', // 'personal' or 'global'
   questionStartTime: 0, // for time tracking
   questionTimes: [],    // time taken per question
   smartScore: 0,        // time-adjusted score
@@ -78,10 +79,11 @@ function getMistakes() {
 
 function saveMistake(unitId, questionData) {
   const mistakes = getMistakes();
-  // We now save the WHOLE question object to make it easier to reconstruct the test
+  const playerName = getPlayerName() || 'Anonymous';
+  
   if (!mistakes.all) mistakes.all = [];
-  if (!mistakes.all.find(m => m.question === questionData.question)) {
-    mistakes.all.push({ ...questionData, unitId, ts: Date.now() });
+  if (!mistakes.all.find(m => m.question === questionData.question && m.user === playerName)) {
+    mistakes.all.push({ ...questionData, unitId, user: playerName, ts: Date.now() });
   }
   localStorage.setItem(STORAGE_KEYS.MISTAKES, JSON.stringify(mistakes));
 }
@@ -94,11 +96,13 @@ function getRevisions() {
 
 function toggleRevision(questionData, unitId) {
   const revisions = getRevisions();
-  const idx = revisions.findIndex(r => r.question === questionData.question);
+  const playerName = getPlayerName() || 'Anonymous';
+  const idx = revisions.findIndex(r => r.question === questionData.question && r.user === playerName);
+  
   if (idx > -1) {
     revisions.splice(idx, 1);
   } else {
-    revisions.push({ ...questionData, unitId, ts: Date.now() });
+    revisions.push({ ...questionData, unitId, user: playerName, ts: Date.now() });
   }
   localStorage.setItem(STORAGE_KEYS.REVISIONS, JSON.stringify(revisions));
   return idx === -1; // true if added
@@ -402,30 +406,59 @@ async function openSetup(unitId) {
 
     updateCountButtons(totalQs);
   } else if (u.isSmart) {
-    unitSelectDiv.style.display = 'none';
+    unitSelectDiv.style.display = 'block';
     subtopicDiv.style.display = 'block';
     
-    const mistakes = getMistakes().all || [];
-    const revisions = getRevisions();
+    const allMistakes = getMistakes().all || [];
+    const allRevisions = getRevisions();
+    const playerName = getPlayerName() || 'Anonymous';
     
-    subtopicDiv.innerHTML = `
-      <div style="margin-bottom:8px;font-weight:500">Choose Mode:</div>
+    const myMistakes = allMistakes.filter(m => m.user === playerName);
+    const myRevisions = allRevisions.filter(r => r.user === playerName);
+    
+    unitSelectDiv.innerHTML = `
+      <div style="margin-bottom:8px;font-weight:500">Practice Scope:</div>
       <div class="subtopic-options">
-        <button class="subtopic-btn active" data-mode="mistakes">Mistakes (${mistakes.length})</button>
-        <button class="subtopic-btn" data-mode="revisions">Revision List (${revisions.length})</button>
+        <button class="subtopic-btn active" data-scope="personal">Personal (${playerName})</button>
+        <button class="subtopic-btn" data-scope="global">Global (This Device)</button>
       </div>
     `;
-    
-    state.smartType = 'mistakes';
-    updateCountButtons(mistakes.length);
-    
-    subtopicDiv.querySelectorAll('.subtopic-btn').forEach(btn => {
+
+    const renderSmartModes = (scope) => {
+      const mistList = scope === 'personal' ? myMistakes : allMistakes;
+      const revList = scope === 'personal' ? myRevisions : allRevisions;
+      
+      subtopicDiv.innerHTML = `
+        <div style="margin-bottom:8px;font-weight:500">Choose Mode:</div>
+        <div class="subtopic-options">
+          <button class="subtopic-btn active" data-mode="mistakes">Mistakes (${mistList.length})</button>
+          <button class="subtopic-btn" data-mode="revisions">Revision List (${revList.length})</button>
+        </div>
+      `;
+      
+      state.smartType = 'mistakes';
+      updateCountButtons(mistList.length);
+      
+      subtopicDiv.querySelectorAll('.subtopic-btn').forEach(btn => {
+        btn.onclick = () => {
+          subtopicDiv.querySelectorAll('.subtopic-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          state.smartType = btn.dataset.mode;
+          const count = state.smartType === 'mistakes' ? mistList.length : revList.length;
+          updateCountButtons(count);
+        };
+      });
+    };
+
+    state.smartScope = 'personal';
+    renderSmartModes('personal');
+
+    unitSelectDiv.querySelectorAll('.subtopic-btn').forEach(btn => {
       btn.onclick = () => {
-        subtopicDiv.querySelectorAll('.subtopic-btn').forEach(b => b.classList.remove('active'));
+        unitSelectDiv.querySelectorAll('.subtopic-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        state.smartType = btn.dataset.mode;
-        const count = state.smartType === 'mistakes' ? mistakes.length : revisions.length;
-        updateCountButtons(count);
+        state.smartScope = btn.dataset.scope;
+        renderSmartModes(state.smartScope);
       };
     });
   } else {
@@ -495,12 +528,20 @@ async function startQuiz() {
         pool = data.units.flatMap(un => un.subtopics.flatMap(st => st.questions));
       }
     } else if (unit?.isSmart) {
+      const playerName = getPlayerName() || 'Anonymous';
+      const allMistakes = getMistakes().all || [];
+      const allRevisions = getRevisions();
+      
       if (state.smartType === 'mistakes') {
-        pool = getMistakes().all || [];
+        pool = state.smartScope === 'personal' 
+          ? allMistakes.filter(m => m.user === playerName)
+          : allMistakes;
       } else {
-        pool = getRevisions();
+        pool = state.smartScope === 'personal'
+          ? allRevisions.filter(r => r.user === playerName)
+          : allRevisions;
       }
-      state.unitName = state.smartType === 'mistakes' ? 'Mistakes Practice' : 'Revision List';
+      state.unitName = (state.smartType === 'mistakes' ? 'Mistakes Practice' : 'Revision List') + ` (${state.smartScope})`;
     } else {
       pool = data.questions;
       if (state.subtopic) {
