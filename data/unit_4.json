@@ -13,7 +13,7 @@
       ],
       "correct": 1,
       "correctText": "Digital interactive environments",
-      "explanation": "The correct answer is 'Digital interactive environments'. This follows the standard concepts covered in this unit.",
+      "explanation": "Immersive technology creates digital interactive environments that simulate or augment reality, allowing users to interact with computer-generated content in a more natural and engaging way through technologies like VR, AR, and MR.",
       "subtopic": "4.1"
     },
     {
@@ -26,7 +26,7 @@
       ],
       "correct": 0,
       "correctText": "Sensory",
-      "explanation": "The correct answer is 'Sensory'. This follows the standard concepts covered in this unit.",
+      "explanation": "Immersive systems enhance sensory experiences by engaging multiple senses (visual, auditory, haptic) to create a more realistic and engaging interaction with digital content, making users feel present in the virtual or augmented environment.",
       "subtopic": "4.1"
     },
     {
@@ -39,7 +39,7 @@
       ],
       "correct": 1,
       "correctText": "Fully artificial environment",
-      "explanation": "The correct answer is 'Fully artificial environment'. This follows the standard concepts covered in this unit.",
+      "explanation": "Virtual Reality (VR) creates a fully artificial, computer-generated environment that completely replaces the real world, immersing users in a simulated reality through headsets that block out the physical world.",
       "subtopic": "4.1"
     },
     {
@@ -52,7 +52,7 @@
       ],
       "correct": 1,
       "correctText": "Real world",
-      "explanation": "The correct answer is 'Real world'. This follows the standard concepts covered in this unit.",
+      "explanation": "VR users cannot see the real world because VR headsets completely cover their field of view with digital displays, isolating them from their physical surroundings to create full immersion in the virtual environment.",
       "subtopic": "4.1"
     },
     {
@@ -65,7 +65,7 @@
       ],
       "correct": 1,
       "correctText": "VR headset",
-      "explanation": "The correct answer is 'VR headset'. This follows the standard concepts covered in this unit.",
+      "explanation": "VR requires a VR headset (Head-Mounted Display) which is the primary hardware component that displays the virtual environment to the user, tracks head movements, and creates an immersive experience by presenting stereoscopic 3D visuals.",
       "subtopic": "4.1"
     },
     {
@@ -78,7 +78,7 @@
       ],
       "correct": 0,
       "correctText": "Flight simulation",
-      "explanation": "The correct answer is 'Flight simulation'. This follows the standard concepts covered in this unit.",
+      "explanation": "VR is widely used in flight simulation because it provides a safe, cost-effective way to train pilots by recreating realistic flight conditions, emergency scenarios, and cockpit environments without the risks and costs associated with actual flight training.",
       "subtopic": "4.1"
     },
     {
@@ -91,7 +91,7 @@
       ],
       "correct": 1,
       "correctText": "Real world with digital content",
-      "explanation": "The correct answer is 'Real world with digital content'. This follows the standard concepts covered in this unit.",
+      "explanation": "Augmented Reality (AR) enhances the real world by overlaying digital content (images, text, 3D models) onto the physical environment in real-time, allowing users to see and interact with both real and virtual elements simultaneously.",
       "subtopic": "4.1"
     },
     {
@@ -104,7 +104,7 @@
       ],
       "correct": 0,
       "correctText": "Smartphones",
-      "explanation": "The correct answer is 'Smartphones'. This follows the standard concepts covered in this unit.",
+      "explanation": "AR works mainly through smartphones because they have built-in cameras, sensors, and processing power needed to capture the real world, overlay digital content, and display the augmented view, making AR accessible to billions of users without specialized hardware.",
       "subtopic": "4.1"
     },
     {
@@ -117,7 +117,7 @@
       ],
       "correct": 0,
       "correctText": "Replace real world",
-      "explanation": "The correct answer is 'Replace real world'. This follows the standard concepts covered in this unit.",
+      "explanation": "AR does NOT replace the real world - instead, it supplements and enhances it by adding digital layers. Unlike VR which creates a completely virtual environment, AR maintains the user's connection to the physical world while adding digital information.",
       "subtopic": "4.1"
     },
     {
@@ -130,7 +130,7 @@
       ],
       "correct": 1,
       "correctText": "AR",
-      "explanation": "The correct answer is 'AR'. This follows the standard concepts covered in this unit.",
+      "explanation": "Pokémon GO is an example of AR (Augmented Reality) because it overlays virtual Pokémon characters onto the real-world environment captured through the smartphone camera, allowing players to see and catch Pokémon in their actual physical surroundings.",
       "subtopic": "4.1"
     },
     {
