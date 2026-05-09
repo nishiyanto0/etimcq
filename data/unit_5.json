@@ -13,7 +13,7 @@
       ],
       "correct": 1,
       "correctText": "Digital evidence investigation",
-      "explanation": "The correct answer is 'Digital evidence investigation'. This follows the standard concepts covered in this unit.",
+      "explanation": "Digital forensics is the branch of forensic science focused on investigating and analyzing digital devices and electronic data to uncover evidence of crimes, unauthorized access, or policy violations. Unlike physical forensics, it deals specifically with bits, bytes, and digital artifacts found on computers, phones, and networks.",
       "subtopic": "5.1"
     },
     {
@@ -26,7 +26,7 @@
       ],
       "correct": 2,
       "correctText": "Preserved carefully",
-      "explanation": "The correct answer is 'Preserved carefully'. This follows the standard concepts covered in this unit.",
+      "explanation": "Digital evidence is highly fragile and can be easily altered, corrupted, or destroyed if not handled properly. Preservation ensures the evidence remains in its original state so it can be admitted in court and withstand legal scrutiny under cross-examination.",
       "subtopic": "5.1"
     },
     {
@@ -39,7 +39,7 @@
       ],
       "correct": 1,
       "correctText": "Exact bit-by-bit copy",
-      "explanation": "The correct answer is 'Exact bit-by-bit copy'. This follows the standard concepts covered in this unit.",
+      "explanation": "A forensic image is a complete, sector-by-sector (bit-by-bit) copy of a storage device, including all files, deleted data, slack space, and unallocated areas. Unlike a simple backup or screenshot, it captures every binary detail, ensuring nothing is missed during investigation.",
       "subtopic": "5.1"
     },
     {
@@ -52,7 +52,7 @@
       ],
       "correct": 1,
       "correctText": "Verify integrity",
-      "explanation": "The correct answer is 'Verify integrity'. This follows the standard concepts covered in this unit.",
+      "explanation": "Hash values (like MD5, SHA-1, SHA-256) act as digital fingerprints for data. By computing a hash before and after evidence handling, investigators can mathematically prove whether the data has been altered \u2014 if the hashes match, the integrity is confirmed.",
       "subtopic": "5.1"
     },
     {
@@ -65,7 +65,7 @@
       ],
       "correct": 1,
       "correctText": "Accountability of evidence handling",
-      "explanation": "The correct answer is 'Accountability of evidence handling'. This follows the standard concepts covered in this unit.",
+      "explanation": "The chain of custody is a documented record that tracks who handled the evidence, when, where, and why, from the moment of seizure to courtroom presentation. It prevents tampering claims and ensures accountability at every stage of evidence handling.",
       "subtopic": "5.2"
     },
     {
@@ -78,7 +78,7 @@
       ],
       "correct": 1,
       "correctText": "RAM",
-      "explanation": "The correct answer is 'RAM'. This follows the standard concepts covered in this unit.",
+      "explanation": "Volatile data resides in RAM (Random Access Memory) and is lost the moment power is cut off. This includes running processes, network connections, clipboard contents, and encryption keys \u2014 making it critical to capture before shutting down a system.",
       "subtopic": "5.1"
     },
     {
@@ -91,7 +91,7 @@
       ],
       "correct": 1,
       "correctText": "Recover deleted files",
-      "explanation": "The correct answer is 'Recover deleted files'. This follows the standard concepts covered in this unit.",
+      "explanation": "File carving reconstructs files by identifying their headers, footers, and internal structure signatures directly from raw disk data, bypassing the file system. This technique is especially effective for recovering deleted files when file table entries have been erased.",
       "subtopic": "5.1"
     },
     {
@@ -104,7 +104,7 @@
       ],
       "correct": 1,
       "correctText": "Understanding sequence of events",
-      "explanation": "The correct answer is 'Understanding sequence of events'. This follows the standard concepts covered in this unit.",
+      "explanation": "Timeline reconstruction maps file timestamps (created, modified, accessed) and system logs into a chronological sequence, helping investigators understand the order in which events occurred, identify the attack vector, and establish causality between actions.",
       "subtopic": "5.1"
     },
     {
@@ -117,7 +117,7 @@
       ],
       "correct": 1,
       "correctText": "2001",
-      "explanation": "The correct answer is '2001'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Digital Forensic Research Workshop (DFRWS) proposed the first standardized digital forensic investigation framework in 2001, consisting of Identification, Preservation, Collection, Examination, Analysis, and Presentation phases.",
       "subtopic": "5.3"
     },
     {
@@ -130,7 +130,7 @@
       ],
       "correct": 1,
       "correctText": "Preparation",
-      "explanation": "The correct answer is 'Preparation'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Abstract Digital Forensic Model (ADFM) adds a Preparation phase before the standard investigation steps, recognizing that pre-incident planning, tool readiness, and team preparation are essential for a successful forensic investigation.",
       "subtopic": "5.3"
     },
     {
@@ -143,7 +143,7 @@
       ],
       "correct": 0,
       "correctText": "Digital & physical crime scenes",
-      "explanation": "The correct answer is 'Digital & physical crime scenes'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Integrated Digital Investigation Process (IDIP) model uniquely bridges digital and physical crime scene investigations, recognizing that digital evidence often exists alongside physical evidence and both must be investigated in a coordinated manner.",
       "subtopic": "5.3"
     },
     {
@@ -156,7 +156,7 @@
       ],
       "correct": 0,
       "correctText": "Automation & traceability",
-      "explanation": "The correct answer is 'Automation & traceability'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Enhanced Integrated Digital Investigation Process (EEDIP) emphasizes automation to speed up forensic processes and traceability to ensure every investigative step is auditable and reproducible, improving both efficiency and legal defensibility.",
       "subtopic": "5.3"
     },
     {
@@ -169,7 +169,7 @@
       ],
       "correct": 1,
       "correctText": "UML diagrams",
-      "explanation": "The correct answer is 'UML diagrams'. This follows the standard concepts covered in this unit.",
+      "explanation": "The UML-based Digital Forensic Investigation Process Model (UMDFPM) uses Unified Modeling Language diagrams (use case, activity, sequence diagrams) to formally model and visualize forensic investigation workflows, improving clarity and standardization.",
       "subtopic": "5.3"
     },
     {
@@ -182,7 +182,7 @@
       ],
       "correct": 0,
       "correctText": "Filtering relevant data",
-      "explanation": "The correct answer is 'Filtering relevant data'. This follows the standard concepts covered in this unit.",
+      "explanation": "In the examination stage, investigators filter out irrelevant data from the collected evidence to isolate the pertinent information. This distillation process reduces noise and focuses analysis on data that actually relates to the incident under investigation.",
       "subtopic": "5.1"
     },
     {
@@ -195,7 +195,7 @@
       ],
       "correct": 0,
       "correctText": "Data integrity",
-      "explanation": "The correct answer is 'Data integrity'. This follows the standard concepts covered in this unit.",
+      "explanation": "The preservation stage ensures that digital evidence remains in its original, unaltered state throughout the investigation. This involves creating forensic images, computing hash values, and implementing write-blockers to maintain data integrity from collection to courtroom.",
       "subtopic": "5.2"
     },
     {
@@ -208,7 +208,7 @@
       ],
       "correct": 1,
       "correctText": "Seizure",
-      "explanation": "The correct answer is 'Seizure'. This follows the standard concepts covered in this unit.",
+      "explanation": "Evidence handling begins with seizure \u2014 the legal and physical acquisition of digital devices and media from the crime scene. Proper seizure procedures (documentation, labeling, photographing) must be followed to maintain the chain of custody from the very first step.",
       "subtopic": "5.2"
     },
     {
@@ -221,7 +221,7 @@
       ],
       "correct": 1,
       "correctText": "Scientifically accepted",
-      "explanation": "The correct answer is 'Scientifically accepted'. This follows the standard concepts covered in this unit.",
+      "explanation": "Forensic tools must be scientifically validated and accepted by the professional community to ensure their results are reliable and admissible in court. Using untested or unproven tools risks having evidence challenged or excluded under Daubert/Frye standards.",
       "subtopic": "5.1"
     },
     {
@@ -234,7 +234,7 @@
       ],
       "correct": 0,
       "correctText": "It may be compromised",
-      "explanation": "The correct answer is 'It may be compromised'. This follows the standard concepts covered in this unit.",
+      "explanation": "A suspect's operating system may contain rootkits, Trojans, or other malware that can alter logs, hide files, or present false information. Therefore, investigators should never rely on the suspect OS for evidence collection and must use trusted forensic boot media instead.",
       "subtopic": "5.1"
     },
     {
@@ -247,7 +247,7 @@
       ],
       "correct": 1,
       "correctText": "Authorized security testing",
-      "explanation": "The correct answer is 'Authorized security testing'. This follows the standard concepts covered in this unit.",
+      "explanation": "Ethical hacking, also known as penetration testing, is the practice of deliberately probing systems for vulnerabilities with explicit authorization from the owner. It differs from malicious hacking because it is conducted legally, with defined scope, and aims to improve security.",
       "subtopic": "5.4"
     },
     {
@@ -260,7 +260,7 @@
       ],
       "correct": 1,
       "correctText": "Legal permission",
-      "explanation": "The correct answer is 'Legal permission'. This follows the standard concepts covered in this unit.",
+      "explanation": "Ethical hackers must obtain documented legal permission (such as a signed contract or scope-of-work agreement) before testing any system. Without authorization, even well-intentioned security testing constitutes unauthorized access and is illegal.",
       "subtopic": "5.1"
     },
     {
@@ -273,7 +273,7 @@
       ],
       "correct": 0,
       "correctText": "Information gathering",
-      "explanation": "The correct answer is 'Information gathering'. This follows the standard concepts covered in this unit.",
+      "explanation": "Reconnaissance (or information gathering) is the first phase of ethical hacking, where the tester collects publicly available or passively obtained information about the target \u2014 such as domain names, IP ranges, employee details, and technologies used \u2014 to plan the attack.",
       "subtopic": "5.1"
     },
     {
@@ -286,7 +286,7 @@
       ],
       "correct": 0,
       "correctText": "Open ports",
-      "explanation": "The correct answer is 'Open ports'. This follows the standard concepts covered in this unit.",
+      "explanation": "The scanning phase uses tools like Nmap and Nessus to identify open ports, running services, and potential vulnerabilities on target systems. This active probing builds on reconnaissance data to map the attack surface before exploitation.",
       "subtopic": "5.1"
     },
     {
@@ -299,7 +299,7 @@
       ],
       "correct": 0,
       "correctText": "Controlled attack",
-      "explanation": "The correct answer is 'Controlled attack'. This follows the standard concepts covered in this unit.",
+      "explanation": "In the exploitation phase, the ethical hacker attempts a controlled attack against identified vulnerabilities to demonstrate that they can be exploited. This proves the real-world impact of security weaknesses without causing actual harm or data loss.",
       "subtopic": "5.1"
     },
     {
@@ -312,7 +312,7 @@
       ],
       "correct": 1,
       "correctText": "Authorized professionals",
-      "explanation": "The correct answer is 'Authorized professionals'. This follows the standard concepts covered in this unit.",
+      "explanation": "White hat hackers are cybersecurity professionals who use their skills legally and ethically, with proper authorization, to identify and fix security vulnerabilities. They work within legal boundaries and report findings to help organizations improve their defenses.",
       "subtopic": "5.4"
     },
     {
@@ -325,7 +325,7 @@
       ],
       "correct": 1,
       "correctText": "Illegally",
-      "explanation": "The correct answer is 'Illegally'. This follows the standard concepts covered in this unit.",
+      "explanation": "Black hat hackers break into systems without authorization for personal gain, financial profit, or malicious intent. Their activities \u2014 including data theft, ransomware deployment, and system sabotage \u2014 are illegal and punishable under cybercrime laws.",
       "subtopic": "5.4"
     },
     {
@@ -338,7 +338,7 @@
       ],
       "correct": 2,
       "correctText": "Operate without permission but no malicious intent",
-      "explanation": "The correct answer is 'Operate without permission but no malicious intent'. This follows the standard concepts covered in this unit.",
+      "explanation": "Grey hat hackers operate in a middle ground \u2014 they access systems without explicit permission but typically without malicious intent, often disclosing vulnerabilities to the affected organization. While their motives may be constructive, their methods still violate computer misuse laws.",
       "subtopic": "5.4"
     },
     {
@@ -351,7 +351,7 @@
       ],
       "correct": 1,
       "correctText": "Beginners",
-      "explanation": "The correct answer is 'Beginners'. This follows the standard concepts covered in this unit.",
+      "explanation": "Blue hat hackers are typically novices or beginners with limited technical skills who engage in hacking out of curiosity or revenge. They often use pre-built tools and scripts rather than developing their own exploits, making them less sophisticated than other hacker categories.",
       "subtopic": "5.1"
     },
     {
@@ -364,7 +364,7 @@
       ],
       "correct": 0,
       "correctText": "Learning hackers",
-      "explanation": "The correct answer is 'Learning hackers'. This follows the standard concepts covered in this unit.",
+      "explanation": "Green hat hackers are aspiring or learning hackers who are enthusiastic about understanding hacking techniques but are still in the early stages of developing their skills. They spend time studying and practicing rather than conducting actual attacks.",
       "subtopic": "5.1"
     },
     {
@@ -377,7 +377,7 @@
       ],
       "correct": 0,
       "correctText": "Fight black hats aggressively",
-      "explanation": "The correct answer is 'Fight black hats aggressively'. This follows the standard concepts covered in this unit.",
+      "explanation": "Red hat hackers actively seek out and aggressively counter black hat hackers, often using offensive tactics to disrupt malicious operations. Unlike white hats who focus on defense, red hats take a proactive, sometimes retaliatory approach against cybercriminals.",
       "subtopic": "5.1"
     },
     {
@@ -390,7 +390,7 @@
       ],
       "correct": 0,
       "correctText": "Routers and switches",
-      "explanation": "The correct answer is 'Routers and switches'. This follows the standard concepts covered in this unit.",
+      "explanation": "Network hacking targets networking infrastructure \u2014 routers, switches, firewalls, and protocols \u2014 to intercept traffic, gain unauthorized access, or disrupt communications. Compromising network devices can give attackers control over an entire organization's data flow.",
       "subtopic": "5.5"
     },
     {
@@ -403,7 +403,7 @@
       ],
       "correct": 0,
       "correctText": "Machine learning",
-      "explanation": "The correct answer is 'Machine learning'. This follows the standard concepts covered in this unit.",
+      "explanation": "AI-powered phishing leverages machine learning algorithms to craft highly personalized and convincing phishing emails by analyzing social media, writing styles, and behavioral patterns of targets, making these attacks significantly harder to detect than traditional phishing.",
       "subtopic": "5.5"
     },
     {
@@ -416,7 +416,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Ransomware 2.0 encompasses multiple extortion strategies including double extortion (encryption + data theft threat), triple extortion (adding DDoS or harassment), and comprehensive data theft \u2014 making it a multi-layered threat that goes far beyond simple file encryption.",
       "subtopic": "5.5"
     },
     {
@@ -429,7 +429,7 @@
       ],
       "correct": 0,
       "correctText": "Smart devices",
-      "explanation": "The correct answer is 'Smart devices'. This follows the standard concepts covered in this unit.",
+      "explanation": "IoT exploits target the vulnerabilities in smart devices \u2014 such as cameras, thermostats, and home assistants \u2014 which often have weak security, unpatched firmware, and default credentials, making them easy entry points into broader networks.",
       "subtopic": "5.5"
     },
     {
@@ -442,7 +442,7 @@
       ],
       "correct": 0,
       "correctText": "Machine learning",
-      "explanation": "The correct answer is 'Machine learning'. This follows the standard concepts covered in this unit.",
+      "explanation": "Deepfakes use deep learning (a subset of machine learning) techniques like generative adversarial networks (GANs) to create realistic but fabricated audio, video, or images that can impersonate individuals for fraud, disinformation, or blackmail.",
       "subtopic": "5.5"
     },
     {
@@ -455,7 +455,7 @@
       ],
       "correct": 1,
       "correctText": "Older vulnerable OS",
-      "explanation": "The correct answer is 'Older vulnerable OS'. This follows the standard concepts covered in this unit.",
+      "explanation": "An OS downgrade attack forces a device to run an older, vulnerable version of its operating system by exploiting weak verification mechanisms during updates. The older OS lacks current security patches, giving attackers access to known vulnerabilities.",
       "subtopic": "5.5"
     },
     {
@@ -468,7 +468,7 @@
       ],
       "correct": 0,
       "correctText": "BIOS/UEFI",
-      "explanation": "The correct answer is 'BIOS/UEFI'. This follows the standard concepts covered in this unit.",
+      "explanation": "Firmware exploits target low-level software embedded in hardware components like BIOS/UEFI, which runs before the operating system loads. Compromising firmware allows attackers to establish persistent, stealthy control that survives OS reinstallation.",
       "subtopic": "5.5"
     },
     {
@@ -481,7 +481,7 @@
       ],
       "correct": 0,
       "correctText": "Evade firewall filters",
-      "explanation": "The correct answer is 'Evade firewall filters'. This follows the standard concepts covered in this unit.",
+      "explanation": "Web Application Firewall (WAF) bypass techniques involve encoding payloads, using alternative character sets, or fragmenting requests to evade pattern-matching filters. Attackers use these methods to deliver SQL injection, XSS, or other attacks past WAF protections.",
       "subtopic": "5.5"
     },
     {
@@ -494,7 +494,7 @@
       ],
       "correct": 1,
       "correctText": "Unknown and unpatched",
-      "explanation": "The correct answer is 'Unknown and unpatched'. This follows the standard concepts covered in this unit.",
+      "explanation": "A zero-day vulnerability is a security flaw that is unknown to the software vendor and has no available patch. The term comes from the fact that developers have had zero days to fix it, making it extremely dangerous as attackers can exploit it freely until discovered.",
       "subtopic": "5.1"
     },
     {
@@ -507,7 +507,7 @@
       ],
       "correct": 0,
       "correctText": "National cyberspace",
-      "explanation": "The correct answer is 'National cyberspace'. This follows the standard concepts covered in this unit.",
+      "explanation": "India's National Cyber Security Policy (NCSP) 2013 provides a strategic framework to protect the nation's cyberspace, including critical information infrastructure, government networks, and citizen data from cyber threats through awareness, education, and capacity building.",
       "subtopic": "5.6"
     },
     {
@@ -520,7 +520,7 @@
       ],
       "correct": 0,
       "correctText": "Electronic records",
-      "explanation": "The correct answer is 'Electronic records'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Information Technology Act 2000 provides legal recognition to electronic records and digital signatures, enabling e-commerce and e-governance in India. It establishes that electronic documents have the same legal validity as paper documents.",
       "subtopic": "5.6"
     },
     {
@@ -533,7 +533,7 @@
       ],
       "correct": 0,
       "correctText": "Identity theft",
-      "explanation": "The correct answer is 'Identity theft'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 66C of the IT Act specifically addresses identity theft \u2014 the fraudulent use of another person's unique identification data such as passwords, digital signatures, or biometric information \u2014 and prescribes imprisonment up to 3 years and fines.",
       "subtopic": "5.1"
     },
     {
@@ -546,7 +546,7 @@
       ],
       "correct": 0,
       "correctText": "Cyber terrorism",
-      "explanation": "The correct answer is 'Cyber terrorism'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 66F of the IT Act deals with cyber terrorism \u2014 acts intended to threaten the unity, integrity, security, or sovereignty of India by accessing or damaging critical information infrastructure \u2014 and carries the harshest penalties, including life imprisonment.",
       "subtopic": "5.1"
     },
     {
@@ -559,7 +559,7 @@
       ],
       "correct": 0,
       "correctText": "Personal data",
-      "explanation": "The correct answer is 'Personal data'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Digital Personal Data Protection (DPDP) Act 2023 is India's comprehensive data protection law that safeguards individuals' personal data by establishing rules for its collection, processing, and storage, with penalties for non-compliance up to Rs. 250 crore.",
       "subtopic": "5.6"
     },
     {
@@ -572,7 +572,7 @@
       ],
       "correct": 0,
       "correctText": "Individual",
-      "explanation": "The correct answer is 'Individual'. This follows the standard concepts covered in this unit.",
+      "explanation": "Under the DPDP Act, a Data Principal is the individual to whom the personal data relates. Data Principals have specific rights including the right to access, correct, and erase their personal data held by organizations.",
       "subtopic": "5.1"
     },
     {
@@ -585,7 +585,7 @@
       ],
       "correct": 0,
       "correctText": "Organization handling data",
-      "explanation": "The correct answer is 'Organization handling data'. This follows the standard concepts covered in this unit.",
+      "explanation": "A Data Fiduciary, as defined in the DPDP Act, is any organization or entity that determines the purpose and means of processing personal data. Data Fiduciaries bear the primary responsibility for ensuring data protection compliance and respecting Data Principals' rights.",
       "subtopic": "5.1"
     },
     {
@@ -598,7 +598,7 @@
       ],
       "correct": 0,
       "correctText": "Women & children",
-      "explanation": "The correct answer is 'Women & children'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Cyber Crime Prevention against Women and Children (CCPWC) scheme is a government initiative specifically designed to protect women and children from online threats including cyber stalking, revenge porn, child sexual abuse material, and online grooming.",
       "subtopic": "5.6"
     },
     {
@@ -611,7 +611,7 @@
       ],
       "correct": 0,
       "correctText": "Cyber incident response",
-      "explanation": "The correct answer is 'Cyber incident response'. This follows the standard concepts covered in this unit.",
+      "explanation": "CERT-In (Indian Computer Emergency Response Team) is the national nodal agency responsible for collecting, analyzing, and disseminating information on cyber incidents, issuing alerts and advisories, and coordinating incident response across India's cyberspace.",
       "subtopic": "5.1"
     },
     {
@@ -624,7 +624,7 @@
       ],
       "correct": 0,
       "correctText": "Intercept data",
-      "explanation": "The correct answer is 'Intercept data'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 69 of the IT Act empowers the government to intercept, monitor, or decrypt any information generated, transmitted, or stored in any computer resource when necessary for national security, public order, or preventing cognizable offenses.",
       "subtopic": "5.1"
     },
     {
@@ -637,7 +637,7 @@
       ],
       "correct": 0,
       "correctText": "Unauthorized access",
-      "explanation": "The correct answer is 'Unauthorized access'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 43 of the IT Act addresses unauthorized access to computers and computer systems, prescribing penalties for anyone who accesses or secures access without permission, including downloading data, introducing viruses, or causing system damage.",
       "subtopic": "5.1"
     },
     {
@@ -650,7 +650,7 @@
       ],
       "correct": 0,
       "correctText": "Security posture",
-      "explanation": "The correct answer is 'Security posture'. This follows the standard concepts covered in this unit.",
+      "explanation": "Ethical hacking improves an organization's overall security posture by proactively identifying vulnerabilities before malicious actors can exploit them. This allows for timely remediation, reducing the risk of breaches and strengthening defensive capabilities.",
       "subtopic": "5.4"
     },
     {
@@ -663,7 +663,7 @@
       ],
       "correct": 1,
       "correctText": "Recognizing incident occurrence",
-      "explanation": "The correct answer is 'Recognizing incident occurrence'. This follows the standard concepts covered in this unit.",
+      "explanation": "In the identification stage of digital forensics, investigators recognize that a security incident has occurred by detecting anomalies, alerts, or reports. This initial recognition triggers the formal forensic investigation process and determines its scope.",
       "subtopic": "5.1"
     },
     {
@@ -676,7 +676,7 @@
       ],
       "correct": 0,
       "correctText": "Evidence tampering",
-      "explanation": "The correct answer is 'Evidence tampering'. This follows the standard concepts covered in this unit.",
+      "explanation": "The preservation phase prevents evidence tampering by immediately securing digital devices, creating forensic copies with write-blockers, and documenting the state of evidence. This ensures that the original evidence remains unaltered for analysis and court proceedings.",
       "subtopic": "5.2"
     },
     {
@@ -689,7 +689,7 @@
       ],
       "correct": 0,
       "correctText": "Relevant digital data",
-      "explanation": "The correct answer is 'Relevant digital data'. This follows the standard concepts covered in this unit.",
+      "explanation": "The collection phase systematically gathers all relevant digital data from identified sources using forensically sound methods. This includes creating bit-by-bit images, copying log files, and preserving volatile memory \u2014 all while maintaining chain of custody documentation.",
       "subtopic": "5.1"
     },
     {
@@ -702,7 +702,7 @@
       ],
       "correct": 1,
       "correctText": "Irrelevant data",
-      "explanation": "The correct answer is 'Irrelevant data'. This follows the standard concepts covered in this unit.",
+      "explanation": "During the examination phase, investigators filter out irrelevant data (such as system files, known good files, and unrelated user content) to focus on information pertinent to the case. This reduces the volume of data requiring detailed analysis.",
       "subtopic": "5.1"
     },
     {
@@ -715,7 +715,7 @@
       ],
       "correct": 0,
       "correctText": "Clear documentation",
-      "explanation": "The correct answer is 'Clear documentation'. This follows the standard concepts covered in this unit.",
+      "explanation": "The presentation stage requires clear, accurate documentation that communicates forensic findings in a manner understandable to both technical and non-technical audiences, including legal professionals, judges, and juries who may lack technical expertise.",
       "subtopic": "5.1"
     },
     {
@@ -728,7 +728,7 @@
       ],
       "correct": 0,
       "correctText": "Legal action",
-      "explanation": "The correct answer is 'Legal action'. This follows the standard concepts covered in this unit.",
+      "explanation": "In the DFRWS framework, the Decision phase involves determining what legal action should be taken based on the forensic findings \u2014 whether to prosecute, seek civil remedies, implement administrative actions, or close the case.",
       "subtopic": "5.3"
     },
     {
@@ -741,7 +741,7 @@
       ],
       "correct": 0,
       "correctText": "Proper device return",
-      "explanation": "The correct answer is 'Proper device return'. This follows the standard concepts covered in this unit.",
+      "explanation": "The ADFM's Return of Evidence phase ensures that seized digital devices and media are properly returned to their owners after the investigation concludes, following legal procedures and documentation to maintain accountability even at the final stage.",
       "subtopic": "5.3"
     },
     {
@@ -754,7 +754,7 @@
       ],
       "correct": 0,
       "correctText": "Preparation before incident",
-      "explanation": "The correct answer is 'Preparation before incident'. This follows the standard concepts covered in this unit.",
+      "explanation": "The IDIP Readiness phase focuses on proactive preparation before any incident occurs, including establishing forensic capabilities, training personnel, deploying monitoring tools, and creating response plans so the team is prepared when an incident strikes.",
       "subtopic": "5.3"
     },
     {
@@ -767,7 +767,7 @@
       ],
       "correct": 0,
       "correctText": "Incident detected",
-      "explanation": "The correct answer is 'Incident detected'. This follows the standard concepts covered in this unit.",
+      "explanation": "In the IDIP model, the Deployment phase is activated when an incident is detected, at which point the forensic team mobilizes and deploys to the scene with appropriate tools, equipment, and authorization to begin the investigation.",
       "subtopic": "5.1"
     },
     {
@@ -780,7 +780,7 @@
       ],
       "correct": 0,
       "correctText": "Improving future investigations",
-      "explanation": "The correct answer is 'Improving future investigations'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Review phase in IDIP focuses on analyzing the completed investigation to identify lessons learned, improve procedures, update tools, and refine protocols for future cases \u2014 creating a continuous improvement cycle for the forensic team.",
       "subtopic": "5.3"
     },
     {
@@ -793,7 +793,7 @@
       ],
       "correct": 0,
       "correctText": "Legal permission",
-      "explanation": "The correct answer is 'Legal permission'. This follows the standard concepts covered in this unit.",
+      "explanation": "The EEDIP Authorization phase ensures that all necessary legal permissions, warrants, and organizational approvals are obtained before any forensic investigation begins, preventing evidence from being challenged or excluded due to procedural violations.",
       "subtopic": "5.3"
     },
     {
@@ -806,7 +806,7 @@
       ],
       "correct": 0,
       "correctText": "Multi-agency coordination",
-      "explanation": "The correct answer is 'Multi-agency coordination'. This follows the standard concepts covered in this unit.",
+      "explanation": "Extended forensic models support multi-agency coordination by providing standardized processes that enable different organizations (law enforcement, forensic labs, legal teams) to collaborate effectively while maintaining evidence integrity and jurisdictional compliance.",
       "subtopic": "5.1"
     },
     {
@@ -819,7 +819,7 @@
       ],
       "correct": 0,
       "correctText": "Actors and roles",
-      "explanation": "The correct answer is 'Actors and roles'. This follows the standard concepts covered in this unit.",
+      "explanation": "A use case diagram, part of UML modeling, shows the actors (users, systems, external entities) and their roles or interactions with the forensic investigation system, helping to define boundaries and responsibilities in the investigation process.",
       "subtopic": "5.1"
     },
     {
@@ -832,7 +832,7 @@
       ],
       "correct": 0,
       "correctText": "Workflow",
-      "explanation": "The correct answer is 'Workflow'. This follows the standard concepts covered in this unit.",
+      "explanation": "An activity diagram represents the workflow or sequence of activities in a forensic process, showing decision points, parallel actions, and the flow from one step to the next \u2014 making complex investigation procedures easier to understand and follow.",
       "subtopic": "5.1"
     },
     {
@@ -845,7 +845,7 @@
       ],
       "correct": 0,
       "correctText": "Interaction order",
-      "explanation": "The correct answer is 'Interaction order'. This follows the standard concepts covered in this unit.",
+      "explanation": "A sequence diagram shows the order of interactions between different components or actors over time, illustrating which entity sends what message to whom and in what sequence \u2014 critical for modeling forensic tool workflows and evidence handling procedures.",
       "subtopic": "5.1"
     },
     {
@@ -858,7 +858,7 @@
       ],
       "correct": 1,
       "correctText": "Before shutdown",
-      "explanation": "The correct answer is 'Before shutdown'. This follows the standard concepts covered in this unit.",
+      "explanation": "RAM data must be collected before shutdown because volatile memory is lost when power is removed. Running processes, encryption keys, network connections, and unsaved data exist only in RAM, making pre-shutdown collection essential for a complete forensic picture.",
       "subtopic": "5.1"
     },
     {
@@ -871,7 +871,7 @@
       ],
       "correct": 0,
       "correctText": "Hidden data",
-      "explanation": "The correct answer is 'Hidden data'. This follows the standard concepts covered in this unit.",
+      "explanation": "Steganography detection (steganalysis) identifies hidden data embedded within seemingly normal files like images, audio, or video. Unlike encryption which scrambles data visibly, steganography conceals the very existence of the hidden information.",
       "subtopic": "5.1"
     },
     {
@@ -884,7 +884,7 @@
       ],
       "correct": 0,
       "correctText": "Suspicious terms",
-      "explanation": "The correct answer is 'Suspicious terms'. This follows the standard concepts covered in this unit.",
+      "explanation": "Keyword searching scans through acquired data for specific terms, names, phrases, or patterns that may indicate suspicious or relevant activity. This targeted approach helps investigators quickly identify pertinent evidence within large datasets.",
       "subtopic": "5.1"
     },
     {
@@ -897,7 +897,7 @@
       ],
       "correct": 0,
       "correctText": "Legal credibility",
-      "explanation": "The correct answer is 'Legal credibility'. This follows the standard concepts covered in this unit.",
+      "explanation": "Thorough documentation increases the legal credibility of forensic findings by providing a verifiable, auditable trail of every action taken. Courts rely on documentation to assess whether proper procedures were followed and whether evidence can be trusted.",
       "subtopic": "5.1"
     },
     {
@@ -910,7 +910,7 @@
       ],
       "correct": 0,
       "correctText": "Real attacks legally",
-      "explanation": "The correct answer is 'Real attacks legally'. This follows the standard concepts covered in this unit.",
+      "explanation": "Ethical hackers simulate real-world cyberattacks under controlled, legal conditions to identify vulnerabilities that actual attackers could exploit. These controlled simulations provide actionable findings without the risk of actual damage or data loss.",
       "subtopic": "5.1"
     },
     {
@@ -923,7 +923,7 @@
       ],
       "correct": 0,
       "correctText": "Persistence",
-      "explanation": "The correct answer is 'Persistence'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Maintaining Access phase tests whether an attacker could establish persistent access to a compromised system (via backdoors, scheduled tasks, or rootkits). This demonstrates the real-world risk of long-term compromise if vulnerabilities remain unfixed.",
       "subtopic": "5.1"
     },
     {
@@ -936,7 +936,7 @@
       ],
       "correct": 0,
       "correctText": "Vulnerability details",
-      "explanation": "The correct answer is 'Vulnerability details'. This follows the standard concepts covered in this unit.",
+      "explanation": "The reporting phase documents all discovered vulnerabilities, their severity, exploitation methods used, and recommended remediation steps. A comprehensive report enables the organization to prioritize and address security gaps systematically.",
       "subtopic": "5.1"
     },
     {
@@ -949,7 +949,7 @@
       ],
       "correct": 0,
       "correctText": "Incident response readiness",
-      "explanation": "The correct answer is 'Incident response readiness'. This follows the standard concepts covered in this unit.",
+      "explanation": "By proactively identifying vulnerabilities and testing incident response procedures, ethical hacking improves an organization's incident response readiness \u2014 ensuring teams can detect, contain, and recover from actual attacks more quickly and effectively.",
       "subtopic": "5.4"
     },
     {
@@ -962,7 +962,7 @@
       ],
       "correct": 0,
       "correctText": "Perfect grammar",
-      "explanation": "The correct answer is 'Perfect grammar'. This follows the standard concepts covered in this unit.",
+      "explanation": "AI-generated phishing emails exhibit perfect grammar and natural language because machine learning models (like GPT) can produce flawlessly written, contextually appropriate messages \u2014 eliminating the spelling and grammar errors that traditionally helped users identify phishing attempts.",
       "subtopic": "5.5"
     },
     {
@@ -975,7 +975,7 @@
       ],
       "correct": 0,
       "correctText": "Encryption + data theft",
-      "explanation": "The correct answer is 'Encryption + data theft'. This follows the standard concepts covered in this unit.",
+      "explanation": "Double extortion ransomware combines file encryption with data exfiltration \u2014 attackers not only lock the victim's data but also threaten to publish stolen sensitive information if the ransom isn't paid, creating two separate leverage points against the victim.",
       "subtopic": "5.5"
     },
     {
@@ -988,7 +988,7 @@
       ],
       "correct": 0,
       "correctText": "DDoS or blackmail",
-      "explanation": "The correct answer is 'DDoS or blackmail'. This follows the standard concepts covered in this unit.",
+      "explanation": "Triple extortion ransomware adds a third layer of pressure beyond encryption and data theft \u2014 such as launching DDoS attacks against the victim's services or directly blackmailing individuals whose data was stolen \u2014 to further coerce payment.",
       "subtopic": "5.1"
     },
     {
@@ -1001,7 +1001,7 @@
       ],
       "correct": 0,
       "correctText": "Mass file encryption",
-      "explanation": "The correct answer is 'Mass file encryption'. This follows the standard concepts covered in this unit.",
+      "explanation": "The primary indicator of a ransomware attack is the mass encryption of files across the system, often accompanied by ransom notes and file extension changes. This systematic, rapid encryption of numerous files distinguishes ransomware from other malware.",
       "subtopic": "5.5"
     },
     {
@@ -1014,7 +1014,7 @@
       ],
       "correct": 0,
       "correctText": "Endpoint Detection and Response",
-      "explanation": "The correct answer is 'Endpoint Detection and Response'. This follows the standard concepts covered in this unit.",
+      "explanation": "EDR (Endpoint Detection and Response) is a security solution that continuously monitors endpoints (desktops, laptops, servers) for suspicious activity, detects threats in real-time, and provides automated or manual response capabilities to contain and remediate incidents.",
       "subtopic": "5.1"
     },
     {
@@ -1027,7 +1027,7 @@
       ],
       "correct": 0,
       "correctText": "Vulnerability",
-      "explanation": "The correct answer is 'Vulnerability'. This follows the standard concepts covered in this unit.",
+      "explanation": "IoT devices often ship with default, well-known passwords that many users never change, creating a significant vulnerability. Attackers can easily look up default credentials online and gain unauthorized access to these devices, often joining them to botnets.",
       "subtopic": "5.1"
     },
     {
@@ -1040,7 +1040,7 @@
       ],
       "correct": 0,
       "correctText": "Network isolation",
-      "explanation": "The correct answer is 'Network isolation'. This follows the standard concepts covered in this unit.",
+      "explanation": "VLANs (Virtual Local Area Networks) enable network isolation by logically segmenting a physical network into separate broadcast domains. This limits the spread of attacks, contains breaches, and enforces security boundaries between different network zones.",
       "subtopic": "5.1"
     },
     {
@@ -1053,7 +1053,7 @@
       ],
       "correct": 0,
       "correctText": "Metadata",
-      "explanation": "The correct answer is 'Metadata'. This follows the standard concepts covered in this unit.",
+      "explanation": "Deepfake detection techniques analyze metadata inconsistencies, compression artifacts, facial micro-expressions, and pixel-level anomalies that are not visible to the human eye but reveal the synthetic nature of AI-generated media content.",
       "subtopic": "5.5"
     },
     {
@@ -1066,7 +1066,7 @@
       ],
       "correct": 0,
       "correctText": "System vulnerabilities",
-      "explanation": "The correct answer is 'System vulnerabilities'. This follows the standard concepts covered in this unit.",
+      "explanation": "OS hacking targets vulnerabilities within operating systems \u2014 such as privilege escalation flaws, buffer overflows, or kernel exploits \u2014 to gain unauthorized access, execute arbitrary code, or escalate privileges on the compromised system.",
       "subtopic": "5.1"
     },
     {
@@ -1079,7 +1079,7 @@
       ],
       "correct": 0,
       "correctText": "Unauthorized firmware",
-      "explanation": "The correct answer is 'Unauthorized firmware'. This follows the standard concepts covered in this unit.",
+      "explanation": "Secure boot is a firmware feature that verifies the digital signature of each boot component before execution, preventing unauthorized or malicious firmware, bootloaders, or kernel modifications from loading during the system startup process.",
       "subtopic": "5.1"
     },
     {
@@ -1092,7 +1092,7 @@
       ],
       "correct": 0,
       "correctText": "Trusted Platform Module",
-      "explanation": "The correct answer is 'Trusted Platform Module'. This follows the standard concepts covered in this unit.",
+      "explanation": "TPM (Trusted Platform Module) is a dedicated hardware chip on the motherboard that provides hardware-based security functions including key generation, storage, and measurement of system integrity, forming the foundation for secure boot and disk encryption.",
       "subtopic": "5.1"
     },
     {
@@ -1105,7 +1105,7 @@
       ],
       "correct": 0,
       "correctText": "Application vulnerability",
-      "explanation": "The correct answer is 'Application vulnerability'. This follows the standard concepts covered in this unit.",
+      "explanation": "SQL injection is an application-layer vulnerability where attackers inject malicious SQL code into input fields to manipulate database queries, potentially accessing, modifying, or deleting unauthorized data. It exploits improper input validation in web applications.",
       "subtopic": "5.1"
     },
     {
@@ -1118,7 +1118,7 @@
       ],
       "correct": 0,
       "correctText": "Zero-day exploit",
-      "explanation": "The correct answer is 'Zero-day exploit'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Log4j vulnerability (CVE-2021-44228) was a critical zero-day exploit in the widely used Apache Log4j logging library that allowed remote code execution through crafted log messages. Its massive impact across millions of applications made it one of the most severe zero-days in history.",
       "subtopic": "5.1"
     },
     {
@@ -1131,7 +1131,7 @@
       ],
       "correct": 0,
       "correctText": "Critical infrastructure",
-      "explanation": "The correct answer is 'Critical infrastructure'. This follows the standard concepts covered in this unit.",
+      "explanation": "India's National Cyber Security Policy focuses on protecting critical information infrastructure \u2014 systems vital to national security, economy, and public health \u2014 including power grids, financial systems, and communication networks from cyber threats.",
       "subtopic": "5.6"
     },
     {
@@ -1144,7 +1144,7 @@
       ],
       "correct": 0,
       "correctText": "Computer Emergency Response Team - India",
-      "explanation": "The correct answer is 'Computer Emergency Response Team - India'. This follows the standard concepts covered in this unit.",
+      "explanation": "CERT-In stands for Computer Emergency Response Team - India, the nationally designated organization for cybersecurity incident response, threat intelligence sharing, and coordination of cybersecurity efforts across government and private sectors in India.",
       "subtopic": "5.1"
     },
     {
@@ -1157,7 +1157,7 @@
       ],
       "correct": 0,
       "correctText": "Online cheating",
-      "explanation": "The correct answer is 'Online cheating'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 66D of the IT Act addresses online cheating by impersonation \u2014 using communication devices or computer resources to deceive and cheat someone \u2014 and prescribes imprisonment up to 3 years and fines up to Rs. 1 lakh.",
       "subtopic": "5.1"
     },
     {
@@ -1170,7 +1170,7 @@
       ],
       "correct": 0,
       "correctText": "Breach of confidentiality",
-      "explanation": "The correct answer is 'Breach of confidentiality'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 72A of the IT Act deals with breach of confidentiality and privacy by someone who has access to personal data in the course of a contract and discloses it without consent, prescribing imprisonment up to 3 years and/or fines.",
       "subtopic": "5.1"
     },
     {
@@ -1183,7 +1183,7 @@
       ],
       "correct": 0,
       "correctText": "User consent",
-      "explanation": "The correct answer is 'User consent'. This follows the standard concepts covered in this unit.",
+      "explanation": "The DPDP Act mandates that organizations must obtain clear, informed, and specific consent from Data Principals before collecting and processing their personal data, ensuring individuals have control over how their information is used.",
       "subtopic": "5.6"
     },
     {
@@ -1196,7 +1196,7 @@
       ],
       "correct": 0,
       "correctText": "Compliance",
-      "explanation": "The correct answer is 'Compliance'. This follows the standard concepts covered in this unit.",
+      "explanation": "The Data Protection Board, established under the DPDP Act, oversees compliance with data protection regulations, investigates breaches, adjudicates disputes, and can impose penalties on organizations that violate data protection requirements.",
       "subtopic": "5.1"
     },
     {
@@ -1209,7 +1209,7 @@
       ],
       "correct": 0,
       "correctText": "Cybercrime reporting",
-      "explanation": "The correct answer is 'Cybercrime reporting'. This follows the standard concepts covered in this unit.",
+      "explanation": "The CCPWC (Cyber Crime Prevention against Women and Children) portal enables citizens to report cybercrimes online, particularly those targeting women and children, providing a streamlined mechanism for filing complaints and tracking investigation progress.",
       "subtopic": "5.6"
     },
     {
@@ -1222,7 +1222,7 @@
       ],
       "correct": 0,
       "correctText": "Online harassment",
-      "explanation": "The correct answer is 'Online harassment'. This follows the standard concepts covered in this unit.",
+      "explanation": "Cyber stalking is a form of online harassment where an individual uses the internet, social media, or other digital means to persistently follow, threaten, or intimidate someone, often monitoring their activities and location without consent.",
       "subtopic": "5.1"
     },
     {
@@ -1235,7 +1235,7 @@
       ],
       "correct": 0,
       "correctText": "Hash values",
-      "explanation": "The correct answer is 'Hash values'. This follows the standard concepts covered in this unit.",
+      "explanation": "Hash values (such as MD5, SHA-1, SHA-256) verify evidence integrity by producing a unique fixed-length output for any given input. If even a single bit of the evidence changes, the hash value changes completely, proving tampering.",
       "subtopic": "5.1"
     },
     {
@@ -1248,7 +1248,7 @@
       ],
       "correct": 0,
       "correctText": "Malware detection",
-      "explanation": "The correct answer is 'Malware detection'. This follows the standard concepts covered in this unit.",
+      "explanation": "Memory dump analysis examines the captured contents of RAM to detect malware, extract encryption keys, identify running malicious processes, and find evidence that exists only in volatile memory and would be lost after system shutdown.",
       "subtopic": "5.1"
     },
     {
@@ -1261,7 +1261,7 @@
       ],
       "correct": 0,
       "correctText": "Investigation efficiency",
-      "explanation": "The correct answer is 'Investigation efficiency'. This follows the standard concepts covered in this unit.",
+      "explanation": "Forensic readiness is the proactive preparation of an organization's people, processes, and technology to efficiently conduct digital investigations when incidents occur. Being prepared in advance reduces response time, preserves more evidence, and improves the quality of investigative outcomes.",
       "subtopic": "5.1"
     },
     {
@@ -1274,7 +1274,7 @@
       ],
       "correct": 0,
       "correctText": "Proper chain of custody",
-      "explanation": "The correct answer is 'Proper chain of custody'. This follows the standard concepts covered in this unit.",
+      "explanation": "For digital evidence to be legally admissible in court, a proper chain of custody must be maintained \u2014 documenting every person who handled the evidence, when, where, and for what purpose. Without this documented trail, opposing counsel can challenge the evidence's authenticity and reliability.",
       "subtopic": "5.1"
     },
     {
@@ -1287,7 +1287,7 @@
       ],
       "correct": 0,
       "correctText": "Security risks",
-      "explanation": "The correct answer is 'Security risks'. This follows the standard concepts covered in this unit.",
+      "explanation": "By proactively identifying and helping remediate vulnerabilities before attackers discover them, ethical hacking directly reduces an organization's security risks. It shifts the balance from reactive incident response to preventive security, minimizing potential breach damage and data loss.",
       "subtopic": "5.4"
     },
     {
@@ -1300,7 +1300,7 @@
       ],
       "correct": 0,
       "correctText": "Court-admissible evidence",
-      "explanation": "The correct answer is 'Court-admissible evidence'. This follows the standard concepts covered in this unit.",
+      "explanation": "The ultimate aim of digital forensics is to produce court-admissible evidence \u2014 digital evidence that has been properly identified, preserved, collected, examined, and analyzed following established procedures so that it can withstand legal scrutiny and be used in prosecution or litigation.",
       "subtopic": "5.1"
     },
     {
@@ -1313,7 +1313,7 @@
       ],
       "correct": 1,
       "correctText": "Authentic and unchanged",
-      "explanation": "The correct answer is 'Authentic and unchanged'. This follows the standard concepts covered in this unit.",
+      "explanation": "Integrity in digital forensics means ensuring that evidence remains authentic and completely unchanged from the moment it was collected. Any alteration \u2014 whether accidental or intentional \u2014 can compromise the evidence's validity and render it inadmissible in legal proceedings.",
       "subtopic": "5.1"
     },
     {
@@ -1326,7 +1326,7 @@
       ],
       "correct": 0,
       "correctText": "Prevent data modification",
-      "explanation": "The correct answer is 'Prevent data modification'. This follows the standard concepts covered in this unit.",
+      "explanation": "A write blocker is a hardware or software tool that prevents any write operations to the source evidence drive during the imaging process. Without a write blocker, simply connecting a drive could modify timestamps, logs, or file metadata, potentially destroying critical evidence.",
       "subtopic": "5.1"
     },
     {
@@ -1339,7 +1339,7 @@
       ],
       "correct": 1,
       "correctText": "Bit-stream copy",
-      "explanation": "The correct answer is 'Bit-stream copy'. This follows the standard concepts covered in this unit.",
+      "explanation": "Forensic duplication, also known as a bit-stream copy, creates an exact sector-by-sector replica of the original storage device, including all data, slack space, unallocated areas, and inter-partition gaps. This ensures that no potential evidence is missed during the copying process.",
       "subtopic": "5.1"
     },
     {
@@ -1352,7 +1352,7 @@
       ],
       "correct": 1,
       "correctText": "RAM contents",
-      "explanation": "The correct answer is 'RAM contents'. This follows the standard concepts covered in this unit.",
+      "explanation": "Volatile evidence includes RAM contents such as running processes, open network connections, clipboard data, login sessions, and encryption keys \u2014 all of which are lost when power is removed. This is why volatile memory must be captured first, before shutting down the system.",
       "subtopic": "5.1"
     },
     {
@@ -1365,7 +1365,7 @@
       ],
       "correct": 0,
       "correctText": "System activities",
-      "explanation": "The correct answer is 'System activities'. This follows the standard concepts covered in this unit.",
+      "explanation": "Log analysis examines system logs, application logs, security logs, and network logs to detect patterns of system activities, including unauthorized access attempts, malware execution, policy violations, and anomalous behavior that may indicate a security incident.",
       "subtopic": "5.1"
     },
     {
@@ -1378,7 +1378,7 @@
       ],
       "correct": 1,
       "correctText": "Secure environment",
-      "explanation": "The correct answer is 'Secure environment'. This follows the standard concepts covered in this unit.",
+      "explanation": "Digital evidence must be stored in a secure, access-controlled environment \u2014 such as a locked evidence room or encrypted digital storage \u2014 to prevent unauthorized access, tampering, accidental deletion, or environmental damage that could compromise its integrity and admissibility.",
       "subtopic": "5.1"
     },
     {
@@ -1391,7 +1391,7 @@
       ],
       "correct": 1,
       "correctText": "Hash algorithms",
-      "explanation": "The correct answer is 'Hash algorithms'. This follows the standard concepts covered in this unit.",
+      "explanation": "MD5 (Message Digest 5) and SHA (Secure Hash Algorithm) are hash algorithms that generate unique fixed-length digests from input data. In forensics, they are used to verify that evidence has not been altered by comparing hash values computed at different stages of handling.",
       "subtopic": "5.1"
     },
     {
@@ -1404,7 +1404,7 @@
       ],
       "correct": 0,
       "correctText": "Using approved tools",
-      "explanation": "The correct answer is 'Using approved tools'. This follows the standard concepts covered in this unit.",
+      "explanation": "Forensic soundness means that all investigation procedures use approved, validated tools and follow established methodologies that have been accepted by the forensic community and courts. This ensures that results are reliable, reproducible, and defensible under legal challenge.",
       "subtopic": "5.1"
     },
     {
@@ -1417,7 +1417,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "The chain of custody includes all of the following: who collected the evidence, when and where it was collected, who transported it, who analyzed it, how it was stored, and every transfer of custody. This comprehensive documentation ensures accountability at every stage.",
       "subtopic": "5.2"
     },
     {
@@ -1430,7 +1430,7 @@
       ],
       "correct": 0,
       "correctText": "Legal readiness",
-      "explanation": "The correct answer is 'Legal readiness'. This follows the standard concepts covered in this unit.",
+      "explanation": "The preparation phase in an investigation ensures legal readiness by obtaining necessary warrants, establishing scope and authority, preparing documentation templates, and ensuring all team members understand legal requirements and chain of custody procedures before beginning work.",
       "subtopic": "5.1"
     },
     {
@@ -1443,7 +1443,7 @@
       ],
       "correct": 0,
       "correctText": "Security vulnerabilities",
-      "explanation": "The correct answer is 'Security vulnerabilities'. This follows the standard concepts covered in this unit.",
+      "explanation": "Ethical hacking primarily identifies security vulnerabilities \u2014 weaknesses in systems, applications, networks, or configurations \u2014 that could be exploited by malicious actors. By finding these gaps first, organizations can remediate them before they are weaponized.",
       "subtopic": "5.4"
     },
     {
@@ -1456,7 +1456,7 @@
       ],
       "correct": 1,
       "correctText": "With authorization",
-      "explanation": "The correct answer is 'With authorization'. This follows the standard concepts covered in this unit.",
+      "explanation": "Penetration testing is conducted only with explicit, documented authorization from the system owner. This legal permission distinguishes it from unauthorized hacking and protects the tester from prosecution while defining the boundaries and scope of the assessment.",
       "subtopic": "5.4"
     },
     {
@@ -1469,7 +1469,7 @@
       ],
       "correct": 0,
       "correctText": "Identifying weaknesses",
-      "explanation": "The correct answer is 'Identifying weaknesses'. This follows the standard concepts covered in this unit.",
+      "explanation": "Vulnerability assessment focuses on systematically identifying weaknesses in systems, networks, and applications using automated scanning tools and manual review. Unlike penetration testing, it does not attempt to exploit vulnerabilities but catalogs and prioritizes them for remediation.",
       "subtopic": "5.1"
     },
     {
@@ -1482,7 +1482,7 @@
       ],
       "correct": 0,
       "correctText": "Human psychology",
-      "explanation": "The correct answer is 'Human psychology'. This follows the standard concepts covered in this unit.",
+      "explanation": "Social engineering attacks exploit human psychology rather than technical vulnerabilities, manipulating people into divulging confidential information, clicking malicious links, or performing actions that compromise security. Techniques include phishing, pretexting, baiting, and tailgating.",
       "subtopic": "5.1"
     },
     {
@@ -1495,7 +1495,7 @@
       ],
       "correct": 0,
       "correctText": "Security",
-      "explanation": "The correct answer is 'Security'. This follows the standard concepts covered in this unit.",
+      "explanation": "Multi-Factor Authentication (MFA) improves security by requiring two or more independent verification factors (something you know, have, or are) before granting access. Even if one factor is compromised, the attacker still cannot access the account without the remaining factors.",
       "subtopic": "5.1"
     },
     {
@@ -1508,7 +1508,7 @@
       ],
       "correct": 0,
       "correctText": "Phishing emails",
-      "explanation": "The correct answer is 'Phishing emails'. This follows the standard concepts covered in this unit.",
+      "explanation": "SPF (Sender Policy Framework), DKIM (DomainKeys Identified Mail), and DMARC (Domain-based Message Authentication, Reporting & Conformance) are email authentication protocols that work together to verify sender identity and protect against phishing and email spoofing attacks.",
       "subtopic": "5.1"
     },
     {
@@ -1521,7 +1521,7 @@
       ],
       "correct": 0,
       "correctText": "Data publication",
-      "explanation": "The correct answer is 'Data publication'. This follows the standard concepts covered in this unit.",
+      "explanation": "Double extortion ransomware not only encrypts the victim's files but also threatens to publish or sell the stolen data if the ransom is not paid. This dual threat is more coercive than encryption alone, as data publication can cause regulatory penalties and reputational damage.",
       "subtopic": "5.5"
     },
     {
@@ -1534,7 +1534,7 @@
       ],
       "correct": 0,
       "correctText": "End-user devices",
-      "explanation": "The correct answer is 'End-user devices'. This follows the standard concepts covered in this unit.",
+      "explanation": "Endpoint Detection and Response (EDR) tools continuously monitor end-user devices \u2014 desktops, laptops, and servers \u2014 for suspicious behavior, malware infections, and policy violations. They provide real-time visibility into endpoint activities and enable rapid threat containment.",
       "subtopic": "5.1"
     },
     {
@@ -1547,7 +1547,7 @@
       ],
       "correct": 0,
       "correctText": "OS reinstallation",
-      "explanation": "The correct answer is 'OS reinstallation'. This follows the standard concepts covered in this unit.",
+      "explanation": "Firmware-level malware is particularly dangerous because it resides in the BIOS/UEFI or device firmware, which loads before the operating system. This means the malware persists even after OS reinstallation, hard drive replacement, or system formatting, making it extremely difficult to remove.",
       "subtopic": "5.5"
     },
     {
@@ -1560,7 +1560,7 @@
       ],
       "correct": 0,
       "correctText": "Unknown vulnerabilities",
-      "explanation": "The correct answer is 'Unknown vulnerabilities'. This follows the standard concepts covered in this unit.",
+      "explanation": "Zero-day exploits target vulnerabilities that are unknown to the vendor and for which no patch exists. Because defenders have had zero days to prepare, these exploits are exceptionally dangerous and can cause widespread damage before the vulnerability is discovered and fixed.",
       "subtopic": "5.1"
     },
     {
@@ -1573,7 +1573,7 @@
       ],
       "correct": 0,
       "correctText": "Receiving stolen computer resources",
-      "explanation": "The correct answer is 'Receiving stolen computer resources'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 66B of the IT Act relates to receiving stolen computer resources or communication devices \u2014 knowing them to be stolen \u2014 and prescribes imprisonment up to 3 years and/or fines, addressing the demand side of stolen digital property.",
       "subtopic": "5.1"
     },
     {
@@ -1586,7 +1586,7 @@
       ],
       "correct": 0,
       "correctText": "Identity theft",
-      "explanation": "The correct answer is 'Identity theft'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 66C addresses identity theft \u2014 the fraudulent or dishonest use of another person's unique identification data, such as passwords, digital signatures, or biometric information \u2014 carrying penalties of imprisonment up to 3 years and fines up to Rs. 1 lakh.",
       "subtopic": "5.1"
     },
     {
@@ -1599,7 +1599,7 @@
       ],
       "correct": 0,
       "correctText": "Cheating by personation",
-      "explanation": "The correct answer is 'Cheating by personation'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 66D punishes cheating by personation \u2014 using communication devices or computer resources to impersonate someone else for the purpose of fraud or deception \u2014 with imprisonment up to 3 years and fines up to Rs. 1 lakh.",
       "subtopic": "5.1"
     },
     {
@@ -1612,7 +1612,7 @@
       ],
       "correct": 0,
       "correctText": "Cyber terrorism",
-      "explanation": "The correct answer is 'Cyber terrorism'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 66F defines cyber terrorism as acts intended to threaten India's unity, integrity, security, or sovereignty by unlawfully accessing or damaging critical information infrastructure or causing damage through digital means, carrying penalties up to life imprisonment.",
       "subtopic": "5.1"
     },
     {
@@ -1625,7 +1625,7 @@
       ],
       "correct": 0,
       "correctText": "Breach of confidentiality",
-      "explanation": "The correct answer is 'Breach of confidentiality'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 72A deals with breach of confidentiality by any person who, pursuant to a contract, has access to personal data and discloses it without consent or in breach of the contract, prescribing imprisonment up to 3 years and/or fines.",
       "subtopic": "5.1"
     },
     {
@@ -1638,7 +1638,7 @@
       ],
       "correct": 0,
       "correctText": "Obtain user consent",
-      "explanation": "The correct answer is 'Obtain user consent'. This follows the standard concepts covered in this unit.",
+      "explanation": "The DPDP Act 2023 requires organizations to obtain user consent before collecting and processing personal data. Consent must be free, specific, informed, unconditional, and unambiguous, with clear notice about what data is being collected and for what purpose.",
       "subtopic": "5.6"
     },
     {
@@ -1651,7 +1651,7 @@
       ],
       "correct": 0,
       "correctText": "Access personal data",
-      "explanation": "The correct answer is 'Access personal data'. This follows the standard concepts covered in this unit.",
+      "explanation": "Under the DPDP Act, a Data Principal has the right to access their personal data held by any Data Fiduciary, as well as the right to correction, erasure, nomination, and grievance redressal \u2014 ensuring individuals maintain control over their personal information.",
       "subtopic": "5.1"
     },
     {
@@ -1664,7 +1664,7 @@
       ],
       "correct": 0,
       "correctText": "Lawful data processing",
-      "explanation": "The correct answer is 'Lawful data processing'. This follows the standard concepts covered in this unit.",
+      "explanation": "A Data Fiduciary must ensure lawful data processing \u2014 meaning data is collected only for specified, legitimate purposes with proper consent, processed fairly, and protected with appropriate security measures to prevent unauthorized access or breaches.",
       "subtopic": "5.1"
     },
     {
@@ -1677,7 +1677,7 @@
       ],
       "correct": 0,
       "correctText": "Reporting cybercrime",
-      "explanation": "The correct answer is 'Reporting cybercrime'. This follows the standard concepts covered in this unit.",
+      "explanation": "The CCPWC portal enables citizens to report cybercrimes online, particularly those against women and children. It provides a user-friendly interface for filing complaints, uploading evidence, and tracking case progress without needing to visit a police station.",
       "subtopic": "5.6"
     },
     {
@@ -1690,7 +1690,7 @@
       ],
       "correct": 0,
       "correctText": "Incident response",
-      "explanation": "The correct answer is 'Incident response'. This follows the standard concepts covered in this unit.",
+      "explanation": "CERT-In provides incident response services including analyzing and responding to cyber threats, issuing security advisories and vulnerability notes, coordinating incident handling across organizations, and serving as the national point of contact for international cybersecurity cooperation.",
       "subtopic": "5.1"
     },
     {
@@ -1703,7 +1703,7 @@
       ],
       "correct": 0,
       "correctText": "Preserve metadata",
-      "explanation": "The correct answer is 'Preserve metadata'. This follows the standard concepts covered in this unit.",
+      "explanation": "Forensic imaging tools must preserve all metadata \u2014 including file timestamps (created, modified, accessed), file permissions, ownership information, and extended attributes \u2014 because this metadata can be crucial evidence in establishing timelines and user activity patterns.",
       "subtopic": "5.1"
     },
     {
@@ -1716,7 +1716,7 @@
       ],
       "correct": 0,
       "correctText": "File creation time",
-      "explanation": "The correct answer is 'File creation time'. This follows the standard concepts covered in this unit.",
+      "explanation": "Metadata analysis helps determine when a file was created, last modified, or accessed, along with author information, device identifiers, and GPS coordinates. These details are critical for building forensic timelines and attributing actions to specific users or devices.",
       "subtopic": "5.1"
     },
     {
@@ -1729,7 +1729,7 @@
       ],
       "correct": 0,
       "correctText": "Encryption keys",
-      "explanation": "The correct answer is 'Encryption keys'. This follows the standard concepts covered in this unit.",
+      "explanation": "In ransomware investigations, capturing volatile memory before shutdown is critical because encryption keys used by the ransomware may still reside in RAM. Extracting these keys can potentially enable decryption of the locked files without paying the ransom.",
       "subtopic": "5.5"
     },
     {
@@ -1742,7 +1742,7 @@
       ],
       "correct": 0,
       "correctText": "Proper handling",
-      "explanation": "The correct answer is 'Proper handling'. This follows the standard concepts covered in this unit.",
+      "explanation": "Digital evidence admissibility in court depends on proper handling throughout the evidence lifecycle \u2014 from lawful seizure and documented chain of custody to forensically sound collection, preservation, examination, and analysis. Any procedural failure can render evidence inadmissible.",
       "subtopic": "5.1"
     },
     {
@@ -1755,7 +1755,7 @@
       ],
       "correct": 0,
       "correctText": "Cyber resilience",
-      "explanation": "The correct answer is 'Cyber resilience'. This follows the standard concepts covered in this unit.",
+      "explanation": "Incident response planning improves an organization's cyber resilience by establishing predefined procedures, roles, and communication channels for handling security incidents. A well-practiced plan enables faster containment, reduced damage, and quicker recovery from attacks.",
       "subtopic": "5.1"
     },
     {
@@ -1768,7 +1768,7 @@
       ],
       "correct": 0,
       "correctText": "Legal",
-      "explanation": "The correct answer is 'Legal'. This follows the standard concepts covered in this unit.",
+      "explanation": "Ethical hacking is different from malicious hacking primarily because it is legal \u2014 conducted with explicit authorization and defined scope from the system owner. While the techniques may overlap, the legal permission, intent, and controlled environment make ethical hacking lawful.",
       "subtopic": "5.4"
     },
     {
@@ -1781,7 +1781,7 @@
       ],
       "correct": 2,
       "correctText": "Both",
-      "explanation": "The correct answer is 'Both'. This follows the standard concepts covered in this unit.",
+      "explanation": "Reconnaissance can be both passive (gathering publicly available information without directly interacting with the target, such as WHOIS lookups and OSINT) and active (directly probing the target through port scanning, ping sweeps, or service enumeration).",
       "subtopic": "5.1"
     },
     {
@@ -1794,7 +1794,7 @@
       ],
       "correct": 0,
       "correctText": "Attack spread",
-      "explanation": "The correct answer is 'Attack spread'. This follows the standard concepts covered in this unit.",
+      "explanation": "Network segmentation limits the spread of attacks by dividing a network into isolated segments or zones. If one segment is compromised, the attacker's lateral movement is contained within that zone, preventing access to the entire network and protecting critical assets.",
       "subtopic": "5.1"
     },
     {
@@ -1807,7 +1807,7 @@
       ],
       "correct": 0,
       "correctText": "Identify risks",
-      "explanation": "The correct answer is 'Identify risks'. This follows the standard concepts covered in this unit.",
+      "explanation": "Security audits systematically review an organization's security policies, procedures, controls, and technical implementations to identify risks, gaps, and non-compliance. They provide an independent assessment that helps prioritize security improvements and meet regulatory requirements.",
       "subtopic": "5.1"
     },
     {
@@ -1820,7 +1820,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Phishing indicators include all of the following: urgent or threatening language requesting immediate action, suspicious sender addresses or domain mismatches, unexpected attachments or links, grammatical errors (in traditional phishing), requests for sensitive information, and mismatched URLs.",
       "subtopic": "5.5"
     },
     {
@@ -1833,7 +1833,7 @@
       ],
       "correct": 0,
       "correctText": "Digital forensics",
-      "explanation": "The correct answer is 'Digital forensics'. This follows the standard concepts covered in this unit.",
+      "explanation": "Malware analysis is an integral part of digital forensics that involves examining malicious software to understand its behavior, origin, capabilities, and impact. This analysis helps investigators attribute attacks, identify compromise indicators, and develop detection and remediation strategies.",
       "subtopic": "5.1"
     },
     {
@@ -1846,7 +1846,7 @@
       ],
       "correct": 0,
       "correctText": "Forensic copy",
-      "explanation": "The correct answer is 'Forensic copy'. This follows the standard concepts covered in this unit.",
+      "explanation": "Evidence examination should always be performed on a forensic copy (working copy), never on the original evidence. This preserves the original in its unaltered state and ensures that any mistakes or modifications during analysis do not affect the primary evidence.",
       "subtopic": "5.1"
     },
     {
@@ -1859,7 +1859,7 @@
       ],
       "correct": 0,
       "correctText": "Frame inconsistencies",
-      "explanation": "The correct answer is 'Frame inconsistencies'. This follows the standard concepts covered in this unit.",
+      "explanation": "Deepfake forensic detection checks for frame inconsistencies \u2014 such as unnatural facial movements, inconsistent lighting and shadows, blending artifacts at facial boundaries, and irregular eye blinking patterns \u2014 that reveal the synthetic nature of AI-generated video content.",
       "subtopic": "5.5"
     },
     {
@@ -1872,7 +1872,7 @@
       ],
       "correct": 0,
       "correctText": "DDoS attacks",
-      "explanation": "The correct answer is 'DDoS attacks'. This follows the standard concepts covered in this unit.",
+      "explanation": "IoT botnets \u2014 networks of compromised smart devices like cameras, routers, and home appliances \u2014 are commonly used for DDoS attacks because their sheer numbers and often high bandwidth can generate massive volumes of traffic to overwhelm target servers.",
       "subtopic": "5.1"
     },
     {
@@ -1885,7 +1885,7 @@
       ],
       "correct": 0,
       "correctText": "Old vulnerabilities",
-      "explanation": "The correct answer is 'Old vulnerabilities'. This follows the standard concepts covered in this unit.",
+      "explanation": "OS downgrade attacks exploit old vulnerabilities by reverting a system to an earlier, unpatched version of the operating system. The older version contains known security flaws that attackers can easily exploit since security patches from subsequent updates are removed.",
       "subtopic": "5.5"
     },
     {
@@ -1898,7 +1898,7 @@
       ],
       "correct": 0,
       "correctText": "Legal regulation of cyberspace",
-      "explanation": "The correct answer is 'Legal regulation of cyberspace'. This follows the standard concepts covered in this unit.",
+      "explanation": "Cyber law ensures the legal regulation of cyberspace by defining what constitutes cybercrime, establishing penalties for offenses, providing legal frameworks for digital evidence, protecting privacy rights, and enabling lawful investigation and prosecution of technology-related crimes.",
       "subtopic": "5.6"
     },
     {
@@ -1911,7 +1911,7 @@
       ],
       "correct": 0,
       "correctText": "Cyber defense framework",
-      "explanation": "The correct answer is 'Cyber defense framework'. This follows the standard concepts covered in this unit.",
+      "explanation": "The National Cyber Security Policy 2013 strengthens India's cyber defense framework by outlining strategies for protecting critical infrastructure, promoting cybersecurity research and development, building skilled workforce, and establishing public-private partnerships for threat intelligence sharing.",
       "subtopic": "5.6"
     },
     {
@@ -1924,7 +1924,7 @@
       ],
       "correct": 0,
       "correctText": "Financial fines",
-      "explanation": "The correct answer is 'Financial fines'. This follows the standard concepts covered in this unit.",
+      "explanation": "Under the DPDP Act, data breach penalties can include financial fines of up to Rs. 250 crore per incident, depending on the nature and severity of the breach. The Data Protection Board determines the penalty based on the scope, nature, and impact of the violation.",
       "subtopic": "5.6"
     },
     {
@@ -1937,7 +1937,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Cybercrime against women includes all forms of online victimization \u2014 cyber stalking, revenge porn, online harassment, identity theft for impersonation, morphed images, and threatening or defamatory messages \u2014 all of which are addressed under various sections of the IT Act.",
       "subtopic": "5.6"
     },
     {
@@ -1950,7 +1950,7 @@
       ],
       "correct": 0,
       "correctText": "Strengthen cybersecurity",
-      "explanation": "The correct answer is 'Strengthen cybersecurity'. This follows the standard concepts covered in this unit.",
+      "explanation": "The main goal of ethical hacking is to strengthen cybersecurity by proactively discovering and helping remediate vulnerabilities before malicious actors can exploit them. This defensive purpose fundamentally distinguishes it from criminal hacking, which seeks to exploit weaknesses for personal gain.",
       "subtopic": "5.4"
     },
     {
@@ -1963,7 +1963,7 @@
       ],
       "correct": 0,
       "correctText": "Recovering digital evidence",
-      "explanation": "The correct answer is 'Recovering digital evidence'. This follows the standard concepts covered in this unit.",
+      "explanation": "Digital forensics supports law enforcement by recovering digital evidence from computers, phones, and networks that can be used to identify suspects, establish timelines, prove or disprove allegations, and secure convictions in both cybercrime and traditional criminal cases.",
       "subtopic": "5.1"
     },
     {
@@ -1976,7 +1976,7 @@
       ],
       "correct": 0,
       "correctText": "Hash comparison",
-      "explanation": "The correct answer is 'Hash comparison'. This follows the standard concepts covered in this unit.",
+      "explanation": "Evidence integrity is verified through hash comparison \u2014 computing hash values (such as MD5 or SHA-256) at the time of evidence collection and again at any subsequent point. Matching hashes mathematically prove that the evidence has not been altered in any way.",
       "subtopic": "5.1"
     },
     {
@@ -1989,7 +1989,7 @@
       ],
       "correct": 0,
       "correctText": "Analyze copied evidence",
-      "explanation": "The correct answer is 'Analyze copied evidence'. This follows the standard concepts covered in this unit.",
+      "explanation": "A forensic workstation is a dedicated, specially configured computer used to analyze copied evidence in a controlled environment. It runs forensic software tools and is isolated from networks to prevent contamination, ensuring that analysis does not affect the original evidence.",
       "subtopic": "5.1"
     },
     {
@@ -2002,7 +2002,7 @@
       ],
       "correct": 0,
       "correctText": "Original data is altered",
-      "explanation": "The correct answer is 'Original data is altered'. This follows the standard concepts covered in this unit.",
+      "explanation": "Evidence contamination occurs when original data is accidentally or intentionally altered \u2014 such as by booting a suspect system, modifying files, or failing to use write blockers. Even minor changes can compromise the evidence's integrity and render it inadmissible in court.",
       "subtopic": "5.1"
     },
     {
@@ -2015,7 +2015,7 @@
       ],
       "correct": 0,
       "correctText": "Attack sequence",
-      "explanation": "The correct answer is 'Attack sequence'. This follows the standard concepts covered in this unit.",
+      "explanation": "A forensic timeline helps determine the exact sequence of the attack \u2014 when the intrusion began, which systems were accessed, what data was exfiltrated, and when the attacker exited. This chronological mapping is essential for understanding the full scope of the incident.",
       "subtopic": "5.1"
     },
     {
@@ -2028,7 +2028,7 @@
       ],
       "correct": 0,
       "correctText": "Active system processes",
-      "explanation": "The correct answer is 'Active system processes'. This follows the standard concepts covered in this unit.",
+      "explanation": "A memory dump contains a snapshot of all active system processes at the time of capture, including running programs, loaded DLLs, open network connections, registry data, and encryption keys \u2014 providing a comprehensive view of the system's live state.",
       "subtopic": "5.1"
     },
     {
@@ -2041,7 +2041,7 @@
       ],
       "correct": 0,
       "correctText": "Write protection",
-      "explanation": "The correct answer is 'Write protection'. This follows the standard concepts covered in this unit.",
+      "explanation": "Disk imaging tools must maintain write protection to ensure that the imaging process does not modify the source drive in any way. Any write operation to the original evidence could alter timestamps, overwrite deleted data, or corrupt the evidence permanently.",
       "subtopic": "5.1"
     },
     {
@@ -2054,7 +2054,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Metadata can reveal all of the following: file creation and modification dates, author or creator information, GPS location data from photos, device identifiers, software versions used, edit history, and access permissions \u2014 making it a rich source of forensic evidence.",
       "subtopic": "5.1"
     },
     {
@@ -2067,7 +2067,7 @@
       ],
       "correct": 0,
       "correctText": "Isolate infected system",
-      "explanation": "The correct answer is 'Isolate infected system'. This follows the standard concepts covered in this unit.",
+      "explanation": "In a ransomware investigation, the first action should be to isolate the infected system from the network to prevent the ransomware from spreading to other connected devices and to stop any ongoing data exfiltration by the attackers.",
       "subtopic": "5.5"
     },
     {
@@ -2080,7 +2080,7 @@
       ],
       "correct": 0,
       "correctText": "Court admissible",
-      "explanation": "The correct answer is 'Court admissible'. This follows the standard concepts covered in this unit.",
+      "explanation": "Digital forensics ensures evidence is court admissible by following rigorous, standardized procedures at every stage \u2014 from lawful seizure and documented chain of custody to forensically sound imaging, validated analysis tools, and clear presentation of findings.",
       "subtopic": "5.1"
     },
     {
@@ -2093,7 +2093,7 @@
       ],
       "correct": 0,
       "correctText": "Scope of testing",
-      "explanation": "The correct answer is 'Scope of testing'. This follows the standard concepts covered in this unit.",
+      "explanation": "Ethical hacking requires defining the scope of testing \u2014 specifying which systems, networks, and applications are included, what types of tests will be performed, and what is explicitly excluded \u2014 to ensure the assessment stays within legal and authorized boundaries.",
       "subtopic": "5.4"
     },
     {
@@ -2106,7 +2106,7 @@
       ],
       "correct": 0,
       "correctText": "Public information gathering",
-      "explanation": "The correct answer is 'Public information gathering'. This follows the standard concepts covered in this unit.",
+      "explanation": "Passive reconnaissance involves gathering publicly available information about the target without any direct interaction, such as searching WHOIS records, social media profiles, DNS records, and job postings. Since the target is not contacted, this phase is undetectable.",
       "subtopic": "5.1"
     },
     {
@@ -2119,7 +2119,7 @@
       ],
       "correct": 0,
       "correctText": "Direct interaction with target",
-      "explanation": "The correct answer is 'Direct interaction with target'. This follows the standard concepts covered in this unit.",
+      "explanation": "Active reconnaissance involves direct interaction with the target system, such as port scanning, service enumeration, banner grabbing, and ping sweeps. While this yields more detailed information, it is also detectable by intrusion detection systems and security monitoring tools.",
       "subtopic": "5.1"
     },
     {
@@ -2132,7 +2132,7 @@
       ],
       "correct": 0,
       "correctText": "Open network ports",
-      "explanation": "The correct answer is 'Open network ports'. This follows the standard concepts covered in this unit.",
+      "explanation": "Port scanning identifies open network ports and the services running on them, revealing the attack surface of a target system. Each open port represents a potential entry point that an attacker could exploit to gain unauthorized access.",
       "subtopic": "5.1"
     },
     {
@@ -2145,7 +2145,7 @@
       ],
       "correct": 0,
       "correctText": "Vulnerability impact",
-      "explanation": "The correct answer is 'Vulnerability impact'. This follows the standard concepts covered in this unit.",
+      "explanation": "The exploitation phase tests the real-world impact of identified vulnerabilities by actually exploiting them in a controlled manner. This demonstrates what an attacker could achieve \u2014 such as accessing sensitive data or gaining system control \u2014 if the vulnerability were left unpatched.",
       "subtopic": "5.1"
     },
     {
@@ -2158,7 +2158,7 @@
       ],
       "correct": 0,
       "correctText": "Gain higher system access",
-      "explanation": "The correct answer is 'Gain higher system access'. This follows the standard concepts covered in this unit.",
+      "explanation": "Privilege escalation attacks aim to gain higher system access than initially obtained \u2014 moving from a standard user account to administrator or root-level privileges. This allows the attacker to access restricted data, install software, and control the entire system.",
       "subtopic": "5.1"
     },
     {
@@ -2171,7 +2171,7 @@
       ],
       "correct": 0,
       "correctText": "Persistence",
-      "explanation": "The correct answer is 'Persistence'. This follows the standard concepts covered in this unit.",
+      "explanation": "Maintaining access helps the ethical hacker test persistence \u2014 whether it's possible to establish a permanent backdoor or foothold in the system that survives reboots and credential changes, demonstrating the risk of long-term undetected compromise.",
       "subtopic": "5.1"
     },
     {
@@ -2184,7 +2184,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "The reporting phase should include all of the following: executive summary, detailed vulnerability descriptions, proof-of-concept demonstrations, risk ratings, remediation recommendations, and supporting evidence \u2014 providing the organization a complete and actionable security assessment.",
       "subtopic": "5.1"
     },
     {
@@ -2197,7 +2197,7 @@
       ],
       "correct": 0,
       "correctText": "Potential threats",
-      "explanation": "The correct answer is 'Potential threats'. This follows the standard concepts covered in this unit.",
+      "explanation": "Risk assessment systematically identifies potential threats, evaluates the likelihood and impact of each threat, and prioritizes them based on risk level. This enables organizations to allocate resources effectively and implement controls for the most critical risks first.",
       "subtopic": "5.1"
     },
     {
@@ -2210,7 +2210,7 @@
       ],
       "correct": 0,
       "correctText": "Network perimeter",
-      "explanation": "The correct answer is 'Network perimeter'. This follows the standard concepts covered in this unit.",
+      "explanation": "A firewall primarily protects the network perimeter by monitoring and controlling incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between trusted internal networks and untrusted external networks, blocking unauthorized access attempts.",
       "subtopic": "5.1"
     },
     {
@@ -2223,7 +2223,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "AI phishing scams are dangerous because they are all of the following: highly convincing with perfect grammar, personalized to target specific individuals, difficult to distinguish from legitimate communications, and scalable \u2014 attackers can generate thousands of unique, targeted phishing messages automatically.",
       "subtopic": "5.5"
     },
     {
@@ -2236,7 +2236,7 @@
       ],
       "correct": 0,
       "correctText": "Cryptographic algorithms",
-      "explanation": "The correct answer is 'Cryptographic algorithms'. This follows the standard concepts covered in this unit.",
+      "explanation": "Ransomware encryption uses strong cryptographic algorithms (typically AES for file encryption and RSA for key exchange) to lock the victim's files. The symmetric encryption key is itself encrypted with the attacker's public key, making decryption impossible without the attacker's private key.",
       "subtopic": "5.5"
     },
     {
@@ -2249,7 +2249,7 @@
       ],
       "correct": 0,
       "correctText": "Overload server",
-      "explanation": "The correct answer is 'Overload server'. This follows the standard concepts covered in this unit.",
+      "explanation": "A DDoS (Distributed Denial of Service) attack aims to overload a server by flooding it with massive volumes of traffic from multiple compromised sources (botnets), exhausting its bandwidth, processing power, or memory so that legitimate users cannot access the service.",
       "subtopic": "5.1"
     },
     {
@@ -2262,7 +2262,7 @@
       ],
       "correct": 0,
       "correctText": "Compromised smart devices",
-      "explanation": "The correct answer is 'Compromised smart devices'. This follows the standard concepts covered in this unit.",
+      "explanation": "IoT botnets consist of compromised smart devices \u2014 such as IP cameras, home routers, smart TVs, and IoT sensors \u2014 that have been infected with malware and are controlled remotely by attackers, typically to launch coordinated DDoS attacks at massive scale.",
       "subtopic": "5.1"
     },
     {
@@ -2275,7 +2275,7 @@
       ],
       "correct": 0,
       "correctText": "CEO impersonation",
-      "explanation": "The correct answer is 'CEO impersonation'. This follows the standard concepts covered in this unit.",
+      "explanation": "Deepfake fraud may involve CEO impersonation \u2014 using AI-generated video or audio to convincingly mimic a company executive's voice or appearance to authorize fraudulent wire transfers, approve fake transactions, or issue deceptive instructions to employees.",
       "subtopic": "5.5"
     },
     {
@@ -2288,7 +2288,7 @@
       ],
       "correct": 0,
       "correctText": "Digital signatures",
-      "explanation": "The correct answer is 'Digital signatures'. This follows the standard concepts covered in this unit.",
+      "explanation": "Secure firmware updates require digital signatures to verify that the update is authentic and has not been tampered with or replaced by an attacker. The device verifies the signature against a trusted certificate before applying the update, preventing malicious firmware installation.",
       "subtopic": "5.5"
     },
     {
@@ -2301,7 +2301,7 @@
       ],
       "correct": 0,
       "correctText": "Survives OS reinstall",
-      "explanation": "The correct answer is 'Survives OS reinstall'. This follows the standard concepts covered in this unit.",
+      "explanation": "BIOS malware is particularly dangerous because it survives OS reinstallation and even hard drive replacement. Since the BIOS loads before the operating system, BIOS-level malware can re-infect a freshly installed OS and maintain persistent control over the system indefinitely.",
       "subtopic": "5.1"
     },
     {
@@ -2314,7 +2314,7 @@
       ],
       "correct": 0,
       "correctText": "Web application attacks",
-      "explanation": "The correct answer is 'Web application attacks'. This follows the standard concepts covered in this unit.",
+      "explanation": "A Web Application Firewall (WAF) protects against web application attacks such as SQL injection, cross-site scripting (XSS), file inclusion, and CSRF by inspecting HTTP/HTTPS traffic and filtering out malicious requests before they reach the application.",
       "subtopic": "5.5"
     },
     {
@@ -2327,7 +2327,7 @@
       ],
       "correct": 0,
       "correctText": "Database queries",
-      "explanation": "The correct answer is 'Database queries'. This follows the standard concepts covered in this unit.",
+      "explanation": "SQL injection targets database queries by injecting malicious SQL code through unsanitized input fields in web applications. This can allow attackers to bypass authentication, read sensitive data, modify database records, or execute administrative operations on the database server.",
       "subtopic": "5.1"
     },
     {
@@ -2340,7 +2340,7 @@
       ],
       "correct": 0,
       "correctText": "No patch available",
-      "explanation": "The correct answer is 'No patch available'. This follows the standard concepts covered in this unit.",
+      "explanation": "Zero-day attacks are hard to prevent because no patch is available for the unknown vulnerability being exploited. Traditional security measures like antivirus signatures and intrusion detection rules cannot detect the attack since it has never been seen before.",
       "subtopic": "5.1"
     },
     {
@@ -2353,7 +2353,7 @@
       ],
       "correct": 0,
       "correctText": "Public-private partnership",
-      "explanation": "The correct answer is 'Public-private partnership'. This follows the standard concepts covered in this unit.",
+      "explanation": "The National Cyber Security Policy 2013 promotes public-private partnership by encouraging collaboration between government agencies, private sector companies, and academic institutions to share threat intelligence, develop cybersecurity standards, and build national cyber defense capabilities.",
       "subtopic": "5.6"
     },
     {
@@ -2366,7 +2366,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Critical Information Infrastructure includes all of the following: power grids and energy systems, financial and banking networks, telecommunications infrastructure, government databases, transportation systems, and healthcare networks \u2014 systems whose disruption would severely impact national security and public welfare.",
       "subtopic": "5.1"
     },
     {
@@ -2379,7 +2379,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "The IT Act 2000 supports all of the following: legal recognition of electronic records and digital signatures, facilitation of e-commerce and e-governance, establishment of cyber appellate tribunals, definition of cybercrimes and penalties, and provision for investigation of technology-related offenses.",
       "subtopic": "5.6"
     },
     {
@@ -2392,7 +2392,7 @@
       ],
       "correct": 0,
       "correctText": "Unauthorized access",
-      "explanation": "The correct answer is 'Unauthorized access'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 43 of the IT Act penalizes unauthorized access to computer systems, including acts such as downloading or copying data without permission, introducing viruses or malware, damaging or disrupting computer systems, and denying authorized users access to their systems.",
       "subtopic": "5.1"
     },
     {
@@ -2405,7 +2405,7 @@
       ],
       "correct": 0,
       "correctText": "Data interception",
-      "explanation": "The correct answer is 'Data interception'. This follows the standard concepts covered in this unit.",
+      "explanation": "Section 69 authorizes the government to intercept, monitor, or decrypt any information stored in or transmitted through computer resources when necessary for the sovereignty, defense, security, or public order of India, subject to prescribed procedures and safeguards.",
       "subtopic": "5.1"
     },
     {
@@ -2418,7 +2418,7 @@
       ],
       "correct": 0,
       "correctText": "Data privacy rights",
-      "explanation": "The correct answer is 'Data privacy rights'. This follows the standard concepts covered in this unit.",
+      "explanation": "The DPDP Act emphasizes data privacy rights by establishing that individuals (Data Principals) have fundamental rights over their personal data, including the right to know what data is collected, the right to correct it, the right to erase it, and the right to nominate another person.",
       "subtopic": "5.6"
     },
     {
@@ -2431,7 +2431,7 @@
       ],
       "correct": 0,
       "correctText": "Clear and informed",
-      "explanation": "The correct answer is 'Clear and informed'. This follows the standard concepts covered in this unit.",
+      "explanation": "Consent under DPDP must be clear and informed \u2014 meaning the Data Principal must receive complete information about what data is being collected, why, how it will be used, and with whom it will be shared, and the consent must be given freely without coercion.",
       "subtopic": "5.6"
     },
     {
@@ -2444,7 +2444,7 @@
       ],
       "correct": 0,
       "correctText": "Cyber safety awareness",
-      "explanation": "The correct answer is 'Cyber safety awareness'. This follows the standard concepts covered in this unit.",
+      "explanation": "The CCPWC scheme focuses on cyber safety awareness by conducting education and training programs for women and children about online threats, safe browsing practices, how to recognize cybercrime, and how to report incidents through the CCPWC portal.",
       "subtopic": "5.6"
     },
     {
@@ -2457,7 +2457,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Cyber harassment includes all of the following: online threatening or intimidating messages, persistent unwanted contact or stalking, sharing private images without consent (revenge porn), defamatory posts, hate speech, and any digital communication intended to cause fear, distress, or humiliation.",
       "subtopic": "5.1"
     },
     {
@@ -2470,7 +2470,7 @@
       ],
       "correct": 0,
       "correctText": "Threat to national security",
-      "explanation": "The correct answer is 'Threat to national security'. This follows the standard concepts covered in this unit.",
+      "explanation": "Cyber terrorism under Section 66F includes any act intended to threaten India's unity, integrity, security, or sovereignty by accessing or attempting to access critical information infrastructure, or causing damage through digital means that results in loss of life or property.",
       "subtopic": "5.1"
     },
     {
@@ -2483,7 +2483,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Forensic documentation must be all of the following: accurate (reflecting exactly what was observed and done), complete (leaving no gaps), contemporaneous (recorded at the time events occur), and clear (understandable by both technical and non-technical audiences).",
       "subtopic": "5.1"
     },
     {
@@ -2496,7 +2496,7 @@
       ],
       "correct": 0,
       "correctText": "No alteration",
-      "explanation": "The correct answer is 'No alteration'. This follows the standard concepts covered in this unit.",
+      "explanation": "Evidence preservation ensures no alteration of the original evidence from the moment it is seized until it is presented in court. This is achieved through write blockers, forensic imaging, hash verification, secure storage, and strict chain of custody procedures.",
       "subtopic": "5.2"
     },
     {
@@ -2509,7 +2509,7 @@
       ],
       "correct": 0,
       "correctText": "Structured approach",
-      "explanation": "The correct answer is 'Structured approach'. This follows the standard concepts covered in this unit.",
+      "explanation": "Digital investigation models provide a structured approach by defining clear phases, tasks, and deliverables for forensic investigations. Standardized models like DFRWS, ADFM, and IDIP ensure consistency, repeatability, and legal defensibility across different investigations and investigators.",
       "subtopic": "5.1"
     },
     {
@@ -2522,7 +2522,7 @@
       ],
       "correct": 0,
       "correctText": "Investigation delay",
-      "explanation": "The correct answer is 'Investigation delay'. This follows the standard concepts covered in this unit.",
+      "explanation": "Forensic readiness reduces investigation delay by having pre-established procedures, trained personnel, deployed tools, and documented protocols ready before an incident occurs. This eliminates the time spent on ad-hoc preparation and enables immediate, effective response.",
       "subtopic": "5.1"
     },
     {
@@ -2535,7 +2535,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "Ethical hacking certifications include all of the following: CEH (Certified Ethical Hacker), OSCP (Offensive Security Certified Professional), CompTIA PenTest+, CISM (Certified Information Security Manager), and CHFI (Computer Hacking Forensic Investigator) \u2014 each validating different aspects of ethical hacking expertise.",
       "subtopic": "5.4"
     },
     {
@@ -2548,7 +2548,7 @@
       ],
       "correct": 0,
       "correctText": "Awareness training",
-      "explanation": "The correct answer is 'Awareness training'. This follows the standard concepts covered in this unit.",
+      "explanation": "Social engineering prevention requires awareness training that teaches employees to recognize manipulation tactics such as phishing emails, pretexting calls, baiting attacks, and tailgating. Regular training and simulated attacks help build a human firewall against these psychological exploits.",
       "subtopic": "5.1"
     },
     {
@@ -2561,7 +2561,7 @@
       ],
       "correct": 0,
       "correctText": "Ability to recover quickly",
-      "explanation": "The correct answer is 'Ability to recover quickly'. This follows the standard concepts covered in this unit.",
+      "explanation": "Cyber resilience means an organization's ability to recover quickly from cyber attacks while maintaining business continuity. It goes beyond prevention to include detection, response, recovery, and adaptation \u2014 ensuring the organization can withstand and bounce back from incidents.",
       "subtopic": "5.1"
     },
     {
@@ -2574,7 +2574,7 @@
       ],
       "correct": 3,
       "correctText": "All of the above",
-      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "explanation": "An incident response plan includes all of the following: preparation (establishing capabilities and procedures), identification (detecting and classifying incidents), containment (limiting damage and preventing spread), eradication (removing the threat), recovery (restoring systems), and lessons learned (improving future response).",
       "subtopic": "5.1"
     },
     {
@@ -2587,7 +2587,7 @@
       ],
       "correct": 0,
       "correctText": "Case closure",
-      "explanation": "The correct answer is 'Case closure'. This follows the standard concepts covered in this unit.",
+      "explanation": "A digital forensic investigation ends with case closure \u2014 the formal conclusion after all evidence has been analyzed, findings have been documented, reports have been submitted, and any legal proceedings have concluded or the decision has been made not to pursue legal action.",
       "subtopic": "5.1"
     },
     {
@@ -2600,7 +2600,7 @@
       ],
       "correct": 0,
       "correctText": "Secure and legally compliant cyberspace",
-      "explanation": "The correct answer is 'Secure and legally compliant cyberspace'. This follows the standard concepts covered in this unit.",
+      "explanation": "The ultimate objective of Unit 5 concepts is to achieve a secure and legally compliant cyberspace \u2014 where digital forensic capabilities ensure evidence-based justice, ethical hacking strengthens defenses, and cyber laws protect individuals and organizations from evolving digital threats.",
       "subtopic": "5.1"
     }
   ]
