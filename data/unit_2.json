@@ -1,0 +1,5857 @@
+{
+  "unit": 2,
+  "name": "Internet of Things (IoT) & 5G",
+  "totalQuestions": 450,
+  "questions": [
+    {
+      "question": "Which of the following is a key characteristic of 5G that enables real-time",
+      "options": [
+        "pplications like autonomous driving?",
+        "High power consumption",
+        "Ultra-low latency",
+        "Limited device connectivity"
+      ],
+      "correct": 1,
+      "correctText": "High power consumption",
+      "explanation": "Ultra-low latency is a defining feature of 5G that allows data to be transmitted with minimal delay, which is essential for real-time applications such as autonomous vehicles and remote surgery.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "What is the typical peak data rate supported by 5G networks?",
+      "options": [
+        "1 Gbps10 Gbps",
+        "20 Gbps",
+        "100 Mbps",
+        ""
+      ],
+      "correct": 2,
+      "correctText": "100 Mbps",
+      "explanation": "5G networks are designed to support very high peak data rates, theoretically reaching up to 20 Gbps under ideal conditions.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Which 5G feature allows it to support up to 1 million devices per square kilometre?",
+      "options": [
+        "Network slicing",
+        "Massive Machine-Type Communications (mMTC)",
+        "Ultra-Reliable Low-Latency Communications (URLLC)",
+        "Beamforming"
+      ],
+      "correct": 1,
+      "correctText": "Massive Machine-Type Communications (mMTC)",
+      "explanation": "mMTC enables connectivity for a very large number of IoT devices in a small area, making it suitable for smart cities and large-scale IoT deployments.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Which application area of 5G is most associated with real-time remote surgeries?",
+      "options": [
+        "Smart agriculture",
+        "Healthcare",
+        "Smart homes",
+        "Logistics"
+      ],
+      "correct": 1,
+      "correctText": "Healthcare",
+      "explanation": "5G supports remote surgeries through ultra-low latency and high reliability, which are critical in medical procedures.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "What is the purpose of network slicing in 5G technology?",
+      "options": [
+        "To increase power consumption",
+        "To create multiple virtual networks on the same infrastructure",
+        "To reduce network coverage",
+        "To limit device connectivity"
+      ],
+      "correct": 1,
+      "correctText": "To create multiple virtual networks on the same infrastructure",
+      "explanation": "Network slicing allows multiple virtual networks to be created over a single physical network, each optimized for different services such as IoT, healthcare, or video streaming.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Which of the following is an application of 5G in smart cities?",
+      "options": [
+        "Remote gaming",
+        "Traffic management with real-time sensor data",
+        "Virtual reality training for surgeons",
+        "Precision farming"
+      ],
+      "correct": 1,
+      "correctText": "Traffic management with real-time sensor data",
+      "explanation": "5G enables real-time data collection and processing from sensors, helping in efficient traffic management in smart cities.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Which 5G characteristic improves energy efficiency for IoT devices?",
+      "options": [
+        "High latency",
+        "Optimized power consumption",
+        "Limited bandwidth",
+        "Low reliability"
+      ],
+      "correct": 1,
+      "correctText": "Optimized power consumption",
+      "explanation": "5G optimizes power usage, allowing IoT devices to operate efficiently for longer durations with lower energy consumption.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "IoT stands for ………",
+      "options": [
+        "Internet of Technology",
+        "Intranet of Things",
+        "Internet of Things",
+        "Information of Things"
+      ],
+      "correct": 2,
+      "correctText": "Internet of Things",
+      "explanation": "IoT stands for Internet of Things, which refers to a network of interconnected physical objects that collect and exchange data over the internet.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "What is the Internet of Things (IoT)?",
+      "options": [
+        "A technology used only for smartphones",
+        "A network of interconnected physical devices that exchange data",
+        "A type of computer virus",
+        "A communication protocol for websites"
+      ],
+      "correct": 1,
+      "correctText": "A network of interconnected physical devices that exchange data",
+      "explanation": "IoT connects physical devices embedded with sensors and connectivity, enabling them to communicate and share data.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which of the following is a key characteristic of IoT?",
+      "options": [
+        "Manual operation",
+        "Isolation of devices",
+        "Interconnectivity",
+        "Lack of automation"
+      ],
+      "correct": 2,
+      "correctText": "Interconnectivity",
+      "explanation": "Interconnectivity allows IoT devices to communicate with each other and with cloud systems over networks.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which IoT feature enables devices to operate without human involvement?",
+      "options": [
+        "Automation",
+        "Virtualization",
+        "Encryption",
+        "Translation"
+      ],
+      "correct": 0,
+      "correctText": "Automation",
+      "explanation": "Automation allows IoT devices to perform actions automatically based on predefined conditions and sensor inputs.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "'Things' in IoT refers to ………",
+      "options": [
+        "Only smartphones",
+        "Any physical object with a sensor and connectivity",
+        "Website links",
+        "Only computers"
+      ],
+      "correct": 0,
+      "correctText": "Only smartphones",
+      "explanation": "In IoT, \"things\" are physical objects equipped with sensors, software, and network connectivity.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which communication technology is widely used in IoT?",
+      "options": [
+        "HDMI",
+        "USB",
+        "Wi-Fi",
+        "VGA"
+      ],
+      "correct": 2,
+      "correctText": "Wi-Fi",
+      "explanation": "Wi-Fi is commonly used in IoT for wireless communication between devices and the internet.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which of the following is an application of IoT?",
+      "options": [
+        "Social media chatting",
+        "Smart home automation",
+        "Playing offline games",
+        "File compression"
+      ],
+      "correct": 1,
+      "correctText": "Smart home automation",
+      "explanation": "Smart home automation uses IoT devices to control lighting, security, appliances, and energy systems automatically.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT allows devices to collect and share data using ………",
+      "options": [
+        "Sensors",
+        "CDs",
+        "Printers",
+        "Speakers"
+      ],
+      "correct": 0,
+      "correctText": "Sensors",
+      "explanation": "Sensors are the primary components that collect environmental data in IoT systems.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which is an advantage of IoT?",
+      "options": [
+        "Reduced automation",
+        "Increased human effort",
+        "Real-time monitoring",
+        "Less data availability"
+      ],
+      "correct": 2,
+      "correctText": "Real-time monitoring",
+      "explanation": "IoT enables continuous and real-time monitoring of systems, improving efficiency and decision-making.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which of the following is a limitation of IoT?",
+      "options": [
+        "High scalability",
+        "Security and privacy issues",
+        "Increased efficiency",
+        "Better data collection"
+      ],
+      "correct": 1,
+      "correctText": "Security and privacy issues",
+      "explanation": "IoT systems are vulnerable to cyberattacks and data breaches, making security a major concern.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which characteristic of IoT enables devices to work together?",
+      "options": [
+        "Fragmentation",
+        "Interoperability",
+        "Decoupling",
+        "Sampling"
+      ],
+      "correct": 1,
+      "correctText": "Interoperability",
+      "explanation": "Interoperability allows different IoT devices, platforms, and systems to communicate and function together smoothly.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart watches, fitness trackers, and medical sensors fall under which IoT",
+      "options": [
+        "pplication area?",
+        "Industrial automation",
+        "Healthcare",
+        "Transport"
+      ],
+      "correct": 1,
+      "correctText": "Industrial automation",
+      "explanation": "Wearable devices and medical sensors are used to monitor health parameters, making them part of healthcare IoT applications.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which of the following is NOT an IoT advantage?",
+      "options": [
+        "Improved monitoring",
+        "Better decision-making",
+        "Increased cyber risks",
+        "Automation"
+      ],
+      "correct": 2,
+      "correctText": "Increased cyber risks",
+      "explanation": "Increased cyber risks are a disadvantage of IoT due to security vulnerabilities, not an advantage.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Cloud computing helps IoT by ………",
+      "options": [
+        "Storing and processing large amounts of data",
+        "Creating viruses",
+        "Blocking device communication",
+        "Removing internet access"
+      ],
+      "correct": 0,
+      "correctText": "Storing and processing large amounts of data",
+      "explanation": "Cloud computing provides storage, processing, and analytics capabilities required to handle massive IoT data.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Which component is essential in IoT devices?",
+      "options": [
+        "Sensors and actuators",
+        "Chalk and board",
+        "Pen drive",
+        "Hard disk"
+      ],
+      "correct": 0,
+      "correctText": "Sensors and actuators",
+      "explanation": "Sensors collect data and actuators perform actions, making them essential components of IoT systems.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which IoT application is widely used in agriculture?",
+      "options": [
+        "Weather-based irrigation systems",
+        "Online shopping portals",
+        "Music streaming",
+        "Video editing"
+      ],
+      "correct": 0,
+      "correctText": "Weather-based irrigation systems",
+      "explanation": "IoT-based irrigation systems use sensors to monitor weather and soil conditions to optimize water usage.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Physical design of IoT mainly focuses on ………",
+      "options": [
+        "Data flow",
+        "Hardware components",
+        "Cloud services",
+        "Software standards"
+      ],
+      "correct": 1,
+      "correctText": "Hardware components",
+      "explanation": "Physical design deals with sensors, actuators, devices, and hardware used in IoT systems.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Which of the following is part of the physical design of IoT?",
+      "options": [
+        "IoT protocols",
+        "Sensors and actuators",
+        "Cloud databases",
+        "Data analytics"
+      ],
+      "correct": 1,
+      "correctText": "Sensors and actuators",
+      "explanation": "Sensors and actuators are physical components directly involved in interacting with the environment.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Logical design of IoT deals with ………",
+      "options": [
+        "Hardware wiring",
+        "Functional blocks and data flows",
+        "Power supply",
+        "Battery types"
+      ],
+      "correct": 1,
+      "correctText": "Functional blocks and data flows",
+      "explanation": "Logical design focuses on how different functional blocks interact and how data flows through the system.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Which is NOT a physical component of IoT?",
+      "options": [
+        "Sensors",
+        "RFID tags",
+        "Application layer",
+        "Actuators"
+      ],
+      "correct": 2,
+      "correctText": "Application layer",
+      "explanation": "The application layer belongs to the logical/software architecture, not the physical components.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "An actuator in IoT is used for ………",
+      "options": [
+        "Receiving data",
+        "Storing data",
+        "Performing actions",
+        "Testing networks"
+      ],
+      "correct": 2,
+      "correctText": "Performing actions",
+      "explanation": "Actuators convert electrical signals into physical actions such as switching on motors or lights.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which device converts physical signals into electrical signals?",
+      "options": [
+        "Actuator",
+        "Sensor",
+        "Router",
+        "Microcontroller"
+      ],
+      "correct": 1,
+      "correctText": "Sensor",
+      "explanation": "Sensors detect physical quantities like temperature or pressure and convert them into electrical signals.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which of the following is part of logical design?",
+      "options": [
+        "RFID",
+        "MQTT protocol",
+        "ESP32 board",
+        "Temperature sensor"
+      ],
+      "correct": 1,
+      "correctText": "MQTT protocol",
+      "explanation": "Logical design of IoT includes communication models and communication APIs such as MQTT. RFID, ESP32, and temperature sensors belong to physical design.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "IoT architecture commonly uses how many layers?",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "correct": 1,
+      "correctText": "3",
+      "explanation": "The commonly used IoT architecture consists of three layers: Perception layer, Network layer, and Application layer.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The perception layer in IoT architecture handles ………",
+      "options": [
+        "Data processing",
+        "Sensing and data collection",
+        "Application services",
+        "Communication security"
+      ],
+      "correct": 1,
+      "correctText": "Sensing and data collection",
+      "explanation": "The perception layer consists of sensors and actuators that sense physical parameters and collect data from the environment.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The network layer in IoT architecture is responsible for ………",
+      "options": [
+        "Storing data only",
+        "Processing raw data",
+        "Transmitting data",
+        "Displaying output"
+      ],
+      "correct": 2,
+      "correctText": "Transmitting data",
+      "explanation": "The network layer transfers data collected by sensors to the cloud or application layer using communication technologies.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Application layer in IoT handles ………",
+      "options": [
+        "Signal amplification",
+        "User-side services",
+        "Device manufacturing",
+        "Power management"
+      ],
+      "correct": 1,
+      "correctText": "User-side services",
+      "explanation": "The application layer provides services to users such as dashboards, monitoring systems, and control applications.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which of these is a communication technology used in physical design?",
+      "options": [
+        "Wi-Fi",
+        "Excel",
+        "Twitter",
+        "HTML"
+      ],
+      "correct": 0,
+      "correctText": "Wi-Fi",
+      "explanation": "Wi-Fi is a communication technology used in the physical design of IoT to enable device connectivity.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "IoT logical design uses functional blocks such as ………",
+      "options": [
+        "Power blocks",
+        "Communication blocks",
+        "Display blocks",
+        "Motor blocks"
+      ],
+      "correct": 1,
+      "correctText": "Communication blocks",
+      "explanation": "Logical design includes functional blocks like device, communication, services, management, security, and application blocks.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Which of the following is part of the IoT functional block?",
+      "options": [
+        "Security",
+        "Shoes",
+        "Bulb",
+        "Wire"
+      ],
+      "correct": 0,
+      "correctText": "Security",
+      "explanation": "Security is an IoT functional block responsible for authentication, authorization, and data protection.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Physical design includes which component?",
+      "options": [
+        "Cloud API",
+        "Sensors",
+        "SQL database",
+        "Data warehouse"
+      ],
+      "correct": 1,
+      "correctText": "Sensors",
+      "explanation": "Sensors are physical components used to collect data from the environment, hence part of physical design.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "The main job of the IoT communication block is ………",
+      "options": [
+        "To cook food",
+        "To transfer data between devices",
+        "To store raw data",
+        "To protect files"
+      ],
+      "correct": 1,
+      "correctText": "To transfer data between devices",
+      "explanation": "The communication block manages data transmission between IoT devices, gateways, servers, and cloud platforms.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "In IoT architecture, which layer handles data routing?",
+      "options": [
+        "Application",
+        "Network",
+        "Perception",
+        "Storage"
+      ],
+      "correct": 1,
+      "correctText": "Network",
+      "explanation": "The network layer handles routing and transmission of data across networks in an IoT system.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Logical design describes ………",
+      "options": [
+        "How the device physically looks",
+        "How IoT functions conceptually",
+        "Voltage requirements",
+        "Mechanical shape"
+      ],
+      "correct": 1,
+      "correctText": "How IoT functions conceptually",
+      "explanation": "Logical design focuses on the conceptual working of IoT systems, including functional blocks, data flow, and communication models, not physical appearance.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Which of these is a sensing component?",
+      "options": [
+        "LED",
+        "Temperature sensor",
+        "Speaker",
+        "Switch"
+      ],
+      "correct": 1,
+      "correctText": "Temperature sensor",
+      "explanation": "A temperature sensor detects physical temperature and converts it into an electrical signal, making it a sensing component.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The 3-layer IoT architecture is also called ………",
+      "options": [
+        "Simple IoT architecture",
+        "Basic reference model",
+        "Open IoT structure",
+        "Smart architecture"
+      ],
+      "correct": 1,
+      "correctText": "Basic reference model",
+      "explanation": "The 3-layer IoT architecture (Perception, Network, Application) is commonly referred to as the basic reference model.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "RFID tags are used in IoT for ………",
+      "options": [
+        "Audio output",
+        "Object identification",
+        "Multimedia sharing",
+        "Gaming"
+      ],
+      "correct": 1,
+      "correctText": "Object identification",
+      "explanation": "RFID tags are mainly used to uniquely identify objects in IoT systems.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Micro-controllers like Arduino belong to ………",
+      "options": [
+        "Logical design",
+        "Physical design",
+        "Database architecture",
+        "Application layer"
+      ],
+      "correct": 1,
+      "correctText": "Physical design",
+      "explanation": "Microcontrollers are hardware components and hence part of the physical design of IoT.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Logical design defines ………",
+      "options": [
+        "IoT network placement",
+        "IoT communication protocols",
+        "IoT battery size",
+        "Motor speed"
+      ],
+      "correct": 1,
+      "correctText": "IoT communication protocols",
+      "explanation": "Logical design includes communication models and protocols that define how IoT components interact.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "The physical design determines ………",
+      "options": [
+        "Cloud storage type",
+        "Actual IoT device components",
+        "Software algorithms",
+        "User interface"
+      ],
+      "correct": 1,
+      "correctText": "Actual IoT device components",
+      "explanation": "Physical design deals with real hardware such as sensors, actuators, microcontrollers, and communication modules.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Which architecture layer is closest to the IoT device?",
+      "options": [
+        "Application",
+        "Network",
+        "Perception",
+        "Middleware"
+      ],
+      "correct": 2,
+      "correctText": "Perception",
+      "explanation": "The perception layer directly interacts with physical devices through sensors and actuators.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "In IoT, \"Things\" refer to ………",
+      "options": [
+        "Only mobile phones",
+        "Physical devices with sensors",
+        "Software applications",
+        "Audio devices only"
+      ],
+      "correct": 1,
+      "correctText": "Physical devices with sensors",
+      "explanation": "\"Things\" in IoT are physical objects embedded with sensors and connectivity.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which is NOT included in logical design?",
+      "options": [
+        "Data flow",
+        "IoT Protocols",
+        "Hardware sensors",
+        "Functional blocks"
+      ],
+      "correct": 2,
+      "correctText": "Hardware sensors",
+      "explanation": "Hardware sensors belong to physical design, not logical design.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Fog computing belongs to which layer?",
+      "options": [
+        "Perception",
+        "Application",
+        "Network / Middleware",
+        "Hardware"
+      ],
+      "correct": 2,
+      "correctText": "Network / Middleware",
+      "explanation": "Fog computing operates between the cloud and IoT devices, providing computation, storage, and networking services closer to the data source. Hence, it belongs to the Network/ Middleware layer.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which protocol is used in IoT logical design for messaging?",
+      "options": [
+        "MQTT",
+        "HDMI",
+        "VGA",
+        "FTP"
+      ],
+      "correct": 0,
+      "correctText": "MQTT",
+      "explanation": "MQTT is a lightweight messaging protocol used in IoT logical design for efficient data communication between devices.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "A common physical IoT component for connectivity is ………",
+      "options": [
+        "ESP8266 module",
+        "Adobe Reader",
+        "PowerPoint",
+        "Facebook app"
+      ],
+      "correct": 0,
+      "correctText": "ESP8266 module",
+      "explanation": "ESP8266 is a Wi-Fi module widely used in IoT devices to provide wireless connectivity, making it a common physical IoT component.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT architecture focuses on ………",
+      "options": [
+        "Device modelling",
+        "Layered communication",
+        "Movie editing",
+        "Painting"
+      ],
+      "correct": 1,
+      "correctText": "Layered communication",
+      "explanation": "IoT architecture is designed using layers such as perception, network, and application to manage communication and data flow efficiently.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which layer ensures user-specific IoT services?",
+      "options": [
+        "Network",
+        "Application",
+        "Perception",
+        "Transport"
+      ],
+      "correct": 1,
+      "correctText": "Application",
+      "explanation": "The application layer provides user-specific services like dashboards, alerts, and control interfaces.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The term \"IoT functional view\" refers to ………",
+      "options": [
+        "Logical design",
+        "Clothing design",
+        "Hardware manufacturing",
+        "Android coding"
+      ],
+      "correct": 0,
+      "correctText": "Logical design",
+      "explanation": "The functional view of IoT explains how components work conceptually, which is part of logical design.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "In logical design, data processing is part of ………",
+      "options": [
+        "Functional block",
+        "Battery block",
+        "Physical tool",
+        "Mechanical block"
+      ],
+      "correct": 0,
+      "correctText": "Functional block",
+      "explanation": "Logical design uses functional blocks such as sensing, processing, communication, and control.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Which of the following best describes IoT architecture?",
+      "options": [
+        "A layered structure",
+        "A flat structure",
+        "A random structure",
+        "A circular structure"
+      ],
+      "correct": 0,
+      "correctText": "A layered structure",
+      "explanation": "IoT architecture is organized into layers to separate responsibilities and improve scalability.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "An example of a physical design communication device is ………",
+      "options": [
+        "LDR sensor",
+        "Bluetooth module",
+        "SQL server",
+        "Cloud analytics"
+      ],
+      "correct": 1,
+      "correctText": "Bluetooth module",
+      "explanation": "Bluetooth modules are physical hardware components used for wireless communication in IoT.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Which layer includes device addressing?",
+      "options": [
+        "Application",
+        "Network",
+        "Perception",
+        "Security layer"
+      ],
+      "correct": 1,
+      "correctText": "Network",
+      "explanation": "The network layer handles device addressing, routing, and data transmission.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Sensors and actuators are part of which layer?",
+      "options": [
+        "Network",
+        "Perception",
+        "Application",
+        "Processing"
+      ],
+      "correct": 1,
+      "correctText": "Perception",
+      "explanation": "The perception layer includes sensors and actuators that interact with the physical environment.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which is a key function of IoT architecture?",
+      "options": [
+        "Organizing data flow",
+        "Video editing",
+        "Graphic design",
+        "Gaming support"
+      ],
+      "correct": 0,
+      "correctText": "Organizing data flow",
+      "explanation": "IoT architecture organizes how data is collected, transmitted, processed, and used.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "A gateway in IoT is mainly used for ………",
+      "options": [
+        "Cooking",
+        "Bridging devices with the internet",
+        "Taking photos",
+        "Increasing sound"
+      ],
+      "correct": 1,
+      "correctText": "Bridging devices with the internet",
+      "explanation": "IoT gateways connect local devices and sensors to the internet or cloud.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Logical design focuses on ………",
+      "options": [
+        "Device structure",
+        "Conceptual technical representation",
+        "Physical body",
+        "Mechanical shape"
+      ],
+      "correct": 1,
+      "correctText": "Conceptual technical representation",
+      "explanation": "Logical design explains how IoT components function and interact conceptually.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Which of the following is a physical IoT device?",
+      "options": [
+        "Cloud software",
+        "Wi-Fi router",
+        "Big data analytics",
+        "HTML code"
+      ],
+      "correct": 1,
+      "correctText": "Wi-Fi router",
+      "explanation": "A Wi-Fi router is a physical hardware component used to connect IoT devices to networks.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The architecture layer that makes decisions for user is ………",
+      "options": [
+        "Perception",
+        "Application",
+        "Network",
+        "Physical"
+      ],
+      "correct": 1,
+      "correctText": "Application",
+      "explanation": "The application layer processes data and makes decisions such as alerts, control actions, and user-level responses.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Middleware IoT architecture often lies between ………",
+      "options": [
+        "Application and hardware",
+        "Network and perception",
+        "User and government",
+        "Internet and email"
+      ],
+      "correct": 0,
+      "correctText": "Application and hardware",
+      "explanation": "Middleware acts as a bridge between physical devices (hardware) and applications, enabling communication and data processing.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT protocols mainly belong to ………",
+      "options": [
+        "Logical design",
+        "Physical design",
+        "Robotics",
+        "Mathematics"
+      ],
+      "correct": 0,
+      "correctText": "Logical design",
+      "explanation": "Protocols define communication rules and data exchange, which are part of the logical design of IoT.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The physical design of IoT includes which of these?",
+      "options": [
+        "Wi-Fi module",
+        "XML",
+        "SQL",
+        "Website"
+      ],
+      "correct": 0,
+      "correctText": "Wi-Fi module",
+      "explanation": "Physical design includes hardware components such as sensors, actuators, and communication modules like Wi-Fi.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "The operation of sensors in IoT is part of ………",
+      "options": [
+        "Logical design",
+        "Physical design",
+        "Application design",
+        "Cloud design"
+      ],
+      "correct": 1,
+      "correctText": "Physical design",
+      "explanation": "Sensors are physical devices, so their operation is included in the physical design of IoT.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A sensor is a device that ………",
+      "options": [
+        "Performs physical action",
+        "Converts physical quantity into electrical signals",
+        "Stores data",
+        "Only transmits data"
+      ],
+      "correct": 1,
+      "correctText": "Converts physical quantity into electrical signals",
+      "explanation": "Sensors detect physical parameters like temperature or pressure and convert them into electrical signals.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which of the following is an example of an actuator?",
+      "options": [
+        "Temperature sensor",
+        "Soil moisture sensor",
+        "DC motor",
+        "LDR sensor"
+      ],
+      "correct": 2,
+      "correctText": "DC motor",
+      "explanation": "Actuators perform actions. A DC motor converts electrical energy into mechanical motion.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A PIR sensor is used to detect ………",
+      "options": [
+        "Light",
+        "Pressure",
+        "Motion",
+        "Sound"
+      ],
+      "correct": 2,
+      "correctText": "Motion",
+      "explanation": "PIR (Passive Infrared) sensors detect motion by sensing changes in infrared radiation.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which sensor is used for measuring temperature?",
+      "options": [
+        "LDR",
+        "Ultrasonic sensor",
+        "LM35",
+        "IR sensor"
+      ],
+      "correct": 2,
+      "correctText": "LM35",
+      "explanation": "LM35 is a commonly used temperature sensor that provides output proportional to temperature.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which of the following detects light intensity?",
+      "options": [
+        "DHT11",
+        "LDR",
+        "Load cell",
+        "MQ-2"
+      ],
+      "correct": 1,
+      "correctText": "LDR",
+      "explanation": "LDR (Light Dependent Resistor) changes resistance based on light intensity.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The MQ-2 sensor is used to detect ………",
+      "options": [
+        "Motion",
+        "Gas",
+        "Water level",
+        "Pressure"
+      ],
+      "correct": 1,
+      "correctText": "Gas",
+      "explanation": "MQ-2 is a gas sensor used for detecting gases like LPG, smoke, and methane.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which actuator converts electrical energy into rotational motion?",
+      "options": [
+        "Relay",
+        "DC motor",
+        "LDR",
+        "Thermistor"
+      ],
+      "correct": 1,
+      "correctText": "DC motor",
+      "explanation": "A DC motor converts electrical energy into rotational mechanical motion.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A servo motor is an actuator used for ………",
+      "options": [
+        "Temperature sensing",
+        "Precise angular movement",
+        "Sound detection",
+        "Light measurement"
+      ],
+      "correct": 1,
+      "correctText": "Precise angular movement",
+      "explanation": "Servo motors are used where accurate angle control is required, such as in robotics.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which sensor is used for distance measurement in IoT?",
+      "options": [
+        "Ultrasonic sensor",
+        "Thermistor",
+        "IR flame sensor",
+        "MQ-135"
+      ],
+      "correct": 0,
+      "correctText": "Ultrasonic sensor",
+      "explanation": "Ultrasonic sensors measure distance by sending sound waves and calculating the time taken for the echo to return.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which sensor is commonly used in smart homes for humidity and temperature?",
+      "options": [
+        "LDR",
+        "DHT11",
+        "Load cell",
+        "Motion sensor"
+      ],
+      "correct": 1,
+      "correctText": "DHT11",
+      "explanation": "DHT11 is a combined temperature and humidity sensor widely used in smart home and IoT projects.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Load cells are used to measure ………",
+      "options": [
+        "Light",
+        "Gas",
+        "Weight / force",
+        "Altitude"
+      ],
+      "correct": 2,
+      "correctText": "Weight / force",
+      "explanation": "Load cells convert applied force or weight into electrical signals.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which of these is NOT a sensor?",
+      "options": [
+        "Gyroscope",
+        "Accelerometer",
+        "Relay",
+        "Thermistor"
+      ],
+      "correct": 2,
+      "correctText": "Relay",
+      "explanation": "A relay is an actuator/switch, not a sensor. Sensors only detect physical parameters.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "An actuator that allows switching of high-voltage devices is ………",
+      "options": [
+        "Servo motor",
+        "Relay",
+        "LDR",
+        "IR sensor"
+      ],
+      "correct": 1,
+      "correctText": "Relay",
+      "explanation": "Relays are used to control high-voltage or high-current devices using low-power signals.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A thermistor is used for ………",
+      "options": [
+        "Temperature measurement",
+        "Sound detection",
+        "Distance measurement",
+        "Vibration detection"
+      ],
+      "correct": 0,
+      "correctText": "Temperature measurement",
+      "explanation": "Thermistors change resistance with temperature and are used for temperature sensing.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which sensor is used in smartphones for screen rotation?",
+      "options": [
+        "Gyroscope",
+        "Gas sensor",
+        "PIR sensor",
+        "LDR"
+      ],
+      "correct": 0,
+      "correctText": "Gyroscope",
+      "explanation": "Gyroscopes detect orientation and angular movement, enabling screen rotation.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Accelerometers measure ………",
+      "options": [
+        "Temperature",
+        "Gas concentration",
+        "Acceleration / tilt",
+        "Noise level"
+      ],
+      "correct": 2,
+      "correctText": "Acceleration / tilt",
+      "explanation": "Accelerometers measure acceleration and tilt, useful in motion detection.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "A buzzer in IoT acts as a ………",
+      "options": [
+        "Sensor",
+        "Actuator",
+        "Controller",
+        "Storage device"
+      ],
+      "correct": 1,
+      "correctText": "Actuator",
+      "explanation": "A buzzer performs an action (sound output), so it is an actuator.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which sensor is used in smoke detection?",
+      "options": [
+        "MQ-2",
+        "BMP180",
+        "LDR",
+        "PIR"
+      ],
+      "correct": 0,
+      "correctText": "MQ-2",
+      "explanation": "MQ-2 detects smoke and combustible gases, commonly used in fire alarm systems.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which sensor is used to detect fire?",
+      "options": [
+        "LDR",
+        "Flame sensor",
+        "DHT11",
+        "Ultrasonic"
+      ],
+      "correct": 1,
+      "correctText": "Flame sensor",
+      "explanation": "Flame sensors detect infrared radiation emitted by fire.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A stepper motor is used when ………",
+      "options": [
+        "Rotation in steps is required",
+        "Gas detection is needed",
+        "Temperature must be sensed",
+        "Light measurement is needed"
+      ],
+      "correct": 0,
+      "correctText": "Rotation in steps is required",
+      "explanation": "Stepper motors rotate in discrete steps, allowing precise position control.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which sensor detects sound levels?",
+      "options": [
+        "BMP180",
+        "Sound sensor",
+        "Ultrasonic",
+        "Gyroscope"
+      ],
+      "correct": 1,
+      "correctText": "Sound sensor",
+      "explanation": "Sound sensors detect sound intensity or noise levels.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "The BMP180 sensor is used for ………",
+      "options": [
+        "Gas detection",
+        "Altitude and pressure",
+        "Vibration measurement",
+        "Light sensing"
+      ],
+      "correct": 1,
+      "correctText": "Altitude and pressure",
+      "explanation": "BMP180 is a barometric pressure sensor used for altitude estimation.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A water level sensor is used to ………",
+      "options": [
+        "Monitor humidity",
+        "Detect water depth or presence",
+        "Measure gas",
+        "Control motor speed"
+      ],
+      "correct": 1,
+      "correctText": "Detect water depth or presence",
+      "explanation": "Water level sensors detect the presence or level of water in tanks or reservoirs.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which of the following is a digital sensor?",
+      "options": [
+        "LDR",
+        "Thermistor",
+        "DHT22",
+        "Load cell"
+      ],
+      "correct": 2,
+      "correctText": "DHT22",
+      "explanation": "DHT22 provides digital output for temperature and humidity readings.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "The IR sensor mainly detects ………",
+      "options": [
+        "Infrared radiation and object presence",
+        "Temperature",
+        "Water flow",
+        "Gas leakage"
+      ],
+      "correct": 0,
+      "correctText": "Infrared radiation and object presence",
+      "explanation": "IR sensors detect infrared radiation reflected from objects.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A relay can be classified as ………",
+      "options": [
+        "Input sensor",
+        "Output actuator",
+        "Storage device",
+        "Power supply"
+      ],
+      "correct": 1,
+      "correctText": "Output actuator",
+      "explanation": "Relays perform switching actions, so they are actuators.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which sensor is suitable for soil moisture measurement?",
+      "options": [
+        "PIR",
+        "Capacitive soil moisture sensor",
+        "MQ-135",
+        "Ultrasonic"
+      ],
+      "correct": 1,
+      "correctText": "Capacitive soil moisture sensor",
+      "explanation": "Capacitive soil moisture sensors measure water content in soil.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A vibration sensor is used for ………",
+      "options": [
+        "Detecting movement in machines",
+        "Measuring humidity",
+        "Reading light intensity",
+        "Checking pressure"
+      ],
+      "correct": 0,
+      "correctText": "Detecting movement in machines",
+      "explanation": "Vibration sensors detect abnormal vibrations in machinery.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A photodiode is primarily used for ………",
+      "options": [
+        "Gas detection",
+        "Light sensing",
+        "Sound detection",
+        "Temperature measurement"
+      ],
+      "correct": 1,
+      "correctText": "Light sensing",
+      "explanation": "Photodiodes convert light into electrical current.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which of these is an example of an actuator used in home automation?",
+      "options": [
+        "Ultrasonic sensor",
+        "Gas sensor",
+        "Electric door lock",
+        "DHT11"
+      ],
+      "correct": 2,
+      "correctText": "Electric door lock",
+      "explanation": "Electric door locks perform actions (locking/unlocking), so they are actuators.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A flow sensor is used to measure ………",
+      "options": [
+        "Gas",
+        "Fluid movement",
+        "Sound",
+        "Pressure"
+      ],
+      "correct": 1,
+      "correctText": "Fluid movement",
+      "explanation": "Flow sensors measure the rate of liquid or gas flow in pipelines.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "The role of an actuator in IoT is to ………",
+      "options": [
+        "Process data",
+        "Sense environmental changes",
+        "Perform an action based on input",
+        "Store cloud information"
+      ],
+      "correct": 2,
+      "correctText": "Perform an action based on input",
+      "explanation": "An actuator converts electrical signals into physical actions such as motion, switching, or control.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which sensor is commonly used in IoT-based weather monitoring systems?",
+      "options": [
+        "PIR sensor",
+        "DHT22",
+        "Ultrasonic sensor",
+        "Relay"
+      ],
+      "correct": 1,
+      "correctText": "DHT22",
+      "explanation": "DHT22 measures temperature and humidity, which are key weather parameters.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Which actuator is used to control water flow in smart irrigation systems?",
+      "options": [
+        "Servo motor",
+        "Solenoid valve",
+        "LDR",
+        "Gyroscope"
+      ],
+      "correct": 1,
+      "correctText": "Solenoid valve",
+      "explanation": "Solenoid valves open or close water flow electronically in irrigation systems.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "A Hall Effect sensor is used to measure ………",
+      "options": [
+        "Temperature",
+        "Magnetic field",
+        "Humidity",
+        "Sound"
+      ],
+      "correct": 1,
+      "correctText": "Magnetic field",
+      "explanation": "Hall Effect sensors detect magnetic fields and are used in speed and position sensing.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "5G networks are mainly designed to support ………",
+      "options": [
+        "Only voice calls",
+        "Low-speed IoT devices",
+        "High-speed, low-latency communication",
+        "Cable TV signals"
+      ],
+      "correct": 2,
+      "correctText": "High-speed, low-latency communication",
+      "explanation": "5G provides ultra-low latency and very high data rates for advanced applications.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Which of the following is a key characteristic of 5G?",
+      "options": [
+        "High latency",
+        "Low bandwidth",
+        "Ultra-low latency",
+        "Limited connectivity"
+      ],
+      "correct": 2,
+      "correctText": "Ultra-low latency",
+      "explanation": "Ultra-low latency enables real-time applications like autonomous driving and remote surgery.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "5G supports IoT using which feature?",
+      "options": [
+        "Massive machine-type communication (mMTC)",
+        "Dial-up networking",
+        "USB connections",
+        "Satellite TV signals"
+      ],
+      "correct": 0,
+      "correctText": "Massive machine-type communication (mMTC)",
+      "explanation": "mMTC allows millions of IoT devices to connect simultaneously.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "One important application area of 5G-IoT is ………",
+      "options": [
+        "Offline gaming",
+        "Smart cities",
+        "Paper printing",
+        "Manual farming"
+      ],
+      "correct": 1,
+      "correctText": "Smart cities",
+      "explanation": "5G enables smart traffic, energy management, and public safety in smart cities.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "5G can support up to ………",
+      "options": [
+        "Dozens of devices",
+        "100 devices",
+        "Millions of devices per square kilometer",
+        "Only one device per household"
+      ],
+      "correct": 2,
+      "correctText": "Millions of devices per square kilometer",
+      "explanation": "5G is designed for massive device connectivity required by IoT ecosystems.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Which frequency band is commonly used in 5G?",
+      "options": [
+        "Low-frequency AM band",
+        "700 MHz - 52 GHz",
+        "10-20 kHz",
+        "1-5 kHz"
+      ],
+      "correct": 1,
+      "correctText": "700 MHz - 52 GHz",
+      "explanation": "5G operates across sub-6 GHz and millimeter-wave frequency bands.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Which characteristic of 5G enables real-time IoT operations?",
+      "options": [
+        "High latency",
+        "Low latency",
+        "Weak signal strength",
+        "Slow transmission"
+      ],
+      "correct": 1,
+      "correctText": "Low latency",
+      "explanation": "Low latency ensures instant data transmission for time-critical IoT applications.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "An example of extreme real-time communication using 5G is ………",
+      "options": [
+        "File transfer",
+        "Remote surgery",
+        "Email sending",
+        "Social media browsing"
+      ],
+      "correct": 1,
+      "correctText": "Remote surgery",
+      "explanation": "Remote surgery requires ultra-low latency and high reliability provided by 5G.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "5G IoT applications in transportation include ………",
+      "options": [
+        "Self-driving cars",
+        "Typewriters",
+        "Postal mail",
+        "Bicycle sensors only"
+      ],
+      "correct": 0,
+      "correctText": "Self-driving cars",
+      "explanation": "Autonomous vehicles rely on fast, reliable communication enabled by 5G.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Next Generation Network (NGN) is primarily based on ………",
+      "options": [
+        "Circuit-switching",
+        "Packet-switched IP networks",
+        "Morse code",
+        "Analog communication"
+      ],
+      "correct": 1,
+      "correctText": "Packet-switched IP networks",
+      "explanation": "NGN uses IP packet switching to carry voice, video, and data.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "NGN is designed to integrate ………",
+      "options": [
+        "Only audio communication",
+        "Multiple services like voice, video, and data",
+        "Only video streaming",
+        "Only SMS services"
+      ],
+      "correct": 1,
+      "correctText": "Multiple services like voice, video, and data",
+      "explanation": "NGN supports converged services over a unified IP network.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "A key feature of NGN is ………",
+      "options": [
+        "Service independence from the network",
+        "Limited bandwidth",
+        "Analog interface",
+        "No mobility support"
+      ],
+      "correct": 0,
+      "correctText": "Service independence from the network",
+      "explanation": "NGN separates service logic from the transport network for flexibility.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which functional block of NGN controls call setup and teardown?",
+      "options": [
+        "Media Gateway",
+        "Media Gateway Controller",
+        "Application Server",
+        "Router"
+      ],
+      "correct": 1,
+      "correctText": "Media Gateway Controller",
+      "explanation": "The Media Gateway Controller manages call control and signaling.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Media Gateway in NGN is responsible for ………",
+      "options": [
+        "Converting media streams between networks",
+        "Performing user authentication",
+        "Controlling billing",
+        "Handling email traffic"
+      ],
+      "correct": 0,
+      "correctText": "Converting media streams between networks",
+      "explanation": "Media Gateways convert media formats between PSTN and IP networks.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "The Application Server in NGN provides ………",
+      "options": [
+        "Power supply",
+        "Service logic and applications",
+        "Radio frequency",
+        "Sensor data"
+      ],
+      "correct": 1,
+      "correctText": "Service logic and applications",
+      "explanation": "Application Servers host and manage service logic such as VoIP and multimedia services.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which component translates between IP and traditional PSTN networks?",
+      "options": [
+        "Router",
+        "Media Gateway",
+        "Application Server",
+        "GPS module"
+      ],
+      "correct": 1,
+      "correctText": "Media Gateway",
+      "explanation": "A Media Gateway converts media streams between IP-based networks and traditional PSTN networks.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "NGN architecture supports mobility using ………",
+      "options": [
+        "Static channels",
+        "Packet routing",
+        "Satellite radio",
+        "SMS center"
+      ],
+      "correct": 1,
+      "correctText": "Packet routing",
+      "explanation": "Packet routing allows seamless mobility by dynamically routing data across IP networks.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which of these is a benefit of 5G in IoT applications?",
+      "options": [
+        "Slow response time",
+        "Reduced device density",
+        "Massive connectivity",
+        "Weak security"
+      ],
+      "correct": 2,
+      "correctText": "Massive connectivity",
+      "explanation": "5G supports a very large number of connected IoT devices simultaneously.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "The part of NGN that handles service creation is ………",
+      "options": [
+        "Media Gateway",
+        "Application Server",
+        "PSTN switch",
+        "Antenna"
+      ],
+      "correct": 1,
+      "correctText": "Application Server",
+      "explanation": "The Application Server hosts service logic and manages application-level services.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "5G enables ultra-reliable communication also known as ………",
+      "options": [
+        "URLLC",
+        "VoIP",
+        "FTP",
+        "SMS"
+      ],
+      "correct": 0,
+      "correctText": "URLLC",
+      "explanation": "URLLC stands for Ultra-Reliable Low-Latency Communication, a core feature of 5G.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "NGN Media Gateway Controller communicates using ………",
+      "options": [
+        "MGCP or H.248",
+        "PDF files",
+        "SMS protocol",
+        "Bluetooth"
+      ],
+      "correct": 0,
+      "correctText": "MGCP or H.248",
+      "explanation": "MGCP and H.248 are control protocols used by Media Gateway Controllers.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "In 5G IoT, extremely low latency is essential for ………",
+      "options": [
+        "Video buffering",
+        "Smart appliances",
+        "Industrial automation",
+        "File downloads"
+      ],
+      "correct": 2,
+      "correctText": "Industrial automation",
+      "explanation": "Industrial automation requires instant response and minimal delay.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "The NGN architecture is often divided into ………",
+      "options": [
+        "1 layer",
+        "2 layers",
+        "3 layers",
+        "7 layers"
+      ],
+      "correct": 2,
+      "correctText": "3 layers",
+      "explanation": "NGN is commonly structured into transport, control, and service layers.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "A key characteristic of NGN is ………",
+      "options": [
+        "No support for multimedia",
+        "Quality of Service (QoS)",
+        "Static switching",
+        "Manual routing"
+      ],
+      "correct": 1,
+      "correctText": "Quality of Service (QoS)",
+      "explanation": "NGN supports QoS to ensure reliable delivery of voice, video, and data.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "In NGN, the Media Gateway Controller controls the ………",
+      "options": [
+        "Voice commands",
+        "Signaling messages",
+        "Laser signals",
+        "GSM only"
+      ],
+      "correct": 1,
+      "correctText": "Signaling messages",
+      "explanation": "The Media Gateway Controller manages signaling and call control.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Application servers in NGN are mainly ………",
+      "options": [
+        "End-user devices",
+        "Service execution platforms",
+        "Physical switches",
+        "Radio towers"
+      ],
+      "correct": 1,
+      "correctText": "Service execution platforms",
+      "explanation": "They execute and manage service logic for NGN services.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "5G enhances IoT applications in healthcare by enabling ………",
+      "options": [
+        "Offline medical tests",
+        "Remote patient monitoring",
+        "Manual data entry",
+        "Traditional telephones"
+      ],
+      "correct": 1,
+      "correctText": "Remote patient monitoring",
+      "explanation": "5G enables real-time health monitoring with low latency and high reliability.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Which feature of 5G helps in smart industrial robots?",
+      "options": [
+        "High latency",
+        "Ultra-reliable low latency",
+        "Low bandwidth",
+        "Weak connectivity"
+      ],
+      "correct": 1,
+      "correctText": "Ultra-reliable low latency",
+      "explanation": "Industrial robots require precise and instant communication.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "NGN supports which type of communication?",
+      "options": [
+        "Circuit only",
+        "Multi-service packet communication",
+        "Manual signaling",
+        "Morse code"
+      ],
+      "correct": 1,
+      "correctText": "Multi-service packet communication",
+      "explanation": "NGN supports voice, video, and data over packet-switched IP networks.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The transport layer of NGN handles ………",
+      "options": [
+        "Service creation",
+        "User traffic transmission",
+        "Application logic",
+        "Authentication only"
+      ],
+      "correct": 1,
+      "correctText": "User traffic transmission",
+      "explanation": "The transport layer carries media and data packets across the network.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The combination of 5G and IoT is mainly used for ………",
+      "options": [
+        "Faster book printing",
+        "Automation and smart connectivity",
+        "Slower networks",
+        "Manual switching"
+      ],
+      "correct": 1,
+      "correctText": "Automation and smart connectivity",
+      "explanation": "5G + IoT enables intelligent automation across industries.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Cloud-based IoT architecture mainly integrates ………",
+      "options": [
+        "Sensors and printers",
+        "IoT devices with cloud storage and computing",
+        "Only mobile phones",
+        "Offline storage systems"
+      ],
+      "correct": 1,
+      "correctText": "IoT devices with cloud storage and computing",
+      "explanation": "Cloud platforms provide storage, processing, and analytics for IoT data.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "In cloud-based IoT, the role of the cloud is to ………",
+      "options": [
+        "Only sense environmental data",
+        "Store, process, and analyze IoT data",
+        "Replace sensors",
+        "Provide audio output"
+      ],
+      "correct": 1,
+      "correctText": "Store, process, and analyze IoT data",
+      "explanation": "The cloud performs heavy computation and analytics for IoT systems.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Which layer of cloud-based IoT handles sensing and data collection?",
+      "options": [
+        "Application layer",
+        "Sensor/Perception layer",
+        "Network management",
+        "Virtualization layer"
+      ],
+      "correct": 1,
+      "correctText": "Sensor/Perception layer",
+      "explanation": "This layer includes sensors and actuators that collect physical data.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "In cloud-based IoT architecture, the network layer is responsible for ………",
+      "options": [
+        "Data transmission between devices and cloud",
+        "Data visualization",
+        "Executing cloud programs",
+        "Powering devices"
+      ],
+      "correct": 0,
+      "correctText": "Data transmission between devices and cloud",
+      "explanation": "The network layer ensures reliable communication between IoT devices and cloud services.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Which cloud service model is commonly used for IoT data analytics?",
+      "options": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "CDP"
+      ],
+      "correct": 1,
+      "correctText": "PaaS",
+      "explanation": "PaaS provides platforms and tools for IoT data processing and analytics.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "The application layer in cloud-based IoT provides ………",
+      "options": [
+        "Machine learning analysis",
+        "User-specific services like dashboards and alerts",
+        "Power supply management",
+        "Hardware manufacturing"
+      ],
+      "correct": 1,
+      "correctText": "User-specific services like dashboards and alerts",
+      "explanation": "The application layer interacts with users through interfaces and alerts.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Which of the following is NOT a component of cloud-based IoT architecture?",
+      "options": [
+        "Perception layer",
+        "Network layer",
+        "Application layer",
+        "Manual switching layer"
+      ],
+      "correct": 3,
+      "correctText": "Manual switching layer",
+      "explanation": "Manual switching is not part of automated IoT architectures.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Cloud-based IoT improves scalability by ………",
+      "options": [
+        "Restricting device connections",
+        "Allowing flexible storage and resources",
+        "Reducing storage options",
+        "Turning off cloud servers"
+      ],
+      "correct": 1,
+      "correctText": "Allowing flexible storage and resources",
+      "explanation": "Cloud resources can scale up or down based on demand.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Which cloud platform is widely used for IoT?",
+      "options": [
+        "Adobe Photoshop",
+        "Microsoft Azure IoT Hub",
+        "VLC Media Player",
+        "GIMP"
+      ],
+      "correct": 1,
+      "correctText": "Microsoft Azure IoT Hub",
+      "explanation": "Azure IoT Hub is a popular cloud platform for IoT device management.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "The main benefit of integrating IoT with cloud is ………",
+      "options": [
+        "Manual data processing",
+        "Large-scale storage and real-time processing",
+        "Reduced connectivity",
+        "Less device automation"
+      ],
+      "correct": 1,
+      "correctText": "Large-scale storage and real-time processing",
+      "explanation": "Cloud computing enables efficient handling of massive IoT data.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Which layer in cloud-based IoT architecture is responsible for device connectivity",
+      "options": [
+        "nd data acquisition?",
+        "Application layer",
+        "Perception layer",
+        "Network layer"
+      ],
+      "correct": 1,
+      "correctText": "Application layer",
+      "explanation": "The perception layer collects data from sensors and devices.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "What is the main purpose of the Cloud Service Layer in IoT architecture?",
+      "options": [
+        "Storing and processing IoT data",
+        "Connecting IoT devices to sensors",
+        "End-user interaction",
+        "Powering IoT hardware"
+      ],
+      "correct": 0,
+      "correctText": "Storing and processing IoT data",
+      "explanation": "Cloud service layer handles data storage, processing, and analytics.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "In a cloud-IoT system, which component typically performs real-time analytics?",
+      "options": [
+        "IoT device",
+        "Cloud platform",
+        "Local router",
+        "End user application"
+      ],
+      "correct": 1,
+      "correctText": "Cloud platform",
+      "explanation": "Cloud platforms provide high computing power for real-time analytics.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Which cloud deployment model is most suitable for organizations wanting full control over IoT data security?",
+      "options": [
+        "Public Cloud",
+        "Private Cloud",
+        "Hybrid Cloud",
+        "Community Cloud"
+      ],
+      "correct": 1,
+      "correctText": "Private Cloud",
+      "explanation": "Private cloud offers maximum control and security over organizational data.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Who invented the term Internet of Things?",
+      "options": [
+        "Bill Gates",
+        "Tim Berners-Lee",
+        "Kevin Ashton",
+        "Steve Jobs"
+      ],
+      "correct": 2,
+      "correctText": "Kevin Ashton",
+      "explanation": "The correct answer is 'Kevin Ashton'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT devices are mainly embedded with:",
+      "options": [
+        "Screens only",
+        "Sensors and software",
+        "Keyboards",
+        "Printers"
+      ],
+      "correct": 1,
+      "correctText": "Sensors and software",
+      "explanation": "The correct answer is 'Sensors and software'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT mainly enables:",
+      "options": [
+        "Offline communication",
+        "Manual systems",
+        "Interconnected smart devices",
+        "Only wired networking"
+      ],
+      "correct": 2,
+      "correctText": "Interconnected smart devices",
+      "explanation": "The correct answer is 'Interconnected smart devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "RFID stands for:",
+      "options": [
+        "Radio Frequency Internet Device",
+        "Radio Frequency Identification",
+        "Rapid File Identification",
+        "Real Frequency Data"
+      ],
+      "correct": 1,
+      "correctText": "Radio Frequency Identification",
+      "explanation": "The correct answer is 'Radio Frequency Identification'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which is NOT a characteristic of IoT?",
+      "options": [
+        "Connectivity",
+        "Automation",
+        "Scalability",
+        "Isolation"
+      ],
+      "correct": 3,
+      "correctText": "Isolation",
+      "explanation": "The correct answer is 'Isolation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT allows automation to:",
+      "options": [
+        "Increase manual work",
+        "Reduce human intervention",
+        "Stop communication",
+        "Increase delays"
+      ],
+      "correct": 1,
+      "correctText": "Reduce human intervention",
+      "explanation": "The correct answer is 'Reduce human intervention'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Real-time processing is important in:",
+      "options": [
+        "Smart IoT systems",
+        "Typewriters",
+        "Old telephone systems",
+        "Fax machines"
+      ],
+      "correct": 0,
+      "correctText": "Smart IoT systems",
+      "explanation": "The correct answer is 'Smart IoT systems'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Indoor air quality monitoring is an example of:",
+      "options": [
+        "Smart transport",
+        "IoT in Industry",
+        "Smart classroom",
+        "IoT gaming"
+      ],
+      "correct": 1,
+      "correctText": "IoT in Industry",
+      "explanation": "The correct answer is 'IoT in Industry'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart homes can be controlled using:",
+      "options": [
+        "Calculator",
+        "Smart phone",
+        "Radio",
+        "Pager"
+      ],
+      "correct": 1,
+      "correctText": "Smart phone",
+      "explanation": "The correct answer is 'Smart phone'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT in agriculture helps in:",
+      "options": [
+        "Gaming",
+        "Crop monitoring",
+        "Cinema",
+        "Banking only"
+      ],
+      "correct": 1,
+      "correctText": "Crop monitoring",
+      "explanation": "The correct answer is 'Crop monitoring'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT healthcare helps in:",
+      "options": [
+        "Remote patient monitoring",
+        "Only surgery",
+        "File storage",
+        "Entertainment"
+      ],
+      "correct": 0,
+      "correctText": "Remote patient monitoring",
+      "explanation": "The correct answer is 'Remote patient monitoring'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "GPS data in transport helps reduce:",
+      "options": [
+        "Internet usage",
+        "Traffic congestion",
+        "Electricity",
+        "Agriculture production"
+      ],
+      "correct": 1,
+      "correctText": "Traffic congestion",
+      "explanation": "The correct answer is 'Traffic congestion'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT enables:",
+      "options": [
+        "Manual communication",
+        "Device-to-device interaction",
+        "No connectivity",
+        "Paper-based work"
+      ],
+      "correct": 1,
+      "correctText": "Device-to-device interaction",
+      "explanation": "The correct answer is 'Device-to-device interaction'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Scalability means:",
+      "options": [
+        "Fixed system",
+        "Growing system capability",
+        "Small storage",
+        "Low speed"
+      ],
+      "correct": 1,
+      "correctText": "Growing system capability",
+      "explanation": "The correct answer is 'Growing system capability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "One major advantage of IoT is:",
+      "options": [
+        "Slow processing",
+        "Cost efficiency",
+        "Manual control",
+        "Data loss"
+      ],
+      "correct": 1,
+      "correctText": "Cost efficiency",
+      "explanation": "The correct answer is 'Cost efficiency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "One disadvantage of IoT is:",
+      "options": [
+        "Automation",
+        "Security vulnerability",
+        "Connectivity",
+        "Monitoring"
+      ],
+      "correct": 1,
+      "correctText": "Security vulnerability",
+      "explanation": "The correct answer is 'Security vulnerability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT dependency mainly relies on:",
+      "options": [
+        "Electricity only",
+        "Internet connectivity",
+        "Books",
+        "Paper"
+      ],
+      "correct": 1,
+      "correctText": "Internet connectivity",
+      "explanation": "The correct answer is 'Internet connectivity'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Data breaches in IoT affect:",
+      "options": [
+        "Entertainment",
+        "Privacy and trust",
+        "Printing",
+        "Television"
+      ],
+      "correct": 1,
+      "correctText": "Privacy and trust",
+      "explanation": "The correct answer is 'Privacy and trust'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Physical design of IoT includes:",
+      "options": [
+        "Sensors and protocols",
+        "Only cables",
+        "Only routers",
+        "Only processors"
+      ],
+      "correct": 0,
+      "correctText": "Sensors and protocols",
+      "explanation": "The correct answer is 'Sensors and protocols'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Ethernet standard is:",
+      "options": [
+        "802.3",
+        "802.11",
+        "802.15",
+        "802.16"
+      ],
+      "correct": 0,
+      "correctText": "802.3",
+      "explanation": "The correct answer is '802.3'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Wi-Fi standard belongs to:",
+      "options": [
+        "802.3",
+        "802.11",
+        "802.15.4",
+        "802.16"
+      ],
+      "correct": 1,
+      "correctText": "802.11",
+      "explanation": "The correct answer is '802.11'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "6LOWPAN works with:",
+      "options": [
+        "802.15.4",
+        "802.3",
+        "802.11",
+        "4G"
+      ],
+      "correct": 0,
+      "correctText": "802.15.4",
+      "explanation": "The correct answer is '802.15.4'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IPv4 uses:",
+      "options": [
+        "32-bit address",
+        "64-bit",
+        "128-bit",
+        "16-bit"
+      ],
+      "correct": 0,
+      "correctText": "32-bit address",
+      "explanation": "The correct answer is '32-bit address'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IPv6 uses:",
+      "options": [
+        "32-bit",
+        "64-bit",
+        "128-bit",
+        "256-bit"
+      ],
+      "correct": 2,
+      "correctText": "128-bit",
+      "explanation": "The correct answer is '128-bit'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "TCP is:",
+      "options": [
+        "Connectionless",
+        "Connection oriented",
+        "Stateless",
+        "Wireless"
+      ],
+      "correct": 1,
+      "correctText": "Connection oriented",
+      "explanation": "The correct answer is 'Connection oriented'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "UDP is:",
+      "options": [
+        "Reliable protocol",
+        "Connectionless protocol",
+        "Wired only",
+        "Slow protocol"
+      ],
+      "correct": 1,
+      "correctText": "Connectionless protocol",
+      "explanation": "The correct answer is 'Connectionless protocol'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "MQTT follows:",
+      "options": [
+        "Request-response",
+        "Publish-subscribe",
+        "Push-pull",
+        "Exclusive pair"
+      ],
+      "correct": 1,
+      "correctText": "Publish-subscribe",
+      "explanation": "The correct answer is 'Publish-subscribe'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "HTTP works on:",
+      "options": [
+        "UDP",
+        "TCP",
+        "Bluetooth",
+        "Zigbee"
+      ],
+      "correct": 1,
+      "correctText": "TCP",
+      "explanation": "The correct answer is 'TCP'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "CoAP runs over:",
+      "options": [
+        "TCP",
+        "UDP",
+        "FTP",
+        "SMTP"
+      ],
+      "correct": 1,
+      "correctText": "UDP",
+      "explanation": "The correct answer is 'UDP'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "WebSocket supports:",
+      "options": [
+        "Half duplex",
+        "Full duplex",
+        "Offline mode",
+        "File system"
+      ],
+      "correct": 1,
+      "correctText": "Full duplex",
+      "explanation": "The correct answer is 'Full duplex'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Sensor detects:",
+      "options": [
+        "Physical parameters",
+        "Electricity bills",
+        "Software bugs",
+        "Internet speed"
+      ],
+      "correct": 0,
+      "correctText": "Physical parameters",
+      "explanation": "The correct answer is 'Physical parameters'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Actuator performs:",
+      "options": [
+        "Data storage",
+        "Physical action",
+        "Coding",
+        "Analysis"
+      ],
+      "correct": 1,
+      "correctText": "Physical action",
+      "explanation": "The correct answer is 'Physical action'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Temperature sensor example:",
+      "options": [
+        "DHT11",
+        "MQ-2",
+        "PIR",
+        "IR"
+      ],
+      "correct": 0,
+      "correctText": "DHT11",
+      "explanation": "The correct answer is 'DHT11'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "PIR is used for:",
+      "options": [
+        "Temperature",
+        "Motion detection",
+        "Pressure",
+        "Light"
+      ],
+      "correct": 1,
+      "correctText": "Motion detection",
+      "explanation": "The correct answer is 'Motion detection'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "BMP280 measures:",
+      "options": [
+        "Gas",
+        "Pressure",
+        "Motion",
+        "Light"
+      ],
+      "correct": 1,
+      "correctText": "Pressure",
+      "explanation": "The correct answer is 'Pressure'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "MQ-2 detects:",
+      "options": [
+        "Temperature",
+        "Gas",
+        "Humidity",
+        "Motion"
+      ],
+      "correct": 1,
+      "correctText": "Gas",
+      "explanation": "The correct answer is 'Gas'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Soil moisture sensor used in:",
+      "options": [
+        "Industry",
+        "Agriculture",
+        "Banking",
+        "Cinema"
+      ],
+      "correct": 1,
+      "correctText": "Agriculture",
+      "explanation": "The correct answer is 'Agriculture'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Servo motor provides:",
+      "options": [
+        "Linear motion",
+        "Precise angular position",
+        "Heating",
+        "Storage"
+      ],
+      "correct": 1,
+      "correctText": "Precise angular position",
+      "explanation": "The correct answer is 'Precise angular position'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Relay acts as:",
+      "options": [
+        "Sensor",
+        "Switch",
+        "Display",
+        "Processor"
+      ],
+      "correct": 1,
+      "correctText": "Switch",
+      "explanation": "The correct answer is 'Switch'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Solenoid provides:",
+      "options": [
+        "Rotation",
+        "Linear motion",
+        "Light",
+        "Data"
+      ],
+      "correct": 1,
+      "correctText": "Linear motion",
+      "explanation": "The correct answer is 'Linear motion'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT gateway performs:",
+      "options": [
+        "Data deletion",
+        "Pre-processing",
+        "Printing",
+        "Gaming"
+      ],
+      "correct": 1,
+      "correctText": "Pre-processing",
+      "explanation": "The correct answer is 'Pre-processing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Cloud layer provides:",
+      "options": [
+        "Device sensing",
+        "Data storage and processing",
+        "Only wiring",
+        "Printing"
+      ],
+      "correct": 1,
+      "correctText": "Data storage and processing",
+      "explanation": "The correct answer is 'Data storage and processing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "SaaS stands for:",
+      "options": [
+        "Software as a Service",
+        "Storage as System",
+        "Server as Software",
+        "System as Service"
+      ],
+      "correct": 0,
+      "correctText": "Software as a Service",
+      "explanation": "The correct answer is 'Software as a Service'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IaaS provides:",
+      "options": [
+        "Applications only",
+        "Infrastructure resources",
+        "Music",
+        "Books"
+      ],
+      "correct": 1,
+      "correctText": "Infrastructure resources",
+      "explanation": "The correct answer is 'Infrastructure resources'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "PaaS provides:",
+      "options": [
+        "Platform for development",
+        "Hardware only",
+        "Only cables",
+        "Storage only"
+      ],
+      "correct": 0,
+      "correctText": "Platform for development",
+      "explanation": "The correct answer is 'Platform for development'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Exclusive pair model maintains:",
+      "options": [
+        "Stateless connection",
+        "Persistent connection",
+        "No communication",
+        "Broadcast"
+      ],
+      "correct": 1,
+      "correctText": "Persistent connection",
+      "explanation": "The correct answer is 'Persistent connection'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Publish-subscribe uses:",
+      "options": [
+        "Broker",
+        "Printer",
+        "Cable",
+        "Router only"
+      ],
+      "correct": 0,
+      "correctText": "Broker",
+      "explanation": "The correct answer is 'Broker'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT security includes:",
+      "options": [
+        "Authorization",
+        "Authentication",
+        "Encryption",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "LR-WPAN provides:",
+      "options": [
+        "High speed",
+        "Low-rate wireless communication",
+        "Satellite link",
+        "Fiber"
+      ],
+      "correct": 1,
+      "correctText": "Low-rate wireless communication",
+      "explanation": "The correct answer is 'Low-rate wireless communication'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Zigbee is based on:",
+      "options": [
+        "802.15.4",
+        "802.3",
+        "802.11",
+        "LTE"
+      ],
+      "correct": 0,
+      "correctText": "802.15.4",
+      "explanation": "The correct answer is '802.15.4'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT devices mainly communicate using:",
+      "options": [
+        "Postal service",
+        "Internet protocols",
+        "Paper signals",
+        "Television waves"
+      ],
+      "correct": 1,
+      "correctText": "Internet protocols",
+      "explanation": "The correct answer is 'Internet protocols'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which layer handles host addressing and routing?",
+      "options": [
+        "Application layer",
+        "Transport layer",
+        "Network layer",
+        "Physical layer"
+      ],
+      "correct": 2,
+      "correctText": "Network layer",
+      "explanation": "The correct answer is 'Network layer'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IPv4 allows approximately how many addresses?",
+      "options": [
+        "1 million",
+        "4.3 billion",
+        "1 trillion",
+        "100 million"
+      ],
+      "correct": 1,
+      "correctText": "4.3 billion",
+      "explanation": "The correct answer is '4.3 billion'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "6LOWPAN is mainly used for:",
+      "options": [
+        "High-speed gaming",
+        "Low-power IoT devices",
+        "Video streaming",
+        "Satellite TV"
+      ],
+      "correct": 1,
+      "correctText": "Low-power IoT devices",
+      "explanation": "The correct answer is 'Low-power IoT devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Which protocol guarantees reliable data transfer?",
+      "options": [
+        "UDP",
+        "MQTT",
+        "TCP",
+        "CoAP"
+      ],
+      "correct": 2,
+      "correctText": "TCP",
+      "explanation": "The correct answer is 'TCP'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "UDP is suitable for:",
+      "options": [
+        "File transfer",
+        "Email",
+        "Time-sensitive applications",
+        "Secure banking"
+      ],
+      "correct": 2,
+      "correctText": "Time-sensitive applications",
+      "explanation": "The correct answer is 'Time-sensitive applications'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "HTTP follows which model?",
+      "options": [
+        "Publish-subscribe",
+        "Push-pull",
+        "Request-response",
+        "Exclusive pair"
+      ],
+      "correct": 2,
+      "correctText": "Request-response",
+      "explanation": "The correct answer is 'Request-response'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "MQTT uses a:",
+      "options": [
+        "Server only",
+        "Broker",
+        "Switch",
+        "Router only"
+      ],
+      "correct": 1,
+      "correctText": "Broker",
+      "explanation": "The correct answer is 'Broker'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "CoAP is mainly designed for:",
+      "options": [
+        "Large servers",
+        "Constrained devices",
+        "Supercomputers",
+        "Satellite communication"
+      ],
+      "correct": 1,
+      "correctText": "Constrained devices",
+      "explanation": "The correct answer is 'Constrained devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "WebSocket maintains:",
+      "options": [
+        "Temporary link",
+        "Persistent connection",
+        "No connection",
+        "One-way communication"
+      ],
+      "correct": 1,
+      "correctText": "Persistent connection",
+      "explanation": "The correct answer is 'Persistent connection'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IEEE 802.16 is related to:",
+      "options": [
+        "WiFi",
+        "WiMax",
+        "Bluetooth",
+        "Zigbee"
+      ],
+      "correct": 1,
+      "correctText": "WiMax",
+      "explanation": "The correct answer is 'WiMax'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IEEE 802.15.4 is used in:",
+      "options": [
+        "Ethernet",
+        "Zigbee",
+        "LTE",
+        "Satellite"
+      ],
+      "correct": 1,
+      "correctText": "Zigbee",
+      "explanation": "The correct answer is 'Zigbee'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Transport layer provides:",
+      "options": [
+        "Error control",
+        "Segmentation",
+        "Flow control",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Port 80 is used by:",
+      "options": [
+        "FTP",
+        "HTTP",
+        "SSH",
+        "SMTP"
+      ],
+      "correct": 1,
+      "correctText": "HTTP",
+      "explanation": "The correct answer is 'HTTP'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "MQTT is best suited for:",
+      "options": [
+        "High bandwidth networks",
+        "Low bandwidth networks",
+        "Fiber optic only",
+        "Cable TV"
+      ],
+      "correct": 1,
+      "correctText": "Low bandwidth networks",
+      "explanation": "The correct answer is 'Low bandwidth networks'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "XMPP is used for:",
+      "options": [
+        "Real-time messaging",
+        "File compression",
+        "Hardware repair",
+        "Data storage"
+      ],
+      "correct": 0,
+      "correctText": "Real-time messaging",
+      "explanation": "The correct answer is 'Real-time messaging'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "DDS stands for:",
+      "options": [
+        "Data Distribution Service",
+        "Digital Data System",
+        "Device Data Storage",
+        "Direct Distribution Service"
+      ],
+      "correct": 0,
+      "correctText": "Data Distribution Service",
+      "explanation": "The correct answer is 'Data Distribution Service'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "AMQP is mainly used for:",
+      "options": [
+        "Gaming",
+        "Business messaging",
+        "Image editing",
+        "Audio streaming"
+      ],
+      "correct": 1,
+      "correctText": "Business messaging",
+      "explanation": "The correct answer is 'Business messaging'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "A sensor converts:",
+      "options": [
+        "Digital signals to light",
+        "Physical signals to digital data",
+        "Electricity to gas",
+        "Data to paper"
+      ],
+      "correct": 1,
+      "correctText": "Physical signals to digital data",
+      "explanation": "The correct answer is 'Physical signals to digital data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "An actuator converts:",
+      "options": [
+        "Data into physical action",
+        "Light into heat",
+        "Air into sound",
+        "Temperature into gas"
+      ],
+      "correct": 0,
+      "correctText": "Data into physical action",
+      "explanation": "The correct answer is 'Data into physical action'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "DHT22 measures:",
+      "options": [
+        "Pressure",
+        "Humidity and temperature",
+        "Motion",
+        "Gas"
+      ],
+      "correct": 1,
+      "correctText": "Humidity and temperature",
+      "explanation": "The correct answer is 'Humidity and temperature'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "PIR sensors detect:",
+      "options": [
+        "Sound",
+        "Motion",
+        "Light",
+        "Pressure"
+      ],
+      "correct": 1,
+      "correctText": "Motion",
+      "explanation": "The correct answer is 'Motion'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "LDR is used for measuring:",
+      "options": [
+        "Pressure",
+        "Gas",
+        "Light intensity",
+        "Motion"
+      ],
+      "correct": 2,
+      "correctText": "Light intensity",
+      "explanation": "The correct answer is 'Light intensity'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "TPMS in vehicles monitors:",
+      "options": [
+        "Fuel",
+        "Tyre pressure",
+        "Temperature",
+        "Engine speed"
+      ],
+      "correct": 1,
+      "correctText": "Tyre pressure",
+      "explanation": "The correct answer is 'Tyre pressure'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "MQ series sensors detect:",
+      "options": [
+        "Sound",
+        "Gas",
+        "Motion",
+        "Pressure"
+      ],
+      "correct": 1,
+      "correctText": "Gas",
+      "explanation": "The correct answer is 'Gas'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Accelerometer detects:",
+      "options": [
+        "Light",
+        "Temperature",
+        "Orientation and vibration",
+        "Humidity"
+      ],
+      "correct": 2,
+      "correctText": "Orientation and vibration",
+      "explanation": "The correct answer is 'Orientation and vibration'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IR sensors detect:",
+      "options": [
+        "Heat radiation",
+        "Sound",
+        "Water",
+        "Pressure"
+      ],
+      "correct": 0,
+      "correctText": "Heat radiation",
+      "explanation": "The correct answer is 'Heat radiation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Servo motors are used for:",
+      "options": [
+        "Heating",
+        "Precise angular movement",
+        "Sound",
+        "Light"
+      ],
+      "correct": 1,
+      "correctText": "Precise angular movement",
+      "explanation": "The correct answer is 'Precise angular movement'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Stepper motors move in:",
+      "options": [
+        "Continuous rotation",
+        "Random motion",
+        "Discrete steps",
+        "Linear push"
+      ],
+      "correct": 2,
+      "correctText": "Discrete steps",
+      "explanation": "The correct answer is 'Discrete steps'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "DC motors convert:",
+      "options": [
+        "Mechanical to electrical",
+        "Electrical to mechanical",
+        "Gas to liquid",
+        "Light to heat"
+      ],
+      "correct": 1,
+      "correctText": "Electrical to mechanical",
+      "explanation": "The correct answer is 'Electrical to mechanical'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "A relay is mainly used to:",
+      "options": [
+        "Sense motion",
+        "Switch high power circuits",
+        "Store data",
+        "Display output"
+      ],
+      "correct": 1,
+      "correctText": "Switch high power circuits",
+      "explanation": "The correct answer is 'Switch high power circuits'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Solenoids are mainly used for:",
+      "options": [
+        "Display",
+        "Linear push/pull action",
+        "Light sensing",
+        "Audio"
+      ],
+      "correct": 1,
+      "correctText": "Linear push/pull action",
+      "explanation": "The correct answer is 'Linear push/pull action'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Cloud computing helps IoT in:",
+      "options": [
+        "Data storage",
+        "Processing",
+        "Analytics",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "SaaS means:",
+      "options": [
+        "Service as a Software",
+        "Software as a Service",
+        "Server as System",
+        "Storage as Software"
+      ],
+      "correct": 1,
+      "correctText": "Software as a Service",
+      "explanation": "The correct answer is 'Software as a Service'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IaaS provides:",
+      "options": [
+        "Applications",
+        "Platform",
+        "Infrastructure resources",
+        "Messaging"
+      ],
+      "correct": 2,
+      "correctText": "Infrastructure resources",
+      "explanation": "The correct answer is 'Infrastructure resources'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "PaaS is mainly used by:",
+      "options": [
+        "Farmers",
+        "Developers",
+        "Drivers",
+        "Teachers"
+      ],
+      "correct": 1,
+      "correctText": "Developers",
+      "explanation": "The correct answer is 'Developers'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT gateway acts as:",
+      "options": [
+        "Final storage",
+        "Intermediary device",
+        "Sensor",
+        "Actuator"
+      ],
+      "correct": 1,
+      "correctText": "Intermediary device",
+      "explanation": "The correct answer is 'Intermediary device'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Data ingestion occurs in:",
+      "options": [
+        "Device layer",
+        "Cloud platform layer",
+        "Sensor layer",
+        "Physical layer"
+      ],
+      "correct": 1,
+      "correctText": "Cloud platform layer",
+      "explanation": "The correct answer is 'Cloud platform layer'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Application layer in IoT provides:",
+      "options": [
+        "User interface",
+        "Wiring",
+        "Voltage",
+        "Hardware"
+      ],
+      "correct": 0,
+      "correctText": "User interface",
+      "explanation": "The correct answer is 'User interface'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Connectivity in IoT includes:",
+      "options": [
+        "HTTP",
+        "MQTT",
+        "AMQP",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Edge computing reduces:",
+      "options": [
+        "Storage",
+        "Latency",
+        "Power",
+        "Sensors"
+      ],
+      "correct": 1,
+      "correctText": "Latency",
+      "explanation": "The correct answer is 'Latency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT automation improves:",
+      "options": [
+        "Manual errors",
+        "Efficiency",
+        "Delays",
+        "Cost increase"
+      ],
+      "correct": 1,
+      "correctText": "Efficiency",
+      "explanation": "The correct answer is 'Efficiency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Security in IoT includes:",
+      "options": [
+        "Encryption",
+        "Authentication",
+        "Authorization",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Scalability ensures:",
+      "options": [
+        "Fixed size system",
+        "System growth capability",
+        "Limited devices",
+        "No updates"
+      ],
+      "correct": 1,
+      "correctText": "System growth capability",
+      "explanation": "The correct answer is 'System growth capability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Real-time IoT systems require:",
+      "options": [
+        "Slow processing",
+        "Fast data processing",
+        "No internet",
+        "Manual control"
+      ],
+      "correct": 1,
+      "correctText": "Fast data processing",
+      "explanation": "The correct answer is 'Fast data processing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "IoT in healthcare helps in:",
+      "options": [
+        "Remote diagnosis",
+        "Entertainment",
+        "Printing",
+        "Banking"
+      ],
+      "correct": 0,
+      "correctText": "Remote diagnosis",
+      "explanation": "The correct answer is 'Remote diagnosis'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart irrigation uses:",
+      "options": [
+        "Soil moisture sensor",
+        "Sound sensor",
+        "Gas sensor",
+        "Light only"
+      ],
+      "correct": 0,
+      "correctText": "Soil moisture sensor",
+      "explanation": "The correct answer is 'Soil moisture sensor'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Interoperability means:",
+      "options": [
+        "Devices work together",
+        "Devices isolated",
+        "No connectivity",
+        "Manual process"
+      ],
+      "correct": 0,
+      "correctText": "Devices work together",
+      "explanation": "The correct answer is 'Devices work together'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT devices generate:",
+      "options": [
+        "Paper",
+        "Large amounts of data",
+        "Noise",
+        "Electricity only"
+      ],
+      "correct": 1,
+      "correctText": "Large amounts of data",
+      "explanation": "The correct answer is 'Large amounts of data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Main goal of IoT is:",
+      "options": [
+        "Isolation",
+        "Smart connectivity and automation",
+        "Manual processing",
+        "Offline storage"
+      ],
+      "correct": 1,
+      "correctText": "Smart connectivity and automation",
+      "explanation": "The correct answer is 'Smart connectivity and automation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT mainly connects:",
+      "options": [
+        "People only",
+        "Devices only",
+        "Physical objects over Internet",
+        "Computers only"
+      ],
+      "correct": 2,
+      "correctText": "Physical objects over Internet",
+      "explanation": "The correct answer is 'Physical objects over Internet'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The main role of sensors in IoT is:",
+      "options": [
+        "Actuation",
+        "Data collection",
+        "Data deletion",
+        "Data encryption"
+      ],
+      "correct": 1,
+      "correctText": "Data collection",
+      "explanation": "The correct answer is 'Data collection'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Automation in IoT helps to:",
+      "options": [
+        "Increase manual errors",
+        "Reduce human effort",
+        "Stop monitoring",
+        "Disable connectivity"
+      ],
+      "correct": 1,
+      "correctText": "Reduce human effort",
+      "explanation": "The correct answer is 'Reduce human effort'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT systems must support:",
+      "options": [
+        "Interoperability",
+        "Isolation",
+        "Manual switching",
+        "Offline processing"
+      ],
+      "correct": 0,
+      "correctText": "Interoperability",
+      "explanation": "The correct answer is 'Interoperability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "CAN Bus is used for:",
+      "options": [
+        "Wireless TV",
+        "Industrial communication",
+        "Satellite TV",
+        "FM radio"
+      ],
+      "correct": 1,
+      "correctText": "Industrial communication",
+      "explanation": "The correct answer is 'Industrial communication'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart home devices communicate via:",
+      "options": [
+        "Internet",
+        "Fax",
+        "Telegraph",
+        "Walkie-talkie"
+      ],
+      "correct": 0,
+      "correctText": "Internet",
+      "explanation": "The correct answer is 'Internet'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT agriculture systems analyze:",
+      "options": [
+        "Weather and crop conditions",
+        "Cinema ratings",
+        "Stock exchange",
+        "Television signals"
+      ],
+      "correct": 0,
+      "correctText": "Weather and crop conditions",
+      "explanation": "The correct answer is 'Weather and crop conditions'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Remote monitoring is possible using:",
+      "options": [
+        "IoT healthcare systems",
+        "Typewriters",
+        "Analog phones",
+        "Radio sets"
+      ],
+      "correct": 0,
+      "correctText": "IoT healthcare systems",
+      "explanation": "The correct answer is 'IoT healthcare systems'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT transportation systems use:",
+      "options": [
+        "GPS",
+        "FM",
+        "CD player",
+        "Pager"
+      ],
+      "correct": 0,
+      "correctText": "GPS",
+      "explanation": "The correct answer is 'GPS'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "One key feature of IoT is:",
+      "options": [
+        "Real-time capability",
+        "Manual updates",
+        "Slow speed",
+        "Fixed size"
+      ],
+      "correct": 0,
+      "correctText": "Real-time capability",
+      "explanation": "The correct answer is 'Real-time capability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Ethernet operates at which layer?",
+      "options": [
+        "Application",
+        "Transport",
+        "Link layer",
+        "Session"
+      ],
+      "correct": 2,
+      "correctText": "Link layer",
+      "explanation": "The correct answer is 'Link layer'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "802.11 operates in:",
+      "options": [
+        "Wireless LAN",
+        "Satellite",
+        "Cable TV",
+        "Telephone"
+      ],
+      "correct": 0,
+      "correctText": "Wireless LAN",
+      "explanation": "The correct answer is 'Wireless LAN'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "802.15.4 supports:",
+      "options": [
+        "High bandwidth",
+        "Low power devices",
+        "Satellite link",
+        "5G"
+      ],
+      "correct": 1,
+      "correctText": "Low power devices",
+      "explanation": "The correct answer is 'Low power devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "4G data rate can reach up to:",
+      "options": [
+        "10 Mbps",
+        "100 Mbps",
+        "100 Mbps+",
+        "1 Kbps"
+      ],
+      "correct": 2,
+      "correctText": "100 Mbps+",
+      "explanation": "The correct answer is '100 Mbps+'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Network layer performs:",
+      "options": [
+        "Packet routing",
+        "File editing",
+        "Image processing",
+        "Hardware repair"
+      ],
+      "correct": 0,
+      "correctText": "Packet routing",
+      "explanation": "The correct answer is 'Packet routing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IPv6 supports:",
+      "options": [
+        "32-bit addressing",
+        "128-bit addressing",
+        "16-bit addressing",
+        "8-bit addressing"
+      ],
+      "correct": 1,
+      "correctText": "128-bit addressing",
+      "explanation": "The correct answer is '128-bit addressing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Transport layer ensures:",
+      "options": [
+        "End-to-end communication",
+        "Light intensity",
+        "Power supply",
+        "Screen display"
+      ],
+      "correct": 0,
+      "correctText": "End-to-end communication",
+      "explanation": "The correct answer is 'End-to-end communication'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "TCP provides:",
+      "options": [
+        "Unreliable transfer",
+        "Reliable transfer",
+        "No error control",
+        "No sequencing"
+      ],
+      "correct": 1,
+      "correctText": "Reliable transfer",
+      "explanation": "The correct answer is 'Reliable transfer'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "UDP does NOT provide:",
+      "options": [
+        "Guaranteed delivery",
+        "Speed",
+        "Low overhead",
+        "Fast transmission"
+      ],
+      "correct": 0,
+      "correctText": "Guaranteed delivery",
+      "explanation": "The correct answer is 'Guaranteed delivery'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "HTTP uses:",
+      "options": [
+        "Port 80",
+        "Port 22",
+        "Port 21",
+        "Port 25"
+      ],
+      "correct": 0,
+      "correctText": "Port 80",
+      "explanation": "The correct answer is 'Port 80'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "SSH uses port:",
+      "options": [
+        "80",
+        "22",
+        "21",
+        "110"
+      ],
+      "correct": 1,
+      "correctText": "22",
+      "explanation": "The correct answer is '22'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "MQTT stands for:",
+      "options": [
+        "Message Queue Telemetry Transport",
+        "Multi Queue Transfer Tool",
+        "Modern Query Transmission Tool",
+        "Message Quick Transport Technology"
+      ],
+      "correct": 0,
+      "correctText": "Message Queue Telemetry Transport",
+      "explanation": "The correct answer is 'Message Queue Telemetry Transport'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "CoAP is mainly used for:",
+      "options": [
+        "Constrained environments",
+        "Video streaming",
+        "High gaming",
+        "5G core"
+      ],
+      "correct": 0,
+      "correctText": "Constrained environments",
+      "explanation": "The correct answer is 'Constrained environments'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Publish-subscribe model includes:",
+      "options": [
+        "Publisher",
+        "Broker",
+        "Subscriber",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Push-pull model uses:",
+      "options": [
+        "Queue system",
+        "Email system",
+        "Paper system",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Queue system",
+      "explanation": "The correct answer is 'Queue system'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Exclusive pair model is:",
+      "options": [
+        "Half duplex",
+        "Full duplex",
+        "Offline",
+        "Broadcast"
+      ],
+      "correct": 1,
+      "correctText": "Full duplex",
+      "explanation": "The correct answer is 'Full duplex'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Data analytics in IoT helps in:",
+      "options": [
+        "Deriving insights",
+        "Deleting files",
+        "Printing data",
+        "Shutting down devices"
+      ],
+      "correct": 0,
+      "correctText": "Deriving insights",
+      "explanation": "The correct answer is 'Deriving insights'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Scalability means system should:",
+      "options": [
+        "Remain fixed",
+        "Grow with devices",
+        "Decrease devices",
+        "Stop updates"
+      ],
+      "correct": 1,
+      "correctText": "Grow with devices",
+      "explanation": "The correct answer is 'Grow with devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT systems require:",
+      "options": [
+        "Energy efficiency",
+        "High power consumption",
+        "No connectivity",
+        "No sensors"
+      ],
+      "correct": 0,
+      "correctText": "Energy efficiency",
+      "explanation": "The correct answer is 'Energy efficiency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "One disadvantage of IoT is:",
+      "options": [
+        "Improved monitoring",
+        "Overreliance on technology",
+        "Automation",
+        "Connectivity"
+      ],
+      "correct": 1,
+      "correctText": "Overreliance on technology",
+      "explanation": "The correct answer is 'Overreliance on technology'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Security vulnerabilities in IoT may cause:",
+      "options": [
+        "Data theft",
+        "Faster speed",
+        "Better monitoring",
+        "No risk"
+      ],
+      "correct": 0,
+      "correctText": "Data theft",
+      "explanation": "The correct answer is 'Data theft'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Operational complexity refers to:",
+      "options": [
+        "Easy backend",
+        "Complex backend processes",
+        "No coding",
+        "Manual system"
+      ],
+      "correct": 1,
+      "correctText": "Complex backend processes",
+      "explanation": "The correct answer is 'Complex backend processes'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT reduces employment mainly in:",
+      "options": [
+        "High skilled jobs",
+        "Low skilled repetitive jobs",
+        "Doctors",
+        "Engineers"
+      ],
+      "correct": 1,
+      "correctText": "Low skilled repetitive jobs",
+      "explanation": "The correct answer is 'Low skilled repetitive jobs'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT gateway connects:",
+      "options": [
+        "Devices and cloud",
+        "Printer and cable",
+        "Paper and file",
+        "CD and DVD"
+      ],
+      "correct": 0,
+      "correctText": "Devices and cloud",
+      "explanation": "The correct answer is 'Devices and cloud'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Device layer contains:",
+      "options": [
+        "Sensors and actuators",
+        "Servers only",
+        "Printers",
+        "Routers"
+      ],
+      "correct": 0,
+      "correctText": "Sensors and actuators",
+      "explanation": "The correct answer is 'Sensors and actuators'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Network layer ensures:",
+      "options": [
+        "Data transmission",
+        "Cooking",
+        "Printing",
+        "Gaming"
+      ],
+      "correct": 0,
+      "correctText": "Data transmission",
+      "explanation": "The correct answer is 'Data transmission'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Cloud platform provides:",
+      "options": [
+        "Storage",
+        "Processing",
+        "Device management",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Application layer provides:",
+      "options": [
+        "User interface",
+        "Wiring",
+        "Voltage",
+        "Temperature"
+      ],
+      "correct": 0,
+      "correctText": "User interface",
+      "explanation": "The correct answer is 'User interface'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Soil moisture sensors are used in:",
+      "options": [
+        "Smart farming",
+        "Gaming",
+        "Banking",
+        "Cinema"
+      ],
+      "correct": 0,
+      "correctText": "Smart farming",
+      "explanation": "The correct answer is 'Smart farming'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Gas sensors are used for:",
+      "options": [
+        "Air quality monitoring",
+        "Temperature only",
+        "Motion only",
+        "Light only"
+      ],
+      "correct": 0,
+      "correctText": "Air quality monitoring",
+      "explanation": "The correct answer is 'Air quality monitoring'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Humidity sensors measure:",
+      "options": [
+        "Water vapour in air",
+        "Heat",
+        "Light",
+        "Sound"
+      ],
+      "correct": 0,
+      "correctText": "Water vapour in air",
+      "explanation": "The correct answer is 'Water vapour in air'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Light sensors measure:",
+      "options": [
+        "Illumination",
+        "Gas",
+        "Pressure",
+        "Motion"
+      ],
+      "correct": 0,
+      "correctText": "Illumination",
+      "explanation": "The correct answer is 'Illumination'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Accelerometer is used in:",
+      "options": [
+        "Smartphones",
+        "Calculators",
+        "Radios",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Smartphones",
+      "explanation": "The correct answer is 'Smartphones'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Actuators in irrigation control:",
+      "options": [
+        "Water pumps",
+        "Television",
+        "Radio",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Water pumps",
+      "explanation": "The correct answer is 'Water pumps'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Solenoid works using:",
+      "options": [
+        "Electromagnetism",
+        "Gravity",
+        "Wind",
+        "Solar panel"
+      ],
+      "correct": 0,
+      "correctText": "Electromagnetism",
+      "explanation": "The correct answer is 'Electromagnetism'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Relay can control:",
+      "options": [
+        "High power AC circuits",
+        "Temperature",
+        "Gas",
+        "Light intensity"
+      ],
+      "correct": 0,
+      "correctText": "High power AC circuits",
+      "explanation": "The correct answer is 'High power AC circuits'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Edge computing helps reduce:",
+      "options": [
+        "Latency",
+        "Speed",
+        "Storage",
+        "Accuracy"
+      ],
+      "correct": 0,
+      "correctText": "Latency",
+      "explanation": "The correct answer is 'Latency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT analytics supports:",
+      "options": [
+        "Decision making",
+        "File deletion",
+        "Manual errors",
+        "Power cut"
+      ],
+      "correct": 0,
+      "correctText": "Decision making",
+      "explanation": "The correct answer is 'Decision making'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart healthcare devices monitor:",
+      "options": [
+        "Chronic conditions",
+        "Weather",
+        "Traffic",
+        "Agriculture"
+      ],
+      "correct": 0,
+      "correctText": "Chronic conditions",
+      "explanation": "The correct answer is 'Chronic conditions'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Main objective of IoT design is:",
+      "options": [
+        "Connectivity + Intelligence",
+        "Isolation",
+        "Manual work",
+        "Offline operation"
+      ],
+      "correct": 0,
+      "correctText": "Connectivity + Intelligence",
+      "explanation": "The correct answer is 'Connectivity + Intelligence'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The physical design of IoT includes:",
+      "options": [
+        "Devices and protocols",
+        "Only software",
+        "Only hardware",
+        "Only cloud"
+      ],
+      "correct": 0,
+      "correctText": "Devices and protocols",
+      "explanation": "The correct answer is 'Devices and protocols'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "Logical design of IoT includes:",
+      "options": [
+        "Functional blocks",
+        "Communication models",
+        "APIs",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.2"
+    },
+    {
+      "question": "IoT functional blocks include:",
+      "options": [
+        "Devices",
+        "Communication",
+        "Security",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Device functional block performs:",
+      "options": [
+        "Sensing and actuation",
+        "Routing",
+        "Printing",
+        "Gaming"
+      ],
+      "correct": 0,
+      "correctText": "Sensing and actuation",
+      "explanation": "The correct answer is 'Sensing and actuation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Security block provides:",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Data security",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Management block is responsible for:",
+      "options": [
+        "System control and configuration",
+        "Motion detection",
+        "Light sensing",
+        "Pressure control"
+      ],
+      "correct": 0,
+      "correctText": "System control and configuration",
+      "explanation": "The correct answer is 'System control and configuration'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Service block provides:",
+      "options": [
+        "Monitoring and control",
+        "Video editing",
+        "Gaming",
+        "Television"
+      ],
+      "correct": 0,
+      "correctText": "Monitoring and control",
+      "explanation": "The correct answer is 'Monitoring and control'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Communication block handles:",
+      "options": [
+        "Data exchange",
+        "Heating",
+        "Cooling",
+        "Storage only"
+      ],
+      "correct": 0,
+      "correctText": "Data exchange",
+      "explanation": "The correct answer is 'Data exchange'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Application block allows users to:",
+      "options": [
+        "Monitor system",
+        "Analyze data",
+        "Control devices",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Request-response model is:",
+      "options": [
+        "Stateless",
+        "Stateful",
+        "Offline",
+        "Broadcast"
+      ],
+      "correct": 0,
+      "correctText": "Stateless",
+      "explanation": "The correct answer is 'Stateless'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "In request-response model, client sends:",
+      "options": [
+        "Signal",
+        "Request",
+        "Packet",
+        "File"
+      ],
+      "correct": 1,
+      "correctText": "Request",
+      "explanation": "The correct answer is 'Request'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Publish-subscribe model separates:",
+      "options": [
+        "Publisher and subscriber",
+        "Sensor and actuator",
+        "User and device",
+        "Cloud and network"
+      ],
+      "correct": 0,
+      "correctText": "Publisher and subscriber",
+      "explanation": "The correct answer is 'Publisher and subscriber'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "In publish-subscribe model, broker manages:",
+      "options": [
+        "Topics",
+        "Hardware",
+        "Voltage",
+        "Electricity"
+      ],
+      "correct": 0,
+      "correctText": "Topics",
+      "explanation": "The correct answer is 'Topics'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Push-pull model uses:",
+      "options": [
+        "Queue",
+        "Router",
+        "Switch",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Queue",
+      "explanation": "The correct answer is 'Queue'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Exclusive pair model is also called:",
+      "options": [
+        "Persistent connection model",
+        "Stateless model",
+        "Offline model",
+        "Analog model"
+      ],
+      "correct": 0,
+      "correctText": "Persistent connection model",
+      "explanation": "The correct answer is 'Persistent connection model'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "REST APIs use:",
+      "options": [
+        "HTTP methods",
+        "Bluetooth",
+        "FM signals",
+        "Coaxial cable"
+      ],
+      "correct": 0,
+      "correctText": "HTTP methods",
+      "explanation": "The correct answer is 'HTTP methods'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "REST commonly uses:",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "WebSocket is suitable for:",
+      "options": [
+        "Real-time dashboards",
+        "Printing",
+        "Storage",
+        "Offline apps"
+      ],
+      "correct": 0,
+      "correctText": "Real-time dashboards",
+      "explanation": "The correct answer is 'Real-time dashboards'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "MQTT is designed for:",
+      "options": [
+        "High-power devices",
+        "Low-power devices",
+        "Gaming consoles",
+        "Television"
+      ],
+      "correct": 1,
+      "correctText": "Low-power devices",
+      "explanation": "The correct answer is 'Low-power devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "CoAP is similar to:",
+      "options": [
+        "FTP",
+        "HTTP",
+        "SMTP",
+        "SSH"
+      ],
+      "correct": 1,
+      "correctText": "HTTP",
+      "explanation": "The correct answer is 'HTTP'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "AMQP supports:",
+      "options": [
+        "Point-to-point messaging",
+        "Publish-subscribe",
+        "Routing",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "XMPP is based on:",
+      "options": [
+        "XML",
+        "JSON only",
+        "Binary code",
+        "Image format"
+      ],
+      "correct": 0,
+      "correctText": "XML",
+      "explanation": "The correct answer is 'XML'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Link layer protocols determine:",
+      "options": [
+        "Physical transmission method",
+        "Application logic",
+        "User interface",
+        "Cloud storage"
+      ],
+      "correct": 0,
+      "correctText": "Physical transmission method",
+      "explanation": "The correct answer is 'Physical transmission method'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "802.3 refers to:",
+      "options": [
+        "Ethernet",
+        "WiFi",
+        "Zigbee",
+        "LTE"
+      ],
+      "correct": 0,
+      "correctText": "Ethernet",
+      "explanation": "The correct answer is 'Ethernet'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "802.11 refers to:",
+      "options": [
+        "WiFi",
+        "Ethernet",
+        "Bluetooth",
+        "5G"
+      ],
+      "correct": 0,
+      "correctText": "WiFi",
+      "explanation": "The correct answer is 'WiFi'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "802.15.4 provides data rate up to:",
+      "options": [
+        "1 Mbps",
+        "250 Kbps",
+        "10 Mbps",
+        "1 Gbps"
+      ],
+      "correct": 1,
+      "correctText": "250 Kbps",
+      "explanation": "The correct answer is '250 Kbps'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "2G data rate starts from:",
+      "options": [
+        "9.6 Kbps",
+        "100 Mbps",
+        "1 Gbps",
+        "10 Mbps"
+      ],
+      "correct": 0,
+      "correctText": "9.6 Kbps",
+      "explanation": "The correct answer is '9.6 Kbps'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Network layer addressing uses:",
+      "options": [
+        "IP address",
+        "MAC only",
+        "Port only",
+        "Cable ID"
+      ],
+      "correct": 0,
+      "correctText": "IP address",
+      "explanation": "The correct answer is 'IP address'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "TCP ensures:",
+      "options": [
+        "Packet ordering",
+        "Error detection",
+        "Retransmission",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "UDP is suitable for:",
+      "options": [
+        "Streaming",
+        "Gaming",
+        "VoIP",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "HTTP is:",
+      "options": [
+        "Stateless protocol",
+        "Stateful protocol",
+        "Connectionless only",
+        "Hardware protocol"
+      ],
+      "correct": 0,
+      "correctText": "Stateless protocol",
+      "explanation": "The correct answer is 'Stateless protocol'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "CoAP runs on:",
+      "options": [
+        "TCP",
+        "UDP",
+        "Bluetooth",
+        "Cable"
+      ],
+      "correct": 1,
+      "correctText": "UDP",
+      "explanation": "The correct answer is 'UDP'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "MQTT architecture is:",
+      "options": [
+        "Client-broker",
+        "Client-only",
+        "Peer-to-peer only",
+        "Router-based"
+      ],
+      "correct": 0,
+      "correctText": "Client-broker",
+      "explanation": "The correct answer is 'Client-broker'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "DDS provides:",
+      "options": [
+        "QoS control",
+        "Gaming",
+        "Printing",
+        "Analog signaling"
+      ],
+      "correct": 0,
+      "correctText": "QoS control",
+      "explanation": "The correct answer is 'QoS control'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Data ingestion refers to:",
+      "options": [
+        "Receiving device data",
+        "Deleting files",
+        "Formatting disk",
+        "Repairing hardware"
+      ],
+      "correct": 0,
+      "correctText": "Receiving device data",
+      "explanation": "The correct answer is 'Receiving device data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Device management in cloud handles:",
+      "options": [
+        "Provisioning",
+        "Identity",
+        "Remote management",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Edge functions manage:",
+      "options": [
+        "Traffic aggregation",
+        "File printing",
+        "Voltage",
+        "Audio"
+      ],
+      "correct": 0,
+      "correctText": "Traffic aggregation",
+      "explanation": "The correct answer is 'Traffic aggregation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Core transport functions ensure:",
+      "options": [
+        "High capacity routing",
+        "Manual switching",
+        "Heating",
+        "Lighting"
+      ],
+      "correct": 0,
+      "correctText": "High capacity routing",
+      "explanation": "The correct answer is 'High capacity routing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Gateway functions provide:",
+      "options": [
+        "Interoperability",
+        "Motion",
+        "Gas detection",
+        "Light"
+      ],
+      "correct": 0,
+      "correctText": "Interoperability",
+      "explanation": "The correct answer is 'Interoperability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "NACF handles:",
+      "options": [
+        "User authentication",
+        "File storage",
+        "Sensor design",
+        "Video editing"
+      ],
+      "correct": 0,
+      "correctText": "User authentication",
+      "explanation": "The correct answer is 'User authentication'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "RACF manages:",
+      "options": [
+        "Resource allocation",
+        "Light intensity",
+        "Temperature",
+        "Sound"
+      ],
+      "correct": 0,
+      "correctText": "Resource allocation",
+      "explanation": "The correct answer is 'Resource allocation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT scalability allows:",
+      "options": [
+        "Addition of devices",
+        "Removal of internet",
+        "Stop updates",
+        "Disable sensors"
+      ],
+      "correct": 0,
+      "correctText": "Addition of devices",
+      "explanation": "The correct answer is 'Addition of devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart irrigation example shows:",
+      "options": [
+        "Sensing + actuation",
+        "Only sensing",
+        "Only storage",
+        "Only cloud"
+      ],
+      "correct": 0,
+      "correctText": "Sensing + actuation",
+      "explanation": "The correct answer is 'Sensing + actuation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT analytics converts data into:",
+      "options": [
+        "Insights",
+        "Paper",
+        "Noise",
+        "Errors"
+      ],
+      "correct": 0,
+      "correctText": "Insights",
+      "explanation": "The correct answer is 'Insights'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Real-time IoT systems require:",
+      "options": [
+        "Low latency",
+        "High delay",
+        "No internet",
+        "Manual control"
+      ],
+      "correct": 0,
+      "correctText": "Low latency",
+      "explanation": "The correct answer is 'Low latency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Interoperability problem occurs due to:",
+      "options": [
+        "Different manufacturers",
+        "Too much power",
+        "Excess storage",
+        "Too much speed"
+      ],
+      "correct": 0,
+      "correctText": "Different manufacturers",
+      "explanation": "The correct answer is 'Different manufacturers'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Energy-efficient IoT devices help in:",
+      "options": [
+        "Longer battery life",
+        "High power use",
+        "Short life",
+        "More heat"
+      ],
+      "correct": 0,
+      "correctText": "Longer battery life",
+      "explanation": "The correct answer is 'Longer battery life'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Cloud-based IoT architecture has:",
+      "options": [
+        "Device layer",
+        "Network layer",
+        "Cloud layer",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "IoT mainly connects digital world with:",
+      "options": [
+        "Physical world",
+        "Cinema",
+        "Music",
+        "Books"
+      ],
+      "correct": 0,
+      "correctText": "Physical world",
+      "explanation": "The correct answer is 'Physical world'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The ultimate aim of IoT systems is:",
+      "options": [
+        "Intelligent automation",
+        "Manual processing",
+        "Isolation",
+        "No connectivity"
+      ],
+      "correct": 0,
+      "correctText": "Intelligent automation",
+      "explanation": "The correct answer is 'Intelligent automation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT enables communication between:",
+      "options": [
+        "Human to human only",
+        "Machine to machine",
+        "Paper to printer",
+        "TV to radio"
+      ],
+      "correct": 1,
+      "correctText": "Machine to machine",
+      "explanation": "The correct answer is 'Machine to machine'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart city applications include:",
+      "options": [
+        "Traffic monitoring",
+        "Waste management",
+        "Smart lighting",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "In IoT architecture, the first layer is:",
+      "options": [
+        "Cloud layer",
+        "Device layer",
+        "Application layer",
+        "Network layer"
+      ],
+      "correct": 1,
+      "correctText": "Device layer",
+      "explanation": "The correct answer is 'Device layer'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT data analytics helps in:",
+      "options": [
+        "Predictive analysis",
+        "Manual logging",
+        "Deleting files",
+        "Formatting"
+      ],
+      "correct": 0,
+      "correctText": "Predictive analysis",
+      "explanation": "The correct answer is 'Predictive analysis'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Low latency is important in:",
+      "options": [
+        "Real-time systems",
+        "Offline systems",
+        "Manual systems",
+        "Paper systems"
+      ],
+      "correct": 0,
+      "correctText": "Real-time systems",
+      "explanation": "The correct answer is 'Real-time systems'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "IoT devices require:",
+      "options": [
+        "Unique identification",
+        "Common name",
+        "No address",
+        "Paper code"
+      ],
+      "correct": 0,
+      "correctText": "Unique identification",
+      "explanation": "The correct answer is 'Unique identification'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "A MAC address is used at:",
+      "options": [
+        "Application layer",
+        "Network layer",
+        "Link layer",
+        "Cloud layer"
+      ],
+      "correct": 2,
+      "correctText": "Link layer",
+      "explanation": "The correct answer is 'Link layer'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IP address is used at:",
+      "options": [
+        "Physical layer",
+        "Network layer",
+        "Session layer",
+        "Presentation layer"
+      ],
+      "correct": 1,
+      "correctText": "Network layer",
+      "explanation": "The correct answer is 'Network layer'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT gateways perform protocol:",
+      "options": [
+        "Translation",
+        "Deletion",
+        "Printing",
+        "Heating"
+      ],
+      "correct": 0,
+      "correctText": "Translation",
+      "explanation": "The correct answer is 'Translation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Fog computing is used to:",
+      "options": [
+        "Increase latency",
+        "Reduce latency",
+        "Remove internet",
+        "Disable devices"
+      ],
+      "correct": 1,
+      "correctText": "Reduce latency",
+      "explanation": "The correct answer is 'Reduce latency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT applications generate:",
+      "options": [
+        "Structured data only",
+        "Unstructured data only",
+        "Large variety of data",
+        "No data"
+      ],
+      "correct": 2,
+      "correctText": "Large variety of data",
+      "explanation": "The correct answer is 'Large variety of data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Cloud analytics provides:",
+      "options": [
+        "Data visualization",
+        "Data processing",
+        "Data storage",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "IoT security must protect:",
+      "options": [
+        "Data confidentiality",
+        "Data integrity",
+        "Data availability",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Encryption ensures:",
+      "options": [
+        "Data secrecy",
+        "Faster speed",
+        "More storage",
+        "Low power"
+      ],
+      "correct": 0,
+      "correctText": "Data secrecy",
+      "explanation": "The correct answer is 'Data secrecy'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Authentication verifies:",
+      "options": [
+        "Device identity",
+        "Voltage",
+        "Temperature",
+        "Pressure"
+      ],
+      "correct": 0,
+      "correctText": "Device identity",
+      "explanation": "The correct answer is 'Device identity'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Authorization determines:",
+      "options": [
+        "Who can access resources",
+        "Power supply",
+        "Sensor type",
+        "Cable type"
+      ],
+      "correct": 0,
+      "correctText": "Who can access resources",
+      "explanation": "The correct answer is 'Who can access resources'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT scalability means:",
+      "options": [
+        "Fixed device count",
+        "Expandable network",
+        "No updates",
+        "Low power"
+      ],
+      "correct": 1,
+      "correctText": "Expandable network",
+      "explanation": "The correct answer is 'Expandable network'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Sensor calibration improves:",
+      "options": [
+        "Accuracy",
+        "Speed",
+        "Storage",
+        "Memory"
+      ],
+      "correct": 0,
+      "correctText": "Accuracy",
+      "explanation": "The correct answer is 'Accuracy'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "Edge devices process data:",
+      "options": [
+        "Near data source",
+        "Only in cloud",
+        "In server room",
+        "Offline"
+      ],
+      "correct": 0,
+      "correctText": "Near data source",
+      "explanation": "The correct answer is 'Near data source'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "MQTT topics are used for:",
+      "options": [
+        "Data categorization",
+        "Cable management",
+        "Voltage control",
+        "Screen display"
+      ],
+      "correct": 0,
+      "correctText": "Data categorization",
+      "explanation": "The correct answer is 'Data categorization'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT in smart grid helps in:",
+      "options": [
+        "Power monitoring",
+        "Manual billing",
+        "Paper records",
+        "Offline payment"
+      ],
+      "correct": 0,
+      "correctText": "Power monitoring",
+      "explanation": "The correct answer is 'Power monitoring'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT wearable devices monitor:",
+      "options": [
+        "Health parameters",
+        "Movies",
+        "Music",
+        "Games"
+      ],
+      "correct": 0,
+      "correctText": "Health parameters",
+      "explanation": "The correct answer is 'Health parameters'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart parking systems use:",
+      "options": [
+        "Sensors",
+        "Routers",
+        "TV",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Sensors",
+      "explanation": "The correct answer is 'Sensors'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT devices must support:",
+      "options": [
+        "Interoperability",
+        "Isolation",
+        "Offline work",
+        "Paper process"
+      ],
+      "correct": 0,
+      "correctText": "Interoperability",
+      "explanation": "The correct answer is 'Interoperability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Big Data is related to IoT because:",
+      "options": [
+        "IoT generates huge data",
+        "IoT deletes data",
+        "IoT blocks data",
+        "IoT stores paper"
+      ],
+      "correct": 0,
+      "correctText": "IoT generates huge data",
+      "explanation": "The correct answer is 'IoT generates huge data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Data visualization tools help in:",
+      "options": [
+        "Graphical representation",
+        "Deletion",
+        "Formatting",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Graphical representation",
+      "explanation": "The correct answer is 'Graphical representation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT device firmware is:",
+      "options": [
+        "Embedded software",
+        "Printer driver",
+        "Game file",
+        "Music file"
+      ],
+      "correct": 0,
+      "correctText": "Embedded software",
+      "explanation": "The correct answer is 'Embedded software'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Remote firmware update improves:",
+      "options": [
+        "Device functionality",
+        "Data loss",
+        "Speed reduction",
+        "Power loss"
+      ],
+      "correct": 0,
+      "correctText": "Device functionality",
+      "explanation": "The correct answer is 'Device functionality'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT testing ensures:",
+      "options": [
+        "Reliability",
+        "Performance",
+        "Security",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart meters are used for:",
+      "options": [
+        "Energy measurement",
+        "Light only",
+        "Motion only",
+        "Gas only"
+      ],
+      "correct": 0,
+      "correctText": "Energy measurement",
+      "explanation": "The correct answer is 'Energy measurement'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Zigbee is suitable for:",
+      "options": [
+        "Short-range communication",
+        "Long-range satellite",
+        "Fiber optic",
+        "Television"
+      ],
+      "correct": 0,
+      "correctText": "Short-range communication",
+      "explanation": "The correct answer is 'Short-range communication'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Bluetooth Low Energy is used for:",
+      "options": [
+        "Wearables",
+        "Satellite",
+        "Fiber",
+        "Landline"
+      ],
+      "correct": 0,
+      "correctText": "Wearables",
+      "explanation": "The correct answer is 'Wearables'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "LPWAN stands for:",
+      "options": [
+        "Low Power Wide Area Network",
+        "Large Power Wireless Access Network",
+        "Low Protocol WAN",
+        "Long Packet WAN"
+      ],
+      "correct": 0,
+      "correctText": "Low Power Wide Area Network",
+      "explanation": "The correct answer is 'Low Power Wide Area Network'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "LoRaWAN is used for:",
+      "options": [
+        "Long range IoT communication",
+        "Television",
+        "FM radio",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Long range IoT communication",
+      "explanation": "The correct answer is 'Long range IoT communication'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT architecture must ensure:",
+      "options": [
+        "Reliability",
+        "Scalability",
+        "Security",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart healthcare IoT reduces:",
+      "options": [
+        "Hospital visits",
+        "Connectivity",
+        "Storage",
+        "Accuracy"
+      ],
+      "correct": 0,
+      "correctText": "Hospital visits",
+      "explanation": "The correct answer is 'Hospital visits'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT automation improves:",
+      "options": [
+        "Efficiency",
+        "Errors",
+        "Delay",
+        "Manual work"
+      ],
+      "correct": 0,
+      "correctText": "Efficiency",
+      "explanation": "The correct answer is 'Efficiency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT device provisioning means:",
+      "options": [
+        "Configuring devices",
+        "Deleting files",
+        "Printing",
+        "Gaming"
+      ],
+      "correct": 0,
+      "correctText": "Configuring devices",
+      "explanation": "The correct answer is 'Configuring devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Data aggregation combines:",
+      "options": [
+        "Multiple data sources",
+        "Files",
+        "Screens",
+        "Cables"
+      ],
+      "correct": 0,
+      "correctText": "Multiple data sources",
+      "explanation": "The correct answer is 'Multiple data sources'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT systems are part of:",
+      "options": [
+        "Cyber-Physical Systems",
+        "Only software",
+        "Only hardware",
+        "Only networking"
+      ],
+      "correct": 0,
+      "correctText": "Cyber-Physical Systems",
+      "explanation": "The correct answer is 'Cyber-Physical Systems'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Quality of Service (QoS) ensures:",
+      "options": [
+        "Performance guarantee",
+        "Slow speed",
+        "Data loss",
+        "Cable damage"
+      ],
+      "correct": 0,
+      "correctText": "Performance guarantee",
+      "explanation": "The correct answer is 'Performance guarantee'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Device authentication prevents:",
+      "options": [
+        "Unauthorized access",
+        "Speed increase",
+        "More storage",
+        "Extra voltage"
+      ],
+      "correct": 0,
+      "correctText": "Unauthorized access",
+      "explanation": "The correct answer is 'Unauthorized access'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Cloud dashboard displays:",
+      "options": [
+        "Real-time data",
+        "Hardware",
+        "Cable",
+        "Electricity"
+      ],
+      "correct": 0,
+      "correctText": "Real-time data",
+      "explanation": "The correct answer is 'Real-time data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "IoT data lifecycle includes:",
+      "options": [
+        "Collection",
+        "Storage",
+        "Processing",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT device battery life depends on:",
+      "options": [
+        "Power efficiency",
+        "Cable length",
+        "Printer speed",
+        "Screen size"
+      ],
+      "correct": 0,
+      "correctText": "Power efficiency",
+      "explanation": "The correct answer is 'Power efficiency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT networks must handle:",
+      "options": [
+        "Device heterogeneity",
+        "Single device",
+        "No device",
+        "Only PC"
+      ],
+      "correct": 0,
+      "correctText": "Device heterogeneity",
+      "explanation": "The correct answer is 'Device heterogeneity'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Interoperability standards ensure:",
+      "options": [
+        "Cross-platform compatibility",
+        "Isolation",
+        "Manual control",
+        "Paper communication"
+      ],
+      "correct": 0,
+      "correctText": "Cross-platform compatibility",
+      "explanation": "The correct answer is 'Cross-platform compatibility'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Predictive maintenance uses:",
+      "options": [
+        "Sensor data analysis",
+        "Printing",
+        "Formatting",
+        "Offline systems"
+      ],
+      "correct": 0,
+      "correctText": "Sensor data analysis",
+      "explanation": "The correct answer is 'Sensor data analysis'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT data storage commonly uses:",
+      "options": [
+        "Cloud databases",
+        "Paper files",
+        "Fax",
+        "TV"
+      ],
+      "correct": 0,
+      "correctText": "Cloud databases",
+      "explanation": "The correct answer is 'Cloud databases'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "The core benefit of IoT is:",
+      "options": [
+        "Smart decision making",
+        "Manual work",
+        "Isolation",
+        "Offline processing"
+      ],
+      "correct": 0,
+      "correctText": "Smart decision making",
+      "explanation": "The correct answer is 'Smart decision making'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT integrates the physical world with:",
+      "options": [
+        "Digital systems",
+        "Paper systems",
+        "Analog radio",
+        "Manual tools"
+      ],
+      "correct": 0,
+      "correctText": "Digital systems",
+      "explanation": "The correct answer is 'Digital systems'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart lighting systems use:",
+      "options": [
+        "Motion sensors",
+        "Typewriters",
+        "CDs",
+        "Printers"
+      ],
+      "correct": 0,
+      "correctText": "Motion sensors",
+      "explanation": "The correct answer is 'Motion sensors'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT systems rely heavily on:",
+      "options": [
+        "Data collection",
+        "Manual recording",
+        "Paper filing",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Data collection",
+      "explanation": "The correct answer is 'Data collection'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Low power consumption is important for:",
+      "options": [
+        "Battery-operated IoT devices",
+        "Desktop PCs",
+        "Servers only",
+        "Printers"
+      ],
+      "correct": 0,
+      "correctText": "Battery-operated IoT devices",
+      "explanation": "The correct answer is 'Battery-operated IoT devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT systems generate value by:",
+      "options": [
+        "Data analysis",
+        "Data deletion",
+        "Formatting",
+        "Printing"
+      ],
+      "correct": 0,
+      "correctText": "Data analysis",
+      "explanation": "The correct answer is 'Data analysis'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Device heterogeneity means:",
+      "options": [
+        "Same type devices",
+        "Different types of devices",
+        "No devices",
+        "Only sensors"
+      ],
+      "correct": 1,
+      "correctText": "Different types of devices",
+      "explanation": "The correct answer is 'Different types of devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Data transmission delay is called:",
+      "options": [
+        "Bandwidth",
+        "Latency",
+        "Throughput",
+        "Voltage"
+      ],
+      "correct": 1,
+      "correctText": "Latency",
+      "explanation": "The correct answer is 'Latency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT network reliability ensures:",
+      "options": [
+        "Continuous service",
+        "Frequent breakdown",
+        "Manual repair",
+        "Offline mode"
+      ],
+      "correct": 0,
+      "correctText": "Continuous service",
+      "explanation": "The correct answer is 'Continuous service'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Data compression in IoT helps:",
+      "options": [
+        "Reduce bandwidth usage",
+        "Increase errors",
+        "Slow speed",
+        "Increase latency"
+      ],
+      "correct": 0,
+      "correctText": "Reduce bandwidth usage",
+      "explanation": "The correct answer is 'Reduce bandwidth usage'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT firmware updates improve:",
+      "options": [
+        "Security",
+        "Functionality",
+        "Performance",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Edge analytics processes data:",
+      "options": [
+        "At cloud only",
+        "Near source",
+        "In printer",
+        "In cable"
+      ],
+      "correct": 1,
+      "correctText": "Near source",
+      "explanation": "The correct answer is 'Near source'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT dashboards are used for:",
+      "options": [
+        "Monitoring",
+        "Data visualization",
+        "Control",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT automation reduces:",
+      "options": [
+        "Operational cost",
+        "Electricity",
+        "Sensors",
+        "Network"
+      ],
+      "correct": 0,
+      "correctText": "Operational cost",
+      "explanation": "The correct answer is 'Operational cost'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart meters send data to:",
+      "options": [
+        "Utility provider",
+        "Radio station",
+        "Printer",
+        "TV"
+      ],
+      "correct": 0,
+      "correctText": "Utility provider",
+      "explanation": "The correct answer is 'Utility provider'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT enhances productivity by:",
+      "options": [
+        "Real-time insights",
+        "Manual logging",
+        "Offline systems",
+        "Paper tracking"
+      ],
+      "correct": 0,
+      "correctText": "Real-time insights",
+      "explanation": "The correct answer is 'Real-time insights'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Data privacy laws affect:",
+      "options": [
+        "IoT deployment",
+        "Cable type",
+        "Printer ink",
+        "TV signals"
+      ],
+      "correct": 0,
+      "correctText": "IoT deployment",
+      "explanation": "The correct answer is 'IoT deployment'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "An IoT actuator responds to:",
+      "options": [
+        "Control signal",
+        "Voltage spike only",
+        "Printer command",
+        "Cable signal"
+      ],
+      "correct": 0,
+      "correctText": "Control signal",
+      "explanation": "The correct answer is 'Control signal'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.3"
+    },
+    {
+      "question": "IoT scalability requires:",
+      "options": [
+        "Flexible architecture",
+        "Fixed system",
+        "No expansion",
+        "Manual scaling"
+      ],
+      "correct": 0,
+      "correctText": "Flexible architecture",
+      "explanation": "The correct answer is 'Flexible architecture'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Secure IoT communication uses:",
+      "options": [
+        "Encryption protocols",
+        "Paper logs",
+        "Offline systems",
+        "Manual approval"
+      ],
+      "correct": 0,
+      "correctText": "Encryption protocols",
+      "explanation": "The correct answer is 'Encryption protocols'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "IoT smart locks use:",
+      "options": [
+        "Sensors and internet",
+        "Printer",
+        "Typewriter",
+        "Radio"
+      ],
+      "correct": 0,
+      "correctText": "Sensors and internet",
+      "explanation": "The correct answer is 'Sensors and internet'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Industrial IoT improves:",
+      "options": [
+        "Process efficiency",
+        "Manual work",
+        "Paper tracking",
+        "Delay"
+      ],
+      "correct": 0,
+      "correctText": "Process efficiency",
+      "explanation": "The correct answer is 'Process efficiency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT predictive analytics helps:",
+      "options": [
+        "Anticipate failures",
+        "Increase downtime",
+        "Delete data",
+        "Reduce connectivity"
+      ],
+      "correct": 0,
+      "correctText": "Anticipate failures",
+      "explanation": "The correct answer is 'Anticipate failures'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT requires robust:",
+      "options": [
+        "Network infrastructure",
+        "Paper",
+        "Manual system",
+        "Radio"
+      ],
+      "correct": 0,
+      "correctText": "Network infrastructure",
+      "explanation": "The correct answer is 'Network infrastructure'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT interoperability ensures:",
+      "options": [
+        "Devices communicate seamlessly",
+        "Devices isolated",
+        "No integration",
+        "Manual data entry"
+      ],
+      "correct": 0,
+      "correctText": "Devices communicate seamlessly",
+      "explanation": "The correct answer is 'Devices communicate seamlessly'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Real-time IoT systems must handle:",
+      "options": [
+        "Continuous data streams",
+        "Paper files",
+        "Fax",
+        "Typewriter"
+      ],
+      "correct": 0,
+      "correctText": "Continuous data streams",
+      "explanation": "The correct answer is 'Continuous data streams'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "Cloud-based IoT allows:",
+      "options": [
+        "Remote access",
+        "Offline only",
+        "Manual storage",
+        "No monitoring"
+      ],
+      "correct": 0,
+      "correctText": "Remote access",
+      "explanation": "The correct answer is 'Remote access'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "IoT remote monitoring improves:",
+      "options": [
+        "Service quality",
+        "Errors",
+        "Downtime",
+        "Isolation"
+      ],
+      "correct": 0,
+      "correctText": "Service quality",
+      "explanation": "The correct answer is 'Service quality'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT smart farming reduces:",
+      "options": [
+        "Water waste",
+        "Productivity",
+        "Monitoring",
+        "Efficiency"
+      ],
+      "correct": 0,
+      "correctText": "Water waste",
+      "explanation": "The correct answer is 'Water waste'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Data filtering helps:",
+      "options": [
+        "Remove unnecessary data",
+        "Increase noise",
+        "Increase storage",
+        "Increase errors"
+      ],
+      "correct": 0,
+      "correctText": "Remove unnecessary data",
+      "explanation": "The correct answer is 'Remove unnecessary data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT deployment challenges include:",
+      "options": [
+        "Security issues",
+        "High cost",
+        "Integration complexity",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT enhances smart cities by:",
+      "options": [
+        "Intelligent traffic control",
+        "Manual signals",
+        "Paper tickets",
+        "Radio"
+      ],
+      "correct": 0,
+      "correctText": "Intelligent traffic control",
+      "explanation": "The correct answer is 'Intelligent traffic control'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "IoT device lifecycle includes:",
+      "options": [
+        "Deployment",
+        "Maintenance",
+        "Decommissioning",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart irrigation systems use:",
+      "options": [
+        "Soil sensors",
+        "TV",
+        "Printer",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Soil sensors",
+      "explanation": "The correct answer is 'Soil sensors'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT wearables communicate using:",
+      "options": [
+        "Bluetooth",
+        "Fax",
+        "Telegraph",
+        "Analog radio"
+      ],
+      "correct": 0,
+      "correctText": "Bluetooth",
+      "explanation": "The correct answer is 'Bluetooth'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT cloud platforms provide:",
+      "options": [
+        "Analytics tools",
+        "Storage",
+        "Device management",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "Data encryption prevents:",
+      "options": [
+        "Unauthorized access",
+        "Fast speed",
+        "Manual work",
+        "Storage increase"
+      ],
+      "correct": 0,
+      "correctText": "Unauthorized access",
+      "explanation": "The correct answer is 'Unauthorized access'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT edge computing reduces:",
+      "options": [
+        "Bandwidth usage",
+        "Efficiency",
+        "Security",
+        "Connectivity"
+      ],
+      "correct": 0,
+      "correctText": "Bandwidth usage",
+      "explanation": "The correct answer is 'Bandwidth usage'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT security must defend against:",
+      "options": [
+        "Cyber attacks",
+        "Light",
+        "Heat",
+        "Gas"
+      ],
+      "correct": 0,
+      "correctText": "Cyber attacks",
+      "explanation": "The correct answer is 'Cyber attacks'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT big data requires:",
+      "options": [
+        "Analytics tools",
+        "Paper storage",
+        "Typewriter",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Analytics tools",
+      "explanation": "The correct answer is 'Analytics tools'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Smart energy systems monitor:",
+      "options": [
+        "Electricity consumption",
+        "Water only",
+        "Gas only",
+        "Paper usage"
+      ],
+      "correct": 0,
+      "correctText": "Electricity consumption",
+      "explanation": "The correct answer is 'Electricity consumption'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT communication protocols ensure:",
+      "options": [
+        "Standardized data exchange",
+        "Isolation",
+        "Manual work",
+        "Offline processing"
+      ],
+      "correct": 0,
+      "correctText": "Standardized data exchange",
+      "explanation": "The correct answer is 'Standardized data exchange'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "IoT-enabled smart grids improve:",
+      "options": [
+        "Energy distribution",
+        "Manual control",
+        "Paper billing",
+        "Delay"
+      ],
+      "correct": 0,
+      "correctText": "Energy distribution",
+      "explanation": "The correct answer is 'Energy distribution'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT performance metrics include:",
+      "options": [
+        "Latency",
+        "Throughput",
+        "Reliability",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "Device provisioning includes:",
+      "options": [
+        "Initial configuration",
+        "Manual wiring",
+        "Deleting files",
+        "Printing"
+      ],
+      "correct": 0,
+      "correctText": "Initial configuration",
+      "explanation": "The correct answer is 'Initial configuration'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT cloud computing supports:",
+      "options": [
+        "Scalability",
+        "Flexibility",
+        "Resource optimization",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.5"
+    },
+    {
+      "question": "IoT automation improves:",
+      "options": [
+        "Accuracy",
+        "Consistency",
+        "Efficiency",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT data storage commonly uses:",
+      "options": [
+        "Databases",
+        "Paper",
+        "Radio",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Databases",
+      "explanation": "The correct answer is 'Databases'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT integration requires:",
+      "options": [
+        "Standard protocols",
+        "Isolation",
+        "No network",
+        "Manual entry"
+      ],
+      "correct": 0,
+      "correctText": "Standard protocols",
+      "explanation": "The correct answer is 'Standard protocols'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    },
+    {
+      "question": "IoT real-time alerts help in:",
+      "options": [
+        "Immediate action",
+        "Delay",
+        "Isolation",
+        "Offline storage"
+      ],
+      "correct": 0,
+      "correctText": "Immediate action",
+      "explanation": "The correct answer is 'Immediate action'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.4"
+    },
+    {
+      "question": "The ultimate goal of IoT systems is:",
+      "options": [
+        "Intelligent automation and decision making",
+        "Manual processes",
+        "Paper systems",
+        "Offline mode"
+      ],
+      "correct": 0,
+      "correctText": "Intelligent automation and decision making",
+      "explanation": "The correct answer is 'Intelligent automation and decision making'. This follows the standard concepts covered in this unit.",
+      "subtopic": "2.1"
+    }
+  ]
+}

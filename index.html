@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ETI MCQ Challenge | V2V EdTech</title>
+  <meta name="description" content="Interactive MCQ practice for ETI (CO/IT) 316313 — AI, IoT, Blockchain, Immersive Tech & Cybersecurity" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+
+  <!-- Ambient background orbs -->
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+
+  <!-- ═══ SCREEN: HOME ═══ -->
+  <div id="screen-home" class="screen active">
+    <div class="home-wrap">
+      <header class="home-header">
+        <div class="home-badge">V2V EdTech LLP · ETI (316313)</div>
+        <h1>ETI MCQ <span class="gradient-text">Challenge</span></h1>
+        <p class="home-sub">Pick a unit, test your knowledge, understand why every answer is correct.</p>
+      </header>
+      <div class="units-grid" id="units-grid"></div>
+      <footer class="home-footer">CO/IT · 316313 · 1,055 Questions Across 5 Units</footer>
+    </div>
+  </div>
+
+  <!-- ═══ SCREEN: SETUP MODAL ═══ -->
+  <div id="screen-setup" class="screen">
+    <div class="modal-overlay" onclick="showHome()">
+      <div class="modal-card" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="showHome()">✕</button>
+        <div class="modal-unit-icon" id="modal-icon"></div>
+        <h2 class="modal-unit-name" id="modal-unit-name"></h2>
+        <p class="modal-unit-count" id="modal-unit-count"></p>
+        <div class="name-section">
+          <p class="count-label">Your Name</p>
+          <input type="text" id="player-name" class="name-input" placeholder="Enter your name..." maxlength="20" />
+        </div>
+        <div class="count-section">
+          <p class="count-label">How many questions?</p>
+          <div class="count-options" id="count-btns">
+            <button class="count-btn active" data-count="10">10</button>
+            <button class="count-btn" data-count="20">20</button>
+            <button class="count-btn" data-count="30">30</button>
+            <button class="count-btn" data-count="70">70</button>
+            <button class="count-btn" data-count="all">All</button>
+          </div>
+        </div>
+        <div id="subtopic-select" style="margin-bottom:20px"></div>
+        <button class="btn-primary" id="start-btn" onclick="startQuiz()">
+          <span>Start Quiz</span><span class="btn-arrow">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SCREEN: LOADING ═══ -->
+  <div id="screen-loading" class="screen">
+    <div class="loading-wrap">
+      <div class="spinner"></div>
+      <p class="loading-text">Loading questions…</p>
+    </div>
+  </div>
+
+  <!-- ═══ SCREEN: QUIZ ═══ -->
+  <div id="screen-quiz" class="screen">
+    <div class="quiz-top-bar">
+      <div class="quiz-left">
+        <button class="quiz-menu-btn" id="quiz-menu-btn" onclick="toggleQuizMenu()">
+          <span></span><span></span><span></span>
+        </button>
+        <span class="quiz-unit-badge" id="quiz-unit-badge"></span>
+        <span class="quiz-qnum" id="quiz-qnum">Q 1 / 10</span>
+      </div>
+      <div class="quiz-score-wrap">
+        <span class="qs-label">Score</span>
+        <span class="qs-value" id="score-display">0</span>
+      </div>
+    </div>
+    <div class="quiz-dropdown" id="quiz-dropdown">
+      <button class="quiz-dropdown-item" onclick="goHome()">
+        <span>🏠</span> Home
+      </button>
+      <button class="quiz-dropdown-item" onclick="restartQuiz()">
+        <span>🔄</span> Restart Quiz
+      </button>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+
+    <div class="quiz-body">
+      <div class="question-card" id="question-card">
+        <div class="qcard-num" id="qcard-num">01</div>
+        <p class="qcard-text" id="qcard-text"></p>
+      </div>
+
+      <div class="options-grid" id="options-grid"></div>
+
+      <div class="explanation-card" id="explanation-card">
+        <div class="expl-icon">💡</div>
+        <div class="expl-body">
+          <h4>Why this answer?</h4>
+          <p id="expl-text"></p>
+        </div>
+      </div>
+
+      <button class="btn-next" id="next-btn">Next Question <span>→</span></button>
+    </div>
+  </div>
+
+  <!-- ═══ SCREEN: RESULTS ═══ -->
+  <div id="screen-results" class="screen">
+    <div class="results-wrap">
+      <div class="results-top">
+        <div class="results-emoji" id="results-emoji">🎉</div>
+        <h2 class="results-title" id="results-title">Quiz Complete!</h2>
+        <p class="results-unit" id="results-unit"></p>
+      </div>
+      <div class="ring-wrap">
+        <svg class="score-ring" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#a78bfa"/>
+              <stop offset="100%" stop-color="#60a5fa"/>
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="8"/>
+          <circle cx="60" cy="60" r="50" fill="none" stroke="url(#ringGrad)" stroke-width="8"
+            stroke-linecap="round" stroke-dasharray="314.16" stroke-dashoffset="314.16"
+            id="ring-circle" transform="rotate(-90 60 60)"/>
+        </svg>
+        <div class="ring-inner">
+          <span class="ring-score" id="ring-score">0</span>
+          <span class="ring-total" id="ring-total">/10</span>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-card"><span class="stat-val" id="stat-pct">0%</span><span class="stat-lbl">Accuracy</span></div>
+        <div class="stat-card"><span class="stat-val correct-col" id="stat-correct">0</span><span class="stat-lbl">Correct</span></div>
+        <div class="stat-card"><span class="stat-val wrong-col" id="stat-wrong">0</span><span class="stat-lbl">Wrong</span></div>
+      </div>
+      <div class="grade-badge" id="grade-badge">A+</div>
+      <div class="results-actions">
+        <button class="btn-secondary" onclick="showHome()">← Change Unit</button>
+        <button class="btn-primary" onclick="restartQuiz()">Play Again ↺</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

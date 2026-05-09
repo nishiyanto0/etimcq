@@ -1,0 +1,1372 @@
+{
+  "unit": 4,
+  "name": "Immersive Technology",
+  "totalQuestions": 105,
+  "questions": [
+    {
+      "question": "Immersive technology mainly creates:",
+      "options": [
+        "Paper records",
+        "Digital interactive environments",
+        "Cable systems",
+        "Offline files"
+      ],
+      "correct": 1,
+      "correctText": "Digital interactive environments",
+      "explanation": "The correct answer is 'Digital interactive environments'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Immersive systems enhance which type of experience?",
+      "options": [
+        "Sensory",
+        "Manual",
+        "Printed",
+        "Offline"
+      ],
+      "correct": 0,
+      "correctText": "Sensory",
+      "explanation": "The correct answer is 'Sensory'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "VR creates a:",
+      "options": [
+        "Partial environment",
+        "Fully artificial environment",
+        "Real-only environment",
+        "Paper-based system"
+      ],
+      "correct": 1,
+      "correctText": "Fully artificial environment",
+      "explanation": "The correct answer is 'Fully artificial environment'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "VR users cannot see:",
+      "options": [
+        "Digital objects",
+        "Real world",
+        "Audio",
+        "Motion"
+      ],
+      "correct": 1,
+      "correctText": "Real world",
+      "explanation": "The correct answer is 'Real world'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "VR requires:",
+      "options": [
+        "Keyboard only",
+        "VR headset",
+        "Printer",
+        "Fax"
+      ],
+      "correct": 1,
+      "correctText": "VR headset",
+      "explanation": "The correct answer is 'VR headset'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "VR is widely used in:",
+      "options": [
+        "Flight simulation",
+        "Paper printing",
+        "Radio",
+        "Telephone"
+      ],
+      "correct": 0,
+      "correctText": "Flight simulation",
+      "explanation": "The correct answer is 'Flight simulation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "AR enhances:",
+      "options": [
+        "Only digital world",
+        "Real world with digital content",
+        "Offline world",
+        "Paper records"
+      ],
+      "correct": 1,
+      "correctText": "Real world with digital content",
+      "explanation": "The correct answer is 'Real world with digital content'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "AR works mainly through:",
+      "options": [
+        "Smartphones",
+        "Fax",
+        "Printer",
+        "Typewriter"
+      ],
+      "correct": 0,
+      "correctText": "Smartphones",
+      "explanation": "The correct answer is 'Smartphones'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "AR does NOT:",
+      "options": [
+        "Replace real world",
+        "Add digital objects",
+        "Provide interaction",
+        "Enhance environment"
+      ],
+      "correct": 0,
+      "correctText": "Replace real world",
+      "explanation": "The correct answer is 'Replace real world'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Pokémon GO is example of:",
+      "options": [
+        "VR",
+        "AR",
+        "MR",
+        "XR"
+      ],
+      "correct": 1,
+      "correctText": "AR",
+      "explanation": "The correct answer is 'AR'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "MR combines:",
+      "options": [
+        "Only VR",
+        "Only AR",
+        "VR and AR",
+        "None"
+      ],
+      "correct": 2,
+      "correctText": "VR and AR",
+      "explanation": "The correct answer is 'VR and AR'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "MR allows digital objects to:",
+      "options": [
+        "Remain static",
+        "Interact with real objects",
+        "Be invisible",
+        "Delete data"
+      ],
+      "correct": 1,
+      "correctText": "Interact with real objects",
+      "explanation": "The correct answer is 'Interact with real objects'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "XR stands for:",
+      "options": [
+        "Extended Reality",
+        "External Reality",
+        "Extra Rendering",
+        "Extended Robotics"
+      ],
+      "correct": 0,
+      "correctText": "Extended Reality",
+      "explanation": "The correct answer is 'Extended Reality'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "XR includes:",
+      "options": [
+        "VR",
+        "AR",
+        "MR",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Haptic technology provides:",
+      "options": [
+        "Sound feedback",
+        "Touch feedback",
+        "Visual feedback only",
+        "Data storage"
+      ],
+      "correct": 1,
+      "correctText": "Touch feedback",
+      "explanation": "The correct answer is 'Touch feedback'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Haptic devices simulate:",
+      "options": [
+        "Temperature",
+        "Touch sensation",
+        "Smell",
+        "Color"
+      ],
+      "correct": 1,
+      "correctText": "Touch sensation",
+      "explanation": "The correct answer is 'Touch sensation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "VR improves understanding through:",
+      "options": [
+        "Simulation",
+        "Paper",
+        "Manual",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "Simulation",
+      "explanation": "The correct answer is 'Simulation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "AR improves:",
+      "options": [
+        "Real-time information",
+        "Offline data",
+        "Printer speed",
+        "Cable length"
+      ],
+      "correct": 0,
+      "correctText": "Real-time information",
+      "explanation": "The correct answer is 'Real-time information'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "MR is used in:",
+      "options": [
+        "Remote collaboration",
+        "Fax",
+        "Printer",
+        "Paper"
+      ],
+      "correct": 0,
+      "correctText": "Remote collaboration",
+      "explanation": "The correct answer is 'Remote collaboration'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Immersive tech is used in:",
+      "options": [
+        "Healthcare",
+        "Education",
+        "Gaming",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "VR in healthcare is mainly used for:",
+      "options": [
+        "Surgery simulation",
+        "Printing",
+        "Radio",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Surgery simulation",
+      "explanation": "The correct answer is 'Surgery simulation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "VR helps in dangerous training because it is:",
+      "options": [
+        "Risk-free",
+        "Slow",
+        "Manual",
+        "Offline"
+      ],
+      "correct": 0,
+      "correctText": "Risk-free",
+      "explanation": "The correct answer is 'Risk-free'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "AR navigation displays:",
+      "options": [
+        "Digital directions",
+        "Paper map",
+        "Cable",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Digital directions",
+      "explanation": "The correct answer is 'Digital directions'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Immersive tech improves:",
+      "options": [
+        "Industrial safety",
+        "Manual errors",
+        "Delay",
+        "Paper logs"
+      ],
+      "correct": 0,
+      "correctText": "Industrial safety",
+      "explanation": "The correct answer is 'Industrial safety'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "VR tourism allows:",
+      "options": [
+        "Virtual tours",
+        "Physical travel",
+        "Cable",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Virtual tours",
+      "explanation": "The correct answer is 'Virtual tours'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "MR uses:",
+      "options": [
+        "Sensors and cameras",
+        "Paper",
+        "Ink",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Sensors and cameras",
+      "explanation": "The correct answer is 'Sensors and cameras'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "VR gaming requires:",
+      "options": [
+        "Immersive headset",
+        "Typewriter",
+        "Printer",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Immersive headset",
+      "explanation": "The correct answer is 'Immersive headset'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "AR product visualization helps in:",
+      "options": [
+        "Marketing",
+        "Cable repair",
+        "Printing",
+        "Paper filing"
+      ],
+      "correct": 0,
+      "correctText": "Marketing",
+      "explanation": "The correct answer is 'Marketing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "XR offers:",
+      "options": [
+        "Flexible immersive solutions",
+        "Manual records",
+        "Paper",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Flexible immersive solutions",
+      "explanation": "The correct answer is 'Flexible immersive solutions'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Haptic feedback enhances:",
+      "options": [
+        "Realism",
+        "Paper",
+        "Cable",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Realism",
+      "explanation": "The correct answer is 'Realism'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Green computing aims to reduce:",
+      "options": [
+        "Energy consumption",
+        "Data",
+        "Users",
+        "Servers"
+      ],
+      "correct": 0,
+      "correctText": "Energy consumption",
+      "explanation": "The correct answer is 'Energy consumption'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Green IT promotes:",
+      "options": [
+        "Sustainability",
+        "Pollution",
+        "Paper waste",
+        "Data loss"
+      ],
+      "correct": 0,
+      "correctText": "Sustainability",
+      "explanation": "The correct answer is 'Sustainability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Green computing reduces:",
+      "options": [
+        "Carbon emission",
+        "Storage",
+        "Network",
+        "Devices"
+      ],
+      "correct": 0,
+      "correctText": "Carbon emission",
+      "explanation": "The correct answer is 'Carbon emission'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Virtualization reduces:",
+      "options": [
+        "Physical servers",
+        "Users",
+        "Network",
+        "Printers"
+      ],
+      "correct": 0,
+      "correctText": "Physical servers",
+      "explanation": "The correct answer is 'Physical servers'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Data centers consume:",
+      "options": [
+        "Large electricity",
+        "Low electricity",
+        "No electricity",
+        "Solar only"
+      ],
+      "correct": 0,
+      "correctText": "Large electricity",
+      "explanation": "The correct answer is 'Large electricity'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Efficient cooling helps:",
+      "options": [
+        "Save energy",
+        "Increase heat",
+        "Slow server",
+        "Delete data"
+      ],
+      "correct": 0,
+      "correctText": "Save energy",
+      "explanation": "The correct answer is 'Save energy'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "E-waste includes:",
+      "options": [
+        "Discarded electronics",
+        "Paper",
+        "Ink",
+        "Water"
+      ],
+      "correct": 0,
+      "correctText": "Discarded electronics",
+      "explanation": "The correct answer is 'Discarded electronics'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Improper e-waste disposal causes:",
+      "options": [
+        "Pollution",
+        "Speed",
+        "Transparency",
+        "Security"
+      ],
+      "correct": 0,
+      "correctText": "Pollution",
+      "explanation": "The correct answer is 'Pollution'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Recycling recovers:",
+      "options": [
+        "Valuable materials",
+        "Paper",
+        "Cable",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Valuable materials",
+      "explanation": "The correct answer is 'Valuable materials'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "First step in e-waste recycling:",
+      "options": [
+        "Collection",
+        "Printing",
+        "Burning",
+        "Deleting"
+      ],
+      "correct": 0,
+      "correctText": "Collection",
+      "explanation": "The correct answer is 'Collection'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Magnetic separation is used for:",
+      "options": [
+        "Metal separation",
+        "Paper",
+        "Plastic",
+        "Water"
+      ],
+      "correct": 0,
+      "correctText": "Metal separation",
+      "explanation": "The correct answer is 'Metal separation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Eddy current separation removes:",
+      "options": [
+        "Non-ferrous metals",
+        "Paper",
+        "Plastic",
+        "Ink"
+      ],
+      "correct": 0,
+      "correctText": "Non-ferrous metals",
+      "explanation": "The correct answer is 'Non-ferrous metals'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Green computing lowers:",
+      "options": [
+        "Operational cost",
+        "Productivity",
+        "Security",
+        "Transparency"
+      ],
+      "correct": 0,
+      "correctText": "Operational cost",
+      "explanation": "The correct answer is 'Operational cost'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Water separation is used in:",
+      "options": [
+        "Recycling process",
+        "VR",
+        "AR",
+        "MR"
+      ],
+      "correct": 0,
+      "correctText": "Recycling process",
+      "explanation": "The correct answer is 'Recycling process'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Sustainable IT practices help:",
+      "options": [
+        "Environment",
+        "Pollution",
+        "Waste",
+        "Carbon increase"
+      ],
+      "correct": 0,
+      "correctText": "Environment",
+      "explanation": "The correct answer is 'Environment'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Energy-efficient hardware:",
+      "options": [
+        "Reduces power usage",
+        "Increases heat",
+        "Slows system",
+        "Deletes data"
+      ],
+      "correct": 0,
+      "correctText": "Reduces power usage",
+      "explanation": "The correct answer is 'Reduces power usage'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Green computing focuses on:",
+      "options": [
+        "Eco-friendly computing",
+        "Fast gaming",
+        "Printing",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Eco-friendly computing",
+      "explanation": "The correct answer is 'Eco-friendly computing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Data center optimization improves:",
+      "options": [
+        "Efficiency",
+        "Pollution",
+        "Delay",
+        "Paper waste"
+      ],
+      "correct": 0,
+      "correctText": "Efficiency",
+      "explanation": "The correct answer is 'Efficiency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Green IT encourages:",
+      "options": [
+        "Recycling",
+        "Dumping",
+        "Burning",
+        "Deleting"
+      ],
+      "correct": 0,
+      "correctText": "Recycling",
+      "explanation": "The correct answer is 'Recycling'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Proper e-waste management prevents:",
+      "options": [
+        "Environmental hazards",
+        "Transparency",
+        "Security",
+        "Printing"
+      ],
+      "correct": 0,
+      "correctText": "Environmental hazards",
+      "explanation": "The correct answer is 'Environmental hazards'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Quantum computing uses:",
+      "options": [
+        "Quantum mechanics",
+        "Printer",
+        "Paper",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "Quantum mechanics",
+      "explanation": "The correct answer is 'Quantum mechanics'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Basic unit of quantum computing:",
+      "options": [
+        "Bit",
+        "Qubit",
+        "Byte",
+        "Block"
+      ],
+      "correct": 1,
+      "correctText": "Qubit",
+      "explanation": "The correct answer is 'Qubit'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Qubit can exist in:",
+      "options": [
+        "0 only",
+        "1 only",
+        "Both 0 and 1",
+        "None"
+      ],
+      "correct": 2,
+      "correctText": "Both 0 and 1",
+      "explanation": "The correct answer is 'Both 0 and 1'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Superposition allows:",
+      "options": [
+        "Parallel processing",
+        "Sequential only",
+        "Printing",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "Parallel processing",
+      "explanation": "The correct answer is 'Parallel processing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Entanglement links:",
+      "options": [
+        "Two qubits",
+        "Two printers",
+        "Two cables",
+        "Two routers"
+      ],
+      "correct": 0,
+      "correctText": "Two qubits",
+      "explanation": "The correct answer is 'Two qubits'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum interference helps:",
+      "options": [
+        "Amplify correct results",
+        "Delete blocks",
+        "Print faster",
+        "Cable repair"
+      ],
+      "correct": 0,
+      "correctText": "Amplify correct results",
+      "explanation": "The correct answer is 'Amplify correct results'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Classical computer uses:",
+      "options": [
+        "Bits",
+        "Qubits",
+        "Blocks",
+        "Hash"
+      ],
+      "correct": 0,
+      "correctText": "Bits",
+      "explanation": "The correct answer is 'Bits'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Quantum computer supports:",
+      "options": [
+        "Parallel processing",
+        "Manual processing",
+        "Offline processing",
+        "Paper processing"
+      ],
+      "correct": 0,
+      "correctText": "Parallel processing",
+      "explanation": "The correct answer is 'Parallel processing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "IBM Quantum is example of:",
+      "options": [
+        "Classical computer",
+        "Quantum computer",
+        "Printer",
+        "Router"
+      ],
+      "correct": 1,
+      "correctText": "Quantum computer",
+      "explanation": "The correct answer is 'Quantum computer'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum computing helps in:",
+      "options": [
+        "Cryptography",
+        "Drug discovery",
+        "Optimization",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum computers may break:",
+      "options": [
+        "RSA encryption",
+        "Printer",
+        "Cable",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "RSA encryption",
+      "explanation": "The correct answer is 'RSA encryption'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum computers simulate:",
+      "options": [
+        "Molecular structures",
+        "Paper",
+        "Printer",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "Molecular structures",
+      "explanation": "The correct answer is 'Molecular structures'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Qubit stability is:",
+      "options": [
+        "Challenge",
+        "Advantage",
+        "Printer",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "Challenge",
+      "explanation": "The correct answer is 'Challenge'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum error correction is:",
+      "options": [
+        "Difficult",
+        "Easy",
+        "Printer-based",
+        "Cable-based"
+      ],
+      "correct": 0,
+      "correctText": "Difficult",
+      "explanation": "The correct answer is 'Difficult'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum computing cost is:",
+      "options": [
+        "High",
+        "Low",
+        "Free",
+        "Zero"
+      ],
+      "correct": 0,
+      "correctText": "High",
+      "explanation": "The correct answer is 'High'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum computing enhances:",
+      "options": [
+        "AI",
+        "Printing",
+        "Cable",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "AI",
+      "explanation": "The correct answer is 'AI'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Exponential growth in power depends on:",
+      "options": [
+        "Number of qubits",
+        "Printer",
+        "Cable",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Number of qubits",
+      "explanation": "The correct answer is 'Number of qubits'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Quantum systems are still:",
+      "options": [
+        "Developing",
+        "Complete",
+        "Finished",
+        "Manual"
+      ],
+      "correct": 0,
+      "correctText": "Developing",
+      "explanation": "The correct answer is 'Developing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum computing is best for:",
+      "options": [
+        "Complex problems",
+        "Simple typing",
+        "Printing",
+        "Paper filing"
+      ],
+      "correct": 0,
+      "correctText": "Complex problems",
+      "explanation": "The correct answer is 'Complex problems'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Future of quantum computing may:",
+      "options": [
+        "Revolutionize computing",
+        "Stop computing",
+        "Replace paper",
+        "Delete internet"
+      ],
+      "correct": 0,
+      "correctText": "Revolutionize computing",
+      "explanation": "The correct answer is 'Revolutionize computing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Virtual Reality system mainly consists of:",
+      "options": [
+        "Head-mounted display",
+        "Sensors",
+        "Controllers",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Field of View (FOV) in VR affects:",
+      "options": [
+        "Immersion level",
+        "Printer speed",
+        "Cable length",
+        "Storage size"
+      ],
+      "correct": 0,
+      "correctText": "Immersion level",
+      "explanation": "The correct answer is 'Immersion level'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Motion tracking in VR is used to:",
+      "options": [
+        "Detect user movement",
+        "Delete files",
+        "Print faster",
+        "Store data"
+      ],
+      "correct": 0,
+      "correctText": "Detect user movement",
+      "explanation": "The correct answer is 'Detect user movement'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "AR markers are used to:",
+      "options": [
+        "Align digital objects",
+        "Print documents",
+        "Connect cables",
+        "Delete records"
+      ],
+      "correct": 0,
+      "correctText": "Align digital objects",
+      "explanation": "The correct answer is 'Align digital objects'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Markerless AR uses:",
+      "options": [
+        "GPS and sensors",
+        "Paper codes",
+        "Printer ink",
+        "Fax signals"
+      ],
+      "correct": 0,
+      "correctText": "GPS and sensors",
+      "explanation": "The correct answer is 'GPS and sensors'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Immersive tech in education increases:",
+      "options": [
+        "Student engagement",
+        "Paper usage",
+        "Manual learning",
+        "Delay"
+      ],
+      "correct": 0,
+      "correctText": "Student engagement",
+      "explanation": "The correct answer is 'Student engagement'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.2"
+    },
+    {
+      "question": "VR sickness is caused due to:",
+      "options": [
+        "Motion mismatch",
+        "Cable fault",
+        "Printer issue",
+        "Storage error"
+      ],
+      "correct": 0,
+      "correctText": "Motion mismatch",
+      "explanation": "The correct answer is 'Motion mismatch'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "AR is useful in maintenance because it:",
+      "options": [
+        "Displays repair instructions",
+        "Deletes files",
+        "Prints manuals",
+        "Disconnects network"
+      ],
+      "correct": 0,
+      "correctText": "Displays repair instructions",
+      "explanation": "The correct answer is 'Displays repair instructions'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Mixed Reality devices include:",
+      "options": [
+        "Microsoft HoloLens",
+        "Printer",
+        "Router",
+        "Keyboard"
+      ],
+      "correct": 0,
+      "correctText": "Microsoft HoloLens",
+      "explanation": "The correct answer is 'Microsoft HoloLens'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "XR technology improves:",
+      "options": [
+        "Remote collaboration",
+        "Paper filing",
+        "Manual entry",
+        "Cable testing"
+      ],
+      "correct": 0,
+      "correctText": "Remote collaboration",
+      "explanation": "The correct answer is 'Remote collaboration'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Power Usage Effectiveness (PUE) measures:",
+      "options": [
+        "Data center efficiency",
+        "Printer speed",
+        "Cable length",
+        "Storage capacity"
+      ],
+      "correct": 0,
+      "correctText": "Data center efficiency",
+      "explanation": "The correct answer is 'Data center efficiency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Green cloud computing reduces:",
+      "options": [
+        "Carbon footprint",
+        "Data",
+        "Nodes",
+        "Routers"
+      ],
+      "correct": 0,
+      "correctText": "Carbon footprint",
+      "explanation": "The correct answer is 'Carbon footprint'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Sustainable IT procurement encourages:",
+      "options": [
+        "Eco-friendly hardware",
+        "High power devices",
+        "Manual systems",
+        "Paper systems"
+      ],
+      "correct": 0,
+      "correctText": "Eco-friendly hardware",
+      "explanation": "The correct answer is 'Eco-friendly hardware'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "E-waste recycling helps recover:",
+      "options": [
+        "Gold",
+        "Silver",
+        "Copper",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Biodegradable components reduce:",
+      "options": [
+        "Environmental impact",
+        "Network speed",
+        "Data storage",
+        "Printer usage"
+      ],
+      "correct": 0,
+      "correctText": "Environmental impact",
+      "explanation": "The correct answer is 'Environmental impact'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Server virtualization allows:",
+      "options": [
+        "Multiple OS on one machine",
+        "One OS per server",
+        "Printer control",
+        "Cable removal"
+      ],
+      "correct": 0,
+      "correctText": "Multiple OS on one machine",
+      "explanation": "The correct answer is 'Multiple OS on one machine'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Sleep mode in devices helps:",
+      "options": [
+        "Save energy",
+        "Increase power use",
+        "Delete files",
+        "Print faster"
+      ],
+      "correct": 0,
+      "correctText": "Save energy",
+      "explanation": "The correct answer is 'Save energy'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Renewable energy in data centers uses:",
+      "options": [
+        "Solar power",
+        "Wind power",
+        "Hydro power",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.3"
+    },
+    {
+      "question": "Proper disposal of batteries prevents:",
+      "options": [
+        "Toxic leakage",
+        "Faster printing",
+        "Cable damage",
+        "Storage issues"
+      ],
+      "correct": 0,
+      "correctText": "Toxic leakage",
+      "explanation": "The correct answer is 'Toxic leakage'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Smart grids improve:",
+      "options": [
+        "Energy distribution efficiency",
+        "Paper work",
+        "Printing",
+        "Manual logging"
+      ],
+      "correct": 0,
+      "correctText": "Energy distribution efficiency",
+      "explanation": "The correct answer is 'Energy distribution efficiency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Quantum annealing is mainly used for:",
+      "options": [
+        "Optimization problems",
+        "Printing",
+        "Data deletion",
+        "Cable management"
+      ],
+      "correct": 0,
+      "correctText": "Optimization problems",
+      "explanation": "The correct answer is 'Optimization problems'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Shor's algorithm is used for:",
+      "options": [
+        "Factoring large numbers",
+        "Printing",
+        "File compression",
+        "Data deletion"
+      ],
+      "correct": 0,
+      "correctText": "Factoring large numbers",
+      "explanation": "The correct answer is 'Factoring large numbers'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Grover's algorithm improves:",
+      "options": [
+        "Search speed",
+        "Printing",
+        "Cable testing",
+        "Typing speed"
+      ],
+      "correct": 0,
+      "correctText": "Search speed",
+      "explanation": "The correct answer is 'Search speed'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Quantum cryptography provides:",
+      "options": [
+        "Secure key distribution",
+        "Printer encryption",
+        "Cable testing",
+        "Offline security"
+      ],
+      "correct": 0,
+      "correctText": "Secure key distribution",
+      "explanation": "The correct answer is 'Secure key distribution'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum teleportation transfers:",
+      "options": [
+        "Quantum state",
+        "Printer",
+        "Cable",
+        "Hardware"
+      ],
+      "correct": 0,
+      "correctText": "Quantum state",
+      "explanation": "The correct answer is 'Quantum state'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Decoherence limits:",
+      "options": [
+        "Computation accuracy",
+        "Printer output",
+        "Storage",
+        "Network"
+      ],
+      "correct": 0,
+      "correctText": "Computation accuracy",
+      "explanation": "The correct answer is 'Computation accuracy'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Quantum supremacy demonstrates:",
+      "options": [
+        "Quantum advantage over classical",
+        "Printer speed",
+        "Cable efficiency",
+        "Paper system"
+      ],
+      "correct": 0,
+      "correctText": "Quantum advantage over classical",
+      "explanation": "The correct answer is 'Quantum advantage over classical'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Qubit coherence time affects:",
+      "options": [
+        "Stability",
+        "Printer",
+        "Cable",
+        "Paper"
+      ],
+      "correct": 0,
+      "correctText": "Stability",
+      "explanation": "The correct answer is 'Stability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Superconducting qubits operate at:",
+      "options": [
+        "Very low temperatures",
+        "Room temperature",
+        "High temperature",
+        "Outdoor temperature"
+      ],
+      "correct": 0,
+      "correctText": "Very low temperatures",
+      "explanation": "The correct answer is 'Very low temperatures'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum computers are best suited for:",
+      "options": [
+        "Complex simulations",
+        "Basic typing",
+        "Printing",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Complex simulations",
+      "explanation": "The correct answer is 'Complex simulations'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Classical computing is based on:",
+      "options": [
+        "Boolean logic",
+        "Quantum physics",
+        "Superposition",
+        "Entanglement"
+      ],
+      "correct": 0,
+      "correctText": "Boolean logic",
+      "explanation": "The correct answer is 'Boolean logic'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.1"
+    },
+    {
+      "question": "Quantum computing research is led by:",
+      "options": [
+        "IBM",
+        "Google",
+        "Microsoft",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "Quantum computing may impact cybersecurity by:",
+      "options": [
+        "Breaking traditional encryption",
+        "Printing faster",
+        "Cable testing",
+        "Paper removal"
+      ],
+      "correct": 0,
+      "correctText": "Breaking traditional encryption",
+      "explanation": "The correct answer is 'Breaking traditional encryption'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "One major barrier in quantum computing is:",
+      "options": [
+        "Hardware complexity",
+        "Paper",
+        "Printer",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "Hardware complexity",
+      "explanation": "The correct answer is 'Hardware complexity'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    },
+    {
+      "question": "The future of quantum computing is expected to:",
+      "options": [
+        "Transform computing industry",
+        "Replace printers",
+        "Remove cables",
+        "Eliminate internet"
+      ],
+      "correct": 0,
+      "correctText": "Transform computing industry",
+      "explanation": "The correct answer is 'Transform computing industry'. This follows the standard concepts covered in this unit.",
+      "subtopic": "4.4"
+    }
+  ]
+}

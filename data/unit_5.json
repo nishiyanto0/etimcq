@@ -1,0 +1,2607 @@
+{
+  "unit": 5,
+  "name": "Digital Forensics & Cybersecurity",
+  "totalQuestions": 200,
+  "questions": [
+    {
+      "question": "Digital forensics primarily deals with:",
+      "options": [
+        "Physical evidence only",
+        "Digital evidence investigation",
+        "Paper records",
+        "Manual auditing"
+      ],
+      "correct": 1,
+      "correctText": "Digital evidence investigation",
+      "explanation": "The correct answer is 'Digital evidence investigation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Digital evidence must be:",
+      "options": [
+        "Modified",
+        "Deleted",
+        "Preserved carefully",
+        "Edited"
+      ],
+      "correct": 2,
+      "correctText": "Preserved carefully",
+      "explanation": "The correct answer is 'Preserved carefully'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "A forensic image is:",
+      "options": [
+        "Screenshot",
+        "Exact bit-by-bit copy",
+        "Photo of device",
+        "Backup file"
+      ],
+      "correct": 1,
+      "correctText": "Exact bit-by-bit copy",
+      "explanation": "The correct answer is 'Exact bit-by-bit copy'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Hash values are used to:",
+      "options": [
+        "Encrypt data",
+        "Verify integrity",
+        "Delete files",
+        "Format disk"
+      ],
+      "correct": 1,
+      "correctText": "Verify integrity",
+      "explanation": "The correct answer is 'Verify integrity'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Chain of custody ensures:",
+      "options": [
+        "File compression",
+        "Accountability of evidence handling",
+        "Data deletion",
+        "Fast processing"
+      ],
+      "correct": 1,
+      "correctText": "Accountability of evidence handling",
+      "explanation": "The correct answer is 'Accountability of evidence handling'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Volatile data is found in:",
+      "options": [
+        "Hard disk",
+        "RAM",
+        "DVD",
+        "USB only"
+      ],
+      "correct": 1,
+      "correctText": "RAM",
+      "explanation": "The correct answer is 'RAM'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "File carving is used to:",
+      "options": [
+        "Print files",
+        "Recover deleted files",
+        "Encrypt files",
+        "Compress files"
+      ],
+      "correct": 1,
+      "correctText": "Recover deleted files",
+      "explanation": "The correct answer is 'Recover deleted files'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Timeline reconstruction helps in:",
+      "options": [
+        "Speeding system",
+        "Understanding sequence of events",
+        "Printing logs",
+        "Deleting malware"
+      ],
+      "correct": 1,
+      "correctText": "Understanding sequence of events",
+      "explanation": "The correct answer is 'Understanding sequence of events'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "DFRWS model was proposed in:",
+      "options": [
+        "1998",
+        "2001",
+        "2005",
+        "2010"
+      ],
+      "correct": 1,
+      "correctText": "2001",
+      "explanation": "The correct answer is '2001'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "ADFM adds which extra phase?",
+      "options": [
+        "Presentation",
+        "Preparation",
+        "Analysis",
+        "Examination"
+      ],
+      "correct": 1,
+      "correctText": "Preparation",
+      "explanation": "The correct answer is 'Preparation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "IDIP integrates:",
+      "options": [
+        "Digital & physical crime scenes",
+        "Printer & network",
+        "Software & hardware",
+        "OS & database"
+      ],
+      "correct": 0,
+      "correctText": "Digital & physical crime scenes",
+      "explanation": "The correct answer is 'Digital & physical crime scenes'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "EEDIP emphasizes:",
+      "options": [
+        "Automation & traceability",
+        "Paper work",
+        "Manual logging",
+        "Printing"
+      ],
+      "correct": 0,
+      "correctText": "Automation & traceability",
+      "explanation": "The correct answer is 'Automation & traceability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "UMDFPM uses:",
+      "options": [
+        "Java",
+        "UML diagrams",
+        "Python",
+        "SQL"
+      ],
+      "correct": 1,
+      "correctText": "UML diagrams",
+      "explanation": "The correct answer is 'UML diagrams'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "Examination stage involves:",
+      "options": [
+        "Filtering relevant data",
+        "Destroying data",
+        "Printing data",
+        "Formatting"
+      ],
+      "correct": 0,
+      "correctText": "Filtering relevant data",
+      "explanation": "The correct answer is 'Filtering relevant data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Preservation stage ensures:",
+      "options": [
+        "Data integrity",
+        "Data deletion",
+        "Data duplication",
+        "Data printing"
+      ],
+      "correct": 0,
+      "correctText": "Data integrity",
+      "explanation": "The correct answer is 'Data integrity'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Evidence handling begins with:",
+      "options": [
+        "Presentation",
+        "Seizure",
+        "Analysis",
+        "Documentation"
+      ],
+      "correct": 1,
+      "correctText": "Seizure",
+      "explanation": "The correct answer is 'Seizure'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Forensic tools must be:",
+      "options": [
+        "Random",
+        "Scientifically accepted",
+        "Manual",
+        "Free only"
+      ],
+      "correct": 1,
+      "correctText": "Scientifically accepted",
+      "explanation": "The correct answer is 'Scientifically accepted'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Never trust the operating system because:",
+      "options": [
+        "It may be compromised",
+        "It is slow",
+        "It deletes files",
+        "It prints logs"
+      ],
+      "correct": 0,
+      "correctText": "It may be compromised",
+      "explanation": "The correct answer is 'It may be compromised'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking is:",
+      "options": [
+        "Illegal hacking",
+        "Authorized security testing",
+        "Cybercrime",
+        "Data theft"
+      ],
+      "correct": 1,
+      "correctText": "Authorized security testing",
+      "explanation": "The correct answer is 'Authorized security testing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Ethical hackers must obtain:",
+      "options": [
+        "Password",
+        "Legal permission",
+        "IP address",
+        "Cable"
+      ],
+      "correct": 1,
+      "correctText": "Legal permission",
+      "explanation": "The correct answer is 'Legal permission'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Reconnaissance phase involves:",
+      "options": [
+        "Information gathering",
+        "Data deletion",
+        "Printing",
+        "Encryption"
+      ],
+      "correct": 0,
+      "correctText": "Information gathering",
+      "explanation": "The correct answer is 'Information gathering'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Scanning phase identifies:",
+      "options": [
+        "Open ports",
+        "Printer speed",
+        "Cable faults",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Open ports",
+      "explanation": "The correct answer is 'Open ports'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Exploitation phase attempts:",
+      "options": [
+        "Controlled attack",
+        "Data deletion",
+        "Manual login",
+        "Printing"
+      ],
+      "correct": 0,
+      "correctText": "Controlled attack",
+      "explanation": "The correct answer is 'Controlled attack'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "White hat hackers are:",
+      "options": [
+        "Criminals",
+        "Authorized professionals",
+        "Hacktivists",
+        "Spammers"
+      ],
+      "correct": 1,
+      "correctText": "Authorized professionals",
+      "explanation": "The correct answer is 'Authorized professionals'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Black hat hackers act:",
+      "options": [
+        "Legally",
+        "Illegally",
+        "Academically",
+        "Publicly"
+      ],
+      "correct": 1,
+      "correctText": "Illegally",
+      "explanation": "The correct answer is 'Illegally'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Grey hat hackers:",
+      "options": [
+        "Always legal",
+        "Always illegal",
+        "Operate without permission but no malicious intent",
+        "Work for government only"
+      ],
+      "correct": 2,
+      "correctText": "Operate without permission but no malicious intent",
+      "explanation": "The correct answer is 'Operate without permission but no malicious intent'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Blue hat hackers are usually:",
+      "options": [
+        "Experts",
+        "Beginners",
+        "Government officials",
+        "Judges"
+      ],
+      "correct": 1,
+      "correctText": "Beginners",
+      "explanation": "The correct answer is 'Beginners'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Green hat hackers are:",
+      "options": [
+        "Learning hackers",
+        "Criminal hackers",
+        "Bank officials",
+        "Auditors"
+      ],
+      "correct": 0,
+      "correctText": "Learning hackers",
+      "explanation": "The correct answer is 'Learning hackers'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Red hat hackers:",
+      "options": [
+        "Fight black hats aggressively",
+        "Print data",
+        "Use paper logs",
+        "Work offline"
+      ],
+      "correct": 0,
+      "correctText": "Fight black hats aggressively",
+      "explanation": "The correct answer is 'Fight black hats aggressively'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Network hacking targets:",
+      "options": [
+        "Routers and switches",
+        "Paper files",
+        "Printers",
+        "Cameras only"
+      ],
+      "correct": 0,
+      "correctText": "Routers and switches",
+      "explanation": "The correct answer is 'Routers and switches'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "AI-powered phishing uses:",
+      "options": [
+        "Machine learning",
+        "Cable",
+        "Printer",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Machine learning",
+      "explanation": "The correct answer is 'Machine learning'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Ransomware 2.0 includes:",
+      "options": [
+        "Double extortion",
+        "Triple extortion",
+        "Data theft",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "IoT exploits target:",
+      "options": [
+        "Smart devices",
+        "Paper",
+        "Printer",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Smart devices",
+      "explanation": "The correct answer is 'Smart devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Deepfake uses:",
+      "options": [
+        "Machine learning",
+        "Cable",
+        "Printer",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Machine learning",
+      "explanation": "The correct answer is 'Machine learning'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "OS downgrade attack installs:",
+      "options": [
+        "Latest OS",
+        "Older vulnerable OS",
+        "Secure OS",
+        "Updated OS"
+      ],
+      "correct": 1,
+      "correctText": "Older vulnerable OS",
+      "explanation": "The correct answer is 'Older vulnerable OS'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Firmware exploits target:",
+      "options": [
+        "BIOS/UEFI",
+        "Printer",
+        "Cable",
+        "Mouse"
+      ],
+      "correct": 0,
+      "correctText": "BIOS/UEFI",
+      "explanation": "The correct answer is 'BIOS/UEFI'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "WAF bypass techniques attempt to:",
+      "options": [
+        "Evade firewall filters",
+        "Delete files",
+        "Print logs",
+        "Disconnect router"
+      ],
+      "correct": 0,
+      "correctText": "Evade firewall filters",
+      "explanation": "The correct answer is 'Evade firewall filters'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Zero-day vulnerability is:",
+      "options": [
+        "Known and patched",
+        "Unknown and unpatched",
+        "Printer error",
+        "Cable break"
+      ],
+      "correct": 1,
+      "correctText": "Unknown and unpatched",
+      "explanation": "The correct answer is 'Unknown and unpatched'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "NCSP 2013 protects:",
+      "options": [
+        "National cyberspace",
+        "Printer",
+        "Cable",
+        "Paper"
+      ],
+      "correct": 0,
+      "correctText": "National cyberspace",
+      "explanation": "The correct answer is 'National cyberspace'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "IT Act 2000 provides legal recognition to:",
+      "options": [
+        "Electronic records",
+        "Paper files",
+        "Fax",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Electronic records",
+      "explanation": "The correct answer is 'Electronic records'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Section 66C deals with:",
+      "options": [
+        "Identity theft",
+        "Printer",
+        "Cable",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Identity theft",
+      "explanation": "The correct answer is 'Identity theft'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 66F deals with:",
+      "options": [
+        "Cyber terrorism",
+        "Paper",
+        "Printer",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "Cyber terrorism",
+      "explanation": "The correct answer is 'Cyber terrorism'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "DPDP Act 2023 protects:",
+      "options": [
+        "Personal data",
+        "Printer",
+        "Router",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "Personal data",
+      "explanation": "The correct answer is 'Personal data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Data Principal refers to:",
+      "options": [
+        "Individual",
+        "Company",
+        "Router",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Individual",
+      "explanation": "The correct answer is 'Individual'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Data Fiduciary refers to:",
+      "options": [
+        "Organization handling data",
+        "Printer",
+        "Cable",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Organization handling data",
+      "explanation": "The correct answer is 'Organization handling data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "CCPWC scheme protects:",
+      "options": [
+        "Women & children",
+        "Printers",
+        "Routers",
+        "Servers"
+      ],
+      "correct": 0,
+      "correctText": "Women & children",
+      "explanation": "The correct answer is 'Women & children'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "CERT-In is responsible for:",
+      "options": [
+        "Cyber incident response",
+        "Printing",
+        "Cable repair",
+        "OS installation"
+      ],
+      "correct": 0,
+      "correctText": "Cyber incident response",
+      "explanation": "The correct answer is 'Cyber incident response'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 69 allows government to:",
+      "options": [
+        "Intercept data",
+        "Print data",
+        "Delete logs",
+        "Remove OS"
+      ],
+      "correct": 0,
+      "correctText": "Intercept data",
+      "explanation": "The correct answer is 'Intercept data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 43 deals with:",
+      "options": [
+        "Unauthorized access",
+        "Printer",
+        "Cable",
+        "Mouse"
+      ],
+      "correct": 0,
+      "correctText": "Unauthorized access",
+      "explanation": "The correct answer is 'Unauthorized access'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking improves:",
+      "options": [
+        "Security posture",
+        "Printer speed",
+        "Cable",
+        "Paper"
+      ],
+      "correct": 0,
+      "correctText": "Security posture",
+      "explanation": "The correct answer is 'Security posture'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "In digital forensics, identification stage involves:",
+      "options": [
+        "Recovering deleted files",
+        "Recognizing incident occurrence",
+        "Reporting findings",
+        "Court presentation"
+      ],
+      "correct": 1,
+      "correctText": "Recognizing incident occurrence",
+      "explanation": "The correct answer is 'Recognizing incident occurrence'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Preservation phase prevents:",
+      "options": [
+        "Evidence tampering",
+        "Evidence printing",
+        "Evidence deletion",
+        "Evidence formatting"
+      ],
+      "correct": 0,
+      "correctText": "Evidence tampering",
+      "explanation": "The correct answer is 'Evidence tampering'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Collection phase gathers:",
+      "options": [
+        "Relevant digital data",
+        "Paper documents",
+        "Printer logs only",
+        "Manual notes"
+      ],
+      "correct": 0,
+      "correctText": "Relevant digital data",
+      "explanation": "The correct answer is 'Relevant digital data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Examination phase removes:",
+      "options": [
+        "Relevant data",
+        "Irrelevant data",
+        "Entire evidence",
+        "Chain of custody"
+      ],
+      "correct": 1,
+      "correctText": "Irrelevant data",
+      "explanation": "The correct answer is 'Irrelevant data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Presentation stage requires:",
+      "options": [
+        "Clear documentation",
+        "Deleting files",
+        "Formatting drives",
+        "Printing random logs"
+      ],
+      "correct": 0,
+      "correctText": "Clear documentation",
+      "explanation": "The correct answer is 'Clear documentation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Decision phase in DFRWS involves:",
+      "options": [
+        "Legal action",
+        "Printing reports",
+        "System shutdown",
+        "Data deletion"
+      ],
+      "correct": 0,
+      "correctText": "Legal action",
+      "explanation": "The correct answer is 'Legal action'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "ADFM Return of Evidence phase ensures:",
+      "options": [
+        "Proper device return",
+        "Device deletion",
+        "Printer usage",
+        "Cable removal"
+      ],
+      "correct": 0,
+      "correctText": "Proper device return",
+      "explanation": "The correct answer is 'Proper device return'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "IDIP readiness phase ensures:",
+      "options": [
+        "Preparation before incident",
+        "Deleting malware",
+        "Printer installation",
+        "OS upgrade"
+      ],
+      "correct": 0,
+      "correctText": "Preparation before incident",
+      "explanation": "The correct answer is 'Preparation before incident'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "Deployment phase begins when:",
+      "options": [
+        "Incident detected",
+        "Printer installed",
+        "Cable connected",
+        "OS updated"
+      ],
+      "correct": 0,
+      "correctText": "Incident detected",
+      "explanation": "The correct answer is 'Incident detected'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Review phase in IDIP focuses on:",
+      "options": [
+        "Improving future investigations",
+        "Deleting evidence",
+        "Printing documents",
+        "Formatting disk"
+      ],
+      "correct": 0,
+      "correctText": "Improving future investigations",
+      "explanation": "The correct answer is 'Improving future investigations'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "EEDIP Authorization phase ensures:",
+      "options": [
+        "Legal permission",
+        "Printer control",
+        "Cable security",
+        "Router access"
+      ],
+      "correct": 0,
+      "correctText": "Legal permission",
+      "explanation": "The correct answer is 'Legal permission'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "Extended model supports:",
+      "options": [
+        "Multi-agency coordination",
+        "Single investigator only",
+        "Printer network",
+        "Cable testing"
+      ],
+      "correct": 0,
+      "correctText": "Multi-agency coordination",
+      "explanation": "The correct answer is 'Multi-agency coordination'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Use case diagram shows:",
+      "options": [
+        "Actors and roles",
+        "Printer layout",
+        "Cable path",
+        "Storage capacity"
+      ],
+      "correct": 0,
+      "correctText": "Actors and roles",
+      "explanation": "The correct answer is 'Actors and roles'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Activity diagram represents:",
+      "options": [
+        "Workflow",
+        "File system",
+        "Network cable",
+        "Storage format"
+      ],
+      "correct": 0,
+      "correctText": "Workflow",
+      "explanation": "The correct answer is 'Workflow'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Sequence diagram shows:",
+      "options": [
+        "Interaction order",
+        "Printer speed",
+        "Cable order",
+        "Router configuration"
+      ],
+      "correct": 0,
+      "correctText": "Interaction order",
+      "explanation": "The correct answer is 'Interaction order'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "RAM data should be collected:",
+      "options": [
+        "After shutdown",
+        "Before shutdown",
+        "Never",
+        "After formatting"
+      ],
+      "correct": 1,
+      "correctText": "Before shutdown",
+      "explanation": "The correct answer is 'Before shutdown'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Steganography detection finds:",
+      "options": [
+        "Hidden data",
+        "Printed files",
+        "Deleted cables",
+        "Offline systems"
+      ],
+      "correct": 0,
+      "correctText": "Hidden data",
+      "explanation": "The correct answer is 'Hidden data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Keyword search helps identify:",
+      "options": [
+        "Suspicious terms",
+        "Printer speed",
+        "Cable type",
+        "OS version"
+      ],
+      "correct": 0,
+      "correctText": "Suspicious terms",
+      "explanation": "The correct answer is 'Suspicious terms'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Documentation stage increases:",
+      "options": [
+        "Legal credibility",
+        "Printer usage",
+        "Cable usage",
+        "OS upgrade"
+      ],
+      "correct": 0,
+      "correctText": "Legal credibility",
+      "explanation": "The correct answer is 'Legal credibility'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hackers simulate:",
+      "options": [
+        "Real attacks legally",
+        "Paper filing",
+        "Printing",
+        "Cable testing"
+      ],
+      "correct": 0,
+      "correctText": "Real attacks legally",
+      "explanation": "The correct answer is 'Real attacks legally'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Maintaining access phase checks:",
+      "options": [
+        "Persistence",
+        "Printing",
+        "Cable",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Persistence",
+      "explanation": "The correct answer is 'Persistence'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Reporting phase includes:",
+      "options": [
+        "Vulnerability details",
+        "Printer logs only",
+        "Cable diagram",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Vulnerability details",
+      "explanation": "The correct answer is 'Vulnerability details'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking improves:",
+      "options": [
+        "Incident response readiness",
+        "Paper storage",
+        "Printer ink",
+        "Cable repair"
+      ],
+      "correct": 0,
+      "correctText": "Incident response readiness",
+      "explanation": "The correct answer is 'Incident response readiness'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "AI phishing emails often show:",
+      "options": [
+        "Perfect grammar",
+        "Spelling errors only",
+        "Printer logs",
+        "Cable details"
+      ],
+      "correct": 0,
+      "correctText": "Perfect grammar",
+      "explanation": "The correct answer is 'Perfect grammar'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Double extortion ransomware includes:",
+      "options": [
+        "Encryption + data theft",
+        "Encryption only",
+        "Deletion only",
+        "Printer attack"
+      ],
+      "correct": 0,
+      "correctText": "Encryption + data theft",
+      "explanation": "The correct answer is 'Encryption + data theft'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Triple extortion adds:",
+      "options": [
+        "DDoS or blackmail",
+        "Printer repair",
+        "Cable testing",
+        "OS upgrade"
+      ],
+      "correct": 0,
+      "correctText": "DDoS or blackmail",
+      "explanation": "The correct answer is 'DDoS or blackmail'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Indicators of ransomware include:",
+      "options": [
+        "Mass file encryption",
+        "Printer slowdown",
+        "Cable noise",
+        "Paper jam"
+      ],
+      "correct": 0,
+      "correctText": "Mass file encryption",
+      "explanation": "The correct answer is 'Mass file encryption'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "EDR stands for:",
+      "options": [
+        "Endpoint Detection and Response",
+        "Electronic Data Recovery",
+        "Evidence Data Removal",
+        "Emergency Digital Router"
+      ],
+      "correct": 0,
+      "correctText": "Endpoint Detection and Response",
+      "explanation": "The correct answer is 'Endpoint Detection and Response'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "IoT default passwords cause:",
+      "options": [
+        "Vulnerability",
+        "Printer speed",
+        "Cable issue",
+        "Storage expansion"
+      ],
+      "correct": 0,
+      "correctText": "Vulnerability",
+      "explanation": "The correct answer is 'Vulnerability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "VLAN helps in:",
+      "options": [
+        "Network isolation",
+        "Printer repair",
+        "Cable deletion",
+        "File formatting"
+      ],
+      "correct": 0,
+      "correctText": "Network isolation",
+      "explanation": "The correct answer is 'Network isolation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Deepfake detection checks:",
+      "options": [
+        "Metadata",
+        "Printer logs",
+        "Cable signals",
+        "Router configuration"
+      ],
+      "correct": 0,
+      "correctText": "Metadata",
+      "explanation": "The correct answer is 'Metadata'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "OS hacking targets:",
+      "options": [
+        "System vulnerabilities",
+        "Paper files",
+        "Printer drivers",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "System vulnerabilities",
+      "explanation": "The correct answer is 'System vulnerabilities'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Secure boot prevents:",
+      "options": [
+        "Unauthorized firmware",
+        "Printer errors",
+        "Cable faults",
+        "Storage errors"
+      ],
+      "correct": 0,
+      "correctText": "Unauthorized firmware",
+      "explanation": "The correct answer is 'Unauthorized firmware'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "TPM stands for:",
+      "options": [
+        "Trusted Platform Module",
+        "Temporary Print Module",
+        "Technical Printer Model",
+        "Terminal Port Manager"
+      ],
+      "correct": 0,
+      "correctText": "Trusted Platform Module",
+      "explanation": "The correct answer is 'Trusted Platform Module'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "SQL injection is:",
+      "options": [
+        "Application vulnerability",
+        "Printer failure",
+        "Cable break",
+        "Router issue"
+      ],
+      "correct": 0,
+      "correctText": "Application vulnerability",
+      "explanation": "The correct answer is 'Application vulnerability'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Log4j was example of:",
+      "options": [
+        "Zero-day exploit",
+        "Printer bug",
+        "Cable error",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Zero-day exploit",
+      "explanation": "The correct answer is 'Zero-day exploit'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "NCSP focuses on protecting:",
+      "options": [
+        "Critical infrastructure",
+        "Printer network",
+        "Cable design",
+        "Router layout"
+      ],
+      "correct": 0,
+      "correctText": "Critical infrastructure",
+      "explanation": "The correct answer is 'Critical infrastructure'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "CERT-In stands for:",
+      "options": [
+        "Computer Emergency Response Team - India",
+        "Central Router Testing",
+        "Cyber Equipment Repair Team",
+        "Certified Router Inspector"
+      ],
+      "correct": 0,
+      "correctText": "Computer Emergency Response Team - India",
+      "explanation": "The correct answer is 'Computer Emergency Response Team - India'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 66D deals with:",
+      "options": [
+        "Online cheating",
+        "Printer misuse",
+        "Cable theft",
+        "OS downgrade"
+      ],
+      "correct": 0,
+      "correctText": "Online cheating",
+      "explanation": "The correct answer is 'Online cheating'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 72A relates to:",
+      "options": [
+        "Breach of confidentiality",
+        "Printer hacking",
+        "Cable theft",
+        "OS upgrade"
+      ],
+      "correct": 0,
+      "correctText": "Breach of confidentiality",
+      "explanation": "The correct answer is 'Breach of confidentiality'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "DPDP requires:",
+      "options": [
+        "User consent",
+        "Printer logs",
+        "Cable testing",
+        "Router approval"
+      ],
+      "correct": 0,
+      "correctText": "User consent",
+      "explanation": "The correct answer is 'User consent'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Data Protection Board oversees:",
+      "options": [
+        "Compliance",
+        "Printer repair",
+        "Cable usage",
+        "Router traffic"
+      ],
+      "correct": 0,
+      "correctText": "Compliance",
+      "explanation": "The correct answer is 'Compliance'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "CCPWC portal allows:",
+      "options": [
+        "Cybercrime reporting",
+        "Printer installation",
+        "Cable registration",
+        "OS activation"
+      ],
+      "correct": 0,
+      "correctText": "Cybercrime reporting",
+      "explanation": "The correct answer is 'Cybercrime reporting'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Cyber stalking is:",
+      "options": [
+        "Online harassment",
+        "Printer misuse",
+        "Cable theft",
+        "Router attack"
+      ],
+      "correct": 0,
+      "correctText": "Online harassment",
+      "explanation": "The correct answer is 'Online harassment'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Evidence integrity is verified using:",
+      "options": [
+        "Hash values",
+        "Printer log",
+        "Cable ID",
+        "OS version"
+      ],
+      "correct": 0,
+      "correctText": "Hash values",
+      "explanation": "The correct answer is 'Hash values'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Memory dump analysis helps in:",
+      "options": [
+        "Malware detection",
+        "Printer repair",
+        "Cable fixing",
+        "Paper filing"
+      ],
+      "correct": 0,
+      "correctText": "Malware detection",
+      "explanation": "The correct answer is 'Malware detection'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic readiness improves:",
+      "options": [
+        "Investigation efficiency",
+        "Printer speed",
+        "Cable length",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Investigation efficiency",
+      "explanation": "The correct answer is 'Investigation efficiency'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Legal admissibility requires:",
+      "options": [
+        "Proper chain of custody",
+        "Printer",
+        "Cable",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Proper chain of custody",
+      "explanation": "The correct answer is 'Proper chain of custody'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking reduces:",
+      "options": [
+        "Security risks",
+        "Printer errors",
+        "Cable damage",
+        "OS bugs"
+      ],
+      "correct": 0,
+      "correctText": "Security risks",
+      "explanation": "The correct answer is 'Security risks'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "The ultimate aim of digital forensics is:",
+      "options": [
+        "Court-admissible evidence",
+        "Printing",
+        "Cable repair",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Court-admissible evidence",
+      "explanation": "The correct answer is 'Court-admissible evidence'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "In digital forensics, integrity ensures that evidence is:",
+      "options": [
+        "Modified",
+        "Authentic and unchanged",
+        "Deleted",
+        "Printed"
+      ],
+      "correct": 1,
+      "correctText": "Authentic and unchanged",
+      "explanation": "The correct answer is 'Authentic and unchanged'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "A write blocker is used to:",
+      "options": [
+        "Prevent data modification",
+        "Delete files",
+        "Format drives",
+        "Encrypt systems"
+      ],
+      "correct": 0,
+      "correctText": "Prevent data modification",
+      "explanation": "The correct answer is 'Prevent data modification'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic duplication is also known as:",
+      "options": [
+        "Logical backup",
+        "Bit-stream copy",
+        "Data deletion",
+        "Compression"
+      ],
+      "correct": 1,
+      "correctText": "Bit-stream copy",
+      "explanation": "The correct answer is 'Bit-stream copy'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Volatile evidence includes:",
+      "options": [
+        "Hard disk files",
+        "RAM contents",
+        "Archived backups",
+        "Printed documents"
+      ],
+      "correct": 1,
+      "correctText": "RAM contents",
+      "explanation": "The correct answer is 'RAM contents'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Log analysis helps investigators detect:",
+      "options": [
+        "System activities",
+        "Printer errors",
+        "Cable failures",
+        "OS installation"
+      ],
+      "correct": 0,
+      "correctText": "System activities",
+      "explanation": "The correct answer is 'System activities'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Evidence should be stored in:",
+      "options": [
+        "Open area",
+        "Secure environment",
+        "Shared folder",
+        "Public network"
+      ],
+      "correct": 1,
+      "correctText": "Secure environment",
+      "explanation": "The correct answer is 'Secure environment'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "MD5 and SHA are examples of:",
+      "options": [
+        "Encryption keys",
+        "Hash algorithms",
+        "Firewalls",
+        "Antivirus tools"
+      ],
+      "correct": 1,
+      "correctText": "Hash algorithms",
+      "explanation": "The correct answer is 'Hash algorithms'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic soundness means:",
+      "options": [
+        "Using approved tools",
+        "Deleting data",
+        "Modifying logs",
+        "Skipping documentation"
+      ],
+      "correct": 0,
+      "correctText": "Using approved tools",
+      "explanation": "The correct answer is 'Using approved tools'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Chain of custody includes:",
+      "options": [
+        "Who handled evidence",
+        "When it was handled",
+        "Why it was handled",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Preparation phase in investigation ensures:",
+      "options": [
+        "Legal readiness",
+        "Data deletion",
+        "Cable setup",
+        "Printer installation"
+      ],
+      "correct": 0,
+      "correctText": "Legal readiness",
+      "explanation": "The correct answer is 'Legal readiness'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking primarily identifies:",
+      "options": [
+        "Security vulnerabilities",
+        "Printer speed",
+        "Cable length",
+        "Storage size"
+      ],
+      "correct": 0,
+      "correctText": "Security vulnerabilities",
+      "explanation": "The correct answer is 'Security vulnerabilities'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Penetration testing is conducted:",
+      "options": [
+        "Without permission",
+        "With authorization",
+        "Secretly",
+        "Illegally"
+      ],
+      "correct": 1,
+      "correctText": "With authorization",
+      "explanation": "The correct answer is 'With authorization'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Vulnerability assessment focuses on:",
+      "options": [
+        "Identifying weaknesses",
+        "Deleting systems",
+        "Formatting drives",
+        "Printing logs"
+      ],
+      "correct": 0,
+      "correctText": "Identifying weaknesses",
+      "explanation": "The correct answer is 'Identifying weaknesses'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Social engineering attacks exploit:",
+      "options": [
+        "Human psychology",
+        "Hardware failure",
+        "Cable damage",
+        "Printer malfunction"
+      ],
+      "correct": 0,
+      "correctText": "Human psychology",
+      "explanation": "The correct answer is 'Human psychology'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Multi-Factor Authentication (MFA) improves:",
+      "options": [
+        "Security",
+        "Printer performance",
+        "Cable speed",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Security",
+      "explanation": "The correct answer is 'Security'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "SPF, DKIM, and DMARC protect against:",
+      "options": [
+        "Phishing emails",
+        "Printer hacks",
+        "Cable faults",
+        "OS errors"
+      ],
+      "correct": 0,
+      "correctText": "Phishing emails",
+      "explanation": "The correct answer is 'Phishing emails'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Double extortion ransomware threatens:",
+      "options": [
+        "Data publication",
+        "Printer damage",
+        "Cable theft",
+        "OS crash"
+      ],
+      "correct": 0,
+      "correctText": "Data publication",
+      "explanation": "The correct answer is 'Data publication'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Endpoint Detection and Response tools monitor:",
+      "options": [
+        "End-user devices",
+        "Printers only",
+        "Routers only",
+        "Cables only"
+      ],
+      "correct": 0,
+      "correctText": "End-user devices",
+      "explanation": "The correct answer is 'End-user devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Firmware malware can survive:",
+      "options": [
+        "OS reinstallation",
+        "Cable replacement",
+        "Printer reset",
+        "File deletion"
+      ],
+      "correct": 0,
+      "correctText": "OS reinstallation",
+      "explanation": "The correct answer is 'OS reinstallation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Zero-day exploit targets:",
+      "options": [
+        "Unknown vulnerabilities",
+        "Patched systems",
+        "Printer firmware",
+        "Paper records"
+      ],
+      "correct": 0,
+      "correctText": "Unknown vulnerabilities",
+      "explanation": "The correct answer is 'Unknown vulnerabilities'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 66B relates to:",
+      "options": [
+        "Receiving stolen computer resources",
+        "Printer misuse",
+        "Cable theft",
+        "OS downgrade"
+      ],
+      "correct": 0,
+      "correctText": "Receiving stolen computer resources",
+      "explanation": "The correct answer is 'Receiving stolen computer resources'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 66C addresses:",
+      "options": [
+        "Identity theft",
+        "Printer theft",
+        "Cable misuse",
+        "Data compression"
+      ],
+      "correct": 0,
+      "correctText": "Identity theft",
+      "explanation": "The correct answer is 'Identity theft'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 66D punishes:",
+      "options": [
+        "Cheating by personation",
+        "Printer hacking",
+        "Cable damage",
+        "Storage deletion"
+      ],
+      "correct": 0,
+      "correctText": "Cheating by personation",
+      "explanation": "The correct answer is 'Cheating by personation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 66F defines:",
+      "options": [
+        "Cyber terrorism",
+        "Printer malfunction",
+        "Router error",
+        "Cable break"
+      ],
+      "correct": 0,
+      "correctText": "Cyber terrorism",
+      "explanation": "The correct answer is 'Cyber terrorism'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 72A deals with:",
+      "options": [
+        "Breach of confidentiality",
+        "Printer logs",
+        "Cable ID",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Breach of confidentiality",
+      "explanation": "The correct answer is 'Breach of confidentiality'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "DPDP Act 2023 requires organizations to:",
+      "options": [
+        "Obtain user consent",
+        "Delete user data",
+        "Print user logs",
+        "Share data publicly"
+      ],
+      "correct": 0,
+      "correctText": "Obtain user consent",
+      "explanation": "The correct answer is 'Obtain user consent'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Data Principal has right to:",
+      "options": [
+        "Access personal data",
+        "Delete printer",
+        "Change cable",
+        "Update router"
+      ],
+      "correct": 0,
+      "correctText": "Access personal data",
+      "explanation": "The correct answer is 'Access personal data'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Data Fiduciary must ensure:",
+      "options": [
+        "Lawful data processing",
+        "Printer control",
+        "Cable testing",
+        "OS upgrade"
+      ],
+      "correct": 0,
+      "correctText": "Lawful data processing",
+      "explanation": "The correct answer is 'Lawful data processing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "CCPWC portal enables:",
+      "options": [
+        "Reporting cybercrime",
+        "Printing complaints",
+        "Cable setup",
+        "Router activation"
+      ],
+      "correct": 0,
+      "correctText": "Reporting cybercrime",
+      "explanation": "The correct answer is 'Reporting cybercrime'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "CERT-In provides:",
+      "options": [
+        "Incident response",
+        "Printer repair",
+        "Cable installation",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Incident response",
+      "explanation": "The correct answer is 'Incident response'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic imaging tools must:",
+      "options": [
+        "Preserve metadata",
+        "Delete timestamps",
+        "Modify files",
+        "Compress logs"
+      ],
+      "correct": 0,
+      "correctText": "Preserve metadata",
+      "explanation": "The correct answer is 'Preserve metadata'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Metadata analysis helps determine:",
+      "options": [
+        "File creation time",
+        "Printer speed",
+        "Cable type",
+        "Router model"
+      ],
+      "correct": 0,
+      "correctText": "File creation time",
+      "explanation": "The correct answer is 'File creation time'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "In ransomware case, volatile memory capture helps find:",
+      "options": [
+        "Encryption keys",
+        "Printer ID",
+        "Cable number",
+        "OS version"
+      ],
+      "correct": 0,
+      "correctText": "Encryption keys",
+      "explanation": "The correct answer is 'Encryption keys'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Digital evidence admissibility depends on:",
+      "options": [
+        "Proper handling",
+        "Fast processing",
+        "Printer logs",
+        "Cable replacement"
+      ],
+      "correct": 0,
+      "correctText": "Proper handling",
+      "explanation": "The correct answer is 'Proper handling'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Incident response planning improves:",
+      "options": [
+        "Cyber resilience",
+        "Printer output",
+        "Cable speed",
+        "Storage size"
+      ],
+      "correct": 0,
+      "correctText": "Cyber resilience",
+      "explanation": "The correct answer is 'Cyber resilience'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking is different from malicious hacking because it is:",
+      "options": [
+        "Legal",
+        "Anonymous",
+        "Hidden",
+        "Unauthorized"
+      ],
+      "correct": 0,
+      "correctText": "Legal",
+      "explanation": "The correct answer is 'Legal'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Reconnaissance can be:",
+      "options": [
+        "Active",
+        "Passive",
+        "Both",
+        "None"
+      ],
+      "correct": 2,
+      "correctText": "Both",
+      "explanation": "The correct answer is 'Both'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Network segmentation limits:",
+      "options": [
+        "Attack spread",
+        "Printer speed",
+        "Cable length",
+        "OS performance"
+      ],
+      "correct": 0,
+      "correctText": "Attack spread",
+      "explanation": "The correct answer is 'Attack spread'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Security audits help:",
+      "options": [
+        "Identify risks",
+        "Delete logs",
+        "Print reports only",
+        "Format drives"
+      ],
+      "correct": 0,
+      "correctText": "Identify risks",
+      "explanation": "The correct answer is 'Identify risks'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Phishing indicators include:",
+      "options": [
+        "Suspicious links",
+        "Urgent requests",
+        "Unknown sender domains",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Malware analysis is part of:",
+      "options": [
+        "Digital forensics",
+        "Printing",
+        "Cable testing",
+        "OS installation"
+      ],
+      "correct": 0,
+      "correctText": "Digital forensics",
+      "explanation": "The correct answer is 'Digital forensics'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Evidence examination should be done on:",
+      "options": [
+        "Forensic copy",
+        "Original device",
+        "Printer",
+        "Public system"
+      ],
+      "correct": 0,
+      "correctText": "Forensic copy",
+      "explanation": "The correct answer is 'Forensic copy'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Deepfake forensic detection checks:",
+      "options": [
+        "Frame inconsistencies",
+        "Printer logs",
+        "Cable damage",
+        "Router speed"
+      ],
+      "correct": 0,
+      "correctText": "Frame inconsistencies",
+      "explanation": "The correct answer is 'Frame inconsistencies'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "IoT botnets are commonly used for:",
+      "options": [
+        "DDoS attacks",
+        "Printing",
+        "Cable theft",
+        "OS downgrade"
+      ],
+      "correct": 0,
+      "correctText": "DDoS attacks",
+      "explanation": "The correct answer is 'DDoS attacks'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "OS downgrade attacks exploit:",
+      "options": [
+        "Old vulnerabilities",
+        "New patches",
+        "Printer updates",
+        "Cable length"
+      ],
+      "correct": 0,
+      "correctText": "Old vulnerabilities",
+      "explanation": "The correct answer is 'Old vulnerabilities'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Cyber law ensures:",
+      "options": [
+        "Legal regulation of cyberspace",
+        "Printer repair",
+        "Cable installation",
+        "OS deletion"
+      ],
+      "correct": 0,
+      "correctText": "Legal regulation of cyberspace",
+      "explanation": "The correct answer is 'Legal regulation of cyberspace'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "National Cyber Security Policy 2013 strengthens:",
+      "options": [
+        "Cyber defense framework",
+        "Printer network",
+        "Cable quality",
+        "Router size"
+      ],
+      "correct": 0,
+      "correctText": "Cyber defense framework",
+      "explanation": "The correct answer is 'Cyber defense framework'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Data breach penalties under DPDP can be:",
+      "options": [
+        "Financial fines",
+        "Printer ban",
+        "Cable removal",
+        "OS suspension"
+      ],
+      "correct": 0,
+      "correctText": "Financial fines",
+      "explanation": "The correct answer is 'Financial fines'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Cybercrime against women includes:",
+      "options": [
+        "Cyber stalking",
+        "Online harassment",
+        "Identity misuse",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "The main goal of ethical hacking is to:",
+      "options": [
+        "Strengthen cybersecurity",
+        "Destroy systems",
+        "Steal data",
+        "Crash networks"
+      ],
+      "correct": 0,
+      "correctText": "Strengthen cybersecurity",
+      "explanation": "The correct answer is 'Strengthen cybersecurity'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Digital forensics supports law enforcement by:",
+      "options": [
+        "Recovering digital evidence",
+        "Printing reports",
+        "Deleting logs",
+        "Formatting drives"
+      ],
+      "correct": 0,
+      "correctText": "Recovering digital evidence",
+      "explanation": "The correct answer is 'Recovering digital evidence'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Integrity of evidence is verified using:",
+      "options": [
+        "Hash comparison",
+        "Printer logs",
+        "Cable ID",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Hash comparison",
+      "explanation": "The correct answer is 'Hash comparison'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "A forensic workstation is used to:",
+      "options": [
+        "Analyze copied evidence",
+        "Modify original data",
+        "Print documents",
+        "Delete files"
+      ],
+      "correct": 0,
+      "correctText": "Analyze copied evidence",
+      "explanation": "The correct answer is 'Analyze copied evidence'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Evidence contamination occurs when:",
+      "options": [
+        "Original data is altered",
+        "Printer jams",
+        "Cable disconnects",
+        "Router fails"
+      ],
+      "correct": 0,
+      "correctText": "Original data is altered",
+      "explanation": "The correct answer is 'Original data is altered'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic timeline helps determine:",
+      "options": [
+        "Attack sequence",
+        "Printer speed",
+        "Cable path",
+        "OS version"
+      ],
+      "correct": 0,
+      "correctText": "Attack sequence",
+      "explanation": "The correct answer is 'Attack sequence'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "A memory dump contains:",
+      "options": [
+        "Active system processes",
+        "Printed logs",
+        "Cable data",
+        "BIOS firmware"
+      ],
+      "correct": 0,
+      "correctText": "Active system processes",
+      "explanation": "The correct answer is 'Active system processes'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Disk imaging tools must maintain:",
+      "options": [
+        "Write protection",
+        "Data deletion",
+        "Printer control",
+        "Cable format"
+      ],
+      "correct": 0,
+      "correctText": "Write protection",
+      "explanation": "The correct answer is 'Write protection'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Metadata can reveal:",
+      "options": [
+        "File ownership",
+        "Creation date",
+        "Modification history",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "In ransomware investigation, first action is:",
+      "options": [
+        "Isolate infected system",
+        "Pay ransom",
+        "Delete files",
+        "Restart system"
+      ],
+      "correct": 0,
+      "correctText": "Isolate infected system",
+      "explanation": "The correct answer is 'Isolate infected system'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Digital forensics ensures evidence is:",
+      "options": [
+        "Court admissible",
+        "Random",
+        "Unverified",
+        "Deleted"
+      ],
+      "correct": 0,
+      "correctText": "Court admissible",
+      "explanation": "The correct answer is 'Court admissible'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking requires defining:",
+      "options": [
+        "Scope of testing",
+        "Printer model",
+        "Cable size",
+        "OS brand"
+      ],
+      "correct": 0,
+      "correctText": "Scope of testing",
+      "explanation": "The correct answer is 'Scope of testing'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Passive reconnaissance involves:",
+      "options": [
+        "Public information gathering",
+        "Direct system attack",
+        "File deletion",
+        "Printer testing"
+      ],
+      "correct": 0,
+      "correctText": "Public information gathering",
+      "explanation": "The correct answer is 'Public information gathering'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Active reconnaissance involves:",
+      "options": [
+        "Direct interaction with target",
+        "Reading newspapers",
+        "Printing logs",
+        "Cable inspection"
+      ],
+      "correct": 0,
+      "correctText": "Direct interaction with target",
+      "explanation": "The correct answer is 'Direct interaction with target'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Port scanning identifies:",
+      "options": [
+        "Open network ports",
+        "Printer ink levels",
+        "Cable faults",
+        "Storage errors"
+      ],
+      "correct": 0,
+      "correctText": "Open network ports",
+      "explanation": "The correct answer is 'Open network ports'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Exploitation phase tests:",
+      "options": [
+        "Vulnerability impact",
+        "Printer performance",
+        "Cable resistance",
+        "Router height"
+      ],
+      "correct": 0,
+      "correctText": "Vulnerability impact",
+      "explanation": "The correct answer is 'Vulnerability impact'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Privilege escalation attack aims to:",
+      "options": [
+        "Gain higher system access",
+        "Print documents",
+        "Delete logs",
+        "Restart OS"
+      ],
+      "correct": 0,
+      "correctText": "Gain higher system access",
+      "explanation": "The correct answer is 'Gain higher system access'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Maintaining access helps attacker test:",
+      "options": [
+        "Persistence",
+        "Printer stability",
+        "Cable durability",
+        "Storage capacity"
+      ],
+      "correct": 0,
+      "correctText": "Persistence",
+      "explanation": "The correct answer is 'Persistence'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Reporting phase should include:",
+      "options": [
+        "Risk level",
+        "Impact analysis",
+        "Remediation steps",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Risk assessment helps identify:",
+      "options": [
+        "Potential threats",
+        "Printer faults",
+        "Cable damage",
+        "Router speed"
+      ],
+      "correct": 0,
+      "correctText": "Potential threats",
+      "explanation": "The correct answer is 'Potential threats'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Firewall primarily protects:",
+      "options": [
+        "Network perimeter",
+        "Printer",
+        "Cable",
+        "Mouse"
+      ],
+      "correct": 0,
+      "correctText": "Network perimeter",
+      "explanation": "The correct answer is 'Network perimeter'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "AI phishing scams are dangerous because they are:",
+      "options": [
+        "Personalized",
+        "Grammatically accurate",
+        "Context-aware",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Ransomware encryption uses:",
+      "options": [
+        "Cryptographic algorithms",
+        "Printer commands",
+        "Cable signals",
+        "Router settings"
+      ],
+      "correct": 0,
+      "correctText": "Cryptographic algorithms",
+      "explanation": "The correct answer is 'Cryptographic algorithms'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "DDoS attack aims to:",
+      "options": [
+        "Overload server",
+        "Print files",
+        "Delete logs",
+        "Upgrade OS"
+      ],
+      "correct": 0,
+      "correctText": "Overload server",
+      "explanation": "The correct answer is 'Overload server'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "IoT botnets consist of:",
+      "options": [
+        "Compromised smart devices",
+        "Printers only",
+        "Routers only",
+        "Servers only"
+      ],
+      "correct": 0,
+      "correctText": "Compromised smart devices",
+      "explanation": "The correct answer is 'Compromised smart devices'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Deepfake fraud may involve:",
+      "options": [
+        "CEO impersonation",
+        "Printer hacking",
+        "Cable theft",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "CEO impersonation",
+      "explanation": "The correct answer is 'CEO impersonation'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Secure firmware updates require:",
+      "options": [
+        "Digital signatures",
+        "Printer logs",
+        "Cable marking",
+        "OS removal"
+      ],
+      "correct": 0,
+      "correctText": "Digital signatures",
+      "explanation": "The correct answer is 'Digital signatures'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "BIOS malware is dangerous because it:",
+      "options": [
+        "Survives OS reinstall",
+        "Prints logs",
+        "Deletes files",
+        "Corrupts printer"
+      ],
+      "correct": 0,
+      "correctText": "Survives OS reinstall",
+      "explanation": "The correct answer is 'Survives OS reinstall'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "WAF protects against:",
+      "options": [
+        "Web application attacks",
+        "Printer hacking",
+        "Cable misuse",
+        "Router errors"
+      ],
+      "correct": 0,
+      "correctText": "Web application attacks",
+      "explanation": "The correct answer is 'Web application attacks'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "SQL injection targets:",
+      "options": [
+        "Database queries",
+        "Printer spool",
+        "Cable network",
+        "OS boot"
+      ],
+      "correct": 0,
+      "correctText": "Database queries",
+      "explanation": "The correct answer is 'Database queries'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Zero-day attacks are hard to prevent because:",
+      "options": [
+        "No patch available",
+        "Printer error",
+        "Cable cut",
+        "Router crash"
+      ],
+      "correct": 0,
+      "correctText": "No patch available",
+      "explanation": "The correct answer is 'No patch available'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "NCSP 2013 promotes:",
+      "options": [
+        "Public-private partnership",
+        "Printer networks",
+        "Cable design",
+        "OS printing"
+      ],
+      "correct": 0,
+      "correctText": "Public-private partnership",
+      "explanation": "The correct answer is 'Public-private partnership'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Critical Information Infrastructure includes:",
+      "options": [
+        "Banking systems",
+        "Power grids",
+        "Defense networks",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "IT Act 2000 supports:",
+      "options": [
+        "E-commerce",
+        "E-governance",
+        "Digital signatures",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Section 43 penalizes:",
+      "options": [
+        "Unauthorized access",
+        "Printer damage",
+        "Cable theft",
+        "OS deletion"
+      ],
+      "correct": 0,
+      "correctText": "Unauthorized access",
+      "explanation": "The correct answer is 'Unauthorized access'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 69 authorizes:",
+      "options": [
+        "Data interception",
+        "Printer shutdown",
+        "Cable removal",
+        "Router deletion"
+      ],
+      "correct": 0,
+      "correctText": "Data interception",
+      "explanation": "The correct answer is 'Data interception'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "DPDP Act emphasizes:",
+      "options": [
+        "Data privacy rights",
+        "Printer control",
+        "Cable inspection",
+        "OS updates"
+      ],
+      "correct": 0,
+      "correctText": "Data privacy rights",
+      "explanation": "The correct answer is 'Data privacy rights'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Consent under DPDP must be:",
+      "options": [
+        "Clear and informed",
+        "Hidden",
+        "Implied only",
+        "Verbal only"
+      ],
+      "correct": 0,
+      "correctText": "Clear and informed",
+      "explanation": "The correct answer is 'Clear and informed'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "CCPWC scheme focuses on:",
+      "options": [
+        "Cyber safety awareness",
+        "Printer usage",
+        "Cable repair",
+        "Router upgrade"
+      ],
+      "correct": 0,
+      "correctText": "Cyber safety awareness",
+      "explanation": "The correct answer is 'Cyber safety awareness'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "Cyber harassment includes:",
+      "options": [
+        "Online abuse",
+        "Cyber stalking",
+        "Threat messages",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Cyber terrorism under Section 66F includes:",
+      "options": [
+        "Threat to national security",
+        "Printer hacking",
+        "Cable theft",
+        "OS downgrade"
+      ],
+      "correct": 0,
+      "correctText": "Threat to national security",
+      "explanation": "The correct answer is 'Threat to national security'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic documentation must be:",
+      "options": [
+        "Accurate",
+        "Detailed",
+        "Time-stamped",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Evidence preservation ensures:",
+      "options": [
+        "No alteration",
+        "Fast printing",
+        "Cable fixing",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "No alteration",
+      "explanation": "The correct answer is 'No alteration'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Digital investigation models provide:",
+      "options": [
+        "Structured approach",
+        "Printer workflow",
+        "Cable mapping",
+        "OS setup"
+      ],
+      "correct": 0,
+      "correctText": "Structured approach",
+      "explanation": "The correct answer is 'Structured approach'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic readiness reduces:",
+      "options": [
+        "Investigation delay",
+        "Printer ink",
+        "Cable usage",
+        "Router size"
+      ],
+      "correct": 0,
+      "correctText": "Investigation delay",
+      "explanation": "The correct answer is 'Investigation delay'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking certifications include:",
+      "options": [
+        "CEH",
+        "OSCP",
+        "CISSP",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Social engineering prevention requires:",
+      "options": [
+        "Awareness training",
+        "Printer upgrade",
+        "Cable testing",
+        "OS removal"
+      ],
+      "correct": 0,
+      "correctText": "Awareness training",
+      "explanation": "The correct answer is 'Awareness training'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Cyber resilience means:",
+      "options": [
+        "Ability to recover quickly",
+        "Printer repair",
+        "Cable replacement",
+        "OS downgrade"
+      ],
+      "correct": 0,
+      "correctText": "Ability to recover quickly",
+      "explanation": "The correct answer is 'Ability to recover quickly'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Incident response plan includes:",
+      "options": [
+        "Detection",
+        "Containment",
+        "Recovery",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The correct answer is 'All of the above'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Digital forensic investigation ends with:",
+      "options": [
+        "Case closure",
+        "Printer shutdown",
+        "Cable removal",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Case closure",
+      "explanation": "The correct answer is 'Case closure'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "The ultimate objective of UNIT 5 concepts is:",
+      "options": [
+        "Secure and legally compliant cyberspace",
+        "Printer maintenance",
+        "Cable control",
+        "OS deletion"
+      ],
+      "correct": 0,
+      "correctText": "Secure and legally compliant cyberspace",
+      "explanation": "The correct answer is 'Secure and legally compliant cyberspace'. This follows the standard concepts covered in this unit.",
+      "subtopic": "5.1"
+    }
+  ]
+}
