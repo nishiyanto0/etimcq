@@ -133,11 +133,11 @@ function toggleRevision(questionData, unitId) {
   return idx === -1; // true if added
 }
 
-function getScores() {
+let getScores = function() {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEYS.SCORES) || '[]');
   } catch { return []; }
-}
+};
 
 function saveScore(entry) {
   const scores = getScores();
@@ -299,7 +299,7 @@ function exportDataForSync() {
 
 // Override getScores to combine local + global
 const _origGetScores = getScores;
-let getScores = function() {
+getScores = function() {
   const local = _origGetScores();
   const global = window._globalScores || [];
   const combined = [...local];
@@ -775,19 +775,38 @@ async function openSetup(unitId) {
 
   const updateCountButtons = (availableCount) => {
     const counts = [10, 20, 30, 70];
+    const playerName = getPlayerName() || 'Anonymous';
+    const completed = getCompleted();
+    
+    // Determine current pool to check completion
+    let currentPool = [];
+    if (u.isNirali) {
+      if (state.niraliUnitId) {
+        const uNode = d.units.find(un => un.unitId === state.niraliUnitId);
+        if (state.subtopic) {
+          const st = uNode.subtopics.find(st => st.subtopicId === state.subtopic);
+          currentPool = st ? st.questions : [];
+        } else {
+          currentPool = uNode.subtopics.flatMap(st => st.questions);
+        }
+      } else {
+        currentPool = d.units.flatMap(un => un.subtopics.flatMap(st => st.questions));
+      }
+    } else if (u.isCollege) {
+      currentPool = d.questions;
+    } else {
+      currentPool = d.questions;
+      if (state.subtopic) currentPool = currentPool.filter(q => q.subtopic === state.subtopic);
+    }
+    
+    const unseenCount = currentPool.filter(q => !completed.includes(`${playerName}|${q.question}`)).length;
+    const isFullyDone = currentPool.length > 0 && unseenCount === 0;
+
     countBtns.innerHTML = counts.map(cnt => {
       const disabled = cnt > availableCount ? 'disabled' : '';
-      const active = cnt === 10 && cnt <= availableCount ? 'active' : '';
-      return `<button class="count-btn ${active} ${disabled}" data-count="${cnt}" ${disabled ? 'title="Not enough questions"' : ''}>${cnt}</button>`;
-    }).join('') + `<button class="count-btn" data-count="all">All (${availableCount})</button>`;
-    
-    if (availableCount < 10) {
-      const allBtn = countBtns.querySelector('[data-count="all"]');
-      if (allBtn) allBtn.classList.add('active');
-      state.total = availableCount;
-    } else {
-      state.total = 10;
-    }
+      const active = (cnt === state.total) ? 'active' : '';
+      return `<button class="count-btn ${active} ${disabled} ${isFullyDone ? 'completed' : ''}" data-count="${cnt}" ${disabled ? 'disabled title="Not enough questions"' : ''}>${cnt}</button>`;
+    }).join('') + `<button class="count-btn ${isFullyDone ? 'completed' : ''} ${state.total >= 999 ? 'active' : ''}" data-count="all">All (${availableCount}) ${isFullyDone ? '✅' : ''}</button>`;
     
     countBtns.querySelectorAll('.count-btn:not(.disabled)').forEach(btn => {
       btn.onclick = () => {
