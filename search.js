@@ -154,10 +154,19 @@ function handleSearch(e) {
     const optionsText = q.options.join(' ').toLowerCase();
     const explText = (q.explanation || '').toLowerCase();
     
-    // Syllabus Unit Boost
+    // 1. Tag Boost (Highest Precision)
+    if (q.tags && q.tags.length > 0) {
+      searchTerms.forEach(term => {
+        if (q.tags.includes(term)) {
+          score += 1000; // Total dominance for tagged questions
+        }
+      });
+    }
+
+    // 2. Syllabus Unit Boost
     const qUnit = getQuestionUnit(q);
     if (targetUnit && qUnit === targetUnit) {
-      score += 150; // Significant boost for syllabus context
+      score += 150; 
     }
 
     searchTerms.forEach((term, idx) => {

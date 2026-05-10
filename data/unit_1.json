@@ -14,7 +14,10 @@
       "correct": 2,
       "correctText": "Mimic human intelligence",
       "explanation": "AI's core purpose is to mimic human intelligence — enabling machines to reason, learn, perceive, and make decisions just like humans do. It isn't about replacing hardware or simply speeding up networks.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "The father of Artificial Intelligence is:",
@@ -27,7 +30,10 @@
       "correct": 2,
       "correctText": "John McCarthy",
       "explanation": "John McCarthy coined the term 'Artificial Intelligence' in 1956 at the historic Dartmouth Conference. Alan Turing laid conceptual groundwork (Turing Test), but McCarthy is credited as the field's father.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "AI integrates ideas from:",
@@ -40,7 +46,10 @@
       "correct": 2,
       "correctText": "Multiple disciplines",
       "explanation": "AI is inherently multidisciplinary — drawing from computer science (algorithms), mathematics (statistics, logic), psychology (cognition), linguistics (NLP), philosophy (reasoning), and neuroscience.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Which discipline contributes probability and statistics to AI?",
@@ -53,7 +62,10 @@
       "correct": 1,
       "correctText": "Mathematics",
       "explanation": "Mathematics — specifically probability and statistics — provides the foundation for uncertainty modeling, prediction, inference, and learning in AI systems.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "NLP stands for:",
@@ -66,7 +78,10 @@
       "correct": 1,
       "correctText": "Natural Language Processing",
       "explanation": "NLP = Natural Language Processing. It's the AI branch enabling computers to understand, interpret, and generate human language (speech and text).",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Machine Learning is a subset of:",
@@ -79,7 +94,11 @@
       "correct": 1,
       "correctText": "AI",
       "explanation": "ML is a subset of AI. AI is the broad goal (intelligent machines); ML is one approach to achieving it — letting machines learn from data rather than explicit programming.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": [
+        "ai",
+        "ml"
+      ]
     },
     {
       "question": "Deep Learning is a subset of:",
@@ -92,7 +111,12 @@
       "correct": 2,
       "correctText": "Machine Learning",
       "explanation": "Deep Learning is a subset of Machine Learning. It uses deep (multi-layered) neural networks to automatically learn complex patterns from large data — it's ML's most powerful modern branch.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": [
+        "ai",
+        "ml",
+        "dl"
+      ]
     },
     {
       "question": "Which AI approach focuses on rational thinking?",
@@ -105,7 +129,10 @@
       "correct": 1,
       "correctText": "Think well",
       "explanation": "'Think well' / rational thinking is the AI approach grounded in formal logic — making logically correct inferences based on rules and knowledge bases (like expert systems).",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "ELIZA program is an example of:",
@@ -118,7 +145,10 @@
       "correct": 1,
       "correctText": "Act like humans",
       "explanation": "ELIZA was an early chatbot (1966) that simulated a Rogerian psychotherapist by pattern-matching user input. It appeared to understand humans but had no real comprehension — classic 'act like humans' approach.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Narrow AI is also called:",
@@ -131,7 +161,10 @@
       "correct": 2,
       "correctText": "Weak AI",
       "explanation": "Narrow AI (Weak AI) is designed for specific tasks — like Siri, chess engines, or spam filters. It's called 'weak' because it lacks general intelligence, not because it's simple.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "General AI currently:",
@@ -144,7 +177,10 @@
       "correct": 1,
       "correctText": "Does not exist",
       "explanation": "AGI (Artificial General Intelligence) — a machine that can perform any cognitive task a human can — does not yet exist. It remains a long-term research goal.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Super AI is:",
@@ -157,7 +193,10 @@
       "correct": 2,
       "correctText": "Hypothetical",
       "explanation": "Super AI (ASI) would surpass human intelligence in every domain — creativity, wisdom, social skills, general reasoning. It remains hypothetical; no such system exists today.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Reactive machines:",
@@ -170,7 +209,8 @@
       "correct": 2,
       "correctText": "React to present only",
       "explanation": "Reactive machines only perceive and react to the current situation — they have no memory of past events and cannot learn from experience. They simply match inputs to outputs.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": []
     },
     {
       "question": "IBM Deep Blue is:",
@@ -183,7 +223,10 @@
       "correct": 2,
       "correctText": "Reactive Machine",
       "explanation": "IBM Deep Blue is a reactive machine — it only evaluates the current chess board state. It has no memory of previous games and cannot learn or adapt beyond chess.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Self-driving cars are example of:",
@@ -196,7 +239,10 @@
       "correct": 1,
       "correctText": "Limited memory AI",
       "explanation": "Self-driving cars use Limited Memory AI — they can remember recent events (traffic, road conditions) for short periods to make decisions, but don't have persistent long-term memory.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Theory of Mind AI focuses on:",
@@ -209,7 +255,10 @@
       "correct": 1,
       "correctText": "Human emotions",
       "explanation": "Theory of Mind AI (in development) would understand human beliefs, emotions, desires, and intentions — enabling truly social, empathetic machine interactions.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Self-awareness AI:",
@@ -222,7 +271,10 @@
       "correct": 2,
       "correctText": "Is hypothetical",
       "explanation": "Self-aware AI would possess its own consciousness and self-awareness, understanding its own internal states and emotions. This is purely hypothetical — no such AI system exists today, and it remains a philosophical and scientific debate whether it can ever be achieved.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Supervised learning uses:",
@@ -235,7 +287,8 @@
       "correct": 2,
       "correctText": "Labeled data",
       "explanation": "Supervised learning requires labeled training data — each training example has the correct answer (label) attached. The model learns to map inputs to these known outputs.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": []
     },
     {
       "question": "Spam detection is example of:",
@@ -248,7 +301,10 @@
       "correct": 2,
       "correctText": "Supervised learning",
       "explanation": "Spam detection is a classic supervised learning application — the model is trained on emails labeled 'spam' or 'not spam', learning to classify new messages based on patterns.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "K-Means clustering belongs to:",
@@ -261,7 +317,10 @@
       "correct": 2,
       "correctText": "Unsupervised learning",
       "explanation": "K-Means is an unsupervised algorithm — it groups unlabeled data into K clusters based on feature similarity, discovering natural patterns without predefined categories.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": [
+        "dl"
+      ]
     },
     {
       "question": "Reinforcement learning works on:",
@@ -274,7 +333,8 @@
       "correct": 1,
       "correctText": "Rewards and penalties",
       "explanation": "Reinforcement learning uses a reward/penalty system — an agent takes actions, receives rewards for good ones and penalties for bad ones, learning the optimal strategy over time (like training a dog).",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": []
     },
     {
       "question": "Q-learning is used in:",
@@ -287,7 +347,8 @@
       "correct": 2,
       "correctText": "Reinforcement learning",
       "explanation": "Q-learning is a model-free reinforcement learning algorithm that learns to predict the expected return or utility of an action in a given state.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": []
     },
     {
       "question": "Deep Learning uses:",
@@ -300,7 +361,11 @@
       "correct": 1,
       "correctText": "Neural networks",
       "explanation": "Deep Learning uses artificial neural networks with multiple hidden layers (hence 'deep') to model complex patterns in data. Unlike traditional ML algorithms like decision trees, neural networks can learn hierarchical feature representations automatically from raw input.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": [
+        "ml",
+        "dl"
+      ]
     },
     {
       "question": "Deep Learning requires:",
@@ -313,7 +378,10 @@
       "correct": 2,
       "correctText": "Large datasets",
       "explanation": "Deep Learning requires large datasets because its multi-layered neural networks have millions or even billions of parameters. With insufficient data, these models overfit rather than generalize — the massive parameter count demands equally massive training examples to learn meaningful patterns.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": [
+        "dl"
+      ]
     },
     {
       "question": "Neural networks are inspired by:",
@@ -326,7 +394,8 @@
       "correct": 1,
       "correctText": "Human brain",
       "explanation": "Artificial neural networks (ANNs) are loosely modeled after the biological brain — with artificial neurons (nodes) connected by weighted edges (synapses) that adjust during learning.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": []
     },
     {
       "question": "Backpropagation is used to:",
@@ -339,7 +408,8 @@
       "correct": 1,
       "correctText": "Adjust weights",
       "explanation": "Backpropagation is the core training algorithm for neural networks — it calculates gradients of the loss function and propagates them backward through the network to adjust weights.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": []
     },
     {
       "question": "Data Science mainly focuses on:",
@@ -352,7 +422,10 @@
       "correct": 1,
       "correctText": "Extracting insights from data",
       "explanation": "Data Science extracts knowledge and actionable insights from structured and unstructured data using a blend of statistics, ML, domain expertise, and data visualization.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": [
+        "ml"
+      ]
     },
     {
       "question": "Self-attention is part of:",
@@ -365,7 +438,8 @@
       "correct": 1,
       "correctText": "Transformers",
       "explanation": "Self-attention is the key mechanism in Transformers — it allows each token to attend to all other tokens in the sequence, capturing long-range dependencies regardless of distance.",
-      "subtopic": "1.3"
+      "subtopic": "1.3",
+      "tags": []
     },
     {
       "question": "Data poisoning attack affects:",
@@ -378,7 +452,8 @@
       "correct": 1,
       "correctText": "Training data",
       "explanation": "Data poisoning attacks corrupt the training dataset — by injecting malicious samples, attackers cause the model to learn wrong patterns and make incorrect predictions at deployment.",
-      "subtopic": "1.4"
+      "subtopic": "1.4",
+      "tags": []
     },
     {
       "question": "MFA stands for:",
@@ -391,7 +466,10 @@
       "correct": 1,
       "correctText": "Multi-Factor Authentication",
       "explanation": "MFA = Multi-Factor Authentication — a security mechanism requiring 2+ independent verification factors (something you know + something you have + something you are) to authenticate.",
-      "subtopic": "1.4"
+      "subtopic": "1.4",
+      "tags": [
+        "mfa"
+      ]
     },
     {
       "question": "Overfitting means:",
@@ -404,7 +482,8 @@
       "correct": 1,
       "correctText": "Model memorizes training data",
       "explanation": "Overfitting occurs when a model memorizes the training data — including noise and outliers — instead of learning the underlying patterns. As a result, it performs extremely well on training data but poorly on new, unseen data, defeating the purpose of the model entirely.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": []
     },
     {
       "question": "IBM Watson is example of:",
@@ -417,7 +496,10 @@
       "correct": 1,
       "correctText": "Narrow AI",
       "explanation": "IBM Watson is a Narrow/Weak AI — it excels at specific tasks like Jeopardy! or cancer diagnosis, but cannot perform general reasoning across domains like a human.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Computer Vision deals with:",
@@ -430,7 +512,8 @@
       "correct": 2,
       "correctText": "Images and video",
       "explanation": "Computer Vision enables machines to interpret visual information — analyzing images and video to recognize objects, faces, scenes, and activities.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": []
     },
     {
       "question": "Logistic Regression is used in:",
@@ -443,7 +526,8 @@
       "correct": 0,
       "correctText": "Supervised learning",
       "explanation": "In supervised learning, outputs are labeled — the training data includes correct answers so the model learns to predict them for new inputs.",
-      "subtopic": "1.2"
+      "subtopic": "1.2",
+      "tags": []
     },
     {
       "question": "AI-powered cybersecurity detects:",
@@ -456,7 +540,10 @@
       "correct": 1,
       "correctText": "Supervised learning",
       "explanation": "AI-powered cybersecurity uses supervised learning to detect threats — trained on labeled data (malicious vs benign) to identify patterns in network traffic, malware, and intrusion attempts.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "ANI stands for:",
@@ -469,7 +556,10 @@
       "correct": 1,
       "correctText": "Artificial Narrow Intelligence",
       "explanation": "ANI = Artificial Narrow Intelligence — AI designed for specific tasks like voice assistants, recommendation systems, or image recognition. It cannot generalize beyond its trained domain.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Which technology enables machines to understand and generate human language?",
@@ -482,7 +572,8 @@
       "correct": 1,
       "correctText": "NLP",
       "explanation": "NLP (Natural Language Processing) enables machines to understand, interpret, and generate human language — powering chatbots, translation, and voice assistants.",
-      "subtopic": "1.1"
+      "subtopic": "1.1",
+      "tags": []
     },
     {
       "question": "Generative AI is subset of:",
@@ -495,7 +586,12 @@
       "correct": 2,
       "correctText": "Deep Learning",
       "explanation": "Generative AI is a subset of Deep Learning — it uses deep neural networks (like GANs, VAEs, and Transformers) to learn data distributions and generate new, original content. While all generative AI uses deep learning, not all deep learning is generative (e.g., classification models).",
-      "subtopic": "1.3"
+      "subtopic": "1.3",
+      "tags": [
+        "ai",
+        "ml",
+        "dl"
+      ]
     },
     {
       "question": "Deep Learning automatically:",
@@ -508,7 +604,11 @@
       "correct": 1,
       "correctText": "Extracts features",
       "subtopic": "1.2",
-      "explanation": "Deep Learning automatically extracts relevant features from raw data — a major advantage over traditional ML which requires manual feature engineering by domain experts. The deep network's successive layers learn increasingly complex representations, from basic edges in early layers to high-level concepts in deeper ones."
+      "explanation": "Deep Learning automatically extracts relevant features from raw data — a major advantage over traditional ML which requires manual feature engineering by domain experts. The deep network's successive layers learn increasingly complex representations, from basic edges in early layers to high-level concepts in deeper ones.",
+      "tags": [
+        "ml",
+        "dl"
+      ]
     },
     {
       "question": "One disadvantage of Deep Learning:",
@@ -521,7 +621,10 @@
       "correct": 2,
       "correctText": "Hard to interpret",
       "subtopic": "1.2",
-      "explanation": "A major disadvantage of Deep Learning is that its models are 'black boxes' — extremely hard to interpret. Unlike decision trees where you can trace the logic, deep neural networks have millions of weights making it nearly impossible to understand exactly why a specific prediction was made."
+      "explanation": "A major disadvantage of Deep Learning is that its models are 'black boxes' — extremely hard to interpret. Unlike decision trees where you can trace the logic, deep neural networks have millions of weights making it nearly impossible to understand exactly why a specific prediction was made.",
+      "tags": [
+        "dl"
+      ]
     },
     {
       "question": "AI in healthcare helps in:",
@@ -534,7 +637,10 @@
       "correct": 1,
       "correctText": "Diagnosis",
       "subtopic": "1.1",
-      "explanation": "AI in healthcare primarily assists with diagnosis — analyzing medical images (X-rays, MRIs), detecting diseases early, and recommending treatments. For example, AI can identify cancerous tumors with accuracy matching or exceeding radiologists, enabling faster and more reliable diagnoses."
+      "explanation": "AI in healthcare primarily assists with diagnosis — analyzing medical images (X-rays, MRIs), detecting diseases early, and recommending treatments. For example, AI can identify cancerous tumors with accuracy matching or exceeding radiologists, enabling faster and more reliable diagnoses.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "AI in finance is used for:",
@@ -547,7 +653,11 @@
       "correct": 0,
       "correctText": "Fraud detection",
       "subtopic": "1.1",
-      "explanation": "AI/ML is widely used in finance for fraud detection — analyzing millions of transactions in real time to identify suspicious patterns that humans would miss. Models learn from historical fraud cases to flag anomalies in spending behavior, transaction locations, and amounts instantly."
+      "explanation": "AI/ML is widely used in finance for fraud detection — analyzing millions of transactions in real time to identify suspicious patterns that humans would miss. Models learn from historical fraud cases to flag anomalies in spending behavior, transaction locations, and amounts instantly.",
+      "tags": [
+        "ai",
+        "ml"
+      ]
     },
     {
       "question": "Recommendation systems use:",
@@ -560,7 +670,10 @@
       "correct": 0,
       "correctText": "ML",
       "subtopic": "1.2",
-      "explanation": "Recommendation systems use machine learning algorithms (collaborative filtering, content-based filtering, or hybrid approaches) to personalize suggestions. Netflix recommends movies, Amazon suggests products, and Spotify curates playlists — all powered by ML analyzing your behavior patterns."
+      "explanation": "Recommendation systems use machine learning algorithms (collaborative filtering, content-based filtering, or hybrid approaches) to personalize suggestions. Netflix recommends movies, Amazon suggests products, and Spotify curates playlists — all powered by ML analyzing your behavior patterns.",
+      "tags": [
+        "ml"
+      ]
     },
     {
       "question": "Actor-Critic methods belong to:",
@@ -573,7 +686,8 @@
       "correct": 1,
       "correctText": "Reinforcement learning",
       "subtopic": "1.2",
-      "explanation": "Actor-Critic methods belong to reinforcement learning — they combine two components: the Actor (which decides which action to take) and the Critic (which evaluates how good the action was). This dual approach provides more stable learning than using either policy-based or value-based methods alone."
+      "explanation": "Actor-Critic methods belong to reinforcement learning — they combine two components: the Actor (which decides which action to take) and the Critic (which evaluates how good the action was). This dual approach provides more stable learning than using either policy-based or value-based methods alone.",
+      "tags": []
     },
     {
       "question": "GANs are used in:",
@@ -586,7 +700,8 @@
       "correct": 1,
       "correctText": "Image generation",
       "subtopic": "1.3",
-      "explanation": "GANs (Generative Adversarial Networks) are primarily used for image generation. They consist of two competing networks — a Generator that creates fake images and a Discriminator that tries to detect them. Through this adversarial process, the Generator learns to produce increasingly realistic images."
+      "explanation": "GANs (Generative Adversarial Networks) are primarily used for image generation. They consist of two competing networks — a Generator that creates fake images and a Discriminator that tries to detect them. Through this adversarial process, the Generator learns to produce increasingly realistic images.",
+      "tags": []
     },
     {
       "question": "Generative AI creates:",
@@ -599,7 +714,10 @@
       "correct": 2,
       "correctText": "New content",
       "subtopic": "1.3",
-      "explanation": "Generative AI creates entirely new content — text, images, audio, video, and code — by learning the underlying patterns and distributions from training data. Unlike analytical AI that classifies or predicts, generative AI produces original outputs that didn't exist in the training set."
+      "explanation": "Generative AI creates entirely new content — text, images, audio, video, and code — by learning the underlying patterns and distributions from training data. Unlike analytical AI that classifies or predicts, generative AI produces original outputs that didn't exist in the training set.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "GPT is based on:",
@@ -612,7 +730,8 @@
       "correct": 2,
       "correctText": "Transformer",
       "subtopic": "1.3",
-      "explanation": "GPT (Generative Pre-trained Transformer) is built on the Transformer architecture, which uses self-attention mechanisms to process entire sequences simultaneously rather than sequentially. This allows GPT to generate coherent, contextually relevant text by attending to all previous tokens at once."
+      "explanation": "GPT (Generative Pre-trained Transformer) is built on the Transformer architecture, which uses self-attention mechanisms to process entire sequences simultaneously rather than sequentially. This allows GPT to generate coherent, contextually relevant text by attending to all previous tokens at once.",
+      "tags": []
     },
     {
       "question": "PCA is used for:",
@@ -625,7 +744,8 @@
       "correct": 1,
       "correctText": "Dimensionality reduction",
       "subtopic": "1.2",
-      "explanation": "PCA (Principal Component Analysis) is used for dimensionality reduction — it transforms high-dimensional data into fewer dimensions while preserving the most important variance. This helps visualize complex data, speed up training, and reduce noise, all while retaining the essential information."
+      "explanation": "PCA (Principal Component Analysis) is used for dimensionality reduction — it transforms high-dimensional data into fewer dimensions while preserving the most important variance. This helps visualize complex data, speed up training, and reduce noise, all while retaining the essential information.",
+      "tags": []
     },
     {
       "question": "AI's goal is to:",
@@ -638,7 +758,10 @@
       "correct": 1,
       "correctText": "Mimic intelligence",
       "subtopic": "1.1",
-      "explanation": "The primary goal of AI is to mimic human intelligence in machines — enabling them to reason, learn from experience, understand language, recognize patterns, and make decisions autonomously. This distinguishes AI from simple automation, which follows fixed rules without adaptation."
+      "explanation": "The primary goal of AI is to mimic human intelligence in machines — enabling them to reason, learn from experience, understand language, recognize patterns, and make decisions autonomously. This distinguishes AI from simple automation, which follows fixed rules without adaptation.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Robotics uses AI for:",
@@ -651,7 +774,10 @@
       "correct": 1,
       "correctText": "Intelligent automation",
       "subtopic": "1.1",
-      "explanation": "Robotics uses AI for intelligent automation — enabling robots to go beyond repetitive pre-programmed actions. AI-powered robots can navigate autonomously, recognize objects, adapt to new environments, and make real-time decisions, which is essential for applications like warehouse logistics and surgery."
+      "explanation": "Robotics uses AI for intelligent automation — enabling robots to go beyond repetitive pre-programmed actions. AI-powered robots can navigate autonomously, recognize objects, adapt to new environments, and make real-time decisions, which is essential for applications like warehouse logistics and surgery.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Deep Learning works best for:",
@@ -664,7 +790,10 @@
       "correct": 1,
       "correctText": "Complex tasks",
       "subtopic": "1.2",
-      "explanation": "Deep Learning works best for complex tasks that involve high-dimensional data and intricate patterns — such as image recognition, natural language understanding, and speech synthesis. Its multi-layered architecture can automatically learn hierarchical features that simpler algorithms cannot capture."
+      "explanation": "Deep Learning works best for complex tasks that involve high-dimensional data and intricate patterns — such as image recognition, natural language understanding, and speech synthesis. Its multi-layered architecture can automatically learn hierarchical features that simpler algorithms cannot capture.",
+      "tags": [
+        "dl"
+      ]
     },
     {
       "question": "ML improves performance by:",
@@ -677,7 +806,10 @@
       "correct": 1,
       "correctText": "Learning from data",
       "subtopic": "1.2",
-      "explanation": "ML improves performance by learning from data rather than relying on explicit programming. As the model processes more training examples, it refines its internal parameters to make better predictions — this data-driven adaptation is what separates ML from traditional rule-based software."
+      "explanation": "ML improves performance by learning from data rather than relying on explicit programming. As the model processes more training examples, it refines its internal parameters to make better predictions — this data-driven adaptation is what separates ML from traditional rule-based software.",
+      "tags": [
+        "ml"
+      ]
     },
     {
       "question": "AGI stands for:",
@@ -690,7 +822,10 @@
       "correct": 0,
       "correctText": "Artificial General Intelligence",
       "subtopic": "1.1",
-      "explanation": "AGI (Artificial General Intelligence) refers to a hypothetical AI system that can understand, learn, and apply intelligence across any cognitive task at or above human level. Unlike Narrow AI which excels at specific tasks, AGI would have flexible, transferable intelligence — but it does not yet exist."
+      "explanation": "AGI (Artificial General Intelligence) refers to a hypothetical AI system that can understand, learn, and apply intelligence across any cognitive task at or above human level. Unlike Narrow AI which excels at specific tasks, AGI would have flexible, transferable intelligence — but it does not yet exist.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "ASI refers to:",
@@ -703,7 +838,10 @@
       "correct": 1,
       "correctText": "Artificial Super Intelligence",
       "subtopic": "1.1",
-      "explanation": "ASI (Artificial Super Intelligence) refers to a hypothetical AI that would surpass human intelligence in every domain — creativity, social skills, general reasoning, and scientific innovation. While Narrow AI exists today, ASI remains theoretical and raises significant ethical and existential questions."
+      "explanation": "ASI (Artificial Super Intelligence) refers to a hypothetical AI that would surpass human intelligence in every domain — creativity, social skills, general reasoning, and scientific innovation. While Narrow AI exists today, ASI remains theoretical and raises significant ethical and existential questions.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Which type of AI can perform only a specific task?",
@@ -716,7 +854,10 @@
       "correct": 2,
       "correctText": "Narrow AI",
       "subtopic": "1.1",
-      "explanation": "Narrow AI (also called Weak AI) is designed to perform only a specific task — such as facial recognition, spam filtering, or playing chess. It cannot transfer its learning to other domains; a chess-playing AI cannot suddenly diagnose diseases, unlike AGI which would handle any task."
+      "explanation": "Narrow AI (also called Weak AI) is designed to perform only a specific task — such as facial recognition, spam filtering, or playing chess. It cannot transfer its learning to other domains; a chess-playing AI cannot suddenly diagnose diseases, unlike AGI which would handle any task.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "In supervised learning, output is:",
@@ -729,7 +870,8 @@
       "correct": 1,
       "correctText": "Labeled",
       "subtopic": "1.2",
-      "explanation": "In supervised learning, the output (label) is known and provided for each training example. The model learns the mapping from inputs to these labeled outputs so it can predict correct labels for new, unseen data — this is what distinguishes it from unsupervised learning."
+      "explanation": "In supervised learning, the output (label) is known and provided for each training example. The model learns the mapping from inputs to these labeled outputs so it can predict correct labels for new, unseen data — this is what distinguishes it from unsupervised learning.",
+      "tags": []
     },
     {
       "question": "Which learning method is used in customer segmentation?",
@@ -742,7 +884,10 @@
       "correct": 1,
       "correctText": "Unsupervised learning",
       "subtopic": "1.2",
-      "explanation": "Customer segmentation uses unsupervised learning because there are no predefined labels or categories — the algorithm discovers natural groupings in customer data (purchasing behavior, demographics) on its own. Clustering algorithms like K-Means reveal these hidden segments without requiring labeled examples."
+      "explanation": "Customer segmentation uses unsupervised learning because there are no predefined labels or categories — the algorithm discovers natural groupings in customer data (purchasing behavior, demographics) on its own. Clustering algorithms like K-Means reveal these hidden segments without requiring labeled examples.",
+      "tags": [
+        "dl"
+      ]
     },
     {
       "question": "Reinforcement learning is commonly used in:",
@@ -755,7 +900,10 @@
       "correct": 1,
       "correctText": "Game AI",
       "subtopic": "1.2",
-      "explanation": "Reinforcement learning is commonly used in Game AI — agents learn optimal strategies through trial and error, receiving rewards for winning moves and penalties for losing ones. Notable examples include AlphaGo (which defeated the world Go champion) and OpenAI Five (Dota 2)."
+      "explanation": "Reinforcement learning is commonly used in Game AI — agents learn optimal strategies through trial and error, receiving rewards for winning moves and penalties for losing ones. Notable examples include AlphaGo (which defeated the world Go champion) and OpenAI Five (Dota 2).",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Decision Tree is an algorithm used in:",
@@ -768,7 +916,8 @@
       "correct": 0,
       "correctText": "Supervised learning",
       "subtopic": "1.2",
-      "explanation": "Decision Tree is a supervised learning algorithm that builds a flowchart-like tree structure from labeled training data. Each internal node represents a decision based on a feature, each branch represents an outcome, and each leaf represents a classification — making it intuitive and easy to interpret."
+      "explanation": "Decision Tree is a supervised learning algorithm that builds a flowchart-like tree structure from labeled training data. Each internal node represents a decision based on a feature, each branch represents an outcome, and each leaf represents a classification — making it intuitive and easy to interpret.",
+      "tags": []
     },
     {
       "question": "Deep learning models require:",
@@ -781,7 +930,10 @@
       "correct": 2,
       "correctText": "High computational power",
       "subtopic": "1.2",
-      "explanation": "Deep learning models require high computational power — typically GPUs or TPUs — because they contain millions to billions of parameters that need to be updated during training. Processing massive datasets through many layers of neurons involves enormous matrix operations that CPUs alone cannot handle efficiently."
+      "explanation": "Deep learning models require high computational power — typically GPUs or TPUs — because they contain millions to billions of parameters that need to be updated during training. Processing massive datasets through many layers of neurons involves enormous matrix operations that CPUs alone cannot handle efficiently.",
+      "tags": [
+        "dl"
+      ]
     },
     {
       "question": "Hidden layers are present in:",
@@ -794,7 +946,8 @@
       "correct": 1,
       "correctText": "Neural networks",
       "subtopic": "1.2",
-      "explanation": "Hidden layers are the intermediate layers in neural networks between input and output. Each hidden layer transforms the data through weighted connections and activation functions, progressively extracting higher-level features — early layers detect simple patterns, deeper layers detect complex combinations."
+      "explanation": "Hidden layers are the intermediate layers in neural networks between input and output. Each hidden layer transforms the data through weighted connections and activation functions, progressively extracting higher-level features — early layers detect simple patterns, deeper layers detect complex combinations.",
+      "tags": []
     },
     {
       "question": "Backpropagation is mainly used for:",
@@ -807,7 +960,8 @@
       "correct": 1,
       "correctText": "Weight adjustment",
       "subtopic": "1.2",
-      "explanation": "Backpropagation is mainly used for weight adjustment in neural networks. It computes the gradient of the loss function with respect to each weight by propagating the error backward from the output layer through hidden layers. These gradients then guide weight updates via optimization algorithms like SGD."
+      "explanation": "Backpropagation is mainly used for weight adjustment in neural networks. It computes the gradient of the loss function with respect to each weight by propagating the error backward from the output layer through hidden layers. These gradients then guide weight updates via optimization algorithms like SGD.",
+      "tags": []
     },
     {
       "question": "The input layer in neural network:",
@@ -820,7 +974,8 @@
       "correct": 1,
       "correctText": "Receives data",
       "subtopic": "1.2",
-      "explanation": "The input layer in a neural network receives raw data and passes it forward to the hidden layers for processing. Each neuron in the input layer represents one feature of the data — it doesn't perform any computation itself, but serves as the entry point for information into the network."
+      "explanation": "The input layer in a neural network receives raw data and passes it forward to the hidden layers for processing. Each neuron in the input layer represents one feature of the data — it doesn't perform any computation itself, but serves as the entry point for information into the network.",
+      "tags": []
     },
     {
       "question": "Overfitting occurs when:",
@@ -833,7 +988,8 @@
       "correct": 1,
       "correctText": "Model memorizes training data",
       "subtopic": "1.2",
-      "explanation": "Overfitting occurs when a model memorizes training data — including noise and random fluctuations — rather than learning the true underlying patterns. The model achieves near-perfect training accuracy but fails on new data because it learned specifics of the training set rather than generalizable rules."
+      "explanation": "Overfitting occurs when a model memorizes training data — including noise and random fluctuations — rather than learning the true underlying patterns. The model achieves near-perfect training accuracy but fails on new data because it learned specifics of the training set rather than generalizable rules.",
+      "tags": []
     },
     {
       "question": "One advantage of deep learning:",
@@ -846,7 +1002,10 @@
       "correct": 2,
       "correctText": "Automated feature extraction",
       "subtopic": "1.2",
-      "explanation": "One key advantage of deep learning is automated feature extraction — instead of requiring domain experts to manually engineer features, deep neural networks learn hierarchical features automatically. Lower layers detect simple patterns (edges, textures) while higher layers combine them into complex representations."
+      "explanation": "One key advantage of deep learning is automated feature extraction — instead of requiring domain experts to manually engineer features, deep neural networks learn hierarchical features automatically. Lower layers detect simple patterns (edges, textures) while higher layers combine them into complex representations.",
+      "tags": [
+        "dl"
+      ]
     },
     {
       "question": "One disadvantage of deep learning is:",
@@ -859,7 +1018,10 @@
       "correct": 2,
       "correctText": "Requires large dataset",
       "subtopic": "1.2",
-      "explanation": "A major disadvantage of deep learning is that it requires large datasets — often millions of examples — to train effectively. With insufficient data, the massive number of parameters leads to overfitting. This data hunger makes deep learning impractical for domains where labeled data is scarce or expensive."
+      "explanation": "A major disadvantage of deep learning is that it requires large datasets — often millions of examples — to train effectively. With insufficient data, the massive number of parameters leads to overfitting. This data hunger makes deep learning impractical for domains where labeled data is scarce or expensive.",
+      "tags": [
+        "dl"
+      ]
     },
     {
       "question": "NLP helps machines to:",
@@ -872,7 +1034,8 @@
       "correct": 1,
       "correctText": "Understand human language",
       "subtopic": "1.1",
-      "explanation": "NLP (Natural Language Processing) helps machines understand, interpret, and generate human language. It powers practical applications like chatbots, language translation (Google Translate), sentiment analysis, voice assistants (Siri, Alexa), and text summarization — bridging the communication gap between humans and computers."
+      "explanation": "NLP (Natural Language Processing) helps machines understand, interpret, and generate human language. It powers practical applications like chatbots, language translation (Google Translate), sentiment analysis, voice assistants (Siri, Alexa), and text summarization — bridging the communication gap between humans and computers.",
+      "tags": []
     },
     {
       "question": "Example of Generative AI:",
@@ -885,7 +1048,10 @@
       "correct": 1,
       "correctText": "ChatGPT",
       "subtopic": "1.3",
-      "explanation": "ChatGPT is a prime example of Generative AI — it uses the GPT (Generative Pre-trained Transformer) architecture to generate human-like text responses. Unlike discriminative models that classify or predict, ChatGPT creates entirely new content based on the patterns it learned during training."
+      "explanation": "ChatGPT is a prime example of Generative AI — it uses the GPT (Generative Pre-trained Transformer) architecture to generate human-like text responses. Unlike discriminative models that classify or predict, ChatGPT creates entirely new content based on the patterns it learned during training.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "GAN stands for:",
@@ -898,7 +1064,10 @@
       "correct": 1,
       "correctText": "Generative Adversarial Network",
       "subtopic": "1.3",
-      "explanation": "GAN stands for Generative Adversarial Network — a framework where two neural networks compete: the Generator creates fake data to fool the Discriminator, while the Discriminator tries to distinguish real from fake. This adversarial training drives the Generator to produce increasingly realistic synthetic data."
+      "explanation": "GAN stands for Generative Adversarial Network — a framework where two neural networks compete: the Generator creates fake data to fool the Discriminator, while the Discriminator tries to distinguish real from fake. This adversarial training drives the Generator to produce increasingly realistic synthetic data.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Transformer architecture is mainly used in:",
@@ -911,7 +1080,8 @@
       "correct": 1,
       "correctText": "NLP tasks",
       "subtopic": "1.3",
-      "explanation": "The Transformer architecture revolutionized NLP by replacing recurrence with self-attention, allowing parallel processing of sequences. It powers major models like GPT, BERT, and T5 — making it the backbone of modern language understanding and generation systems."
+      "explanation": "The Transformer architecture revolutionized NLP by replacing recurrence with self-attention, allowing parallel processing of sequences. It powers major models like GPT, BERT, and T5 — making it the backbone of modern language understanding and generation systems.",
+      "tags": []
     },
     {
       "question": "Self-attention mechanism helps to:",
@@ -924,7 +1094,8 @@
       "correct": 1,
       "correctText": "Focus on relevant words",
       "subtopic": "1.3",
-      "explanation": "The self-attention mechanism allows a model to focus on relevant words in a sequence by computing attention scores between all pairs of tokens. Unlike RNNs that process sequentially, self-attention captures relationships between distant words directly, enabling better context understanding in Transformers."
+      "explanation": "The self-attention mechanism allows a model to focus on relevant words in a sequence by computing attention scores between all pairs of tokens. Unlike RNNs that process sequentially, self-attention captures relationships between distant words directly, enabling better context understanding in Transformers.",
+      "tags": []
     },
     {
       "question": "Data Science overlaps with:",
@@ -937,7 +1108,11 @@
       "correct": 0,
       "correctText": "AI and ML",
       "subtopic": "1.2",
-      "explanation": "Data Science heavily overlaps with AI and ML — they share tools (Python, TensorFlow), techniques (statistical modeling, neural networks), and goals (extracting insights from data). Data Science provides the data preparation and analysis foundation, while AI/ML provides the predictive and automated learning capabilities."
+      "explanation": "Data Science heavily overlaps with AI and ML — they share tools (Python, TensorFlow), techniques (statistical modeling, neural networks), and goals (extracting insights from data). Data Science provides the data preparation and analysis foundation, while AI/ML provides the predictive and automated learning capabilities.",
+      "tags": [
+        "ai",
+        "ml"
+      ]
     },
     {
       "question": "Fraud detection mainly uses:",
@@ -950,7 +1125,10 @@
       "correct": 0,
       "correctText": "ML algorithms",
       "subtopic": "1.4",
-      "explanation": "Fraud detection mainly uses ML algorithms like logistic regression, random forests, and neural networks to analyze transaction patterns and detect anomalies. These models learn from historical fraud cases and can flag suspicious transactions in milliseconds — far faster and more accurately than manual review."
+      "explanation": "Fraud detection mainly uses ML algorithms like logistic regression, random forests, and neural networks to analyze transaction patterns and detect anomalies. These models learn from historical fraud cases and can flag suspicious transactions in milliseconds — far faster and more accurately than manual review.",
+      "tags": [
+        "ml"
+      ]
     },
     {
       "question": "Robotics combined with AI leads to:",
@@ -963,7 +1141,10 @@
       "correct": 1,
       "correctText": "Intelligent automation",
       "subtopic": "1.1",
-      "explanation": "When AI is combined with robotics, the result is intelligent automation — robots that can perceive their environment, learn from experience, adapt to changing conditions, and make autonomous decisions. This goes far beyond pre-programmed industrial robots that repeat fixed motions."
+      "explanation": "When AI is combined with robotics, the result is intelligent automation — robots that can perceive their environment, learn from experience, adapt to changing conditions, and make autonomous decisions. This goes far beyond pre-programmed industrial robots that repeat fixed motions.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Image recognition is example of:",
@@ -976,7 +1157,10 @@
       "correct": 0,
       "correctText": "Computer Vision",
       "subtopic": "1.2",
-      "explanation": "Image recognition is a core Computer Vision task where AI identifies and classifies objects, people, or patterns in images. Using convolutional neural networks (CNNs), the system learns to detect features like edges, shapes, and textures, building up to recognize complex objects like faces, cars, or medical conditions."
+      "explanation": "Image recognition is a core Computer Vision task where AI identifies and classifies objects, people, or patterns in images. Using convolutional neural networks (CNNs), the system learns to detect features like edges, shapes, and textures, building up to recognize complex objects like faces, cars, or medical conditions.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Spam filtering is:",
@@ -989,7 +1173,10 @@
       "correct": 1,
       "correctText": "Supervised learning",
       "subtopic": "1.2",
-      "explanation": "Spam filtering is a supervised learning task where the model is trained on labeled emails (spam vs. not spam). Algorithms like Naive Bayes or SVM learn to identify spam characteristics — suspicious keywords, sender patterns, and formatting — and classify incoming emails accordingly with high accuracy."
+      "explanation": "Spam filtering is a supervised learning task where the model is trained on labeled emails (spam vs. not spam). Algorithms like Naive Bayes or SVM learn to identify spam characteristics — suspicious keywords, sender patterns, and formatting — and classify incoming emails accordingly with high accuracy.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Actor-Critic methods are used in:",
@@ -1002,7 +1189,8 @@
       "correct": 2,
       "correctText": "Reinforcement learning",
       "subtopic": "1.2",
-      "explanation": "Actor-Critic methods are used in reinforcement learning, combining two components: the Actor selects actions based on the current policy, while the Critic estimates the value of those actions. This combination reduces the high variance of pure policy gradient methods, leading to more stable and efficient learning."
+      "explanation": "Actor-Critic methods are used in reinforcement learning, combining two components: the Actor selects actions based on the current policy, while the Critic estimates the value of those actions. This combination reduces the high variance of pure policy gradient methods, leading to more stable and efficient learning.",
+      "tags": []
     },
     {
       "question": "AI in manufacturing is used for:",
@@ -1015,7 +1203,10 @@
       "correct": 0,
       "correctText": "Predictive maintenance",
       "subtopic": "1.1",
-      "explanation": "AI in manufacturing is used for predictive maintenance — analyzing sensor data from machinery (vibration, temperature, wear) to predict failures before they happen. This reduces costly unplanned downtime and extends equipment lifespan, saving manufacturers millions in lost productivity annually."
+      "explanation": "AI in manufacturing is used for predictive maintenance — analyzing sensor data from machinery (vibration, temperature, wear) to predict failures before they happen. This reduces costly unplanned downtime and extends equipment lifespan, saving manufacturers millions in lost productivity annually.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Which AI type understands social interactions?",
@@ -1028,7 +1219,10 @@
       "correct": 2,
       "correctText": "Theory of Mind",
       "subtopic": "1.1",
-      "explanation": "Theory of Mind AI is designed to understand human emotions, beliefs, desires, and social interactions — attributing mental states to others. While current AI can detect basic emotions (facial expressions), true Theory of Mind AI would comprehend complex social contexts and respond with genuine understanding."
+      "explanation": "Theory of Mind AI is designed to understand human emotions, beliefs, desires, and social interactions — attributing mental states to others. While current AI can detect basic emotions (facial expressions), true Theory of Mind AI would comprehend complex social contexts and respond with genuine understanding.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "AI-powered anomaly detection is used in:",
@@ -1041,7 +1235,11 @@
       "correct": 1,
       "correctText": "Cybersecurity",
       "subtopic": "1.4",
-      "explanation": "AI-powered anomaly detection is widely used in cybersecurity — ML models learn normal network traffic and user behavior patterns, then flag deviations that could indicate intrusions, malware, or data breaches. This real-time detection catches threats that traditional rule-based systems would miss."
+      "explanation": "AI-powered anomaly detection is widely used in cybersecurity — ML models learn normal network traffic and user behavior patterns, then flag deviations that could indicate intrusions, malware, or data breaches. This real-time detection catches threats that traditional rule-based systems would miss.",
+      "tags": [
+        "ai",
+        "ml"
+      ]
     },
     {
       "question": "Deep learning performs feature extraction:",
@@ -1054,7 +1252,11 @@
       "correct": 1,
       "correctText": "Automatically",
       "subtopic": "1.2",
-      "explanation": "Unlike traditional ML which requires manual feature engineering, deep learning automatically learns and extracts features from raw data through its layered architecture. Each successive layer learns increasingly abstract representations — from edges to shapes to objects — eliminating the need for domain-specific hand-crafted features."
+      "explanation": "Unlike traditional ML which requires manual feature engineering, deep learning automatically learns and extracts features from raw data through its layered architecture. Each successive layer learns increasingly abstract representations — from edges to shapes to objects — eliminating the need for domain-specific hand-crafted features.",
+      "tags": [
+        "ml",
+        "dl"
+      ]
     },
     {
       "question": "Neural networks are useful for:",
@@ -1067,7 +1269,8 @@
       "correct": 1,
       "correctText": "Complex non-linear problems",
       "subtopic": "1.2",
-      "explanation": "Neural networks are particularly powerful for complex non-linear problems because their layered structure can approximate virtually any function. This makes them ideal for tasks like image recognition, language translation, and speech synthesis where the relationship between input and output is highly intricate."
+      "explanation": "Neural networks are particularly powerful for complex non-linear problems because their layered structure can approximate virtually any function. This makes them ideal for tasks like image recognition, language translation, and speech synthesis where the relationship between input and output is highly intricate.",
+      "tags": []
     },
     {
       "question": "Which ML type does not use labels?",
@@ -1080,7 +1283,10 @@
       "correct": 2,
       "correctText": "Unsupervised",
       "subtopic": "1.2",
-      "explanation": "Unsupervised learning does not use labels — it finds hidden patterns, structures, and groupings in data without any predefined categories. Algorithms like K-Means clustering and PCA work entirely with unlabeled data, discovering natural relationships that humans might not have considered."
+      "explanation": "Unsupervised learning does not use labels — it finds hidden patterns, structures, and groupings in data without any predefined categories. Algorithms like K-Means clustering and PCA work entirely with unlabeled data, discovering natural relationships that humans might not have considered.",
+      "tags": [
+        "ml"
+      ]
     },
     {
       "question": "Example of supervised algorithm:",
@@ -1093,7 +1299,8 @@
       "correct": 2,
       "correctText": "Decision Tree",
       "subtopic": "1.2",
-      "explanation": "Decision Tree is a supervised learning algorithm that builds a tree-like model of decisions based on labeled training data. Unlike K-Means and PCA (which are unsupervised and don't use labels), Decision Trees learn from input-output pairs to classify or predict outcomes."
+      "explanation": "Decision Tree is a supervised learning algorithm that builds a tree-like model of decisions based on labeled training data. Unlike K-Means and PCA (which are unsupervised and don't use labels), Decision Trees learn from input-output pairs to classify or predict outcomes.",
+      "tags": []
     },
     {
       "question": "Example of unsupervised algorithm:",
@@ -1106,7 +1313,8 @@
       "correct": 1,
       "correctText": "K-Means",
       "subtopic": "1.2",
-      "explanation": "K-Means is an unsupervised learning algorithm that partitions data into K clusters based on feature similarity, without any predefined labels. Unlike Logistic Regression, SVM, and Random Forest (all supervised), K-Means discovers natural groupings in data on its own."
+      "explanation": "K-Means is an unsupervised learning algorithm that partitions data into K clusters based on feature similarity, without any predefined labels. Unlike Logistic Regression, SVM, and Random Forest (all supervised), K-Means discovers natural groupings in data on its own.",
+      "tags": []
     },
     {
       "question": "Reinforcement learning agent learns through:",
@@ -1119,7 +1327,8 @@
       "correct": 2,
       "correctText": "Rewards",
       "subtopic": "1.2",
-      "explanation": "Reinforcement learning agents learn through rewards — they interact with an environment, take actions, and receive positive rewards for good outcomes and negative penalties for bad ones. Over many trials, the agent learns the optimal policy (strategy) that maximizes cumulative reward through trial and error."
+      "explanation": "Reinforcement learning agents learn through rewards — they interact with an environment, take actions, and receive positive rewards for good outcomes and negative penalties for bad ones. Over many trials, the agent learns the optimal policy (strategy) that maximizes cumulative reward through trial and error.",
+      "tags": []
     },
     {
       "question": "AI in autonomous vehicles is used for:",
@@ -1132,7 +1341,10 @@
       "correct": 1,
       "correctText": "Navigation",
       "subtopic": "1.1",
-      "explanation": "AI in autonomous vehicles processes real-time data from cameras, LiDAR, and radar for navigation, obstacle detection, and path planning. The AI system must make split-second driving decisions — lane changes, braking, speed adjustment — safely navigating complex and unpredictable road environments."
+      "explanation": "AI in autonomous vehicles processes real-time data from cameras, LiDAR, and radar for navigation, obstacle detection, and path planning. The AI system must make split-second driving decisions — lane changes, braking, speed adjustment — safely navigating complex and unpredictable road environments.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Data poisoning attack targets:",
@@ -1145,7 +1357,8 @@
       "correct": 1,
       "correctText": "Training data",
       "subtopic": "1.4",
-      "explanation": "Data poisoning attacks target the training data by injecting malicious or misleading samples into the dataset. When the model trains on this corrupted data, it learns incorrect patterns, causing it to make wrong predictions during deployment — a particularly dangerous threat in security-sensitive applications."
+      "explanation": "Data poisoning attacks target the training data by injecting malicious or misleading samples into the dataset. When the model trains on this corrupted data, it learns incorrect patterns, causing it to make wrong predictions during deployment — a particularly dangerous threat in security-sensitive applications.",
+      "tags": []
     },
     {
       "question": "Adversarial attack aims to:",
@@ -1158,7 +1371,10 @@
       "correct": 1,
       "correctText": "Deceive AI model",
       "subtopic": "1.4",
-      "explanation": "Adversarial attacks aim to deceive AI models by adding carefully crafted, often imperceptible perturbations to input data. For example, tiny pixel changes to an image can cause a classifier to misidentify it entirely — revealing critical vulnerabilities in AI systems used in security, healthcare, and self-driving cars."
+      "explanation": "Adversarial attacks aim to deceive AI models by adding carefully crafted, often imperceptible perturbations to input data. For example, tiny pixel changes to an image can cause a classifier to misidentify it entirely — revealing critical vulnerabilities in AI systems used in security, healthcare, and self-driving cars.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "MFA increases:",
@@ -1171,7 +1387,10 @@
       "correct": 1,
       "correctText": "Security",
       "subtopic": "1.4",
-      "explanation": "MFA (Multi-Factor Authentication) increases security by requiring users to provide two or more independent verification factors — something you know (password), something you have (phone), or something you are (fingerprint). Even if one factor is compromised, the attacker still cannot access the account."
+      "explanation": "MFA (Multi-Factor Authentication) increases security by requiring users to provide two or more independent verification factors — something you know (password), something you have (phone), or something you are (fingerprint). Even if one factor is compromised, the attacker still cannot access the account.",
+      "tags": [
+        "mfa"
+      ]
     },
     {
       "question": "Philosophy contributes to AI in:",
@@ -1184,7 +1403,10 @@
       "correct": 0,
       "correctText": "Ethics",
       "subtopic": "1.1",
-      "explanation": "Philosophy contributes to AI primarily in the domain of ethics — providing frameworks for moral reasoning, decision-making, and the study of what constitutes intelligence and consciousness. Key questions include AI bias, autonomous weapon ethics, privacy rights, and the moral status of AI systems."
+      "explanation": "Philosophy contributes to AI primarily in the domain of ethics — providing frameworks for moral reasoning, decision-making, and the study of what constitutes intelligence and consciousness. Key questions include AI bias, autonomous weapon ethics, privacy rights, and the moral status of AI systems.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Psychology contributes to AI by studying:",
@@ -1197,7 +1419,10 @@
       "correct": 1,
       "correctText": "Human behaviour",
       "subtopic": "1.1",
-      "explanation": "Psychology contributes to AI by providing models of human behavior, perception, learning, and cognition. Understanding how humans process information, form memories, and make decisions helps AI researchers design systems that mimic these capabilities — especially in areas like cognitive architectures and human-computer interaction."
+      "explanation": "Psychology contributes to AI by providing models of human behavior, perception, learning, and cognition. Understanding how humans process information, form memories, and make decisions helps AI researchers design systems that mimic these capabilities — especially in areas like cognitive architectures and human-computer interaction.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Neuroscience inspired:",
@@ -1210,7 +1435,8 @@
       "correct": 1,
       "correctText": "Neural networks",
       "subtopic": "1.2",
-      "explanation": "Neuroscience directly inspired neural networks — the brain's neurons communicate through electrochemical signals across synapses, and artificial neural networks mirror this with nodes connected by weighted edges. The concept of learning through strengthened connections (neuroplasticity) inspired how neural networks adjust weights during training."
+      "explanation": "Neuroscience directly inspired neural networks — the brain's neurons communicate through electrochemical signals across synapses, and artificial neural networks mirror this with nodes connected by weighted edges. The concept of learning through strengthened connections (neuroplasticity) inspired how neural networks adjust weights during training.",
+      "tags": []
     },
     {
       "question": "Linguistics helps in:",
@@ -1223,7 +1449,10 @@
       "correct": 0,
       "correctText": "NLP",
       "subtopic": "1.1",
-      "explanation": "Linguistics helps AI by providing the understanding of language structure — syntax, semantics, pragmatics, and morphology — that powers NLP systems. Knowledge of grammar rules, word meanings, and conversational context enables AI to parse, understand, and generate human language accurately."
+      "explanation": "Linguistics helps AI by providing the understanding of language structure — syntax, semantics, pragmatics, and morphology — that powers NLP systems. Knowledge of grammar rules, word meanings, and conversational context enables AI to parse, understand, and generate human language accurately.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "AI in retail is used for:",
@@ -1236,7 +1465,11 @@
       "correct": 1,
       "correctText": "Recommendation systems",
       "subtopic": "1.1",
-      "explanation": "AI in retail powers recommendation systems that analyze customer behavior, purchase history, and preferences to deliver personalized product suggestions. These ML-driven systems (used by Amazon, Netflix, Spotify) increase engagement and sales by showing users items they're most likely to want."
+      "explanation": "AI in retail powers recommendation systems that analyze customer behavior, purchase history, and preferences to deliver personalized product suggestions. These ML-driven systems (used by Amazon, Netflix, Spotify) increase engagement and sales by showing users items they're most likely to want.",
+      "tags": [
+        "ai",
+        "ml"
+      ]
     },
     {
       "question": "Deep Learning works best with:",
@@ -1249,7 +1482,10 @@
       "correct": 1,
       "correctText": "Large data",
       "subtopic": "1.2",
-      "explanation": "Deep Learning works best with large data because its massive parameter count requires abundant examples to learn meaningful patterns without overfitting. Small datasets cause deep networks to memorize rather than generalize, which is why transfer learning and data augmentation are often used when data is limited."
+      "explanation": "Deep Learning works best with large data because its massive parameter count requires abundant examples to learn meaningful patterns without overfitting. Small datasets cause deep networks to memorize rather than generalize, which is why transfer learning and data augmentation are often used when data is limited.",
+      "tags": [
+        "dl"
+      ]
     },
     {
       "question": "ML model generalizes to:",
@@ -1262,7 +1498,10 @@
       "correct": 1,
       "correctText": "New unseen data",
       "subtopic": "1.2",
-      "explanation": "A good ML model generalizes to new, unseen data — meaning it performs well not just on its training set but also on data it has never encountered before. Generalization is the ultimate goal of ML: learning broad patterns that hold universally, rather than memorizing specific training examples that may not represent real-world data."
+      "explanation": "A good ML model generalizes to new, unseen data — meaning it performs well not just on its training set but also on data it has never encountered before. Generalization is the ultimate goal of ML: learning broad patterns that hold universally, rather than memorizing specific training examples that may not represent real-world data.",
+      "tags": [
+        "ml"
+      ]
     },
     {
       "question": "GPU is required for:",
@@ -1275,7 +1514,11 @@
       "correct": 1,
       "correctText": "Deep Learning training",
       "subtopic": "1.2",
-      "explanation": "GPUs (Graphics Processing Units) are required for Deep Learning training because they can perform thousands of parallel matrix operations simultaneously — exactly what neural network computations demand. A training task that takes weeks on a CPU can be completed in hours on a GPU, making deep learning practical and scalable."
+      "explanation": "GPUs (Graphics Processing Units) are required for Deep Learning training because they can perform thousands of parallel matrix operations simultaneously — exactly what neural network computations demand. A training task that takes weeks on a CPU can be completed in hours on a GPU, making deep learning practical and scalable.",
+      "tags": [
+        "ml",
+        "dl"
+      ]
     },
     {
       "question": "Generative AI mainly creates:",
@@ -1288,7 +1531,10 @@
       "correct": 2,
       "correctText": "New content",
       "subtopic": "1.3",
-      "explanation": "Generative AI mainly creates new content — including text (ChatGPT), images (DALL-E, Midjourney), audio (music generation), video, and code. It learns the statistical patterns and distributions from training data, then produces original outputs that reflect those patterns without simply copying existing examples."
+      "explanation": "Generative AI mainly creates new content — including text (ChatGPT), images (DALL-E, Midjourney), audio (music generation), video, and code. It learns the statistical patterns and distributions from training data, then produces original outputs that reflect those patterns without simply copying existing examples.",
+      "tags": [
+        "ai"
+      ]
     },
     {
       "question": "Foundation model is:",
@@ -1301,7 +1547,8 @@
       "correct": 1,
       "correctText": "Large pre-trained model",
       "subtopic": "1.3",
-      "explanation": "A foundation model is a large pre-trained model (like GPT-4 or BERT) trained on massive, diverse datasets that serves as a base for many downstream tasks. Instead of building task-specific models from scratch, you fine-tune a foundation model — saving time, data, and computational resources while leveraging broad knowledge."
+      "explanation": "A foundation model is a large pre-trained model (like GPT-4 or BERT) trained on massive, diverse datasets that serves as a base for many downstream tasks. Instead of building task-specific models from scratch, you fine-tune a foundation model — saving time, data, and computational resources while leveraging broad knowledge.",
+      "tags": []
     },
     {
       "question": "Chatbots use:",
@@ -1314,7 +1561,8 @@
       "correct": 0,
       "correctText": "NLP",
       "subtopic": "1.3",
-      "explanation": "Chatbots use NLP (Natural Language Processing) to understand user messages, determine intent, and generate appropriate conversational responses. Modern chatbots leverage transformer-based models that can handle context, ambiguity, and multi-turn conversations — making interactions feel natural and human-like."
+      "explanation": "Chatbots use NLP (Natural Language Processing) to understand user messages, determine intent, and generate appropriate conversational responses. Modern chatbots leverage transformer-based models that can handle context, ambiguity, and multi-turn conversations — making interactions feel natural and human-like.",
+      "tags": []
     }
   ]
 }
