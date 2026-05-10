@@ -32,8 +32,7 @@
       "correct": 0,
       "correctText": "Sensory",
       "explanation": "Immersive systems enhance sensory experiences by engaging multiple senses (visual, auditory, haptic) to create a more realistic and engaging interaction with digital content, making users feel present in the virtual or augmented environment.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "VR creates a:",
@@ -267,8 +266,7 @@
       "correct": 1,
       "correctText": "Touch sensation",
       "explanation": "Haptic devices simulate touch sensations such as texture, pressure, vibration, and force. This tactile feedback makes virtual interactions feel more realistic, allowing users to 'feel' digital objects and enhancing the overall immersive experience.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "VR improves understanding through:",
@@ -329,8 +327,7 @@
       "correct": 3,
       "correctText": "All of the above",
       "explanation": "Immersive technology is used across all of the above domains — Healthcare (surgery simulation, therapy, training), Education (interactive learning, virtual labs), and Gaming (immersive experiences) — demonstrating its versatility and broad applicability across industries.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "VR in healthcare is mainly used for:",
@@ -491,8 +488,7 @@
       "correct": 0,
       "correctText": "Realism",
       "explanation": "Haptic feedback enhances realism by adding the sense of touch to immersive experiences. When users can feel virtual textures, impacts, resistance, and vibrations, the brain receives additional sensory confirmation that makes the virtual experience feel significantly more authentic and believable.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Green computing aims to reduce:",
@@ -521,8 +517,7 @@
       "correct": 0,
       "correctText": "Sustainability",
       "explanation": "Green IT promotes sustainability by encouraging practices that minimize the environmental impact of technology throughout its lifecycle — from energy-efficient design and manufacturing to responsible usage, recycling, and disposal. This ensures that current IT needs are met without compromising the ability of future generations to meet theirs.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Green computing reduces:",
@@ -551,8 +546,7 @@
       "correct": 0,
       "correctText": "Physical servers",
       "explanation": "Virtualization reduces physical servers by allowing multiple virtual machines to run on a single physical server. This consolidation means organizations need fewer physical machines to run the same workloads, reducing hardware costs, space requirements, power consumption, and cooling needs.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Data centers consume:",
@@ -565,8 +559,7 @@
       "correct": 0,
       "correctText": "Large electricity",
       "explanation": "Data centers consume large electricity because they house thousands of servers running 24/7, along with cooling systems, networking equipment, and power distribution infrastructure. A single large data center can consume as much electricity as a small town, making energy efficiency a critical concern.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "Efficient cooling helps:",
@@ -579,8 +572,7 @@
       "correct": 0,
       "correctText": "Save energy",
       "explanation": "Efficient cooling helps save energy because cooling systems typically account for 30-40% of a data center's total energy consumption. Advanced cooling methods like hot/cold aisle containment, liquid cooling, and free cooling reduce the energy needed to maintain optimal temperatures, significantly improving overall efficiency.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "E-waste includes:",
@@ -593,8 +585,7 @@
       "correct": 0,
       "correctText": "Discarded electronics",
       "explanation": "E-waste includes discarded electronics such as old computers, smartphones, televisions, printers, circuit boards, and batteries. These items contain both hazardous materials (lead, mercury, cadmium) and valuable recoverable resources (gold, copper, rare earth elements), making proper disposal critical.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "Improper e-waste disposal causes:",
@@ -607,8 +598,7 @@
       "correct": 0,
       "correctText": "Pollution",
       "explanation": "Improper e-waste disposal causes pollution because electronic devices contain toxic substances like lead, mercury, cadmium, and brominated flame retardants. When e-waste is dumped in landfills or informally recycled through burning or acid baths, these toxins leach into soil, water, and air, endangering ecosystems and human health.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "Recycling recovers:",
@@ -621,8 +611,7 @@
       "correct": 0,
       "correctText": "Valuable materials",
       "explanation": "Recycling recovers valuable materials from e-waste including precious metals (gold, silver, palladium), base metals (copper, aluminum, iron), and rare earth elements. One ton of circuit boards can contain 40-800 times more gold than one ton of gold ore, making e-waste recycling economically and environmentally valuable.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "First step in e-waste recycling:",
@@ -635,8 +624,7 @@
       "correct": 0,
       "correctText": "Collection",
       "explanation": "The first step in e-waste recycling is collection — gathering discarded electronics from consumers, businesses, and institutions through take-back programs, drop-off centers, and pickup services. Proper collection ensures e-waste enters the formal recycling stream rather than ending up in landfills or informal processing.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "Magnetic separation is used for:",
@@ -649,8 +637,7 @@
       "correct": 0,
       "correctText": "Metal separation",
       "explanation": "Magnetic separation is used for metal separation in e-waste recycling by using powerful magnets to attract and separate ferromagnetic materials (primarily iron and steel) from the shredded e-waste stream. This efficient, automated process separates magnetic metals from non-magnetic materials like plastic and glass.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Eddy current separation removes:",
@@ -663,8 +650,7 @@
       "correct": 0,
       "correctText": "Non-ferrous metals",
       "explanation": "Eddy current separation removes non-ferrous metals (such as aluminum, copper, and brass) from e-waste by using a rapidly rotating magnetic rotor that induces eddy currents in conductive materials. These currents create a repulsive force that ejects non-ferrous metals from the waste stream, separating them from non-conductive materials.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Green computing lowers:",
@@ -711,8 +697,7 @@
       "correct": 0,
       "correctText": "Environment",
       "explanation": "Sustainable IT practices help the environment by reducing carbon emissions, conserving natural resources, minimizing e-waste, and decreasing energy consumption. These practices ensure that technology's benefits are delivered with the smallest possible ecological footprint, protecting ecosystems for future generations.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "Energy-efficient hardware:",
@@ -725,8 +710,7 @@
       "correct": 0,
       "correctText": "Reduces power usage",
       "explanation": "Energy-efficient hardware reduces power usage through improved processor architectures, solid-state drives, efficient power supplies, and intelligent power management features. ENERGY STAR-certified devices can use 25-50% less energy than conventional equivalents while delivering comparable or better performance.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Green computing focuses on:",
@@ -755,8 +739,7 @@
       "correct": 0,
       "correctText": "Efficiency",
       "explanation": "Data center optimization improves efficiency through techniques like server virtualization, dynamic power management, efficient cooling designs, and workload consolidation. These optimizations increase the Power Usage Effectiveness (PUE) ratio, meaning more of the total facility power goes to IT equipment rather than overhead.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "Green IT encourages:",
@@ -769,8 +752,7 @@
       "correct": 0,
       "correctText": "Recycling",
       "explanation": "Green IT encourages recycling as a core practice to extend the lifecycle of electronic equipment, recover valuable materials, and prevent toxic substances from entering landfills. This includes recycling obsolete hardware, refurbishing usable equipment, and ensuring end-of-life electronics are processed through certified recyclers.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Proper e-waste management prevents:",
@@ -783,8 +765,7 @@
       "correct": 0,
       "correctText": "Environmental hazards",
       "explanation": "Proper e-waste management prevents environmental hazards by ensuring that toxic materials like lead, mercury, and cadmium are safely contained and processed, rather than leaching into soil and groundwater. Certified e-waste recyclers follow regulated procedures that protect both the environment and worker health.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "Quantum computing uses:",
@@ -893,8 +874,7 @@
       "correct": 0,
       "correctText": "Bits",
       "explanation": "Classical computers use bits as their fundamental unit of information, where each bit can be either 0 or 1. This binary system forms the basis of all classical computation, from simple arithmetic to complex algorithms, with operations performed sequentially or in limited parallel fashion.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Quantum computer supports:",
@@ -1278,8 +1258,7 @@
       "correct": 0,
       "correctText": "Data center efficiency",
       "explanation": "Power Usage Effectiveness (PUE) measures data center efficiency by dividing the total facility power consumption by the IT equipment power consumption. A PUE of 1.0 means all power goes to computing (ideal), while higher values indicate more power is wasted on cooling, lighting, and other overhead.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Green cloud computing reduces:",
@@ -1292,8 +1271,7 @@
       "correct": 0,
       "correctText": "Carbon footprint",
       "explanation": "Green cloud computing reduces carbon footprint by optimizing shared infrastructure, using renewable energy sources, implementing efficient cooling, and maximizing server utilization through multi-tenancy. Cloud providers can achieve much higher efficiency than individual on-premise data centers, reducing the overall environmental impact of computing.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Sustainable IT procurement encourages:",
@@ -1306,8 +1284,7 @@
       "correct": 0,
       "correctText": "Eco-friendly hardware",
       "explanation": "Sustainable IT procurement encourages purchasing eco-friendly hardware that meets environmental standards like ENERGY STAR, EPEAT, and TCO Certified. This includes devices designed for energy efficiency, manufactured with recycled materials, free from hazardous substances, and built for longevity and recyclability.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "E-waste recycling helps recover:",
@@ -1320,8 +1297,7 @@
       "correct": 3,
       "correctText": "All of the above",
       "explanation": "E-waste recycling helps recover all of the above — Gold (used in connectors and circuit boards), Silver (used in contacts and conductive pastes), and Copper (used in wiring and heat sinks). These precious metals are finite resources, and recovering them from e-waste is far more efficient and environmentally friendly than mining new ore.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "Biodegradable components reduce:",
@@ -1334,8 +1310,7 @@
       "correct": 0,
       "correctText": "Environmental impact",
       "explanation": "Biodegradable components reduce environmental impact by breaking down naturally at the end of their lifecycle instead of persisting in landfills for centuries. Research into biodegradable electronics, phone cases, and packaging materials aims to create technology that performs well during use but decomposes harmlessly when discarded.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Server virtualization allows:",
@@ -1348,8 +1323,7 @@
       "correct": 0,
       "correctText": "Multiple OS on one machine",
       "explanation": "Server virtualization allows multiple OS on one machine by using a hypervisor to create isolated virtual machines, each running its own operating system independently. This maximizes hardware utilization, reduces the number of physical servers needed, and lowers energy consumption and data center space requirements.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Sleep mode in devices helps:",
@@ -1362,8 +1336,7 @@
       "correct": 0,
       "correctText": "Save energy",
       "explanation": "Sleep mode in devices helps save energy by reducing power consumption to a minimal level when the device is not actively in use. A computer in sleep mode typically uses 1-5 watts compared to 60-250 watts when active, and proper power management settings can reduce a device's annual energy consumption by 20-40%.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Renewable energy in data centers uses:",
@@ -1376,8 +1349,7 @@
       "correct": 3,
       "correctText": "All of the above",
       "explanation": "Renewable energy in data centers uses all of the above — Solar power (photovoltaic panels generating electricity), Wind power (wind turbines providing clean energy), and Hydro power (harnessing water flow for electricity). Major cloud providers like Google, Microsoft, and Amazon are increasingly powering their data centers with 100% renewable energy.",
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "Proper disposal of batteries prevents:",
@@ -1390,8 +1362,7 @@
       "correct": 0,
       "correctText": "Toxic leakage",
       "explanation": "Proper disposal of batteries prevents toxic leakage because batteries contain hazardous chemicals like lead, cadmium, lithium, and mercury that can leach into soil and groundwater if discarded improperly. This contamination can persist for decades, poisoning drinking water sources and harming wildlife and human health.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Smart grids improve:",
@@ -1404,8 +1375,7 @@
       "correct": 0,
       "correctText": "Energy distribution efficiency",
       "explanation": "Smart grids improve energy distribution efficiency by using digital communication, sensors, and automation to balance electricity supply and demand in real-time, reduce transmission losses, integrate renewable energy sources, and prevent outages. This results in more reliable, efficient, and sustainable energy delivery.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Quantum annealing is mainly used for:",
@@ -1450,8 +1420,7 @@
       "correct": 0,
       "correctText": "Search speed",
       "explanation": "Grover's algorithm improves search speed by providing a quadratic speedup for searching unsorted databases. While a classical search requires O(N) operations to find an item in an unsorted list of N items, Grover's algorithm finds it in O(sqrt(N)) operations, which is a significant improvement for large datasets.",
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Quantum cryptography provides:",

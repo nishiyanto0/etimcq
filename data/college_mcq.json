@@ -14,8 +14,7 @@
       "correct": 2,
       "correctText": "Structural Health Monitoring",
       "explanation": "Structural Health Monitoring (SHM) uses embedded sensors to continuously monitor structural integrity — detecting vibrations, stress, cracks, and potential failures in infrastructure like bridges and buildings.",
-      "subtopic": "IoT",
-      "tags": []
+      "subtopic": "IoT"
     },
     {
       "question": "Number of layers in NGN (Next Generation Network) architecture is ______.",
@@ -108,8 +107,7 @@
       "correct": 2,
       "correctText": "Institute of Electrical and Electronics Engineers",
       "explanation": "IEEE = Institute of Electrical and Electronics Engineers — the world's largest technical professional organization, developing standards for networking, electronics, and computing.",
-      "subtopic": "General",
-      "tags": []
+      "subtopic": "General"
     },
     {
       "question": "Which of the following is not a characteristic of IoT?",
@@ -139,8 +137,7 @@
       "correct": 0,
       "correctText": "Wireless local area network",
       "explanation": "IEEE 802.11 is the family of WLAN (Wireless LAN) communication standards — commonly known as Wi-Fi. It includes variants like 802.11a (5GHz), 802.11b/g (2.4GHz), 802.11n (Wi-Fi 4), 802.11ac (Wi-Fi 5), and 802.11ax (Wi-Fi 6), each improving speed and efficiency.",
-      "subtopic": "Networking",
-      "tags": []
+      "subtopic": "Networking"
     },
     {
       "question": "This _______ provides the alignment interface between the soft-network and the PSTN signaling network.",
@@ -153,8 +150,7 @@
       "correct": 2,
       "correctText": "Signaling Gateway",
       "explanation": "Signaling Gateways bridge IP-based networks and traditional PSTN signaling (SS7) — enabling communication between soft-switches and legacy telephone networks.",
-      "subtopic": "NGN",
-      "tags": []
+      "subtopic": "NGN"
     },
     {
       "question": "______ protocols determine how the data is physically sent over the network's physical layer or medium.",
@@ -167,8 +163,7 @@
       "correct": 0,
       "correctText": "Link layer",
       "explanation": "Link layer (Data Link Layer) protocols define how data is transmitted over the physical medium — handling framing, error detection, and MAC addressing.",
-      "subtopic": "Networking",
-      "tags": []
+      "subtopic": "Networking"
     },
     {
       "question": "Wi Max, Wi-Fi, LTE technology is used in ______ mobile network.",
@@ -325,8 +320,7 @@
       "correct": 1,
       "correctText": "Sequence of Steps 1, 3, 4, 2",
       "explanation": "Chain of Custody: 1) Label original materials, 3) Take screenshot of evidence, 4) Install bit-by-bit copy to forensic computers, 2) Perform hash test to authenticate working copies.",
-      "subtopic": "Forensics",
-      "tags": []
+      "subtopic": "Forensics"
     },
     {
       "question": "Which of the following are the considerations involved with digital evidence?",
@@ -339,8 +333,7 @@
       "correct": 3,
       "correctText": "All of the above",
       "explanation": "Digital evidence handling requires all considerations: clear terminology, documenting extra steps, and personnel safety — ensuring proper evidence integrity and admissibility.",
-      "subtopic": "Forensics",
-      "tags": []
+      "subtopic": "Forensics"
     },
     {
       "question": "EMCI means _______.",
@@ -353,8 +346,7 @@
       "correct": 2,
       "correctText": "Extended Model for Cyberspace Investigation",
       "explanation": "EMCI = Extended Model for Cyberspace Investigation — a comprehensive framework for conducting systematic digital investigations. It extends traditional forensic models to address the unique challenges of cyberspace, including volatile evidence, jurisdictional issues, and cross-border investigations.",
-      "subtopic": "Forensics",
-      "tags": []
+      "subtopic": "Forensics"
     },
     {
       "question": "In IDIP Model which phase requires an investigator to walk through the physical crime scene and identify pieces of physical evidence?",
@@ -367,8 +359,7 @@
       "correct": 1,
       "correctText": "Survey phase",
       "explanation": "In the IDIP (Integrated Digital Investigation Process) Model, the Survey phase requires investigators to physically walk through the crime scene, identifying and documenting potential evidence. This crucial step ensures nothing is overlooked before detailed collection begins.",
-      "subtopic": "Forensics",
-      "tags": []
+      "subtopic": "Forensics"
     },
     {
       "question": "ADFM stands for ______?",
@@ -381,8 +372,7 @@
       "correct": 1,
       "correctText": "Abstract Digital Forensic Model",
       "explanation": "ADFM = Abstract Digital Forensic Model — a theoretical framework providing a structured, generalized approach to digital forensic investigations. It defines common processes across different forensic models, helping standardize investigation methodologies regardless of specific tools or environments.",
-      "subtopic": "Forensics",
-      "tags": []
+      "subtopic": "Forensics"
     },
     {
       "question": "Contacts with inmates are examples of ______?",
@@ -411,8 +401,7 @@
       "correct": 3,
       "correctText": "All of the above",
       "explanation": "Investigators must follow all ethical norms: contributing to society, upholding evidence integrity, and maintaining confidentiality throughout investigations.",
-      "subtopic": "Forensics",
-      "tags": []
+      "subtopic": "Forensics"
     },
     {
       "question": "The ________ says that an original writing must be offered as evidence unless it is unavailable, in which case other evidence of its contents may be used.",
@@ -441,8 +430,7 @@
       "correct": 0,
       "correctText": "Demonstrative",
       "explanation": "Documented/Demonstrative evidence presents proof in tangible form — documents, records, diagrams, or physical exhibits used to support claims.",
-      "subtopic": "Forensics",
-      "tags": []
+      "subtopic": "Forensics"
     },
     {
       "question": "Identify the missing step in the following from Executing the Ethical Hacking process: 1. Start by getting adequate background information about your organization... 2. Narrow down your scope. Pinpoint the specific systems you are targeting.",
@@ -518,8 +506,7 @@
       "correct": 1,
       "correctText": "widely used commercial freeware, and open source network security scanner.",
       "explanation": "Nmap (Network Mapper) is a free, open-source network security scanner — widely used for port scanning, service detection, OS fingerprinting, and network discovery. Security professionals and ethical hackers use it to map network topology and identify open ports and running services on target systems.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "Respecting privacy is a ________.",
@@ -564,8 +551,7 @@
       "correct": 1,
       "correctText": "Gray hat hacker, a hacker who is in between ethical and black hat hackers.",
       "explanation": "Grey Hat hackers operate between ethical (white) and malicious (black) hacking — sometimes violating laws but without malicious intent, often disclosing vulnerabilities publicly.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "Searching through trash cans and dumpsters for intellectual property, passwords, network diagrams, and other information means _________.",
@@ -610,8 +596,7 @@
       "correct": 3,
       "correctText": "Application attack",
       "explanation": "Attacking a web portal's authentication system is an Application Attack — targeting software vulnerabilities in web applications rather than OS or network infrastructure.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "Windows attack leads to ___________.",
@@ -624,8 +609,7 @@
       "correct": 2,
       "correctText": "Obtaining remote control of workstations",
       "explanation": "Windows attacks often aim to gain remote control of workstations — exploiting OS vulnerabilities to take over systems for further exploitation.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "How are the Cross Site Scripting (XSS) vulnerabilities exploited?",
@@ -638,8 +622,7 @@
       "correct": 1,
       "correctText": "They try to target scripts embedded in a page that are executed on the client-side browser rather than at the server side.",
       "explanation": "XSS attacks inject malicious scripts into web pages that execute in victims' browsers — stealing cookies, session tokens, or performing actions on behalf of users.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "What is traffic analysis or social network analysis?",
@@ -652,8 +635,7 @@
       "correct": 1,
       "correctText": "Gathering messaging-related information via log files or network analyzer that can tell the attacker about conversations...",
       "explanation": "Traffic analysis examines communication patterns — who communicates with whom, when, and how frequently — revealing relationships and sensitive information without accessing content.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "To prevent attachment-overload attacks what should be done?",
@@ -666,8 +648,7 @@
       "correct": 1,
       "correctText": "Limit the size of either e-mails or e-mail attachments.",
       "explanation": "Attachment overload attacks flood systems with large email attachments. Limiting email/attachment sizes prevents storage exhaustion and service disruption.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "Which one amongst the following is a network infrastructure vulnerability:",
@@ -680,8 +661,7 @@
       "correct": 1,
       "correctText": "A malicious employee using a network analyzer can steal confidential information in e-mails and files sent over the network.",
       "explanation": "Network sniffing/analysis attacks exploit network infrastructure vulnerabilities — capturing unencrypted data in transit across the network. A malicious insider using a network analyzer (like Wireshark) can intercept emails, files, and credentials, making encryption and network segmentation critical defenses.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "______ is a technique used by hackers to find the information exposed accidentally to the internet.",
@@ -694,8 +674,7 @@
       "correct": 1,
       "correctText": "Google Dorking",
       "explanation": "Google Dorking uses advanced search operators to find accidentally exposed information — sensitive files, login pages, cameras, and vulnerabilities indexed by search engines.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "Attackers can use _______ running on your network to make their systems appear as your system.",
@@ -708,8 +687,7 @@
       "correct": 2,
       "correctText": "ARP (Address Resolution Protocol)",
       "explanation": "ARP spoofing/poisoning allows attackers to associate their MAC address with a legitimate IP — intercepting, modifying, or redirecting network traffic.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "DoS refers to ________ attack.",
@@ -722,8 +700,7 @@
       "correct": 2,
       "correctText": "Denial of Service",
       "explanation": "DoS = Denial of Service attack — an attack that floods a target system with overwhelming requests or traffic, exhausting its resources (CPU, memory, bandwidth) so legitimate users cannot access the service. Common targets include web servers, DNS, and email systems.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "Attachment overloading attack, connection attack, autoresponder attack are understood as _____.",
@@ -736,8 +713,7 @@
       "correct": 0,
       "correctText": "email bomb attack",
       "explanation": "Email bomb attacks include attachment overloading, connection attacks, and autoresponder loops — flooding email systems to cause denial of service.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "Which port is used for Telnet?",
@@ -750,8 +726,7 @@
       "correct": 0,
       "correctText": "Port 23",
       "explanation": "Telnet uses Port 23 for remote terminal access — transmitting data (including passwords) in cleartext, making it insecure compared to SSH (Port 22).",
-      "subtopic": "Networking",
-      "tags": []
+      "subtopic": "Networking"
     },
     {
       "question": "Banner Security tip for SMTP server is _____.",
@@ -764,8 +739,7 @@
       "correct": 0,
       "correctText": "Make sure that you're always running the latest software updates.",
       "explanation": "Keeping SMTP servers updated with the latest patches is critical — closing known vulnerabilities that attackers could exploit through banner grabbing or direct attacks.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "Storage overload and bandwidth blocking can cause ______.",
@@ -778,8 +752,7 @@
       "correct": 1,
       "correctText": "Message Overloading Attack",
       "explanation": "Message Overloading Attacks consume storage and bandwidth by flooding systems with excessive messages — causing denial of service. When email servers are overwhelmed with massive volumes of messages, storage fills up and bandwidth is consumed, disrupting legitimate communication.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "_______ is a form of internet abuse which is perpetrated through the sending of massive volumes of email to a specific email address...",
@@ -792,8 +765,7 @@
       "correct": 2,
       "correctText": "Email bomb attack",
       "explanation": "Email bombing floods a specific email address with massive volumes of email — overwhelming the inbox, consuming server storage, and potentially causing the entire mail system to crash. This denial-of-service technique can also be used to distract victims from more targeted attacks happening simultaneously.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "As an attacker, you should scan all ________ UDP and ________ TCP ports on each network host that's targeted by your scanner.",
@@ -806,8 +778,7 @@
       "correct": 0,
       "correctText": "65,535 | 65,535",
       "explanation": "Both UDP and TCP have 65,535 possible ports each (numbered 0-65535). Comprehensive port scanning checks all possible ports on target systems to discover every running service — while well-known ports (0-1023) are most commonly targeted, attackers also scan ephemeral ports for hidden services.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "Attack to find two or more users on the same or different e-mail systems that have autoresponder configured can be understood as _________.",
@@ -820,8 +791,7 @@
       "correct": 2,
       "correctText": "Autoresponder Attack",
       "explanation": "Autoresponder attacks exploit auto-reply loops between two email addresses that both have auto-responders configured — creating endless reply cycles that consume bandwidth, fill storage, and disrupt mail services. Each auto-response triggers another, creating an infinite loop of messages.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     },
     {
       "question": "When the hacker corrupts data within the heap, and that code change forces your system to overwrite important data, it is called as ________.",
@@ -834,8 +804,7 @@
       "correct": 2,
       "correctText": "heap based buffer overflow",
       "explanation": "Heap-based buffer overflow attacks corrupt dynamically allocated memory (the heap) — overwriting critical data structures and potentially executing arbitrary code. Unlike stack-based overflows that target return addresses, heap overflows manipulate program data structures, making them harder to detect but equally dangerous.",
-      "subtopic": "Security",
-      "tags": []
+      "subtopic": "Security"
     }
   ]
 }

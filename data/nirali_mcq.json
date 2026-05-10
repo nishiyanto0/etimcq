@@ -4665,8 +4665,7 @@
       "correctText": "Email spam filtering with labeled emails",
       "explanation": "Email spam filtering using labeled emails (where each email is tagged as 'spam' or 'not spam') is a classic supervised learning problem. The algorithm learns from labeled training data to classify new, unseen emails. Supervised learning requires input-output pairs for training.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "What algorithm is mainly used in supervised learning?",
@@ -4680,8 +4679,7 @@
       "correctText": "Logistic regression",
       "explanation": "Logistic Regression is a fundamental supervised learning algorithm used for classification tasks. It estimates the probability of an event occurring based on input features. K-means and PCA are unsupervised techniques, while reinforcement learning is a separate paradigm.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Unsupervised learning primarily involves:",
@@ -4695,8 +4693,7 @@
       "correctText": "Discovering patterns from unlabelled data.",
       "explanation": "Unsupervised learning works with unlabeled data — finding hidden patterns, structures, or groupings without predefined output categories. Common applications include customer segmentation, anomaly detection, and dimensionality reduction using algorithms like K-means and hierarchical clustering.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Reinforcement learning is based on ......",
@@ -4710,8 +4707,7 @@
       "correctText": "receiving rewards or penalties through trial and error.",
       "explanation": "Reinforcement Learning (RL) is based on an agent learning to make decisions by performing actions in an environment and receiving feedback through rewards or penalties. Through trial and error, the agent discovers strategies that maximize cumulative rewards — used in game playing, robotics, and autonomous systems.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Which of the following is NOT an example of ML application?",
@@ -4742,8 +4738,7 @@
       "correctText": "Reinforcement Learning.",
       "explanation": "Q-Learning is a model-free reinforcement learning algorithm that learns the value of actions in states. It uses a Q-table to store expected rewards for state-action pairs, enabling an agent to learn optimal policies through exploration and exploitation without requiring a model of the environment.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "ML benefits retail mainly by ......",
@@ -4774,8 +4769,7 @@
       "correctText": "K-means clustering.",
       "explanation": "K-means clustering is a classic unsupervised learning algorithm that groups data into K clusters based on similarity. Support Vector Machines and Decision Trees are supervised learning algorithms. Reinforcement learning is a separate paradigm based on reward signals.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Which field overlaps with AI/ML but is focused on data-driven insights?",
@@ -4978,8 +4972,7 @@
       "correctText": "Human brain neurons",
       "explanation": "Artificial Neural Networks are inspired by the structure and function of biological neurons in the human brain. Like biological neurons that receive signals, process them, and fire outputs, artificial neurons (nodes) receive inputs, apply weights, pass through activation functions, and produce outputs — forming interconnected layers.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "The activation function in neural networks:",
@@ -4993,8 +4986,7 @@
       "correctText": "Introduces non-linearity.",
       "explanation": "Activation functions introduce non-linearity into neural networks, enabling them to learn complex patterns. Without non-linear activation functions, a multi-layer network would collapse into a simple linear model. Common activations include ReLU, Sigmoid, and Tanh.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "The learning process in neural networks involves ......",
@@ -5008,8 +5000,7 @@
       "correctText": "weight adjustment through backpropagation.",
       "explanation": "Neural networks learn through backpropagation — an algorithm that calculates the gradient of the loss function with respect to each weight by propagating errors backward from the output layer. Combined with gradient descent, this automatically adjusts weights to minimize prediction errors.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "What is weighted sum in neural networks?",
@@ -5023,8 +5014,7 @@
       "correctText": "Sum of inputs multiplied by weights.",
       "explanation": "The weighted sum in a neural network is calculated by multiplying each input by its corresponding weight and summing the results: z = w1*x1 + w2*x2 + ... + wn*xn + b (bias). This weighted sum is then passed through an activation function to produce the neuron's output.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Neural networks are widely used for ......",
@@ -5038,8 +5028,7 @@
       "correctText": "Pattern recognition and classification.",
       "explanation": "Neural networks excel at pattern recognition and classification tasks — identifying faces in photos, recognizing speech, classifying documents, detecting fraud, and diagnosing diseases. Their ability to learn hierarchical representations from raw data makes them ideal for complex recognition problems.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "What is the output layer's job?",
@@ -5053,8 +5042,7 @@
       "correctText": "Generate final model prediction.",
       "explanation": "The output layer produces the final prediction of the neural network. Its structure depends on the task: a single neuron for binary classification, multiple neurons (one per class) with softmax for multi-class classification, or continuous values for regression. The output layer's activation converts hidden layer representations into actionable predictions.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Why are neural networks sometimes called 'black box' systems?",
@@ -5068,8 +5056,7 @@
       "correctText": "Their internal decision processes are complex and hard to interpret.",
       "explanation": "Neural networks are called 'black boxes' because their internal decision-making is difficult to interpret. With potentially billions of interconnected parameters, understanding exactly how inputs map to outputs is extremely challenging — raising concerns about trust, accountability, and debugging in critical applications.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Which method helps neural networks learn from error?",
@@ -5083,8 +5070,7 @@
       "correctText": "Backpropagation.",
       "explanation": "Backpropagation is the algorithm that enables neural networks to learn from errors. It calculates how much each weight contributed to the final error (using the chain rule of calculus) and propagates this error gradient backward through the network — allowing weights to be updated in directions that reduce future errors.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Layers between input and output layers are called ......",
@@ -5115,8 +5101,7 @@
       "correctText": "All of the above.",
       "explanation": "Neural networks outperform rule-based systems (which require manually crafted rules), linear models (which can't capture complex non-linear relationships), and traditional programming approaches for complex pattern recognition tasks. Their ability to learn from examples makes them superior for problems where rules are difficult to define explicitly.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Generative AI is designed to ......",
@@ -5181,8 +5166,7 @@
       "correctText": "Focus on all parts of the input sequence for context.",
       "explanation": "Self-attention allows Transformers to weigh the importance of all tokens in a sequence relative to each other when processing each token. This enables the model to capture long-range dependencies and contextual relationships — understanding that 'it' in a sentence might refer to a noun mentioned much earlier.",
       "unit": 1,
-      "subtopic": "1.3",
-      "tags": []
+      "subtopic": "1.3"
     },
     {
       "question": "Multi-head attention means ......",
@@ -5196,8 +5180,7 @@
       "correctText": "Running several attention layers in parallel.",
       "explanation": "Multi-head attention runs multiple attention computations (heads) in parallel, each learning different types of relationships. One head might focus on syntax, another on semantic relationships, and another on long-distance dependencies. The outputs are concatenated and linearly transformed, enriching the model's representational capacity.",
       "unit": 1,
-      "subtopic": "1.3",
-      "tags": []
+      "subtopic": "1.3"
     },
     {
       "question": "Positional encoding in Transformers is used because ......",
@@ -5211,8 +5194,7 @@
       "correctText": "Transformers have no inherent sequence processing.",
       "explanation": "Unlike RNNs that process sequences sequentially, Transformers process all tokens simultaneously — losing inherent order information. Positional encoding injects position information into input embeddings, allowing the model to understand word order and sequence structure — essential for language understanding.",
       "unit": 1,
-      "subtopic": "1.3",
-      "tags": []
+      "subtopic": "1.3"
     },
     {
       "question": "Which is NOT a type of Generative AI?",
@@ -5243,8 +5225,7 @@
       "correctText": "GPT",
       "explanation": "GPT (Generative Pre-trained Transformer) is a text generation model developed by OpenAI. DALL-E generates images, Midjourney creates artwork from text descriptions, and Jukebox generates music. GPT specializes in generating coherent, contextually relevant text for applications like chatbots, content creation, and code generation.",
       "unit": 1,
-      "subtopic": "1.3",
-      "tags": []
+      "subtopic": "1.3"
     },
     {
       "question": "One application of Generative AI in finance is ......",
@@ -5295,8 +5276,7 @@
       "correctText": "Enhance user experience through engagement",
       "explanation": "The primary purpose of immersive technology is to enhance user experience through deep engagement — creating a sense of presence and emotional connection that traditional screens cannot achieve. By surrounding users with interactive content, these technologies enable more intuitive, memorable, and impactful experiences.",
       "unit": 4,
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Which technology completely replaces the real world?",
@@ -5405,8 +5385,7 @@
       "correctText": "Touch",
       "explanation": "Haptic technology stimulates the sense of touch by applying forces, vibrations, or motions to users. Haptic feedback in controllers, gloves, and suits provides tactile sensations — letting users 'feel' virtual objects, experience textures, and receive physical feedback that enhances immersion in virtual environments.",
       "unit": 4,
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "A common example of AR in daily life is ......",
@@ -5509,8 +5488,7 @@
       "correctText": "Ultrasound waves",
       "explanation": "Mid-air haptics use focused ultrasound waves to create tactile sensations in mid-air — no physical contact needed. Ultrasound speakers emit sound waves that converge at specific points in space, creating enough pressure to be felt on the skin. This enables touchless interfaces for displays, kiosks, and automotive controls.",
       "unit": 4,
-      "subtopic": "4.1",
-      "tags": []
+      "subtopic": "4.1"
     },
     {
       "question": "Which immersive technology is most used for training pilots?",
@@ -5658,8 +5636,7 @@
       "correctText": "Enabling virtual field trips",
       "explanation": "Immersive technology transforms education by enabling virtual field trips to historical sites, scientific phenomena, and distant locations. Students can explore the human body in 3D, walk through ancient Rome, or observe molecular reactions up close — making learning interactive, engaging, and accessible regardless of geographic limitations.",
       "unit": 4,
-      "subtopic": "4.2",
-      "tags": []
+      "subtopic": "4.2"
     },
     {
       "question": "Medical students use VR to ......",
@@ -5863,8 +5840,7 @@
       "correctText": "Reducing power consumption",
       "explanation": "Energy-efficient hardware — including low-power CPUs, SSDs, and Energy Star certified components — reduces power consumption and operating costs. Modern processors use dynamic voltage and frequency scaling (DVFS), sleep states, and advanced manufacturing processes to deliver more performance per watt — crucial for laptops, mobile devices, and large data centers.",
       "unit": 4,
-      "subtopic": "4.3",
-      "tags": []
+      "subtopic": "4.3"
     },
     {
       "question": "Which protocol is used in IoT logical design for messaging?",
@@ -6390,8 +6366,7 @@
       "correctText": "Exposure of transaction details publicly.",
       "explanation": "Public blockchains like Bitcoin expose all transaction details publicly — sender/receiver addresses, amounts, and timestamps are visible to anyone. While addresses are pseudonymous (not directly tied to real identities), sophisticated analysis can potentially trace transactions to individuals — creating privacy concerns.",
       "unit": 3,
-      "subtopic": "3.1",
-      "tags": []
+      "subtopic": "3.1"
     },
     {
       "question": "What is a node in blockchain?",
@@ -6422,8 +6397,7 @@
       "correctText": "Hash function",
       "explanation": "Hash functions (like SHA-256 in Bitcoin) generate a unique, fixed-length identifier for each block from its contents. This hash serves as the block's digital fingerprint — any change to the block's data produces a completely different hash, making tampering immediately detectable and ensuring block integrity.",
       "unit": 3,
-      "subtopic": "3.5",
-      "tags": []
+      "subtopic": "3.5"
     },
     {
       "question": "What does the consensus mechanism do?",
@@ -6760,8 +6734,7 @@
       "correctText": "To prove evidence integrity and control.",
       "explanation": "Chain of custody is a documented record of evidence handling that tracks who collected, accessed, transferred, and analyzed evidence at every stage. It proves evidence integrity in court — demonstrating that it wasn't tampered with, altered, or contaminated between collection and presentation. Any break in the chain can render evidence inadmissible.",
       "unit": 5,
-      "subtopic": "5.2",
-      "tags": []
+      "subtopic": "5.2"
     },
     {
       "question": "Which stage involves creating a forensic image of the digital evidence?",
@@ -6775,8 +6748,7 @@
       "correctText": "Preservation/Extraction",
       "explanation": "The Preservation/Extraction stage involves creating forensic images — exact bit-for-bit copies of digital storage media. Tools like dd, FTK Imager, or EnCase create these images while calculating hash values (MD5, SHA-256) to verify that the copy is identical to the original and hasn't been altered.",
       "unit": 5,
-      "subtopic": "5.1",
-      "tags": []
+      "subtopic": "5.1"
     },
     {
       "question": "Volatile data in digital forensics refers to ......",
@@ -6807,8 +6779,7 @@
       "correctText": "2001",
       "explanation": "The DFRWS (Digital Forensic Research Workshop) model was proposed in 2001 as one of the first standardized frameworks for digital forensic investigations. It established a systematic process consisting of Identification, Preservation, Collection, Examination, Analysis, and Presentation — influencing subsequent forensic methodologies worldwide.",
       "unit": 5,
-      "subtopic": "5.3",
-      "tags": []
+      "subtopic": "5.3"
     },
     {
       "question": "Which model adds Preparation and Return of Evidence phases?",
@@ -6822,8 +6793,7 @@
       "correctText": "EEDIP",
       "explanation": "The EEDIP (Enhanced Integrated Digital Investigation Process) model extends other frameworks by adding Preparation (before investigation) and Return of Evidence (returning seized items after analysis) phases. These additions ensure a more complete investigative lifecycle covering pre-investigation planning and post-investigation evidence management.",
       "unit": 5,
-      "subtopic": "5.3",
-      "tags": []
+      "subtopic": "5.3"
     },
     {
       "question": "The IDIP model integrates ......",
@@ -6837,8 +6807,7 @@
       "correctText": "both digital and physical crime scene investigations.",
       "explanation": "The IDIP (Integrated Digital Investigation Process) model uniquely integrates both digital and physical crime scene investigations — recognizing that modern crimes often span both domains. It coordinates digital evidence collection with traditional forensic processes like physical evidence gathering, witness interviews, and crime scene photography.",
       "unit": 5,
-      "subtopic": "5.3",
-      "tags": []
+      "subtopic": "5.3"
     },
     {
       "question": "Which model focuses on end-to-end traceability and automated documentation?",
@@ -6852,8 +6821,7 @@
       "correctText": "UMDFPM",
       "explanation": "UMDFPM (Unified Model for Digital Forensic Process Management) emphasizes end-to-end traceability and automated documentation throughout the forensic process. It addresses the challenge of managing complex, multi-jurisdictional investigations by providing systematic tracking and documentation of every investigative action.",
       "unit": 5,
-      "subtopic": "5.3",
-      "tags": []
+      "subtopic": "5.3"
     },
     {
       "question": "UMDFPM stands for ......",
@@ -6867,8 +6835,7 @@
       "correctText": "Unified Model of Digital Forensic Process.",
       "explanation": "UMDFPM stands for Unified Model of Digital Forensic Process — a comprehensive framework that standardizes and manages digital forensic investigations. It provides end-to-end traceability, ensuring every step from evidence collection to reporting is documented, auditable, and reproducible across complex cases.",
       "unit": 5,
-      "subtopic": "5.3",
-      "tags": []
+      "subtopic": "5.3"
     },
     {
       "question": "Which model is suitable for multi-agency cybercrime cases requiring structured communication?",
@@ -6882,8 +6849,7 @@
       "correctText": "Extended Model for Cybercrime Investigation",
       "explanation": "The Extended Model for Cybercrime Investigation (EMCI) is specifically designed for multi-agency cybercrime cases requiring structured communication. It provides frameworks for coordinating between law enforcement agencies, international bodies, and private sector partners — addressing jurisdictional challenges and ensuring consistent evidence handling.",
       "unit": 5,
-      "subtopic": "5.3",
-      "tags": []
+      "subtopic": "5.3"
     },
     {
       "question": "Ethical hacking is ......",
@@ -6914,8 +6880,7 @@
       "correctText": "White Hat",
       "explanation": "White Hat hackers are cybersecurity professionals who use their skills legally and ethically to help organizations secure their systems. They perform authorized penetration testing, vulnerability assessments, and security audits — operating with permission and following codes of ethics like EC-Council's or ISC2's professional standards.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "Which hacker type may access systems without permission but without malicious intent?",
@@ -6929,8 +6894,7 @@
       "correctText": "Grey Hat",
       "explanation": "Grey Hat hackers operate in an ethical grey zone — they may access systems without authorization but without malicious intent, often to expose vulnerabilities. Unlike White Hats who always seek permission, Grey Hats might hack first and disclose later. Their actions are technically illegal but often aim to improve security.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "A Red Hat Hacker is known for ......",
@@ -6944,8 +6908,7 @@
       "correctText": "aggressively stopping black hat hackers.",
       "explanation": "Red Hat hackers are vigilante security specialists who proactively and aggressively combat Black Hat hackers — sometimes using offensive techniques to disable malicious infrastructure, destroy malware, or launch counter-attacks against cybercriminals. They operate outside traditional security frameworks with the goal of actively disrupting malicious actors.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "Phases of Ethical Hacking do NOT include ......",
@@ -6993,8 +6956,7 @@
       "correctText": "Encrypting and exfiltrating data for double/triple extortion.",
       "explanation": "Ransomware 2.0 (double/triple extortion) goes beyond file encryption — attackers first steal sensitive data, then encrypt systems, and threaten to publish the stolen data if ransom isn't paid. Some also target customers, partners, or launch DDoS attacks. This approach pressures victims who might otherwise restore from backups without paying.",
       "unit": 5,
-      "subtopic": "5.5",
-      "tags": []
+      "subtopic": "5.5"
     },
     {
       "question": "IoT Exploits typically involve ......",
@@ -7025,8 +6987,7 @@
       "correctText": "Unknown vulnerabilities with no patches available.",
       "explanation": "Zero-day exploits target vulnerabilities that are unknown to the software vendor and have no available patches — giving defenders 'zero days' to fix the issue. They are extremely valuable on the black market (selling for hundreds of thousands to millions of dollars) and represent the most dangerous attack vector.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "Advanced WAF bypass attacks target ......",
@@ -7144,8 +7105,7 @@
       "correctText": "To preserve the original evidence while performing analysis.",
       "explanation": "Forensic duplication (imaging) creates an exact bit-for-bit copy of storage media, preserving the original evidence in its pristine state. All analysis is performed on the duplicate, ensuring the original remains untouched and admissible in court. Hash verification (MD5/SHA-256) confirms the copy matches the original exactly.",
       "unit": 5,
-      "subtopic": "5.1",
-      "tags": []
+      "subtopic": "5.1"
     },
     {
       "question": "Which tool is widely used for forensic imaging?",
@@ -7176,8 +7136,7 @@
       "correctText": "Quickly assess and prioritize evidence.",
       "explanation": "Forensic triage is the rapid assessment and prioritization of digital evidence to identify the most relevant and time-sensitive items. In cases with multiple devices, triage helps investigators focus limited resources on devices most likely to contain critical evidence — accelerating the investigation process.",
       "unit": 5,
-      "subtopic": "5.1",
-      "tags": []
+      "subtopic": "5.1"
     },
     {
       "question": "Metadata in digital evidence includes ......",
@@ -7191,8 +7150,7 @@
       "correctText": "Data about data (creation time, author, last modified).",
       "explanation": "Metadata is 'data about data' — information embedded in files describing their characteristics: creation time, last modified date, author, software used, GPS coordinates (in photos), camera model, and editing history. This metadata can prove when documents were created, establish timelines, and link suspects to files.",
       "unit": 5,
-      "subtopic": "5.1",
-      "tags": []
+      "subtopic": "5.1"
     },
     {
       "question": "Imaging a storage device ensures ......",
@@ -7206,8 +7164,7 @@
       "correctText": "an exact bit-by-bit copy of data.",
       "explanation": "Imaging a storage device creates an exact bit-by-bit copy (forensic image) of every sector — including deleted files, slack space, and unallocated space that might contain recoverable evidence. Unlike simple file copying, imaging captures the complete physical state of the storage medium for comprehensive analysis.",
       "unit": 5,
-      "subtopic": "5.1",
-      "tags": []
+      "subtopic": "5.1"
     },
     {
       "question": "Hashing in digital forensics is used to ......",
@@ -7238,8 +7195,7 @@
       "correctText": "ADFM",
       "explanation": "The Abstract Digital Forensic Model (ADFM) emphasizes legal admissibility as a core principle throughout the investigation. It integrates legal requirements into every phase — ensuring evidence collection, analysis, and presentation follow standards that courts will accept, focusing on maintaining chain of custody and documented procedures.",
       "unit": 5,
-      "subtopic": "5.3",
-      "tags": []
+      "subtopic": "5.3"
     },
     {
       "question": "The 'Preservation' phase in any forensic model involves ......",
@@ -7253,8 +7209,7 @@
       "correctText": "collecting evidence and maintaining chain of custody.",
       "explanation": "The Preservation phase involves securing and protecting digital evidence from alteration or destruction — including creating forensic images, calculating hash values, documenting the state of devices, and establishing chain of custody. Proper preservation ensures evidence remains admissible and defensible throughout legal proceedings.",
       "unit": 5,
-      "subtopic": "5.3",
-      "tags": []
+      "subtopic": "5.3"
     },
     {
       "question": "Which model is used for real-time or live forensic analysis?",
@@ -7268,8 +7223,7 @@
       "correctText": "Live Forensic Model",
       "explanation": "The Live Forensic Model is designed for real-time analysis of running systems where shutting down would destroy volatile evidence. Investigators capture RAM contents, active network connections, running processes, and encryption keys before the system is powered off — preserving ephemeral evidence that would otherwise be lost.",
       "unit": 5,
-      "subtopic": "5.3",
-      "tags": []
+      "subtopic": "5.3"
     },
     {
       "question": "Foot printing in ethical hacking is done to ......",
@@ -7317,8 +7271,7 @@
       "correctText": "listing potential targets and system details.",
       "explanation": "Enumeration is the detailed extraction of system information — listing user accounts, shared resources, network topology, software versions, and security configurations. This active information gathering goes beyond scanning to build a comprehensive map of the target environment, identifying specific vulnerabilities to exploit.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "Post-exploitation phase is for ......",
@@ -7349,8 +7302,7 @@
       "correctText": "malicious hackers exploiting vulnerabilities for personal gain.",
       "explanation": "Black Hat hackers are malicious actors who illegally exploit vulnerabilities for personal gain — stealing data, deploying ransomware, conducting fraud, or causing damage. Their activities are criminal offenses under cybercrime laws worldwide. They operate without authorization and aim to profit from or harm their targets.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "Blue Hat hackers are usually ......",
@@ -7364,8 +7316,7 @@
       "correctText": "internal corporate testers before software release.",
       "explanation": "Blue Hat hackers are external security professionals hired by companies to test software before release — particularly identifying vulnerabilities that malicious hackers might exploit. Microsoft popularized this term for security experts who participate in their invitation-only BlueHat conferences to improve Windows security.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "Script Kiddies are ......",
@@ -7396,8 +7347,7 @@
       "correctText": "political or social causes.",
       "explanation": "Hacktivists are hackers motivated by political or social causes — using their skills to promote activism, protest organizations, or expose information they believe should be public. Groups like Anonymous target governments, corporations, and institutions they view as corrupt or unethical — blurring the line between civil disobedience and cybercrime.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "State-sponsored hackers are ......",
@@ -7411,8 +7361,7 @@
       "correctText": "government-backed attackers for espionage or cyberwarfare.",
       "explanation": "State-sponsored hackers are elite cyber operatives funded and directed by governments for espionage, intellectual property theft, critical infrastructure sabotage, or influence operations. Groups like APT28 (Russia), Lazarus (North Korea), and APT41 (China) conduct sophisticated, persistent campaigns targeting strategic national interests.",
       "unit": 5,
-      "subtopic": "5.5",
-      "tags": []
+      "subtopic": "5.5"
     },
     {
       "question": "Phishing attacks aim to ......",
@@ -7426,8 +7375,7 @@
       "correctText": "trick users into revealing sensitive information.",
       "explanation": "Phishing attacks use deceptive emails, websites, or messages that appear to come from trusted sources to trick users into revealing passwords, credit card numbers, or other sensitive information. Social engineering techniques create urgency or fear to bypass victims' skepticism — remaining one of the most common and effective attack vectors.",
       "unit": 5,
-      "subtopic": "5.5",
-      "tags": []
+      "subtopic": "5.5"
     },
     {
       "question": "Ransomware attacks primarily involve ......",
@@ -7441,8 +7389,7 @@
       "correctText": "encrypting user data and demanding ransom.",
       "explanation": "Ransomware attacks encrypt victims' files and demand payment (usually cryptocurrency) for the decryption key. Modern ransomware like LockBit, BlackCat, and Clop also steal data for double extortion. Attacks typically enter through phishing, RDP vulnerabilities, or software vulnerabilities — crippling businesses, hospitals, and government agencies.",
       "unit": 5,
-      "subtopic": "5.5",
-      "tags": []
+      "subtopic": "5.5"
     },
     {
       "question": "IoT Botnets are used to ......",
@@ -7473,8 +7420,7 @@
       "correctText": "malicious software designed to disrupt or damage systems.",
       "explanation": "Malware (malicious software) is any software designed to harm, exploit, or compromise systems — including viruses, worms, trojans, ransomware, spyware, and adware. Malware can steal data, encrypt files, create backdoors, log keystrokes, or use infected systems to attack others. Protection requires layered security including antivirus, patching, and user awareness.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "Zero-day attacks are dangerous because ......",
@@ -7488,8 +7434,7 @@
       "correctText": "there is no patch available yet.",
       "explanation": "Zero-day attacks exploit unknown vulnerabilities for which no patch or fix exists yet — giving organizations zero days to prepare. Without available patches, traditional defenses like antivirus and vulnerability scanners cannot detect these attacks. Zero-days are highly valuable (selling for $50,000 to $2.5M+) and often used in targeted attacks.",
       "unit": 5,
-      "subtopic": "5.5",
-      "tags": []
+      "subtopic": "5.5"
     },
     {
       "question": "The IT (Amendment) Act 2008 introduced ......",
@@ -7503,8 +7448,7 @@
       "correctText": "cybercrime provisions including identity theft, phishing, and cyber terrorism.",
       "explanation": "The IT (Amendment) Act 2008 significantly strengthened India's cybercrime framework by introducing provisions for identity theft (Section 66C), phishing (Section 66D), cyber terrorism (Section 66F), child pornography, and data breach notifications. It expanded the scope beyond the original 2000 Act's focus on e-commerce and digital signatures.",
       "unit": 5,
-      "subtopic": "5.5",
-      "tags": []
+      "subtopic": "5.5"
     },
     {
       "question": "Digital Personal Data Protection Act (DPDP) 2023 replaced ......",
@@ -8401,8 +8345,7 @@
       "correctText": "DHT22",
       "explanation": "DHT22 is a digital sensor that measures temperature and humidity — outputting data in digital format directly readable by microcontrollers. LDR (Light Dependent Resistor), thermistors, and load cells are analog sensors that require analog-to-digital conversion before digital systems can process their signals.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "The IR sensor mainly detects ......",
@@ -8416,8 +8359,7 @@
       "correctText": "Infrared radiation and object presence.",
       "explanation": "An IR (Infrared) sensor detects infrared radiation emitted by objects and can determine object presence, proximity, and motion. Passive IR (PIR) sensors detect body heat for motion detection in security systems. Active IR sensors emit and detect reflected IR beams for proximity sensing and line-following robots.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "A relay can be classified as ......",
@@ -8465,8 +8407,7 @@
       "correctText": "Detect water depth or presence.",
       "explanation": "A water level sensor detects water depth or presence — critical for applications like flood monitoring, water tank management, irrigation systems, and industrial process control. Types include float sensors, ultrasonic level sensors, and capacitive probes, each suited to different measurement ranges and environments.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "Which of the following is NOT a sensor?",
@@ -8480,8 +8421,7 @@
       "correctText": "Servo motor.",
       "explanation": "A servo motor is an actuator (output device), not a sensor. It receives control signals and rotates to precise positions — used for mechanical movement in robots, drones, and automated systems. Thermistors (temperature), accelerometers (motion), and gyroscopes (rotation) are all sensors that detect physical phenomena.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "An actuator that allows switching of high-voltage devices is ......",
@@ -8546,8 +8486,7 @@
       "correctText": "Flame sensor",
       "explanation": "A flame sensor detects fire by sensing infrared or ultraviolet radiation emitted by flames. These sensors respond to specific wavelengths produced by fire — triggering alarms, activating suppression systems, or alerting monitoring services. They're essential in industrial safety, home security, and forest fire detection systems.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "A stepper motor is used when ......",
@@ -8561,8 +8500,7 @@
       "correctText": "Rotation in steps is required.",
       "explanation": "A stepper motor rotates in precise discrete steps (typically 1.8° per step) — enabling exact position control without feedback sensors. This makes it ideal for 3D printers, CNC machines, robotic arms, and automated manufacturing where precise angular positioning is critical.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "Which sensor detects sound levels?",
@@ -8593,8 +8531,7 @@
       "correctText": "Altitude and pressure.",
       "explanation": "BMP180 is a digital barometric pressure and altitude sensor. It measures atmospheric pressure (300-1100 hPa) with high accuracy — enabling altitude estimation, weather forecasting, and indoor navigation. It's commonly used in drones, weather stations, and fitness trackers for floor climbing detection.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "A photodiode is primarily used for ......",
@@ -8693,8 +8630,7 @@
       "correctText": "Relay",
       "explanation": "A relay is an actuator (switching device), not a sensor. It controls circuits by opening or closing contacts in response to electrical signals. Gyroscopes (rotation), accelerometers (motion), and thermistors (temperature) are all sensors that detect physical phenomena and convert them to electrical signals.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "A buzzer in IoT acts as a ......",
@@ -8725,8 +8661,7 @@
       "correctText": "Temperature / tilt.",
       "explanation": "Accelerometers measure acceleration forces including static gravity (determining tilt/orientation) and dynamic motion (vibration, movement). They're fundamental in smartphones for screen rotation, fitness trackers for step counting, vehicle systems for crash detection, and drones for stability control.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "Which sensor is used in smoke detection?",
@@ -8740,8 +8675,7 @@
       "correctText": "MQ-2",
       "explanation": "MQ-2 is a gas sensor commonly used in smoke detection systems. It detects smoke particles, LPG, propane, methane, hydrogen, and carbon monoxide. When smoke enters the sensor chamber, it changes the resistance of the sensing element — triggering alarms in home safety and industrial fire detection systems.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "A vibration sensor is used for ......",
@@ -8772,8 +8706,7 @@
       "correctText": "Measures soil moisture content.",
       "explanation": "A capacitive soil moisture sensor measures volumetric water content in soil by detecting changes in capacitance caused by soil's dielectric properties. Unlike resistive sensors, capacitive types don't corrode and provide more accurate, long-lasting measurements — making them ideal for smart agriculture and automated irrigation.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "Which sensor is suitable for soil moisture measurement?",
@@ -8787,8 +8720,7 @@
       "correctText": "Capacitive soil moisture sensor",
       "explanation": "Capacitive soil moisture sensors are specifically designed for measuring soil moisture content. Unlike resistive alternatives that corrode over time, capacitive sensors use non-contact measurement through the soil's dielectric constant — providing durable, accurate readings essential for precision agriculture and smart irrigation systems.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": []
+      "subtopic": "2.3"
     },
     {
       "question": "The role of an actuator in IoT is to ......",
@@ -9132,8 +9064,7 @@
       "correctText": "Media Gateway",
       "explanation": "The Media Gateway translates between IP networks and traditional PSTN (Public Switched Telephone Network) systems. It converts TDM voice from telephone lines into VoIP packets and vice versa — enabling seamless communication between IP-based services and legacy phone networks during the transition to all-IP infrastructure.",
       "unit": 2,
-      "subtopic": "2.4",
-      "tags": []
+      "subtopic": "2.4"
     },
     {
       "question": "NGN architecture supports mobility using ......",
@@ -9704,8 +9635,7 @@
       "correctText": "Computing between edge devices and the cloud.",
       "explanation": "Fog computing describes a computing layer between edge devices and the cloud — typically at local gateways, routers, or mini data centers. It processes time-sensitive data locally while sending aggregated data to the cloud. Fog extends cloud capabilities closer to where data is generated — balancing latency and computational power.",
       "unit": 2,
-      "subtopic": "2.5",
-      "tags": []
+      "subtopic": "2.5"
     },
     {
       "question": "An IoT gateway serves as ......",
@@ -9824,8 +9754,7 @@
       "correctText": "Any information stored or transmitted in digital form.",
       "explanation": "Digital evidence encompasses any information stored or transmitted in digital form that may be used in legal proceedings — including files on hard drives, emails, cloud data, mobile device contents, network logs, GPS data, social media posts, and metadata. Its scope extends far beyond any single storage medium.",
       "unit": 5,
-      "subtopic": "5.1",
-      "tags": []
+      "subtopic": "5.1"
     },
     {
       "question": "Write-blocking devices are used in digital forensics to ......",
@@ -9873,8 +9802,7 @@
       "correctText": "Manipulating people to reveal confidential information.",
       "explanation": "Social engineering manipulates people into revealing confidential information or performing actions that compromise security. Unlike technical hacking, it exploits human psychology — trust, fear, curiosity, and authority. Common techniques include phishing, pretexting, baiting, and tailgating. It's involved in 98% of cyber attacks.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "A Denial of Service (DoS) attack aims to ......",
@@ -9888,8 +9816,7 @@
       "correctText": "Make a service unavailable to legitimate users.",
       "explanation": "A DoS (Denial of Service) attack aims to make a service unavailable by overwhelming it with traffic or requests — exhausting bandwidth, CPU, memory, or connection limits. DDoS (Distributed DoS) uses multiple compromised systems to amplify the attack, making it harder to block. Protection requires traffic filtering and scalable infrastructure.",
       "unit": 5,
-      "subtopic": "5.5",
-      "tags": []
+      "subtopic": "5.5"
     },
     {
       "question": "A firewall in network security is used to ......",
@@ -9903,8 +9830,7 @@
       "correctText": "Monitor and control incoming and outgoing network traffic.",
       "explanation": "A firewall monitors and controls network traffic based on security rules — allowing legitimate traffic while blocking unauthorized access. It can be hardware or software-based, operating at different OSI layers. Next-generation firewalls add deep packet inspection, intrusion prevention, and application-level control.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": " penetration testing is performed to ......",
@@ -9918,8 +9844,7 @@
       "correctText": "Identify security weaknesses before attackers exploit them.",
       "explanation": "Penetration testing simulates real attacks to identify security weaknesses before malicious hackers can exploit them. Conducted by authorized ethical hackers, it provides actionable insights into vulnerabilities, their potential impact, and remediation steps — helping organizations proactively strengthen their security defenses.",
       "unit": 5,
-      "subtopic": "5.5",
-      "tags": []
+      "subtopic": "5.5"
     },
     {
       "question": "Two-factor authentication (2FA) improves security by ......",
@@ -9933,8 +9858,7 @@
       "correctText": "Requiring two different types of verification.",
       "explanation": "Two-factor authentication requires two different verification types: something you know (password), something you have (phone/token), or something you are (biometric). Even if one factor is compromised, attackers cannot access the account without the second factor — significantly reducing unauthorized access risk.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": []
+      "subtopic": "5.4"
     },
     {
       "question": "Virtual Reality (VR) creates immersion primarily through ......",

@@ -37,14 +37,18 @@ const files = [
 
 files.forEach(file => {
   if (!fs.existsSync(file)) return;
-  console.log(`Processing ${file}...`);
+  console.log(`Deep cleaning and re-tagging ${file}...`);
   const data = JSON.parse(fs.readFileSync(file, 'utf8'));
   
   data.questions.forEach(q => {
+    // 1. Clear existing tags to start fresh
+    delete q.tags; 
+    
     const tags = new Set();
     const content = `${q.question} ${q.options.join(' ')} ${q.explanation || ''}`.toLowerCase();
     
     for (const [abbr, full] of Object.entries(MAPPINGS)) {
+      // Use strict word boundaries \b to prevent matching inside words like "Artificial" or "Hardware"
       const abbrRegex = new RegExp(`\\b${abbr.replace('-', '\\-')}\\b`, 'i');
       const fullRegex = new RegExp(`\\b${full}\\b`, 'i');
       
@@ -53,10 +57,13 @@ files.forEach(file => {
       }
     }
     
-    q.tags = Array.from(tags);
+    // Only add tags if we found any
+    if (tags.size > 0) {
+      q.tags = Array.from(tags);
+    }
   });
   
   fs.writeFileSync(file, JSON.stringify(data, null, 2));
 });
 
-console.log('Auto-tagging complete!');
+console.log('STRICT Auto-tagging complete! All "AR" matches are now confirmed standalone words.');

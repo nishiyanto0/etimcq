@@ -209,8 +209,7 @@
       "correct": 2,
       "correctText": "React to present only",
       "explanation": "Reactive machines only perceive and react to the current situation — they have no memory of past events and cannot learn from experience. They simply match inputs to outputs.",
-      "subtopic": "1.1",
-      "tags": []
+      "subtopic": "1.1"
     },
     {
       "question": "IBM Deep Blue is:",
@@ -287,8 +286,7 @@
       "correct": 2,
       "correctText": "Labeled data",
       "explanation": "Supervised learning requires labeled training data — each training example has the correct answer (label) attached. The model learns to map inputs to these known outputs.",
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Spam detection is example of:",
@@ -333,8 +331,7 @@
       "correct": 1,
       "correctText": "Rewards and penalties",
       "explanation": "Reinforcement learning uses a reward/penalty system — an agent takes actions, receives rewards for good ones and penalties for bad ones, learning the optimal strategy over time (like training a dog).",
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Q-learning is used in:",
@@ -347,8 +344,7 @@
       "correct": 2,
       "correctText": "Reinforcement learning",
       "explanation": "Q-learning is a model-free reinforcement learning algorithm that learns to predict the expected return or utility of an action in a given state.",
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Deep Learning uses:",
@@ -394,8 +390,7 @@
       "correct": 1,
       "correctText": "Human brain",
       "explanation": "Artificial neural networks (ANNs) are loosely modeled after the biological brain — with artificial neurons (nodes) connected by weighted edges (synapses) that adjust during learning.",
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Backpropagation is used to:",
@@ -408,8 +403,7 @@
       "correct": 1,
       "correctText": "Adjust weights",
       "explanation": "Backpropagation is the core training algorithm for neural networks — it calculates gradients of the loss function and propagates them backward through the network to adjust weights.",
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Data Science mainly focuses on:",
@@ -438,8 +432,7 @@
       "correct": 1,
       "correctText": "Transformers",
       "explanation": "Self-attention is the key mechanism in Transformers — it allows each token to attend to all other tokens in the sequence, capturing long-range dependencies regardless of distance.",
-      "subtopic": "1.3",
-      "tags": []
+      "subtopic": "1.3"
     },
     {
       "question": "Data poisoning attack affects:",
@@ -452,8 +445,7 @@
       "correct": 1,
       "correctText": "Training data",
       "explanation": "Data poisoning attacks corrupt the training dataset — by injecting malicious samples, attackers cause the model to learn wrong patterns and make incorrect predictions at deployment.",
-      "subtopic": "1.4",
-      "tags": []
+      "subtopic": "1.4"
     },
     {
       "question": "MFA stands for:",
@@ -482,8 +474,7 @@
       "correct": 1,
       "correctText": "Model memorizes training data",
       "explanation": "Overfitting occurs when a model memorizes the training data — including noise and outliers — instead of learning the underlying patterns. As a result, it performs extremely well on training data but poorly on new, unseen data, defeating the purpose of the model entirely.",
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "IBM Watson is example of:",
@@ -512,8 +503,7 @@
       "correct": 2,
       "correctText": "Images and video",
       "explanation": "Computer Vision enables machines to interpret visual information — analyzing images and video to recognize objects, faces, scenes, and activities.",
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "Logistic Regression is used in:",
@@ -526,8 +516,7 @@
       "correct": 0,
       "correctText": "Supervised learning",
       "explanation": "In supervised learning, outputs are labeled — the training data includes correct answers so the model learns to predict them for new inputs.",
-      "subtopic": "1.2",
-      "tags": []
+      "subtopic": "1.2"
     },
     {
       "question": "AI-powered cybersecurity detects:",
@@ -572,8 +561,7 @@
       "correct": 1,
       "correctText": "NLP",
       "explanation": "NLP (Natural Language Processing) enables machines to understand, interpret, and generate human language — powering chatbots, translation, and voice assistants.",
-      "subtopic": "1.1",
-      "tags": []
+      "subtopic": "1.1"
     },
     {
       "question": "Generative AI is subset of:",
@@ -686,8 +674,7 @@
       "correct": 1,
       "correctText": "Reinforcement learning",
       "subtopic": "1.2",
-      "explanation": "Actor-Critic methods belong to reinforcement learning — they combine two components: the Actor (which decides which action to take) and the Critic (which evaluates how good the action was). This dual approach provides more stable learning than using either policy-based or value-based methods alone.",
-      "tags": []
+      "explanation": "Actor-Critic methods belong to reinforcement learning — they combine two components: the Actor (which decides which action to take) and the Critic (which evaluates how good the action was). This dual approach provides more stable learning than using either policy-based or value-based methods alone."
     },
     {
       "question": "GANs are used in:",
@@ -700,8 +687,7 @@
       "correct": 1,
       "correctText": "Image generation",
       "subtopic": "1.3",
-      "explanation": "GANs (Generative Adversarial Networks) are primarily used for image generation. They consist of two competing networks — a Generator that creates fake images and a Discriminator that tries to detect them. Through this adversarial process, the Generator learns to produce increasingly realistic images.",
-      "tags": []
+      "explanation": "GANs (Generative Adversarial Networks) are primarily used for image generation. They consist of two competing networks — a Generator that creates fake images and a Discriminator that tries to detect them. Through this adversarial process, the Generator learns to produce increasingly realistic images."
     },
     {
       "question": "Generative AI creates:",
@@ -730,8 +716,7 @@
       "correct": 2,
       "correctText": "Transformer",
       "subtopic": "1.3",
-      "explanation": "GPT (Generative Pre-trained Transformer) is built on the Transformer architecture, which uses self-attention mechanisms to process entire sequences simultaneously rather than sequentially. This allows GPT to generate coherent, contextually relevant text by attending to all previous tokens at once.",
-      "tags": []
+      "explanation": "GPT (Generative Pre-trained Transformer) is built on the Transformer architecture, which uses self-attention mechanisms to process entire sequences simultaneously rather than sequentially. This allows GPT to generate coherent, contextually relevant text by attending to all previous tokens at once."
     },
     {
       "question": "PCA is used for:",
@@ -744,8 +729,7 @@
       "correct": 1,
       "correctText": "Dimensionality reduction",
       "subtopic": "1.2",
-      "explanation": "PCA (Principal Component Analysis) is used for dimensionality reduction — it transforms high-dimensional data into fewer dimensions while preserving the most important variance. This helps visualize complex data, speed up training, and reduce noise, all while retaining the essential information.",
-      "tags": []
+      "explanation": "PCA (Principal Component Analysis) is used for dimensionality reduction — it transforms high-dimensional data into fewer dimensions while preserving the most important variance. This helps visualize complex data, speed up training, and reduce noise, all while retaining the essential information."
     },
     {
       "question": "AI's goal is to:",
@@ -870,8 +854,7 @@
       "correct": 1,
       "correctText": "Labeled",
       "subtopic": "1.2",
-      "explanation": "In supervised learning, the output (label) is known and provided for each training example. The model learns the mapping from inputs to these labeled outputs so it can predict correct labels for new, unseen data — this is what distinguishes it from unsupervised learning.",
-      "tags": []
+      "explanation": "In supervised learning, the output (label) is known and provided for each training example. The model learns the mapping from inputs to these labeled outputs so it can predict correct labels for new, unseen data — this is what distinguishes it from unsupervised learning."
     },
     {
       "question": "Which learning method is used in customer segmentation?",
@@ -916,8 +899,7 @@
       "correct": 0,
       "correctText": "Supervised learning",
       "subtopic": "1.2",
-      "explanation": "Decision Tree is a supervised learning algorithm that builds a flowchart-like tree structure from labeled training data. Each internal node represents a decision based on a feature, each branch represents an outcome, and each leaf represents a classification — making it intuitive and easy to interpret.",
-      "tags": []
+      "explanation": "Decision Tree is a supervised learning algorithm that builds a flowchart-like tree structure from labeled training data. Each internal node represents a decision based on a feature, each branch represents an outcome, and each leaf represents a classification — making it intuitive and easy to interpret."
     },
     {
       "question": "Deep learning models require:",
@@ -946,8 +928,7 @@
       "correct": 1,
       "correctText": "Neural networks",
       "subtopic": "1.2",
-      "explanation": "Hidden layers are the intermediate layers in neural networks between input and output. Each hidden layer transforms the data through weighted connections and activation functions, progressively extracting higher-level features — early layers detect simple patterns, deeper layers detect complex combinations.",
-      "tags": []
+      "explanation": "Hidden layers are the intermediate layers in neural networks between input and output. Each hidden layer transforms the data through weighted connections and activation functions, progressively extracting higher-level features — early layers detect simple patterns, deeper layers detect complex combinations."
     },
     {
       "question": "Backpropagation is mainly used for:",
@@ -960,8 +941,7 @@
       "correct": 1,
       "correctText": "Weight adjustment",
       "subtopic": "1.2",
-      "explanation": "Backpropagation is mainly used for weight adjustment in neural networks. It computes the gradient of the loss function with respect to each weight by propagating the error backward from the output layer through hidden layers. These gradients then guide weight updates via optimization algorithms like SGD.",
-      "tags": []
+      "explanation": "Backpropagation is mainly used for weight adjustment in neural networks. It computes the gradient of the loss function with respect to each weight by propagating the error backward from the output layer through hidden layers. These gradients then guide weight updates via optimization algorithms like SGD."
     },
     {
       "question": "The input layer in neural network:",
@@ -974,8 +954,7 @@
       "correct": 1,
       "correctText": "Receives data",
       "subtopic": "1.2",
-      "explanation": "The input layer in a neural network receives raw data and passes it forward to the hidden layers for processing. Each neuron in the input layer represents one feature of the data — it doesn't perform any computation itself, but serves as the entry point for information into the network.",
-      "tags": []
+      "explanation": "The input layer in a neural network receives raw data and passes it forward to the hidden layers for processing. Each neuron in the input layer represents one feature of the data — it doesn't perform any computation itself, but serves as the entry point for information into the network."
     },
     {
       "question": "Overfitting occurs when:",
@@ -988,8 +967,7 @@
       "correct": 1,
       "correctText": "Model memorizes training data",
       "subtopic": "1.2",
-      "explanation": "Overfitting occurs when a model memorizes training data — including noise and random fluctuations — rather than learning the true underlying patterns. The model achieves near-perfect training accuracy but fails on new data because it learned specifics of the training set rather than generalizable rules.",
-      "tags": []
+      "explanation": "Overfitting occurs when a model memorizes training data — including noise and random fluctuations — rather than learning the true underlying patterns. The model achieves near-perfect training accuracy but fails on new data because it learned specifics of the training set rather than generalizable rules."
     },
     {
       "question": "One advantage of deep learning:",
@@ -1034,8 +1012,7 @@
       "correct": 1,
       "correctText": "Understand human language",
       "subtopic": "1.1",
-      "explanation": "NLP (Natural Language Processing) helps machines understand, interpret, and generate human language. It powers practical applications like chatbots, language translation (Google Translate), sentiment analysis, voice assistants (Siri, Alexa), and text summarization — bridging the communication gap between humans and computers.",
-      "tags": []
+      "explanation": "NLP (Natural Language Processing) helps machines understand, interpret, and generate human language. It powers practical applications like chatbots, language translation (Google Translate), sentiment analysis, voice assistants (Siri, Alexa), and text summarization — bridging the communication gap between humans and computers."
     },
     {
       "question": "Example of Generative AI:",
@@ -1080,8 +1057,7 @@
       "correct": 1,
       "correctText": "NLP tasks",
       "subtopic": "1.3",
-      "explanation": "The Transformer architecture revolutionized NLP by replacing recurrence with self-attention, allowing parallel processing of sequences. It powers major models like GPT, BERT, and T5 — making it the backbone of modern language understanding and generation systems.",
-      "tags": []
+      "explanation": "The Transformer architecture revolutionized NLP by replacing recurrence with self-attention, allowing parallel processing of sequences. It powers major models like GPT, BERT, and T5 — making it the backbone of modern language understanding and generation systems."
     },
     {
       "question": "Self-attention mechanism helps to:",
@@ -1094,8 +1070,7 @@
       "correct": 1,
       "correctText": "Focus on relevant words",
       "subtopic": "1.3",
-      "explanation": "The self-attention mechanism allows a model to focus on relevant words in a sequence by computing attention scores between all pairs of tokens. Unlike RNNs that process sequentially, self-attention captures relationships between distant words directly, enabling better context understanding in Transformers.",
-      "tags": []
+      "explanation": "The self-attention mechanism allows a model to focus on relevant words in a sequence by computing attention scores between all pairs of tokens. Unlike RNNs that process sequentially, self-attention captures relationships between distant words directly, enabling better context understanding in Transformers."
     },
     {
       "question": "Data Science overlaps with:",
@@ -1189,8 +1164,7 @@
       "correct": 2,
       "correctText": "Reinforcement learning",
       "subtopic": "1.2",
-      "explanation": "Actor-Critic methods are used in reinforcement learning, combining two components: the Actor selects actions based on the current policy, while the Critic estimates the value of those actions. This combination reduces the high variance of pure policy gradient methods, leading to more stable and efficient learning.",
-      "tags": []
+      "explanation": "Actor-Critic methods are used in reinforcement learning, combining two components: the Actor selects actions based on the current policy, while the Critic estimates the value of those actions. This combination reduces the high variance of pure policy gradient methods, leading to more stable and efficient learning."
     },
     {
       "question": "AI in manufacturing is used for:",
@@ -1269,8 +1243,7 @@
       "correct": 1,
       "correctText": "Complex non-linear problems",
       "subtopic": "1.2",
-      "explanation": "Neural networks are particularly powerful for complex non-linear problems because their layered structure can approximate virtually any function. This makes them ideal for tasks like image recognition, language translation, and speech synthesis where the relationship between input and output is highly intricate.",
-      "tags": []
+      "explanation": "Neural networks are particularly powerful for complex non-linear problems because their layered structure can approximate virtually any function. This makes them ideal for tasks like image recognition, language translation, and speech synthesis where the relationship between input and output is highly intricate."
     },
     {
       "question": "Which ML type does not use labels?",
@@ -1299,8 +1272,7 @@
       "correct": 2,
       "correctText": "Decision Tree",
       "subtopic": "1.2",
-      "explanation": "Decision Tree is a supervised learning algorithm that builds a tree-like model of decisions based on labeled training data. Unlike K-Means and PCA (which are unsupervised and don't use labels), Decision Trees learn from input-output pairs to classify or predict outcomes.",
-      "tags": []
+      "explanation": "Decision Tree is a supervised learning algorithm that builds a tree-like model of decisions based on labeled training data. Unlike K-Means and PCA (which are unsupervised and don't use labels), Decision Trees learn from input-output pairs to classify or predict outcomes."
     },
     {
       "question": "Example of unsupervised algorithm:",
@@ -1313,8 +1285,7 @@
       "correct": 1,
       "correctText": "K-Means",
       "subtopic": "1.2",
-      "explanation": "K-Means is an unsupervised learning algorithm that partitions data into K clusters based on feature similarity, without any predefined labels. Unlike Logistic Regression, SVM, and Random Forest (all supervised), K-Means discovers natural groupings in data on its own.",
-      "tags": []
+      "explanation": "K-Means is an unsupervised learning algorithm that partitions data into K clusters based on feature similarity, without any predefined labels. Unlike Logistic Regression, SVM, and Random Forest (all supervised), K-Means discovers natural groupings in data on its own."
     },
     {
       "question": "Reinforcement learning agent learns through:",
@@ -1327,8 +1298,7 @@
       "correct": 2,
       "correctText": "Rewards",
       "subtopic": "1.2",
-      "explanation": "Reinforcement learning agents learn through rewards — they interact with an environment, take actions, and receive positive rewards for good outcomes and negative penalties for bad ones. Over many trials, the agent learns the optimal policy (strategy) that maximizes cumulative reward through trial and error.",
-      "tags": []
+      "explanation": "Reinforcement learning agents learn through rewards — they interact with an environment, take actions, and receive positive rewards for good outcomes and negative penalties for bad ones. Over many trials, the agent learns the optimal policy (strategy) that maximizes cumulative reward through trial and error."
     },
     {
       "question": "AI in autonomous vehicles is used for:",
@@ -1357,8 +1327,7 @@
       "correct": 1,
       "correctText": "Training data",
       "subtopic": "1.4",
-      "explanation": "Data poisoning attacks target the training data by injecting malicious or misleading samples into the dataset. When the model trains on this corrupted data, it learns incorrect patterns, causing it to make wrong predictions during deployment — a particularly dangerous threat in security-sensitive applications.",
-      "tags": []
+      "explanation": "Data poisoning attacks target the training data by injecting malicious or misleading samples into the dataset. When the model trains on this corrupted data, it learns incorrect patterns, causing it to make wrong predictions during deployment — a particularly dangerous threat in security-sensitive applications."
     },
     {
       "question": "Adversarial attack aims to:",
@@ -1435,8 +1404,7 @@
       "correct": 1,
       "correctText": "Neural networks",
       "subtopic": "1.2",
-      "explanation": "Neuroscience directly inspired neural networks — the brain's neurons communicate through electrochemical signals across synapses, and artificial neural networks mirror this with nodes connected by weighted edges. The concept of learning through strengthened connections (neuroplasticity) inspired how neural networks adjust weights during training.",
-      "tags": []
+      "explanation": "Neuroscience directly inspired neural networks — the brain's neurons communicate through electrochemical signals across synapses, and artificial neural networks mirror this with nodes connected by weighted edges. The concept of learning through strengthened connections (neuroplasticity) inspired how neural networks adjust weights during training."
     },
     {
       "question": "Linguistics helps in:",
@@ -1547,8 +1515,7 @@
       "correct": 1,
       "correctText": "Large pre-trained model",
       "subtopic": "1.3",
-      "explanation": "A foundation model is a large pre-trained model (like GPT-4 or BERT) trained on massive, diverse datasets that serves as a base for many downstream tasks. Instead of building task-specific models from scratch, you fine-tune a foundation model — saving time, data, and computational resources while leveraging broad knowledge.",
-      "tags": []
+      "explanation": "A foundation model is a large pre-trained model (like GPT-4 or BERT) trained on massive, diverse datasets that serves as a base for many downstream tasks. Instead of building task-specific models from scratch, you fine-tune a foundation model — saving time, data, and computational resources while leveraging broad knowledge."
     },
     {
       "question": "Chatbots use:",
@@ -1561,8 +1528,7 @@
       "correct": 0,
       "correctText": "NLP",
       "subtopic": "1.3",
-      "explanation": "Chatbots use NLP (Natural Language Processing) to understand user messages, determine intent, and generate appropriate conversational responses. Modern chatbots leverage transformer-based models that can handle context, ambiguity, and multi-turn conversations — making interactions feel natural and human-like.",
-      "tags": []
+      "explanation": "Chatbots use NLP (Natural Language Processing) to understand user messages, determine intent, and generate appropriate conversational responses. Modern chatbots leverage transformer-based models that can handle context, ambiguity, and multi-turn conversations — making interactions feel natural and human-like."
     }
   ]
 }
