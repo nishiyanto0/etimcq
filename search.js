@@ -138,17 +138,23 @@ function handleSearch(e) {
     
     searchTerms.forEach((term, idx) => {
       const weight = idx === 0 ? 1 : 0.8; // Primary term gets higher weight
+      const isShort = term.length <= 2;
+      const isMapping = !!SEARCH_CONFIG.MAPPINGS[term];
       
-      // Exact word match (more precise)
+      // Word boundary regex
       const wordRegex = new RegExp(`\\b${term}\\b`, 'i');
+      
+      // Question Text
       if (wordRegex.test(qText)) score += 100 * weight;
-      else if (qText.includes(term)) score += 40 * weight;
+      else if (!isShort && !isMapping && qText.includes(term)) score += 40 * weight;
       
+      // Options
       if (wordRegex.test(optionsText)) score += 60 * weight;
-      else if (optionsText.includes(term)) score += 20 * weight;
+      else if (!isShort && !isMapping && optionsText.includes(term)) score += 20 * weight;
       
+      // Explanations
       if (wordRegex.test(explText)) score += 30 * weight;
-      else if (explText.includes(term)) score += 10 * weight;
+      else if (!isShort && !isMapping && explText.includes(term)) score += 10 * weight;
     });
 
     return { ...q, searchScore: score };
