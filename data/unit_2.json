@@ -1054,9 +1054,9 @@
         "Robotics",
         "Mathematics"
       ],
-      "correct": 1,
-      "correctText": "Physical design",
-      "explanation": "According to the standard IoT architecture textbooks (like Bahga & Madisetti), the Physical Design of IoT consists of two components: 'Things in IoT' (Hardware/Sensors) and 'IoT Protocols' (Communication). Logical Design instead focuses on Functional Blocks and Communication Models.",
+      "correct": 0,
+      "correctText": "Logical design",
+      "explanation": "Protocols define communication rules, message formats, addressing, and error handling - all part of logical design. Examples include MQTT for messaging, CoAP for constrained devices, and HTTP for web integration. Protocol selection impacts interoperability, efficiency, and system architecture.",
       "subtopic": "2.1",
       "tags": [
         "iot"
