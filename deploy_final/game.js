@@ -1511,20 +1511,15 @@ async function handleReportQuestion() {
   const currentQ = state.questions[state.current];
   if (!currentQ) return;
 
-  const userThoughts = prompt('What is wrong with this question? (Optional)', '');
-  if (userThoughts === null) {
-    // User cancelled
-    btn.style.pointerEvents = 'all';
-    btn.style.opacity = '1';
-    btn.innerHTML = '<span>🚩</span> Report Bug';
-    return;
-  }
+  const btn = document.getElementById('report-btn');
+  btn.style.pointerEvents = 'none';
+  btn.style.opacity = '0.5';
+  btn.textContent = '⏳';
 
   const reportData = {
     player_name: getPlayerName() || 'Anonymous',
     question_text: currentQ.question,
     unit_id: state.unitId,
-    user_comment: userThoughts,
     question_data: {
       options: currentQ.options,
       correct: currentQ.correct,
@@ -1538,19 +1533,19 @@ async function handleReportQuestion() {
     const { error } = await insforge.database.from('reports').insert([reportData]);
     if (error) throw error;
     
-    btn.innerHTML = '<span>✅</span> Reported';
+    btn.textContent = '✅';
     setTimeout(() => {
-      btn.innerHTML = '<span>🚩</span> Report Bug';
+      btn.textContent = '🚩';
       btn.style.pointerEvents = 'all';
       btn.style.opacity = '1';
     }, 2000);
     
-    alert('Thank you! Your feedback has been recorded.');
+    alert('Thank you! This question has been reported for cross-checking.');
   } catch (err) {
     console.error('Failed to report question:', err);
-    btn.innerHTML = '<span>❌</span> Failed';
+    btn.textContent = '❌';
     setTimeout(() => {
-      btn.innerHTML = '<span>🚩</span> Report Bug';
+      btn.textContent = '🚩';
       btn.style.pointerEvents = 'all';
       btn.style.opacity = '1';
     }, 2000);

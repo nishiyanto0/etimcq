@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Search - ETI MCQ Challenge</title>
+  <meta name="description" content="Search across all ETI MCQ units and sources with smart abbreviation matching.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+  <!-- Ambient background orbs -->
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="btn-back">
+        <span>←</span> Back to Home
+      </a>
+      <div class="badge badge-source">Smart Search v1.0</div>
+    </nav>
+
+    <header>
+      <h1>ETI <span class="purple-text">Smart Search</span></h1>
+      <p class="subtitle">Search 1,400+ questions across AI, IoT, Blockchain, & Cybersecurity.</p>
+    </header>
+
+    <div class="search-container">
+      <div class="search-glass">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search by topic, keyword, or abbreviation (e.g. IoT, MFA, IT Act)..." autofocus>
+      </div>
+      <div class="search-stats" id="search-stats">Loading question bank...</div>
+    </div>
+
+    <div id="results-grid" class="results-grid">
+      <!-- Results will be injected here -->
+    </div>
+  </div>
+
+  <script src="search.js"></script>
+</body>
+</html>

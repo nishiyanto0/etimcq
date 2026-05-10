@@ -1,0 +1,59 @@
+{
+  "units": [
+    {
+      "id": 1, "co": "CO1", "learningHours": 9, "totalMarks": 14,
+      "rLevel": 6, "uLevel": 4, "aLevel": 2,
+      "subtopics": [
+        { "id": "1.1", "title": "Introduction of AI", "short": "AI Basics", "desc": "Concept, Scope, Types & Applications of AI" },
+        { "id": "1.2", "title": "Machine Learning", "short": "ML & DL", "desc": "Supervised, Unsupervised, Reinforcement, Deep Learning, Neural Networks" },
+        { "id": "1.3", "title": "Generative AI", "short": "Gen AI", "desc": "Transformers, GPT, GANs, Self-attention, Image/Text Generation" },
+        { "id": "1.4", "title": "AI & ML in Digital Security", "short": "AI Security", "desc": "Adversarial attacks, AI cybersecurity, MFA, Data Poisoning" }
+      ]
+    },
+    {
+      "id": 2, "co": "CO2", "learningHours": 10, "totalMarks": 16,
+      "rLevel": 6, "uLevel": 6, "aLevel": 4,
+      "subtopics": [
+        { "id": "2.1", "title": "Introduction to IoT", "short": "IoT Basics", "desc": "Definition, Characteristics, Features, Advantages & Limitations of IoT" },
+        { "id": "2.2", "title": "Design of IoT", "short": "IoT Design", "desc": "Physical design, Logical design, Architecture of IoT" },
+        { "id": "2.3", "title": "Sensors & Actuators", "short": "Sensors", "desc": "Types of sensors and actuators used in IoT" },
+        { "id": "2.4", "title": "5G Network in IoT", "short": "5G", "desc": "5G characteristics, NGN Architecture, Media Gateway, Network components" },
+        { "id": "2.5", "title": "IoT & Cloud Computing", "short": "IoT Cloud", "desc": "Architecture of Cloud-based IoT systems" }
+      ]
+    },
+    {
+      "id": 3, "co": "CO3", "learningHours": 8, "totalMarks": 12,
+      "rLevel": 4, "uLevel": 6, "aLevel": 2,
+      "subtopics": [
+        { "id": "3.1", "title": "Blockchain Basics", "short": "Basics", "desc": "Definition, Key Features: Decentralization, Transparency, Immutability" },
+        { "id": "3.2", "title": "Blockchain Architecture", "short": "Architecture", "desc": "Consensus mechanisms, Proof of Work/Stake, Nodes, Miners" },
+        { "id": "3.3", "title": "Types of Blockchain", "short": "Types", "desc": "Public, Private, Consortium & Hybrid Blockchain" },
+        { "id": "3.4", "title": "Blockchain Applications", "short": "Applications", "desc": "Finance, Healthcare, Supply Chain, Gaming" },
+        { "id": "3.5", "title": "Smart Contracts & Crypto", "short": "Smart Contracts", "desc": "Smart Contracts, Bitcoin, Ethereum, Popular Cryptocurrencies" },
+        { "id": "3.6", "title": "Challenges", "short": "Challenges", "desc": "Scalability, 51% attack, Forks, Energy consumption" }
+      ]
+    },
+    {
+      "id": 4, "co": "CO4", "learningHours": 8, "totalMarks": 12,
+      "rLevel": 6, "uLevel": 4, "aLevel": 2,
+      "subtopics": [
+        { "id": "4.1", "title": "Immersive Technologies", "short": "AR/VR/XR", "desc": "AR, VR, MR, XR, Haptic Technology — types and concepts" },
+        { "id": "4.2", "title": "Applications", "short": "Applications", "desc": "Metaverse, Education, Healthcare, Gaming, Training" },
+        { "id": "4.3", "title": "Green Computing", "short": "Green Tech", "desc": "Energy-efficient hardware, Data centers, E-waste management" },
+        { "id": "4.4", "title": "Quantum Computing", "short": "Quantum", "desc": "Qubits, Superposition, Entanglement, Applications" }
+      ]
+    },
+    {
+      "id": 5, "co": "CO5", "learningHours": 10, "totalMarks": 16,
+      "rLevel": 6, "uLevel": 6, "aLevel": 4,
+      "subtopics": [
+        { "id": "5.1", "title": "Introduction to Digital Forensics", "short": "DF Basics", "desc": "Definition, scope and principles of Digital Forensics" },
+        { "id": "5.2", "title": "Rules & Process", "short": "Process", "desc": "Rules, investigation process, evidence handling, chain of custody" },
+        { "id": "5.3", "title": "Forensic Models", "short": "Models", "desc": "DFRWS, ADFM, IDIP, EEDIP, UMDFPM investigative models" },
+        { "id": "5.4", "title": "Ethical Hacking", "short": "Eth. Hacking", "desc": "Definition, types of hackers, penetration testing" },
+        { "id": "5.5", "title": "Types of Hacking", "short": "Hacking Types", "desc": "Network, OS, Application hacking — Phishing, Ransomware, WAF, Zero-day" },
+        { "id": "5.6", "title": "Cyber Laws", "short": "Cyber Laws", "desc": "NCSP 2013, IT Act 2000/2008/2023, CCPWC Scheme 2018" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2854 @@
+{
+  "unit": 5,
+  "name": "Digital Forensics & Cybersecurity",
+  "totalQuestions": 200,
+  "questions": [
+    {
+      "question": "Digital forensics primarily deals with:",
+      "options": [
+        "Physical evidence only",
+        "Digital evidence investigation",
+        "Paper records",
+        "Manual auditing"
+      ],
+      "correct": 1,
+      "correctText": "Digital evidence investigation",
+      "explanation": "Digital forensics is the branch of forensic science focused on investigating and analyzing digital devices and electronic data to uncover evidence of crimes, unauthorized access, or policy violations. Unlike physical forensics, it deals specifically with bits, bytes, and digital artifacts found on computers, phones, and networks.",
+      "subtopic": "5.1",
+      "tags": [
+        "df"
+      ]
+    },
+    {
+      "question": "Digital evidence must be:",
+      "options": [
+        "Modified",
+        "Deleted",
+        "Preserved carefully",
+        "Edited"
+      ],
+      "correct": 2,
+      "correctText": "Preserved carefully",
+      "explanation": "Digital evidence is highly fragile and can be easily altered, corrupted, or destroyed if not handled properly. Preservation ensures the evidence remains in its original state so it can be admitted in court and withstand legal scrutiny under cross-examination.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "A forensic image is:",
+      "options": [
+        "Screenshot",
+        "Exact bit-by-bit copy",
+        "Photo of device",
+        "Backup file"
+      ],
+      "correct": 1,
+      "correctText": "Exact bit-by-bit copy",
+      "explanation": "A forensic image is a complete, sector-by-sector (bit-by-bit) copy of a storage device, including all files, deleted data, slack space, and unallocated areas. Unlike a simple backup or screenshot, it captures every binary detail, ensuring nothing is missed during investigation.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Hash values are used to:",
+      "options": [
+        "Encrypt data",
+        "Verify integrity",
+        "Delete files",
+        "Format disk"
+      ],
+      "correct": 1,
+      "correctText": "Verify integrity",
+      "explanation": "Hash values (like MD5, SHA-1, SHA-256) act as digital fingerprints for data. By computing a hash before and after evidence handling, investigators can mathematically prove whether the data has been altered — if the hashes match, the integrity is confirmed.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Chain of custody ensures:",
+      "options": [
+        "File compression",
+        "Accountability of evidence handling",
+        "Data deletion",
+        "Fast processing"
+      ],
+      "correct": 1,
+      "correctText": "Accountability of evidence handling",
+      "explanation": "The chain of custody is a documented record that tracks who handled the evidence, when, where, and why, from the moment of seizure to courtroom presentation. It prevents tampering claims and ensures accountability at every stage of evidence handling.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Volatile data is found in:",
+      "options": [
+        "Hard disk",
+        "RAM",
+        "DVD",
+        "USB only"
+      ],
+      "correct": 1,
+      "correctText": "RAM",
+      "explanation": "Volatile data resides in RAM (Random Access Memory) and is lost the moment power is cut off. This includes running processes, network connections, clipboard contents, and encryption keys — making it critical to capture before shutting down a system.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "File carving is used to:",
+      "options": [
+        "Print files",
+        "Recover deleted files",
+        "Encrypt files",
+        "Compress files"
+      ],
+      "correct": 1,
+      "correctText": "Recover deleted files",
+      "explanation": "File carving reconstructs files by identifying their headers, footers, and internal structure signatures directly from raw disk data, bypassing the file system. This technique is especially effective for recovering deleted files when file table entries have been erased.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Timeline reconstruction helps in:",
+      "options": [
+        "Speeding system",
+        "Understanding sequence of events",
+        "Printing logs",
+        "Deleting malware"
+      ],
+      "correct": 1,
+      "correctText": "Understanding sequence of events",
+      "explanation": "Timeline reconstruction maps file timestamps (created, modified, accessed) and system logs into a chronological sequence, helping investigators understand the order in which events occurred, identify the attack vector, and establish causality between actions.",
+      "subtopic": "5.1",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "DFRWS model was proposed in:",
+      "options": [
+        "1998",
+        "2001",
+        "2005",
+        "2010"
+      ],
+      "correct": 1,
+      "correctText": "2001",
+      "explanation": "The Digital Forensic Research Workshop (DFRWS) proposed the first standardized digital forensic investigation framework in 2001, consisting of Identification, Preservation, Collection, Examination, Analysis, and Presentation phases.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "ADFM adds which extra phase?",
+      "options": [
+        "Presentation",
+        "Preparation",
+        "Analysis",
+        "Examination"
+      ],
+      "correct": 1,
+      "correctText": "Preparation",
+      "explanation": "The Abstract Digital Forensic Model (ADFM) adds a Preparation phase before the standard investigation steps, recognizing that pre-incident planning, tool readiness, and team preparation are essential for a successful forensic investigation.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "IDIP integrates:",
+      "options": [
+        "Digital & physical crime scenes",
+        "Printer & network",
+        "Software & hardware",
+        "OS & database"
+      ],
+      "correct": 0,
+      "correctText": "Digital & physical crime scenes",
+      "explanation": "The Integrated Digital Investigation Process (IDIP) model uniquely bridges digital and physical crime scene investigations, recognizing that digital evidence often exists alongside physical evidence and both must be investigated in a coordinated manner.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "EEDIP emphasizes:",
+      "options": [
+        "Automation & traceability",
+        "Paper work",
+        "Manual logging",
+        "Printing"
+      ],
+      "correct": 0,
+      "correctText": "Automation & traceability",
+      "explanation": "The Enhanced Integrated Digital Investigation Process (EEDIP) emphasizes automation to speed up forensic processes and traceability to ensure every investigative step is auditable and reproducible, improving both efficiency and legal defensibility.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "UMDFPM uses:",
+      "options": [
+        "Java",
+        "UML diagrams",
+        "Python",
+        "SQL"
+      ],
+      "correct": 1,
+      "correctText": "UML diagrams",
+      "explanation": "The UML-based Digital Forensic Investigation Process Model (UMDFPM) uses Unified Modeling Language diagrams (use case, activity, sequence diagrams) to formally model and visualize forensic investigation workflows, improving clarity and standardization.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "Examination stage involves:",
+      "options": [
+        "Filtering relevant data",
+        "Destroying data",
+        "Printing data",
+        "Formatting"
+      ],
+      "correct": 0,
+      "correctText": "Filtering relevant data",
+      "explanation": "In the examination stage, investigators filter out irrelevant data from the collected evidence to isolate the pertinent information. This distillation process reduces noise and focuses analysis on data that actually relates to the incident under investigation.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Preservation stage ensures:",
+      "options": [
+        "Data integrity",
+        "Data deletion",
+        "Data duplication",
+        "Data printing"
+      ],
+      "correct": 0,
+      "correctText": "Data integrity",
+      "explanation": "The preservation stage ensures that digital evidence remains in its original, unaltered state throughout the investigation. This involves creating forensic images, computing hash values, and implementing write-blockers to maintain data integrity from collection to courtroom.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Evidence handling begins with:",
+      "options": [
+        "Presentation",
+        "Seizure",
+        "Analysis",
+        "Documentation"
+      ],
+      "correct": 1,
+      "correctText": "Seizure",
+      "explanation": "Evidence handling begins with seizure — the legal and physical acquisition of digital devices and media from the crime scene. Proper seizure procedures (documentation, labeling, photographing) must be followed to maintain the chain of custody from the very first step.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Forensic tools must be:",
+      "options": [
+        "Random",
+        "Scientifically accepted",
+        "Manual",
+        "Free only"
+      ],
+      "correct": 1,
+      "correctText": "Scientifically accepted",
+      "explanation": "Forensic tools must be scientifically validated and accepted by the professional community to ensure their results are reliable and admissible in court. Using untested or unproven tools risks having evidence challenged or excluded under Daubert/Frye standards.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Never trust the operating system because:",
+      "options": [
+        "It may be compromised",
+        "It is slow",
+        "It deletes files",
+        "It prints logs"
+      ],
+      "correct": 0,
+      "correctText": "It may be compromised",
+      "explanation": "A suspect's operating system may contain rootkits, Trojans, or other malware that can alter logs, hide files, or present false information. Therefore, investigators should never rely on the suspect OS for evidence collection and must use trusted forensic boot media instead.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking is:",
+      "options": [
+        "Illegal hacking",
+        "Authorized security testing",
+        "Cybercrime",
+        "Data theft"
+      ],
+      "correct": 1,
+      "correctText": "Authorized security testing",
+      "explanation": "Ethical hacking, also known as penetration testing, is the practice of deliberately probing systems for vulnerabilities with explicit authorization from the owner. It differs from malicious hacking because it is conducted legally, with defined scope, and aims to improve security.",
+      "subtopic": "5.4",
+      "tags": [
+        "eh",
+        "hacking"
+      ]
+    },
+    {
+      "question": "Ethical hackers must obtain:",
+      "options": [
+        "Password",
+        "Legal permission",
+        "IP address",
+        "Cable"
+      ],
+      "correct": 1,
+      "correctText": "Legal permission",
+      "explanation": "Ethical hackers must obtain documented legal permission (such as a signed contract or scope-of-work agreement) before testing any system. Without authorization, even well-intentioned security testing constitutes unauthorized access and is illegal.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Reconnaissance phase involves:",
+      "options": [
+        "Information gathering",
+        "Data deletion",
+        "Printing",
+        "Encryption"
+      ],
+      "correct": 0,
+      "correctText": "Information gathering",
+      "explanation": "Reconnaissance (or information gathering) is the first phase of ethical hacking, where the tester collects publicly available or passively obtained information about the target — such as domain names, IP ranges, employee details, and technologies used — to plan the attack.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Scanning phase identifies:",
+      "options": [
+        "Open ports",
+        "Printer speed",
+        "Cable faults",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Open ports",
+      "explanation": "The scanning phase uses tools like Nmap and Nessus to identify open ports, running services, and potential vulnerabilities on target systems. This active probing builds on reconnaissance data to map the attack surface before exploitation.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Exploitation phase attempts:",
+      "options": [
+        "Controlled attack",
+        "Data deletion",
+        "Manual login",
+        "Printing"
+      ],
+      "correct": 0,
+      "correctText": "Controlled attack",
+      "explanation": "In the exploitation phase, the ethical hacker attempts a controlled attack against identified vulnerabilities to demonstrate that they can be exploited. This proves the real-world impact of security weaknesses without causing actual harm or data loss.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "White hat hackers are:",
+      "options": [
+        "Criminals",
+        "Authorized professionals",
+        "Hacktivists",
+        "Spammers"
+      ],
+      "correct": 1,
+      "correctText": "Authorized professionals",
+      "explanation": "White hat hackers are cybersecurity professionals who use their skills legally and ethically, with proper authorization, to identify and fix security vulnerabilities. They work within legal boundaries and report findings to help organizations improve their defenses.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Black hat hackers act:",
+      "options": [
+        "Legally",
+        "Illegally",
+        "Academically",
+        "Publicly"
+      ],
+      "correct": 1,
+      "correctText": "Illegally",
+      "explanation": "Black hat hackers break into systems without authorization for personal gain, financial profit, or malicious intent. Their activities — including data theft, ransomware deployment, and system sabotage — are illegal and punishable under cybercrime laws.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Grey hat hackers:",
+      "options": [
+        "Always legal",
+        "Always illegal",
+        "Operate without permission but no malicious intent",
+        "Work for government only"
+      ],
+      "correct": 2,
+      "correctText": "Operate without permission but no malicious intent",
+      "explanation": "Grey hat hackers operate in a middle ground — they access systems without explicit permission but typically without malicious intent, often disclosing vulnerabilities to the affected organization. While their motives may be constructive, their methods still violate computer misuse laws.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Blue hat hackers are usually:",
+      "options": [
+        "Experts",
+        "Beginners",
+        "Government officials",
+        "Judges"
+      ],
+      "correct": 1,
+      "correctText": "Beginners",
+      "explanation": "Blue hat hackers are typically novices or beginners with limited technical skills who engage in hacking out of curiosity or revenge. They often use pre-built tools and scripts rather than developing their own exploits, making them less sophisticated than other hacker categories.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Green hat hackers are:",
+      "options": [
+        "Learning hackers",
+        "Criminal hackers",
+        "Bank officials",
+        "Auditors"
+      ],
+      "correct": 0,
+      "correctText": "Learning hackers",
+      "explanation": "Green hat hackers are aspiring or learning hackers who are enthusiastic about understanding hacking techniques but are still in the early stages of developing their skills. They spend time studying and practicing rather than conducting actual attacks.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Red hat hackers:",
+      "options": [
+        "Fight black hats aggressively",
+        "Print data",
+        "Use paper logs",
+        "Work offline"
+      ],
+      "correct": 0,
+      "correctText": "Fight black hats aggressively",
+      "explanation": "Red hat hackers actively seek out and aggressively counter black hat hackers, often using offensive tactics to disrupt malicious operations. Unlike white hats who focus on defense, red hats take a proactive, sometimes retaliatory approach against cybercriminals.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Network hacking targets:",
+      "options": [
+        "Routers and switches",
+        "Paper files",
+        "Printers",
+        "Cameras only"
+      ],
+      "correct": 0,
+      "correctText": "Routers and switches",
+      "explanation": "Network hacking targets networking infrastructure — routers, switches, firewalls, and protocols — to intercept traffic, gain unauthorized access, or disrupt communications. Compromising network devices can give attackers control over an entire organization's data flow.",
+      "subtopic": "5.5",
+      "tags": [
+        "hacking"
+      ]
+    },
+    {
+      "question": "AI-powered phishing uses:",
+      "options": [
+        "Machine learning",
+        "Cable",
+        "Printer",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Machine learning",
+      "explanation": "AI-powered phishing leverages machine learning algorithms to craft highly personalized and convincing phishing emails by analyzing social media, writing styles, and behavioral patterns of targets, making these attacks significantly harder to detect than traditional phishing.",
+      "subtopic": "5.5",
+      "tags": [
+        "ai",
+        "ml",
+        "phishing"
+      ]
+    },
+    {
+      "question": "Ransomware 2.0 includes:",
+      "options": [
+        "Double extortion",
+        "Triple extortion",
+        "Data theft",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "Ransomware 2.0 encompasses multiple extortion strategies including double extortion (encryption + data theft threat), triple extortion (adding DDoS or harassment), and comprehensive data theft — making it a multi-layered threat that goes far beyond simple file encryption.",
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "IoT exploits target:",
+      "options": [
+        "Smart devices",
+        "Paper",
+        "Printer",
+        "Fax"
+      ],
+      "correct": 0,
+      "correctText": "Smart devices",
+      "explanation": "IoT exploits target the vulnerabilities in smart devices — such as cameras, thermostats, and home assistants — which often have weak security, unpatched firmware, and default credentials, making them easy entry points into broader networks.",
+      "subtopic": "5.5",
+      "tags": [
+        "iot"
+      ]
+    },
+    {
+      "question": "Deepfake uses:",
+      "options": [
+        "Machine learning",
+        "Cable",
+        "Printer",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Machine learning",
+      "explanation": "Deepfakes use deep learning (a subset of machine learning) techniques like generative adversarial networks (GANs) to create realistic but fabricated audio, video, or images that can impersonate individuals for fraud, disinformation, or blackmail.",
+      "subtopic": "5.5",
+      "tags": [
+        "ml"
+      ]
+    },
+    {
+      "question": "OS downgrade attack installs:",
+      "options": [
+        "Latest OS",
+        "Older vulnerable OS",
+        "Secure OS",
+        "Updated OS"
+      ],
+      "correct": 1,
+      "correctText": "Older vulnerable OS",
+      "explanation": "An OS downgrade attack forces a device to run an older, vulnerable version of its operating system by exploiting weak verification mechanisms during updates. The older OS lacks current security patches, giving attackers access to known vulnerabilities.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Firmware exploits target:",
+      "options": [
+        "BIOS/UEFI",
+        "Printer",
+        "Cable",
+        "Mouse"
+      ],
+      "correct": 0,
+      "correctText": "BIOS/UEFI",
+      "explanation": "Firmware exploits target low-level software embedded in hardware components like BIOS/UEFI, which runs before the operating system loads. Compromising firmware allows attackers to establish persistent, stealthy control that survives OS reinstallation.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "WAF bypass techniques attempt to:",
+      "options": [
+        "Evade firewall filters",
+        "Delete files",
+        "Print logs",
+        "Disconnect router"
+      ],
+      "correct": 0,
+      "correctText": "Evade firewall filters",
+      "explanation": "Web Application Firewall (WAF) bypass techniques involve encoding payloads, using alternative character sets, or fragmenting requests to evade pattern-matching filters. Attackers use these methods to deliver SQL injection, XSS, or other attacks past WAF protections.",
+      "subtopic": "5.5",
+      "tags": [
+        "waf"
+      ]
+    },
+    {
+      "question": "Zero-day vulnerability is:",
+      "options": [
+        "Known and patched",
+        "Unknown and unpatched",
+        "Printer error",
+        "Cable break"
+      ],
+      "correct": 1,
+      "correctText": "Unknown and unpatched",
+      "explanation": "A zero-day vulnerability is a security flaw that is unknown to the software vendor and has no available patch. The term comes from the fact that developers have had zero days to fix it, making it extremely dangerous as attackers can exploit it freely until discovered.",
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
+    },
+    {
+      "question": "NCSP 2013 protects:",
+      "options": [
+        "National cyberspace",
+        "Printer",
+        "Cable",
+        "Paper"
+      ],
+      "correct": 0,
+      "correctText": "National cyberspace",
+      "explanation": "India's National Cyber Security Policy (NCSP) 2013 provides a strategic framework to protect the nation's cyberspace, including critical information infrastructure, government networks, and citizen data from cyber threats through awareness, education, and capacity building.",
+      "subtopic": "5.6",
+      "tags": [
+        "ncsp"
+      ]
+    },
+    {
+      "question": "IT Act 2000 provides legal recognition to:",
+      "options": [
+        "Electronic records",
+        "Paper files",
+        "Fax",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Electronic records",
+      "explanation": "The Information Technology Act 2000 provides legal recognition to electronic records and digital signatures, enabling e-commerce and e-governance in India. It establishes that electronic documents have the same legal validity as paper documents.",
+      "subtopic": "5.6",
+      "tags": [
+        "it act"
+      ]
+    },
+    {
+      "question": "Section 66C deals with:",
+      "options": [
+        "Identity theft",
+        "Printer",
+        "Cable",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Identity theft",
+      "explanation": "Section 66C of the IT Act specifically addresses identity theft — the fraudulent use of another person's unique identification data such as passwords, digital signatures, or biometric information — and prescribes imprisonment up to 3 years and fines.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 66F deals with:",
+      "options": [
+        "Cyber terrorism",
+        "Paper",
+        "Printer",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "Cyber terrorism",
+      "explanation": "Section 66F of the IT Act deals with cyber terrorism — acts intended to threaten the unity, integrity, security, or sovereignty of India by accessing or damaging critical information infrastructure — and carries the harshest penalties, including life imprisonment.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "DPDP Act 2023 protects:",
+      "options": [
+        "Personal data",
+        "Printer",
+        "Router",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "Personal data",
+      "explanation": "The Digital Personal Data Protection (DPDP) Act 2023 is India's comprehensive data protection law that safeguards individuals' personal data by establishing rules for its collection, processing, and storage, with penalties for non-compliance up to Rs. 250 crore.",
+      "subtopic": "5.6",
+      "tags": [
+        "dpdp"
+      ]
+    },
+    {
+      "question": "Data Principal refers to:",
+      "options": [
+        "Individual",
+        "Company",
+        "Router",
+        "Printer"
+      ],
+      "correct": 0,
+      "correctText": "Individual",
+      "explanation": "Under the DPDP Act, a Data Principal is the individual to whom the personal data relates. Data Principals have specific rights including the right to access, correct, and erase their personal data held by organizations.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Data Fiduciary refers to:",
+      "options": [
+        "Organization handling data",
+        "Printer",
+        "Cable",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Organization handling data",
+      "explanation": "A Data Fiduciary, as defined in the DPDP Act, is any organization or entity that determines the purpose and means of processing personal data. Data Fiduciaries bear the primary responsibility for ensuring data protection compliance and respecting Data Principals' rights.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "CCPWC scheme protects:",
+      "options": [
+        "Women & children",
+        "Printers",
+        "Routers",
+        "Servers"
+      ],
+      "correct": 0,
+      "correctText": "Women & children",
+      "explanation": "The Cyber Crime Prevention against Women and Children (CCPWC) scheme is a government initiative specifically designed to protect women and children from online threats including cyber stalking, revenge porn, child sexual abuse material, and online grooming.",
+      "subtopic": "5.6",
+      "tags": [
+        "ccpwc"
+      ]
+    },
+    {
+      "question": "CERT-In is responsible for:",
+      "options": [
+        "Cyber incident response",
+        "Printing",
+        "Cable repair",
+        "OS installation"
+      ],
+      "correct": 0,
+      "correctText": "Cyber incident response",
+      "explanation": "CERT-In (Indian Computer Emergency Response Team) is the national nodal agency responsible for collecting, analyzing, and disseminating information on cyber incidents, issuing alerts and advisories, and coordinating incident response across India's cyberspace.",
+      "subtopic": "5.1",
+      "tags": [
+        "cert-in",
+        "cert"
+      ]
+    },
+    {
+      "question": "Section 69 allows government to:",
+      "options": [
+        "Intercept data",
+        "Print data",
+        "Delete logs",
+        "Remove OS"
+      ],
+      "correct": 0,
+      "correctText": "Intercept data",
+      "explanation": "Section 69 of the IT Act empowers the government to intercept, monitor, or decrypt any information generated, transmitted, or stored in any computer resource when necessary for national security, public order, or preventing cognizable offenses.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 43 deals with:",
+      "options": [
+        "Unauthorized access",
+        "Printer",
+        "Cable",
+        "Mouse"
+      ],
+      "correct": 0,
+      "correctText": "Unauthorized access",
+      "explanation": "Section 43 of the IT Act addresses unauthorized access to computers and computer systems, prescribing penalties for anyone who accesses or secures access without permission, including downloading data, introducing viruses, or causing system damage.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking improves:",
+      "options": [
+        "Security posture",
+        "Printer speed",
+        "Cable",
+        "Paper"
+      ],
+      "correct": 0,
+      "correctText": "Security posture",
+      "explanation": "Ethical hacking improves an organization's overall security posture by proactively identifying vulnerabilities before malicious actors can exploit them. This allows for timely remediation, reducing the risk of breaches and strengthening defensive capabilities.",
+      "subtopic": "5.4",
+      "tags": [
+        "eh",
+        "hacking"
+      ]
+    },
+    {
+      "question": "In digital forensics, identification stage involves:",
+      "options": [
+        "Recovering deleted files",
+        "Recognizing incident occurrence",
+        "Reporting findings",
+        "Court presentation"
+      ],
+      "correct": 1,
+      "correctText": "Recognizing incident occurrence",
+      "explanation": "In the identification stage of digital forensics, investigators recognize that a security incident has occurred by detecting anomalies, alerts, or reports. This initial recognition triggers the formal forensic investigation process and determines its scope.",
+      "subtopic": "5.1",
+      "tags": [
+        "df"
+      ]
+    },
+    {
+      "question": "Preservation phase prevents:",
+      "options": [
+        "Evidence tampering",
+        "Evidence printing",
+        "Evidence deletion",
+        "Evidence formatting"
+      ],
+      "correct": 0,
+      "correctText": "Evidence tampering",
+      "explanation": "The preservation phase prevents evidence tampering by immediately securing digital devices, creating forensic copies with write-blockers, and documenting the state of evidence. This ensures that the original evidence remains unaltered for analysis and court proceedings.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Collection phase gathers:",
+      "options": [
+        "Relevant digital data",
+        "Paper documents",
+        "Printer logs only",
+        "Manual notes"
+      ],
+      "correct": 0,
+      "correctText": "Relevant digital data",
+      "explanation": "The collection phase systematically gathers all relevant digital data from identified sources using forensically sound methods. This includes creating bit-by-bit images, copying log files, and preserving volatile memory — all while maintaining chain of custody documentation.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Examination phase removes:",
+      "options": [
+        "Relevant data",
+        "Irrelevant data",
+        "Entire evidence",
+        "Chain of custody"
+      ],
+      "correct": 1,
+      "correctText": "Irrelevant data",
+      "explanation": "During the examination phase, investigators filter out irrelevant data (such as system files, known good files, and unrelated user content) to focus on information pertinent to the case. This reduces the volume of data requiring detailed analysis.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Presentation stage requires:",
+      "options": [
+        "Clear documentation",
+        "Deleting files",
+        "Formatting drives",
+        "Printing random logs"
+      ],
+      "correct": 0,
+      "correctText": "Clear documentation",
+      "explanation": "The presentation stage requires clear, accurate documentation that communicates forensic findings in a manner understandable to both technical and non-technical audiences, including legal professionals, judges, and juries who may lack technical expertise.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Decision phase in DFRWS involves:",
+      "options": [
+        "Legal action",
+        "Printing reports",
+        "System shutdown",
+        "Data deletion"
+      ],
+      "correct": 0,
+      "correctText": "Legal action",
+      "explanation": "In the DFRWS framework, the Decision phase involves determining what legal action should be taken based on the forensic findings — whether to prosecute, seek civil remedies, implement administrative actions, or close the case.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "ADFM Return of Evidence phase ensures:",
+      "options": [
+        "Proper device return",
+        "Device deletion",
+        "Printer usage",
+        "Cable removal"
+      ],
+      "correct": 0,
+      "correctText": "Proper device return",
+      "explanation": "The ADFM's Return of Evidence phase ensures that seized digital devices and media are properly returned to their owners after the investigation concludes, following legal procedures and documentation to maintain accountability even at the final stage.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "IDIP readiness phase ensures:",
+      "options": [
+        "Preparation before incident",
+        "Deleting malware",
+        "Printer installation",
+        "OS upgrade"
+      ],
+      "correct": 0,
+      "correctText": "Preparation before incident",
+      "explanation": "The IDIP Readiness phase focuses on proactive preparation before any incident occurs, including establishing forensic capabilities, training personnel, deploying monitoring tools, and creating response plans so the team is prepared when an incident strikes.",
+      "subtopic": "5.3",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "Deployment phase begins when:",
+      "options": [
+        "Incident detected",
+        "Printer installed",
+        "Cable connected",
+        "OS updated"
+      ],
+      "correct": 0,
+      "correctText": "Incident detected",
+      "explanation": "In the IDIP model, the Deployment phase is activated when an incident is detected, at which point the forensic team mobilizes and deploys to the scene with appropriate tools, equipment, and authorization to begin the investigation.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Review phase in IDIP focuses on:",
+      "options": [
+        "Improving future investigations",
+        "Deleting evidence",
+        "Printing documents",
+        "Formatting disk"
+      ],
+      "correct": 0,
+      "correctText": "Improving future investigations",
+      "explanation": "The Review phase in IDIP focuses on analyzing the completed investigation to identify lessons learned, improve procedures, update tools, and refine protocols for future cases — creating a continuous improvement cycle for the forensic team.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "EEDIP Authorization phase ensures:",
+      "options": [
+        "Legal permission",
+        "Printer control",
+        "Cable security",
+        "Router access"
+      ],
+      "correct": 0,
+      "correctText": "Legal permission",
+      "explanation": "The EEDIP Authorization phase ensures that all necessary legal permissions, warrants, and organizational approvals are obtained before any forensic investigation begins, preventing evidence from being challenged or excluded due to procedural violations.",
+      "subtopic": "5.3"
+    },
+    {
+      "question": "Extended model supports:",
+      "options": [
+        "Multi-agency coordination",
+        "Single investigator only",
+        "Printer network",
+        "Cable testing"
+      ],
+      "correct": 0,
+      "correctText": "Multi-agency coordination",
+      "explanation": "Extended forensic models support multi-agency coordination by providing standardized processes that enable different organizations (law enforcement, forensic labs, legal teams) to collaborate effectively while maintaining evidence integrity and jurisdictional compliance.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Use case diagram shows:",
+      "options": [
+        "Actors and roles",
+        "Printer layout",
+        "Cable path",
+        "Storage capacity"
+      ],
+      "correct": 0,
+      "correctText": "Actors and roles",
+      "explanation": "A use case diagram, part of UML modeling, shows the actors (users, systems, external entities) and their roles or interactions with the forensic investigation system, helping to define boundaries and responsibilities in the investigation process.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Activity diagram represents:",
+      "options": [
+        "Workflow",
+        "File system",
+        "Network cable",
+        "Storage format"
+      ],
+      "correct": 0,
+      "correctText": "Workflow",
+      "explanation": "An activity diagram represents the workflow or sequence of activities in a forensic process, showing decision points, parallel actions, and the flow from one step to the next — making complex investigation procedures easier to understand and follow.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Sequence diagram shows:",
+      "options": [
+        "Interaction order",
+        "Printer speed",
+        "Cable order",
+        "Router configuration"
+      ],
+      "correct": 0,
+      "correctText": "Interaction order",
+      "explanation": "A sequence diagram shows the order of interactions between different components or actors over time, illustrating which entity sends what message to whom and in what sequence — critical for modeling forensic tool workflows and evidence handling procedures.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "RAM data should be collected:",
+      "options": [
+        "After shutdown",
+        "Before shutdown",
+        "Never",
+        "After formatting"
+      ],
+      "correct": 1,
+      "correctText": "Before shutdown",
+      "explanation": "RAM data must be collected before shutdown because volatile memory is lost when power is removed. Running processes, encryption keys, network connections, and unsaved data exist only in RAM, making pre-shutdown collection essential for a complete forensic picture.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Steganography detection finds:",
+      "options": [
+        "Hidden data",
+        "Printed files",
+        "Deleted cables",
+        "Offline systems"
+      ],
+      "correct": 0,
+      "correctText": "Hidden data",
+      "explanation": "Steganography detection (steganalysis) identifies hidden data embedded within seemingly normal files like images, audio, or video. Unlike encryption which scrambles data visibly, steganography conceals the very existence of the hidden information.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Keyword search helps identify:",
+      "options": [
+        "Suspicious terms",
+        "Printer speed",
+        "Cable type",
+        "OS version"
+      ],
+      "correct": 0,
+      "correctText": "Suspicious terms",
+      "explanation": "Keyword searching scans through acquired data for specific terms, names, phrases, or patterns that may indicate suspicious or relevant activity. This targeted approach helps investigators quickly identify pertinent evidence within large datasets.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Documentation stage increases:",
+      "options": [
+        "Legal credibility",
+        "Printer usage",
+        "Cable usage",
+        "OS upgrade"
+      ],
+      "correct": 0,
+      "correctText": "Legal credibility",
+      "explanation": "Thorough documentation increases the legal credibility of forensic findings by providing a verifiable, auditable trail of every action taken. Courts rely on documentation to assess whether proper procedures were followed and whether evidence can be trusted.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hackers simulate:",
+      "options": [
+        "Real attacks legally",
+        "Paper filing",
+        "Printing",
+        "Cable testing"
+      ],
+      "correct": 0,
+      "correctText": "Real attacks legally",
+      "explanation": "Ethical hackers simulate real-world cyberattacks under controlled, legal conditions to identify vulnerabilities that actual attackers could exploit. These controlled simulations provide actionable findings without the risk of actual damage or data loss.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Maintaining access phase checks:",
+      "options": [
+        "Persistence",
+        "Printing",
+        "Cable",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Persistence",
+      "explanation": "The Maintaining Access phase tests whether an attacker could establish persistent access to a compromised system (via backdoors, scheduled tasks, or rootkits). This demonstrates the real-world risk of long-term compromise if vulnerabilities remain unfixed.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Reporting phase includes:",
+      "options": [
+        "Vulnerability details",
+        "Printer logs only",
+        "Cable diagram",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Vulnerability details",
+      "explanation": "The reporting phase documents all discovered vulnerabilities, their severity, exploitation methods used, and recommended remediation steps. A comprehensive report enables the organization to prioritize and address security gaps systematically.",
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
+    },
+    {
+      "question": "Ethical hacking improves:",
+      "options": [
+        "Incident response readiness",
+        "Paper storage",
+        "Printer ink",
+        "Cable repair"
+      ],
+      "correct": 0,
+      "correctText": "Incident response readiness",
+      "explanation": "By proactively identifying vulnerabilities and testing incident response procedures, ethical hacking improves an organization's incident response readiness — ensuring teams can detect, contain, and recover from actual attacks more quickly and effectively.",
+      "subtopic": "5.4",
+      "tags": [
+        "eh",
+        "hacking"
+      ]
+    },
+    {
+      "question": "AI phishing emails often show:",
+      "options": [
+        "Perfect grammar",
+        "Spelling errors only",
+        "Printer logs",
+        "Cable details"
+      ],
+      "correct": 0,
+      "correctText": "Perfect grammar",
+      "explanation": "AI-generated phishing emails exhibit perfect grammar and natural language because machine learning models (like GPT) can produce flawlessly written, contextually appropriate messages — eliminating the spelling and grammar errors that traditionally helped users identify phishing attempts.",
+      "subtopic": "5.5",
+      "tags": [
+        "ai",
+        "phishing"
+      ]
+    },
+    {
+      "question": "Double extortion ransomware includes:",
+      "options": [
+        "Encryption + data theft",
+        "Encryption only",
+        "Deletion only",
+        "Printer attack"
+      ],
+      "correct": 0,
+      "correctText": "Encryption + data theft",
+      "explanation": "Double extortion ransomware combines file encryption with data exfiltration — attackers not only lock the victim's data but also threaten to publish stolen sensitive information if the ransom isn't paid, creating two separate leverage points against the victim.",
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "Triple extortion adds:",
+      "options": [
+        "DDoS or blackmail",
+        "Printer repair",
+        "Cable testing",
+        "OS upgrade"
+      ],
+      "correct": 0,
+      "correctText": "DDoS or blackmail",
+      "explanation": "Triple extortion ransomware adds a third layer of pressure beyond encryption and data theft — such as launching DDoS attacks against the victim's services or directly blackmailing individuals whose data was stolen — to further coerce payment.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Indicators of ransomware include:",
+      "options": [
+        "Mass file encryption",
+        "Printer slowdown",
+        "Cable noise",
+        "Paper jam"
+      ],
+      "correct": 0,
+      "correctText": "Mass file encryption",
+      "explanation": "The primary indicator of a ransomware attack is the mass encryption of files across the system, often accompanied by ransom notes and file extension changes. This systematic, rapid encryption of numerous files distinguishes ransomware from other malware.",
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "EDR stands for:",
+      "options": [
+        "Endpoint Detection and Response",
+        "Electronic Data Recovery",
+        "Evidence Data Removal",
+        "Emergency Digital Router"
+      ],
+      "correct": 0,
+      "correctText": "Endpoint Detection and Response",
+      "explanation": "EDR (Endpoint Detection and Response) is a security solution that continuously monitors endpoints (desktops, laptops, servers) for suspicious activity, detects threats in real-time, and provides automated or manual response capabilities to contain and remediate incidents.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "IoT default passwords cause:",
+      "options": [
+        "Vulnerability",
+        "Printer speed",
+        "Cable issue",
+        "Storage expansion"
+      ],
+      "correct": 0,
+      "correctText": "Vulnerability",
+      "explanation": "IoT devices often ship with default, well-known passwords that many users never change, creating a significant vulnerability. Attackers can easily look up default credentials online and gain unauthorized access to these devices, often joining them to botnets.",
+      "subtopic": "5.1",
+      "tags": [
+        "iot",
+        "zero-day"
+      ]
+    },
+    {
+      "question": "VLAN helps in:",
+      "options": [
+        "Network isolation",
+        "Printer repair",
+        "Cable deletion",
+        "File formatting"
+      ],
+      "correct": 0,
+      "correctText": "Network isolation",
+      "explanation": "VLANs (Virtual Local Area Networks) enable network isolation by logically segmenting a physical network into separate broadcast domains. This limits the spread of attacks, contains breaches, and enforces security boundaries between different network zones.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Deepfake detection checks:",
+      "options": [
+        "Metadata",
+        "Printer logs",
+        "Cable signals",
+        "Router configuration"
+      ],
+      "correct": 0,
+      "correctText": "Metadata",
+      "explanation": "Deepfake detection techniques analyze metadata inconsistencies, compression artifacts, facial micro-expressions, and pixel-level anomalies that are not visible to the human eye but reveal the synthetic nature of AI-generated media content.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "OS hacking targets:",
+      "options": [
+        "System vulnerabilities",
+        "Paper files",
+        "Printer drivers",
+        "Cable"
+      ],
+      "correct": 0,
+      "correctText": "System vulnerabilities",
+      "explanation": "OS hacking targets vulnerabilities within operating systems — such as privilege escalation flaws, buffer overflows, or kernel exploits — to gain unauthorized access, execute arbitrary code, or escalate privileges on the compromised system.",
+      "subtopic": "5.1",
+      "tags": [
+        "hacking"
+      ]
+    },
+    {
+      "question": "Secure boot prevents:",
+      "options": [
+        "Unauthorized firmware",
+        "Printer errors",
+        "Cable faults",
+        "Storage errors"
+      ],
+      "correct": 0,
+      "correctText": "Unauthorized firmware",
+      "explanation": "Secure boot is a firmware feature that verifies the digital signature of each boot component before execution, preventing unauthorized or malicious firmware, bootloaders, or kernel modifications from loading during the system startup process.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "TPM stands for:",
+      "options": [
+        "Trusted Platform Module",
+        "Temporary Print Module",
+        "Technical Printer Model",
+        "Terminal Port Manager"
+      ],
+      "correct": 0,
+      "correctText": "Trusted Platform Module",
+      "explanation": "TPM (Trusted Platform Module) is a dedicated hardware chip on the motherboard that provides hardware-based security functions including key generation, storage, and measurement of system integrity, forming the foundation for secure boot and disk encryption.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "SQL injection is:",
+      "options": [
+        "Application vulnerability",
+        "Printer failure",
+        "Cable break",
+        "Router issue"
+      ],
+      "correct": 0,
+      "correctText": "Application vulnerability",
+      "explanation": "SQL injection is an application-layer vulnerability where attackers inject malicious SQL code into input fields to manipulate database queries, potentially accessing, modifying, or deleting unauthorized data. It exploits improper input validation in web applications.",
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
+    },
+    {
+      "question": "Log4j was example of:",
+      "options": [
+        "Zero-day exploit",
+        "Printer bug",
+        "Cable error",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Zero-day exploit",
+      "explanation": "The Log4j vulnerability (CVE-2021-44228) was a critical zero-day exploit in the widely used Apache Log4j logging library that allowed remote code execution through crafted log messages. Its massive impact across millions of applications made it one of the most severe zero-days in history.",
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
+    },
+    {
+      "question": "NCSP focuses on protecting:",
+      "options": [
+        "Critical infrastructure",
+        "Printer network",
+        "Cable design",
+        "Router layout"
+      ],
+      "correct": 0,
+      "correctText": "Critical infrastructure",
+      "explanation": "India's National Cyber Security Policy focuses on protecting critical information infrastructure — systems vital to national security, economy, and public health — including power grids, financial systems, and communication networks from cyber threats.",
+      "subtopic": "5.6",
+      "tags": [
+        "ncsp"
+      ]
+    },
+    {
+      "question": "CERT-In stands for:",
+      "options": [
+        "Computer Emergency Response Team - India",
+        "Central Router Testing",
+        "Cyber Equipment Repair Team",
+        "Certified Router Inspector"
+      ],
+      "correct": 0,
+      "correctText": "Computer Emergency Response Team - India",
+      "explanation": "CERT-In stands for Computer Emergency Response Team - India, the nationally designated organization for cybersecurity incident response, threat intelligence sharing, and coordination of cybersecurity efforts across government and private sectors in India.",
+      "subtopic": "5.1",
+      "tags": [
+        "cert-in",
+        "cert"
+      ]
+    },
+    {
+      "question": "Section 66D deals with:",
+      "options": [
+        "Online cheating",
+        "Printer misuse",
+        "Cable theft",
+        "OS downgrade"
+      ],
+      "correct": 0,
+      "correctText": "Online cheating",
+      "explanation": "Section 66D of the IT Act addresses online cheating by impersonation — using communication devices or computer resources to deceive and cheat someone — and prescribes imprisonment up to 3 years and fines up to Rs. 1 lakh.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 72A relates to:",
+      "options": [
+        "Breach of confidentiality",
+        "Printer hacking",
+        "Cable theft",
+        "OS upgrade"
+      ],
+      "correct": 0,
+      "correctText": "Breach of confidentiality",
+      "explanation": "Section 72A of the IT Act deals with breach of confidentiality and privacy by someone who has access to personal data in the course of a contract and discloses it without consent, prescribing imprisonment up to 3 years and/or fines.",
+      "subtopic": "5.1",
+      "tags": [
+        "hacking"
+      ]
+    },
+    {
+      "question": "DPDP requires:",
+      "options": [
+        "User consent",
+        "Printer logs",
+        "Cable testing",
+        "Router approval"
+      ],
+      "correct": 0,
+      "correctText": "User consent",
+      "explanation": "The DPDP Act mandates that organizations must obtain clear, informed, and specific consent from Data Principals before collecting and processing their personal data, ensuring individuals have control over how their information is used.",
+      "subtopic": "5.6",
+      "tags": [
+        "dpdp"
+      ]
+    },
+    {
+      "question": "Data Protection Board oversees:",
+      "options": [
+        "Compliance",
+        "Printer repair",
+        "Cable usage",
+        "Router traffic"
+      ],
+      "correct": 0,
+      "correctText": "Compliance",
+      "explanation": "The Data Protection Board, established under the DPDP Act, oversees compliance with data protection regulations, investigates breaches, adjudicates disputes, and can impose penalties on organizations that violate data protection requirements.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "CCPWC portal allows:",
+      "options": [
+        "Cybercrime reporting",
+        "Printer installation",
+        "Cable registration",
+        "OS activation"
+      ],
+      "correct": 0,
+      "correctText": "Cybercrime reporting",
+      "explanation": "The CCPWC (Cyber Crime Prevention against Women and Children) portal enables citizens to report cybercrimes online, particularly those targeting women and children, providing a streamlined mechanism for filing complaints and tracking investigation progress.",
+      "subtopic": "5.6",
+      "tags": [
+        "ccpwc"
+      ]
+    },
+    {
+      "question": "Cyber stalking is:",
+      "options": [
+        "Online harassment",
+        "Printer misuse",
+        "Cable theft",
+        "Router attack"
+      ],
+      "correct": 0,
+      "correctText": "Online harassment",
+      "explanation": "Cyber stalking is a form of online harassment where an individual uses the internet, social media, or other digital means to persistently follow, threaten, or intimidate someone, often monitoring their activities and location without consent.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Evidence integrity is verified using:",
+      "options": [
+        "Hash values",
+        "Printer log",
+        "Cable ID",
+        "OS version"
+      ],
+      "correct": 0,
+      "correctText": "Hash values",
+      "explanation": "Hash values (such as MD5, SHA-1, SHA-256) verify evidence integrity by producing a unique fixed-length output for any given input. If even a single bit of the evidence changes, the hash value changes completely, proving tampering.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Memory dump analysis helps in:",
+      "options": [
+        "Malware detection",
+        "Printer repair",
+        "Cable fixing",
+        "Paper filing"
+      ],
+      "correct": 0,
+      "correctText": "Malware detection",
+      "explanation": "Memory dump analysis examines the captured contents of RAM to detect malware, extract encryption keys, identify running malicious processes, and find evidence that exists only in volatile memory and would be lost after system shutdown.",
+      "subtopic": "5.1",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "Forensic readiness improves:",
+      "options": [
+        "Investigation efficiency",
+        "Printer speed",
+        "Cable length",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Investigation efficiency",
+      "explanation": "Forensic readiness is the proactive preparation of an organization's people, processes, and technology to efficiently conduct digital investigations when incidents occur. Being prepared in advance reduces response time, preserves more evidence, and improves the quality of investigative outcomes.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Legal admissibility requires:",
+      "options": [
+        "Proper chain of custody",
+        "Printer",
+        "Cable",
+        "Router"
+      ],
+      "correct": 0,
+      "correctText": "Proper chain of custody",
+      "explanation": "For digital evidence to be legally admissible in court, a proper chain of custody must be maintained — documenting every person who handled the evidence, when, where, and for what purpose. Without this documented trail, opposing counsel can challenge the evidence's authenticity and reliability.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking reduces:",
+      "options": [
+        "Security risks",
+        "Printer errors",
+        "Cable damage",
+        "OS bugs"
+      ],
+      "correct": 0,
+      "correctText": "Security risks",
+      "explanation": "By proactively identifying and helping remediate vulnerabilities before attackers discover them, ethical hacking directly reduces an organization's security risks. It shifts the balance from reactive incident response to preventive security, minimizing potential breach damage and data loss.",
+      "subtopic": "5.4",
+      "tags": [
+        "eh",
+        "hacking"
+      ]
+    },
+    {
+      "question": "The ultimate aim of digital forensics is:",
+      "options": [
+        "Court-admissible evidence",
+        "Printing",
+        "Cable repair",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Court-admissible evidence",
+      "explanation": "The ultimate aim of digital forensics is to produce court-admissible evidence — digital evidence that has been properly identified, preserved, collected, examined, and analyzed following established procedures so that it can withstand legal scrutiny and be used in prosecution or litigation.",
+      "subtopic": "5.1",
+      "tags": [
+        "df"
+      ]
+    },
+    {
+      "question": "In digital forensics, integrity ensures that evidence is:",
+      "options": [
+        "Modified",
+        "Authentic and unchanged",
+        "Deleted",
+        "Printed"
+      ],
+      "correct": 1,
+      "correctText": "Authentic and unchanged",
+      "explanation": "Integrity in digital forensics means ensuring that evidence remains authentic and completely unchanged from the moment it was collected. Any alteration — whether accidental or intentional — can compromise the evidence's validity and render it inadmissible in legal proceedings.",
+      "subtopic": "5.1",
+      "tags": [
+        "df"
+      ]
+    },
+    {
+      "question": "A write blocker is used to:",
+      "options": [
+        "Prevent data modification",
+        "Delete files",
+        "Format drives",
+        "Encrypt systems"
+      ],
+      "correct": 0,
+      "correctText": "Prevent data modification",
+      "explanation": "A write blocker is a hardware or software tool that prevents any write operations to the source evidence drive during the imaging process. Without a write blocker, simply connecting a drive could modify timestamps, logs, or file metadata, potentially destroying critical evidence.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic duplication is also known as:",
+      "options": [
+        "Logical backup",
+        "Bit-stream copy",
+        "Data deletion",
+        "Compression"
+      ],
+      "correct": 1,
+      "correctText": "Bit-stream copy",
+      "explanation": "Forensic duplication, also known as a bit-stream copy, creates an exact sector-by-sector replica of the original storage device, including all data, slack space, unallocated areas, and inter-partition gaps. This ensures that no potential evidence is missed during the copying process.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Volatile evidence includes:",
+      "options": [
+        "Hard disk files",
+        "RAM contents",
+        "Archived backups",
+        "Printed documents"
+      ],
+      "correct": 1,
+      "correctText": "RAM contents",
+      "explanation": "Volatile evidence includes RAM contents such as running processes, open network connections, clipboard data, login sessions, and encryption keys — all of which are lost when power is removed. This is why volatile memory must be captured first, before shutting down the system.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Log analysis helps investigators detect:",
+      "options": [
+        "System activities",
+        "Printer errors",
+        "Cable failures",
+        "OS installation"
+      ],
+      "correct": 0,
+      "correctText": "System activities",
+      "explanation": "Log analysis examines system logs, application logs, security logs, and network logs to detect patterns of system activities, including unauthorized access attempts, malware execution, policy violations, and anomalous behavior that may indicate a security incident.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Evidence should be stored in:",
+      "options": [
+        "Open area",
+        "Secure environment",
+        "Shared folder",
+        "Public network"
+      ],
+      "correct": 1,
+      "correctText": "Secure environment",
+      "explanation": "Digital evidence must be stored in a secure, access-controlled environment — such as a locked evidence room or encrypted digital storage — to prevent unauthorized access, tampering, accidental deletion, or environmental damage that could compromise its integrity and admissibility.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "MD5 and SHA are examples of:",
+      "options": [
+        "Encryption keys",
+        "Hash algorithms",
+        "Firewalls",
+        "Antivirus tools"
+      ],
+      "correct": 1,
+      "correctText": "Hash algorithms",
+      "explanation": "MD5 (Message Digest 5) and SHA (Secure Hash Algorithm) are hash algorithms that generate unique fixed-length digests from input data. In forensics, they are used to verify that evidence has not been altered by comparing hash values computed at different stages of handling.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic soundness means:",
+      "options": [
+        "Using approved tools",
+        "Deleting data",
+        "Modifying logs",
+        "Skipping documentation"
+      ],
+      "correct": 0,
+      "correctText": "Using approved tools",
+      "explanation": "Forensic soundness means that all investigation procedures use approved, validated tools and follow established methodologies that have been accepted by the forensic community and courts. This ensures that results are reliable, reproducible, and defensible under legal challenge.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Chain of custody includes:",
+      "options": [
+        "Who handled evidence",
+        "When it was handled",
+        "Why it was handled",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The chain of custody includes all of the following: who collected the evidence, when and where it was collected, who transported it, who analyzed it, how it was stored, and every transfer of custody. This comprehensive documentation ensures accountability at every stage.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Preparation phase in investigation ensures:",
+      "options": [
+        "Legal readiness",
+        "Data deletion",
+        "Cable setup",
+        "Printer installation"
+      ],
+      "correct": 0,
+      "correctText": "Legal readiness",
+      "explanation": "The preparation phase in an investigation ensures legal readiness by obtaining necessary warrants, establishing scope and authority, preparing documentation templates, and ensuring all team members understand legal requirements and chain of custody procedures before beginning work.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking primarily identifies:",
+      "options": [
+        "Security vulnerabilities",
+        "Printer speed",
+        "Cable length",
+        "Storage size"
+      ],
+      "correct": 0,
+      "correctText": "Security vulnerabilities",
+      "explanation": "Ethical hacking primarily identifies security vulnerabilities — weaknesses in systems, applications, networks, or configurations — that could be exploited by malicious actors. By finding these gaps first, organizations can remediate them before they are weaponized.",
+      "subtopic": "5.4",
+      "tags": [
+        "eh",
+        "hacking"
+      ]
+    },
+    {
+      "question": "Penetration testing is conducted:",
+      "options": [
+        "Without permission",
+        "With authorization",
+        "Secretly",
+        "Illegally"
+      ],
+      "correct": 1,
+      "correctText": "With authorization",
+      "explanation": "Penetration testing is conducted only with explicit, documented authorization from the system owner. This legal permission distinguishes it from unauthorized hacking and protects the tester from prosecution while defining the boundaries and scope of the assessment.",
+      "subtopic": "5.4"
+    },
+    {
+      "question": "Vulnerability assessment focuses on:",
+      "options": [
+        "Identifying weaknesses",
+        "Deleting systems",
+        "Formatting drives",
+        "Printing logs"
+      ],
+      "correct": 0,
+      "correctText": "Identifying weaknesses",
+      "explanation": "Vulnerability assessment focuses on systematically identifying weaknesses in systems, networks, and applications using automated scanning tools and manual review. Unlike penetration testing, it does not attempt to exploit vulnerabilities but catalogs and prioritizes them for remediation.",
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
+    },
+    {
+      "question": "Social engineering attacks exploit:",
+      "options": [
+        "Human psychology",
+        "Hardware failure",
+        "Cable damage",
+        "Printer malfunction"
+      ],
+      "correct": 0,
+      "correctText": "Human psychology",
+      "explanation": "Social engineering attacks exploit human psychology rather than technical vulnerabilities, manipulating people into divulging confidential information, clicking malicious links, or performing actions that compromise security. Techniques include phishing, pretexting, baiting, and tailgating.",
+      "subtopic": "5.1",
+      "tags": [
+        "phishing"
+      ]
+    },
+    {
+      "question": "Multi-Factor Authentication (MFA) improves:",
+      "options": [
+        "Security",
+        "Printer performance",
+        "Cable speed",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Security",
+      "explanation": "Multi-Factor Authentication (MFA) improves security by requiring two or more independent verification factors (something you know, have, or are) before granting access. Even if one factor is compromised, the attacker still cannot access the account without the remaining factors.",
+      "subtopic": "5.1",
+      "tags": [
+        "mfa"
+      ]
+    },
+    {
+      "question": "SPF, DKIM, and DMARC protect against:",
+      "options": [
+        "Phishing emails",
+        "Printer hacks",
+        "Cable faults",
+        "OS errors"
+      ],
+      "correct": 0,
+      "correctText": "Phishing emails",
+      "explanation": "SPF (Sender Policy Framework), DKIM (DomainKeys Identified Mail), and DMARC (Domain-based Message Authentication, Reporting & Conformance) are email authentication protocols that work together to verify sender identity and protect against phishing and email spoofing attacks.",
+      "subtopic": "5.1",
+      "tags": [
+        "phishing"
+      ]
+    },
+    {
+      "question": "Double extortion ransomware threatens:",
+      "options": [
+        "Data publication",
+        "Printer damage",
+        "Cable theft",
+        "OS crash"
+      ],
+      "correct": 0,
+      "correctText": "Data publication",
+      "explanation": "Double extortion ransomware not only encrypts the victim's files but also threatens to publish or sell the stolen data if the ransom is not paid. This dual threat is more coercive than encryption alone, as data publication can cause regulatory penalties and reputational damage.",
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "Endpoint Detection and Response tools monitor:",
+      "options": [
+        "End-user devices",
+        "Printers only",
+        "Routers only",
+        "Cables only"
+      ],
+      "correct": 0,
+      "correctText": "End-user devices",
+      "explanation": "Endpoint Detection and Response (EDR) tools continuously monitor end-user devices — desktops, laptops, and servers — for suspicious behavior, malware infections, and policy violations. They provide real-time visibility into endpoint activities and enable rapid threat containment.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Firmware malware can survive:",
+      "options": [
+        "OS reinstallation",
+        "Cable replacement",
+        "Printer reset",
+        "File deletion"
+      ],
+      "correct": 0,
+      "correctText": "OS reinstallation",
+      "explanation": "Firmware-level malware is particularly dangerous because it resides in the BIOS/UEFI or device firmware, which loads before the operating system. This means the malware persists even after OS reinstallation, hard drive replacement, or system formatting, making it extremely difficult to remove.",
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "Zero-day exploit targets:",
+      "options": [
+        "Unknown vulnerabilities",
+        "Patched systems",
+        "Printer firmware",
+        "Paper records"
+      ],
+      "correct": 0,
+      "correctText": "Unknown vulnerabilities",
+      "explanation": "Zero-day exploits target vulnerabilities that are unknown to the vendor and for which no patch exists. Because defenders have had zero days to prepare, these exploits are exceptionally dangerous and can cause widespread damage before the vulnerability is discovered and fixed.",
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
+    },
+    {
+      "question": "Section 66B relates to:",
+      "options": [
+        "Receiving stolen computer resources",
+        "Printer misuse",
+        "Cable theft",
+        "OS downgrade"
+      ],
+      "correct": 0,
+      "correctText": "Receiving stolen computer resources",
+      "explanation": "Section 66B of the IT Act relates to receiving stolen computer resources or communication devices — knowing them to be stolen — and prescribes imprisonment up to 3 years and/or fines, addressing the demand side of stolen digital property.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 66C addresses:",
+      "options": [
+        "Identity theft",
+        "Printer theft",
+        "Cable misuse",
+        "Data compression"
+      ],
+      "correct": 0,
+      "correctText": "Identity theft",
+      "explanation": "Section 66C addresses identity theft — the fraudulent or dishonest use of another person's unique identification data, such as passwords, digital signatures, or biometric information — carrying penalties of imprisonment up to 3 years and fines up to Rs. 1 lakh.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 66D punishes:",
+      "options": [
+        "Cheating by personation",
+        "Printer hacking",
+        "Cable damage",
+        "Storage deletion"
+      ],
+      "correct": 0,
+      "correctText": "Cheating by personation",
+      "explanation": "Section 66D punishes cheating by personation — using communication devices or computer resources to impersonate someone else for the purpose of fraud or deception — with imprisonment up to 3 years and fines up to Rs. 1 lakh.",
+      "subtopic": "5.1",
+      "tags": [
+        "hacking"
+      ]
+    },
+    {
+      "question": "Section 66F defines:",
+      "options": [
+        "Cyber terrorism",
+        "Printer malfunction",
+        "Router error",
+        "Cable break"
+      ],
+      "correct": 0,
+      "correctText": "Cyber terrorism",
+      "explanation": "Section 66F defines cyber terrorism as acts intended to threaten India's unity, integrity, security, or sovereignty by unlawfully accessing or damaging critical information infrastructure or causing damage through digital means, carrying penalties up to life imprisonment.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 72A deals with:",
+      "options": [
+        "Breach of confidentiality",
+        "Printer logs",
+        "Cable ID",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Breach of confidentiality",
+      "explanation": "Section 72A deals with breach of confidentiality by any person who, pursuant to a contract, has access to personal data and discloses it without consent or in breach of the contract, prescribing imprisonment up to 3 years and/or fines.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "DPDP Act 2023 requires organizations to:",
+      "options": [
+        "Obtain user consent",
+        "Delete user data",
+        "Print user logs",
+        "Share data publicly"
+      ],
+      "correct": 0,
+      "correctText": "Obtain user consent",
+      "explanation": "The DPDP Act 2023 requires organizations to obtain user consent before collecting and processing personal data. Consent must be free, specific, informed, unconditional, and unambiguous, with clear notice about what data is being collected and for what purpose.",
+      "subtopic": "5.6",
+      "tags": [
+        "dpdp"
+      ]
+    },
+    {
+      "question": "Data Principal has right to:",
+      "options": [
+        "Access personal data",
+        "Delete printer",
+        "Change cable",
+        "Update router"
+      ],
+      "correct": 0,
+      "correctText": "Access personal data",
+      "explanation": "Under the DPDP Act, a Data Principal has the right to access their personal data held by any Data Fiduciary, as well as the right to correction, erasure, nomination, and grievance redressal — ensuring individuals maintain control over their personal information.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Data Fiduciary must ensure:",
+      "options": [
+        "Lawful data processing",
+        "Printer control",
+        "Cable testing",
+        "OS upgrade"
+      ],
+      "correct": 0,
+      "correctText": "Lawful data processing",
+      "explanation": "A Data Fiduciary must ensure lawful data processing — meaning data is collected only for specified, legitimate purposes with proper consent, processed fairly, and protected with appropriate security measures to prevent unauthorized access or breaches.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "CCPWC portal enables:",
+      "options": [
+        "Reporting cybercrime",
+        "Printing complaints",
+        "Cable setup",
+        "Router activation"
+      ],
+      "correct": 0,
+      "correctText": "Reporting cybercrime",
+      "explanation": "The CCPWC portal enables citizens to report cybercrimes online, particularly those against women and children. It provides a user-friendly interface for filing complaints, uploading evidence, and tracking case progress without needing to visit a police station.",
+      "subtopic": "5.6",
+      "tags": [
+        "ccpwc"
+      ]
+    },
+    {
+      "question": "CERT-In provides:",
+      "options": [
+        "Incident response",
+        "Printer repair",
+        "Cable installation",
+        "Storage"
+      ],
+      "correct": 0,
+      "correctText": "Incident response",
+      "explanation": "CERT-In provides incident response services including analyzing and responding to cyber threats, issuing security advisories and vulnerability notes, coordinating incident handling across organizations, and serving as the national point of contact for international cybersecurity cooperation.",
+      "subtopic": "5.1",
+      "tags": [
+        "cert-in",
+        "cert"
+      ]
+    },
+    {
+      "question": "Forensic imaging tools must:",
+      "options": [
+        "Preserve metadata",
+        "Delete timestamps",
+        "Modify files",
+        "Compress logs"
+      ],
+      "correct": 0,
+      "correctText": "Preserve metadata",
+      "explanation": "Forensic imaging tools must preserve all metadata — including file timestamps (created, modified, accessed), file permissions, ownership information, and extended attributes — because this metadata can be crucial evidence in establishing timelines and user activity patterns.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Metadata analysis helps determine:",
+      "options": [
+        "File creation time",
+        "Printer speed",
+        "Cable type",
+        "Router model"
+      ],
+      "correct": 0,
+      "correctText": "File creation time",
+      "explanation": "Metadata analysis helps determine when a file was created, last modified, or accessed, along with author information, device identifiers, and GPS coordinates. These details are critical for building forensic timelines and attributing actions to specific users or devices.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "In ransomware case, volatile memory capture helps find:",
+      "options": [
+        "Encryption keys",
+        "Printer ID",
+        "Cable number",
+        "OS version"
+      ],
+      "correct": 0,
+      "correctText": "Encryption keys",
+      "explanation": "In ransomware investigations, capturing volatile memory before shutdown is critical because encryption keys used by the ransomware may still reside in RAM. Extracting these keys can potentially enable decryption of the locked files without paying the ransom.",
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "Digital evidence admissibility depends on:",
+      "options": [
+        "Proper handling",
+        "Fast processing",
+        "Printer logs",
+        "Cable replacement"
+      ],
+      "correct": 0,
+      "correctText": "Proper handling",
+      "explanation": "Digital evidence admissibility in court depends on proper handling throughout the evidence lifecycle — from lawful seizure and documented chain of custody to forensically sound collection, preservation, examination, and analysis. Any procedural failure can render evidence inadmissible.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Incident response planning improves:",
+      "options": [
+        "Cyber resilience",
+        "Printer output",
+        "Cable speed",
+        "Storage size"
+      ],
+      "correct": 0,
+      "correctText": "Cyber resilience",
+      "explanation": "Incident response planning improves an organization's cyber resilience by establishing predefined procedures, roles, and communication channels for handling security incidents. A well-practiced plan enables faster containment, reduced damage, and quicker recovery from attacks.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking is different from malicious hacking because it is:",
+      "options": [
+        "Legal",
+        "Anonymous",
+        "Hidden",
+        "Unauthorized"
+      ],
+      "correct": 0,
+      "correctText": "Legal",
+      "explanation": "Ethical hacking is different from malicious hacking primarily because it is legal — conducted with explicit authorization and defined scope from the system owner. While the techniques may overlap, the legal permission, intent, and controlled environment make ethical hacking lawful.",
+      "subtopic": "5.4",
+      "tags": [
+        "eh",
+        "hacking"
+      ]
+    },
+    {
+      "question": "Reconnaissance can be:",
+      "options": [
+        "Active",
+        "Passive",
+        "Both",
+        "None"
+      ],
+      "correct": 2,
+      "correctText": "Both",
+      "explanation": "Reconnaissance can be both passive (gathering publicly available information without directly interacting with the target, such as WHOIS lookups and OSINT) and active (directly probing the target through port scanning, ping sweeps, or service enumeration).",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Network segmentation limits:",
+      "options": [
+        "Attack spread",
+        "Printer speed",
+        "Cable length",
+        "OS performance"
+      ],
+      "correct": 0,
+      "correctText": "Attack spread",
+      "explanation": "Network segmentation limits the spread of attacks by dividing a network into isolated segments or zones. If one segment is compromised, the attacker's lateral movement is contained within that zone, preventing access to the entire network and protecting critical assets.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Security audits help:",
+      "options": [
+        "Identify risks",
+        "Delete logs",
+        "Print reports only",
+        "Format drives"
+      ],
+      "correct": 0,
+      "correctText": "Identify risks",
+      "explanation": "Security audits systematically review an organization's security policies, procedures, controls, and technical implementations to identify risks, gaps, and non-compliance. They provide an independent assessment that helps prioritize security improvements and meet regulatory requirements.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Phishing indicators include:",
+      "options": [
+        "Suspicious links",
+        "Urgent requests",
+        "Unknown sender domains",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "Phishing indicators include all of the following: urgent or threatening language requesting immediate action, suspicious sender addresses or domain mismatches, unexpected attachments or links, grammatical errors (in traditional phishing), requests for sensitive information, and mismatched URLs.",
+      "subtopic": "5.5",
+      "tags": [
+        "phishing"
+      ]
+    },
+    {
+      "question": "Malware analysis is part of:",
+      "options": [
+        "Digital forensics",
+        "Printing",
+        "Cable testing",
+        "OS installation"
+      ],
+      "correct": 0,
+      "correctText": "Digital forensics",
+      "explanation": "Malware analysis is an integral part of digital forensics that involves examining malicious software to understand its behavior, origin, capabilities, and impact. This analysis helps investigators attribute attacks, identify compromise indicators, and develop detection and remediation strategies.",
+      "subtopic": "5.1",
+      "tags": [
+        "df",
+        "ransomware"
+      ]
+    },
+    {
+      "question": "Evidence examination should be done on:",
+      "options": [
+        "Forensic copy",
+        "Original device",
+        "Printer",
+        "Public system"
+      ],
+      "correct": 0,
+      "correctText": "Forensic copy",
+      "explanation": "Evidence examination should always be performed on a forensic copy (working copy), never on the original evidence. This preserves the original in its unaltered state and ensures that any mistakes or modifications during analysis do not affect the primary evidence.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Deepfake forensic detection checks:",
+      "options": [
+        "Frame inconsistencies",
+        "Printer logs",
+        "Cable damage",
+        "Router speed"
+      ],
+      "correct": 0,
+      "correctText": "Frame inconsistencies",
+      "explanation": "Deepfake forensic detection checks for frame inconsistencies — such as unnatural facial movements, inconsistent lighting and shadows, blending artifacts at facial boundaries, and irregular eye blinking patterns — that reveal the synthetic nature of AI-generated video content.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "IoT botnets are commonly used for:",
+      "options": [
+        "DDoS attacks",
+        "Printing",
+        "Cable theft",
+        "OS downgrade"
+      ],
+      "correct": 0,
+      "correctText": "DDoS attacks",
+      "explanation": "IoT botnets — networks of compromised smart devices like cameras, routers, and home appliances — are commonly used for DDoS attacks because their sheer numbers and often high bandwidth can generate massive volumes of traffic to overwhelm target servers.",
+      "subtopic": "5.1",
+      "tags": [
+        "iot"
+      ]
+    },
+    {
+      "question": "OS downgrade attacks exploit:",
+      "options": [
+        "Old vulnerabilities",
+        "New patches",
+        "Printer updates",
+        "Cable length"
+      ],
+      "correct": 0,
+      "correctText": "Old vulnerabilities",
+      "explanation": "OS downgrade attacks exploit old vulnerabilities by reverting a system to an earlier, unpatched version of the operating system. The older version contains known security flaws that attackers can easily exploit since security patches from subsequent updates are removed.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "Cyber law ensures:",
+      "options": [
+        "Legal regulation of cyberspace",
+        "Printer repair",
+        "Cable installation",
+        "OS deletion"
+      ],
+      "correct": 0,
+      "correctText": "Legal regulation of cyberspace",
+      "explanation": "Cyber law ensures the legal regulation of cyberspace by defining what constitutes cybercrime, establishing penalties for offenses, providing legal frameworks for digital evidence, protecting privacy rights, and enabling lawful investigation and prosecution of technology-related crimes.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "National Cyber Security Policy 2013 strengthens:",
+      "options": [
+        "Cyber defense framework",
+        "Printer network",
+        "Cable quality",
+        "Router size"
+      ],
+      "correct": 0,
+      "correctText": "Cyber defense framework",
+      "explanation": "The National Cyber Security Policy 2013 strengthens India's cyber defense framework by outlining strategies for protecting critical infrastructure, promoting cybersecurity research and development, building skilled workforce, and establishing public-private partnerships for threat intelligence sharing.",
+      "subtopic": "5.6",
+      "tags": [
+        "ncsp"
+      ]
+    },
+    {
+      "question": "Data breach penalties under DPDP can be:",
+      "options": [
+        "Financial fines",
+        "Printer ban",
+        "Cable removal",
+        "OS suspension"
+      ],
+      "correct": 0,
+      "correctText": "Financial fines",
+      "explanation": "Under the DPDP Act, data breach penalties can include financial fines of up to Rs. 250 crore per incident, depending on the nature and severity of the breach. The Data Protection Board determines the penalty based on the scope, nature, and impact of the violation.",
+      "subtopic": "5.6",
+      "tags": [
+        "dpdp"
+      ]
+    },
+    {
+      "question": "Cybercrime against women includes:",
+      "options": [
+        "Cyber stalking",
+        "Online harassment",
+        "Identity misuse",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "Cybercrime against women includes all forms of online victimization — cyber stalking, revenge porn, online harassment, identity theft for impersonation, morphed images, and threatening or defamatory messages — all of which are addressed under various sections of the IT Act.",
+      "subtopic": "5.6"
+    },
+    {
+      "question": "The main goal of ethical hacking is to:",
+      "options": [
+        "Strengthen cybersecurity",
+        "Destroy systems",
+        "Steal data",
+        "Crash networks"
+      ],
+      "correct": 0,
+      "correctText": "Strengthen cybersecurity",
+      "explanation": "The main goal of ethical hacking is to strengthen cybersecurity by proactively discovering and helping remediate vulnerabilities before malicious actors can exploit them. This defensive purpose fundamentally distinguishes it from criminal hacking, which seeks to exploit weaknesses for personal gain.",
+      "subtopic": "5.4",
+      "tags": [
+        "eh",
+        "hacking"
+      ]
+    },
+    {
+      "question": "Digital forensics supports law enforcement by:",
+      "options": [
+        "Recovering digital evidence",
+        "Printing reports",
+        "Deleting logs",
+        "Formatting drives"
+      ],
+      "correct": 0,
+      "correctText": "Recovering digital evidence",
+      "explanation": "Digital forensics supports law enforcement by recovering digital evidence from computers, phones, and networks that can be used to identify suspects, establish timelines, prove or disprove allegations, and secure convictions in both cybercrime and traditional criminal cases.",
+      "subtopic": "5.1",
+      "tags": [
+        "df"
+      ]
+    },
+    {
+      "question": "Integrity of evidence is verified using:",
+      "options": [
+        "Hash comparison",
+        "Printer logs",
+        "Cable ID",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Hash comparison",
+      "explanation": "Evidence integrity is verified through hash comparison — computing hash values (such as MD5 or SHA-256) at the time of evidence collection and again at any subsequent point. Matching hashes mathematically prove that the evidence has not been altered in any way.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "A forensic workstation is used to:",
+      "options": [
+        "Analyze copied evidence",
+        "Modify original data",
+        "Print documents",
+        "Delete files"
+      ],
+      "correct": 0,
+      "correctText": "Analyze copied evidence",
+      "explanation": "A forensic workstation is a dedicated, specially configured computer used to analyze copied evidence in a controlled environment. It runs forensic software tools and is isolated from networks to prevent contamination, ensuring that analysis does not affect the original evidence.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Evidence contamination occurs when:",
+      "options": [
+        "Original data is altered",
+        "Printer jams",
+        "Cable disconnects",
+        "Router fails"
+      ],
+      "correct": 0,
+      "correctText": "Original data is altered",
+      "explanation": "Evidence contamination occurs when original data is accidentally or intentionally altered — such as by booting a suspect system, modifying files, or failing to use write blockers. Even minor changes can compromise the evidence's integrity and render it inadmissible in court.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic timeline helps determine:",
+      "options": [
+        "Attack sequence",
+        "Printer speed",
+        "Cable path",
+        "OS version"
+      ],
+      "correct": 0,
+      "correctText": "Attack sequence",
+      "explanation": "A forensic timeline helps determine the exact sequence of the attack — when the intrusion began, which systems were accessed, what data was exfiltrated, and when the attacker exited. This chronological mapping is essential for understanding the full scope of the incident.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "A memory dump contains:",
+      "options": [
+        "Active system processes",
+        "Printed logs",
+        "Cable data",
+        "BIOS firmware"
+      ],
+      "correct": 0,
+      "correctText": "Active system processes",
+      "explanation": "A memory dump contains a snapshot of all active system processes at the time of capture, including running programs, loaded DLLs, open network connections, registry data, and encryption keys — providing a comprehensive view of the system's live state.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Disk imaging tools must maintain:",
+      "options": [
+        "Write protection",
+        "Data deletion",
+        "Printer control",
+        "Cable format"
+      ],
+      "correct": 0,
+      "correctText": "Write protection",
+      "explanation": "Disk imaging tools must maintain write protection to ensure that the imaging process does not modify the source drive in any way. Any write operation to the original evidence could alter timestamps, overwrite deleted data, or corrupt the evidence permanently.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Metadata can reveal:",
+      "options": [
+        "File ownership",
+        "Creation date",
+        "Modification history",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "Metadata can reveal all of the following: file creation and modification dates, author or creator information, GPS location data from photos, device identifiers, software versions used, edit history, and access permissions — making it a rich source of forensic evidence.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "In ransomware investigation, first action is:",
+      "options": [
+        "Isolate infected system",
+        "Pay ransom",
+        "Delete files",
+        "Restart system"
+      ],
+      "correct": 0,
+      "correctText": "Isolate infected system",
+      "explanation": "In a ransomware investigation, the first action should be to isolate the infected system from the network to prevent the ransomware from spreading to other connected devices and to stop any ongoing data exfiltration by the attackers.",
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "Digital forensics ensures evidence is:",
+      "options": [
+        "Court admissible",
+        "Random",
+        "Unverified",
+        "Deleted"
+      ],
+      "correct": 0,
+      "correctText": "Court admissible",
+      "explanation": "Digital forensics ensures evidence is court admissible by following rigorous, standardized procedures at every stage — from lawful seizure and documented chain of custody to forensically sound imaging, validated analysis tools, and clear presentation of findings.",
+      "subtopic": "5.1",
+      "tags": [
+        "df"
+      ]
+    },
+    {
+      "question": "Ethical hacking requires defining:",
+      "options": [
+        "Scope of testing",
+        "Printer model",
+        "Cable size",
+        "OS brand"
+      ],
+      "correct": 0,
+      "correctText": "Scope of testing",
+      "explanation": "Ethical hacking requires defining the scope of testing — specifying which systems, networks, and applications are included, what types of tests will be performed, and what is explicitly excluded — to ensure the assessment stays within legal and authorized boundaries.",
+      "subtopic": "5.4",
+      "tags": [
+        "eh",
+        "hacking"
+      ]
+    },
+    {
+      "question": "Passive reconnaissance involves:",
+      "options": [
+        "Public information gathering",
+        "Direct system attack",
+        "File deletion",
+        "Printer testing"
+      ],
+      "correct": 0,
+      "correctText": "Public information gathering",
+      "explanation": "Passive reconnaissance involves gathering publicly available information about the target without any direct interaction, such as searching WHOIS records, social media profiles, DNS records, and job postings. Since the target is not contacted, this phase is undetectable.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Active reconnaissance involves:",
+      "options": [
+        "Direct interaction with target",
+        "Reading newspapers",
+        "Printing logs",
+        "Cable inspection"
+      ],
+      "correct": 0,
+      "correctText": "Direct interaction with target",
+      "explanation": "Active reconnaissance involves direct interaction with the target system, such as port scanning, service enumeration, banner grabbing, and ping sweeps. While this yields more detailed information, it is also detectable by intrusion detection systems and security monitoring tools.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Port scanning identifies:",
+      "options": [
+        "Open network ports",
+        "Printer ink levels",
+        "Cable faults",
+        "Storage errors"
+      ],
+      "correct": 0,
+      "correctText": "Open network ports",
+      "explanation": "Port scanning identifies open network ports and the services running on them, revealing the attack surface of a target system. Each open port represents a potential entry point that an attacker could exploit to gain unauthorized access.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Exploitation phase tests:",
+      "options": [
+        "Vulnerability impact",
+        "Printer performance",
+        "Cable resistance",
+        "Router height"
+      ],
+      "correct": 0,
+      "correctText": "Vulnerability impact",
+      "explanation": "The exploitation phase tests the real-world impact of identified vulnerabilities by actually exploiting them in a controlled manner. This demonstrates what an attacker could achieve — such as accessing sensitive data or gaining system control — if the vulnerability were left unpatched.",
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
+    },
+    {
+      "question": "Privilege escalation attack aims to:",
+      "options": [
+        "Gain higher system access",
+        "Print documents",
+        "Delete logs",
+        "Restart OS"
+      ],
+      "correct": 0,
+      "correctText": "Gain higher system access",
+      "explanation": "Privilege escalation attacks aim to gain higher system access than initially obtained — moving from a standard user account to administrator or root-level privileges. This allows the attacker to access restricted data, install software, and control the entire system.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Maintaining access helps attacker test:",
+      "options": [
+        "Persistence",
+        "Printer stability",
+        "Cable durability",
+        "Storage capacity"
+      ],
+      "correct": 0,
+      "correctText": "Persistence",
+      "explanation": "Maintaining access helps the ethical hacker test persistence — whether it's possible to establish a permanent backdoor or foothold in the system that survives reboots and credential changes, demonstrating the risk of long-term undetected compromise.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Reporting phase should include:",
+      "options": [
+        "Risk level",
+        "Impact analysis",
+        "Remediation steps",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The reporting phase should include all of the following: executive summary, detailed vulnerability descriptions, proof-of-concept demonstrations, risk ratings, remediation recommendations, and supporting evidence — providing the organization a complete and actionable security assessment.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Risk assessment helps identify:",
+      "options": [
+        "Potential threats",
+        "Printer faults",
+        "Cable damage",
+        "Router speed"
+      ],
+      "correct": 0,
+      "correctText": "Potential threats",
+      "explanation": "Risk assessment systematically identifies potential threats, evaluates the likelihood and impact of each threat, and prioritizes them based on risk level. This enables organizations to allocate resources effectively and implement controls for the most critical risks first.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Firewall primarily protects:",
+      "options": [
+        "Network perimeter",
+        "Printer",
+        "Cable",
+        "Mouse"
+      ],
+      "correct": 0,
+      "correctText": "Network perimeter",
+      "explanation": "A firewall primarily protects the network perimeter by monitoring and controlling incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between trusted internal networks and untrusted external networks, blocking unauthorized access attempts.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "AI phishing scams are dangerous because they are:",
+      "options": [
+        "Personalized",
+        "Grammatically accurate",
+        "Context-aware",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "AI phishing scams are dangerous because they are all of the following: highly convincing with perfect grammar, personalized to target specific individuals, difficult to distinguish from legitimate communications, and scalable — attackers can generate thousands of unique, targeted phishing messages automatically.",
+      "subtopic": "5.5",
+      "tags": [
+        "ai",
+        "phishing"
+      ]
+    },
+    {
+      "question": "Ransomware encryption uses:",
+      "options": [
+        "Cryptographic algorithms",
+        "Printer commands",
+        "Cable signals",
+        "Router settings"
+      ],
+      "correct": 0,
+      "correctText": "Cryptographic algorithms",
+      "explanation": "Ransomware encryption uses strong cryptographic algorithms (typically AES for file encryption and RSA for key exchange) to lock the victim's files. The symmetric encryption key is itself encrypted with the attacker's public key, making decryption impossible without the attacker's private key.",
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "DDoS attack aims to:",
+      "options": [
+        "Overload server",
+        "Print files",
+        "Delete logs",
+        "Upgrade OS"
+      ],
+      "correct": 0,
+      "correctText": "Overload server",
+      "explanation": "A DDoS (Distributed Denial of Service) attack aims to overload a server by flooding it with massive volumes of traffic from multiple compromised sources (botnets), exhausting its bandwidth, processing power, or memory so that legitimate users cannot access the service.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "IoT botnets consist of:",
+      "options": [
+        "Compromised smart devices",
+        "Printers only",
+        "Routers only",
+        "Servers only"
+      ],
+      "correct": 0,
+      "correctText": "Compromised smart devices",
+      "explanation": "IoT botnets consist of compromised smart devices — such as IP cameras, home routers, smart TVs, and IoT sensors — that have been infected with malware and are controlled remotely by attackers, typically to launch coordinated DDoS attacks at massive scale.",
+      "subtopic": "5.1",
+      "tags": [
+        "iot"
+      ]
+    },
+    {
+      "question": "Deepfake fraud may involve:",
+      "options": [
+        "CEO impersonation",
+        "Printer hacking",
+        "Cable theft",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "CEO impersonation",
+      "explanation": "Deepfake fraud may involve CEO impersonation — using AI-generated video or audio to convincingly mimic a company executive's voice or appearance to authorize fraudulent wire transfers, approve fake transactions, or issue deceptive instructions to employees.",
+      "subtopic": "5.5",
+      "tags": [
+        "hacking"
+      ]
+    },
+    {
+      "question": "Secure firmware updates require:",
+      "options": [
+        "Digital signatures",
+        "Printer logs",
+        "Cable marking",
+        "OS removal"
+      ],
+      "correct": 0,
+      "correctText": "Digital signatures",
+      "explanation": "Secure firmware updates require digital signatures to verify that the update is authentic and has not been tampered with or replaced by an attacker. The device verifies the signature against a trusted certificate before applying the update, preventing malicious firmware installation.",
+      "subtopic": "5.5"
+    },
+    {
+      "question": "BIOS malware is dangerous because it:",
+      "options": [
+        "Survives OS reinstall",
+        "Prints logs",
+        "Deletes files",
+        "Corrupts printer"
+      ],
+      "correct": 0,
+      "correctText": "Survives OS reinstall",
+      "explanation": "BIOS malware is particularly dangerous because it survives OS reinstallation and even hard drive replacement. Since the BIOS loads before the operating system, BIOS-level malware can re-infect a freshly installed OS and maintain persistent control over the system indefinitely.",
+      "subtopic": "5.1",
+      "tags": [
+        "ransomware"
+      ]
+    },
+    {
+      "question": "WAF protects against:",
+      "options": [
+        "Web application attacks",
+        "Printer hacking",
+        "Cable misuse",
+        "Router errors"
+      ],
+      "correct": 0,
+      "correctText": "Web application attacks",
+      "explanation": "A Web Application Firewall (WAF) protects against web application attacks such as SQL injection, cross-site scripting (XSS), file inclusion, and CSRF by inspecting HTTP/HTTPS traffic and filtering out malicious requests before they reach the application.",
+      "subtopic": "5.5",
+      "tags": [
+        "hacking",
+        "waf"
+      ]
+    },
+    {
+      "question": "SQL injection targets:",
+      "options": [
+        "Database queries",
+        "Printer spool",
+        "Cable network",
+        "OS boot"
+      ],
+      "correct": 0,
+      "correctText": "Database queries",
+      "explanation": "SQL injection targets database queries by injecting malicious SQL code through unsanitized input fields in web applications. This can allow attackers to bypass authentication, read sensitive data, modify database records, or execute administrative operations on the database server.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Zero-day attacks are hard to prevent because:",
+      "options": [
+        "No patch available",
+        "Printer error",
+        "Cable cut",
+        "Router crash"
+      ],
+      "correct": 0,
+      "correctText": "No patch available",
+      "explanation": "Zero-day attacks are hard to prevent because no patch is available for the unknown vulnerability being exploited. Traditional security measures like antivirus signatures and intrusion detection rules cannot detect the attack since it has never been seen before.",
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
+    },
+    {
+      "question": "NCSP 2013 promotes:",
+      "options": [
+        "Public-private partnership",
+        "Printer networks",
+        "Cable design",
+        "OS printing"
+      ],
+      "correct": 0,
+      "correctText": "Public-private partnership",
+      "explanation": "The National Cyber Security Policy 2013 promotes public-private partnership by encouraging collaboration between government agencies, private sector companies, and academic institutions to share threat intelligence, develop cybersecurity standards, and build national cyber defense capabilities.",
+      "subtopic": "5.6",
+      "tags": [
+        "ncsp"
+      ]
+    },
+    {
+      "question": "Critical Information Infrastructure includes:",
+      "options": [
+        "Banking systems",
+        "Power grids",
+        "Defense networks",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "Critical Information Infrastructure includes all of the following: power grids and energy systems, financial and banking networks, telecommunications infrastructure, government databases, transportation systems, and healthcare networks — systems whose disruption would severely impact national security and public welfare.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "IT Act 2000 supports:",
+      "options": [
+        "E-commerce",
+        "E-governance",
+        "Digital signatures",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "The IT Act 2000 supports all of the following: legal recognition of electronic records and digital signatures, facilitation of e-commerce and e-governance, establishment of cyber appellate tribunals, definition of cybercrimes and penalties, and provision for investigation of technology-related offenses.",
+      "subtopic": "5.6",
+      "tags": [
+        "it act"
+      ]
+    },
+    {
+      "question": "Section 43 penalizes:",
+      "options": [
+        "Unauthorized access",
+        "Printer damage",
+        "Cable theft",
+        "OS deletion"
+      ],
+      "correct": 0,
+      "correctText": "Unauthorized access",
+      "explanation": "Section 43 of the IT Act penalizes unauthorized access to computer systems, including acts such as downloading or copying data without permission, introducing viruses or malware, damaging or disrupting computer systems, and denying authorized users access to their systems.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Section 69 authorizes:",
+      "options": [
+        "Data interception",
+        "Printer shutdown",
+        "Cable removal",
+        "Router deletion"
+      ],
+      "correct": 0,
+      "correctText": "Data interception",
+      "explanation": "Section 69 authorizes the government to intercept, monitor, or decrypt any information stored in or transmitted through computer resources when necessary for the sovereignty, defense, security, or public order of India, subject to prescribed procedures and safeguards.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "DPDP Act emphasizes:",
+      "options": [
+        "Data privacy rights",
+        "Printer control",
+        "Cable inspection",
+        "OS updates"
+      ],
+      "correct": 0,
+      "correctText": "Data privacy rights",
+      "explanation": "The DPDP Act emphasizes data privacy rights by establishing that individuals (Data Principals) have fundamental rights over their personal data, including the right to know what data is collected, the right to correct it, the right to erase it, and the right to nominate another person.",
+      "subtopic": "5.6",
+      "tags": [
+        "dpdp"
+      ]
+    },
+    {
+      "question": "Consent under DPDP must be:",
+      "options": [
+        "Clear and informed",
+        "Hidden",
+        "Implied only",
+        "Verbal only"
+      ],
+      "correct": 0,
+      "correctText": "Clear and informed",
+      "explanation": "Consent under DPDP must be clear and informed — meaning the Data Principal must receive complete information about what data is being collected, why, how it will be used, and with whom it will be shared, and the consent must be given freely without coercion.",
+      "subtopic": "5.6",
+      "tags": [
+        "dpdp"
+      ]
+    },
+    {
+      "question": "CCPWC scheme focuses on:",
+      "options": [
+        "Cyber safety awareness",
+        "Printer usage",
+        "Cable repair",
+        "Router upgrade"
+      ],
+      "correct": 0,
+      "correctText": "Cyber safety awareness",
+      "explanation": "The CCPWC scheme focuses on cyber safety awareness by conducting education and training programs for women and children about online threats, safe browsing practices, how to recognize cybercrime, and how to report incidents through the CCPWC portal.",
+      "subtopic": "5.6",
+      "tags": [
+        "ccpwc"
+      ]
+    },
+    {
+      "question": "Cyber harassment includes:",
+      "options": [
+        "Online abuse",
+        "Cyber stalking",
+        "Threat messages",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "Cyber harassment includes all of the following: online threatening or intimidating messages, persistent unwanted contact or stalking, sharing private images without consent (revenge porn), defamatory posts, hate speech, and any digital communication intended to cause fear, distress, or humiliation.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Cyber terrorism under Section 66F includes:",
+      "options": [
+        "Threat to national security",
+        "Printer hacking",
+        "Cable theft",
+        "OS downgrade"
+      ],
+      "correct": 0,
+      "correctText": "Threat to national security",
+      "explanation": "Cyber terrorism under Section 66F includes any act intended to threaten India's unity, integrity, security, or sovereignty by accessing or attempting to access critical information infrastructure, or causing damage through digital means that results in loss of life or property.",
+      "subtopic": "5.1",
+      "tags": [
+        "hacking"
+      ]
+    },
+    {
+      "question": "Forensic documentation must be:",
+      "options": [
+        "Accurate",
+        "Detailed",
+        "Time-stamped",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "Forensic documentation must be all of the following: accurate (reflecting exactly what was observed and done), complete (leaving no gaps), contemporaneous (recorded at the time events occur), and clear (understandable by both technical and non-technical audiences).",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Evidence preservation ensures:",
+      "options": [
+        "No alteration",
+        "Fast printing",
+        "Cable fixing",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "No alteration",
+      "explanation": "Evidence preservation ensures no alteration of the original evidence from the moment it is seized until it is presented in court. This is achieved through write blockers, forensic imaging, hash verification, secure storage, and strict chain of custody procedures.",
+      "subtopic": "5.2"
+    },
+    {
+      "question": "Digital investigation models provide:",
+      "options": [
+        "Structured approach",
+        "Printer workflow",
+        "Cable mapping",
+        "OS setup"
+      ],
+      "correct": 0,
+      "correctText": "Structured approach",
+      "explanation": "Digital investigation models provide a structured approach by defining clear phases, tasks, and deliverables for forensic investigations. Standardized models like DFRWS, ADFM, and IDIP ensure consistency, repeatability, and legal defensibility across different investigations and investigators.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Forensic readiness reduces:",
+      "options": [
+        "Investigation delay",
+        "Printer ink",
+        "Cable usage",
+        "Router size"
+      ],
+      "correct": 0,
+      "correctText": "Investigation delay",
+      "explanation": "Forensic readiness reduces investigation delay by having pre-established procedures, trained personnel, deployed tools, and documented protocols ready before an incident occurs. This eliminates the time spent on ad-hoc preparation and enables immediate, effective response.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Ethical hacking certifications include:",
+      "options": [
+        "CEH",
+        "OSCP",
+        "CISSP",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "Ethical hacking certifications include all of the following: CEH (Certified Ethical Hacker), OSCP (Offensive Security Certified Professional), CompTIA PenTest+, CISM (Certified Information Security Manager), and CHFI (Computer Hacking Forensic Investigator) — each validating different aspects of ethical hacking expertise.",
+      "subtopic": "5.4",
+      "tags": [
+        "eh",
+        "hacking"
+      ]
+    },
+    {
+      "question": "Social engineering prevention requires:",
+      "options": [
+        "Awareness training",
+        "Printer upgrade",
+        "Cable testing",
+        "OS removal"
+      ],
+      "correct": 0,
+      "correctText": "Awareness training",
+      "explanation": "Social engineering prevention requires awareness training that teaches employees to recognize manipulation tactics such as phishing emails, pretexting calls, baiting attacks, and tailgating. Regular training and simulated attacks help build a human firewall against these psychological exploits.",
+      "subtopic": "5.1",
+      "tags": [
+        "phishing"
+      ]
+    },
+    {
+      "question": "Cyber resilience means:",
+      "options": [
+        "Ability to recover quickly",
+        "Printer repair",
+        "Cable replacement",
+        "OS downgrade"
+      ],
+      "correct": 0,
+      "correctText": "Ability to recover quickly",
+      "explanation": "Cyber resilience means an organization's ability to recover quickly from cyber attacks while maintaining business continuity. It goes beyond prevention to include detection, response, recovery, and adaptation — ensuring the organization can withstand and bounce back from incidents.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Incident response plan includes:",
+      "options": [
+        "Detection",
+        "Containment",
+        "Recovery",
+        "All of the above"
+      ],
+      "correct": 3,
+      "correctText": "All of the above",
+      "explanation": "An incident response plan includes all of the following: preparation (establishing capabilities and procedures), identification (detecting and classifying incidents), containment (limiting damage and preventing spread), eradication (removing the threat), recovery (restoring systems), and lessons learned (improving future response).",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "Digital forensic investigation ends with:",
+      "options": [
+        "Case closure",
+        "Printer shutdown",
+        "Cable removal",
+        "OS update"
+      ],
+      "correct": 0,
+      "correctText": "Case closure",
+      "explanation": "A digital forensic investigation ends with case closure — the formal conclusion after all evidence has been analyzed, findings have been documented, reports have been submitted, and any legal proceedings have concluded or the decision has been made not to pursue legal action.",
+      "subtopic": "5.1"
+    },
+    {
+      "question": "The ultimate objective of UNIT 5 concepts is:",
+      "options": [
+        "Secure and legally compliant cyberspace",
+        "Printer maintenance",
+        "Cable control",
+        "OS deletion"
+      ],
+      "correct": 0,
+      "correctText": "Secure and legally compliant cyberspace",
+      "explanation": "The ultimate objective of Unit 5 concepts is to achieve a secure and legally compliant cyberspace — where digital forensic capabilities ensure evidence-based justice, ethical hacking strengthens defenses, and cyber laws protect individuals and organizations from evolving digital threats.",
+      "subtopic": "5.1"
+    }
+  ]
+}
