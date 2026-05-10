@@ -157,6 +157,7 @@
       "explanation": "Consensus algorithms ensure transactions cannot be altered by requiring network participants to agree on the validity of transactions before they're added to the blockchain. Different consensus mechanisms (Proof of Work, Proof of Stake, etc.) make it computationally or economically infeasible to modify confirmed transactions. Combined with cryptographic hashing and distributed validation, consensus maintains the integrity and immutability of the blockchain.",
       "subtopic": "3.1",
       "tags": [
+        "consensus",
         "blockchain"
       ]
     },
@@ -187,7 +188,10 @@
       "correct": 1,
       "correctText": "Consensus protocols",
       "explanation": "Consensus protocols ensure all nodes maintain consistent copies of the blockchain. These protocols (like Proof of Work or Proof of Stake) establish rules for how nodes agree on which transactions are valid and which block should be added next. When conflicts arise (like two miners finding blocks simultaneously), consensus rules determine which version of the blockchain is accepted, ensuring eventual consistency across the distributed network.",
-      "subtopic": "3.1"
+      "subtopic": "3.1",
+      "tags": [
+        "consensus"
+      ]
     },
     {
       "question": "Which system has a single point of failure?",
@@ -454,7 +458,11 @@
       "correct": 1,
       "correctText": "High energy due to mining computations",
       "explanation": "PoW requires heavy computational power, consuming significant energy.",
-      "subtopic": "3.2"
+      "subtopic": "3.2",
+      "tags": [
+        "pow",
+        "consensus"
+      ]
     },
     {
       "question": "Regulatory uncertainty .",
@@ -554,7 +562,10 @@
       "correct": 1,
       "correctText": "Ensures network agreement",
       "explanation": "The consensus mechanism ensures network agreement on which transactions are valid and which block should be added next to the blockchain. In a decentralized network without a central authority, consensus mechanisms (like Proof of Work, Proof of Stake, or Practical Byzantine Fault Tolerance) enable distributed nodes to agree on the blockchain's state, prevent double-spending, and maintain security against malicious actors.",
-      "subtopic": "3.2"
+      "subtopic": "3.2",
+      "tags": [
+        "consensus"
+      ]
     },
     {
       "question": "Which blockchain is best for enterprise privacy?",
@@ -635,7 +646,12 @@
       "correct": 1,
       "correctText": "Proof of Stake",
       "explanation": "Proof of Stake (PoS) reduces energy consumption compared to Proof of Work (PoW) by eliminating energy-intensive mining computations. Instead of miners competing to solve puzzles, validators are chosen to create new blocks based on the amount of cryptocurrency they 'stake' (lock up) as collateral. PoS consumes over 99% less energy than PoW, making it environmentally sustainable while maintaining network security through economic incentives.",
-      "subtopic": "3.2"
+      "subtopic": "3.2",
+      "tags": [
+        "pow",
+        "pos",
+        "consensus"
+      ]
     },
     {
       "question": "Cross-border payments on blockchain are .",
@@ -650,6 +666,7 @@
       "explanation": "Blockchain removes intermediaries.",
       "subtopic": "3.1",
       "tags": [
+        "crypto",
         "blockchain"
       ]
     },
@@ -998,7 +1015,10 @@
       "correct": 1,
       "correctText": "Set of rules",
       "explanation": "Consensus protocol is a set of rules that enables distributed nodes to agree on the blockchain's state without a central authority. These protocols (like Proof of Work, Proof of Stake, or Practical Byzantine Fault Tolerance) establish how nodes validate transactions, create new blocks, and resolve conflicts. Consensus mechanisms ensure all nodes maintain consistent copies of the ledger, prevent double-spending, and protect the network against malicious actors or faulty nodes.",
-      "subtopic": "3.2"
+      "subtopic": "3.2",
+      "tags": [
+        "consensus"
+      ]
     },
     {
       "question": "Each new transaction results in:",
@@ -1055,6 +1075,7 @@
       "explanation": "In traditional systems, verification is third-party based, requiring intermediaries like banks, payment processors, or clearing houses to validate transactions and maintain records. These third parties verify identities, check account balances, prevent fraud, and ensure compliance. Users must trust these intermediaries to act honestly and maintain accurate records. This centralized verification creates bottlenecks, adds costs, requires business hours operation, and creates single points of failure.",
       "subtopic": "3.1",
       "tags": [
+        "consensus",
         "blockchain"
       ]
     },
@@ -1071,6 +1092,7 @@
       "explanation": "Blockchain verification is consensus based, where distributed nodes collectively validate transactions through agreed-upon protocols rather than relying on a central authority. Nodes independently verify transactions against network rules, and consensus mechanisms (like Proof of Work or Proof of Stake) ensure agreement on which transactions are valid. This decentralized verification eliminates intermediaries, operates 24/7, reduces costs, and prevents single points of failure while maintaining security through cryptographic validation.",
       "subtopic": "3.1",
       "tags": [
+        "consensus",
         "blockchain"
       ]
     },
@@ -1403,7 +1425,10 @@
       "correct": 1,
       "correctText": "High energy",
       "explanation": "Proof of Work consumes high energy due to the intensive computational mining required to solve cryptographic puzzles. Miners compete using powerful computers that consume massive amounts of electricity to find valid block hashes. Bitcoin's annual energy consumption rivals that of entire countries, raising environmental concerns. This energy-intensive process secures the network but is unsustainable long-term. This has led to the development of more energy-efficient consensus mechanisms like Proof of Stake, which Ethereum adopted in 2022.",
-      "subtopic": "3.2"
+      "subtopic": "3.2",
+      "tags": [
+        "pow"
+      ]
     },
     {
       "question": "51% attack affects:",
@@ -1590,7 +1615,10 @@
       "correct": 0,
       "correctText": "Agreement among nodes",
       "explanation": "Consensus ensures agreement among nodes on the blockchain's state without requiring a central authority. Through consensus mechanisms (like Proof of Work or Proof of Stake), distributed nodes independently validate transactions and blocks, then agree on which version of the blockchain is valid. Consensus prevents double-spending, maintains data consistency across all nodes, resolves conflicts when multiple valid blocks are created simultaneously, and protects the network against malicious actors or faulty nodes.",
-      "subtopic": "3.2"
+      "subtopic": "3.2",
+      "tags": [
+        "consensus"
+      ]
     },
     {
       "question": "Digital signature ensures:",
@@ -1746,6 +1774,8 @@
       "explanation": "High energy usage is a major issue in Proof of Work blockchains like Bitcoin, where miners compete to solve complex cryptographic puzzles using massive computational power. This process consumes enormous amounts of electricity - Bitcoin's annual energy consumption rivals that of entire countries. The environmental impact has raised concerns about sustainability and climate change. This has led to the development of more energy-efficient consensus mechanisms like Proof of Stake, which Ethereum adopted, reducing energy consumption by over 99%.",
       "subtopic": "3.1",
       "tags": [
+        "pow",
+        "pos",
         "blockchain"
       ]
     },
@@ -1866,7 +1896,10 @@
       "correct": 0,
       "correctText": "Fraudulent transactions",
       "explanation": "Consensus mechanism prevents fraudulent transactions by requiring network participants to agree on transaction validity before they're added to the blockchain. Consensus protocols (like Proof of Work or Proof of Stake) make it computationally or economically infeasible for attackers to add invalid transactions or alter the blockchain. The distributed nature means an attacker would need to control the majority of the network to successfully commit fraud, which is extremely difficult and expensive in large, well-established blockchains.",
-      "subtopic": "3.2"
+      "subtopic": "3.2",
+      "tags": [
+        "consensus"
+      ]
     },
     {
       "question": "Blockchain ensures data integrity through:",
@@ -2101,7 +2134,10 @@
       "correct": 0,
       "correctText": "Availability",
       "explanation": "Distributed ledger increases reliability by maintaining multiple copies of the blockchain across many nodes. If some nodes fail, are compromised, or provide incorrect information, the network continues operating normally using the remaining honest nodes. Consensus mechanisms ensure that even if some nodes are faulty or malicious, the network can identify and reject incorrect data. This distributed architecture eliminates single points of failure, ensures high availability, and makes the system highly resilient to attacks, outages, and failures, creating a reliable, fault-tolerant infrastructure.",
-      "subtopic": "3.1"
+      "subtopic": "3.1",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "Smart contract vulnerability can lead to:",
@@ -2114,7 +2150,10 @@
       "correct": 0,
       "correctText": "Financial loss",
       "explanation": "Smart contract vulnerability can lead to financial loss because smart contracts are immutable - once deployed, the code cannot be changed. If a smart contract contains bugs, security vulnerabilities, or logic errors, attackers can exploit them to steal funds, manipulate outcomes, or drain liquidity pools. Since there's no central authority to reverse transactions or patch bugs, losses are often permanent and irreversible. High-profile exploits have resulted in hundreds of millions of dollars in losses, highlighting the critical importance of thorough smart contract auditing.",
-      "subtopic": "3.5"
+      "subtopic": "3.5",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "Blockchain is suitable for:",
@@ -2207,7 +2246,10 @@
       "correct": 0,
       "correctText": "Electricity",
       "explanation": "Proof of Work mainly consumes electricity due to the intensive computational mining required to solve cryptographic puzzles. Miners use powerful computers that run continuously, consuming massive amounts of electricity to compete for block rewards. Bitcoin's annual energy consumption rivals that of entire countries like Argentina or the Netherlands. This high energy consumption raises environmental concerns about carbon emissions and sustainability, leading to the development of more energy-efficient consensus mechanisms like Proof of Stake.",
-      "subtopic": "3.2"
+      "subtopic": "3.2",
+      "tags": [
+        "pow"
+      ]
     },
     {
       "question": "Blockchain enables:",
@@ -2451,7 +2493,10 @@
       "correct": 0,
       "correctText": "Block validation",
       "explanation": "Proof of Work is used for block validation in blockchain networks like Bitcoin. Miners compete to solve complex cryptographic puzzles by performing massive computational work. The first miner to find a valid solution gets to add the next block and receives rewards. This computationally intensive process secures the network and makes it economically infeasible for attackers to alter the blockchain.",
-      "subtopic": "3.2"
+      "subtopic": "3.2",
+      "tags": [
+        "pow"
+      ]
     },
     {
       "question": "High energy consumption is associated with:",
@@ -2466,6 +2511,7 @@
       "explanation": "High energy consumption is associated with Proof of Work consensus mechanisms. Miners use powerful computers that run continuously to solve cryptographic puzzles, consuming massive amounts of electricity. Bitcoin's annual energy consumption rivals that of entire countries, raising environmental concerns. This has led to development of more energy-efficient consensus mechanisms like Proof of Stake.",
       "subtopic": "3.6",
       "tags": [
+        "pow",
         "blockchain"
       ]
     },
@@ -2760,7 +2806,10 @@
       "correct": 0,
       "correctText": "Reliability",
       "explanation": "Distributed ledger increases reliability by maintaining multiple copies of the blockchain across many nodes. If some nodes fail, are compromised, or provide incorrect information, the network continues operating normally using the remaining honest nodes. Consensus mechanisms ensure that even if some nodes are faulty or malicious, the network can identify and reject incorrect data. This distributed architecture eliminates single points of failure, ensures high availability, and makes the system highly resilient to attacks, outages, and failures, creating a reliable, fault-tolerant infrastructure.",
-      "subtopic": "3.1"
+      "subtopic": "3.1",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "Blockchain data once added becomes:",
@@ -2833,6 +2882,7 @@
       "explanation": "Blockchain consensus ensures network agreement on the blockchain's state without requiring a central authority. Through consensus mechanisms (Proof of Work, Proof of Stake, etc.), distributed nodes independently validate transactions and blocks, then agree on which version of the blockchain is valid. Consensus prevents double-spending, maintains data consistency across all nodes, resolves conflicts when multiple valid blocks are created, and protects the network against malicious actors or faulty nodes, ensuring the integrity and reliability of the distributed ledger.",
       "subtopic": "3.2",
       "tags": [
+        "consensus",
         "blockchain"
       ]
     },

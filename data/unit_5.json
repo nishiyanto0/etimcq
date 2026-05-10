@@ -108,7 +108,10 @@
       "correct": 1,
       "correctText": "Understanding sequence of events",
       "explanation": "Timeline reconstruction maps file timestamps (created, modified, accessed) and system logs into a chronological sequence, helping investigators understand the order in which events occurred, identify the attack vector, and establish causality between actions.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "DFRWS model was proposed in:",
@@ -253,7 +256,8 @@
       "explanation": "Ethical hacking, also known as penetration testing, is the practice of deliberately probing systems for vulnerabilities with explicit authorization from the owner. It differs from malicious hacking because it is conducted legally, with defined scope, and aims to improve security.",
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -397,7 +401,10 @@
       "correct": 0,
       "correctText": "Routers and switches",
       "explanation": "Network hacking targets networking infrastructure — routers, switches, firewalls, and protocols — to intercept traffic, gain unauthorized access, or disrupt communications. Compromising network devices can give attackers control over an entire organization's data flow.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "AI-powered phishing uses:",
@@ -413,7 +420,8 @@
       "subtopic": "5.5",
       "tags": [
         "ai",
-        "ml"
+        "ml",
+        "phishing"
       ]
     },
     {
@@ -427,7 +435,10 @@
       "correct": 3,
       "correctText": "All of the above",
       "explanation": "Ransomware 2.0 encompasses multiple extortion strategies including double extortion (encryption + data theft threat), triple extortion (adding DDoS or harassment), and comprehensive data theft — making it a multi-layered threat that goes far beyond simple file encryption.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "IoT exploits target:",
@@ -498,7 +509,10 @@
       "correct": 0,
       "correctText": "Evade firewall filters",
       "explanation": "Web Application Firewall (WAF) bypass techniques involve encoding payloads, using alternative character sets, or fragmenting requests to evade pattern-matching filters. Attackers use these methods to deliver SQL injection, XSS, or other attacks past WAF protections.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "waf"
+      ]
     },
     {
       "question": "Zero-day vulnerability is:",
@@ -511,7 +525,10 @@
       "correct": 1,
       "correctText": "Unknown and unpatched",
       "explanation": "A zero-day vulnerability is a security flaw that is unknown to the software vendor and has no available patch. The term comes from the fact that developers have had zero days to fix it, making it extremely dangerous as attackers can exploit it freely until discovered.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "NCSP 2013 protects:",
@@ -685,7 +702,8 @@
       "explanation": "Ethical hacking improves an organization's overall security posture by proactively identifying vulnerabilities before malicious actors can exploit them. This allows for timely remediation, reducing the risk of breaches and strengthening defensive capabilities.",
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -793,7 +811,10 @@
       "correct": 0,
       "correctText": "Preparation before incident",
       "explanation": "The IDIP Readiness phase focuses on proactive preparation before any incident occurs, including establishing forensic capabilities, training personnel, deploying monitoring tools, and creating response plans so the team is prepared when an incident strikes.",
-      "subtopic": "5.3"
+      "subtopic": "5.3",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "Deployment phase begins when:",
@@ -975,7 +996,10 @@
       "correct": 0,
       "correctText": "Vulnerability details",
       "explanation": "The reporting phase documents all discovered vulnerabilities, their severity, exploitation methods used, and recommended remediation steps. A comprehensive report enables the organization to prioritize and address security gaps systematically.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "Ethical hacking improves:",
@@ -990,7 +1014,8 @@
       "explanation": "By proactively identifying vulnerabilities and testing incident response procedures, ethical hacking improves an organization's incident response readiness — ensuring teams can detect, contain, and recover from actual attacks more quickly and effectively.",
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -1006,7 +1031,8 @@
       "explanation": "AI-generated phishing emails exhibit perfect grammar and natural language because machine learning models (like GPT) can produce flawlessly written, contextually appropriate messages — eliminating the spelling and grammar errors that traditionally helped users identify phishing attempts.",
       "subtopic": "5.5",
       "tags": [
-        "ai"
+        "ai",
+        "phishing"
       ]
     },
     {
@@ -1020,7 +1046,10 @@
       "correct": 0,
       "correctText": "Encryption + data theft",
       "explanation": "Double extortion ransomware combines file encryption with data exfiltration — attackers not only lock the victim's data but also threaten to publish stolen sensitive information if the ransom isn't paid, creating two separate leverage points against the victim.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "Triple extortion adds:",
@@ -1046,7 +1075,10 @@
       "correct": 0,
       "correctText": "Mass file encryption",
       "explanation": "The primary indicator of a ransomware attack is the mass encryption of files across the system, often accompanied by ransom notes and file extension changes. This systematic, rapid encryption of numerous files distinguishes ransomware from other malware.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "EDR stands for:",
@@ -1074,7 +1106,8 @@
       "explanation": "IoT devices often ship with default, well-known passwords that many users never change, creating a significant vulnerability. Attackers can easily look up default credentials online and gain unauthorized access to these devices, often joining them to botnets.",
       "subtopic": "5.1",
       "tags": [
-        "iot"
+        "iot",
+        "zero-day"
       ]
     },
     {
@@ -1114,7 +1147,10 @@
       "correct": 0,
       "correctText": "System vulnerabilities",
       "explanation": "OS hacking targets vulnerabilities within operating systems — such as privilege escalation flaws, buffer overflows, or kernel exploits — to gain unauthorized access, execute arbitrary code, or escalate privileges on the compromised system.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "Secure boot prevents:",
@@ -1153,7 +1189,10 @@
       "correct": 0,
       "correctText": "Application vulnerability",
       "explanation": "SQL injection is an application-layer vulnerability where attackers inject malicious SQL code into input fields to manipulate database queries, potentially accessing, modifying, or deleting unauthorized data. It exploits improper input validation in web applications.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "Log4j was example of:",
@@ -1166,7 +1205,10 @@
       "correct": 0,
       "correctText": "Zero-day exploit",
       "explanation": "The Log4j vulnerability (CVE-2021-44228) was a critical zero-day exploit in the widely used Apache Log4j logging library that allowed remote code execution through crafted log messages. Its massive impact across millions of applications made it one of the most severe zero-days in history.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "NCSP focuses on protecting:",
@@ -1225,7 +1267,10 @@
       "correct": 0,
       "correctText": "Breach of confidentiality",
       "explanation": "Section 72A of the IT Act deals with breach of confidentiality and privacy by someone who has access to personal data in the course of a contract and discloses it without consent, prescribing imprisonment up to 3 years and/or fines.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "DPDP requires:",
@@ -1309,7 +1354,10 @@
       "correct": 0,
       "correctText": "Malware detection",
       "explanation": "Memory dump analysis examines the captured contents of RAM to detect malware, extract encryption keys, identify running malicious processes, and find evidence that exists only in volatile memory and would be lost after system shutdown.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "Forensic readiness improves:",
@@ -1350,7 +1398,8 @@
       "explanation": "By proactively identifying and helping remediate vulnerabilities before attackers discover them, ethical hacking directly reduces an organization's security risks. It shifts the balance from reactive incident response to preventive security, minimizing potential breach damage and data loss.",
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -1515,7 +1564,8 @@
       "explanation": "Ethical hacking primarily identifies security vulnerabilities — weaknesses in systems, applications, networks, or configurations — that could be exploited by malicious actors. By finding these gaps first, organizations can remediate them before they are weaponized.",
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -1542,7 +1592,10 @@
       "correct": 0,
       "correctText": "Identifying weaknesses",
       "explanation": "Vulnerability assessment focuses on systematically identifying weaknesses in systems, networks, and applications using automated scanning tools and manual review. Unlike penetration testing, it does not attempt to exploit vulnerabilities but catalogs and prioritizes them for remediation.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "Social engineering attacks exploit:",
@@ -1555,7 +1608,10 @@
       "correct": 0,
       "correctText": "Human psychology",
       "explanation": "Social engineering attacks exploit human psychology rather than technical vulnerabilities, manipulating people into divulging confidential information, clicking malicious links, or performing actions that compromise security. Techniques include phishing, pretexting, baiting, and tailgating.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "phishing"
+      ]
     },
     {
       "question": "Multi-Factor Authentication (MFA) improves:",
@@ -1584,7 +1640,10 @@
       "correct": 0,
       "correctText": "Phishing emails",
       "explanation": "SPF (Sender Policy Framework), DKIM (DomainKeys Identified Mail), and DMARC (Domain-based Message Authentication, Reporting & Conformance) are email authentication protocols that work together to verify sender identity and protect against phishing and email spoofing attacks.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "phishing"
+      ]
     },
     {
       "question": "Double extortion ransomware threatens:",
@@ -1597,7 +1656,10 @@
       "correct": 0,
       "correctText": "Data publication",
       "explanation": "Double extortion ransomware not only encrypts the victim's files but also threatens to publish or sell the stolen data if the ransom is not paid. This dual threat is more coercive than encryption alone, as data publication can cause regulatory penalties and reputational damage.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "Endpoint Detection and Response tools monitor:",
@@ -1623,7 +1685,10 @@
       "correct": 0,
       "correctText": "OS reinstallation",
       "explanation": "Firmware-level malware is particularly dangerous because it resides in the BIOS/UEFI or device firmware, which loads before the operating system. This means the malware persists even after OS reinstallation, hard drive replacement, or system formatting, making it extremely difficult to remove.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "Zero-day exploit targets:",
@@ -1636,7 +1701,10 @@
       "correct": 0,
       "correctText": "Unknown vulnerabilities",
       "explanation": "Zero-day exploits target vulnerabilities that are unknown to the vendor and for which no patch exists. Because defenders have had zero days to prepare, these exploits are exceptionally dangerous and can cause widespread damage before the vulnerability is discovered and fixed.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "Section 66B relates to:",
@@ -1675,7 +1743,10 @@
       "correct": 0,
       "correctText": "Cheating by personation",
       "explanation": "Section 66D punishes cheating by personation — using communication devices or computer resources to impersonate someone else for the purpose of fraud or deception — with imprisonment up to 3 years and fines up to Rs. 1 lakh.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "Section 66F defines:",
@@ -1815,7 +1886,10 @@
       "correct": 0,
       "correctText": "Encryption keys",
       "explanation": "In ransomware investigations, capturing volatile memory before shutdown is critical because encryption keys used by the ransomware may still reside in RAM. Extracting these keys can potentially enable decryption of the locked files without paying the ransom.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "Digital evidence admissibility depends on:",
@@ -1856,7 +1930,8 @@
       "explanation": "Ethical hacking is different from malicious hacking primarily because it is legal — conducted with explicit authorization and defined scope from the system owner. While the techniques may overlap, the legal permission, intent, and controlled environment make ethical hacking lawful.",
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -1909,7 +1984,10 @@
       "correct": 3,
       "correctText": "All of the above",
       "explanation": "Phishing indicators include all of the following: urgent or threatening language requesting immediate action, suspicious sender addresses or domain mismatches, unexpected attachments or links, grammatical errors (in traditional phishing), requests for sensitive information, and mismatched URLs.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "phishing"
+      ]
     },
     {
       "question": "Malware analysis is part of:",
@@ -1924,7 +2002,8 @@
       "explanation": "Malware analysis is an integral part of digital forensics that involves examining malicious software to understand its behavior, origin, capabilities, and impact. This analysis helps investigators attribute attacks, identify compromise indicators, and develop detection and remediation strategies.",
       "subtopic": "5.1",
       "tags": [
-        "df"
+        "df",
+        "ransomware"
       ]
     },
     {
@@ -2053,7 +2132,8 @@
       "explanation": "The main goal of ethical hacking is to strengthen cybersecurity by proactively discovering and helping remediate vulnerabilities before malicious actors can exploit them. This defensive purpose fundamentally distinguishes it from criminal hacking, which seeks to exploit weaknesses for personal gain.",
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -2174,7 +2254,10 @@
       "correct": 0,
       "correctText": "Isolate infected system",
       "explanation": "In a ransomware investigation, the first action should be to isolate the infected system from the network to prevent the ransomware from spreading to other connected devices and to stop any ongoing data exfiltration by the attackers.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "Digital forensics ensures evidence is:",
@@ -2205,7 +2288,8 @@
       "explanation": "Ethical hacking requires defining the scope of testing — specifying which systems, networks, and applications are included, what types of tests will be performed, and what is explicitly excluded — to ensure the assessment stays within legal and authorized boundaries.",
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -2258,7 +2342,10 @@
       "correct": 0,
       "correctText": "Vulnerability impact",
       "explanation": "The exploitation phase tests the real-world impact of identified vulnerabilities by actually exploiting them in a controlled manner. This demonstrates what an attacker could achieve — such as accessing sensitive data or gaining system control — if the vulnerability were left unpatched.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "Privilege escalation attack aims to:",
@@ -2338,7 +2425,8 @@
       "explanation": "AI phishing scams are dangerous because they are all of the following: highly convincing with perfect grammar, personalized to target specific individuals, difficult to distinguish from legitimate communications, and scalable — attackers can generate thousands of unique, targeted phishing messages automatically.",
       "subtopic": "5.5",
       "tags": [
-        "ai"
+        "ai",
+        "phishing"
       ]
     },
     {
@@ -2352,7 +2440,10 @@
       "correct": 0,
       "correctText": "Cryptographic algorithms",
       "explanation": "Ransomware encryption uses strong cryptographic algorithms (typically AES for file encryption and RSA for key exchange) to lock the victim's files. The symmetric encryption key is itself encrypted with the attacker's public key, making decryption impossible without the attacker's private key.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "DDoS attack aims to:",
@@ -2394,7 +2485,10 @@
       "correct": 0,
       "correctText": "CEO impersonation",
       "explanation": "Deepfake fraud may involve CEO impersonation — using AI-generated video or audio to convincingly mimic a company executive's voice or appearance to authorize fraudulent wire transfers, approve fake transactions, or issue deceptive instructions to employees.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "Secure firmware updates require:",
@@ -2420,7 +2514,10 @@
       "correct": 0,
       "correctText": "Survives OS reinstall",
       "explanation": "BIOS malware is particularly dangerous because it survives OS reinstallation and even hard drive replacement. Since the BIOS loads before the operating system, BIOS-level malware can re-infect a freshly installed OS and maintain persistent control over the system indefinitely.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "WAF protects against:",
@@ -2433,7 +2530,11 @@
       "correct": 0,
       "correctText": "Web application attacks",
       "explanation": "A Web Application Firewall (WAF) protects against web application attacks such as SQL injection, cross-site scripting (XSS), file inclusion, and CSRF by inspecting HTTP/HTTPS traffic and filtering out malicious requests before they reach the application.",
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "hacking",
+        "waf"
+      ]
     },
     {
       "question": "SQL injection targets:",
@@ -2459,7 +2560,10 @@
       "correct": 0,
       "correctText": "No patch available",
       "explanation": "Zero-day attacks are hard to prevent because no patch is available for the unknown vulnerability being exploited. Traditional security measures like antivirus signatures and intrusion detection rules cannot detect the attack since it has never been seen before.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "NCSP 2013 promotes:",
@@ -2604,7 +2708,10 @@
       "correct": 0,
       "correctText": "Threat to national security",
       "explanation": "Cyber terrorism under Section 66F includes any act intended to threaten India's unity, integrity, security, or sovereignty by accessing or attempting to access critical information infrastructure, or causing damage through digital means that results in loss of life or property.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "Forensic documentation must be:",
@@ -2671,7 +2778,8 @@
       "explanation": "Ethical hacking certifications include all of the following: CEH (Certified Ethical Hacker), OSCP (Offensive Security Certified Professional), CompTIA PenTest+, CISM (Certified Information Security Manager), and CHFI (Computer Hacking Forensic Investigator) — each validating different aspects of ethical hacking expertise.",
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -2685,7 +2793,10 @@
       "correct": 0,
       "correctText": "Awareness training",
       "explanation": "Social engineering prevention requires awareness training that teaches employees to recognize manipulation tactics such as phishing emails, pretexting calls, baiting attacks, and tailgating. Regular training and simulated attacks help build a human firewall against these psychological exploits.",
-      "subtopic": "5.1"
+      "subtopic": "5.1",
+      "tags": [
+        "phishing"
+      ]
     },
     {
       "question": "Cyber resilience means:",

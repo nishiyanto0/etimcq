@@ -137,7 +137,12 @@
       "correct": 0,
       "correctText": "Wireless local area network",
       "explanation": "IEEE 802.11 is the family of WLAN (Wireless LAN) communication standards — commonly known as Wi-Fi. It includes variants like 802.11a (5GHz), 802.11b/g (2.4GHz), 802.11n (Wi-Fi 4), 802.11ac (Wi-Fi 5), and 802.11ax (Wi-Fi 6), each improving speed and efficiency.",
-      "subtopic": "Networking"
+      "subtopic": "Networking",
+      "tags": [
+        "wifi",
+        "wi-fi",
+        "802.11"
+      ]
     },
     {
       "question": "This _______ provides the alignment interface between the soft-network and the PSTN signaling network.",
@@ -178,6 +183,7 @@
       "explanation": "WiMax, Wi-Fi, and LTE are 4G technologies — providing high-speed mobile broadband with IP-based architecture and data rates up to 100 Mbps (LTE) to 1 Gbps (LTE-Advanced).",
       "subtopic": "5G",
       "tags": [
+        "wi-fi",
         "5g"
       ]
     },
@@ -432,7 +438,8 @@
       "explanation": "After scoping, ethical hackers must narrow focus further, coordinate with IT staff, and research detailed facts before proceeding to vulnerability assessment.",
       "subtopic": "Security",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -448,7 +455,8 @@
       "explanation": "Ethical hacking aims to find vulnerabilities from an attacker's perspective — enabling organizations to fix weaknesses before malicious hackers exploit them.",
       "subtopic": "Security",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -464,7 +472,9 @@
       "explanation": "Password cracking to gain system access is classified as System Hacking — it directly targets authentication mechanisms to compromise a system. This involves techniques like brute force attacks, dictionary attacks, or rainbow tables to bypass login controls and obtain unauthorized access.",
       "subtopic": "Security",
       "tags": [
-        "eh"
+        "eh",
+        "hacking",
+        "phishing"
       ]
     },
     {
@@ -480,7 +490,9 @@
       "explanation": "Ethical hacking (security assessment) validates existing security controls using a risk-based methodology — ensuring controls are effective and properly implemented.",
       "subtopic": "Security",
       "tags": [
-        "eh"
+        "eh",
+        "hacking",
+        "phishing"
       ]
     },
     {
@@ -494,7 +506,10 @@
       "correct": 1,
       "correctText": "widely used commercial freeware, and open source network security scanner.",
       "explanation": "Nmap (Network Mapper) is a free, open-source network security scanner — widely used for port scanning, service detection, OS fingerprinting, and network discovery. Security professionals and ethical hackers use it to map network topology and identify open ports and running services on target systems.",
-      "subtopic": "Security"
+      "subtopic": "Security",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "Respecting privacy is a ________.",
@@ -509,7 +524,8 @@
       "explanation": "Respecting privacy is a legal and ethical obligation during security assessments — assessors must protect any sensitive data or personal information they encounter. This obligation ensures that vulnerability testing does not compromise individual privacy rights or expose confidential organizational data.",
       "subtopic": "Security",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -525,7 +541,8 @@
       "explanation": "Ethical hacking identifies vulnerabilities in systems/networks and develops countermeasures — protecting organizations by fixing weaknesses proactively.",
       "subtopic": "Security",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -539,7 +556,11 @@
       "correct": 1,
       "correctText": "Gray hat hacker, a hacker who is in between ethical and black hat hackers.",
       "explanation": "Grey Hat hackers operate between ethical (white) and malicious (black) hacking — sometimes violating laws but without malicious intent, often disclosing vulnerabilities publicly.",
-      "subtopic": "Security"
+      "subtopic": "Security",
+      "tags": [
+        "hacker",
+        "hacking"
+      ]
     },
     {
       "question": "Searching through trash cans and dumpsters for intellectual property, passwords, network diagrams, and other information means _________.",
@@ -554,7 +575,8 @@
       "explanation": "Dumpster diving is a physical social engineering technique — searching trash for discarded documents, passwords, or sensitive information that wasn't properly destroyed.",
       "subtopic": "Security",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -570,7 +592,9 @@
       "explanation": "Vulnerability scanning identifies weaknesses (vulnerabilities) in systems — security flaws, misconfigurations, or missing patches that could be exploited by attackers. Automated scanners like Nessus or OpenVAS compare system states against known vulnerability databases to produce actionable reports.",
       "subtopic": "Security",
       "tags": [
-        "eh"
+        "eh",
+        "hacking",
+        "zero-day"
       ]
     },
     {
@@ -597,7 +621,10 @@
       "correct": 2,
       "correctText": "Obtaining remote control of workstations",
       "explanation": "Windows attacks often aim to gain remote control of workstations — exploiting OS vulnerabilities to take over systems for further exploitation.",
-      "subtopic": "Security"
+      "subtopic": "Security",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "How are the Cross Site Scripting (XSS) vulnerabilities exploited?",
@@ -610,7 +637,10 @@
       "correct": 1,
       "correctText": "They try to target scripts embedded in a page that are executed on the client-side browser rather than at the server side.",
       "explanation": "XSS attacks inject malicious scripts into web pages that execute in victims' browsers — stealing cookies, session tokens, or performing actions on behalf of users.",
-      "subtopic": "Security"
+      "subtopic": "Security",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "What is traffic analysis or social network analysis?",
@@ -623,7 +653,10 @@
       "correct": 1,
       "correctText": "Gathering messaging-related information via log files or network analyzer that can tell the attacker about conversations...",
       "explanation": "Traffic analysis examines communication patterns — who communicates with whom, when, and how frequently — revealing relationships and sensitive information without accessing content.",
-      "subtopic": "Security"
+      "subtopic": "Security",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "To prevent attachment-overload attacks what should be done?",
@@ -649,7 +682,10 @@
       "correct": 1,
       "correctText": "A malicious employee using a network analyzer can steal confidential information in e-mails and files sent over the network.",
       "explanation": "Network sniffing/analysis attacks exploit network infrastructure vulnerabilities — capturing unencrypted data in transit across the network. A malicious insider using a network analyzer (like Wireshark) can intercept emails, files, and credentials, making encryption and network segmentation critical defenses.",
-      "subtopic": "Security"
+      "subtopic": "Security",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "______ is a technique used by hackers to find the information exposed accidentally to the internet.",
@@ -792,7 +828,10 @@
       "correct": 2,
       "correctText": "heap based buffer overflow",
       "explanation": "Heap-based buffer overflow attacks corrupt dynamically allocated memory (the heap) — overwriting critical data structures and potentially executing arbitrary code. Unlike stack-based overflows that target return addresses, heap overflows manipulate program data structures, making them harder to detect but equally dangerous.",
-      "subtopic": "Security"
+      "subtopic": "Security",
+      "tags": [
+        "hacker"
+      ]
     }
   ]
 }

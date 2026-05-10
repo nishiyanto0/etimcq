@@ -32,14 +32,30 @@ const SEARCH_CONFIG = {
     'ccpwc': 'cyber crime prevention against women and children',
     'dpdp': 'digital personal data protection',
     'cert-in': 'computer emergency response team india',
-    'cert': 'cert-in'
+    'cert': 'cert-in',
+    'wifi': '802.11',
+    'wi-fi': '802.11',
+    '802.11': 'wifi',
+    'zigbee': '802.15.4',
+    '802.15.4': 'zigbee',
+    'bluetooth': '802.15.1',
+    'pow': 'proof of work',
+    'pos': 'proof of stake',
+    'consensus': 'proof of work, proof of stake',
+    'crypto': 'bitcoin, ethereum, cryptocurrency',
+    'hacker': 'white hat, black hat, grey hat',
+    'hacking': 'penetration testing, ethical hacking',
+    'phishing': 'social engineering',
+    'ransomware': 'malware',
+    'waf': 'web application firewall',
+    'zero-day': 'vulnerability'
   },
   TOPIC_UNITS: {
-    'ai': 1, 'artificial intelligence': 1, 'ml': 1, 'machine learning': 1, 'dl': 1, 'deep learning': 1, 'generative ai': 1, 'gen ai': 1, 'gpt': 1, 'transformer': 1,
-    'iot': 2, 'internet of things': 2, '5g': 2, 'sensor': 2, 'actuator': 2, 'ngn': 2, 'media gateway': 2,
-    'blockchain': 3, 'crypto': 3, 'bitcoin': 3, 'ethereum': 3, 'smart contract': 3, 'consensus': 3, 'mining': 3,
-    'ar': 4, 'vr': 4, 'mr': 4, 'xr': 4, 'augmented reality': 4, 'virtual reality': 4, 'mixed reality': 4, 'extended reality': 4, 'green computing': 4, 'quantum': 4, 'haptic': 4, 'metaverse': 4,
-    'forensics': 5, 'hacking': 5, 'hacker': 5, 'it act': 5, 'cyber law': 5, 'digital forensics': 5, 'ethical hacking': 5, 'ncsp': 5, 'ccpwc': 5
+    'ai': 1, 'artificial intelligence': 1, 'ml': 1, 'machine learning': 1, 'dl': 1, 'deep learning': 1, 'gen ai': 1, 'gpt': 1, 'transformer': 1, 'gan': 1, 'neural': 1, 'supervised': 1, 'unsupervised': 1, 'reinforcement': 1,
+    'iot': 2, 'internet of things': 2, '5g': 2, 'sensor': 2, 'actuator': 2, 'ngn': 2, 'gateway': 2, '802.11': 2, 'wifi': 2, 'zigbee': 2, '802.15.4': 2, 'mqtt': 2, 'coap': 2, 'ipv6': 2, 'lowpan': 2,
+    'blockchain': 3, 'crypto': 3, 'bitcoin': 3, 'ethereum': 3, 'smart contract': 3, 'consensus': 3, 'mining': 3, 'miner': 3, 'decentralized': 3, 'distributed ledger': 3, 'dlt': 3, 'immutability': 3, 'transparency': 3,
+    'ar': 4, 'vr': 4, 'mr': 4, 'xr': 4, 'augmented reality': 4, 'virtual reality': 4, 'mixed reality': 4, 'extended reality': 4, 'green computing': 4, 'quantum': 4, 'haptic': 4, 'metaverse': 4, 'qubit': 4, 'superposition': 4, 'entanglement': 4, 'e-waste': 4,
+    'forensics': 5, 'hacking': 5, 'hacker': 5, 'it act': 5, 'cyber law': 5, 'digital forensics': 5, 'ethical hacking': 5, 'ncsp': 5, 'ccpwc': 5, 'phishing': 5, 'ransomware': 5, 'waf': 5, 'zero-day': 5, 'custody': 5, 'hash': 5, 'carving': 5, 'volatile': 5, 'dfrws': 5, 'adfm': 5, 'idip': 5, 'ceh': 5, 'oscp': 5
   }
 };
 

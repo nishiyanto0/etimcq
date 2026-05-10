@@ -6232,6 +6232,7 @@
       "unit": 3,
       "subtopic": "3.2",
       "tags": [
+        "consensus",
         "blockchain"
       ]
     },
@@ -6264,7 +6265,10 @@
       "correctText": "Consensus protocols",
       "explanation": "Consensus protocols (like Proof of Work, Proof of Stake, Practical Byzantine Fault Tolerance) ensure all distributed copies of the blockchain remain consistent. They define rules for how nodes agree on which transactions are valid and which block gets added next — maintaining ledger integrity across the decentralized network.",
       "unit": 3,
-      "subtopic": "3.2"
+      "subtopic": "3.2",
+      "tags": [
+        "consensus"
+      ]
     },
     {
       "question": "Which system has a single point of failure?",
@@ -6376,6 +6380,7 @@
       "unit": 3,
       "subtopic": "3.2",
       "tags": [
+        "consensus",
         "blockchain"
       ]
     },
@@ -6475,6 +6480,9 @@
       "unit": 3,
       "subtopic": "3.2",
       "tags": [
+        "pow",
+        "pos",
+        "consensus",
         "blockchain"
       ]
     },
@@ -6628,7 +6636,8 @@
       "unit": 5,
       "subtopic": "5.2",
       "tags": [
-        "df"
+        "df",
+        "ransomware"
       ]
     },
     {
@@ -6825,7 +6834,9 @@
       "unit": 5,
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking",
+        "ransomware"
       ]
     },
     {
@@ -6840,7 +6851,10 @@
       "correctText": "White Hat",
       "explanation": "White Hat hackers are cybersecurity professionals who use their skills legally and ethically to help organizations secure their systems. They perform authorized penetration testing, vulnerability assessments, and security audits — operating with permission and following codes of ethics like EC-Council's or ISC2's professional standards.",
       "unit": 5,
-      "subtopic": "5.4"
+      "subtopic": "5.4",
+      "tags": [
+        "hacker"
+      ]
     },
     {
       "question": "Which hacker type may access systems without permission but without malicious intent?",
@@ -6854,7 +6868,10 @@
       "correctText": "Grey Hat",
       "explanation": "Grey Hat hackers operate in an ethical grey zone — they may access systems without authorization but without malicious intent, often to expose vulnerabilities. Unlike White Hats who always seek permission, Grey Hats might hack first and disclose later. Their actions are technically illegal but often aim to improve security.",
       "unit": 5,
-      "subtopic": "5.4"
+      "subtopic": "5.4",
+      "tags": [
+        "hacker"
+      ]
     },
     {
       "question": "A Red Hat Hacker is known for ......",
@@ -6868,7 +6885,12 @@
       "correctText": "aggressively stopping black hat hackers.",
       "explanation": "Red Hat hackers are vigilante security specialists who proactively and aggressively combat Black Hat hackers — sometimes using offensive techniques to disable malicious infrastructure, destroy malware, or launch counter-attacks against cybercriminals. They operate outside traditional security frameworks with the goal of actively disrupting malicious actors.",
       "unit": 5,
-      "subtopic": "5.4"
+      "subtopic": "5.4",
+      "tags": [
+        "hacker",
+        "hacking",
+        "ransomware"
+      ]
     },
     {
       "question": "Phases of Ethical Hacking do NOT include ......",
@@ -6884,7 +6906,8 @@
       "unit": 5,
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking"
       ]
     },
     {
@@ -6901,7 +6924,9 @@
       "unit": 5,
       "subtopic": "5.5",
       "tags": [
-        "ai"
+        "ai",
+        "phishing",
+        "ransomware"
       ]
     },
     {
@@ -6916,7 +6941,10 @@
       "correctText": "Encrypting and exfiltrating data for double/triple extortion.",
       "explanation": "Ransomware 2.0 (double/triple extortion) goes beyond file encryption — attackers first steal sensitive data, then encrypt systems, and threaten to publish the stolen data if ransom isn't paid. Some also target customers, partners, or launch DDoS attacks. This approach pressures victims who might otherwise restore from backups without paying.",
       "unit": 5,
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "IoT Exploits typically involve ......",
@@ -6932,7 +6960,9 @@
       "unit": 5,
       "subtopic": "5.5",
       "tags": [
-        "iot"
+        "iot",
+        "hacking",
+        "phishing"
       ]
     },
     {
@@ -6947,7 +6977,10 @@
       "correctText": "Unknown vulnerabilities with no patches available.",
       "explanation": "Zero-day exploits target vulnerabilities that are unknown to the software vendor and have no available patches — giving defenders 'zero days' to fix the issue. They are extremely valuable on the black market (selling for hundreds of thousands to millions of dollars) and represent the most dangerous attack vector.",
       "unit": 5,
-      "subtopic": "5.4"
+      "subtopic": "5.4",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "Advanced WAF bypass attacks target ......",
@@ -6963,7 +6996,8 @@
       "unit": 5,
       "subtopic": "5.5",
       "tags": [
-        "iot"
+        "iot",
+        "waf"
       ]
     },
     {
@@ -6980,7 +7014,8 @@
       "unit": 5,
       "subtopic": "5.5",
       "tags": [
-        "ncsp"
+        "ncsp",
+        "ransomware"
       ]
     },
     {
@@ -7014,7 +7049,8 @@
       "unit": 5,
       "subtopic": "5.6",
       "tags": [
-        "dpdp"
+        "dpdp",
+        "phishing"
       ]
     },
     {
@@ -7033,7 +7069,9 @@
       "tags": [
         "iot",
         "eh",
-        "ccpwc"
+        "ccpwc",
+        "hacking",
+        "ransomware"
       ]
     },
     {
@@ -7050,7 +7088,8 @@
       "unit": 5,
       "subtopic": "5.4",
       "tags": [
-        "it act"
+        "it act",
+        "hacking"
       ]
     },
     {
@@ -7196,7 +7235,9 @@
       "unit": 5,
       "subtopic": "5.4",
       "tags": [
-        "eh"
+        "eh",
+        "hacking",
+        "ransomware"
       ]
     },
     {
@@ -7211,7 +7252,10 @@
       "correctText": "identify open ports, services, and weak points.",
       "explanation": "Scanning is the second phase of ethical hacking — using tools like Nmap to identify live hosts, open ports, running services, and their versions. This reveals potential entry points and weak points in the target's network. Scanning bridges the gap between information gathering and actual exploitation.",
       "unit": 5,
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "Enumeration phase involves ......",
@@ -7253,7 +7297,10 @@
       "correctText": "malicious hackers exploiting vulnerabilities for personal gain.",
       "explanation": "Black Hat hackers are malicious actors who illegally exploit vulnerabilities for personal gain — stealing data, deploying ransomware, conducting fraud, or causing damage. Their activities are criminal offenses under cybercrime laws worldwide. They operate without authorization and aim to profit from or harm their targets.",
       "unit": 5,
-      "subtopic": "5.4"
+      "subtopic": "5.4",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "Blue Hat hackers are usually ......",
@@ -7312,7 +7359,10 @@
       "correctText": "government-backed attackers for espionage or cyberwarfare.",
       "explanation": "State-sponsored hackers are elite cyber operatives funded and directed by governments for espionage, intellectual property theft, critical infrastructure sabotage, or influence operations. Groups like APT28 (Russia), Lazarus (North Korea), and APT41 (China) conduct sophisticated, persistent campaigns targeting strategic national interests.",
       "unit": 5,
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "hacking"
+      ]
     },
     {
       "question": "Phishing attacks aim to ......",
@@ -7326,7 +7376,10 @@
       "correctText": "trick users into revealing sensitive information.",
       "explanation": "Phishing attacks use deceptive emails, websites, or messages that appear to come from trusted sources to trick users into revealing passwords, credit card numbers, or other sensitive information. Social engineering techniques create urgency or fear to bypass victims' skepticism — remaining one of the most common and effective attack vectors.",
       "unit": 5,
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "phishing"
+      ]
     },
     {
       "question": "Ransomware attacks primarily involve ......",
@@ -7340,7 +7393,10 @@
       "correctText": "encrypting user data and demanding ransom.",
       "explanation": "Ransomware attacks encrypt victims' files and demand payment (usually cryptocurrency) for the decryption key. Modern ransomware like LockBit, BlackCat, and Clop also steal data for double extortion. Attacks typically enter through phishing, RDP vulnerabilities, or software vulnerabilities — crippling businesses, hospitals, and government agencies.",
       "unit": 5,
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "IoT Botnets are used to ......",
@@ -7371,7 +7427,10 @@
       "correctText": "malicious software designed to disrupt or damage systems.",
       "explanation": "Malware (malicious software) is any software designed to harm, exploit, or compromise systems — including viruses, worms, trojans, ransomware, spyware, and adware. Malware can steal data, encrypt files, create backdoors, log keystrokes, or use infected systems to attack others. Protection requires layered security including antivirus, patching, and user awareness.",
       "unit": 5,
-      "subtopic": "5.4"
+      "subtopic": "5.4",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "Zero-day attacks are dangerous because ......",
@@ -7385,7 +7444,10 @@
       "correctText": "there is no patch available yet.",
       "explanation": "Zero-day attacks exploit unknown vulnerabilities for which no patch or fix exists yet — giving organizations zero days to prepare. Without available patches, traditional defenses like antivirus and vulnerability scanners cannot detect these attacks. Zero-days are highly valuable (selling for $50,000 to $2.5M+) and often used in targeted attacks.",
       "unit": 5,
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "zero-day"
+      ]
     },
     {
       "question": "The IT (Amendment) Act 2008 introduced ......",
@@ -7399,7 +7461,10 @@
       "correctText": "cybercrime provisions including identity theft, phishing, and cyber terrorism.",
       "explanation": "The IT (Amendment) Act 2008 significantly strengthened India's cybercrime framework by introducing provisions for identity theft (Section 66C), phishing (Section 66D), cyber terrorism (Section 66F), child pornography, and data breach notifications. It expanded the scope beyond the original 2000 Act's focus on e-commerce and digital signatures.",
       "unit": 5,
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "phishing"
+      ]
     },
     {
       "question": "Digital Personal Data Protection Act (DPDP) 2023 replaced ......",
@@ -7713,7 +7778,8 @@
       "unit": 2,
       "subtopic": "2.1",
       "tags": [
-        "iot"
+        "iot",
+        "wi-fi"
       ]
     },
     {
@@ -8065,7 +8131,11 @@
       "correctText": "Wi-Fi",
       "explanation": "Wi-Fi is a communication technology used in IoT physical design for wireless data transmission. It provides relatively high bandwidth and range for applications like smart home devices, cameras, and appliances. Other IoT wireless technologies include Bluetooth, LoRaWAN, Zigbee, Z-Wave, and cellular (4G/5G/NB-IoT).",
       "unit": 2,
-      "subtopic": "2.2"
+      "subtopic": "2.2",
+      "tags": [
+        "wi-fi",
+        "bluetooth"
+      ]
     },
     {
       "question": "IoT logical design uses functional blocks such as ......",
@@ -9043,7 +9113,8 @@
       "unit": 2,
       "subtopic": "2.4",
       "tags": [
-        "ngn"
+        "ngn",
+        "bluetooth"
       ]
     },
     {
@@ -9621,6 +9692,10 @@
       "unit": 2,
       "subtopic": "2.4",
       "tags": [
+        "wi-fi",
+        "zigbee",
+        "802.15.4",
+        "bluetooth",
         "5g"
       ]
     },
@@ -9684,7 +9759,10 @@
       "correctText": "Manipulating people to reveal confidential information.",
       "explanation": "Social engineering manipulates people into revealing confidential information or performing actions that compromise security. Unlike technical hacking, it exploits human psychology — trust, fear, curiosity, and authority. Common techniques include phishing, pretexting, baiting, and tailgating. It's involved in 98% of cyber attacks.",
       "unit": 5,
-      "subtopic": "5.4"
+      "subtopic": "5.4",
+      "tags": [
+        "phishing"
+      ]
     },
     {
       "question": "A Denial of Service (DoS) attack aims to ......",
@@ -9698,7 +9776,10 @@
       "correctText": "Make a service unavailable to legitimate users.",
       "explanation": "A DoS (Denial of Service) attack aims to make a service unavailable by overwhelming it with traffic or requests — exhausting bandwidth, CPU, memory, or connection limits. DDoS (Distributed DoS) uses multiple compromised systems to amplify the attack, making it harder to block. Protection requires traffic filtering and scalable infrastructure.",
       "unit": 5,
-      "subtopic": "5.5"
+      "subtopic": "5.5",
+      "tags": [
+        "ransomware"
+      ]
     },
     {
       "question": "A firewall in network security is used to ......",

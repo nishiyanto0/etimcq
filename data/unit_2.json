@@ -210,7 +210,8 @@
       "explanation": "Wi-Fi is commonly used in IoT for short-to-medium range wireless communication where power consumption is less critical. It provides high data rates and easy integration with existing infrastructure, making it suitable for smart homes, offices, and industrial environments with reliable power.",
       "subtopic": "2.1",
       "tags": [
-        "iot"
+        "iot",
+        "wi-fi"
       ]
     },
     {
@@ -554,7 +555,10 @@
       "correct": 0,
       "correctText": "Wi-Fi",
       "explanation": "Wi-Fi is a physical communication technology that provides wireless connectivity for IoT devices. As part of physical design, considerations include antenna selection, power consumption, range, data rate, and compatibility with existing infrastructure.",
-      "subtopic": "2.2"
+      "subtopic": "2.2",
+      "tags": [
+        "wi-fi"
+      ]
     },
     {
       "question": "IoT logical design uses functional blocks such as ………",
@@ -920,7 +924,10 @@
       "correct": 1,
       "correctText": "Bluetooth module",
       "explanation": "Bluetooth modules are physical hardware components that provide short-range wireless communication. Physical design considerations include antenna design, power consumption, data rate, range, and protocol version (Classic vs. BLE) based on application requirements like wearables, beacons, or device pairing.",
-      "subtopic": "2.2"
+      "subtopic": "2.2",
+      "tags": [
+        "bluetooth"
+      ]
     },
     {
       "question": "Which layer includes device addressing?",
@@ -1006,7 +1013,8 @@
       "explanation": "A Wi-Fi router is physical hardware that provides network connectivity for IoT devices. Physical design considerations include antenna configuration, supported standards (802.11ac/ax), power over Ethernet capability, environmental rating, and integration with existing network infrastructure.",
       "subtopic": "2.1",
       "tags": [
-        "iot"
+        "iot",
+        "wi-fi"
       ]
     },
     {
@@ -1067,7 +1075,8 @@
       "explanation": "Wi-Fi modules are physical hardware components providing wireless connectivity. Physical design addresses antenna selection, power consumption, supported standards, range, data rate, and integration with the device's processor and power system - all critical for reliable IoT operation.",
       "subtopic": "2.2",
       "tags": [
-        "iot"
+        "iot",
+        "wi-fi"
       ]
     },
     {
@@ -1889,7 +1898,8 @@
       "explanation": "MGCP and H.248 are control protocols used by Media Gateway Controllers.",
       "subtopic": "2.4",
       "tags": [
-        "ngn"
+        "ngn",
+        "bluetooth"
       ]
     },
     {
@@ -2521,7 +2531,8 @@
       "explanation": "Overreliance on technology creates dependency risks where system failures, network outages, or cyberattacks can disrupt critical operations. This necessitates robust fallback mechanisms, redundancy, and human oversight to maintain safety and continuity.",
       "subtopic": "2.1",
       "tags": [
-        "iot"
+        "iot",
+        "zero-day"
       ]
     },
     {
@@ -2583,7 +2594,12 @@
       "correct": 0,
       "correctText": "802.3",
       "explanation": "802.3. IEEE standard for wired LANs, defining frame formats, cabling, and media access control for reliable, high-speed data transmission in industrial and enterprise IoT deployments.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "wifi",
+        "wi-fi",
+        "802.11"
+      ]
     },
     {
       "question": "Wi-Fi standard belongs to:",
@@ -2596,7 +2612,14 @@
       "correct": 1,
       "correctText": "802.11",
       "explanation": "802.11. IEEE family of standards for wireless local area networking, providing high-bandwidth connectivity for IoT devices within homes, offices, and campuses.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "wifi",
+        "wi-fi",
+        "802.11",
+        "zigbee",
+        "802.15.4"
+      ]
     },
     {
       "question": "6LOWPAN works with:",
@@ -2609,7 +2632,14 @@
       "correct": 0,
       "correctText": "802.15.4",
       "explanation": "802.15.4. Adapts IPv6 for low-power, lossy networks by compressing headers and handling fragmentation, enabling full IP connectivity for constrained devices like Zigbee and Thread nodes.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "wifi",
+        "wi-fi",
+        "802.11",
+        "zigbee",
+        "802.15.4"
+      ]
     },
     {
       "question": "IPv4 uses:",
@@ -2687,7 +2717,12 @@
       "correct": 1,
       "correctText": "TCP",
       "explanation": "TCP. Relies on TCP's reliable delivery for request-response web communication. While universal, its header overhead can be inefficient for battery-powered constrained IoT devices.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "zigbee",
+        "802.15.4",
+        "bluetooth"
+      ]
     },
     {
       "question": "CoAP runs over:",
@@ -2979,7 +3014,14 @@
       "correct": 0,
       "correctText": "802.15.4",
       "explanation": "802.15.4. Builds on this PHY/MAC layer to add mesh networking, routing algorithms, and application profiles, making it ideal for home automation and industrial control systems.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "wifi",
+        "wi-fi",
+        "802.11",
+        "zigbee",
+        "802.15.4"
+      ]
     },
     {
       "question": "IoT devices mainly communicate using:",
@@ -3128,7 +3170,14 @@
       "correct": 1,
       "correctText": "WiMax",
       "explanation": "WiMax. Broadband wireless access standard providing high-speed connectivity over long distances (up to 50km), often used as a backhaul or alternative to cable/DSL in rural IoT deployments.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "wifi",
+        "802.11",
+        "zigbee",
+        "802.15.4",
+        "bluetooth"
+      ]
     },
     {
       "question": "IEEE 802.15.4 is used in:",
@@ -3141,7 +3190,11 @@
       "correct": 1,
       "correctText": "Zigbee",
       "explanation": "Zigbee. Defines the physical and MAC layers for low-rate WPANs, forming the foundation for Zigbee, Thread, and 6LoWPAN mesh networks used in smart homes and industrial sensing.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "zigbee",
+        "802.15.4"
+      ]
     },
     {
       "question": "Transport layer provides:",
@@ -3845,7 +3898,12 @@
       "correct": 0,
       "correctText": "Wireless LAN",
       "explanation": "IEEE 802.11 is the standard for Wireless LAN (Wi-Fi), enabling high-bandwidth wireless connectivity for IoT devices within homes, offices, and campuses. It supports various frequency bands (2.4GHz, 5GHz, 6GHz) and security protocols to balance range, speed, and power consumption.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "wifi",
+        "wi-fi",
+        "802.11"
+      ]
     },
     {
       "question": "802.15.4 supports:",
@@ -3860,6 +3918,8 @@
       "explanation": "IEEE 802.15.4 is designed for low-power, low-data-rate wireless personal area networks (WPANs). It forms the physical and MAC layer foundation for protocols like Zigbee, Thread, and 6LoWPAN, enabling battery-operated IoT sensors to communicate efficiently over months or years.",
       "subtopic": "2.1",
       "tags": [
+        "zigbee",
+        "802.15.4",
         "5g"
       ]
     },
@@ -4586,7 +4646,10 @@
       "correct": 0,
       "correctText": "HTTP methods",
       "explanation": "REST APIs use HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources identified by URLs. This standardized, stateless approach enables interoperability between diverse IoT components and cloud services using familiar web technologies and tools.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "bluetooth"
+      ]
     },
     {
       "question": "REST commonly uses:",
@@ -4690,7 +4753,13 @@
       "correct": 0,
       "correctText": "Ethernet",
       "explanation": "IEEE 802.3 refers to the Ethernet standard for wired LANs, defining frame formats, cabling specifications, and media access control (CSMA/CD). It provides reliable, high-speed data transmission that forms the backbone of many industrial and enterprise IoT deployments requiring stable connectivity.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "wifi",
+        "802.11",
+        "zigbee",
+        "802.15.4"
+      ]
     },
     {
       "question": "802.11 refers to:",
@@ -4705,6 +4774,10 @@
       "explanation": "IEEE 802.11 refers to the Wi-Fi standard for wireless LANs, enabling high-bandwidth connectivity for IoT devices within homes, offices, and campuses. It supports various frequency bands, security protocols (WPA3), and power management features to balance performance, security, and battery life.",
       "subtopic": "2.1",
       "tags": [
+        "wifi",
+        "wi-fi",
+        "802.11",
+        "bluetooth",
         "5g"
       ]
     },
@@ -4719,7 +4792,11 @@
       "correct": 1,
       "correctText": "250 Kbps",
       "explanation": "IEEE 802.15.4 provides data rates up to 250 Kbps in the 2.4GHz band, optimized for low-power, low-data-rate applications. This modest speed is sufficient for sensor telemetry and control commands while enabling months or years of battery life for constrained IoT devices.",
-      "subtopic": "2.4"
+      "subtopic": "2.4",
+      "tags": [
+        "zigbee",
+        "802.15.4"
+      ]
     },
     {
       "question": "2G data rate starts from:",
@@ -4797,7 +4874,10 @@
       "correct": 1,
       "correctText": "UDP",
       "explanation": "CoAP runs on UDP to minimize overhead for constrained IoT devices. It adds reliability features like confirmable messages and retransmissions at the application layer, providing RESTful interactions with the efficiency needed for battery-powered sensors in low-power wireless networks.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "bluetooth"
+      ]
     },
     {
       "question": "MQTT architecture is:",
@@ -5497,7 +5577,11 @@
       "correct": 0,
       "correctText": "Short-range communication",
       "explanation": "Short-range communication (10-100m) with low power consumption and mesh networking capabilities. Zigbee's IEEE 802.15.4 foundation makes it ideal for battery-operated sensors in smart homes, industrial monitoring, and building automation where devices need years of battery life.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "zigbee",
+        "802.15.4"
+      ]
     },
     {
       "question": "Bluetooth Low Energy is used for:",
@@ -5510,7 +5594,10 @@
       "correct": 0,
       "correctText": "Wearables",
       "explanation": "Wearables and personal devices that require intermittent data transfer with minimal power draw. BLE's advertising/connection model enables months of battery life while supporting smartphone connectivity, making it perfect for fitness trackers, beacons, and health monitors.",
-      "subtopic": "2.1"
+      "subtopic": "2.1",
+      "tags": [
+        "bluetooth"
+      ]
     },
     {
       "question": "LPWAN stands for:",
@@ -6299,7 +6386,8 @@
       "explanation": "Bluetooth for short-range connectivity to smartphones or gateways, which then relay data to cloud platforms via cellular or Wi-Fi. This two-hop architecture balances low power consumption for the wearable with reliable long-range connectivity for data transmission.",
       "subtopic": "2.1",
       "tags": [
-        "iot"
+        "iot",
+        "bluetooth"
       ]
     },
     {
