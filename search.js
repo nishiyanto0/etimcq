@@ -56,6 +56,56 @@ const SEARCH_CONFIG = {
     'blockchain': 3, 'crypto': 3, 'bitcoin': 3, 'ethereum': 3, 'smart contract': 3, 'consensus': 3, 'mining': 3, 'miner': 3, 'decentralized': 3, 'distributed ledger': 3, 'dlt': 3, 'immutability': 3, 'transparency': 3,
     'ar': 4, 'vr': 4, 'mr': 4, 'xr': 4, 'augmented reality': 4, 'virtual reality': 4, 'mixed reality': 4, 'extended reality': 4, 'green computing': 4, 'quantum': 4, 'haptic': 4, 'metaverse': 4, 'qubit': 4, 'superposition': 4, 'entanglement': 4, 'e-waste': 4,
     'forensics': 5, 'hacking': 5, 'hacker': 5, 'it act': 5, 'cyber law': 5, 'digital forensics': 5, 'ethical hacking': 5, 'ncsp': 5, 'ccpwc': 5, 'phishing': 5, 'ransomware': 5, 'waf': 5, 'zero-day': 5, 'custody': 5, 'hash': 5, 'carving': 5, 'volatile': 5, 'dfrws': 5, 'adfm': 5, 'idip': 5, 'ceh': 5, 'oscp': 5
+  },
+  SEMANTIC_GROUPS: {
+    'sensor': [
+      'dht11', 'dht22', 'lm35', 'ldr', 'pir', 'mq-2', 'mq-135',
+      'bmp180', 'bmp280', 'ultrasonic sensor', 'flame sensor',
+      'soil moisture sensor', 'capacitive sensor', 'load cell',
+      'accelerometer', 'gyroscope', 'sound sensor', 'ir sensor',
+      'hall effect sensor', 'photodiode', 'flow sensor',
+      'water level sensor', 'vibration sensor', 'thermistor',
+      'gps', 'rfid'
+    ],
+    'actuator': [
+      'relay', 'dc motor', 'servo motor', 'stepper motor',
+      'solenoid valve', 'buzzer', 'electric door lock', 'water pump'
+    ],
+    'microcontroller': [
+      'arduino', 'raspberry pi', 'esp8266', 'esp32',
+      'nodemcu', 'atmega', 'pic'
+    ],
+    'protocol': [
+      'mqtt', 'coap', 'http', 'https', 'tcp', 'udp', 'websocket',
+      'xmpp', 'amqp', 'dds', 'ieee 802.3', 'ieee 802.11',
+      'ieee 802.15.4', 'ieee 802.16', 'wi-fi', 'bluetooth', 'ble',
+      'zigbee', 'ipv4', 'ipv6'
+    ],
+    '5g': [
+      'mmtc', 'urllc', 'embb', 'network slicing', 'beamforming',
+      'qos', 'lpwan', 'lorawan', 'nb-iot', 'sigfox', 'lte-m'
+    ],
+    'network': [
+      'ngn', 'next generation network', 'media gateway',
+      'media gateway controller', 'application server',
+      '5g', '4g', '3g', '2g', 'lte'
+    ],
+    'cloud': [
+      'edge computing', 'fog computing', 'cloud computing',
+      'paas', 'iaas', 'saas', 'iot gateway'
+    ],
+    'port': [
+      'port 80', 'port 22', 'port 23', 'port 21',
+      'port 443', 'port 25', 'port 110', 'port 3306'
+    ],
+    'consensus': [
+      'proof of work', 'proof of stake', 'pow', 'pos',
+      'pbft', 'delegated proof of stake', 'dpos'
+    ],
+    'wallet': [
+      'hot wallet', 'cold wallet', 'hardware wallet',
+      'metamask', 'ledger', 'private key', 'public key'
+    ]
   }
 };
 
@@ -153,6 +203,20 @@ function handleSearch(e) {
     }
   }
 
+  // Semantic group expansion (both directions)
+  for (const [groupName, members] of Object.entries(SEARCH_CONFIG.SEMANTIC_GROUPS)) {
+    // Forward: user typed "sensor" → add all sensor component names
+    if (query === groupName || searchTerms.includes(groupName)) {
+      members.forEach(m => {
+        if (!searchTerms.includes(m)) searchTerms.push(m);
+      });
+    }
+    // Reverse: user typed "dht11" → also search for "sensor"
+    if (members.some(m => query === m || query.includes(m))) {
+      if (!searchTerms.includes(groupName)) searchTerms.push(groupName);
+    }
+  }
+
   // Detect target unit from syllabus topics
   let targetUnit = null;
   searchTerms.forEach(term => {
@@ -180,20 +244,16 @@ function handleSearch(e) {
       });
     }
 
-    // 2. Keyword Match Loop (Questions & Options ONLY - Explanations Ignored)
+    // 2. Keyword Match Loop — WORD BOUNDARY ONLY, NO SUBSTRING FALLBACK
     searchTerms.forEach((term, idx) => {
       const weight = idx === 0 ? 1 : 0.8;
-      const isShort = term.length < 4;
-      const isMapping = !!SEARCH_CONFIG.MAPPINGS[term];
       const wordRegex = new RegExp(`\\b${term}\\b`, 'i');
       
-      // Check Question
+      // Question — strict word boundary only
       if (wordRegex.test(qText)) keywordScore += 100 * weight;
-      else if (!isShort && !isMapping && qText.includes(term)) keywordScore += 40 * weight;
       
-      // Check Options
+      // Options — strict word boundary only
       if (wordRegex.test(optionsText)) keywordScore += 60 * weight;
-      else if (!isShort && !isMapping && optionsText.includes(term)) keywordScore += 20 * weight;
     });
 
     // 3. Syllabus Unit Boost (Only for ranking, not for qualification)
