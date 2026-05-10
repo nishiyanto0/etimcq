@@ -148,11 +148,11 @@ function handleSearch(e) {
   });
 
   // Filter with Scoring
+  // Filter with Scoring
   const results = allQuestions.map(q => {
     let keywordScore = 0;
     const qText = q.question.toLowerCase();
     const optionsText = q.options.join(' ').toLowerCase();
-    const explText = (q.explanation || '').toLowerCase();
     
     // 1. Tag Match (Highest Precision)
     if (q.tags && q.tags.length > 0) {
@@ -163,21 +163,20 @@ function handleSearch(e) {
       });
     }
 
-    // 2. Keyword Match Loop
+    // 2. Keyword Match Loop (Questions & Options ONLY - Explanations Ignored)
     searchTerms.forEach((term, idx) => {
       const weight = idx === 0 ? 1 : 0.8;
       const isShort = term.length < 4;
       const isMapping = !!SEARCH_CONFIG.MAPPINGS[term];
       const wordRegex = new RegExp(`\\b${term}\\b`, 'i');
       
+      // Check Question
       if (wordRegex.test(qText)) keywordScore += 100 * weight;
       else if (!isShort && !isMapping && qText.includes(term)) keywordScore += 40 * weight;
       
+      // Check Options
       if (wordRegex.test(optionsText)) keywordScore += 60 * weight;
       else if (!isShort && !isMapping && optionsText.includes(term)) keywordScore += 20 * weight;
-      
-      if (wordRegex.test(explText)) keywordScore += 30 * weight;
-      else if (!isShort && !isMapping && explText.includes(term)) keywordScore += 10 * weight;
     });
 
     // 3. Syllabus Unit Boost (Only for ranking, not for qualification)
@@ -237,10 +236,12 @@ function renderResults(questions, originalQuery, expandedTerms) {
   }
 
   resultsContainer.innerHTML = questions.map((q, idx) => {
-    // Highlight terms
+    // Highlight terms with word boundary awareness
     let highlightedQuestion = q.question;
     expandedTerms.forEach(term => {
-      const regex = new RegExp(`(${term})`, 'gi');
+      const isShort = term.length < 4;
+      // If short (like AR), only highlight standalone words. If long, highlight anywhere.
+      const regex = isShort ? new RegExp(`\\b(${term})\\b`, 'gi') : new RegExp(`(${term})`, 'gi');
       highlightedQuestion = highlightedQuestion.replace(regex, '<span class="highlight">$1</span>');
     });
 
