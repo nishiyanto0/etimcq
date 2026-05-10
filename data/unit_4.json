@@ -14,12 +14,7 @@
       "correct": 1,
       "correctText": "Digital interactive environments",
       "explanation": "Immersive technology creates digital interactive environments that simulate or augment reality, allowing users to interact with computer-generated content in a more natural and engaging way through technologies like VR, AR, and MR.",
-      "subtopic": "4.1",
-      "tags": [
-        "vr",
-        "ar",
-        "mr"
-      ]
+      "subtopic": "4.1"
     },
     {
       "question": "Immersive systems enhance which type of experience?",
@@ -143,7 +138,6 @@
       "explanation": "AR does NOT replace the real world - instead, it supplements and enhances it by adding digital layers. Unlike VR which creates a completely virtual environment, AR maintains the user's connection to the physical world while adding digital information.",
       "subtopic": "4.1",
       "tags": [
-        "vr",
         "ar"
       ]
     },
@@ -213,9 +207,6 @@
       "explanation": "XR stands for Extended Reality, which is an umbrella term that encompasses all immersive technologies including Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR), representing the full spectrum of reality-virtuality continuum.",
       "subtopic": "4.1",
       "tags": [
-        "vr",
-        "ar",
-        "mr",
         "xr"
       ]
     },
@@ -249,11 +240,7 @@
       "correct": 1,
       "correctText": "Touch feedback",
       "explanation": "Haptic technology provides touch feedback by simulating the sense of touch through vibrations, forces, or motions. This allows users to feel virtual objects and interactions, enhancing realism and immersion in VR/AR experiences.",
-      "subtopic": "4.1",
-      "tags": [
-        "vr",
-        "ar"
-      ]
+      "subtopic": "4.1"
     },
     {
       "question": "Haptic devices simulate:",
@@ -388,11 +375,7 @@
       "correct": 0,
       "correctText": "Industrial safety",
       "explanation": "Immersive technology improves industrial safety by enabling workers to visualize hazards, practice emergency procedures, and receive real-time AR guidance during complex operations. VR safety training and AR hazard overlays help prevent accidents and ensure workers are better prepared for dangerous situations.",
-      "subtopic": "4.1",
-      "tags": [
-        "vr",
-        "ar"
-      ]
+      "subtopic": "4.1"
     },
     {
       "question": "VR tourism allows:",
@@ -471,9 +454,6 @@
       "explanation": "XR offers flexible immersive solutions because it spans the full spectrum from fully virtual (VR) to fully real with digital overlays (AR), and everything in between (MR). This flexibility allows organizations to choose the right level of immersion for each use case, from training simulations to field service assistance.",
       "subtopic": "4.1",
       "tags": [
-        "vr",
-        "ar",
-        "mr",
         "xr"
       ]
     },
@@ -810,10 +790,7 @@
       "correct": 2,
       "correctText": "Both 0 and 1",
       "explanation": "A qubit can exist in both 0 and 1 simultaneously through a quantum property called superposition. While a classical bit must be either 0 or 1, a qubit can be in a probabilistic combination of both states at the same time, which is what gives quantum computers their massive parallel processing potential.",
-      "subtopic": "4.4",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.4"
     },
     {
       "question": "Superposition allows:",
@@ -826,10 +803,7 @@
       "correct": 0,
       "correctText": "Parallel processing",
       "explanation": "Superposition allows parallel processing because a qubit in superposition represents multiple states simultaneously. With n qubits, a quantum computer can represent 2^n states at once, enabling it to explore many possible solutions in parallel rather than sequentially, providing exponential speedup for certain computational problems.",
-      "subtopic": "4.4",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.4"
     },
     {
       "question": "Entanglement links:",
@@ -842,10 +816,7 @@
       "correct": 0,
       "correctText": "Two qubits",
       "explanation": "Entanglement links two qubits in such a way that the quantum state of one qubit is directly correlated with the state of another, regardless of the physical distance between them. When entangled qubits are measured, their results are instantly correlated, enabling powerful quantum operations and quantum communication protocols.",
-      "subtopic": "4.4",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.4"
     },
     {
       "question": "Quantum interference helps:",
@@ -967,10 +938,7 @@
       "correct": 0,
       "correctText": "Challenge",
       "explanation": "Qubit stability is a challenge because qubits are extremely sensitive to environmental disturbances (temperature fluctuations, electromagnetic radiation, vibration) that cause them to lose their quantum state — a phenomenon called decoherence. Maintaining qubit stability long enough to perform meaningful computations remains one of the biggest obstacles in quantum computing.",
-      "subtopic": "4.4",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.4"
     },
     {
       "question": "Quantum error correction is:",
@@ -1018,7 +986,6 @@
       "subtopic": "4.4",
       "tags": [
         "ai",
-        "ml",
         "quantum"
       ]
     },
@@ -1033,10 +1000,7 @@
       "correct": 0,
       "correctText": "Number of qubits",
       "explanation": "Exponential growth in power depends on the number of qubits because each additional qubit doubles the number of simultaneously representable states (2^n). This means a quantum computer with 300 qubits could represent more states than there are atoms in the observable universe, providing computational power that scales exponentially rather than linearly.",
-      "subtopic": "4.1",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.1"
     },
     {
       "question": "Quantum systems are still:",
@@ -1177,11 +1141,7 @@
       "correct": 0,
       "correctText": "Student engagement",
       "explanation": "Immersive tech in education increases student engagement by transforming passive learning into active, experiential experiences. VR field trips, AR anatomy overlays, and interactive 3D models capture students' attention more effectively than textbooks, leading to better retention, deeper understanding, and greater motivation to learn.",
-      "subtopic": "4.2",
-      "tags": [
-        "vr",
-        "ar"
-      ]
+      "subtopic": "4.2"
     },
     {
       "question": "VR sickness is caused due to:",
@@ -1404,10 +1364,7 @@
       "correct": 0,
       "correctText": "Factoring large numbers",
       "explanation": "Shor's algorithm is used for factoring large numbers — specifically, finding the prime factors of composite numbers. This is significant because RSA encryption relies on the difficulty of factoring large numbers; a quantum computer running Shor's algorithm could break RSA much faster than any known classical algorithm.",
-      "subtopic": "4.1",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.1"
     },
     {
       "question": "Grover's algorithm improves:",
@@ -1465,10 +1422,7 @@
       "correct": 0,
       "correctText": "Computation accuracy",
       "explanation": "Decoherence limits computation accuracy by causing qubits to lose their quantum properties (superposition and entanglement) due to interaction with the environment. When decoherence occurs, quantum information degrades into classical randomness, causing computational errors that can quickly accumulate and make results unreliable.",
-      "subtopic": "4.1",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.1"
     },
     {
       "question": "Quantum supremacy demonstrates:",
@@ -1497,10 +1451,7 @@
       "correct": 0,
       "correctText": "Stability",
       "explanation": "Qubit coherence time affects stability because it determines how long a qubit can maintain its quantum state before environmental noise causes decoherence. Longer coherence times allow more quantum gate operations to be performed, directly impacting the depth and complexity of quantum computations that can be reliably executed.",
-      "subtopic": "4.4",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.4"
     },
     {
       "question": "Superconducting qubits operate at:",
@@ -1513,10 +1464,7 @@
       "correct": 0,
       "correctText": "Very low temperatures",
       "explanation": "Superconducting qubits operate at very low temperatures (near absolute zero, around 15-20 millikelvin) to minimize thermal noise that would destroy their delicate quantum states. These extreme cooling requirements are maintained by dilution refrigerators, which is one reason why quantum computers are so expensive and complex to build.",
-      "subtopic": "4.4",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.4"
     },
     {
       "question": "Quantum computers are best suited for:",
@@ -1547,7 +1495,6 @@
       "explanation": "Classical computing is based on Boolean logic — a mathematical framework where variables take values of TRUE (1) or FALSE (0), and operations like AND, OR, and NOT process these binary values. All classical computer operations, from simple arithmetic to complex AI, ultimately reduce to Boolean logic gates.",
       "subtopic": "4.1",
       "tags": [
-        "ai",
         "quantum"
       ]
     },
@@ -1612,7 +1559,6 @@
       "explanation": "The future of quantum computing is expected to transform the computing industry by enabling breakthroughs in drug discovery, materials science, financial modeling, artificial intelligence, and cybersecurity. As quantum hardware matures and algorithms advance, quantum computing will create entirely new industries and reshape existing ones.",
       "subtopic": "4.4",
       "tags": [
-        "ai",
         "quantum"
       ]
     }

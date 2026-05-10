@@ -280,10 +280,7 @@
       "correct": 0,
       "correctText": "Information gathering",
       "explanation": "Reconnaissance (or information gathering) is the first phase of ethical hacking, where the tester collects publicly available or passively obtained information about the target — such as domain names, IP ranges, employee details, and technologies used — to plan the attack.",
-      "subtopic": "5.1",
-      "tags": [
-        "eh"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "Scanning phase identifies:",
@@ -461,8 +458,7 @@
       "explanation": "Deepfakes use deep learning (a subset of machine learning) techniques like generative adversarial networks (GANs) to create realistic but fabricated audio, video, or images that can impersonate individuals for fraud, disinformation, or blackmail.",
       "subtopic": "5.5",
       "tags": [
-        "ml",
-        "dl"
+        "ml"
       ]
     },
     {
@@ -560,10 +556,7 @@
       "correct": 0,
       "correctText": "Identity theft",
       "explanation": "Section 66C of the IT Act specifically addresses identity theft — the fraudulent use of another person's unique identification data such as passwords, digital signatures, or biometric information — and prescribes imprisonment up to 3 years and fines.",
-      "subtopic": "5.1",
-      "tags": [
-        "it act"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "Section 66F deals with:",
@@ -576,10 +569,7 @@
       "correct": 0,
       "correctText": "Cyber terrorism",
       "explanation": "Section 66F of the IT Act deals with cyber terrorism — acts intended to threaten the unity, integrity, security, or sovereignty of India by accessing or damaging critical information infrastructure — and carries the harshest penalties, including life imprisonment.",
-      "subtopic": "5.1",
-      "tags": [
-        "it act"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "DPDP Act 2023 protects:",
@@ -608,10 +598,7 @@
       "correct": 0,
       "correctText": "Individual",
       "explanation": "Under the DPDP Act, a Data Principal is the individual to whom the personal data relates. Data Principals have specific rights including the right to access, correct, and erase their personal data held by organizations.",
-      "subtopic": "5.1",
-      "tags": [
-        "dpdp"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "Data Fiduciary refers to:",
@@ -624,10 +611,7 @@
       "correct": 0,
       "correctText": "Organization handling data",
       "explanation": "A Data Fiduciary, as defined in the DPDP Act, is any organization or entity that determines the purpose and means of processing personal data. Data Fiduciaries bear the primary responsibility for ensuring data protection compliance and respecting Data Principals' rights.",
-      "subtopic": "5.1",
-      "tags": [
-        "dpdp"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "CCPWC scheme protects:",
@@ -672,10 +656,7 @@
       "correct": 0,
       "correctText": "Intercept data",
       "explanation": "Section 69 of the IT Act empowers the government to intercept, monitor, or decrypt any information generated, transmitted, or stored in any computer resource when necessary for national security, public order, or preventing cognizable offenses.",
-      "subtopic": "5.1",
-      "tags": [
-        "it act"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "Section 43 deals with:",
@@ -688,10 +669,7 @@
       "correct": 0,
       "correctText": "Unauthorized access",
       "explanation": "Section 43 of the IT Act addresses unauthorized access to computers and computer systems, prescribing penalties for anyone who accesses or secures access without permission, including downloading data, introducing viruses, or causing system damage.",
-      "subtopic": "5.1",
-      "tags": [
-        "it act"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "Ethical hacking improves:",
@@ -1027,8 +1005,7 @@
       "explanation": "AI-generated phishing emails exhibit perfect grammar and natural language because machine learning models (like GPT) can produce flawlessly written, contextually appropriate messages — eliminating the spelling and grammar errors that traditionally helped users identify phishing attempts.",
       "subtopic": "5.5",
       "tags": [
-        "ai",
-        "ml"
+        "ai"
       ]
     },
     {
@@ -1123,10 +1100,7 @@
       "correct": 0,
       "correctText": "Metadata",
       "explanation": "Deepfake detection techniques analyze metadata inconsistencies, compression artifacts, facial micro-expressions, and pixel-level anomalies that are not visible to the human eye but reveal the synthetic nature of AI-generated media content.",
-      "subtopic": "5.5",
-      "tags": [
-        "ai"
-      ]
+      "subtopic": "5.5"
     },
     {
       "question": "OS hacking targets:",
@@ -1236,10 +1210,7 @@
       "correct": 0,
       "correctText": "Online cheating",
       "explanation": "Section 66D of the IT Act addresses online cheating by impersonation — using communication devices or computer resources to deceive and cheat someone — and prescribes imprisonment up to 3 years and fines up to Rs. 1 lakh.",
-      "subtopic": "5.1",
-      "tags": [
-        "it act"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "Section 72A relates to:",
@@ -1252,10 +1223,7 @@
       "correct": 0,
       "correctText": "Breach of confidentiality",
       "explanation": "Section 72A of the IT Act deals with breach of confidentiality and privacy by someone who has access to personal data in the course of a contract and discloses it without consent, prescribing imprisonment up to 3 years and/or fines.",
-      "subtopic": "5.1",
-      "tags": [
-        "it act"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "DPDP requires:",
@@ -1284,10 +1252,7 @@
       "correct": 0,
       "correctText": "Compliance",
       "explanation": "The Data Protection Board, established under the DPDP Act, oversees compliance with data protection regulations, investigates breaches, adjudicates disputes, and can impose penalties on organizations that violate data protection requirements.",
-      "subtopic": "5.1",
-      "tags": [
-        "dpdp"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "CCPWC portal allows:",
@@ -1682,10 +1647,7 @@
       "correct": 0,
       "correctText": "Receiving stolen computer resources",
       "explanation": "Section 66B of the IT Act relates to receiving stolen computer resources or communication devices — knowing them to be stolen — and prescribes imprisonment up to 3 years and/or fines, addressing the demand side of stolen digital property.",
-      "subtopic": "5.1",
-      "tags": [
-        "it act"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "Section 66C addresses:",
@@ -1766,10 +1728,7 @@
       "correct": 0,
       "correctText": "Access personal data",
       "explanation": "Under the DPDP Act, a Data Principal has the right to access their personal data held by any Data Fiduciary, as well as the right to correction, erasure, nomination, and grievance redressal — ensuring individuals maintain control over their personal information.",
-      "subtopic": "5.1",
-      "tags": [
-        "dpdp"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "Data Fiduciary must ensure:",
@@ -1989,10 +1948,7 @@
       "correct": 0,
       "correctText": "Frame inconsistencies",
       "explanation": "Deepfake forensic detection checks for frame inconsistencies — such as unnatural facial movements, inconsistent lighting and shadows, blending artifacts at facial boundaries, and irregular eye blinking patterns — that reveal the synthetic nature of AI-generated video content.",
-      "subtopic": "5.5",
-      "tags": [
-        "ai"
-      ]
+      "subtopic": "5.5"
     },
     {
       "question": "IoT botnets are commonly used for:",
@@ -2079,10 +2035,7 @@
       "correct": 3,
       "correctText": "All of the above",
       "explanation": "Cybercrime against women includes all forms of online victimization — cyber stalking, revenge porn, online harassment, identity theft for impersonation, morphed images, and threatening or defamatory messages — all of which are addressed under various sections of the IT Act.",
-      "subtopic": "5.6",
-      "tags": [
-        "it act"
-      ]
+      "subtopic": "5.6"
     },
     {
       "question": "The main goal of ethical hacking is to:",
@@ -2438,10 +2391,7 @@
       "correct": 0,
       "correctText": "CEO impersonation",
       "explanation": "Deepfake fraud may involve CEO impersonation — using AI-generated video or audio to convincingly mimic a company executive's voice or appearance to authorize fraudulent wire transfers, approve fake transactions, or issue deceptive instructions to employees.",
-      "subtopic": "5.5",
-      "tags": [
-        "ai"
-      ]
+      "subtopic": "5.5"
     },
     {
       "question": "Secure firmware updates require:",
@@ -2564,10 +2514,7 @@
       "correct": 0,
       "correctText": "Unauthorized access",
       "explanation": "Section 43 of the IT Act penalizes unauthorized access to computer systems, including acts such as downloading or copying data without permission, introducing viruses or malware, damaging or disrupting computer systems, and denying authorized users access to their systems.",
-      "subtopic": "5.1",
-      "tags": [
-        "it act"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "Section 69 authorizes:",
@@ -2787,10 +2734,7 @@
       "correct": 0,
       "correctText": "Secure and legally compliant cyberspace",
       "explanation": "The ultimate objective of Unit 5 concepts is to achieve a secure and legally compliant cyberspace — where digital forensic capabilities ensure evidence-based justice, ethical hacking strengthens defenses, and cyber laws protect individuals and organizations from evolving digital threats.",
-      "subtopic": "5.1",
-      "tags": [
-        "eh"
-      ]
+      "subtopic": "5.1"
     }
   ]
 }

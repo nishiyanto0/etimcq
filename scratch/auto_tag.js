@@ -45,7 +45,7 @@ files.forEach(file => {
     delete q.tags; 
     
     const tags = new Set();
-    const content = `${q.question} ${q.options.join(' ')} ${q.explanation || ''}`.toLowerCase();
+    const content = `${q.question} ${q.options.join(' ')}`.toLowerCase();
     
     for (const [abbr, full] of Object.entries(MAPPINGS)) {
       // Use strict word boundaries \b to prevent matching inside words like "Artificial" or "Hardware"

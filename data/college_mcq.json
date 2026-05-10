@@ -208,10 +208,7 @@
       "correct": 1,
       "correctText": "Genesis block",
       "explanation": "The Genesis Block is the very first block in a blockchain — it has no previous block reference (previous hash is typically zeros) and is hardcoded into the blockchain software. All subsequent blocks are cryptographically linked back to this foundational block.",
-      "subtopic": "Blockchain",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "Blockchain"
     },
     {
       "question": "The first block of blockchain is called as ______.",
@@ -272,10 +269,7 @@
       "correct": 1,
       "correctText": "Cryptocurrency",
       "explanation": "Bitcoin and Ethereum are cryptocurrencies — decentralized digital currencies using cryptography for security and blockchain for transaction verification.",
-      "subtopic": "Blockchain",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "Blockchain"
     },
     {
       "question": "Where is Blockchain's central server?",
@@ -385,10 +379,7 @@
       "correct": 0,
       "correctText": "Testimonial Evidence",
       "explanation": "Testimonial Evidence includes statements from witnesses, informants, or contacts — verbal or written accounts provided by individuals with knowledge of the case. In digital forensics, this can include interviews with suspects, testimony from network administrators, or statements from cybersecurity personnel.",
-      "subtopic": "Forensics",
-      "tags": [
-        "df"
-      ]
+      "subtopic": "Forensics"
     },
     {
       "question": "The general ethical norms for investigator is _____.",
@@ -414,10 +405,7 @@
       "correct": 0,
       "correctText": "Best Evidence Rule",
       "explanation": "The Best Evidence Rule requires that original documents or records be offered as evidence in legal proceedings — copies are acceptable only if originals are unavailable, destroyed, or inaccessible. In digital forensics, this means producing the original digital file or a bit-for-bit forensic image, not just a summary.",
-      "subtopic": "Forensics",
-      "tags": [
-        "df"
-      ]
+      "subtopic": "Forensics"
     },
     {
       "question": "Documented evidence is same as ________ where the proof is presented in writing?",

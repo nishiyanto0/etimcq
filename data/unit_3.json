@@ -110,10 +110,7 @@
       "correct": 1,
       "correctText": "Previous block's hash",
       "explanation": "Each block stores the hash of the previous block in its header, creating a cryptographic link that forms the 'chain' in blockchain. This previous block hash creates an unbreakable sequence - if anyone tries to modify a block, its hash changes, which breaks the link with the next block. To successfully alter a block, an attacker would need to recalculate all subsequent blocks, which is computationally impractical.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "What process do miners perform?",
@@ -190,10 +187,7 @@
       "correct": 1,
       "correctText": "Consensus protocols",
       "explanation": "Consensus protocols ensure all nodes maintain consistent copies of the blockchain. These protocols (like Proof of Work or Proof of Stake) establish rules for how nodes agree on which transactions are valid and which block should be added next. When conflicts arise (like two miners finding blocks simultaneously), consensus rules determine which version of the blockchain is accepted, ensuring eventual consistency across the distributed network.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Which system has a single point of failure?",
@@ -560,10 +554,7 @@
       "correct": 1,
       "correctText": "Ensures network agreement",
       "explanation": "The consensus mechanism ensures network agreement on which transactions are valid and which block should be added next to the blockchain. In a decentralized network without a central authority, consensus mechanisms (like Proof of Work, Proof of Stake, or Practical Byzantine Fault Tolerance) enable distributed nodes to agree on the blockchain's state, prevent double-spending, and maintain security against malicious actors.",
-      "subtopic": "3.2",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.2"
     },
     {
       "question": "Which blockchain is best for enterprise privacy?",
@@ -592,10 +583,7 @@
       "correct": 0,
       "correctText": "Converting assets into digital tokens",
       "explanation": "Tokenization is the process of converting rights to an asset (physical or digital) into a digital token on a blockchain. These tokens can represent ownership of real estate, art, commodities, or financial instruments. Tokenization enables fractional ownership, increases liquidity, reduces transaction costs, and enables 24/7 trading. For example, a $1 million property can be tokenized into 1 million tokens worth $1 each, allowing multiple investors to own fractions.",
-      "subtopic": "3.5",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.5"
     },
     {
       "question": "Auditability refers to .",
@@ -608,10 +596,7 @@
       "correct": 1,
       "correctText": "Traceability and verification",
       "explanation": "Blockchain allows full transaction audit trails.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Which feature supports financial inclusion?",
@@ -624,10 +609,7 @@
       "correct": 1,
       "correctText": "Open access and no intermediaries",
       "explanation": "Open access and no intermediaries support financial inclusion by enabling anyone with internet access to participate in financial services without traditional bank accounts. Blockchain allows unbanked populations to send/receive payments, access credit, save money, and build financial histories without requiring approval from banks or meeting minimum balance requirements. This democratizes financial services and provides economic opportunities to underserved populations globally.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Smart contracts are based on .",
@@ -926,10 +908,7 @@
       "correct": 1,
       "correctText": "Data cannot be changed",
       "explanation": "Immutability means data cannot be changed, modified, or deleted once it's recorded on the blockchain. This permanent record is achieved through cryptographic hashing - each block contains the hash of the previous block, creating an unbreakable chain. Altering any data would require recalculating all subsequent blocks' hashes, which is computationally infeasible in a properly secured blockchain. Immutability ensures data integrity, prevents fraud, and creates a reliable audit trail.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain security uses:",
@@ -1006,10 +985,7 @@
       "correct": 1,
       "correctText": "Verification process",
       "explanation": "Miners perform the verification process by validating transactions, solving cryptographic puzzles, and adding new blocks to the blockchain in Proof of Work systems. They collect pending transactions, verify their validity against network rules, compete to solve complex mathematical problems, and broadcast new blocks to the network. Successful miners are rewarded with cryptocurrency and transaction fees. This mining process secures the network, prevents double-spending, and maintains consensus.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Consensus protocol is:",
@@ -1022,10 +998,7 @@
       "correct": 1,
       "correctText": "Set of rules",
       "explanation": "Consensus protocol is a set of rules that enables distributed nodes to agree on the blockchain's state without a central authority. These protocols (like Proof of Work, Proof of Stake, or Practical Byzantine Fault Tolerance) establish how nodes validate transactions, create new blocks, and resolve conflicts. Consensus mechanisms ensure all nodes maintain consistent copies of the ledger, prevent double-spending, and protect the network against malicious actors or faulty nodes.",
-      "subtopic": "3.2",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.2"
     },
     {
       "question": "Each new transaction results in:",
@@ -1038,10 +1011,7 @@
       "correct": 1,
       "correctText": "New block creation",
       "explanation": "Each new transaction results in new block creation when enough transactions accumulate to fill a block (or after a certain time interval). Pending transactions are collected into a candidate block by miners or validators, verified against network rules, and then added to the blockchain through the consensus mechanism. Once the block is added, the transactions are confirmed and become part of the immutable ledger. Block creation frequency varies by blockchain (Bitcoin: ~10 minutes, Ethereum: ~12 seconds).",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain provides fault tolerance because:",
@@ -1070,10 +1040,7 @@
       "correct": 2,
       "correctText": "No central authority required",
       "explanation": "Trustless system means no central authority or trusted third party is required for participants to transact with each other. Instead of trusting intermediaries like banks or payment processors, participants trust the blockchain's cryptographic protocols and consensus mechanisms. The system's rules are enforced by code and mathematics rather than human institutions. This enables strangers to transact directly without knowing or trusting each other, as the blockchain ensures transactions are valid and irreversible.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "In traditional system, verification is:",
@@ -1262,10 +1229,7 @@
       "correct": 1,
       "correctText": "Self-executing programs",
       "explanation": "Smart contracts are self-executing programs stored on a blockchain that automatically execute when predefined conditions are met. They contain 'if/when...then...' logic coded directly into the blockchain. Once deployed, smart contracts run exactly as programmed without downtime, censorship, fraud, or third-party interference. They enable trustless automation of agreements, eliminate intermediaries, and ensure transparent, irreversible execution. Ethereum pioneered smart contracts, enabling decentralized applications and complex blockchain systems.",
-      "subtopic": "3.5",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.5"
     },
     {
       "question": "Smart contracts execute when:",
@@ -1291,10 +1255,7 @@
       "correct": 1,
       "correctText": "Digital currency",
       "explanation": "Cryptocurrency is a digital or virtual currency that uses cryptography for security and operates on blockchain technology. Unlike traditional fiat currencies issued by governments, cryptocurrencies are decentralized and typically operate on distributed networks. They enable peer-to-peer transactions without intermediaries, provide transparency through public ledgers, and offer features like immutability and pseudonymity. Bitcoin was the first cryptocurrency, followed by thousands of others like Ethereum, Litecoin, and Ripple.",
-      "subtopic": "3.5",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.5"
     },
     {
       "question": "Cryptocurrency uses:",
@@ -1320,10 +1281,7 @@
       "correct": 1,
       "correctText": "Cryptocurrency",
       "explanation": "Bitcoin is the first and most well-known example of cryptocurrency - a decentralized digital currency created by Satoshi Nakamoto in 2009. Bitcoin operates on a public blockchain using Proof of Work consensus, has a fixed supply of 21 million coins, and enables peer-to-peer transactions without banks or intermediaries. It introduced blockchain technology and serves as both a payment system and a store of value, often called 'digital gold' due to its scarcity and durability.",
-      "subtopic": "3.5",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.5"
     },
     {
       "question": "Blockchain in banking helps:",
@@ -1432,10 +1390,7 @@
       "correct": 1,
       "correctText": "Slower processing with growth",
       "explanation": "Scalability issue means slower processing with growth - as the number of users and transactions increases, the blockchain network becomes congested, leading to slower transaction times and higher fees. Public blockchains like Bitcoin and Ethereum can only process limited transactions per second because every node must validate every transaction. This bottleneck limits blockchain's ability to handle mass adoption. Solutions being developed include layer-2 networks, sharding, improved consensus mechanisms, and off-chain transactions.",
-      "subtopic": "3.6",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.6"
     },
     {
       "question": "Proof of Work consumes:",
@@ -1477,10 +1432,7 @@
       "correct": 0,
       "correctText": "Ledger grows",
       "explanation": "Storage requirement increases because the ledger grows continuously as new blocks are added to the blockchain. Every transaction ever made is permanently stored, and full nodes must maintain a complete copy of the entire blockchain history. Bitcoin's blockchain exceeds 400 GB, and Ethereum's exceeds 1 TB, requiring significant storage capacity. This growth creates challenges for node operators and limits participation. Solutions like pruning, light nodes, and distributed storage are being developed to address this issue.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain complexity requires:",
@@ -1509,10 +1461,7 @@
       "correct": 0,
       "correctText": "No uniform laws",
       "explanation": "Regulatory issues arise because there are no uniform laws governing blockchain and cryptocurrencies globally. Different countries have conflicting regulations - some embrace blockchain, others ban it, and many have unclear or evolving policies. This regulatory uncertainty creates legal risks for businesses, complicates cross-border operations, and slows institutional adoption. Issues include cryptocurrency classification, taxation, anti-money laundering (AML) compliance, data privacy, smart contract legality, and consumer protection. Clear, harmonized regulations are needed for widespread adoption.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Privacy challenge arises due to:",
@@ -1525,10 +1474,7 @@
       "correct": 0,
       "correctText": "Transparency",
       "explanation": "Privacy challenge arises due to transparency - in public blockchains, all transactions are visible to everyone. While users are pseudonymous (identified by wallet addresses rather than names), sophisticated blockchain analysis can potentially link addresses to real identities by analyzing transaction patterns, IP addresses, and off-chain data. This transparency conflicts with privacy regulations like GDPR's 'right to be forgotten' and raises concerns about financial privacy. Privacy solutions include zero-knowledge proofs, mixing services, and privacy-focused cryptocurrencies.",
-      "subtopic": "3.6",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.6"
     },
     {
       "question": "Smart contract error leads to:",
@@ -1570,10 +1516,7 @@
       "correct": 0,
       "correctText": "Data linking",
       "explanation": "Cryptographic hash ensures data linking by creating unique digital fingerprints for each block and linking blocks together. Each block contains the hash of the previous block, creating an unbreakable chain. If any data in a block is altered, its hash changes completely, breaking the link with subsequent blocks. This chaining mechanism ensures data integrity - to successfully alter a block, an attacker would need to recalculate all subsequent blocks' hashes, which is computationally infeasible in a properly secured blockchain.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "If one block is modified, it:",
@@ -1647,10 +1590,7 @@
       "correct": 0,
       "correctText": "Agreement among nodes",
       "explanation": "Consensus ensures agreement among nodes on the blockchain's state without requiring a central authority. Through consensus mechanisms (like Proof of Work or Proof of Stake), distributed nodes independently validate transactions and blocks, then agree on which version of the blockchain is valid. Consensus prevents double-spending, maintains data consistency across all nodes, resolves conflicts when multiple valid blocks are created simultaneously, and protects the network against malicious actors or faulty nodes.",
-      "subtopic": "3.2",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.2"
     },
     {
       "question": "Digital signature ensures:",
@@ -1663,10 +1603,7 @@
       "correct": 0,
       "correctText": "Data authenticity",
       "explanation": "Digital signature ensures data authenticity by verifying that a transaction was created by the owner of a private key and hasn't been tampered with. When a user signs a transaction with their private key, others can verify the signature using the corresponding public key. This proves the transaction's origin and integrity without revealing the private key. Digital signatures prevent unauthorized transactions, ensure non-repudiation (users can't deny sending transactions), and secure blockchain communications.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain reduces fraud because:",
@@ -1884,10 +1821,7 @@
       "correct": 0,
       "correctText": "Centralization",
       "explanation": "Traditional systems are vulnerable due to centralization - relying on a single central server or authority creates a single point of failure. If the central server is hacked, fails, or goes offline, the entire system becomes unavailable or compromised. Centralized systems are attractive targets for attackers because compromising one server can give access to all data. Blockchain eliminates this vulnerability by distributing data and operations across many nodes, making it highly resilient to attacks and failures.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain fault tolerance exists because:",
@@ -1932,10 +1866,7 @@
       "correct": 0,
       "correctText": "Fraudulent transactions",
       "explanation": "Consensus mechanism prevents fraudulent transactions by requiring network participants to agree on transaction validity before they're added to the blockchain. Consensus protocols (like Proof of Work or Proof of Stake) make it computationally or economically infeasible for attackers to add invalid transactions or alter the blockchain. The distributed nature means an attacker would need to control the majority of the network to successfully commit fraud, which is extremely difficult and expensive in large, well-established blockchains.",
-      "subtopic": "3.2",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.2"
     },
     {
       "question": "Blockchain ensures data integrity through:",
@@ -1964,10 +1895,7 @@
       "correct": 1,
       "correctText": "Direct user interaction",
       "explanation": "Peer-to-peer means direct user interaction without intermediaries - participants communicate and transact directly with each other rather than through a central server or authority. In blockchain's P2P network, every node is equal and can communicate directly with other nodes. This eliminates the need for intermediaries, reduces costs, prevents single points of failure, and enables censorship resistance. P2P networking is fundamental to blockchain's decentralized architecture, allowing trustless transactions between strangers.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Data tampering is prevented by:",
@@ -1980,10 +1908,7 @@
       "correct": 0,
       "correctText": "Immutability",
       "explanation": "Data tampering is prevented by immutability - once data is recorded on the blockchain, it cannot be changed or deleted. This is achieved through cryptographic hashing where each block contains the hash of the previous block. Changing any data would require recalculating all subsequent blocks' hashes, which is computationally infeasible. Combined with decentralization and consensus, immutability creates a tamper-evident ledger where any attempt to modify data is immediately detectable and practically impossible to execute successfully.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain reduces cost by removing:",
@@ -2012,10 +1937,7 @@
       "correct": 0,
       "correctText": "Automatically",
       "explanation": "Smart contracts execute automatically when predefined conditions coded into the contract are met. They follow 'if/when...then...' logic without requiring human intervention, approval, or intermediaries. Once conditions are satisfied, the contract executes immediately and irreversibly on the blockchain. This automatic execution ensures trustless, transparent, and reliable contract enforcement based solely on the coded logic. Smart contracts eliminate delays, reduce costs, prevent manipulation, and ensure agreements are executed exactly as programmed.",
-      "subtopic": "3.5",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.5"
     },
     {
       "question": "Blockchain improves supply chain by:",
@@ -2076,10 +1998,7 @@
       "correct": 0,
       "correctText": "Set of transactions",
       "explanation": "A block contains a set of transactions that have been verified and grouped together. In addition to transactions, each block contains a block header with metadata including: the hash of the previous block (linking blocks together), a timestamp, a nonce (used in mining), and the Merkle root (a hash of all transactions in the block). Once a block is full or a certain time has passed, it's added to the blockchain through the consensus mechanism, becoming a permanent, immutable part of the ledger.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Each block contains previous block's:",
@@ -2092,10 +2011,7 @@
       "correct": 1,
       "correctText": "Hash",
       "explanation": "Each block contains the previous block's hash in its header, creating a cryptographic link that forms the blockchain. This previous block hash acts as a reference to the preceding block, creating an unbreakable chain from the Genesis block to the most recent block. If any data in a previous block is altered, its hash changes, breaking the link with subsequent blocks. This chaining mechanism ensures data integrity and makes tampering immediately detectable and computationally infeasible to execute successfully.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain storage requirement increases with:",
@@ -2124,10 +2040,7 @@
       "correct": 0,
       "correctText": "Majority control network",
       "explanation": "51% attack occurs when a single entity or group gains control of more than 50% of the blockchain's mining power or staked cryptocurrency. With majority control, attackers can prevent new transactions from being confirmed, reverse their own transactions (double-spending), and prevent other miners from mining valid blocks. Smaller blockchains are more vulnerable to such attacks.",
-      "subtopic": "3.6",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.6"
     },
     {
       "question": "Blockchain adoption challenge:",
@@ -2188,10 +2101,7 @@
       "correct": 0,
       "correctText": "Availability",
       "explanation": "Distributed ledger increases reliability by maintaining multiple copies of the blockchain across many nodes. If some nodes fail, are compromised, or provide incorrect information, the network continues operating normally using the remaining honest nodes. Consensus mechanisms ensure that even if some nodes are faulty or malicious, the network can identify and reject incorrect data. This distributed architecture eliminates single points of failure, ensures high availability, and makes the system highly resilient to attacks, outages, and failures, creating a reliable, fault-tolerant infrastructure.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Smart contract vulnerability can lead to:",
@@ -2374,10 +2284,7 @@
       "correct": 0,
       "correctText": "Record transaction time",
       "explanation": "Timestamps record the exact time when a block was created and added to the blockchain. This establishes a chronological order of transactions, helps prevent double-spending by determining transaction sequence, enables audit trails for compliance, and helps nodes synchronize and validate the blockchain state across the distributed network.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "A hash function produces:",
@@ -2390,10 +2297,7 @@
       "correct": 0,
       "correctText": "Fixed length output",
       "explanation": "Hash functions produce fixed-length output regardless of input size - whether hashing a single character or an entire book, the output is always the same length (e.g., SHA-256 always produces 256 bits). This property, combined with determinism and the avalanche effect, makes hash functions ideal for creating unique block identifiers and ensuring data integrity in blockchain.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "If any data inside block changes:",
@@ -2547,10 +2451,7 @@
       "correct": 0,
       "correctText": "Block validation",
       "explanation": "Proof of Work is used for block validation in blockchain networks like Bitcoin. Miners compete to solve complex cryptographic puzzles by performing massive computational work. The first miner to find a valid solution gets to add the next block and receives rewards. This computationally intensive process secures the network and makes it economically infeasible for attackers to alter the blockchain.",
-      "subtopic": "3.2",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.2"
     },
     {
       "question": "High energy consumption is associated with:",
@@ -2592,10 +2493,7 @@
       "correct": 0,
       "correctText": "Programming languages",
       "explanation": "Smart contracts are coded using programming languages specifically designed for blockchain development. Ethereum uses Solidity (most popular), Vyper, and other languages. Other blockchains use different languages: Cardano uses Plutus, Polkadot uses Ink!. These languages enable developers to write self-executing contracts with 'if/when...then...' logic that runs on the blockchain.",
-      "subtopic": "3.5",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.5"
     },
     {
       "question": "Cryptocurrency transactions are:",
@@ -2608,10 +2506,7 @@
       "correct": 0,
       "correctText": "Peer-to-peer",
       "explanation": "Cryptocurrency transactions are peer-to-peer, occurring directly between participants without intermediaries like banks. Users send cryptocurrency directly from their wallet to another user's wallet address. The transaction is broadcast to the blockchain network, verified by nodes through consensus mechanisms, and recorded on the immutable ledger - eliminating intermediaries and reducing costs.",
-      "subtopic": "3.5",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.5"
     },
     {
       "question": "Blockchain in healthcare ensures:",
@@ -2704,10 +2599,7 @@
       "correct": 0,
       "correctText": "Ledger grows continuously",
       "explanation": "Storage issue arises because the ledger grows continuously as new blocks are added to the blockchain. Every transaction ever made is permanently stored, and full nodes must maintain a complete copy of the entire blockchain history. Bitcoin's blockchain exceeds 400 GB and grows by ~50 GB per year, requiring significant storage capacity and potentially limiting who can run full nodes.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "51% attack occurs when:",
@@ -2720,10 +2612,7 @@
       "correct": 0,
       "correctText": "Majority control network",
       "explanation": "51% attack occurs when a single entity or group gains control of more than 50% of the blockchain's mining power or staked cryptocurrency. With majority control, attackers can prevent new transactions from being confirmed, reverse their own transactions (double-spending), and prevent other miners from mining valid blocks. Smaller blockchains are more vulnerable to such attacks.",
-      "subtopic": "3.6",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.6"
     },
     {
       "question": "Private key theft leads to:",
@@ -2736,10 +2625,7 @@
       "correct": 0,
       "correctText": "Security breach",
       "explanation": "Private key theft leads to security breach and complete loss of funds because private keys control access to cryptocurrency wallets. Whoever possesses the private key has full control over the wallet's funds and can transfer them irreversibly. Unlike traditional banking, blockchain transactions cannot be reversed, and there's no central authority to recover stolen funds - highlighting the critical importance of secure private key storage.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain complexity limits:",
@@ -2768,10 +2654,7 @@
       "correct": 0,
       "correctText": "Legal uncertainty",
       "explanation": "Regulatory issues cause legal uncertainty because governments worldwide have inconsistent, unclear, or conflicting regulations regarding blockchain and cryptocurrencies. Some countries embrace blockchain, others ban it, and many have evolving policies. This uncertainty creates legal risks for businesses, complicates cross-border operations, discourages institutional investment, and slows innovation. Issues include cryptocurrency classification (security vs. commodity), taxation, AML/KYC compliance, data privacy, smart contract legality, and consumer protection. Clear, harmonized regulations are needed for widespread blockchain adoption.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain transparency may cause:",
@@ -2877,10 +2760,7 @@
       "correct": 0,
       "correctText": "Reliability",
       "explanation": "Distributed ledger increases reliability by maintaining multiple copies of the blockchain across many nodes. If some nodes fail, are compromised, or provide incorrect information, the network continues operating normally using the remaining honest nodes. Consensus mechanisms ensure that even if some nodes are faulty or malicious, the network can identify and reject incorrect data. This distributed architecture eliminates single points of failure, ensures high availability, and makes the system highly resilient to attacks, outages, and failures, creating a reliable, fault-tolerant infrastructure.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain data once added becomes:",
@@ -2909,10 +2789,7 @@
       "correct": 0,
       "correctText": "Direct node interaction",
       "explanation": "Peer-to-peer network means direct node interaction without central servers or intermediaries. In blockchain's P2P network, every node is equal and can communicate directly with other nodes, sharing data, validating transactions, and propagating blocks. This eliminates the need for central servers, reduces costs, prevents single points of failure, and enables censorship resistance. P2P networking is fundamental to blockchain's decentralized architecture, allowing trustless transactions between strangers and creating a resilient, distributed network where no single entity controls the flow of information.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain is suitable for:",
@@ -2970,10 +2847,7 @@
       "correct": 0,
       "correctText": "Authentication",
       "explanation": "Digital signatures ensure authentication by verifying that a transaction was created by the owner of a private key and hasn't been tampered with. When a user signs a transaction with their private key, others can verify the signature using the corresponding public key. This proves the transaction's origin and integrity without revealing the private key. Digital signatures prevent unauthorized transactions, ensure non-repudiation (users can't deny sending transactions), authenticate users, and secure blockchain communications, making them fundamental to blockchain security.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain increases transparency by:",
@@ -3018,10 +2892,7 @@
       "correct": 0,
       "correctText": "Bitcoin",
       "explanation": "Bitcoin is the prime example of cryptocurrency - the first and most well-known decentralized digital currency created by Satoshi Nakamoto in 2009. Bitcoin operates on a public blockchain using Proof of Work consensus, has a fixed supply of 21 million coins, and enables peer-to-peer transactions without banks or intermediaries. Other cryptocurrency examples include Ethereum (smart contracts platform), Litecoin (faster transactions), Ripple (cross-border payments), and thousands of others. All cryptocurrencies use blockchain technology and cryptography for security.",
-      "subtopic": "3.5",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.5"
     },
     {
       "question": "Blockchain reduces transaction time by:",
@@ -3066,10 +2937,7 @@
       "correct": 0,
       "correctText": "Verifying transactions",
       "explanation": "Mining is the process of verifying transactions and adding new blocks to the blockchain in Proof of Work systems. Miners collect pending transactions, verify them against network rules, compete to solve complex cryptographic puzzles by performing massive computational work, and broadcast new blocks to the network. The first miner to find a valid solution gets to add the block and receives block rewards and transaction fees. Mining secures the network, prevents double-spending, maintains consensus, and creates new cryptocurrency.",
-      "subtopic": "3.1",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.1"
     },
     {
       "question": "Blockchain security is based on:",

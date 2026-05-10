@@ -78,10 +78,7 @@
       "correct": 1,
       "correctText": "Natural Language Processing",
       "explanation": "NLP = Natural Language Processing. It's the AI branch enabling computers to understand, interpret, and generate human language (speech and text).",
-      "subtopic": "1.2",
-      "tags": [
-        "ai"
-      ]
+      "subtopic": "1.2"
     },
     {
       "question": "Machine Learning is a subset of:",
@@ -359,7 +356,6 @@
       "explanation": "Deep Learning uses artificial neural networks with multiple hidden layers (hence 'deep') to model complex patterns in data. Unlike traditional ML algorithms like decision trees, neural networks can learn hierarchical feature representations automatically from raw input.",
       "subtopic": "1.2",
       "tags": [
-        "ml",
         "dl"
       ]
     },
@@ -416,10 +412,7 @@
       "correct": 1,
       "correctText": "Extracting insights from data",
       "explanation": "Data Science extracts knowledge and actionable insights from structured and unstructured data using a blend of statistics, ML, domain expertise, and data visualization.",
-      "subtopic": "1.2",
-      "tags": [
-        "ml"
-      ]
+      "subtopic": "1.2"
     },
     {
       "question": "Self-attention is part of:",
@@ -545,10 +538,7 @@
       "correct": 1,
       "correctText": "Artificial Narrow Intelligence",
       "explanation": "ANI = Artificial Narrow Intelligence — AI designed for specific tasks like voice assistants, recommendation systems, or image recognition. It cannot generalize beyond its trained domain.",
-      "subtopic": "1.1",
-      "tags": [
-        "ai"
-      ]
+      "subtopic": "1.1"
     },
     {
       "question": "Which technology enables machines to understand and generate human language?",
@@ -594,7 +584,6 @@
       "subtopic": "1.2",
       "explanation": "Deep Learning automatically extracts relevant features from raw data — a major advantage over traditional ML which requires manual feature engineering by domain experts. The deep network's successive layers learn increasingly complex representations, from basic edges in early layers to high-level concepts in deeper ones.",
       "tags": [
-        "ml",
         "dl"
       ]
     },
@@ -643,8 +632,7 @@
       "subtopic": "1.1",
       "explanation": "AI/ML is widely used in finance for fraud detection — analyzing millions of transactions in real time to identify suspicious patterns that humans would miss. Models learn from historical fraud cases to flag anomalies in spending behavior, transaction locations, and amounts instantly.",
       "tags": [
-        "ai",
-        "ml"
+        "ai"
       ]
     },
     {
@@ -806,10 +794,7 @@
       "correct": 0,
       "correctText": "Artificial General Intelligence",
       "subtopic": "1.1",
-      "explanation": "AGI (Artificial General Intelligence) refers to a hypothetical AI system that can understand, learn, and apply intelligence across any cognitive task at or above human level. Unlike Narrow AI which excels at specific tasks, AGI would have flexible, transferable intelligence — but it does not yet exist.",
-      "tags": [
-        "ai"
-      ]
+      "explanation": "AGI (Artificial General Intelligence) refers to a hypothetical AI system that can understand, learn, and apply intelligence across any cognitive task at or above human level. Unlike Narrow AI which excels at specific tasks, AGI would have flexible, transferable intelligence — but it does not yet exist."
     },
     {
       "question": "ASI refers to:",
@@ -822,10 +807,7 @@
       "correct": 1,
       "correctText": "Artificial Super Intelligence",
       "subtopic": "1.1",
-      "explanation": "ASI (Artificial Super Intelligence) refers to a hypothetical AI that would surpass human intelligence in every domain — creativity, social skills, general reasoning, and scientific innovation. While Narrow AI exists today, ASI remains theoretical and raises significant ethical and existential questions.",
-      "tags": [
-        "ai"
-      ]
+      "explanation": "ASI (Artificial Super Intelligence) refers to a hypothetical AI that would surpass human intelligence in every domain — creativity, social skills, general reasoning, and scientific innovation. While Narrow AI exists today, ASI remains theoretical and raises significant ethical and existential questions."
     },
     {
       "question": "Which type of AI can perform only a specific task?",
@@ -1132,10 +1114,7 @@
       "correct": 0,
       "correctText": "Computer Vision",
       "subtopic": "1.2",
-      "explanation": "Image recognition is a core Computer Vision task where AI identifies and classifies objects, people, or patterns in images. Using convolutional neural networks (CNNs), the system learns to detect features like edges, shapes, and textures, building up to recognize complex objects like faces, cars, or medical conditions.",
-      "tags": [
-        "ai"
-      ]
+      "explanation": "Image recognition is a core Computer Vision task where AI identifies and classifies objects, people, or patterns in images. Using convolutional neural networks (CNNs), the system learns to detect features like edges, shapes, and textures, building up to recognize complex objects like faces, cars, or medical conditions."
     },
     {
       "question": "Spam filtering is:",
@@ -1211,8 +1190,7 @@
       "subtopic": "1.4",
       "explanation": "AI-powered anomaly detection is widely used in cybersecurity — ML models learn normal network traffic and user behavior patterns, then flag deviations that could indicate intrusions, malware, or data breaches. This real-time detection catches threats that traditional rule-based systems would miss.",
       "tags": [
-        "ai",
-        "ml"
+        "ai"
       ]
     },
     {
@@ -1228,7 +1206,6 @@
       "subtopic": "1.2",
       "explanation": "Unlike traditional ML which requires manual feature engineering, deep learning automatically learns and extracts features from raw data through its layered architecture. Each successive layer learns increasingly abstract representations — from edges to shapes to objects — eliminating the need for domain-specific hand-crafted features.",
       "tags": [
-        "ml",
         "dl"
       ]
     },
@@ -1417,10 +1394,7 @@
       "correct": 0,
       "correctText": "NLP",
       "subtopic": "1.1",
-      "explanation": "Linguistics helps AI by providing the understanding of language structure — syntax, semantics, pragmatics, and morphology — that powers NLP systems. Knowledge of grammar rules, word meanings, and conversational context enables AI to parse, understand, and generate human language accurately.",
-      "tags": [
-        "ai"
-      ]
+      "explanation": "Linguistics helps AI by providing the understanding of language structure — syntax, semantics, pragmatics, and morphology — that powers NLP systems. Knowledge of grammar rules, word meanings, and conversational context enables AI to parse, understand, and generate human language accurately."
     },
     {
       "question": "AI in retail is used for:",
@@ -1435,8 +1409,7 @@
       "subtopic": "1.1",
       "explanation": "AI in retail powers recommendation systems that analyze customer behavior, purchase history, and preferences to deliver personalized product suggestions. These ML-driven systems (used by Amazon, Netflix, Spotify) increase engagement and sales by showing users items they're most likely to want.",
       "tags": [
-        "ai",
-        "ml"
+        "ai"
       ]
     },
     {

@@ -4649,7 +4649,6 @@
       "unit": 1,
       "subtopic": "1.2",
       "tags": [
-        "ai",
         "ml"
       ]
     },
@@ -4803,7 +4802,6 @@
       "unit": 1,
       "subtopic": "1.2",
       "tags": [
-        "ml",
         "dl"
       ]
     },
@@ -5084,10 +5082,7 @@
       "correctText": "Hidden layers.",
       "explanation": "Hidden layers are the intermediate layers between the input and output layers in a neural network. They perform the bulk of computational work — transforming inputs through weighted connections and activation functions. Deep learning models have many hidden layers, enabling them to learn increasingly abstract representations.",
       "unit": 1,
-      "subtopic": "1.2",
-      "tags": [
-        "dl"
-      ]
+      "subtopic": "1.2"
     },
     {
       "question": "Neural networks can adapt and recognize patterns better than ......",
@@ -5241,8 +5236,7 @@
       "unit": 1,
       "subtopic": "1.3",
       "tags": [
-        "ai",
-        "ml"
+        "ai"
       ]
     },
     {
@@ -5257,12 +5251,7 @@
       "correctText": "Physical and digital environments",
       "explanation": "Immersive technology merges physical and digital environments to create experiences where users feel present within a simulated or augmented world. This blending enables interaction with digital content as if it were part of the real world — forming the foundation of VR, AR, and MR experiences.",
       "unit": 4,
-      "subtopic": "4.1",
-      "tags": [
-        "vr",
-        "ar",
-        "mr"
-      ]
+      "subtopic": "4.1"
     },
     {
       "question": "The main purpose of immersive technology is to ......",
@@ -5435,12 +5424,7 @@
       "correctText": "The user feels part of the virtual world",
       "explanation": "'Presence' in immersive technology refers to the psychological sensation of actually being inside the virtual environment — forgetting the physical surroundings. This feeling of 'being there' is the hallmark of successful VR/AR/MR experiences and is achieved through realistic visuals, spatial audio, interaction, and low latency.",
       "unit": 4,
-      "subtopic": "4.1",
-      "tags": [
-        "vr",
-        "ar",
-        "mr"
-      ]
+      "subtopic": "4.1"
     },
     {
       "question": "Which of the following is a wearable haptic device?",
@@ -5581,10 +5565,7 @@
       "correctText": "Gaming",
       "explanation": "The gaming industry was among the first to widely adopt immersive technology. VR gaming headsets like Oculus Rift and HTC Vive popularized consumer VR. Games like Beat Saber, Half-Life: Alyx, and Resident Evil 7 VR demonstrated immersive entertainment's commercial viability and drove hardware adoption.",
       "unit": 4,
-      "subtopic": "4.2",
-      "tags": [
-        "vr"
-      ]
+      "subtopic": "4.2"
     },
     {
       "question": "Immersive technologies engage which senses?",
@@ -5598,11 +5579,7 @@
       "correctText": "All of the above",
       "explanation": "Advanced immersive technologies can engage all human senses: sight (VR/AR displays), sound (spatial 3D audio), touch (haptic gloves/suits), balance (motion platforms), and even taste and smell (experimental digital taste interfaces and scent emitters). Multi-sensory engagement creates the deepest sense of presence.",
       "unit": 4,
-      "subtopic": "4.1",
-      "tags": [
-        "vr",
-        "ar"
-      ]
+      "subtopic": "4.1"
     },
     {
       "question": "Microsoft HoloLens is an example of ......",
@@ -5718,11 +5695,7 @@
       "correctText": "Virtual previews of destinations",
       "explanation": "Immersive technology in tourism offers virtual previews of destinations — 360-degree hotel tours, VR experiences of attractions, and AR historical reconstructions. These previews help travelers make informed booking decisions and build excitement, while virtual tours of inaccessible locations expand tourism's reach.",
       "unit": 4,
-      "subtopic": "4.2",
-      "tags": [
-        "vr",
-        "ar"
-      ]
+      "subtopic": "4.2"
     },
     {
       "question": "The military uses VR and AR to ......",
@@ -5771,11 +5744,7 @@
       "correctText": "Viewing 3D models before construction",
       "explanation": "Architects and clients use VR/AR to visualize 3D building models at scale before construction begins. Stakeholders can virtually walk through spaces, evaluate designs, identify issues early, and make changes at minimal cost. This reduces expensive change orders and ensures the final build matches expectations.",
       "unit": 4,
-      "subtopic": "4.2",
-      "tags": [
-        "vr",
-        "ar"
-      ]
+      "subtopic": "4.2"
     },
     {
       "question": "AR glasses are used for ......",
@@ -6060,10 +6029,7 @@
       "correctText": "Entanglement",
       "explanation": "Quantum entanglement is the phenomenon where linked qubits instantaneously affect each other regardless of distance — measuring one entangled qubit immediately determines the state of its partner. Einstein called it 'spooky action at a distance.' Entanglement is a key resource for quantum communication, teleportation, and parallel computation.",
       "unit": 4,
-      "subtopic": "4.4",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.4"
     },
     {
       "question": "Which area can quantum computing revolutionize?",
@@ -6298,10 +6264,7 @@
       "correctText": "Consensus protocols",
       "explanation": "Consensus protocols (like Proof of Work, Proof of Stake, Practical Byzantine Fault Tolerance) ensure all distributed copies of the blockchain remain consistent. They define rules for how nodes agree on which transactions are valid and which block gets added next — maintaining ledger integrity across the decentralized network.",
       "unit": 3,
-      "subtopic": "3.2",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.2"
     },
     {
       "question": "Which system has a single point of failure?",
@@ -6496,10 +6459,7 @@
       "correctText": "'if/when...then' logic.",
       "explanation": "Smart contracts are self-executing programs based on 'if/when...then' logic — automatically executing actions when predefined conditions are met. For example: 'IF payment received, THEN transfer property ownership.' They eliminate intermediaries, reduce costs, and ensure trustless execution on blockchain platforms like Ethereum.",
       "unit": 3,
-      "subtopic": "3.5",
-      "tags": [
-        "blockchain"
-      ]
+      "subtopic": "3.5"
     },
     {
       "question": "Which blockchain consensus reduces energy consumption compared to Proof of Work?",
@@ -7119,10 +7079,7 @@
       "correctText": "EnCase",
       "explanation": "EnCase (by OpenText) is a widely used commercial digital forensics tool for imaging, analyzing, and reporting on digital evidence. It creates forensic images, recovers deleted files, searches across multiple devices, and generates court-admissible reports. Other popular tools include FTK, Autopsy, and Cellebrite.",
       "unit": 5,
-      "subtopic": "5.1",
-      "tags": [
-        "df"
-      ]
+      "subtopic": "5.1"
     },
     {
       "question": "Forensic triage is performed to ......",
@@ -7254,10 +7211,7 @@
       "correctText": "identify open ports, services, and weak points.",
       "explanation": "Scanning is the second phase of ethical hacking — using tools like Nmap to identify live hosts, open ports, running services, and their versions. This reveals potential entry points and weak points in the target's network. Scanning bridges the gap between information gathering and actual exploitation.",
       "unit": 5,
-      "subtopic": "5.5",
-      "tags": [
-        "eh"
-      ]
+      "subtopic": "5.5"
     },
     {
       "question": "Enumeration phase involves ......",
@@ -7285,10 +7239,7 @@
       "correctText": "maintaining access, covering tracks, and extracting data.",
       "explanation": "Post-exploitation occurs after gaining initial access — the attacker establishes persistence (backdoors, new accounts), escalates privileges, extracts valuable data, and covers tracks to avoid detection. In ethical hacking, this phase demonstrates the full impact of a breach and identifies all compromised assets.",
       "unit": 5,
-      "subtopic": "5.4",
-      "tags": [
-        "eh"
-      ]
+      "subtopic": "5.4"
     },
     {
       "question": "Black Hat hackers are ......",
@@ -7573,7 +7524,6 @@
       "unit": 2,
       "subtopic": "2.4",
       "tags": [
-        "iot",
         "5g"
       ]
     },
@@ -7608,7 +7558,6 @@
       "unit": 2,
       "subtopic": "2.4",
       "tags": [
-        "iot",
         "5g"
       ]
     },
@@ -7764,8 +7713,7 @@
       "unit": 2,
       "subtopic": "2.1",
       "tags": [
-        "iot",
-        "5g"
+        "iot"
       ]
     },
     {
@@ -7901,8 +7849,7 @@
       "unit": 2,
       "subtopic": "2.1",
       "tags": [
-        "iot",
-        "ml"
+        "iot"
       ]
     },
     {
@@ -7919,9 +7866,7 @@
       "unit": 2,
       "subtopic": "2.5",
       "tags": [
-        "iot",
-        "ai",
-        "ml"
+        "iot"
       ]
     },
     {
@@ -8038,10 +7983,7 @@
       "correctText": "MQTT protocol",
       "explanation": "MQTT (Message Queuing Telemetry Transport) is a logical/ software design element — a messaging protocol that defines how IoT devices communicate. ESP32 boards, temperature sensors, and RFID tags are physical hardware components. Logical design encompasses protocols, data formats, APIs, and software architecture.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "IoT architecture commonly uses how many layers?",
@@ -8123,11 +8065,7 @@
       "correctText": "Wi-Fi",
       "explanation": "Wi-Fi is a communication technology used in IoT physical design for wireless data transmission. It provides relatively high bandwidth and range for applications like smart home devices, cameras, and appliances. Other IoT wireless technologies include Bluetooth, LoRaWAN, Zigbee, Z-Wave, and cellular (4G/5G/NB-IoT).",
       "unit": 2,
-      "subtopic": "2.2",
-      "tags": [
-        "iot",
-        "5g"
-      ]
+      "subtopic": "2.2"
     },
     {
       "question": "IoT logical design uses functional blocks such as ......",
@@ -8175,10 +8113,7 @@
       "correctText": "Sensors",
       "explanation": "Sensors are core physical design components — tangible hardware devices that detect and measure physical properties. Cloud APIs and data warehouses are software/cloud components. While wires are physical, they are infrastructure rather than IoT-specific components. Physical design focuses on the actual devices and their specifications.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "The main job of the IoT communication block is ......",
@@ -8243,10 +8178,7 @@
       "correctText": "Temperature sensor",
       "explanation": "A temperature sensor is a sensing component that detects and measures temperature — converting thermal energy into electrical signals. LEDs (light output), speakers (audio output), and switches (input/control) are not sensing components. Common IoT sensors also include motion, humidity, light, pressure, and gas sensors.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "Which of these is a sensing component?",
@@ -8373,10 +8305,7 @@
       "correctText": "Output actuator.",
       "explanation": "A relay is an output actuator — an electrically operated switch that controls high-power circuits using low-power signals. IoT microcontrollers use relays to turn on/off appliances, lights, motors, and industrial equipment that require more power than the microcontroller can directly provide.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "Which sensor is used for distance measurement in IoT?",
@@ -8435,10 +8364,7 @@
       "correctText": "Relay.",
       "explanation": "A relay allows switching of high-voltage devices using low-voltage control signals from microcontrollers. It electrically isolates the control circuit from the high-power circuit — enabling IoT systems to safely control AC appliances, industrial machinery, and other high-voltage equipment.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "A thermistor is used for ......",
@@ -8452,10 +8378,7 @@
       "correctText": "Temperature measurement.",
       "explanation": "A thermistor is a temperature-sensitive resistor whose electrical resistance changes predictably with temperature. NTC (Negative Temperature Coefficient) thermistors decrease resistance as temperature rises — commonly used in IoT for temperature monitoring, battery management, 3D printer hotend control, and HVAC systems.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "A temperature measurement sensor is ......",
@@ -8469,10 +8392,7 @@
       "correctText": "DHT11",
       "explanation": "DHT11 is a basic digital temperature and humidity sensor popular in IoT projects due to its low cost and simple interface. It provides calibrated digital output with accuracy of +/- 2°C temperature and +/- 5% humidity — suitable for weather stations, indoor climate monitoring, and agricultural applications.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "Which sensor is used to detect fire?",
@@ -8514,10 +8434,7 @@
       "correctText": "Sound sensor",
       "explanation": "A sound sensor (microphone module) detects sound levels and intensity — converting acoustic waves into electrical signals. In IoT, sound sensors enable applications like noise pollution monitoring, voice-activated controls, glass break detection in security systems, and baby monitors.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "The BMP180 sensor is used for ......",
@@ -8545,10 +8462,7 @@
       "correctText": "Light sensing.",
       "explanation": "A photodiode converts light into electrical current — used for light sensing in IoT applications like automatic street lighting (turning on when dark), camera exposure control, smoke detection (measuring light scattering), and optical communication systems (Li-Fi).",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "Which of these is an example of an actuator used in home automation?",
@@ -8562,10 +8476,7 @@
       "correctText": "Electric door lock.",
       "explanation": "An electric door lock is an actuator used in smart home automation — it receives electronic signals to physically lock or unlock doors. Controlled via smartphones, keypads, or biometric systems, smart locks are a core component of home security systems and exemplify how IoT actuators create physical world changes.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "A flow sensor is used to measure ......",
@@ -8579,10 +8490,7 @@
       "correctText": "Fluid movement.",
       "explanation": "A flow sensor measures the rate of fluid (liquid or gas) movement through a pipe or channel. Types include turbine flow meters, ultrasonic flow sensors, and thermal mass flow meters. In IoT, they're used for water management, HVAC systems, industrial process control, and leak detection.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "Which sensor is used for distance measurement in IoT?",
@@ -8613,10 +8521,7 @@
       "correctText": "Weight / force",
       "explanation": "Load cells are transducers that convert weight or force into electrical signals. They use strain gauges that deform under load, changing electrical resistance proportionally. In IoT, load cells enable smart scales, inventory weight monitoring, industrial weighing systems, and structural load monitoring.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "Which of these is NOT a sensor?",
@@ -8689,10 +8594,7 @@
       "correctText": "Detecting movement in machines.",
       "explanation": "Vibration sensors detect mechanical vibrations in machines and structures — monitoring equipment health, predicting failures, and preventing catastrophic breakdowns. In industrial IoT (IIoT), vibration analysis is a cornerstone of predictive maintenance, detecting bearing wear, imbalance, and misalignment before they cause damage.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "A capacitive soil moisture sensor ......",
@@ -8768,10 +8670,7 @@
       "correctText": "Solenoid valve",
       "explanation": "A solenoid valve is the ideal actuator for controlling water flow in smart irrigation systems. When energized by an IoT controller, it opens or closes to allow/block water flow through pipes. Combined with soil moisture sensors and weather data, solenoid valves enable precise, automated water management.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "A Hall Effect sensor is used to measure ......",
@@ -8785,10 +8684,7 @@
       "correctText": "Magnetic field",
       "explanation": "A Hall Effect sensor measures magnetic fields — detecting the presence, strength, and polarity of magnetic fields through the Hall Effect phenomenon. They're used in IoT for position sensing, speed detection, current sensing (without contact), door/window open detection, and brushless motor commutation.",
       "unit": 2,
-      "subtopic": "2.3",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.3"
     },
     {
       "question": "5G networks are mainly designed to support ......",
@@ -8822,7 +8718,6 @@
       "unit": 2,
       "subtopic": "2.4",
       "tags": [
-        "ar",
         "5g"
       ]
     },
@@ -8876,7 +8771,6 @@
       "unit": 2,
       "subtopic": "2.4",
       "tags": [
-        "iot",
         "5g"
       ]
     },
@@ -9339,9 +9233,7 @@
       "unit": 2,
       "subtopic": "2.3",
       "tags": [
-        "iot",
-        "ai",
-        "ml"
+        "iot"
       ]
     },
     {
@@ -9358,9 +9250,7 @@
       "unit": 2,
       "subtopic": "2.3",
       "tags": [
-        "iot",
-        "ai",
-        "ml"
+        "iot"
       ]
     },
     {
@@ -9411,8 +9301,7 @@
       "unit": 2,
       "subtopic": "2.5",
       "tags": [
-        "iot",
-        "ml"
+        "iot"
       ]
     },
     {
@@ -9481,8 +9370,7 @@
       "unit": 2,
       "subtopic": "2.5",
       "tags": [
-        "iot",
-        "ml"
+        "iot"
       ]
     },
     {
@@ -9601,7 +9489,6 @@
       "unit": 2,
       "subtopic": "2.1",
       "tags": [
-        "iot",
         "vr",
         "blockchain"
       ]
@@ -9683,10 +9570,7 @@
       "correctText": "Low Power Wide Area Network",
       "explanation": "LPWAN (Low Power Wide Area Network) refers to wireless technologies designed for long-range communication at low bit rates with minimal power consumption. Technologies like LoRaWAN, Sigfox, and NB-IoT enable IoT devices to transmit small amounts of data over kilometers while operating on batteries for 10+ years.",
       "unit": 2,
-      "subtopic": "2.1",
-      "tags": [
-        "iot"
-      ]
+      "subtopic": "2.1"
     },
     {
       "question": "Which LPWAN technology operates in unlicensed spectrum?",
@@ -9720,7 +9604,6 @@
       "unit": 2,
       "subtopic": "2.4",
       "tags": [
-        "iot",
         "5g"
       ]
     },
@@ -9738,7 +9621,6 @@
       "unit": 2,
       "subtopic": "2.4",
       "tags": [
-        "iot",
         "5g"
       ]
     },
@@ -9889,10 +9771,7 @@
       "correctText": "0, 1, or both simultaneously.",
       "explanation": "A qubit differs from a classical bit because it can exist in superposition — being 0, 1, or both simultaneously until measured. This property enables quantum computers to process many possibilities at once. Entanglement (correlated qubit states) and interference further amplify quantum computing's computational power.",
       "unit": 4,
-      "subtopic": "4.4",
-      "tags": [
-        "quantum"
-      ]
+      "subtopic": "4.4"
     }
   ]
 }
