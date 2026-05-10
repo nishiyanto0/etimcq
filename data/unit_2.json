@@ -4,15 +4,15 @@
   "totalQuestions": 450,
   "questions": [
     {
-      "question": "Which of the following is a key characteristic of 5G that enables real-time",
+      "question": "Which of the following is a key characteristic of 5G that enables real-time applications like autonomous driving?",
       "options": [
-        "pplications like autonomous driving?",
         "High power consumption",
         "Ultra-low latency",
-        "Limited device connectivity"
+        "Limited device connectivity",
+        "Low bandwidth"
       ],
       "correct": 1,
-      "correctText": "High power consumption",
+      "correctText": "Ultra-low latency",
       "explanation": "Ultra-low latency is a defining feature of 5G that allows data to be transmitted with minimal delay, which is essential for real-time applications such as autonomous vehicles and remote surgery.",
       "subtopic": "2.4"
     },
@@ -238,15 +238,15 @@
       "subtopic": "2.1"
     },
     {
-      "question": "Smart watches, fitness trackers, and medical sensors fall under which IoT",
+      "question": "Smart watches, fitness trackers, and medical sensors fall under which IoT application area?",
       "options": [
-        "pplication area?",
+        "Agriculture",
         "Industrial automation",
         "Healthcare",
         "Transport"
       ],
-      "correct": 1,
-      "correctText": "Industrial automation",
+      "correct": 2,
+      "correctText": "Healthcare",
       "explanation": "Wearable devices and medical sensors are used to monitor health parameters, making them part of healthcare IoT applications.",
       "subtopic": "2.3"
     },

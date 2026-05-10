@@ -167,7 +167,10 @@
 
     <div class="quiz-body">
       <div class="question-card" id="question-card">
-        <button class="revise-btn" id="revise-btn" title="Mark for Revision">🔖</button>
+        <div class="q-actions-floating">
+          <button class="revise-btn" id="revise-btn" title="Mark for Revision">🔖</button>
+          <button class="report-btn" id="report-btn" title="Report Issue" onclick="handleReportQuestion()">🚩</button>
+        </div>
         <div class="qcard-num" id="qcard-num">01</div>
         <p class="qcard-text" id="qcard-text"></p>
       </div>

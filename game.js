@@ -1507,6 +1507,54 @@ function goHome() {
   showHome();
 }
 
+async function handleReportQuestion() {
+  const currentQ = state.questions[state.current];
+  if (!currentQ) return;
+
+  const btn = document.getElementById('report-btn');
+  btn.style.pointerEvents = 'none';
+  btn.style.opacity = '0.5';
+  btn.textContent = '⏳';
+
+  const reportData = {
+    player_name: getPlayerName() || 'Anonymous',
+    question_text: currentQ.question,
+    unit_id: state.unitId,
+    question_data: {
+      options: currentQ.options,
+      correct: currentQ.correct,
+      explanation: currentQ.explanation,
+      niraliUnit: state.niraliUnitId,
+      subtopic: state.subtopic
+    }
+  };
+
+  try {
+    const { error } = await insforge.database.from('reports').insert([reportData]);
+    if (error) throw error;
+    
+    btn.textContent = '✅';
+    setTimeout(() => {
+      btn.textContent = '🚩';
+      btn.style.pointerEvents = 'all';
+      btn.style.opacity = '1';
+    }, 2000);
+    
+    alert('Thank you! This question has been reported for cross-checking.');
+  } catch (err) {
+    console.error('Failed to report question:', err);
+    btn.textContent = '❌';
+    setTimeout(() => {
+      btn.textContent = '🚩';
+      btn.style.pointerEvents = 'all';
+      btn.style.opacity = '1';
+    }, 2000);
+    alert('Failed to send report. Please try again later.');
+  }
+}
+
+window.handleReportQuestion = handleReportQuestion;
+
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
   const dropdown = document.getElementById('quiz-dropdown');
