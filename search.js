@@ -31,7 +31,8 @@ const SEARCH_CONFIG = {
     'it act': 'information technology act',
     'ccpwc': 'cyber crime prevention against women and children',
     'dpdp': 'digital personal data protection',
-    'cert-in': 'computer emergency response team india'
+    'cert-in': 'computer emergency response team india',
+    'cert': 'cert-in'
   },
   TOPIC_UNITS: {
     'ai': 1, 'artificial intelligence': 1, 'ml': 1, 'machine learning': 1, 'dl': 1, 'deep learning': 1, 'generative ai': 1, 'gen ai': 1, 'gpt': 1, 'transformer': 1,

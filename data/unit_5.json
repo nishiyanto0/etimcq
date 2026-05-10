@@ -642,7 +642,8 @@
       "explanation": "CERT-In (Indian Computer Emergency Response Team) is the national nodal agency responsible for collecting, analyzing, and disseminating information on cyber incidents, issuing alerts and advisories, and coordinating incident response across India's cyberspace.",
       "subtopic": "5.1",
       "tags": [
-        "cert-in"
+        "cert-in",
+        "cert"
       ]
     },
     {
@@ -1196,7 +1197,8 @@
       "explanation": "CERT-In stands for Computer Emergency Response Team - India, the nationally designated organization for cybersecurity incident response, threat intelligence sharing, and coordination of cybersecurity efforts across government and private sectors in India.",
       "subtopic": "5.1",
       "tags": [
-        "cert-in"
+        "cert-in",
+        "cert"
       ]
     },
     {
@@ -1772,7 +1774,8 @@
       "explanation": "CERT-In provides incident response services including analyzing and responding to cyber threats, issuing security advisories and vulnerability notes, coordinating incident handling across organizations, and serving as the national point of contact for international cybersecurity cooperation.",
       "subtopic": "5.1",
       "tags": [
-        "cert-in"
+        "cert-in",
+        "cert"
       ]
     },
     {

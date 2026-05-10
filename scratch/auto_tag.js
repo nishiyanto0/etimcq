@@ -19,6 +19,7 @@ const MAPPINGS = {
   'ccpwc': 'cyber crime prevention against women and children',
   'dpdp': 'digital personal data protection',
   'cert-in': 'computer emergency response team india',
+  'cert': 'cert-in',
   '5g': '5g network',
   'blockchain': 'blockchain',
   'quantum': 'quantum computing',
