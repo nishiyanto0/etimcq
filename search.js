@@ -149,50 +149,47 @@ function handleSearch(e) {
 
   // Filter with Scoring
   const results = allQuestions.map(q => {
-    let score = 0;
+    let keywordScore = 0;
     const qText = q.question.toLowerCase();
     const optionsText = q.options.join(' ').toLowerCase();
     const explText = (q.explanation || '').toLowerCase();
     
-    // 1. Tag Boost (Highest Precision)
+    // 1. Tag Match (Highest Precision)
     if (q.tags && q.tags.length > 0) {
       searchTerms.forEach(term => {
         if (q.tags.includes(term)) {
-          score += 1000; // Total dominance for tagged questions
+          keywordScore += 1000; 
         }
       });
     }
 
-    // 2. Syllabus Unit Boost
-    const qUnit = getQuestionUnit(q);
-    if (targetUnit && qUnit === targetUnit) {
-      score += 150; 
-    }
-
+    // 2. Keyword Match Loop
     searchTerms.forEach((term, idx) => {
-      const weight = idx === 0 ? 1 : 0.8; // Primary term gets higher weight
-      const isShort = term.length < 4; // Stricter threshold: only allow includes() for 4+ chars
+      const weight = idx === 0 ? 1 : 0.8;
+      const isShort = term.length < 4;
       const isMapping = !!SEARCH_CONFIG.MAPPINGS[term];
-      
-      // Word boundary regex (\b) is the gold standard for precision
       const wordRegex = new RegExp(`\\b${term}\\b`, 'i');
       
-      // Question Text
-      if (wordRegex.test(qText)) score += 100 * weight;
-      else if (!isShort && !isMapping && qText.includes(term)) score += 40 * weight;
+      if (wordRegex.test(qText)) keywordScore += 100 * weight;
+      else if (!isShort && !isMapping && qText.includes(term)) keywordScore += 40 * weight;
       
-      // Options
-      if (wordRegex.test(optionsText)) score += 60 * weight;
-      else if (!isShort && !isMapping && optionsText.includes(term)) score += 20 * weight;
+      if (wordRegex.test(optionsText)) keywordScore += 60 * weight;
+      else if (!isShort && !isMapping && optionsText.includes(term)) keywordScore += 20 * weight;
       
-      // Explanations
-      if (wordRegex.test(explText)) score += 30 * weight;
-      else if (!isShort && !isMapping && explText.includes(term)) score += 10 * weight;
+      if (wordRegex.test(explText)) keywordScore += 30 * weight;
+      else if (!isShort && !isMapping && explText.includes(term)) keywordScore += 10 * weight;
     });
 
-    return { ...q, searchScore: score };
+    // 3. Syllabus Unit Boost (Only for ranking, not for qualification)
+    let totalScore = keywordScore;
+    const qUnit = getQuestionUnit(q);
+    if (keywordScore > 0 && targetUnit && qUnit === targetUnit) {
+      totalScore += 150; 
+    }
+
+    return { ...q, searchScore: totalScore, hasKeywordMatch: keywordScore > 0 };
   })
-  .filter(q => q.searchScore > 0)
+  .filter(q => q.hasKeywordMatch)
   .sort((a, b) => b.searchScore - a.searchScore);
 
   renderResults(results, query, searchTerms);
