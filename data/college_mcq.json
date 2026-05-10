@@ -760,9 +760,9 @@
         "Make sure that you're always changing password.",
         "Make sure that you're removing the person and title info."
       ],
-      "correct": 0,
-      "correctText": "Make sure that you're always running the latest software updates.",
-      "explanation": "Keeping SMTP servers updated with the latest patches is critical — closing known vulnerabilities that attackers could exploit through banner grabbing or direct attacks.",
+      "correct": 3,
+      "correctText": "Make sure that you're removing the person and title info.",
+      "explanation": "Banner security specifically involves 'Banner Masking' — removing or modifying the server identification, version, and person/title info so attackers cannot easily identify the software and exploit specific known vulnerabilities.",
       "subtopic": "Security"
     },
     {

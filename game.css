@@ -1213,37 +1213,46 @@ body {
 .auth-footer a:hover { text-decoration: underline; }
 
 /* Question Actions */
-.report-bug-btn {
+.quiz-footer-actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.report-bug-btn-fixed {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin: 20px auto 0;
-  padding: 10px 20px;
-  background: rgba(239, 68, 68, 0.05);
-  border: 1px solid rgba(239, 68, 68, 0.2);
+  padding: 10px 24px;
+  background: rgba(239, 68, 68, 0.04);
+  border: 1px solid rgba(239, 68, 68, 0.15);
   border-radius: 100px;
-  color: #f87171;
+  color: #fca5a5;
   font-family: 'Outfit', sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.05);
+  transition: all 0.25s var(--ease);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-.report-bug-btn:hover {
-  background: rgba(239, 68, 68, 0.12);
+
+.report-bug-btn-fixed:hover {
+  background: rgba(239, 68, 68, 0.1);
   border-color: rgba(239, 68, 68, 0.4);
-  color: #ef4444;
+  color: #f87171;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.1);
+  box-shadow: 0 6px 24px rgba(239, 68, 68, 0.15);
 }
-.report-bug-btn:active {
+
+.report-bug-btn-fixed:active {
   transform: translateY(0);
 }
-.report-bug-btn span { font-size: 1rem; }
+
+.report-bug-btn-fixed span { font-size: 1rem; }
 
 .revise-btn {
   background: rgba(255, 255, 255, 0.05);
