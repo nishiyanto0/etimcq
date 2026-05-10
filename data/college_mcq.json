@@ -426,9 +426,9 @@
         "System hacking",
         "Social engineering"
       ],
-      "correct": 0,
-      "correctText": "Security hacking",
-      "explanation": "Security hacking (security assessment) validates existing security controls using a risk-based methodology — ensuring controls are effective and properly implemented.",
+      "correct": 1,
+      "correctText": "Ethical hacking",
+      "explanation": "Ethical hacking (security assessment) validates existing security controls using a risk-based methodology — ensuring controls are effective and properly implemented.",
       "subtopic": "Security"
     },
     {
