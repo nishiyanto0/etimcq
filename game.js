@@ -295,17 +295,17 @@ async function loadGlobalScores() {
   try {
     const { data, error } = await insforge.database.from('scores')
       .select('*')
-      .order('smartScore', { ascending: false })
-      .limit(50);
+      .order('date', { ascending: false }) // Order by most recent attempt
+      .limit(200); // Fetch more to show full history
 
     if (error) throw error;
     
     if (data && data.length > 0) {
-      // Deduplicate: latest entry per user per unit/subtopic
+      // Deduplicate: ONLY remove exact duplicates (same player + same timestamp)
       const unique = [];
       const seen = new Set();
       data.forEach(s => {
-        const key = `${s.playerName}|${s.unitId}|${s.subtopic || 'all'}`;
+        const key = `${s.playerName}|${s.date}`;
         if (!seen.has(key)) {
           unique.push(s);
           seen.add(key);
@@ -313,7 +313,7 @@ async function loadGlobalScores() {
       });
       
       window._globalScores = unique;
-      if (statusEl) statusEl.textContent = `Cloud Sync Active (${unique.length} unique)`;
+      if (statusEl) statusEl.textContent = `Cloud Sync Active (${unique.length} entries)`;
       renderLeaderboard(document.querySelector('.lb-tab.active')?.dataset.tab || 'recent');
     } else {
       if (statusEl) statusEl.textContent = 'Cloud Active (No Data)';
@@ -326,6 +326,14 @@ async function loadGlobalScores() {
 
 async function syncToCloud(table, entry) {
   try {
+    // Check if it already exists to avoid duplicates
+    const { data: existing } = await insforge.database.from(table)
+      .select('id')
+      .match({ playerName: entry.playerName, date: entry.date })
+      .limit(1);
+    
+    if (existing && existing.length > 0) return;
+
     const { error } = await insforge.database.from(table).insert([entry]);
     if (error) throw error;
   } catch(e) {
@@ -337,7 +345,7 @@ async function deleteFromCloud(table, entry) {
   try {
     await insforge.database.from(table)
       .delete()
-      .match({ user: entry.user, question: entry.question });
+      .match({ playerName: entry.playerName, date: entry.date });
   } catch(e) {}
 }
 
@@ -352,7 +360,9 @@ getScores = function() {
   const local = _origGetScores();
   const global = window._globalScores || [];
   const combined = [...local];
+  
   global.forEach(g => {
+    // Exact match on date and player name to avoid duplicates
     if (!combined.find(l => l.playerName === g.playerName && l.date === g.date)) {
       combined.push(g);
     }
@@ -367,6 +377,7 @@ async function migrateToCloud() {
   const statusEl = document.getElementById('sync-status');
   if (statusEl) statusEl.textContent = 'Migrating local history to cloud...';
   
+  // We process them one by one to avoid overwhelming the DB
   for (const s of local) {
     await syncToCloud('scores', s);
   }
