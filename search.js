@@ -171,10 +171,10 @@ function handleSearch(e) {
 
     searchTerms.forEach((term, idx) => {
       const weight = idx === 0 ? 1 : 0.8; // Primary term gets higher weight
-      const isShort = term.length <= 2;
+      const isShort = term.length < 4; // Stricter threshold: only allow includes() for 4+ chars
       const isMapping = !!SEARCH_CONFIG.MAPPINGS[term];
       
-      // Word boundary regex
+      // Word boundary regex (\b) is the gold standard for precision
       const wordRegex = new RegExp(`\\b${term}\\b`, 'i');
       
       // Question Text
