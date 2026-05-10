@@ -129,23 +129,61 @@ function handleSearch(e) {
     }
   }
 
-  // Filter
-  const filtered = allQuestions.filter(q => {
-    return searchTerms.some(term => {
-      const qText = q.question.toLowerCase();
-      const optionsText = q.options.join(' ').toLowerCase();
-      const explText = (q.explanation || '').toLowerCase();
-      const correctText = (q.correctText || '').toLowerCase();
+  // Filter with Scoring
+  const results = allQuestions.map(q => {
+    let score = 0;
+    const qText = q.question.toLowerCase();
+    const optionsText = q.options.join(' ').toLowerCase();
+    const explText = (q.explanation || '').toLowerCase();
+    
+    searchTerms.forEach((term, idx) => {
+      const weight = idx === 0 ? 1 : 0.8; // Primary term gets higher weight
       
-      return qText.includes(term) || 
-             optionsText.includes(term) || 
-             explText.includes(term) || 
-             correctText.includes(term);
+      // Exact word match (more precise)
+      const wordRegex = new RegExp(`\\b${term}\\b`, 'i');
+      if (wordRegex.test(qText)) score += 100 * weight;
+      else if (qText.includes(term)) score += 40 * weight;
+      
+      if (wordRegex.test(optionsText)) score += 60 * weight;
+      else if (optionsText.includes(term)) score += 20 * weight;
+      
+      if (wordRegex.test(explText)) score += 30 * weight;
+      else if (explText.includes(term)) score += 10 * weight;
     });
-  });
 
-  renderResults(filtered, query, searchTerms);
-  statsContainer.textContent = `Found ${filtered.length} matches for "${query}"`;
+    return { ...q, searchScore: score };
+  })
+  .filter(q => q.searchScore > 0)
+  .sort((a, b) => b.searchScore - a.searchScore);
+
+  renderResults(results, query, searchTerms);
+  
+  if (results.length > 0) {
+    statsContainer.innerHTML = `
+      <span>Found ${results.length} matches for "${query}"</span>
+      <button class="btn-practice-all" onclick="startPracticeSession()">
+        Practice These Questions 🎯
+      </button>
+    `;
+    window._currentResults = results;
+  } else {
+    statsContainer.textContent = `No matches found for "${query}"`;
+  }
+}
+
+function startPracticeSession() {
+  if (!window._currentResults || window._currentResults.length === 0) return;
+  
+  // Save to localStorage for game.js to pick up
+  const sessionData = {
+    type: 'search_practice',
+    query: document.getElementById('search-input').value,
+    questions: window._currentResults.slice(0, 50), // Limit to 50 for performance
+    timestamp: Date.now()
+  };
+  
+  localStorage.setItem('ETI_SEARCH_PRACTICE', JSON.stringify(sessionData));
+  window.location.href = 'index.html?mode=search';
 }
 
 function renderResults(questions, originalQuery, expandedTerms) {
@@ -164,20 +202,21 @@ function renderResults(questions, originalQuery, expandedTerms) {
 
   resultsContainer.innerHTML = questions.map((q, idx) => {
     // Highlight terms
-    let qText = q.question;
+    let highlightedQuestion = q.question;
     expandedTerms.forEach(term => {
       const regex = new RegExp(`(${term})`, 'gi');
-      qText = qText.replace(regex, '<span class="highlight">$1</span>');
+      highlightedQuestion = highlightedQuestion.replace(regex, '<span class="highlight">$1</span>');
     });
 
     return `
-      <div class="q-card">
+      <div class="q-card" style="animation-delay: ${idx * 0.05}s">
         <div class="q-meta">
           <span class="badge badge-source">${q.sourceLabel}</span>
           <span class="badge badge-unit">Unit ${q.unit || q.sourceId.replace('unit_', '')}</span>
           ${q.subtopic ? `<span class="badge badge-sub">${q.subtopic}</span>` : ''}
+          <span class="match-score">Relevance: ${Math.round(q.searchScore)}</span>
         </div>
-        <div class="q-text">${qText}</div>
+        <div class="q-text">${highlightedQuestion}</div>
         <div class="options-list">
           ${q.options.map((opt, oIdx) => {
             const isCorrect = oIdx === q.correct;
@@ -189,9 +228,14 @@ function renderResults(questions, originalQuery, expandedTerms) {
             `;
           }).join('')}
         </div>
-        <button class="expl-toggle" onclick="toggleExpl(this)">
-          <span>💡</span> Show Explanation
-        </button>
+        <div class="q-actions">
+          <button class="expl-toggle" onclick="toggleExpl(this)">
+            <span>💡</span> Show Explanation
+          </button>
+          <button class="btn-mini-practice" onclick="practiceQuestion(${idx})">
+            Test Me 🎯
+          </button>
+        </div>
         <div class="expl-content">
           ${q.explanation || 'No explanation available.'}
         </div>
@@ -200,9 +244,24 @@ function renderResults(questions, originalQuery, expandedTerms) {
   }).join('');
 }
 
+window.practiceQuestion = (idx) => {
+  const q = window._currentResults[idx];
+  const sessionData = {
+    type: 'search_practice',
+    query: `Question: ${q.question.substring(0, 20)}...`,
+    questions: [q],
+    timestamp: Date.now()
+  };
+  localStorage.setItem('ETI_SEARCH_PRACTICE', JSON.stringify(sessionData));
+  window.location.href = 'index.html?mode=search';
+};
+
+window.startPracticeSession = startPracticeSession;
+
 // UI Helpers
 window.toggleExpl = (btn) => {
-  const content = btn.nextElementSibling;
+  const card = btn.closest('.q-card');
+  const content = card.querySelector('.expl-content');
   const isHidden = content.style.display !== 'block';
   content.style.display = isHidden ? 'block' : 'none';
   btn.querySelector('span').textContent = isHidden ? '📖' : '💡';
@@ -223,3 +282,4 @@ function debounce(func, wait) {
 
 // Start
 document.addEventListener('DOMContentLoaded', init);
+

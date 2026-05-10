@@ -14,6 +14,7 @@ const UNITS = [
   { id:'nirali', name:'Nirali Prakashan',        icon:'📚', color:'#6366f1', desc:'Complete Nirali Prakashan Question Bank (Unit & Subtopic Wise)', isNirali: true },
   { id:'smart', name:'Smart Test',               icon:'🧠', color:'#f43f5e', desc:'AI-powered practice based on your mistakes and flagged questions', isSmart: true },
   { id:'college', name:'College MCQ',              icon:'🎓', color:'#f97316', desc:'Mixed questions from all ETI topics', isCollege: true },
+  { id:'search_practice', name:'Search Practice', icon:'🔍', color:'#10b981', desc:'Practice questions from your search results' },
 ];
 
 // ── STORAGE KEYS ────────────────────────────
@@ -1208,7 +1209,11 @@ async function startQuiz() {
     }
 
     let pool = [];
-    if (unit?.isNirali) {
+    if (state.unitId === 'search_practice') {
+      const searchSession = JSON.parse(localStorage.getItem('ETI_SEARCH_PRACTICE'));
+      pool = searchSession?.questions || [];
+      state.unitName = `Search: ${searchSession?.query || 'Custom'}`;
+    } else if (unit?.isNirali) {
       if (state.niraliUnitId) {
         const uNode = data.units.find(un => un.unitId === state.niraliUnitId);
         if (state.subtopic) {
@@ -1271,7 +1276,8 @@ async function startQuiz() {
     saveSession();
 
     let badgeText = '';
-    if (unit?.isCollege) badgeText = 'College MCQ';
+    if (state.unitId === 'search_practice') badgeText = 'Search Practice';
+    else if (unit?.isCollege) badgeText = 'College MCQ';
     else if (unit?.isNirali) badgeText = 'Nirali Bank';
     else if (unit?.isSmart) badgeText = 'Smart Test';
     else badgeText = `Unit ${state.unitId}`;
@@ -1518,10 +1524,37 @@ window.closeQuizMenu = closeQuizMenu;
 window.showHome = showHome;
 window.skipAuth = skipAuth;
 
+// ── SEARCH PRACTICE HANDLER ──────────────────
+function checkSearchPractice() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('mode') === 'search') {
+    const searchSession = JSON.parse(localStorage.getItem('ETI_SEARCH_PRACTICE'));
+    if (searchSession && searchSession.questions.length > 0) {
+      state.unitId = 'search_practice';
+      state.total = searchSession.questions.length;
+      
+      // We need a player name to start
+      const name = getPlayerName();
+      if (!name || name.trim().length < 2) {
+        // If no name, we show setup modal first with unit set to search_practice
+        // But startQuiz requires a name, so let's just make sure they enter it
+        alert('Enter your name to start this custom search test!');
+        openSetup('search_practice');
+        return;
+      }
+      
+      startQuiz();
+      // Clean URL
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }
+}
+
 // ── INIT ─────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   checkUserSession();
   renderHome();
+  checkSearchPractice();
   
   // Save name on every keystroke
   const nameInput = document.getElementById('player-name');
