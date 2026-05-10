@@ -32,6 +32,13 @@ const SEARCH_CONFIG = {
     'ccpwc': 'cyber crime prevention against women and children',
     'dpdp': 'digital personal data protection',
     'cert-in': 'computer emergency response team india'
+  },
+  TOPIC_UNITS: {
+    'ai': 1, 'artificial intelligence': 1, 'ml': 1, 'machine learning': 1, 'dl': 1, 'deep learning': 1, 'generative ai': 1, 'gen ai': 1, 'gpt': 1, 'transformer': 1,
+    'iot': 2, 'internet of things': 2, '5g': 2, 'sensor': 2, 'actuator': 2, 'ngn': 2, 'media gateway': 2,
+    'blockchain': 3, 'crypto': 3, 'bitcoin': 3, 'ethereum': 3, 'smart contract': 3, 'consensus': 3, 'mining': 3,
+    'ar': 4, 'vr': 4, 'mr': 4, 'xr': 4, 'augmented reality': 4, 'virtual reality': 4, 'mixed reality': 4, 'extended reality': 4, 'green computing': 4, 'quantum': 4, 'haptic': 4, 'metaverse': 4,
+    'forensics': 5, 'hacking': 5, 'hacker': 5, 'it act': 5, 'cyber law': 5, 'digital forensics': 5, 'ethical hacking': 5, 'ncsp': 5, 'ccpwc': 5
   }
 };
 
@@ -129,6 +136,17 @@ function handleSearch(e) {
     }
   }
 
+  // Detect target unit from syllabus topics
+  let targetUnit = null;
+  searchTerms.forEach(term => {
+    for (const [topic, unit] of Object.entries(SEARCH_CONFIG.TOPIC_UNITS)) {
+      if (term.includes(topic)) {
+        targetUnit = unit;
+        break;
+      }
+    }
+  });
+
   // Filter with Scoring
   const results = allQuestions.map(q => {
     let score = 0;
@@ -136,6 +154,12 @@ function handleSearch(e) {
     const optionsText = q.options.join(' ').toLowerCase();
     const explText = (q.explanation || '').toLowerCase();
     
+    // Syllabus Unit Boost
+    const qUnit = getQuestionUnit(q);
+    if (targetUnit && qUnit === targetUnit) {
+      score += 150; // Significant boost for syllabus context
+    }
+
     searchTerms.forEach((term, idx) => {
       const weight = idx === 0 ? 1 : 0.8; // Primary term gets higher weight
       const isShort = term.length <= 2;
@@ -273,6 +297,16 @@ window.toggleExpl = (btn) => {
   btn.querySelector('span').textContent = isHidden ? '📖' : '💡';
   btn.lastChild.textContent = isHidden ? ' Hide Explanation' : ' Show Explanation';
 };
+
+function getQuestionUnit(q) {
+  if (q.sourceId && q.sourceId.startsWith('unit_')) return parseInt(q.sourceId.replace('unit_', ''));
+  if (q.unit) return parseInt(q.unit);
+  if (q.subtopic && typeof q.subtopic === 'string') {
+    const match = q.subtopic.match(/^(\d)\./);
+    if (match) return parseInt(match[1]);
+  }
+  return null;
+}
 
 function debounce(func, wait) {
   let timeout;
